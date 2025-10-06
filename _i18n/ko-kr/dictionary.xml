@@ -979,7 +979,6 @@
   <block id="52f2049d6a6b3b78ceb9820e5ce16a9d" category="paragraph">*저장* 메뉴에는 ONTAP 시스템 알림을 볼 수 있는 *알림*과 사용되지 않거나 활용도가 낮은 리소스를 파악하기 위한 *수명주기 계획*(이전의 *경제적 효율성*)도 포함되어 있습니다.</block>
   <block id="b75b41949ffca5829d6a1887ecf0ebd4" category="paragraph">NetApp Keystone *저장소* 메뉴로 옮겼습니다. 이 메뉴에서 NetApp Keystone 구독을 관리하고 사용량을 확인할 수 있습니다.</block>
   <block id="0bc00d5c9372c38aa1f6078843c22005" category="inline-image-macro">저장소 메뉴의 스크린샷.</block>
-  <block id="748eeb353f241e217120dfabd2fa058d" category="paragraph"><block ref="748eeb353f241e217120dfabd2fa058d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0e279d1eb32921bbbc940faea63f4db6" category="section-title">관리 메뉴</block>
   <block id="08386d27df9de73a030b8e5da1f8112b" category="paragraph">중앙 집중식 *관리* 메뉴를 사용하여 NetApp 콘솔, 지원 사례, 라이선스 및 구독(이전에는 디지털 지갑이라고 함)을 관리합니다.</block>
   <block id="c952530b2009e9e6caa227e55b2c5e17" category="inline-image-macro">관리 메뉴의 스크린샷입니다.</block>
@@ -1060,15 +1059,6 @@
   <block id="79c16752c4b3871128ff6761df92be41" category="paragraph">*랜섬웨어 복원력 사용자 동작 관리자* 역할과 *랜섬웨어 복원력 사용자 동작 뷰어* 역할이 추가되었습니다.  이러한 역할을 통해 사용자는 각각 사용자 동작 및 분석 데이터를 구성하고 볼 수 있습니다.<block ref="f4af18406bc0e89aecbeeb674238cfbe" category="inline-link-macro-rx"></block></block>
   <block id="9c1c5b1b2bca352ed0ccb3521d870e14" category="section-title">지원 채팅이 제거되었습니다.</block>
   <block id="6a6050b7d9c0524d1d41dffdc70d6613" category="paragraph">NetApp NetApp 콘솔에서 지원 채팅 기능을 제거했습니다.  *관리 &gt; 지원* 페이지를 사용하여 지원 사례를 만들고 관리하세요.</block>
-  <block id="21d0bd94f2b315c59ef7189ffb61d969" category="paragraph">BlueXP 는 이제 NetApp 콘솔입니다.</block>
-  <block id="d35770c6743fcbecba1feceaea6b1123" category="inline-link-macro">NetApp 콘솔의 새로운 기능</block>
-  <block id="f61be6aff2cdc3c3e28521d0ce9b6247" category="paragraph">다음은 NetApp 콘솔의 탐색 및 용어 변경 사항입니다.  2025년 10월 6일 릴리스의 전체 기능 목록을 보려면 다음을 참조하세요.<block ref="279dcb31633ce0736c6a5e54cb6b8de1" category="inline-link-macro-rx"></block> .</block>
-  <block id="016ff55fae5233559b88cc1b1bbb9490" category="paragraph"><block ref="016ff55fae5233559b88cc1b1bbb9490" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9cc1d33a4e3873fd7ca8073a2c86e399" category="paragraph"><block ref="9cc1d33a4e3873fd7ca8073a2c86e399" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0dd307ec00de5c87e7e76a960dc9d785" category="paragraph"><block ref="0dd307ec00de5c87e7e76a960dc9d785" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="bac5266b34e23c9bcb8105c495567bfa" category="paragraph">새롭게 구성된 *상태* 메뉴에는 ONTAP 소프트웨어 업데이트를 관리할 수 있는 *소프트웨어 업데이트*, 환경 영향을 모니터링할 수 있는 *지속 가능성*, 스토리지 환경을 최적화하기 위한 사전 권장 사항을 얻을 수 있는 * Digital Advisor*가 포함됩니다.</block>
-  <block id="37757c8f988b8ee80cfe3d2a2282097a" category="section-title">콘솔 에이전트 선택 및 관리</block>
-  <block id="b44ee41cd357f83b222bac4b5a96c5a2" category="paragraph"><block ref="b44ee41cd357f83b222bac4b5a96c5a2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d6b258792ff06f82933c74eeb8aef591" category="doc">조직</block>
   <block id="3c4f7accda6c4e5b05c122dfef01bebe" category="paragraph">다음 섹션에서는 BlueXP 내에서 IAM을 사용하는 다양한 구성 요소를 설명합니다.</block>
   <block id="7d5499ec968e6c97c7264ba95116b2d6" category="paragraph">BlueXP IAM을 사용하면 다음 구성 요소를 관리하게 됩니다.</block>
@@ -5543,4 +5533,5 @@
   <block id="abfd94e3956e611a257a32b0f396af25" category="sidebar">Google Cloud의 콘솔 에이전트 방화벽 규칙</block>
   <block id="e4c0002e4f9f19273bc004922899fb85" category="sidebar">콘솔 네트워크 액세스(레거시)</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">지식과 지원</block>
+  <block id="f445c6d565697b0932cf841aca945e2a" category="paragraph"><block ref="f445c6d565697b0932cf841aca945e2a" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

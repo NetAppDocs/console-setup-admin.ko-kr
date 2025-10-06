@@ -30,7 +30,7 @@ image:https://docs.netapp.com/us-en/console-setup-admin/media/screenshot-storage
 
 NetApp Keystone *저장소* 메뉴로 옮겼습니다. 이 메뉴에서 NetApp Keystone 구독을 관리하고 사용량을 확인할 수 있습니다.
 
-image:https://docs.netapp.com/us-en/console-setup-admin/screenshot-storage-menu.png["저장소 메뉴의 스크린샷."]
+image:https://docs.netapp.com/us-en/console-setup-admin/media/screenshot-storage-menu.png["저장소 메뉴의 스크린샷."]
 
 
 
