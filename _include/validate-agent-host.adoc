@@ -1,0 +1,13 @@
+= 
+:allow-uri-read: 
+
+
+다음 디렉토리에 있는 콘솔 에이전트 호스트에서 직접 JSON 형식의 검증 보고서와 구성 로그에 액세스할 수도 있습니다.
+
+[source, cli]
+----
+/tmp/netapp-console-agents/logs
+
+/tmp/netapp-console-agents/results.json
+
+----

@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: concept-install-options-google.html 
+keywords: install connector google cloud, google cloud install connector, connector google cloud, google cloud connector, install connector gcp, gcp install connector, connector gcp, gcp connector, installation options, manual install 
+summary: Google Cloud에서 콘솔 에이전트를 만드는 방법에는 여러 가지가 있습니다.  가장 일반적인 방법은 NetApp 콘솔에서 직접 실행하는 것입니다. 
+---
+= Google Cloud의 콘솔 에이전트 설치 옵션
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Google Cloud에서 콘솔 에이전트를 만드는 방법에는 여러 가지가 있습니다.  가장 일반적인 방법은 NetApp 콘솔에서 직접 실행하는 것입니다.  ---
+
+다음과 같은 설치 옵션을 사용할 수 있습니다.
+
+* link:task-install-connector-google-bluexp-gcloud.html["콘솔에서 직접 콘솔 에이전트를 만듭니다."](이것은 표준 옵션입니다)
++
+이 작업을 수행하면 선택한 VPC에서 Linux와 콘솔 에이전트 소프트웨어를 실행하는 VM 인스턴스가 시작됩니다.
+
+* link:task-install-connector-google-bluexp-gcloud.html["Google Platform을 사용하여 콘솔 에이전트 만들기"]
++
+이 작업을 수행하면 Linux와 콘솔 에이전트 소프트웨어가 실행되는 VM 인스턴스가 시작되지만 배포는 콘솔이 아닌 Google Cloud에서 직접 시작됩니다.
+
+* link:task-install-connector-google-manual.html["자신의 Linux 호스트에 소프트웨어를 다운로드하고 수동으로 설치하세요."]
+
+
+선택하는 설치 옵션은 설치를 준비하는 방법에 영향을 미칩니다.  여기에는 Google Cloud에서 리소스를 인증하고 관리하는 데 필요한 권한을 콘솔에 제공하는 방법이 포함됩니다.

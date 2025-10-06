@@ -1,0 +1,14 @@
+= 
+:allow-uri-read: 
+
+
+* 클라우드 배포 관리자 V2 API
+* 클라우드 로깅 API
+* 클라우드 리소스 관리자 API
+* 컴퓨트 엔진 API
+* ID 및 액세스 관리(IAM) API
+* 클라우드 키 관리 서비스(KMS) API
++
+(고객 관리 암호화 키(CMEK)와 함께 NetApp Backup and Recovery를 사용하려는 경우에만 필요함)
+
+

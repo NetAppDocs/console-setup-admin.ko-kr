@@ -1,0 +1,97 @@
+= 커넥터 3.9.49
+:allow-uri-read: 
+
+
+
+
+=== 커넥터 3.9.49
+
+BlueXP 커넥터의 이번 릴리스에는 사소한 보안 개선 사항과 버그 수정이 포함되어 있습니다.
+
+현재 3.9.49 릴리스는 표준 모드와 제한 모드에서 사용할 수 있습니다.
+
+
+
+=== BlueXP ID 및 액세스 관리(IAM)
+
+* BlueXP 사용자에게 여러 역할을 할당하는 기능 지원.
+* BlueXP 조직(Org/폴더/프로젝트)의 여러 리소스에 대한 역할 할당 지원
+* 이제 역할은 플랫폼과 데이터 서비스라는 두 가지 범주 중 하나와 연결됩니다.
+
+
+
+
+==== 제한 모드에서는 이제 BlueXP IAM을 사용합니다.
+
+BlueXP ID 및 액세스 관리(IAM)가 이제 제한 모드에서 사용됩니다.
+
+BlueXP ID 및 액세스 관리(IAM)는 BlueXP 표준 모드와 제한 모드에서 사용할 때 BlueXP 계정에서 제공하던 기존 기능을 대체하고 향상시키는 리소스 및 액세스 관리 모델입니다.
+
+.관련 정보
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html["BlueXP IAM에 대해 알아보세요"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html["BlueXP IAM 시작하기"]
+
+
+BlueXP IAM은 리소스와 권한을 보다 세부적으로 관리합니다.
+
+* 최상위 _조직_을 사용하면 다양한 _프로젝트_에 대한 액세스를 관리할 수 있습니다.
+* _폴더_를 사용하면 관련 프로젝트를 함께 그룹화할 수 있습니다.
+* 향상된 리소스 관리를 통해 리소스를 하나 이상의 폴더나 프로젝트와 연결할 수 있습니다.
++
+예를 들어, Cloud Volumes ONTAP 시스템을 여러 프로젝트와 연결할 수 있습니다.
+
+* 향상된 액세스 관리를 통해 조직 계층의 다양한 수준에 있는 구성원에게 역할을 할당할 수 있습니다.
+
+
+이러한 향상된 기능을 통해 사용자가 수행할 수 있는 작업과 액세스할 수 있는 리소스를 더 효과적으로 제어할 수 있습니다.
+
+.BlueXP IAM이 제한 모드에서 기존 계정에 미치는 영향
+BlueXP 에 로그인하면 다음과 같은 변경 사항을 확인할 수 있습니다.
+
+* 귀하의 _계정_은 이제 _조직_이라고 합니다.
+* 이제 _작업공간_을 _프로젝트_라고 합니다.
+* 사용자 역할의 이름이 변경되었습니다.
++
+** _계정 관리자_는 이제 _조직 관리자_입니다.
+** _작업 공간 관리자_는 이제 _폴더 또는 프로젝트 관리자_입니다.
+** _규정 준수 뷰어_가 이제 _분류 뷰어_로 변경되었습니다.
+
+
+* 설정에서 BlueXP ID 및 액세스 관리에 액세스하여 이러한 향상된 기능을 활용할 수 있습니다.
+
+
+다음 사항에 유의하세요.
+
+* 기존 사용자나 작업 환경에는 변경 사항이 없습니다.
+* 역할의 이름은 변경되었지만 권한 관점에서는 차이가 없습니다.  사용자는 이전과 동일한 작업 환경에 계속 액세스할 수 있습니다.
+* BlueXP 에 로그인하는 방법에는 변경 사항이 없습니다.  BlueXP IAM은 BlueXP 계정과 마찬가지로 NetApp 클라우드 로그인, NetApp 지원 사이트 자격 증명 및 페더레이션 연결과 함께 작동합니다.
+* 여러 개의 BlueXP 계정이 있었다면 이제 여러 개의 BlueXP 조직이 있게 됩니다.
+
+
+.BlueXP IAM용 API
+이 변경으로 BlueXP IAM에 대한 새로운 API가 도입되었지만 이전 테넌시 API와 하위 호환됩니다. https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["BlueXP IAM API에 대해 알아보세요"^]
+
+.지원되는 배포 모드
+BlueXP IAM은 BlueXP 표준 모드와 제한 모드로 사용할 때 지원됩니다.  개인 모드에서 BlueXP 사용하는 경우 BlueXP 계정을 계속 사용하여 작업 공간, 사용자 및 리소스를 관리하게 됩니다.
+
+
+
+=== 프라이빗 모드 출시 (3.9.48)
+
+새로운 개인 모드 릴리스를 지금 다운로드할 수 있습니다. https://mysupport.netapp.com/site/downloads["NetApp 지원 사이트"^]
+
+3.9.48 릴리스에는 다음 BlueXP 구성 요소와 서비스에 대한 업데이트가 포함되어 있습니다.
+
+[cols="3*"]
+|===
+| 구성 요소 또는 서비스 | 이 릴리스에 포함된 버전 | 이전 개인 모드 출시 이후 변경 사항 
+
+
+| 커넥터 | 3.9.48 | 로 가다 https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-48["BlueXP 커넥터 페이지의 새로운 기능"] 버전 3.9.48에 포함된 변경 사항을 참조하세요. 
+
+
+| 백업 및 복구 | 2025년 2월 21일 | 로 가다 https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP backup and recovery 페이지의 새로운 기능"^] 2025년 2월 릴리스에 포함된 변경 사항을 참조하세요. 
+
+
+| 분류 | 2025년 1월 22일(버전 1.39) | 로 가다 https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP classification 페이지의 새로운 기능"^] 1.39 릴리스에 포함된 변경 사항을 참조하세요. 
+|===

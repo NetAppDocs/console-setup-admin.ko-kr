@@ -1,0 +1,153 @@
+---
+sidebar: sidebar 
+permalink: concept-accounts-aws.html 
+keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permission, aws permissions, policy, policies, credentials, marketplace, subscription, replace subscription, subscription, amazon, bluexp, agent 
+summary: NetApp 콘솔이 AWS 자격 증명을 사용하여 사용자를 대신하여 작업을 수행하는 방법과 해당 자격 증명이 마켓플레이스 구독과 연결되는 방식을 알아보세요.  이러한 세부 정보를 이해하면 콘솔에서 하나 이상의 AWS 계정에 대한 자격 증명을 관리하는 데 도움이 될 수 있습니다.  예를 들어, 콘솔에 추가 AWS 자격 증명을 추가하는 시점에 대해 알아보고 싶을 수 있습니다. 
+---
+= NetApp 콘솔에서 AWS 자격 증명 및 권한에 대해 알아보세요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 콘솔이 AWS 자격 증명을 사용하여 사용자를 대신하여 작업을 수행하는 방법과 해당 자격 증명이 마켓플레이스 구독과 연결되는 방식을 알아보세요.  이러한 세부 정보를 이해하면 NetApp 콘솔에서 하나 이상의 AWS 계정에 대한 자격 증명을 관리하는 데 도움이 될 수 있습니다.  예를 들어, 추가 AWS 자격 증명을 추가해야 하는 시점에 대해 알아보고 싶을 수 있습니다.
+
+
+
+== 초기 AWS 자격 증명
+
+콘솔에서 콘솔 에이전트를 배포하는 경우 IAM 사용자의 IAM 역할 또는 액세스 키의 ARN을 제공해야 합니다.  인증 방법에는 AWS에 콘솔을 배포할 수 있는 권한이 있어야 합니다.  필요한 권한은 링크: task-install-connector-aws-the Console.html#console-permissions-aws[AWS용 에이전트 배포 정책]에 나열되어 있습니다.
+
+콘솔이 AWS에서 콘솔 에이전트 인스턴스를 시작하면 인스턴스에 대한 IAM 역할과 인스턴스 프로필이 생성됩니다.  또한 AWS 계정 내에서 리소스와 프로세스를 관리할 수 있는 권한을 콘솔 에이전트에 제공하는 정책도 첨부합니다. link:reference-permissions-aws.html["콘솔이 권한을 사용하는 방식을 검토하세요."] .
+
+image:diagram_permissions_initial_aws.png["AWS 계정에 콘솔 에이전트를 배포하는 콘솔을 보여주는 개념적 이미지입니다.  IAM 정책은 콘솔 인스턴스에 연결된 IAM 역할에 할당됩니다."]
+
+새로운 Cloud Volumes ONTAP 시스템을 추가하는 경우 콘솔은 기본적으로 다음 AWS 자격 증명을 선택합니다.
+
+image:screenshot_accounts_select_aws.gif["세부 정보 및 자격 증명 페이지에서 계정 전환 옵션을 보여주는 스크린샷입니다."]
+
+초기 AWS 자격 증명을 사용하여 모든 Cloud Volumes ONTAP 시스템을 배포하거나 추가 자격 증명을 추가할 수 있습니다.
+
+
+
+== 추가 AWS 자격 증명
+
+다음과 같은 경우 콘솔에 추가 AWS 자격 증명을 추가할 수 있습니다.
+
+* 기존 콘솔 에이전트를 추가 AWS 계정과 함께 사용하려면
+* 특정 AWS 계정에서 새 에이전트를 생성하려면
+* ONTAP 파일 시스템용 FSx를 생성하고 관리하려면
+
+
+자세한 내용은 아래 섹션을 참조하세요.
+
+
+
+=== 다른 AWS 계정으로 콘솔 에이전트를 사용하려면 AWS 자격 증명을 추가하세요.
+
+추가 AWS 계정으로 콘솔을 사용하려면 IAM 사용자의 AWS 키나 신뢰할 수 있는 계정의 역할에 대한 ARN을 제공하면 됩니다.  다음 이미지는 두 개의 추가 계정을 보여줍니다. 하나는 신뢰할 수 있는 계정의 IAM 역할을 통해 권한을 제공하고, 다른 하나는 IAM 사용자의 AWS 키를 통해 권한을 제공합니다.
+
+image:diagram_permissions_multiple_aws.png["두 개의 추가 계정을 보여주는 개념적 이미지입니다.  각각에는 IAM 정책이 있으며, 하나는 IAM 사용자에게 연결되고 다른 하나는 IAM 역할에 연결됩니다."]
+
+그런 다음 IAM 역할의 Amazon 리소스 이름(ARN)이나 IAM 사용자의 AWS 키를 지정하여 콘솔에 계정 자격 증명을 추가합니다.
+
+예를 들어, 새로운 Cloud Volumes ONTAP 시스템을 생성할 때 자격 증명 간에 전환할 수 있습니다.
+
+image:screenshot_accounts_switch_aws.png["세부 정보 및 자격 증명 페이지에서 계정 전환을 선택한 후 클라우드 공급자 계정 간에 선택하는 모습을 보여주는 스크린샷입니다."]
+
+link:task-adding-aws-accounts.html#add-credentials-agent-aws["기존 에이전트에 AWS 자격 증명을 추가하는 방법을 알아보세요."]
+
+
+
+=== AWS 자격 증명을 추가하여 콘솔 에이전트를 만듭니다.
+
+콘솔에 새로운 AWS 자격 증명을 추가하면 콘솔 에이전트를 만드는 데 필요한 권한이 제공됩니다.
+
+link:task-adding-aws-accounts.html#add-credentials-agent-aws["콘솔 에이전트를 생성하기 위해 콘솔에 AWS 자격 증명을 추가하는 방법을 알아보세요."]
+
+
+
+=== FSx for ONTAP 에 대한 AWS 자격 증명 추가
+
+FSx for ONTAP 시스템을 생성하고 관리하는 데 필요한 권한을 제공하려면 AWS 자격 증명을 콘솔에 추가합니다.
+
+https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Amazon FSx for ONTAP 콘솔에 AWS 자격 증명을 추가하는 방법을 알아보세요."^]
+
+
+
+== 자격 증명 및 마켓플레이스 구독
+
+콘솔 에이전트에 추가하는 자격 증명은 AWS Marketplace 구독과 연결되어야 합니다. 이렇게 하면 시간당 요금(PAYGO)으로 Cloud Volumes ONTAP 및 기타 NetApp 데이터 서비스 또는 연간 계약을 통해 비용을 지불할 수 있습니다. link:task-adding-aws-accounts.html#subscribe["AWS 구독을 연결하는 방법 알아보기"] .
+
+AWS 자격 증명 및 마켓플레이스 구독에 대해 다음 사항을 참고하세요.
+
+* AWS 자격 증명 세트에는 단 하나의 AWS Marketplace 구독만 연결할 수 있습니다.
+* 기존 마켓플레이스 구독을 새 구독으로 교체할 수 있습니다.
+
+
+
+
+== 자주 묻는 질문
+
+다음 질문은 자격 증명 및 구독과 관련이 있습니다.
+
+
+
+=== AWS 자격 증명을 안전하게 회전하려면 어떻게 해야 하나요?
+
+위 섹션에서 설명한 대로 콘솔을 사용하면 여러 가지 방법으로 AWS 자격 증명을 제공할 수 있습니다. 콘솔 에이전트 인스턴스와 연결된 IAM 역할, 신뢰할 수 있는 계정에서 IAM 역할을 맡는 방법, AWS 액세스 키를 제공하는 방법 등이 있습니다.
+
+처음 두 가지 옵션을 사용하면 콘솔은 AWS 보안 토큰 서비스를 사용하여 지속적으로 순환되는 임시 자격 증명을 얻습니다.  이 프로세스는 자동화되어 있고 안전하기 때문에 가장 좋은 방법입니다.
+
+콘솔에 AWS 액세스 키를 제공하는 경우 정기적으로 콘솔에서 키를 업데이트하여 키를 순환해야 합니다.  이는 완전히 수동적인 과정입니다.
+
+
+
+=== Cloud Volumes ONTAP 시스템에 대한 AWS Marketplace 구독을 변경할 수 있나요?
+
+네, 가능합니다.  자격 증명 세트와 연결된 AWS Marketplace 구독을 변경하면 모든 기존 및 새 Cloud Volumes ONTAP 시스템에 새 구독 요금이 청구됩니다.
+
+link:task-adding-aws-accounts.html#subscribe["AWS 구독을 연결하는 방법 알아보기"] .
+
+
+
+=== 각기 다른 마켓플레이스 구독을 가진 여러 AWS 자격 증명을 추가할 수 있나요?
+
+동일한 AWS 계정에 속한 모든 AWS 자격 증명은 동일한 AWS Marketplace 구독과 연결됩니다.
+
+서로 다른 AWS 계정에 속한 AWS 자격 증명이 여러 개 있는 경우 해당 자격 증명을 동일한 AWS Marketplace 구독이나 다른 구독과 연결할 수 있습니다.
+
+
+
+=== 기존 Cloud Volumes ONTAP 시스템을 다른 AWS 계정으로 옮길 수 있나요?
+
+아니요, Cloud Volumes ONTAP 시스템과 연결된 AWS 리소스를 다른 AWS 계정으로 이동하는 것은 불가능합니다.
+
+
+
+=== 마켓플레이스 배포와 온프레미스 배포에서 자격 증명은 어떻게 작동합니까?
+
+위 섹션에서는 콘솔에서 콘솔 에이전트를 배포하는 데 권장되는 방법을 설명합니다.  AWS Marketplace에서 AWS에 에이전트를 배포할 수도 있고, 자신의 Linux 호스트에 콘솔 에이전트 소프트웨어를 수동으로 설치할 수도 있습니다.
+
+마켓플레이스를 사용하는 경우에도 동일한 방식으로 권한이 제공됩니다.  IAM 역할을 수동으로 생성하고 설정한 다음, 추가 계정에 대한 권한을 제공하기만 하면 됩니다.
+
+온프레미스 배포의 경우 콘솔에 대한 IAM 역할을 설정할 수 없지만 AWS 액세스 키를 사용하여 권한을 제공할 수 있습니다.
+
+권한을 설정하는 방법을 알아보려면 다음 페이지를 참조하세요.
+
+* 표준 모드
++
+** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["AWS Marketplace 배포에 대한 권한 설정"]
+** link:task-install-connector-on-prem.html#agent-permission-aws-azure["온프레미스 배포에 대한 권한 설정"]
+
+
+* 제한 모드
++
+** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["제한 모드에 대한 권한 설정"]
+
+
+

@@ -1,0 +1,97 @@
+---
+sidebar: sidebar 
+permalink: task-require-imdsv2.html 
+keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager, local ui, go to local ui 
+summary: NetApp 콘솔은 콘솔 에이전트와 Cloud Volumes ONTAP 통해 IMDSv2를 지원합니다.  대부분의 경우 IMDSv2는 새 EC2 인스턴스에 자동으로 구성됩니다.  IMDSv1은 2024년 3월 이전에 활성화되었습니다.  보안 정책에 따라 EC2 인스턴스에서 IMDSv2를 수동으로 구성해야 할 수도 있습니다. 
+---
+= Amazon EC2 인스턴스에서 IMDSv2 사용 요구
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 콘솔은 콘솔 에이전트와 Cloud Volumes ONTAP (HA 배포를 위한 중재자 포함)을 통해 Amazon EC2 인스턴스 메타데이터 서비스 버전 2(IMDSv2)를 지원합니다.  대부분의 경우 IMDSv2는 새 EC2 인스턴스에 자동으로 구성됩니다.  IMDSv1은 2024년 3월 이전에 활성화되었습니다.  보안 정책에 따라 EC2 인스턴스에서 IMDSv2를 수동으로 구성해야 할 수도 있습니다.
+
+.시작하기 전에
+* 콘솔 에이전트 버전은 3.9.38 이상이어야 합니다.
+* Cloud Volumes ONTAP 다음 버전 중 하나를 실행해야 합니다.
++
+** 9.12.1 P2(또는 이후 패치)
+** 9.13.0 P4(또는 이후 패치)
+** 9.13.1 또는 이 릴리스 이후의 모든 버전
+
+
+* 이 변경을 수행하려면 Cloud Volumes ONTAP 인스턴스를 다시 시작해야 합니다.
+* 이러한 단계에서는 응답 홉 제한을 3으로 변경해야 하므로 AWS CLI를 사용해야 합니다.
+
+
+.이 작업에 관하여
+IMDSv2는 취약점에 대한 강화된 보호 기능을 제공합니다. https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["AWS 보안 블로그에서 IMDSv2에 대해 자세히 알아보세요."^]
+
+EC2 인스턴스에서 IMDS(인스턴스 메타데이터 서비스)는 다음과 같이 활성화됩니다.
+
+* 콘솔에서 새 콘솔 에이전트를 배포하거나 다음을 사용하는 경우 https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Terraform 스크립트"^] IMDSv2는 EC2 인스턴스에서 기본적으로 활성화되어 있습니다.
+* AWS에서 새로운 EC2 인스턴스를 시작한 다음 콘솔 에이전트 소프트웨어를 수동으로 설치하면 IMDSv2도 기본적으로 활성화됩니다.
+* AWS Marketplace에서 콘솔 에이전트를 실행하면 IMDSv1이 기본적으로 활성화됩니다.  EC2 인스턴스에서 IMDSv2를 수동으로 구성할 수 있습니다.
+* 기존 콘솔 에이전트의 경우 IMDSv1이 계속 지원되지만 원하는 경우 EC2 인스턴스에서 IMDSv2를 수동으로 구성할 수 있습니다.
+* Cloud Volumes ONTAP 의 경우 IMDSv1은 새 인스턴스와 기존 인스턴스에서 기본적으로 활성화됩니다.  원하는 경우 EC2 인스턴스에서 IMDSv2를 수동으로 구성할 수 있습니다.
+
+
+.단계
+. 콘솔 에이전트 인스턴스에서 IMDSv2를 사용해야 합니다.
++
+.. 콘솔 에이전트를 위해 Linux VM에 연결합니다.
++
+AWS에서 콘솔 에이전트 인스턴스를 생성할 때 AWS 액세스 키와 비밀 키를 제공했습니다.  이 키 쌍을 사용하여 인스턴스에 SSH를 실행할 수 있습니다.  EC2 Linux 인스턴스의 사용자 이름은 ubuntu입니다(2023년 5월 이전에 생성된 콘솔 에이전트의 경우 사용자 이름은 ec2-user였습니다).
+
++
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS Docs: Linux 인스턴스에 연결"^]
+
+.. AWS CLI를 설치합니다.
++
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html["AWS Docs: AWS CLI 최신 버전 설치 또는 업데이트"^]
+
+.. 사용하다 `aws ec2 modify-instance-metadata-options` IMDSv2 사용을 요구하고 PUT 응답 홉 제한을 3으로 변경하는 명령입니다.
++
+*예*
+
++
+[source, awscli]
+----
+aws ec2 modify-instance-metadata-options \
+    --instance-id <instance-id> \
+    --http-put-response-hop-limit 3 \
+    --http-tokens required \
+    --http-endpoint enabled
+----
+
+
++
+
+NOTE: 그만큼 `http-tokens` 매개변수는 IMDSv2를 필수로 설정합니다.  언제 `http-tokens` 필수입니다. 또한 설정해야 합니다. `http-endpoint` 활성화됨.
+
+. Cloud Volumes ONTAP 인스턴스에서 IMDSv2를 사용해야 합니다.
++
+.. 로 가다 https://console.aws.amazon.com/ec2/["Amazon EC2 콘솔"^]
+.. 탐색 창에서 *인스턴스*를 선택합니다.
+.. Cloud Volumes ONTAP 인스턴스를 선택하세요.
+.. *작업 > 인스턴스 설정 > 인스턴스 메타데이터 옵션 수정*을 선택합니다.
+.. *인스턴스 메타데이터 옵션 수정* 대화 상자에서 다음을 선택합니다.
++
+*** *인스턴스 메타데이터 서비스*에 대해 *활성화*를 선택합니다.
+*** *IMDSv2*의 경우 *필수*를 선택하세요.
+*** *저장*을 선택하세요.
+
+
+.. HA 중재자를 포함한 다른 Cloud Volumes ONTAP 인스턴스에 대해 이 단계를 반복합니다.
+.. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-state.html["Cloud Volumes ONTAP 인스턴스를 중지하고 시작합니다."^]
+
+
+
+
+.결과
+콘솔 에이전트 인스턴스와 Cloud Volumes ONTAP 인스턴스는 이제 IMDSv2를 사용하도록 구성되었습니다.

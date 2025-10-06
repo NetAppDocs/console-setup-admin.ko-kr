@@ -1,0 +1,81 @@
+---
+sidebar: sidebar 
+permalink: task-iam-switch-organizations-projects.html 
+keywords: switch organizations, switch projects, projects, organizations, change, switch, change organizations, change projects, iam, identity and access management, switch connectors 
+summary: 여러 콘솔 조직에 속해 있거나 조직 내 여러 프로젝트나 에이전트에 액세스할 수 있는 권한이 있을 수 있습니다.  필요한 경우 조직, 프로젝트 및 콘솔 에이전트 간에 쉽게 전환하여 해당 조직, 프로젝트 또는 에이전트와 연결된 리소스에 액세스할 수 있습니다. 
+---
+= 콘솔 조직, 프로젝트 및 에이전트 간 전환
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+여러 콘솔 조직에 속해 있거나 조직 내 여러 프로젝트나 에이전트에 액세스할 수 있는 권한이 있을 수 있습니다.  필요한 경우 조직, 프로젝트 및 콘솔 에이전트 간에 쉽게 전환하여 해당 조직, 프로젝트 또는 에이전트와 연결된 리소스에 액세스할 수 있습니다.
+
+
+TIP: 다른 조직에서 가입을 권유하거나 직접 조직을 만든 경우 여러 조직에 속하게 될 수 있습니다.  API를 사용하여 추가 조직을 만들 수 있습니다. https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/post-organizations.html["새로운 조직을 만드는 방법을 알아보세요"^]
+
+
+
+== 조직 간 전환
+
+여러 조직에 가입되어 있는 경우 언제든지 조직 간에 전환할 수 있습니다.
+
+.단계
+. 콘솔의 상단 헤더에서 *조직*을 선택합니다.
++
+image:screenshot-iam-switch-organizations.png["조직 드롭다운을 선택한 후 다른 조직을 선택할 수 있는 상단 배너의 스크린샷입니다."]
+
+. 파트너십 조직이 있는 경우, *파트너십* 탭을 선택하여 사용 가능한 파트너 조직을 확인하세요.
+
+
++ 파트너 조직이 없으면 *파트너십* 탭이 표시되지 않습니다.
+
+. 다른 조직을 선택한 다음 *전환*을 선택하세요.
+
+
++ 파트너십 조직이 있는 경우, *파트너십* 탭을 선택하여 사용 가능한 파트너 조직을 확인하세요.
+
+
+
+== 프로젝트 간 전환
+
+귀하의 조직에 여러 프로젝트가 포함되어 있고 해당 프로젝트에 대한 액세스 권한이 있는 경우 언제든지 프로젝트 간에 전환할 수 있습니다.
+
+
+NOTE: *ID 및 액세스* 페이지를 보고 있는 동안에는 다른 프로젝트로 전환할 수 없습니다.
+
+.단계
+. 콘솔의 상단 헤더에서 *프로젝트*를 선택합니다.
+. 조직의 폴더와 프로젝트를 탐색하고 원하는 프로젝트를 선택한 다음 *전환*을 선택합니다.
++
+image:screenshot-iam-switch-projects-select.png["새로운 프로젝트를 선택할 수 있는 범위 메뉴의 스크린샷입니다."]
+
+
+
+
+
+== 콘솔 에이전트 간 전환
+
+여러 개의 콘솔 에이전트가 있는 경우 에이전트 간에 전환하여 특정 에이전트와 연결된 시스템을 볼 수 있습니다.
+
+.단계
+. 콘솔의 상단 헤더에서 에이전트 아이콘을 선택합니다.
+. 다른 에이전트를 선택한 다음 *전환*을 선택하세요.
+
+
+.관련 정보
+link:task-iam-associate-connectors.html["폴더 및 프로젝트와 에이전트 연결"] .
+
+
+
+== 관련 정보
+
+* link:concept-identity-and-access-management.html["NetApp 콘솔에서 ID 및 액세스에 대해 알아보세요"]
+* link:task-iam-get-started.html["ID 및 액세스 시작하기"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["ID 및 액세스를 위한 API에 대해 알아보세요"^]
+

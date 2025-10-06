@@ -1,0 +1,193 @@
+---
+sidebar: sidebar 
+permalink: task-subscribe-restricted-mode.html 
+keywords: subscribe, subscription, marketplace subscription, paygo, contract, annual contract 
+summary: 클라우드 공급업체의 마켓플레이스에서 NetApp Intelligent Services를 구독하면 시간당 요금이나 연간 계약으로 NetApp 데이터 서비스 비용을 지불할 수 있습니다.  NetApp 에서 라이선스를 구매한 경우 마켓플레이스 제공 서비스도 구독해야 합니다.  귀하의 라이센스 요금이 항상 먼저 청구되지만, 라이센스 용량을 초과하거나 라이센스 기간이 만료되면 시간당 요금이 청구됩니다. 
+---
+= NetApp Intelligent Services 구독(제한 모드)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+클라우드 공급업체의 마켓플레이스에서 NetApp Intelligent Services를 구독하면 시간당 요금(PAYGO) 또는 연간 계약을 통해 데이터 서비스 비용을 지불할 수 있습니다.  NetApp (BYOL)에서 라이선스를 구매한 경우 마켓플레이스 제공 서비스도 구독해야 합니다.  귀하의 라이센스 요금이 항상 먼저 청구되지만, 라이센스 용량을 초과하거나 라이센스 기간이 만료되면 시간당 요금이 청구됩니다.
+
+마켓플레이스 구독을 통해 제한 모드로 다음 데이터 서비스에 대한 요금을 청구할 수 있습니다.
+
+* NetApp 백업 및 복구
+* Cloud Volumes ONTAP
+* NetApp 클라우드 계층화
+* NetApp 랜섬웨어 복원력
+* NetApp 재해 복구
+
+
+NetApp 데이터 분류는 구독을 통해 활성화되지만 분류 사용에는 비용이 청구되지 않습니다.
+
+.시작하기 전에
+데이터 서비스를 구독하려면 콘솔 에이전트를 이미 배포했어야 합니다.  콘솔 에이전트에 연결된 클라우드 자격 증명에 마켓플레이스 구독을 연결해야 합니다.
+
+[role="tabbed-block"]
+====
+.AWS
+--
+다음 비디오에서는 AWS Marketplace에서 NetApp Intelligent Services를 구독하는 단계를 보여줍니다.
+
+.AWS Marketplace에서 NetApp Intelligent Services 구독
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
+.단계
+. *관리 > *자격 증명*을 선택합니다.
+. *조직 자격 증명*을 선택하세요.
+. 콘솔 에이전트와 연결된 자격 증명 세트에 대한 작업 메뉴를 선택한 다음 *구독 구성*을 선택합니다.
++
+콘솔 에이전트와 연결된 자격 증명을 선택해야 합니다.  NetApp 콘솔과 연결된 자격 증명에는 마켓플레이스 구독을 연결할 수 없습니다.
+
++
+image:screenshot_aws_configure_subscription.png["기존 자격 증명 세트에 대한 작업 메뉴의 스크린샷입니다."]
+
+. 자격 증명을 기존 구독과 연결하려면 아래쪽 목록에서 구독을 선택하고 *구성*을 선택합니다.
+. 자격 증명을 새 구독과 연결하려면 *구독 추가 > 계속*을 선택하고 AWS Marketplace의 단계를 따르세요.
++
+.. *구매 옵션 보기*를 선택하세요.
+.. *구독*을 선택하세요.
+.. *계정 설정*을 선택하세요.
++
+NetApp 콘솔로 리디렉션됩니다.
+
+.. *구독 할당* 페이지에서:
++
+*** 이 구독을 연결할 콘솔 조직이나 계정을 선택하세요.
+*** *기존 구독 교체* 필드에서 하나의 조직 또는 계정에 대한 기존 구독을 이 새로운 구독으로 자동으로 교체할지 여부를 선택합니다.
++
+콘솔은 조직 또는 계정의 모든 자격 증명에 대한 기존 구독을 이 새로운 구독으로 대체합니다.  자격 증명 세트가 구독과 연결되지 않은 경우 이 새 구독은 해당 자격 증명과 연결되지 않습니다.
+
++
+다른 모든 조직이나 계정의 경우 이 단계를 반복하여 구독을 수동으로 연결해야 합니다.
+
+*** *저장*을 선택하세요.
+
+
+
+
+
+
+--
+.하늘빛
+--
+.단계
+. *관리 > *자격 증명*을 선택합니다.
+. *조직 자격 증명*을 선택하세요.
+. 콘솔 에이전트와 연결된 자격 증명 세트에 대한 작업 메뉴를 선택한 다음 *구독 구성*을 선택합니다.
++
+콘솔 에이전트와 연결된 자격 증명을 선택해야 합니다.  NetApp 콘솔과 연결된 자격 증명에는 마켓플레이스 구독을 연결할 수 없습니다.
+
+. 자격 증명을 기존 구독과 연결하려면 아래쪽 목록에서 구독을 선택하고 *구성*을 선택합니다.
+. 자격 증명을 새 구독과 연결하려면 *구독 추가 > 계속*을 선택하고 Azure Marketplace의 단계를 따르세요.
++
+.. 메시지가 표시되면 Azure 계정에 로그인하세요.
+.. *구독*을 선택하세요.
+.. 양식을 작성하고 *구독*을 선택하세요.
+.. 구독 절차가 완료되면 *지금 계정 구성*을 선택하세요.
++
+NetApp 콘솔로 리디렉션됩니다.
+
+.. *구독 할당* 페이지에서:
++
+*** 이 구독을 연결할 콘솔 조직이나 계정을 선택하세요.
+*** *기존 구독 교체* 필드에서 하나의 조직 또는 계정에 대한 기존 구독을 이 새로운 구독으로 자동으로 교체할지 여부를 선택합니다.
++
+콘솔은 조직 또는 계정의 모든 자격 증명에 대한 기존 구독을 이 새로운 구독으로 대체합니다.  자격 증명 세트가 구독과 연결되지 않은 경우 이 새 구독은 해당 자격 증명과 연결되지 않습니다.
+
++
+다른 모든 조직이나 계정의 경우 이 단계를 반복하여 구독을 수동으로 연결해야 합니다.
+
+*** *저장*을 선택하세요.
++
+다음 비디오에서는 Azure Marketplace에서 구독하는 단계를 보여줍니다.
+
++
+.Azure Marketplace에서 NetApp Intelligent Services 구독
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
+
+
+
+
+
+
+--
+.구글 클라우드
+--
+.단계
+. *관리 > *자격 증명*을 선택합니다.
+. *조직 자격 증명*을 선택하세요.
+. 콘솔 에이전트와 연결된 자격 증명 세트에 대한 작업 메뉴를 선택한 다음 *구독 구성*을 선택합니다.  +새로운 스크린샷이 필요합니다(TS)image:screenshot_gcp_add_subscription.png["기존 자격 증명 세트에 대한 작업 메뉴의 스크린샷입니다."]
+. 선택한 자격 증명으로 기존 구독을 구성하려면 드롭다운 목록에서 Google Cloud 프로젝트와 구독을 선택한 다음 *구성*을 선택합니다.
++
+image:screenshot_gcp_associate.gif["Google Cloud 자격 증명을 위해 선택된 Google Cloud 프로젝트 및 구독의 스크린샷입니다."]
+
+. 아직 구독이 없다면 *구독 추가 > 계속*을 선택하고 Google Cloud Marketplace의 단계를 따르세요.
++
+
+NOTE: 다음 단계를 완료하기 전에 Google Cloud 계정에서 청구 관리자 권한과 NetApp 콘솔 로그인 권한이 모두 있는지 확인하세요.
+
++
+.. 당신이 리디렉션된 후 https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud Marketplace의 NetApp Intelligent Services 페이지"^] 상단 탐색 메뉴에서 올바른 프로젝트가 선택되었는지 확인하세요.
++
+image:screenshot_gcp_cvo_marketplace.png["Google Cloud의 Cloud Volumes ONTAP 마켓플레이스 페이지 스크린샷입니다."]
+
+.. *구독*을 선택하세요.
+.. 적절한 청구 계정을 선택하고 약관에 동의하세요.
+.. *구독*을 선택하세요.
++
+이 단계에서는 귀하의 전송 요청이 NetApp 으로 전송됩니다.
+
+.. 팝업 대화 상자에서 * NetApp, Inc.에 등록*을 선택합니다.
++
+Google Cloud 구독을 Console 조직 또는 계정과 연결하려면 이 단계를 완료해야 합니다.  구독 연결 프로세스는 이 페이지에서 리디렉션된 후 콘솔에 로그인할 때까지 완료되지 않습니다.
+
++
+image:screenshot_gcp_marketplace_register.png["등록 팝업의 스크린샷입니다."]
+
+.. *구독 할당* 페이지의 단계를 완료하세요.
++
+
+NOTE: 귀하의 조직에서 이미 귀하의 청구 계정에서 마켓플레이스 구독을 보유한 사람이 있는 경우 귀하는 다음으로 리디렉션됩니다. https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["NetApp 콘솔 내 Cloud Volumes ONTAP 페이지"^] 대신에.  예상치 못한 상황이라면 NetApp 영업팀에 문의하세요.  Google은 Google 결제 계정당 하나의 구독만 허용합니다.
+
++
+*** 이 구독을 연결할 콘솔 조직이나 계정을 선택하세요.
+*** *기존 구독 교체* 필드에서 하나의 조직 또는 계정에 대한 기존 구독을 이 새로운 구독으로 자동으로 교체할지 여부를 선택합니다.
++
+콘솔은 조직 또는 계정의 모든 자격 증명에 대한 기존 구독을 이 새로운 구독으로 대체합니다.  자격 증명 세트가 구독과 연결되지 않은 경우 이 새 구독은 해당 자격 증명과 연결되지 않습니다.
+
++
+다른 모든 조직이나 계정의 경우 이 단계를 반복하여 구독을 수동으로 연결해야 합니다.
+
+*** *저장*을 선택하세요.
++
+다음 비디오에서는 Google Cloud Marketplace에서 구독하는 단계를 보여줍니다.
+
++
+.Google Cloud Marketplace에서 구독하세요
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
+
+
+.. 이 프로세스가 완료되면 콘솔의 자격 증명 페이지로 돌아가서 새 구독을 선택하세요.
++
+image:screenshot_gcp_associate.gif["구독 할당 페이지의 스크린샷입니다."]
+
+
+
+
+
+--
+====
+.관련 정보
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["Cloud Volumes ONTAP 대한 BYOL 용량 기반 라이선스 관리"^]
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["데이터 서비스에 대한 BYOL 라이선스 관리"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["AWS 자격 증명 및 구독 관리"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["Azure 자격 증명 및 구독 관리"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["Google Cloud 자격 증명 및 구독 관리"]
+

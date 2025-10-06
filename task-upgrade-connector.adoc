@@ -1,0 +1,117 @@
+---
+sidebar: sidebar 
+permalink: task-upgrade-connector.html 
+keywords: upgrade, manual upgrade, agent upgrade, manual agent upgrade, upgrade agent manually, private mode upgrade, offline upgrade, upgrade private mode, connector upgrade, agent upgrade 
+summary: 표준 모드나 제한 모드를 사용하는 경우, 콘솔 에이전트가 소프트웨어 업데이트를 받기 위해 아웃바운드 인터넷 액세스가 가능한 한 NetApp 콘솔이 자동으로 콘솔 에이전트를 최신 릴리스로 업그레이드합니다. 
+---
+= 콘솔 에이전트 업그레이드 관리
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+표준 모드나 제한 모드를 사용하는 경우, 콘솔 에이전트가 소프트웨어 업데이트를 받기 위해 아웃바운드 인터넷 액세스가 가능한 한 NetApp 콘솔이 자동으로 콘솔 에이전트를 최신 릴리스로 업그레이드합니다.
+
+콘솔 에이전트가 업그레이드되는 시기를 수동으로 관리해야 하는 경우 표준 모드 또는 제한 모드에 대한 자동 업그레이드를 비활성화할 수 있습니다.
+
+
+
+== 자동 업그레이드 비활성화
+
+콘솔 에이전트의 자동 업그레이드를 비활성화하려면 두 단계가 필요합니다.  먼저 콘솔 에이전트가 정상적이고 최신 상태인지 확인해야 합니다.  그런 다음 구성 파일을 편집하여 자동 업그레이드를 끕니다.
+
+
+NOTE: 콘솔 에이전트 버전이 3.9.48 이상인 경우에만 자동 업그레이드를 비활성화할 수 있습니다.
+
+
+
+=== 귀하의 에이전트의 건강 상태를 확인하세요
+
+에이전트가 안정적이며 에이전트 VM에서 실행 중인 모든 컨테이너가 정상적이고 실행 중인지 확인해야 합니다.  자동 업그레이드를 비활성화하면 에이전트 VM이 새 서비스나 업그레이드 패키지를 확인하는 것을 중단합니다.
+
+다음 명령 중 하나를 사용하여 콘솔 에이전트를 확인하세요.  모든 서비스의 상태는 _실행중_이어야 합니다.  그렇지 않은 경우 자동 업그레이드를 비활성화하기 전에 NetApp 지원팀에 문의하세요.
+
+Docker(Ubuntu 및 VCenter 배포용)::
++
+--
+[source, cli]
+----
+docker ps -a
+----
+--
+포드만::
++
+--
+[source, cli]
+----
+podman ps -a
+----
+--
+
+
+
+
+=== 에이전트에 대한 자동 업그레이드 비활성화
+
+_com/opt/application/netapp/service-manager-2/config.json_ 파일에서 _isUpgradeDisabled_ 플래그를 설정하여 자동 업그레이드를 비활성화합니다.  기본적으로 이 플래그는 false로 설정되며 에이전트는 자동으로 업그레이드됩니다.  이 플래그를 true로 설정하면 자동 업그레이드를 비활성화할 수 있습니다.  이 단계를 완료하기 전에 JSON 구문에 익숙해야 합니다.
+
+자동 업그레이드를 다시 활성화하려면 다음 단계를 사용하고 _isUpgradeDisabled_ 플래그를 false로 설정하세요.
+
+.단계
+. 귀하의 에이전트가 최신 정보를 갖추고 건강한지 확인하세요.
+. 변경 사항을 되돌릴 수 있도록 _/opt/application/netapp/service-manager-2/config.json_ 파일의 백업 사본을 만드세요.
+. _/opt/application/netapp/service-manager-2/config.json_ 파일을 편집하고 _isUpgradeDisabled_ 플래그 값을 true로 변경합니다.
++
+[source, json]
+----
+  "isUpgradeDisabled": true,
+----
+. 파일을 저장하세요.
+. 다음 명령을 실행하여 서비스 관리자 2 서비스를 다시 시작합니다.
++
+[source, cli]
+----
+systemctl restart netapp-service-manager.service
+----
+. 다음 명령을 실행하고 에이전트 상태가 _active(running)_로 표시되는지 확인하세요.
++
+[source, cli]
+----
+systemctl status netapp-service-manager.service
+_
+----
+
+
+
+
+== 콘솔 에이전트 업그레이드
+
+업그레이드 프로세스 중에는 콘솔 에이전트를 다시 시작해야 하므로 업그레이드 중에는 NetApp 콘솔을 사용할 수 없습니다.
+
+.단계
+. 콘솔 에이전트 소프트웨어를 다운로드하세요. https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 지원 사이트"^] .
+. 설치 프로그램을 Linux 호스트에 복사합니다.
+. 스크립트를 실행할 수 있는 권한을 할당합니다.
++
+[source, cli]
+----
+chmod +x /path/NetApp-Console-Agent-Offline-<version>
+----
++
+여기서 <버전>은 다운로드한 콘솔 에이전트의 버전입니다.
+
+. 설치 스크립트를 실행합니다.
++
+[source, cli]
+----
+sudo /path/NetApp-Console-Agent-Offline-<version>
+----
++
+여기서 <버전>은 다운로드한 에이전트의 버전입니다.
+
+. 업그레이드가 완료되면 *관리 > 지원 > 에이전트*로 이동하여 에이전트 버전을 확인할 수 있습니다.
+

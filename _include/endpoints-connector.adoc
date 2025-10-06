@@ -1,0 +1,82 @@
+= 
+:allow-uri-read: 
+
+
+콘솔 에이전트에서 연락한 엔드포인트:: 콘솔 에이전트는 일상 업무를 위해 퍼블릭 클라우드 환경 내의 리소스와 프로세스를 관리하기 위해 다음 엔드포인트에 연결하기 위해 아웃바운드 인터넷 액세스가 필요합니다.
++
+--
+아래 나열된 엔드포인트는 모두 CNAME 항목입니다.
+
+--
+
+
+| AWS 서비스(amazonaws.com):
+
+* 클라우드포메이션
+* 탄력적 컴퓨팅 클라우드(EC2)
+* ID 및 액세스 관리(IAM)
+* 키 관리 서비스(KMS)
+* 보안 토큰 서비스(STS)
+* 간편 보관 서비스(S3)
+
+
+| AWS 리소스를 관리합니다.  엔드포인트는 AWS 지역에 따라 달라집니다. https://docs.aws.amazon.com/general/latest/gr/rande.html["자세한 내용은 AWS 설명서를 참조하세요."^]
+
+| \ https://management.azure.com \ https://login.microsoftonline.com \ https://blob.core.windows.net \ https://core.windows.net
+
+| Azure 공용 지역의 리소스를 관리합니다.
+
+| \ https://management.azure.microsoft.scloud \ https://login.microsoftonline.microsoft.scloud \ https://blob.core.microsoft.scloud \ https://core.microsoft.scloud
+
+| Azure IL6 지역의 리소스를 관리합니다.
+
+| \ https://management.usgovcloudapi.net \ https://login.microsoftonline.us \ https://blob.core.usgovcloudapi.net \ https://core.usgovcloudapi.net
+
+| Azure Government 지역의 리소스를 관리합니다.
+
+| \ https://management.chinacloudapi.cn \ https://login.chinacloudapi.cn \ https://blob.core.chinacloudapi.cn \ https://core.chinacloudapi.cn
+
+| Azure China 지역의 리소스를 관리합니다.
+
+| \ https://www.googleapis.com/compute/v1/ \ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \ https://www.googleapis.com/deploymentmanager/v2/projects
+
+| Google Cloud에서 리소스를 관리합니다.
+
+| \ https://mysupport.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보냅니다.  | \ https://signin.b2c.netapp.com | NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp 콘솔에 새로운 NSS 자격 증명을 추가합니다.
+
+| \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com | NetApp 콘솔 내에서 기능과 서비스를 제공합니다.
+
+a| \ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io a| 콘솔 에이전트 업그레이드를 위한 이미지를 얻습니다.
+
+* 새로운 에이전트를 배포할 때 유효성 검사를 통해 현재 엔드포인트에 대한 연결성을 테스트합니다.  당신이 사용하는 경우link:link:reference-networking-saas-console-previous.html["이전 종료점"] , 유효성 검사에 실패합니다.  이러한 실패를 방지하려면 유효성 검사를 건너뛰세요.
++
+이전 엔드포인트는 계속 지원되지만 NetApp 가능한 한 빨리 현재 엔드포인트에 맞게 방화벽 규칙을 업데이트할 것을 권장합니다. link:reference-networking-saas-console-previous.html#update-endpoint-list["엔드포인트 목록을 업데이트하는 방법을 알아보세요"] .
+
+* 방화벽의 현재 엔드포인트로 업데이트하면 기존 에이전트도 계속 작동합니다.
+
+
+^1^ NetApp 방화벽에서 옵션 1 엔드포인트를 허용하는 것이 더 안전하므로 이를 권장하고 옵션 2 엔드포인트는 허용하지 않습니다.  이러한 종료점에 대해 다음 사항을 참고하세요.
+
++ * 콘솔 에이전트의 3.9.47 릴리스부터 시스템은 옵션 1에 나열된 엔드포인트를 지원합니다.  이전 릴리스의 콘솔 에이전트는 이전 버전과의 호환성을 지원하지 않습니다.  * 콘솔 에이전트는 먼저 옵션 2에서 엔드포인트에 접속합니다.  해당 엔드포인트에 접근할 수 없는 경우 옵션 1의 엔드포인트에 자동으로 접속합니다.  * NetApp Backup and Recovery 또는 Ransomware Resilience와 함께 콘솔 에이전트를 사용하는 경우 시스템은 옵션 1 엔드포인트를 지원하지 않습니다.  옵션 2 엔드포인트를 허용하고 옵션 1을 허용하지 않습니다.
+
+| 콘솔 에이전트가 AWS Government 지역에 있는 경우: \https://*.blob.core.windows.net \ https://cloudmanagerinfraprod.azurecr.io
+
+| AWS Government 지역에 콘솔 에이전트가 설치된 경우 콘솔 에이전트 업그레이드를 위한 이미지를 가져옵니다.
+
+| 콘솔 에이전트가 Azure Government 지역에 있는 경우: \https://*.blob.core.windows.net \ https://occmclientinfragov.azurecr.us
+
+| Azure Government 지역에 콘솔 에이전트가 설치된 경우 콘솔 에이전트 업그레이드를 위한 이미지를 가져옵니다.
+
+a| 콘솔 에이전트가 상업 지역이나 주권 지역에 있는 경우 두 가지 엔드포인트 세트 중에서 선택할 수 있습니다.
+
+* 옵션 1 (권장) ^1^
++
+\ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io
+
+* 옵션 2
++
+\https://*.blob.core.windows.net \ https://cloudmanagerinfraprod.azurecr.io
+
+
+
+| 콘솔 에이전트가 상업 지역이나 주권 지역에 설치된 경우 콘솔 에이전트 업그레이드를 위한 이미지를 얻습니다.

@@ -1,0 +1,274 @@
+---
+sidebar: sidebar 
+permalink: reference-permissions-gcp.html 
+keywords: permissions, gcp, gcp permissions, bluexp 
+summary: 콘솔 에이전트에는 클라우드 공급자에서 작업을 수행하려면 권한이 필요합니다.  이러한 권한은 NetApp 에서 제공하는 정책에 포함되어 있습니다.  에이전트가 이러한 권한을 어떻게 사용하는지 이해해야 합니다. 
+---
+= 콘솔 에이전트에 대한 Google Cloud 권한
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 콘솔에는 Google Cloud에서 작업을 수행하려면 권한이 필요합니다.  이러한 권한은 NetApp 에서 제공하는 사용자 정의 역할에 포함되어 있습니다.  에이전트가 이러한 권한을 어떻게 사용하는지 이해해야 합니다.
+
+
+
+== 서비스 계정 권한
+
+아래에 표시된 사용자 지정 역할은 콘솔 에이전트가 Google Cloud 네트워크 내의 리소스와 프로세스를 관리하는 데 필요한 권한을 제공합니다.
+
+콘솔 에이전트 VM에 연결된 서비스 계정에 이 사용자 지정 역할을 적용해야 합니다.
+
+* link:task-install-connector-google-bluexp-gcloud.html#agent-permissions-google["표준 모드에 대한 Google Cloud 권한 설정"]
+* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["제한 모드에 대한 권한 설정"]
+
+
+이후 릴리스에서 새로운 권한이 추가되므로 역할이 최신 상태인지도 확인해야 합니다.  새로운 권한이 필요한 경우 릴리스 노트에 나열됩니다.
+
+[source, yaml]
+----
+title: NetApp Console agent
+description: Permissions for the service account associated with the Console agent instance.
+stage: GA
+includedPermissions:
+- iam.serviceAccounts.actAs
+- compute.regionBackendServices.create
+- compute.regionBackendServices.get
+- compute.regionBackendServices.list
+- compute.networks.updatePolicy
+- compute.backendServices.create
+- compute.addresses.list
+- compute.disks.create
+- compute.disks.createSnapshot
+- compute.disks.delete
+- compute.disks.get
+- compute.disks.list
+- compute.disks.setLabels
+- compute.disks.use
+- compute.firewalls.create
+- compute.firewalls.delete
+- compute.firewalls.get
+- compute.firewalls.list
+- compute.globalOperations.get
+- compute.images.get
+- compute.images.getFromFamily
+- compute.images.list
+- compute.images.useReadOnly
+- compute.instances.addAccessConfig
+- compute.instances.attachDisk
+- compute.instances.create
+- compute.instances.delete
+- compute.instances.detachDisk
+- compute.instances.get
+- compute.instances.getSerialPortOutput
+- compute.instances.list
+- compute.instances.setDeletionProtection
+- compute.instances.setLabels
+- compute.instances.setMachineType
+- compute.instances.setMetadata
+- compute.instances.setTags
+- compute.instances.start
+- compute.instances.stop
+- compute.instances.updateDisplayDevice
+- compute.instanceGroups.get
+- compute.addresses.get
+- compute.instances.updateNetworkInterface
+- compute.machineTypes.get
+- compute.networks.get
+- compute.networks.list
+- compute.projects.get
+- compute.regions.get
+- compute.regions.list
+- compute.snapshots.create
+- compute.snapshots.delete
+- compute.snapshots.get
+- compute.snapshots.list
+- compute.snapshots.setLabels
+- compute.subnetworks.get
+- compute.subnetworks.list
+- compute.subnetworks.use
+- compute.subnetworks.useExternalIp
+- compute.zoneOperations.get
+- compute.zones.get
+- compute.zones.list
+- compute.instances.setServiceAccount
+- deploymentmanager.compositeTypes.get
+- deploymentmanager.compositeTypes.list
+- deploymentmanager.deployments.create
+- deploymentmanager.deployments.delete
+- deploymentmanager.deployments.get
+- deploymentmanager.deployments.list
+- deploymentmanager.manifests.get
+- deploymentmanager.manifests.list
+- deploymentmanager.operations.get
+- deploymentmanager.operations.list
+- deploymentmanager.resources.get
+- deploymentmanager.resources.list
+- deploymentmanager.typeProviders.get
+- deploymentmanager.typeProviders.list
+- deploymentmanager.types.get
+- deploymentmanager.types.list
+- logging.logEntries.list
+- logging.privateLogEntries.list
+- resourcemanager.projects.get
+- storage.buckets.create
+- storage.buckets.delete
+- storage.buckets.get
+- storage.buckets.list
+- cloudkms.cryptoKeyVersions.useToEncrypt
+- cloudkms.cryptoKeys.get
+- cloudkms.cryptoKeys.list
+- cloudkms.keyRings.list
+- storage.buckets.update
+- iam.serviceAccounts.getIamPolicy
+- iam.serviceAccounts.list
+- storage.objects.get
+- storage.objects.list
+- monitoring.timeSeries.list
+- storage.buckets.getIamPolicy
+- cloudkms.cryptoKeys.getIamPolicy
+- cloudkms.cryptoKeys.setIamPolicy
+- cloudkms.keyRings.get
+- cloudkms.keyRings.getIamPolicy
+- cloudkms.keyRings.setIamPolicy
+----
+
+
+== Google Cloud 권한 사용 방법
+
+[cols="50,50"]
+|===
+| 행위 | 목적 
+
+
+| - compute.disks.create - compute.disks.createSnapshot - compute.disks.delete - compute.disks.get - compute.disks.list - compute.disks.setLabels - compute.disks.use | Cloud Volumes ONTAP 에 대한 디스크를 생성하고 관리합니다. 
+
+
+| - 컴퓨트 방화벽 생성 - 컴퓨트 방화벽 삭제 - 컴퓨트 방화벽 가져오기 - 컴퓨트 방화벽 목록 | Cloud Volumes ONTAP 에 대한 방화벽 규칙을 만듭니다. 
+
+
+| - 컴퓨트.글로벌운영.get | 작업 상태를 파악하려면 
+
+
+| - compute.images.get - compute.images.getFromFamily - compute.images.list - compute.images.useReadOnly | VM 인스턴스에 대한 이미지를 가져옵니다. 
+
+
+| - 컴퓨트 인스턴스.디스크 연결 - 컴퓨트 인스턴스.디스크 분리 | Cloud Volumes ONTAP 에 디스크를 연결하고 분리합니다. 
+
+
+| - 컴퓨팅.인스턴스.생성 - 컴퓨팅.인스턴스.삭제 | Cloud Volumes ONTAP VM 인스턴스를 생성하고 삭제합니다. 
+
+
+| - 컴퓨트.인스턴스.get | VM 인스턴스를 나열합니다. 
+
+
+| - compute.instances.getSerialPortOutput | 콘솔 로그를 얻으려면. 
+
+
+| - 컴퓨트.인스턴스.리스트 | 영역의 인스턴스 목록을 검색합니다. 
+
+
+| - compute.instances.setDeletionProtection | 인스턴스에 삭제 보호를 설정합니다. 
+
+
+| - 컴퓨트.인스턴스.세트레이블 | 라벨을 추가하려면. 
+
+
+| - compute.instances.setMachineType - compute.instances.setMinCpuPlatform | Cloud Volumes ONTAP 의 머신 유형을 변경하려면 
+
+
+| - 컴퓨트.인스턴스.메타데이터 설정 | 메타데이터를 추가합니다. 
+
+
+| - 컴퓨팅.인스턴스.태그 설정 | 방화벽 규칙에 대한 태그를 추가합니다. 
+
+
+| - compute.instances.start - compute.instances.stop - compute.instances.updateDisplayDevice | Cloud Volumes ONTAP 시작하고 중지합니다. 
+
+
+| - 컴퓨트.머신타입.get | 할당량을 확인하기 위해 코어의 개수를 얻습니다. 
+
+
+| - 컴퓨트.프로젝트.get | 다양한 프로젝트를 지원합니다. 
+
+
+| - 컴퓨트.스냅샷.생성 - 컴퓨트.스냅샷.삭제 - 컴퓨트.스냅샷.가져오기 - 컴퓨트.스냅샷.목록 - 컴퓨트.스냅샷.레이블 설정 | 영구 디스크 스냅샷을 만들고 관리합니다. 
+
+
+| - compute.networks.get - compute.networks.list - compute.regions.get - compute.regions.list - compute.subnetworks.get - compute.subnetworks.list - compute.zoneOperations.get - compute.zones.get - compute.zones.list | 새로운 Cloud Volumes ONTAP 가상 머신 인스턴스를 만드는 데 필요한 네트워킹 정보를 얻으세요. 
+
+
+| - deploymentmanager.compositeTypes.get - deploymentmanager.compositeTypes.list - deploymentmanager.deployments.create - deploymentmanager.deployments.delete - deploymentmanager.deployments.get - deploymentmanager.deployments.list - deploymentmanager.manifests.get - deploymentmanager.manifests.list - deploymentmanager.operations.get - deploymentmanager.operations.list - deploymentmanager.resources.get - deploymentmanager.resources.list - deploymentmanager.typeProviders.get - deploymentmanager.typeProviders.list - deploymentmanager.types.get - deploymentmanager.types.list | Google Cloud Deployment Manager를 사용하여 Cloud Volumes ONTAP 가상 머신 인스턴스를 배포합니다. 
+
+
+| - 로깅.로그항목.목록 - 로깅.개인로그항목.목록 | 스택 로그 드라이브를 얻으려면. 
+
+
+| - resourcemanager.projects.get | 다양한 프로젝트를 지원합니다. 
+
+
+| - storage.buckets.create - storage.buckets.delete - storage.buckets.get - storage.buckets.list - storage.buckets.update | 데이터 계층화를 위해 Google Cloud Storage 버킷을 만들고 관리합니다. 
+
+
+| - cloudkms.cryptoKeyVersions.useToEncrypt - cloudkms.cryptoKeys.get - cloudkms.cryptoKeys.list - cloudkms.keyRings.list | Cloud Volumes ONTAP 과 함께 Cloud Key Management Service의 고객 관리 암호화 키를 사용합니다. 
+
+
+| - compute.instances.setServiceAccount - iam.serviceAccounts.actAs - iam.serviceAccounts.getIamPolicy - iam.serviceAccounts.list - storage.objects.get - storage.objects.list | Cloud Volumes ONTAP 인스턴스에 서비스 계정을 설정하려면  이 서비스 계정은 Google Cloud Storage 버킷에 대한 데이터 계층화 권한을 제공합니다. 
+
+
+| - 주소 목록을 계산합니다. | HA 쌍을 배포할 때 지역의 주소를 검색합니다. 
+
+
+| - compute.backendServices.create - compute.regionBackendServices.create - compute.regionBackendServices.get - compute.regionBackendServices.list | HA 쌍에서 트래픽을 분산하기 위한 백엔드 서비스를 구성합니다. 
+
+
+| - 컴퓨팅.네트워크.업데이트 정책 | HA 쌍의 VPC와 서브넷에 방화벽 규칙을 적용합니다. 
+
+
+| - compute.subnetworks.use - compute.subnetworks.useExternalIp - compute.instances.addAccessConfig | NetApp 데이터 분류를 활성화합니다. 
+
+
+| - compute.instanceGroups.get - compute.addresses.get - compute.instances.updateNetworkInterface | Cloud Volumes ONTAP HA 쌍에서 스토리지 VM을 생성하고 관리합니다. 
+
+
+| - monitoring.timeSeries.list - storage.buckets.getIamPolicy | Google Cloud Storage 버킷에 대한 정보를 알아보세요. 
+
+
+| - cloudkms.cryptoKeys.get - cloudkms.cryptoKeys.getIamPolicy - cloudkms.cryptoKeys.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.keyRings.get - cloudkms.keyRings.getIamPolicy - cloudkms.keyRings.list - cloudkms.keyRings.setIamPolicy | 기본 Google 관리 암호화 키를 사용하는 대신 NetApp 백업 및 복구 활성화 마법사에서 고객이 관리하는 키를 직접 선택합니다. 
+|===
+
+
+== 변경 로그
+
+권한이 추가되거나 제거되면 아래 섹션에 기록됩니다.
+
+
+
+=== 2023년 2월 06일
+
+이 정책에 다음 권한이 추가되었습니다.
+
+* 컴퓨팅.인스턴스.네트워크인터페이스 업데이트
+
+
+이 권한은 Cloud Volumes ONTAP 에 필요합니다.
+
+
+
+=== 2023년 1월 27일
+
+정책에 다음 권한이 추가되었습니다.
+
+* cloudkms.cryptoKeys.getIamPolicy
+* cloudkms.cryptoKeys.setIamPolicy
+* cloudkms.keyRings.get
+* cloudkms.keyRings.getIamPolicy
+* cloudkms.keyRings.setIamPolicy
+
+
+이러한 권한은 NetApp 백업 및 복구에 필요합니다.

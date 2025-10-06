@@ -1,0 +1,51 @@
+---
+sidebar: sidebar 
+permalink: task-iam-associate-connectors.html 
+keywords: agent, associate agent, folder, project, associate folder with connector, associate project with connector, associate connector with project, associate connector with resource, connector, associate connector, 
+summary: 조직의 구성원이 다른 프로젝트에서 콘솔 에이전트를 사용해야 하는 경우 해당 콘솔 에이전트를 해당 프로젝트와 연결해야 합니다. 
+---
+= 콘솔 에이전트를 다른 폴더 및 프로젝트와 연결합니다.
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+_조직 관리자_가 콘솔 에이전트를 생성하면 콘솔 에이전트는 조직 내에서 현재 선택된 프로젝트와 자동으로 연결됩니다.  _조직 관리자_ 역할을 가진 사람은 조직 내 어디에서나 해당 콘솔 에이전트에 액세스할 수 있습니다.  조직의 다른 구성원은 해당 콘솔 에이전트를 다른 프로젝트와 연결하지 않는 한, 해당 콘솔 에이전트가 생성된 프로젝트의 콘솔 에이전트에만 액세스할 수 있습니다.
+
+.시작하기 전에
+콘솔 에이전트 연결이 어떻게 작동하는지 검토하세요. link:concept-identity-and-access-management.html#associate-agents["Identity and Access를 사용하여 콘솔 에이전트 사용에 대해 알아보세요."] .
+
+.이 작업에 관하여
+_폴더 또는 프로젝트 관리자_는 *에이전트* 페이지에서 모든 콘솔 에이전트를 볼 수 있지만, 콘솔 에이전트를 해당 권한이 있는 폴더 및 프로젝트에만 연결할 수 있습니다. link:reference-iam-predefined-roles.html["_폴더 또는 프로젝트 관리자_가 완료할 수 있는 작업에 대해 자세히 알아보세요."] .
+
+.단계
+. *관리 > ID 및 액세스* > *에이전트*를 선택합니다.
+. 표에서 연결하려는 콘솔 에이전트를 찾으세요.
++
+표 위의 검색을 사용하여 특정 콘솔 에이전트를 찾거나 리소스 계층 구조로 표를 필터링하세요.
+
+. 콘솔 에이전트에 연결된 폴더와 프로젝트를 보려면 다음을 선택하세요.image:icon-action.png["세 개의 점 아이콘"] 그런 다음 *세부정보 보기*를 선택하세요.
++
+이 페이지에는 콘솔 에이전트와 관련된 폴더와 프로젝트에 대한 세부 정보가 표시됩니다.
+
+. *폴더 또는 프로젝트에 연결*을 선택합니다.
+. 폴더나 프로젝트를 선택한 다음 *수락*을 선택하세요.
+. 콘솔 에이전트를 추가 폴더나 프로젝트와 연결하려면 *폴더 또는 프로젝트 추가*를 선택한 다음 폴더나 프로젝트를 선택합니다.
+. *협력사 에이전트*를 선택하세요.
+
+
+.당신이 완료한 후
+*리소스* 페이지에서 콘솔 에이전트의 리소스를 동일한 폴더 및 프로젝트와 연결합니다.
+
+link:task-iam-manage-resources.html#associate-resource["리소스를 폴더 및 프로젝트와 연결하는 방법을 알아보세요."] .
+
+.관련 정보
+* link:concept-connectors.html["NetApp 콘솔 에이전트에 대해 알아보세요"]
+* link:concept-identity-and-access-management.html["NetApp 콘솔 ID 및 액세스 관리에 대해 알아보세요"]
+* link:task-iam-get-started.html["ID 및 액세스 시작하기"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["ID 및 액세스 관리를 위한 API에 대해 알아보세요"^]
+

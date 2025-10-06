@@ -1,0 +1,76 @@
+---
+sidebar: sidebar 
+permalink: task-logging-in.html 
+keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp, sign up, create account 
+summary: NetApp 콘솔에 로그인하는 방법은 사용하는 배포 모드에 따라 달라집니다. 
+---
+= NetApp 콘솔에 로그인하세요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 콘솔에 로그인하는 방법은 사용하는 배포 모드에 따라 달라집니다.
+
+24시간이 지나거나 브라우저를 닫으면 자동으로 로그아웃됩니다.
+
+link:concept-modes.html["콘솔 배포 모드에 대해 알아보세요"] .
+
+[role="tabbed-block"]
+====
+.표준 모드
+--
+NetApp 콘솔에 가입한 후 웹 기반 콘솔에서 로그인하여 데이터 및 스토리지 인프라 관리를 시작할 수 있습니다.
+
+.이 작업에 관하여
+다음 옵션 중 하나를 사용하여 NetApp 콘솔에 로그인할 수 있습니다.
+
+* 기존 NetApp 지원 사이트(NSS) 자격 증명
+* 이메일 주소와 비밀번호를 사용하는 NetApp 콘솔 계정
+* 연합 연결
++
+단일 로그인을 사용하면 회사 디렉토리의 자격 증명(연방 ID)을 사용하여 로그인할 수 있습니다. link:concept-federation.html["ID 연합을 설정하는 방법을 알아보세요"] .
+
+
+
+.단계
+. 웹 브라우저를 열고 이동하세요 https://console.netapp.com["NetApp 콘솔"]
+. *로그인* 페이지에서 로그인에 사용된 이메일 주소를 입력하세요.
+. 로그인과 관련된 인증 방법에 따라 자격 증명을 입력하라는 메시지가 표시됩니다.
++
+** NetApp 클라우드 자격 증명: 비밀번호를 입력하세요
+** 연합 사용자: 연합 ID 자격 증명을 입력하세요.
+** NetApp 지원 사이트 계정: NetApp 지원 사이트 자격 증명을 입력하세요.
+
+
+
+
+.결과
+이제 로그인하여 하이브리드 멀티클라우드 인프라를 관리할 수 있습니다.
+
+--
+.제한 모드
+--
+제한 모드에서 콘솔을 사용하는 경우 에이전트에서 로컬로 실행되는 사용자 인터페이스에서 콘솔에 로그인해야 합니다.
+
+.이 작업에 관하여
+제한 모드에서는 콘솔에서 다음 옵션 중 하나를 사용하여 로그인할 수 있습니다.
+
+* 이메일 주소와 비밀번호를 사용하여 NetApp 콘솔에 로그인합니다.
+* 연합 연결
++
+단일 로그인을 사용하면 회사 디렉토리의 자격 증명(연방 ID)을 사용하여 로그인할 수 있습니다. link:concept-federation.html["ID 페더레이션을 사용하는 방법을 알아보세요"] .
+
+
+
+.단계
+. 웹 브라우저를 열고 에이전트가 설치된 IP 주소를 입력하세요.
+. 사용자 이름과 비밀번호를 입력하여 로그인하세요.
+
+
+--
+====

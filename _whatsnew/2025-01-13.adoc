@@ -1,0 +1,33 @@
+= 커넥터 3.9.48
+:allow-uri-read: 
+
+
+
+
+=== 커넥터 3.9.48
+
+BlueXP 커넥터의 이번 릴리스에는 사소한 보안 개선 사항과 버그 수정이 포함되어 있습니다.
+
+현재 3.9.48 릴리스는 표준 모드와 제한 모드에서 사용할 수 있습니다.
+
+
+
+=== BlueXP ID 및 액세스 관리
+
+* 리소스 페이지에는 이제 발견되지 않은 리소스가 표시됩니다.  발견되지 않은 리소스는 BlueXP 알고 있지만 작업 환경을 만들지 않은 저장 리소스입니다.  예를 들어, Digital Advisor에 표시되는 리소스 중 아직 작업 환경이 없는 리소스는 리소스 페이지에 발견되지 않은 리소스로 표시됩니다.
+* Amazon FSx for NetApp ONTAP 리소스는 IAM 역할과 연결할 수 없으므로 IAM 리소스 페이지에 표시되지 않습니다.  이러한 리소스는 각각의 캔버스나 워크로드에서 볼 수 있습니다.
+
+
+
+
+=== 추가 BlueXP 서비스에 대한 지원 사례 만들기
+
+BlueXP 에 지원을 등록한 후 BlueXP 웹 기반 콘솔에서 직접 지원 사례를 생성할 수 있습니다.  사례를 생성할 때 해당 문제와 관련된 서비스를 선택해야 합니다.
+
+이 릴리스부터 지원 사례를 만들고 이를 추가 BlueXP 서비스와 연결할 수 있습니다.
+
+* BlueXP disaster recovery
+* BlueXP ransomware protection
+
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html["지원 사례 생성에 대해 자세히 알아보세요"] .

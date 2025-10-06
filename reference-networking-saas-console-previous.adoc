@@ -1,0 +1,227 @@
+---
+sidebar: sidebar 
+permalink: reference-networking-saas-console-previous.html 
+keywords: networking, urls, endpoints, web browser, console, network, set up networking, bluexp 
+summary: 로그인하여 웹 기반 콘솔을 사용하면 여러 엔드포인트에 연결하여 사용자가 시작한 작업을 완료합니다.  NetApp 콘솔에 액세스하는 컴퓨터는 이러한 엔드포인트에 연결되어 있어야 합니다. 
+---
+= 3.9.55 이하에 필요한 네트워크 액세스 포인트
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+이 항목에서는 NetApp 콘솔 4.0.0 릴리스 이전 버전의 NetApp 콘솔 표준 모드, NetApp 콘솔 에이전트, NetApp 데이터 서비스 아웃바운드 인터넷 액세스에 필요한 네트워크 액세스와 필요한 엔드포인트에 연락하는 기능에 대해 자세히 설명합니다.  콘솔과 설치한 모든 에이전트가 속성을 작동시키려면 올바른 네트워크 액세스 권한이 있는지 확인해야 합니다.
+
+SaaS(Software as a Service)로 NetApp 콘솔에 액세스하는 컴퓨터와 온프레미스 또는 클라우드에 설치하는 모든 콘솔 에이전트에 대한 네트워크 액세스를 설정해야 합니다.  Cloud Volumes ONTAP 포함하여 특정 NetApp 데이터 서비스에 대한 추가 엔드포인트가 필요할 수도 있습니다.
+
+
+
+== 4.0.0 이상에 대한 개정된 목록으로 엔드포인트 목록을 업데이트하세요.
+
+버전 4.0.0부터 콘솔 에이전트에 필요한 엔드포인트 수가 줄었습니다.  4.0.0 이전의 기존 배포는 계속 지원됩니다.  4.0.0 이상으로 업그레이드한 후, 편리한 시기에 허용 목록에서 이전 엔드포인트를 제거할 수 있습니다.
+
+NetApp 개정된 엔드포인트 목록을 사용하도록 방화벽 규칙을 업데이트할 것을 권장합니다.  개정된 목록은 더 작아서 보안이 강화되고 관리가 더 쉬워졌습니다.
+
+검토link:reference-networking-saas-console.html["4.0.0 이상에서 지원되는 엔드포인트"]
+
+.단계
+. 엔드포인트를 허용 목록에 추가link:reference-networking-saas-console.html["4.0.0 이상에서 지원되는 엔드포인트"] .
+. 다음 명령을 실행하여 각 에이전트에서 서비스 관리자 2 서비스를 다시 시작합니다.
++
+[source, cli]
+----
+systemctl restart netapp-service-manager.service
+----
+. 다음 명령을 실행하고 에이전트 상태가 _active(running)_로 표시되는지 확인하세요.
++
+[source, cli]
+----
+systemctl status netapp-service-manager.service
+----
+. 허용 목록에서 이전 엔드포인트를 제거합니다.
+
+
+
+
+== NetApp 콘솔에서 연결된 엔드포인트
+
+NetApp 콘솔에 액세스하는 각 컴퓨터는 아래 나열된 엔드포인트에 연결되어 있어야 합니다.
+
+시스템은 두 가지 시나리오에서 이러한 엔드포인트에 접속합니다.
+
+* 컴퓨터에서 액세스하는 https://console.netapp.com["NetApp 콘솔"^] 서비스형 소프트웨어(SaaS)로서.
+* 에이전트 호스트에 직접 액세스하는 컴퓨터에서 로그인하여 설정하거나 에이전트 호스트에서 콘솔에 액세스합니다.
+
+
+[cols="2*"]
+|===
+| 엔드포인트 | 목적 
+
+
+| \ https://support.netapp.com \ https://mysupport.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보냅니다. 
+
+
+| \https://\*.api.bluexp.netapp.com \ https://api.bluexp.netapp.com \https://*.cloudmanager.cloud.netapp.com \ https://cloudmanager.cloud.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com | NetApp 콘솔 내에서 기능과 서비스를 제공합니다. 
+
+
+ a| 
+두 가지 엔드포인트 세트 중에서 선택하세요.
+
+* 옵션 1(권장)
++
+\ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io
+
+* 옵션 2
++
+\https://*.blob.core.windows.net \ https://cloudmanagerinfraprod.azurecr.io
+
+
+ a| 
+콘솔 에이전트 업그레이드를 위한 이미지를 얻으려면.
+
+NetApp 랜섬웨어 복원력이나 백업 및 복구를 사용하지 않는 한, 보안이 더 뛰어난 옵션 1 엔드포인트를 방화벽에서 허용하고 옵션 2 엔드포인트는 허용하지 않을 것을 권장합니다.  이러한 종료점에 대해 다음 사항을 참고하세요.
+
+* 옵션 1 엔드포인트는 3.9.47 이상에서 지원됩니다.  3.9.47 이전 릴리스에서는 이전 버전과의 호환성이 지원되지 않습니다.
+* 콘솔 에이전트는 먼저 옵션 2의 엔드포인트와 접촉을 시작합니다.  해당 엔드포인트에 접근할 수 없는 경우 옵션 1의 엔드포인트에 자동으로 접속합니다.
+* NetApp Backup and Recovery 또는 Ransomware Resilience와 함께 콘솔 에이전트를 사용하는 경우 시스템은 옵션 1 엔드포인트를 지원하지 않습니다.  옵션 2 엔드포인트를 허용하고 옵션 1을 허용하지 않습니다.
+
+
+|===
+
+
+== 콘솔 에이전트가 접촉한 엔드포인트
+
+온프레미스 또는 클라우드에 콘솔 에이전트를 설치하면 에이전트가 엔드포인트에 연결하여 콘솔에서 시작된 작업을 완료합니다.
+
+콘솔 에이전트는 NetApp 콘솔과 동일한 엔드포인트에 액세스해야 하며, 클라우드 공급자에 에이전트를 배포하는 경우 추가 엔드포인트에 액세스해야 합니다.
+
+
+
+=== AWS용 에이전트 엔드포인트
+
+이러한 엔드포인트는 4.0.0 이전의 콘솔 에이전트에 적용됩니다.
+
+[cols="2*"]
+|===
+| 엔드포인트 | 목적 
+
+
+| AWS 서비스(amazonaws.com): CloudFormation Elastic Compute Cloud(EC2) Identity and Access Management(IAM) Key Management Service(KMS) Security Token Service(STS) Simple Storage Service(S3) | AWS에서 리소스를 관리합니다.  정확한 엔드포인트는 사용 중인 AWS 지역에 따라 달라집니다.  자세한 내용은 AWS 설명서를 참조하세요. 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보내세요. 
+
+
+| \ https://support.netapp.com \ https://mysupport.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보냅니다. 
+
+
+ a| 
+두 가지 엔드포인트 세트 중에서 선택하세요.
+
+* 옵션 1(권장)
++
+\ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io
+
+* 옵션 2
++
+\https://*.blob.core.windows.net \ https://cloudmanagerinfraprod.azurecr.io
+
+
+ a| 
+콘솔 에이전트 업그레이드를 위한 이미지를 얻으려면.
+
+NetApp 랜섬웨어 복원력이나 백업 및 복구를 사용하지 않는 한, 보안이 더 뛰어난 옵션 1 엔드포인트를 방화벽에서 허용하고 옵션 2 엔드포인트는 허용하지 않을 것을 권장합니다.  이러한 종료점에 대해 다음 사항을 참고하세요.
+
+* 옵션 1 엔드포인트는 3.9.47 이상에서 지원됩니다.  3.9.47 이전 릴리스에서는 이전 버전과의 호환성이 지원되지 않습니다.
+* 콘솔 에이전트는 먼저 옵션 2의 엔드포인트와 접촉을 시작합니다.  해당 엔드포인트에 접근할 수 없는 경우 옵션 1의 엔드포인트에 자동으로 접속합니다.
+* NetApp Backup and Recovery 또는 Ransomware Resilience와 함께 콘솔 에이전트를 사용하는 경우 시스템은 옵션 1 엔드포인트를 지원하지 않습니다.  옵션 2 엔드포인트를 허용하고 옵션 1을 허용하지 않습니다.
+
+
+|===
+
+
+=== Azure용 에이전트 엔드포인트
+
+이러한 엔드포인트는 4.0.0 이전의 콘솔 에이전트에 적용됩니다.
+
+[cols="2*"]
+|===
+| 엔드포인트 | 목적 
+
+
+| \ https://management.azure.com \ https://login.microsoftonline.com \ https://blob.core.windows.net \ https://core.windows.net | Azure 공용 지역의 리소스를 관리합니다. 
+
+
+| \ https://management.chinacloudapi.cn \ https://login.chinacloudapi.cn \ https://blob.core.chinacloudapi.cn \ https://core.chinacloudapi.cn | Azure China 지역의 리소스를 관리합니다. 
+
+
+| \ https://support.netapp.com \ https://mysupport.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보냅니다. 
+
+
+ a| 
+두 가지 엔드포인트 세트 중에서 선택하세요.
+
+* 옵션 1(권장)
++
+\ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io
+
+* 옵션 2
++
+\https://*.blob.core.windows.net \ https://cloudmanagerinfraprod.azurecr.io
+
+
+ a| 
+콘솔 에이전트 업그레이드를 위한 이미지를 얻으려면.
+
+NetApp 랜섬웨어 복원력이나 백업 및 복구를 사용하지 않는 한, 보안이 더 뛰어난 옵션 1 엔드포인트를 방화벽에서 허용하고 옵션 2 엔드포인트는 허용하지 않을 것을 권장합니다.  이러한 종료점에 대해 다음 사항을 참고하세요.
+
+* 옵션 1 엔드포인트는 3.9.47 이상에서 지원됩니다.  3.9.47 이전 릴리스에서는 이전 버전과의 호환성이 지원되지 않습니다.
+* 콘솔 에이전트는 먼저 옵션 2의 엔드포인트와 접촉을 시작합니다.  해당 엔드포인트에 접근할 수 없는 경우 옵션 1의 엔드포인트에 자동으로 접속합니다.
+* NetApp Backup and Recovery 또는 Ransomware Resilience와 함께 콘솔 에이전트를 사용하는 경우 시스템은 옵션 1 엔드포인트를 지원하지 않습니다.  옵션 2 엔드포인트를 허용하고 옵션 1을 허용하지 않습니다.
+
+
+|===
+
+
+=== Google Cloud용 에이전트 엔드포인트
+
+이러한 엔드포인트는 4.0.0 이전의 콘솔 에이전트에 적용됩니다.
+
+[cols="2*"]
+|===
+| 엔드포인트 | 목적 
+
+
+| \ https://www.googleapis.com/compute/v1/ \ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \ https://www.googleapis.com/deploymentmanager/v2/project | Google Cloud에서 리소스를 관리합니다. 
+
+
+| \ https://support.netapp.com \ https://mysupport.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보냅니다. 
+
+
+ a| 
+두 가지 엔드포인트 세트 중에서 선택하세요.
+
+* 옵션 1(권장)
++
+\ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io
+
+* 옵션 2
++
+\https://*.blob.core.windows.net \ https://cloudmanagerinfraprod.azurecr.io
+
+
+ a| 
+콘솔 에이전트 업그레이드를 위한 이미지를 얻으려면.
+
+NetApp 방화벽에서 옵션 1 엔드포인트를 허용하는 것이 더 안전하므로 이를 권장하고 옵션 2 엔드포인트는 허용하지 않습니다.  이러한 종료점에 대해 다음 사항을 참고하세요.
+
+* 콘솔 에이전트의 3.9.47 릴리스부터 시스템은 옵션 1에 나열된 엔드포인트를 지원합니다.  이전 릴리스의 콘솔 에이전트는 이전 버전과의 호환성을 지원하지 않습니다.
+* 콘솔 에이전트는 먼저 옵션 2에서 엔드포인트에 접속합니다.  해당 엔드포인트에 접근할 수 없는 경우 옵션 1의 엔드포인트에 자동으로 접속합니다.
+* NetApp Backup and Recovery 또는 Ransomware Resilience와 함께 콘솔 에이전트를 사용하는 경우 시스템은 옵션 1 엔드포인트를 지원하지 않습니다.  옵션 2 엔드포인트를 허용하고 옵션 1을 허용하지 않습니다.
+
+
+|===
+
+
+== 온프레미스 에이전트 엔드포인트

@@ -1,0 +1,120 @@
+---
+sidebar: sidebar 
+permalink: concept-accounts-azure.html 
+keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials, marketplace subscription, replace subscription, subscription, bluexp 
+summary: NetApp 콘솔이 Azure 자격 증명을 사용하여 사용자를 대신하여 작업을 수행하는 방법과 해당 자격 증명이 마켓플레이스 구독과 연결되는 방식을 알아보세요.  이러한 세부 정보를 이해하면 하나 이상의 Azure 구독에 대한 자격 증명을 관리할 때 도움이 될 수 있습니다.  예를 들어, 콘솔에 추가 Azure 자격 증명을 추가하는 시기를 알아보고 싶을 수 있습니다. 
+---
+= NetApp 콘솔에서 Azure 자격 증명 및 권한에 대해 알아보세요.
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 콘솔이 Azure 자격 증명을 사용하여 사용자를 대신하여 작업을 수행하는 방법과 해당 자격 증명이 마켓플레이스 구독과 연결되는 방식을 알아보세요.  이러한 세부 정보를 이해하면 하나 이상의 Azure 구독에 대한 자격 증명을 관리할 때 도움이 될 수 있습니다.  예를 들어, 콘솔에 추가 Azure 자격 증명을 추가하는 시기를 알아보고 싶을 수 있습니다.
+
+
+
+== 초기 Azure 자격 증명
+
+콘솔에서 콘솔 에이전트를 배포하는 경우 콘솔 에이전트 가상 머신을 배포할 수 있는 권한이 있는 Azure 계정이나 서비스 주체를 사용해야 합니다.  필요한 권한은 다음에 나열되어 있습니다.link:task-install-connector-azure-bluexp.html#connector-custom-role["Azure에 대한 에이전트 배포 정책"] .
+
+콘솔이 Azure에 콘솔 에이전트 가상 머신을 배포하면 다음을 활성화할 수 있습니다. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["시스템 할당 관리 ID"^] 가상 머신에서 사용자 지정 역할을 만들고 이를 가상 머신에 할당합니다.  이 역할은 Azure 구독 내에서 리소스와 프로세스를 관리하는 데 필요한 권한을 콘솔에 제공합니다. link:reference-permissions-azure.html["콘솔이 권한을 사용하는 방식을 검토하세요."] .
+
+image:diagram_permissions_initial_azure.png["Azure 계정 및 구독에 콘솔 에이전트를 배포하는 콘솔을 보여주는 개념적 이미지입니다.  시스템에서 할당한 관리 ID가 활성화되고 사용자 지정 역할이 콘솔 에이전트 가상 머신에 할당됩니다."]
+
+Cloud Volumes ONTAP 에 대한 새 시스템을 만드는 경우 콘솔은 기본적으로 다음 Azure 자격 증명을 선택합니다.
+
+image:screenshot_accounts_select_azure.gif["세부 정보 및 자격 증명 페이지에서 계정 전환 옵션을 보여주는 스크린샷입니다."]
+
+초기 Azure 자격 증명을 사용하여 모든 Cloud Volumes ONTAP 시스템을 배포하거나 추가 자격 증명을 추가할 수 있습니다.
+
+
+
+== 관리 ID에 대한 추가 Azure 구독
+
+콘솔 에이전트 VM에 할당된 시스템 할당 관리 ID는 콘솔 에이전트를 시작한 구독과 연결됩니다.  다른 Azure 구독을 선택하려면 다음을 수행해야 합니다.link:task-adding-azure-accounts.html#associate-additional-azure-subscriptions-with-a-managed-identity["관리되는 ID를 해당 구독과 연결합니다."] .
+
+
+
+== 추가 Azure 자격 증명
+
+콘솔에서 다른 Azure 자격 증명을 사용하려면 다음을 통해 필요한 권한을 부여해야 합니다.link:task-adding-azure-accounts.html["Microsoft Entra ID에서 서비스 주체 만들기 및 설정"] 각 Azure 계정에 대해.  다음 이미지는 서비스 주체와 권한을 제공하는 사용자 지정 역할이 설정된 두 개의 추가 계정을 보여줍니다.
+
+image:diagram_permissions_multiple_azure.png["사용자 지정 역할과 관리 ID를 통해 권한을 받는 초기 Azure 계정과 사용자 지정 역할과 서비스 주체를 통해 권한을 받는 두 개의 추가 계정을 보여주는 개념적 이미지입니다."]
+
+그러면 당신은link:task-adding-azure-accounts.html#add-credentials-azure["콘솔에 계정 자격 증명을 추가합니다."] AD 서비스 주체에 대한 세부 정보를 제공합니다.
+
+예를 들어, 새로운 Cloud Volumes ONTAP 시스템을 생성할 때 자격 증명 간에 전환할 수 있습니다.
+
+image:screenshot_accounts_switch_azure.gif["세부 정보 및 자격 증명 페이지에서 계정 전환을 선택한 후 클라우드 공급자 계정 간에 선택하는 모습을 보여주는 스크린샷입니다."]
+
+
+
+== 자격 증명 및 마켓플레이스 구독
+
+콘솔 에이전트에 추가하는 자격 증명은 Azure Marketplace 구독과 연결되어야 합니다. 이렇게 하면 시간당 요금(PAYGO)으로 Cloud Volumes ONTAP 에 대한 비용을 지불하거나 NetApp 데이터 서비스 또는 연간 계약을 통해 비용을 지불할 수 있습니다.
+
+link:task-adding-azure-accounts.html#subscribe["Azure 구독을 연결하는 방법 알아보기"] .
+
+Azure 자격 증명 및 Marketplace 구독에 대해 다음 사항을 참고하세요.
+
+* Azure 자격 증명 세트에는 하나의 Azure Marketplace 구독만 연결할 수 있습니다.
+* 기존 마켓플레이스 구독을 새 구독으로 교체할 수 있습니다.
+
+
+
+
+== 자주 묻는 질문
+
+다음 질문은 자격 증명 및 구독과 관련이 있습니다.
+
+
+
+=== Cloud Volumes ONTAP 시스템의 Azure Marketplace 구독을 변경할 수 있나요?
+
+네, 가능합니다.  Azure 자격 증명 세트와 연결된 Azure Marketplace 구독을 변경하면 모든 기존 및 새 Cloud Volumes ONTAP 시스템에 새 구독 요금이 청구됩니다.
+
+link:task-adding-azure-accounts.html#subscribe["Azure 구독을 연결하는 방법 알아보기"] .
+
+
+
+=== 각각 다른 Marketplace 구독을 사용하여 여러 Azure 자격 증명을 추가할 수 있나요?
+
+동일한 Azure 구독에 속하는 모든 Azure 자격 증명은 동일한 Azure Marketplace 구독과 연결됩니다.
+
+서로 다른 Azure 구독에 속하는 여러 Azure 자격 증명이 있는 경우 해당 자격 증명을 동일한 Azure Marketplace 구독이나 다른 Marketplace 구독과 연결할 수 있습니다.
+
+
+
+=== 기존 Cloud Volumes ONTAP 시스템을 다른 Azure 구독으로 옮길 수 있나요?
+
+아니요, Cloud Volumes ONTAP 시스템과 연결된 Azure 리소스를 다른 Azure 구독으로 이동하는 것은 불가능합니다.
+
+
+
+=== 마켓플레이스 배포와 온프레미스 배포에서 자격 증명은 어떻게 작동합니까?
+
+위 섹션에서는 콘솔에서 콘솔 에이전트를 배포하는 데 권장되는 방법을 설명합니다.  Azure Marketplace에서 Azure에 콘솔 에이전트를 배포할 수도 있고, 자체 Linux 호스트에 콘솔 에이전트 소프트웨어를 설치할 수도 있습니다.
+
+Marketplace를 사용하는 경우 콘솔 에이전트 VM과 시스템에서 할당한 관리 ID에 사용자 지정 역할을 할당하여 권한을 제공하거나 Microsoft Entra 서비스 주체를 사용할 수 있습니다.
+
+온프레미스 배포의 경우 콘솔 에이전트에 대한 관리 ID를 설정할 수 없지만 서비스 주체를 사용하여 권한을 제공할 수 있습니다.
+
+권한을 설정하는 방법을 알아보려면 다음 페이지를 참조하세요.
+
+* 표준 모드
++
+** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Azure Marketplace 배포에 대한 권한 설정"]
+** link:task-install-connector-on-prem.html#agent-permission-aws-azure["온프레미스 배포에 대한 권한 설정"]
+
+
+* 제한 모드
++
+** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["제한 모드에 대한 권한 설정"]
+
+
+

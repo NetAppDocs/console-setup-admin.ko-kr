@@ -1,0 +1,131 @@
+---
+sidebar: sidebar 
+permalink: task-quick-start-private-mode.html 
+keywords: private mode quick start, quick start, aws top secret cloud, aws secret cloud, secret cloud, top secret cloud, bluexp legacy, bluexp 
+summary: '개인 모드는 일반적으로 인터넷 연결이 없는 온프레미스 환경과 AWS Secret Cloud, AWS Top Secret Cloud, Azure IL6를 포함한 보안 클라우드 지역에서 사용됩니다.  NetApp 콘솔에서는 아직 개인 모드를 사용할 수 없습니다.  NetApp BlueXP 레거시 인터페이스를 통해 이러한 환경을 계속 지원합니다. 링크:<PDF에 대한 문서 링크>' 
+---
+= 시작하기 워크플로(BlueXP 개인 모드)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP 개인 모드(레거시 BlueXP 인터페이스)는 일반적으로 인터넷 연결이 없고 AWS Secret Cloud, AWS Top Secret Cloud, Azure IL6를 포함하는 보안 클라우드 지역이 있는 온프레미스 환경에서 사용됩니다.  NetApp 기존 BlueXP 인터페이스를 통해 이러한 환경을 계속 지원합니다.
+
+link:media/BlueXP-Private-Mode-legacy-interface.pdf["BlueXP 개인 모드에 대한 PDF 문서"^]
+
+
+
+== 개인 모드에서 지원되는 기능 및 데이터 서비스
+
+다음 표는 어떤 BlueXP 서비스와 기능이 개인 모드에서 지원되는지 빠르게 식별하는 데 도움이 됩니다.
+
+일부 서비스는 제한적으로 지원될 수 있습니다.
+
+[cols="19,27,27"]
+|===
+| 제품 영역 | BlueXP 서비스 또는 기능 | 개인 모드 
+
+
+.10+| *작업 환경* 이 표의 일부는 BlueXP 캔버스에서 작업 환경 관리에 대한 지원을 나열합니다.  BlueXP backup and recovery 에 지원되는 백업 대상은 표시되지 않습니다. | ONTAP 용 Amazon FSx | 아니요 
+
+
+| 아마존 S3 | 아니요 
+
+
+| Azure Blob | 아니요 
+
+
+| Azure NetApp Files | 아니요 
+
+
+| Cloud Volumes ONTAP | 예 
+
+
+| Google Cloud NetApp Volumes | 아니요 
+
+
+| 구글 클라우드 스토리지 | 아니요 
+
+
+| 온프레미스 ONTAP 클러스터 | 예 
+
+
+| E-시리즈 | 아니요 
+
+
+| StorageGRID | 아니요 
+
+
+.15+| *서비스* | 알림 | 아니요 
+
+
+| 백업 및 복구 | 예https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["ONTAP 볼륨 데이터에 대해 지원되는 백업 대상 목록 보기"^] 
+
+
+| 분류 | 예 
+
+
+| 복사 및 동기화 | 아니요 
+
+
+| 디지털 어드바이저 | 아니요 
+
+
+| 디지털 지갑 | 예 
+
+
+| 재해 복구 | 아니요 
+
+
+| 경제적 효율성 | 아니요 
+
+
+| 랜섬웨어 보호 | 아니요 
+
+
+| 복제 | 예 
+
+
+| 소프트웨어 업데이트 | 아니요 
+
+
+| 지속 가능성 | 아니요 
+
+
+| 티어링 | 아니요 
+
+
+| 볼륨 캐싱 | 아니요 
+
+
+| 작업량 공장 | 아니요 
+
+
+.8+| *특징* | ID 및 액세스 관리 | 예 
+
+
+| 신임장 | 예 
+
+
+| 연합 | 아니요 
+
+
+| 다중 요소 인증 | 아니요 
+
+
+| NSS 계정 | 아니요 
+
+
+| 알림 | 아니요 
+
+
+| 찾다 | 아니요 
+
+
+| 타임라인 | 예 
+|===

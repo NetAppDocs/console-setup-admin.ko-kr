@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: task-federation-verify-domain.html 
+keywords: federation, active directory federation services, adfs, ad fs, single sign-on, microsoft, federate, federated connection, SSO, identity federation, identity management, corporate identity 
+summary: 페더레이션에는 검증된 도메인만 사용할 수 있습니다. 이메일 도메인과 다른 도메인과 페더레이션하려면 먼저 해당 도메인을 소유하고 있는지 확인해야 합니다.  페더레이션에는 검증된 도메인만 사용할 수 있습니다. 
+---
+= 페더레이션 연결에 대한 이메일 도메인을 확인하세요.
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+이메일 도메인과 다른 도메인과 페더레이션하려면 먼저 해당 도메인을 소유하고 있는지 확인해야 합니다.  페더레이션에는 검증된 도메인만 사용할 수 있습니다.
+
+.필수 역할
+연합을 만들고 관리하려면 연합 관리자 역할이 필요합니다.  연방 뷰어는 연방 페이지를 볼 수 있습니다.link:reference-iam-predefined-roles.html["액세스 역할에 대해 자세히 알아보세요."]
+
+도메인을 확인하려면 도메인의 DNS 설정에 TXT 레코드를 추가해야 합니다.  이 레코드는 사용자가 도메인을 소유하고 있음을 증명하는 데 사용되며 NetApp 콘솔이 페더레이션을 위해 도메인을 신뢰할 수 있도록 합니다.  이 단계를 완료하려면 IT 또는 네트워크 관리자와 협력해야 할 수도 있습니다.
+
+.단계
+. *관리 > ID 및 액세스*를 선택합니다.
+. *연합*을 선택하면 *연합* 페이지를 볼 수 있습니다.
+. *새 페더레이션 구성*을 선택합니다.
+. *도메인 소유권 확인*을 선택하세요.
+. 검증하려는 도메인을 입력하고 *계속*을 선택하세요.
+. 제공된 TXT 레코드를 복사하세요.
+. 도메인의 DNS 설정으로 이동하여 도메인의 TXT 레코드로 제공된 TXT 값을 구성합니다.  필요한 경우 IT 관리자나 네트워크 관리자와 협력하세요.
+. TXT 레코드를 추가한 후 콘솔로 돌아가서 *확인*을 선택하세요.
+

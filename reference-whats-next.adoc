@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: reference-whats-next.html 
+keywords: standard mode, what you can do 
+summary: 이제 로그인하여 NetApp 콘솔을 표준 모드로 설정했으므로 사용자는 스토리지 시스템을 만들고 검색하고 NetApp 데이터 서비스를 사용할 수 있습니다. 
+---
+= 다음에 할 수 있는 일(표준 모드)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+이제 로그인하여 NetApp 콘솔을 표준 모드로 설정했으므로 사용자는 스토리지 시스템을 만들고 검색하고 NetApp 데이터 서비스를 사용할 수 있습니다.
+
+
+TIP: AWS, Microsoft Azure 또는 Google Cloud에 콘솔 에이전트를 설치한 경우 콘솔은 에이전트가 설치된 위치에서 Amazon S3 버킷, Azure Blob 스토리지 또는 Google Cloud Storage 버킷에 대한 정보를 자동으로 검색합니다.  이러한 시스템은 자동으로 *시스템* 페이지에 추가됩니다.
+
+도움이 필요하면 다음으로 이동하세요. https://docs.netapp.com/us-en/bluexp-family/["NetApp 콘솔 설명서 홈페이지"^] NetApp 콘솔 설명서를 보려면 클릭하세요.
+
+.관련 정보
+link:concept-modes.html["NetApp 콘솔 배포 모드"]

@@ -1,0 +1,52 @@
+---
+sidebar: sidebar 
+permalink: task-quick-start-standard-mode.html 
+keywords: quick start, standard mode quick start 
+summary: 콘솔을 위한 네트워킹을 준비하고, 가입하고 계정을 만들고, 선택적으로 콘솔 에이전트를 만들어 표준 모드에서 NetApp 콘솔을 시작하세요. 
+---
+= 시작하기 워크플로(표준 모드)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+콘솔을 위한 네트워킹을 준비하고, 가입하고 계정을 만들고, 선택적으로 콘솔 에이전트를 만들어 표준 모드에서 NetApp 콘솔을 시작하세요.
+
+표준 모드에서는 NetApp 의 SaaS(Software-as-a-Service) 제품으로 호스팅되는 웹 기반 콘솔에 액세스합니다.  시작하기 전에 이해했는지 확인하세요link:concept-modes.html["배포 모드"] 그리고link:concept-connectors.html["콘솔 에이전트"] .
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["하나"] link:reference-networking-saas-console.html["NetApp 콘솔을 사용하기 위한 네트워킹 준비"]
+[role="quick-margin-para"]
+NetApp 콘솔에 액세스하는 컴퓨터는 특정 엔드포인트에 연결되어 있어야 합니다.  네트워크에서 아웃바운드 액세스가 제한되는 경우 이러한 엔드포인트가 허용되는지 확인해야 합니다.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["둘"] link:task-sign-up-saas.html["가입하고 조직을 만드세요"]
+[role="quick-margin-para"]
+로 가다 https://console.netapp.com["NetApp 콘솔"^] 그리고 가입하세요.  조직을 만들 수 있는 옵션이 제공되지만 회사에 이미 조직이 있는 경우 해당 단계를 건너뛰어야 합니다.
+
+[role="quick-margin-para"]
+이제 로그인이 완료되었으며 Digital Advisor, Amazon FSx for ONTAP, Azure NetApp Files 등의 서비스를 사용하고 스토리지를 관리할 수 있습니다. link:concept-connectors.html["콘솔 에이전트 없이 무엇을 할 수 있는지 알아보세요"] .
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["삼"]콘솔 에이전트 만들기
+[role="quick-margin-para"]
+고급 스토리지 관리 기능과 일부 NetApp 데이터 서비스를 사용하려면 콘솔 에이전트를 설치해야 합니다.  콘솔 에이전트를 사용하면 콘솔에서 하이브리드 클라우드 환경 내의 리소스와 프로세스를 관리할 수 있습니다.
+
+[role="quick-margin-para"]
+클라우드 또는 온프레미스 네트워크에서 콘솔 에이전트를 만들 수 있습니다.
+
+[role="quick-margin-list"]
+* link:concept-connectors.html["콘솔 에이전트가 필요한 경우와 작동 방식에 대해 자세히 알아보세요."]
+* link:concept-install-options-aws.html["AWS에서 콘솔 에이전트를 만드는 방법을 알아보세요"]
+* link:concept-install-options-azure.html["Azure에서 콘솔 에이전트를 만드는 방법을 알아보세요."]
+* link:concept-install-options-google.html["Google Cloud에서 콘솔 에이전트를 만드는 방법을 알아보세요."]
+* link:task-install-connector-on-prem.html["온프레미스에서 콘솔 에이전트를 만드는 방법을 알아보세요."]
+
+
+[role="quick-margin-para"]
+Google Cloud에서 NetApp Intelligent Data Services를 사용하여 스토리지와 데이터를 관리하려면 콘솔 에이전트가 Google Cloud에서 실행되어야 합니다.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["네"] link:task-subscribe-standard-mode.html["NetApp Intelligent Services 구독(선택 사항)"]
+[role="quick-margin-para"]
+클라우드 공급업체를 통해 NetApp Intelligent Services에 가입하여 시간당 요금(PAYGO)을 지불하거나 연간 계약을 맺으세요.  NetApp Intelligent Services에는 NetApp 백업 및 복구, Cloud Volumes ONTAP, NetApp 클라우드 계층화, NetApp 랜섬웨어 복원력 및 NetApp 재해 복구가 포함됩니다.  NetApp 데이터 분류는 추가 비용 없이 구독에 포함되어 있습니다.

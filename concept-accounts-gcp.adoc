@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: concept-accounts-gcp.html 
+keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project, credential, bluexp 
+summary: NetApp 콘솔이 Google Cloud 자격 증명을 사용하여 사용자를 대신하여 작업을 수행하는 방법과 해당 자격 증명이 마켓플레이스 구독과 연결되는 방식을 알아보세요.  이러한 세부 정보를 이해하면 하나 이상의 Google Cloud 프로젝트에 대한 자격 증명을 관리하는 데 도움이 될 수 있습니다.  예를 들어, 콘솔 에이전트 VM과 연결된 서비스 계정에 대해 알아보고 싶을 수 있습니다. 
+---
+= Google Cloud 프로젝트 및 권한에 대해 알아보세요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 콘솔이 Google Cloud 자격 증명을 사용하여 사용자를 대신하여 작업을 수행하는 방법과 해당 자격 증명이 마켓플레이스 구독과 연결되는 방식을 알아보세요.  이러한 세부 정보를 이해하면 하나 이상의 Google Cloud 프로젝트에 대한 자격 증명을 관리하는 데 도움이 될 수 있습니다.  예를 들어, 콘솔 에이전트 VM과 연결된 서비스 계정에 대해 알아보고 싶을 수 있습니다.
+
+
+
+== NetApp 콘솔에 대한 프로젝트 및 권한
+
+Google Cloud 프로젝트의 리소스를 관리하기 위해 콘솔을 사용하려면 먼저 콘솔 에이전트를 배포해야 합니다.  에이전트는 귀하의 사내 또는 다른 클라우드 공급자에서 실행될 수 없습니다.
+
+콘솔에서 직접 콘솔 에이전트를 배포하려면 두 가지 권한 세트가 있어야 합니다.
+
+. 콘솔에서 콘솔 에이전트 VM 인스턴스를 시작할 수 있는 권한이 있는 Google 계정을 사용하여 콘솔 에이전트를 배포해야 합니다.
+. 콘솔 에이전트를 배포할 때 다음을 선택하라는 메시지가 표시됩니다. https://cloud.google.com/iam/docs/service-accounts["서비스 계정"^] VM 인스턴스의 경우.  콘솔은 서비스 계정으로부터 Cloud Volumes ONTAP 시스템을 생성하고 관리하고, NetApp 백업 및 복구를 사용하여 백업을 관리하는 등의 권한을 얻습니다.  서비스 계정에 사용자 정의 역할을 연결하여 권한을 제공합니다.
+
+
+다음 이미지는 위의 1번과 2번에 설명된 권한 요구 사항을 보여줍니다.
+
+image:diagram_permissions_gcp.png["Cloud Volumes ONTAP 배포하기 위해 Google 및 서비스 계정에 필요한 권한 요구 사항을 보여주는 개념적 이미지입니다."]
+
+권한을 설정하는 방법을 알아보려면 다음 페이지를 참조하세요.
+
+* link:task-install-connector-google-bluexp-gcloud.html#agent-permissions-google["표준 모드에 대한 Google Cloud 권한 설정"]
+* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["제한 모드에 대한 권한 설정"]
+
+
+
+
+== 자격 증명 및 마켓플레이스 구독
+
+Google Cloud에 콘솔 에이전트를 배포하면 콘솔은 콘솔 에이전트가 있는 프로젝트의 Google Cloud 서비스 계정에 대한 기본 자격 증명 세트를 만듭니다.  이러한 자격 증명은 Cloud Volumes ONTAP 및 NetApp 데이터 서비스 비용을 지불할 수 있도록 Google Cloud Marketplace 구독과 연결되어야 합니다.
+
+link:task-adding-gcp-accounts.html["Google Cloud Marketplace 구독을 연결하는 방법 알아보기"] .
+
+Google Cloud 자격 증명 및 마켓플레이스 구독에 대해 다음 사항을 참고하세요.
+
+* 콘솔 에이전트와 연결할 수 있는 Google Cloud 자격 증명 세트는 한 세트뿐입니다.
+* 자격 증명에는 단 하나의 Google Cloud Marketplace 구독만 연결할 수 있습니다.
+* 기존 마켓플레이스 구독을 새 구독으로 교체할 수 있습니다.
+
+
+
+
+== Cloud Volumes ONTAP 프로젝트
+
+Cloud Volumes ONTAP 콘솔 에이전트와 동일한 프로젝트에 있을 수도 있고, 다른 프로젝트에 있을 수도 있습니다.  다른 프로젝트에 Cloud Volumes ONTAP 배포하려면 먼저 해당 프로젝트에 콘솔 에이전트 서비스 계정과 역할을 추가해야 합니다.
+
+* link:task-install-connector-google-bluexp-gcloud.html#agent-permissions-google["서비스 계정을 설정하는 방법을 알아보세요"]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Google Cloud에 Cloud Volumes ONTAP 배포하고 프로젝트를 선택하는 방법을 알아보세요."^]
+

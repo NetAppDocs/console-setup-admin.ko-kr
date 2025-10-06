@@ -1,0 +1,19 @@
+= 커넥터 3.9.46
+:allow-uri-read: 
+
+
+
+
+=== 커넥터 3.9.46
+
+BlueXP 커넥터의 이번 릴리스에는 사소한 보안 개선 사항과 버그 수정이 포함되어 있습니다.
+
+현재 3.9.46 릴리스는 표준 모드와 제한 모드에서 사용할 수 있습니다.
+
+
+
+=== IAM 프로젝트에 대한 ID
+
+이제 BlueXP ID 및 액세스 관리에서 프로젝트 ID를 볼 수 있습니다.  API 호출을 할 때 ID를 사용해야 할 수도 있습니다.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-rename-organization.html#project-id["프로젝트 ID를 얻는 방법을 알아보세요"] .

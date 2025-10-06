@@ -1,0 +1,31 @@
+= 프라이빗 모드 출시 (3.9.50)
+:allow-uri-read: 
+
+
+
+
+=== 프라이빗 모드 출시 (3.9.50)
+
+새로운 개인 모드 릴리스를 지금 다운로드할 수 있습니다. https://mysupport.netapp.com/site/downloads["NetApp 지원 사이트"^]
+
+3.9.50 릴리스에는 다음 BlueXP 구성 요소와 서비스에 대한 업데이트가 포함되어 있습니다.
+
+[cols="3*"]
+|===
+| 구성 요소 또는 서비스 | 이 릴리스에 포함된 버전 | 이전 개인 모드 출시 이후 변경 사항 
+
+
+| 커넥터 | 3.9.50, 3.9.49 | 로 가다 https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50["BlueXP 커넥터 페이지의 새로운 기능"] 버전 3.9.50 및 3.9.49에 포함된 변경 사항을 참조하세요. 
+
+
+| 백업 및 복구 | 2025년 3월 17일 | 로 가다 https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP backup and recovery 페이지의 새로운 기능"^] 2024년 3월 릴리스에 포함된 변경 사항을 참조하세요. 
+
+
+| 분류 | 2025년 3월 10일(버전 1.41) | 로 가다 https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP classification 페이지의 새로운 기능"^] 1.38~1.371.41 릴리스에 포함된 변경 사항을 참조하세요. 
+|===
+업그레이드 방법을 포함하여 개인 모드에 대한 자세한 내용은 다음을 참조하세요.
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["개인 모드에 대해 알아보세요"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["BlueXP 개인 모드로 시작하는 방법을 알아보세요"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["개인 모드를 사용할 때 커넥터를 업그레이드하는 방법을 알아보세요."]
+

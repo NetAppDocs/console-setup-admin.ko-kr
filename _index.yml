@@ -1,0 +1,88 @@
+---
+indexpage:
+  title: NetApp 콘솔 설정 및 관리 문서
+  summary: NetApp Console을 시작하여 온프레미스 및 클라우드 환경 전반에서 데이터를 구축, 보호 및 관리하세요.  설정이 완료되면
+    IAM(ID 및 액세스 관리)을 사용하여 리소스에 대한 액세스를 제어하고, 콘솔 에이전트, 클라우드 공급자 계정 등을 관리할 수 있습니다.
+  keywords: bluexp, netapp console, Console agents, accounts, get started, setup,
+    administration, sign up, log in, login, permissions
+  lead: NetApp Console을 시작하여 온프레미스 및 클라우드 환경 전반에서 데이터를 구축, 보호 및 관리하세요.  설정이 완료되면 IAM(ID
+    및 액세스 관리)을 사용하여 리소스에 대한 액세스를 제어하고, 콘솔 에이전트, 클라우드 공급자 계정 등을 관리할 수 있습니다.
+  tiles:
+  - title: 시작하기
+    links:
+    - title: NetApp 콘솔에 대해 알아보세요
+      url: concept-overview.html
+    - title: 배포 모드에 대해 알아보세요
+      url: concept-modes.html
+    - title: 표준 모드로 시작하세요
+      url: task-quick-start-standard-mode.html
+    - title: 제한 모드 시작하기
+      url: "/task-quick-start-restricted-mode.html"
+  - title: 신원 및 액세스 설정
+    links:
+    - title: 콘솔 ID 및 액세스 관리(IAM)에 대해 알아보세요
+      url: concept-identity-and-access-management.html
+    - title: ID 및 액세스 시작하기
+      url: task-iam-get-started.html
+    - title: 폴더와 프로젝트로 리소스를 구성하세요
+      url: task-iam-manage-folders-projects.html
+    - title: 멤버 및 서비스 계정 추가
+      url: task-iam-manage-members-permissions.html
+    - title: 역할을 사용하여 리소스에 대한 멤버 액세스를 제어합니다.
+      url: task-iam-manage-roles.html
+  - title: 콘솔 에이전트
+    links:
+    - title: 콘솔 에이전트에 대해 알아보세요
+      url: concept-connectors.html
+    - title: AWS 권한 보기
+      url: reference-permissions-aws.html
+    - title: Azure 권한 보기
+      url: reference-permissions-azure.html
+    - title: Google Cloud 권한 보기
+      url: reference-permissions-gcp.html
+  - title: AWS
+    links:
+    - title: 표준 AWS 지역에서 시작하세요
+      url: task-quick-start-standard-mode.html
+    - title: AWS GovCloud 지역에서 시작하세요
+      url: task-quick-start-restricted-mode.html
+    - title: AWS Secret 또는 Top Secret Cloud에서 시작하세요
+      url: https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-getting-started-aws-c2s.html
+    - title: 콘솔 에이전트에 대한 IAM 정책 보기
+      url: reference-permissions-aws.html
+    - title: 자격 증명 및 구독 관리
+      url: task-adding-aws-accounts.html
+  - title: 하늘빛
+    links:
+    - title: 표준 Azure 지역에서 시작하세요
+      url: task-quick-start-standard-mode.html
+    - title: Azure Government 지역에서 시작하세요
+      url: task-quick-start-restricted-mode.html
+    - title: Azure IL6에서 시작하기
+      url: task-quick-start-private-mode.html
+    - title: 콘솔 에이전트의 사용자 정의 역할 보기
+      url: reference-permissions-azure.html
+    - title: 자격 증명 및 구독 관리
+      url: task-adding-azure-accounts.html
+  - title: 구글 클라우드
+    links:
+    - title: 표준 Google Cloud 지역에서 시작하세요
+      url: task-quick-start-standard-mode.html
+    - title: 콘솔 에이전트의 서비스 계정 보기
+      url: reference-permissions-gcp.html
+    - title: 자격 증명 및 구독 관리
+      url: task-adding-gcp-accounts.html
+  - title: 온프레미스
+    links:
+    - title: 표준 모드에서 콘솔 에이전트를 수동으로 설치하고 설정합니다.
+      url: task-install-connector-on-prem.html
+    - title: VCenter에 콘솔 에이전트 설치 및 설정
+      url: task-install-agent-on-prem-ova.html
+  - title: 블로그 및 커뮤니티
+    links:
+    - title: NetApp 콘솔
+      url: https://www.netapp.com/console
+    - title: NetApp 데이터 서비스
+      url: https://www.netapp.com/data-services/
+    - title: NetApp 커뮤니티
+      url: https://community.netapp.com/

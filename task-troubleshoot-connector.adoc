@@ -1,0 +1,280 @@
+---
+sidebar: sidebar 
+permalink: task-troubleshoot-connector.html 
+keywords: troubleshoot, system id, system ID, autosupport, asup, troubleshoot connector, download failure, cloud volumes ontap download failure, agent 
+summary: 콘솔 에이전트의 문제를 해결하려면 NetApp 지원팀에 문의하세요. NetApp 지원팀에서는 시스템 ID, 에이전트 버전 또는 최신 AutoSupport 메시지를 요청할 수 있습니다.  NetApp 기술 자료를 확인하여 직접 문제를 해결할 수도 있습니다. 
+---
+= 콘솔 에이전트 문제 해결
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+콘솔 에이전트의 문제를 해결하려면 직접 문제를 확인하거나 NetApp 지원팀에 문의하여 시스템 ID, 에이전트 버전 또는 최신 AutoSupport 메시지를 요청할 수 있습니다.
+
+NetApp 지원 사이트 계정이 있는 경우 다음을 볼 수도 있습니다.link:https://kb.netapp.com/Cloud/BlueXP["NetApp 지식 기반."]
+
+
+
+== 일반적인 오류 메시지 및 해결 방법
+
+다음 표에는 일반적인 오류 메시지와 해결 방법이 나와 있습니다.
+
+[cols="19,27,27"]
+|===
+| 오류 메시지 | 설명 | 무엇을 해야 할까 
+
+
+ a| 
+콘솔 에이전트 UI를 로드할 수 없습니다.
+ a| 
+에이전트 설치에 실패했습니다
+ a| 
+* 서비스 관리자 서비스가 활성화되어 있는지 확인하세요.
+* 모든 컨테이너가 실행 중인지 확인하세요.
+* 방화벽이 포트 8888에서 서비스에 대한 액세스를 허용하는지 확인하세요.
+* 문제가 지속되면 지원팀에 문의하세요.
+
+
+
+
+ a| 
+NetApp 에이전트 UI에 액세스할 수 없습니다.
+ a| 
+이 메시지는 에이전트의 IP 주소에 접근하려고 할 때 나타납니다.  에이전트가 올바른 네트워크 액세스 권한이 없거나 불안정한 경우 초기화에 실패할 수 있습니다.
+ a| 
+* 콘솔 에이전트에 연결합니다.
+* 서비스 관리자 서비스를 확인하세요
+* 에이전트가 필요한 네트워크 접근 권한을 가지고 있는지 확인하세요.link:reference-networking-saas-console.html["필수 네트워크 액세스 엔드포인트에 대해 자세히 알아보세요."]
+
+
+
+
+ a| 
+에이전트 설정을 로드할 수 없습니다.
+ a| 
+에이전트 설정 페이지에 접근하려고 하면 콘솔에 이 메시지가 표시됩니다.
+ a| 
+* OCCM 컨테이너가 실행 중이고 제대로 작동하는지 확인하세요.
+* 문제가 지속되면 지원팀에 문의하세요.
+
+
+
+
+ a| 
+에이전트에 대한 지원 정보를 로드할 수 없습니다.
+ a| 
+이 메시지는 상담원이 귀하의 지원 계정에 액세스할 수 없는 경우 표시됩니다.
+ a| 
+* *.
+
+|===
+
+
+== 콘솔 에이전트 상태 확인
+
+다음 명령 중 하나를 사용하여 콘솔 에이전트를 확인하세요.  모든 서비스의 상태는 _실행중_이어야 합니다.  그렇지 않은 경우 NetApp 지원팀에 문의하세요.
+
+[NOTE]
+====
+콘솔 에이전트 진단에 액세스하는 방법에 대한 자세한 내용은 다음 항목을 참조하세요.
+
+* link:task-maintain-connectors.html#connect-linux-host["콘솔 에이전트 상태 확인(Linux 호스트 배포용)"]
+* link:task-agent-vm-config.html#connect-vcenter-host["콘솔 에이전트 상태 확인(VCenter 배포용)"]
+
+
+====
+Docker(Ubuntu 및 VCenter 배포용)::
++
+--
+[source, cli]
+----
+docker ps -a
+----
+--
+Podman(RedHat Enterprise Linux 배포용)::
++
+--
+[source, cli]
+----
+podman ps -a
+----
+--
+
+
+
+
+== 콘솔 에이전트 버전 보기
+
+업그레이드를 확인하려면 콘솔 에이전트 버전을 확인하거나 NetApp 담당자와 공유하세요.
+
+.단계
+. *관리 > 지원 > 에이전트*를 선택하세요.
++
+콘솔은 페이지 상단에 버전을 표시합니다.
+
+
+
+
+
+== 네트워크 접속 확인
+
+콘솔 에이전트에 필요한 네트워크 액세스 권한이 있는지 확인하세요.link:reference-networking-saas-console.html["필요한 네트워크 액세스 포인트에 대해 자세히 알아보세요."]
+
+
+
+== 콘솔 에이전트 설치 문제
+
+설치에 실패하면 보고서와 로그를 보고 문제를 해결하세요.
+
+다음 디렉토리에 있는 콘솔 에이전트 호스트에서 직접 JSON 형식의 검증 보고서와 구성 로그에 액세스할 수도 있습니다.
+
+[source, cli]
+----
+/tmp/netapp-console-agents/logs
+
+/tmp/netapp-console-agents/results.json
+
+----
+[IMPORTANT]
+====
+* 새로운 에이전트 배포의 경우 NetApp 다음 엔드포인트를 확인합니다.link:reference-networking-saas-console.html["여기에 나열됨"^] .  업그레이드에 사용된 이전 엔드포인트를 사용하는 경우 이 구성 검사는 오류로 실패합니다.link:reference-networking-saas-console-previous.html["여기에 나열됨"] .  NetApp 최대한 빨리 현재 엔드포인트에 대한 액세스를 허용하고 이전 엔드포인트에 대한 액세스를 차단하도록 방화벽 규칙을 업데이트할 것을 권장합니다.link:reference-networking-saas-console-previous.html#update-endpoint-list["네트워킹을 업데이트하는 방법을 알아보세요"] .
+* 방화벽의 엔드포인트를 업데이트하면 기존 에이전트가 계속 작동합니다.
+
+
+====
+
+
+=== 수동 설치에 대한 구성 확인 비활성화
+
+설치 중에 아웃바운드 연결을 확인하는 구성 검사를 비활성화해야 할 때가 있을 수 있습니다. 예를 들어:
+
+* 정부 클라우드 환경에 에이전트를 수동으로 설치하는 경우 구성 검사를 비활성화해야 합니다. 그렇지 않으면 설치가 실패합니다.
+* 에이전트 업그레이드를 위해 이전 엔드포인트 목록을 계속 사용하는 경우 이러한 검사를 비활성화하는 것이 좋습니다.
+
+
+.단계
+_com/opt/application/netapp/service-manager-2/config.json_ 파일에서 _skipConfigCheck_ 플래그를 설정하여 구성 확인을 비활성화합니다.  기본적으로 이 플래그는 false로 설정되고 구성 검사는 에이전트에 대한 아웃바운드 액세스를 확인합니다.  검사를 비활성화하려면 이 플래그를 true로 설정합니다.  이 단계를 완료하기 전에 JSON 구문에 익숙해야 합니다.
+
+구성 확인을 다시 활성화하려면 다음 단계를 사용하고 _skipConfigCheck_ 플래그를 false로 설정합니다.
+
+.단계
+. 루트 또는 sudo 권한으로 콘솔 에이전트 호스트에 액세스합니다.
+. 변경 사항을 되돌릴 수 있도록 _/opt/application/netapp/service-manager-2/config.json_ 파일의 백업 사본을 만드세요.
+. 다음 명령을 실행하여 서비스 관리자 2 서비스를 중지합니다.
+
+
+[source, cli]
+----
+systemctl stop netapp-service-manager.service
+----
+. _/opt/application/netapp/service-manager-2/config.json_ 파일을 편집하고 _skipConfigCheck_ 플래그 값을 true로 변경합니다.
++
+[source, json]
+----
+  "skipConfigCheck": true,
+----
+. 파일을 저장하세요.
+. 다음 명령을 실행하여 서비스 관리자 2 서비스를 다시 시작합니다.
++
+[source, cli]
+----
+systemctl restart netapp-service-manager.service
+----
+
+
+
+
+=== 업그레이드에 사용된 엔드포인트에서 설치 실패
+
+아직도 사용 중이라면link:reference-networking-saas-console-previous.html["이전 종료점"] 에이전트 업그레이드에 사용되면 유효성 검사가 오류로 인해 실패합니다.  이를 방지하려면 *유효성 검사 에이전트 구성* 확인란의 선택을 취소하거나 VCenter에 설치할 때 구성 확인을 건너뜁니다.
+
+NetApp 방화벽 규칙을 업데이트하여 액세스를 허용할 것을 권장합니다.link:reference-networking-saas-console.html["현재 종료점"] 귀하의 편의에 따라 최대한 빨리. link:reference-networking-saas-console-previous.html#update-endpoint-list["엔드포인트를 업데이트하는 방법을 알아보세요"] .
+
+유일한 오류가 이전 엔드포인트와 관련이 있는지 확인하세요.
+
+* \ https://bluexpinfraprod.eastus2.data.azurecr.io
+* \ https://bluexpinfraprod.azurecr.io
+
+
+다른 오류가 있는 경우 계속 진행하기 전에 해당 오류를 해결해야 합니다.
+
+
+
+== NetApp 지원팀과 협력하세요
+
+콘솔 에이전트로 문제를 해결할 수 없는 경우 NetApp 지원팀에 문의해 보세요.  NetApp 지원팀에서는 콘솔 에이전트 ID를 요청할 수도 있고, 아직 콘솔 에이전트 로그가 없는 경우 해당 로그를 NetApp 지원팀으로 보내달라고 요청할 수도 있습니다.
+
+
+
+=== 콘솔 에이전트 ID 찾기
+
+시작하는 데 도움이 되도록 콘솔 에이전트의 시스템 ID가 필요할 수 있습니다.  ID는 일반적으로 라이선싱 및 문제 해결 목적으로 사용됩니다.
+
+.단계
+. *관리 > 지원 > 에이전트*를 선택하세요.
++
+시스템 ID는 페이지 상단에서 확인할 수 있습니다.
+
++
+*예*
+
++
+image:screenshot-system-id.png["지원 대시보드에 나타나는 시스템 ID를 보여주는 스크린샷입니다."]
+
+. ID에 마우스를 올려놓고 클릭하면 복사됩니다.
+
+
+
+
+=== AutoSupport 메시지를 다운로드하거나 보내세요
+
+문제가 발생하는 경우 NetApp 문제 해결을 위해 NetApp 지원팀에 AutoSupport 메시지를 보내달라고 요청할 수 있습니다.
+
+
+NOTE: NetApp 콘솔은 부하 분산으로 인해 AutoSupport 메시지를 보내는 데 최대 5시간이 걸립니다.  긴급한 연락이 필요한 경우, 파일을 다운로드하여 직접 보내주시기 바랍니다.
+
+.단계
+. *관리 > 지원 > 에이전트*를 선택하세요.
+. NetApp 지원팀에 정보를 보내는 방법에 따라 다음 옵션 중 하나를 선택하세요.
++
+.. AutoSupport 메시지를 로컬 컴퓨터에 다운로드하는 옵션을 선택하세요.  그런 다음 선호하는 방법을 사용하여 NetApp 지원팀에 보낼 수 있습니다.
+.. * AutoSupport 보내기*를 선택하면 NetApp 지원팀에 직접 메시지를 보낼 수 있습니다.
+
+
+
+
+
+
+== Google Cloud NAT 게이트웨이 사용 시 다운로드 실패 문제 해결
+
+콘솔 에이전트는 Cloud Volumes ONTAP 에 대한 소프트웨어 업데이트를 자동으로 다운로드합니다.  Google Cloud NAT 게이트웨이를 사용하는 경우 구성으로 인해 다운로드가 실패할 수 있습니다.  이 문제는 소프트웨어 이미지가 나누어지는 부분의 수를 제한하면 해결할 수 있습니다.  이 단계는 API를 사용하여 완료해야 합니다.
+
+.단계
+. 다음 JSON을 본문으로 하여 /occm/config에 PUT 요청을 제출합니다.
++
+[source]
+----
+{
+  "maxDownloadSessions": 32
+}
+----
++
+_maxDownloadSessions_의 값은 1이거나 1보다 큰 정수일 수 있습니다.  값이 1이면 다운로드한 이미지는 분할되지 않습니다.
+
++
+32는 예시 값입니다.  값은 NAT 구성과 동시 세션 수에 따라 달라집니다.
+
+
+
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#occmconfig["/occm/config API 호출에 대해 자세히 알아보세요"^]
+
+
+
+== NetApp 지식 기반에서 도움 받기
+
+https://kb.netapp.com/Special:Search?path=Cloud%2FBlueXP&query=connector&type=wiki["NetApp 지원팀에서 생성한 문제 해결 정보 보기"] .

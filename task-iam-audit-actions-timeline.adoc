@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: task-iam-audit-actions-timeline.html 
+keywords: iam, audit, monitor, audit iam actions, monitor iam actions 
+summary: 감사 페이지에서 NetApp 콘솔 ID 및 액세스 관리 작업을 모니터링하거나 감사합니다. 
+---
+= IAM 활동 모니터링 또는 감사
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+신원 및 액세스와 관련하여 완료된 작업을 모니터링하거나 감사해야 하는 경우 감사 페이지에서 세부 정보를 볼 수 있습니다.  예를 들어, 조직에 구성원을 추가한 사람이 누구인지, 프로젝트가 성공적으로 삭제되었는지 확인하고 싶을 수 있습니다.
+
+.단계
+. *관리 > 감사*를 선택합니다.
+. *감사* 페이지에서 필터를 사용하여 결과를 좁힙니다.  *서비스*를 선택한 다음 *임대*를 선택하세요.
+. 다른 필터를 사용하여 표에 표시되는 작업을 변경하세요.
++
+예를 들어, *사용자* 필터를 사용하면 특정 사용자 계정과 관련된 작업을 표시할 수 있습니다.
+
+

@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: reference-whats-next-restricted-mode.html 
+keywords: restricted mode, what you can do 
+summary: 제한 모드에서 NetApp 콘솔을 실행한 후에는 제한 모드에서 지원되는 서비스를 사용할 수 있습니다. 
+---
+= 다음에 할 수 있는 일(제한 모드)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+제한 모드에서 NetApp 콘솔을 실행한 후에는 제한 모드에서 지원되는 서비스를 사용할 수 있습니다.
+
+도움이 필요하면 다음 서비스에 대한 설명서를 참조하세요.
+
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/index.html["Azure NetApp Files 문서"^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["백업 및 복구 문서"^]
+* https://docs.netapp.com/us-en/bluexp-classification/index.html["분류 문서"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP 문서"^]
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/index.html["디지털 지갑 문서"^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html["온프레미스 ONTAP 클러스터 문서"^]
+* https://docs.netapp.com/us-en/bluexp-replication/index.html["복제 문서"^]
+
+
+.관련 정보
+link:concept-modes.html["NetApp 콘솔 배포 모드"]

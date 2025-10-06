@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: task-quick-start-restricted-mode.html 
+keywords: quick start, restricted mode quick start, govcloud, government, aws gov, azure gov 
+summary: 환경을 준비하고 콘솔 에이전트를 배포하여 제한 모드에서 NetApp 콘솔을 시작하세요. 
+---
+= 시작하기 워크플로(제한 모드)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+환경을 준비하고 콘솔 에이전트를 배포하여 제한 모드에서 NetApp 콘솔을 시작하세요.
+
+제한 모드는 일반적으로 주 및 지방 정부와 규제 대상 기업에서 사용하며, 여기에는 AWS GovCloud 및 Azure Government 지역에 배포하는 것도 포함됩니다.  시작하기 전에 다음 사항을 이해했는지 확인하십시오.link:concept-connectors.html["콘솔 에이전트"] 그리고link:concept-modes.html["배포 모드"] .
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["하나"] link:task-prepare-restricted-mode.html["배치 준비"]
+https://raw.githubusercontent.com/NetAppDocs/console-setup-admin-internal/blob/main/media/screenshot-canvas.png[]
+
+[role="quick-margin-list"]
+. CPU, RAM, 디스크 공간, 컨테이너 오케스트레이션 도구 등의 요구 사항을 충족하는 전용 Linux 호스트를 준비합니다.
+. 대상 네트워크에 대한 액세스, 수동 설치를 위한 아웃바운드 인터넷 액세스, 일상적인 액세스를 위한 아웃바운드 인터넷을 제공하는 네트워킹을 설정합니다.
+. 콘솔 에이전트 인스턴스를 배포한 후 해당 권한과 연결할 수 있도록 클라우드 공급자에서 권한을 설정합니다.
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["둘"] link:task-install-restricted-mode.html["콘솔 에이전트 배포"]
+[role="quick-margin-list"]
+. 클라우드 공급업체의 마켓플레이스에서 콘솔 에이전트를 설치하거나, Linux 호스트에 소프트웨어를 수동으로 설치하세요.
+. 웹 브라우저를 열고 Linux 호스트의 IP 주소를 입력하여 NetApp 콘솔을 설정합니다.
+. 이전에 설정한 권한을 콘솔 에이전트에 제공합니다.
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["삼"] link:task-subscribe-restricted-mode.html["NetApp Intelligent Services 구독(선택 사항)"]
+[role="quick-margin-para"]
+선택 사항: 클라우드 공급업체의 마켓플레이스에서 NetApp Intelligent Services를 구독하여 시간당 요금(PAYGO) 또는 연간 계약을 통해 데이터 서비스 비용을 지불하세요.  NetApp Intelligent Services에는 NetApp 백업 및 복구, Cloud Volumes ONTAP, NetApp 클라우드 계층화, NetApp 랜섬웨어 복원력 및 NetApp 재해 복구가 포함됩니다.  NetApp 데이터 분류는 추가 비용 없이 구독에 포함되어 있습니다.

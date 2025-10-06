@@ -1,0 +1,65 @@
+= 
+:allow-uri-read: 
+
+
+.단계
+. *관리 > *자격 증명*을 선택합니다.
+. *조직 자격 증명*을 선택하세요.
+. 콘솔 에이전트와 연결된 자격 증명 세트에 대한 작업 메뉴를 선택한 다음 *구독 구성*을 선택합니다.  +새로운 스크린샷이 필요합니다(TS)image:screenshot_gcp_add_subscription.png["기존 자격 증명 세트에 대한 작업 메뉴의 스크린샷입니다."]
+. 선택한 자격 증명으로 기존 구독을 구성하려면 드롭다운 목록에서 Google Cloud 프로젝트와 구독을 선택한 다음 *구성*을 선택합니다.
++
+image:screenshot_gcp_associate.gif["Google Cloud 자격 증명을 위해 선택된 Google Cloud 프로젝트 및 구독의 스크린샷입니다."]
+
+. 아직 구독이 없다면 *구독 추가 > 계속*을 선택하고 Google Cloud Marketplace의 단계를 따르세요.
++
+
+NOTE: 다음 단계를 완료하기 전에 Google Cloud 계정에서 청구 관리자 권한과 NetApp 콘솔 로그인 권한이 모두 있는지 확인하세요.
+
++
+.. 당신이 리디렉션된 후 https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud Marketplace의 NetApp Intelligent Services 페이지"^] 상단 탐색 메뉴에서 올바른 프로젝트가 선택되었는지 확인하세요.
++
+image:screenshot_gcp_cvo_marketplace.png["Google Cloud의 Cloud Volumes ONTAP 마켓플레이스 페이지 스크린샷입니다."]
+
+.. *구독*을 선택하세요.
+.. 적절한 청구 계정을 선택하고 약관에 동의하세요.
+.. *구독*을 선택하세요.
++
+이 단계에서는 귀하의 전송 요청이 NetApp 으로 전송됩니다.
+
+.. 팝업 대화 상자에서 * NetApp, Inc.에 등록*을 선택합니다.
++
+Google Cloud 구독을 Console 조직 또는 계정과 연결하려면 이 단계를 완료해야 합니다.  구독 연결 프로세스는 이 페이지에서 리디렉션된 후 콘솔에 로그인할 때까지 완료되지 않습니다.
+
++
+image:screenshot_gcp_marketplace_register.png["등록 팝업의 스크린샷입니다."]
+
+.. *구독 할당* 페이지의 단계를 완료하세요.
++
+
+NOTE: 귀하의 조직에서 이미 귀하의 청구 계정에서 마켓플레이스 구독을 보유한 사람이 있는 경우 귀하는 다음으로 리디렉션됩니다. https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["NetApp 콘솔 내 Cloud Volumes ONTAP 페이지"^] 대신에.  예상치 못한 상황이라면 NetApp 영업팀에 문의하세요.  Google은 Google 결제 계정당 하나의 구독만 허용합니다.
+
++
+*** 이 구독을 연결할 콘솔 조직이나 계정을 선택하세요.
+*** *기존 구독 교체* 필드에서 하나의 조직 또는 계정에 대한 기존 구독을 이 새로운 구독으로 자동으로 교체할지 여부를 선택합니다.
++
+콘솔은 조직 또는 계정의 모든 자격 증명에 대한 기존 구독을 이 새로운 구독으로 대체합니다.  자격 증명 세트가 구독과 연결되지 않은 경우 이 새 구독은 해당 자격 증명과 연결되지 않습니다.
+
++
+다른 모든 조직이나 계정의 경우 이 단계를 반복하여 구독을 수동으로 연결해야 합니다.
+
+*** *저장*을 선택하세요.
++
+다음 비디오에서는 Google Cloud Marketplace에서 구독하는 단계를 보여줍니다.
+
++
+.Google Cloud Marketplace에서 구독하세요
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
+
+
+.. 이 프로세스가 완료되면 콘솔의 자격 증명 페이지로 돌아가서 새 구독을 선택하세요.
++
+image:screenshot_gcp_associate.gif["구독 할당 페이지의 스크린샷입니다."]
+
+
+
+

@@ -1,0 +1,197 @@
+---
+sidebar: sidebar 
+permalink: concept-connectors.html 
+keywords: 'concept, connectors, learn about connectors, what are connectors, what is a connector, what"s a connector, days, 14 days, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery, agents, multiple agents, what is a Console agent' 
+summary: _콘솔 에이전트_는 클라우드 네트워크나 온프레미스 네트워크에서 실행되는 NetApp 소프트웨어입니다.  콘솔 에이전트를 사용하여 NetApp 콘솔 서비스를 스토리지 환경에 연결합니다. 
+---
+= NetApp 콘솔 에이전트에 대해 알아보세요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+_콘솔 에이전트_는 클라우드 네트워크나 온프레미스 네트워크에서 실행됩니다.  콘솔 에이전트를 사용하여 NetApp 콘솔 서비스를 스토리지 환경에 연결합니다.
+
+
+
+== 콘솔 에이전트 없이 할 수 있는 일
+
+콘솔 에이전트를 배포하지 않아도 일부 콘솔 기능과 서비스를 사용할 수 있습니다.
+
+* Amazon FSx for NetApp ONTAP
++
+일부 작업에는 콘솔 에이전트 또는 NetApp 워크로드 링크가 필요합니다. https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html["콘솔 에이전트 또는 링크가 필요한 작업을 알아보세요."^]
+
+* 자동화 허브
+* Azure NetApp Files
++
+Azure NetApp Files 관리하려면 콘솔 에이전트가 필요하지 않지만 NetApp 데이터 분류를 사용하여 Azure NetApp Files 검사하려면 콘솔 에이전트가 필요합니다.
+
+* Google Cloud NetApp Volumes
+* NetApp 복사 및 동기화
+* 디지털 어드바이저
+* 라이센스 사용량 모니터링, 구독 모니터링에는 콘솔 에이전트가 필요합니다.
++
+일반적으로 콘솔 에이전트 없이도 NetApp 콘솔에 라이선스를 추가할 수 있습니다.
+
++
+데이터가 Cloud Volumes ONTAP 시스템에 설치된 라이선스에서 나오므로, 에이전트는 Cloud Volumes ONTAP 노드 기반 라이선스를 추가해야 합니다.
+
+* 온프레미스 ONTAP 클러스터 직접 검색
++
+온프레미스 ONTAP 클러스터를 콘솔에 추가하는 데는 콘솔 에이전트가 필요하지 않지만, 추가 콘솔 기능과 데이터 서비스를 위해서는 필요합니다.
+
++
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["온프레미스 ONTAP 클러스터에 대한 검색 및 관리 옵션에 대해 자세히 알아보세요."^]
+
+* 소프트웨어 업데이트
+* 지속 가능성
+* NetApp 워크로드
+
+
+
+
+== 콘솔 에이전트가 필요한 경우
+
+표준 모드에서는 콘솔에 다음을 위한 콘솔 에이전트가 필요합니다.
+
+* 알림
+* Amazon FSx for ONTAP 관리 기능
+* Amazon S3 스토리지
+* Azure Blob 저장소
+* NetApp 백업 및 복구
+* 데이터 분류
+* Cloud Volumes ONTAP
+* NetApp 재해 복구
+* E-시리즈 시스템
+* 경제적 효율성 ^1^
+* Google Cloud Storage 버킷
+* NetApp 데이터 서비스와 온프레미스 ONTAP 클러스터 통합
+* NetApp 랜섬웨어 복원력
+* StorageGRID 시스템
+* NetApp 클라우드 계층화
+* NetApp 볼륨 캐싱
+
+
+^1^ 콘솔 에이전트 없이도 이러한 서비스에 액세스할 수 있지만, 작업을 시작하려면 콘솔 에이전트가 필요합니다.
+
+제한 모드에서 콘솔을 사용하려면 항상 콘솔 에이전트가 필요합니다.
+
+
+
+== 콘솔 에이전트는 항상 작동해야 합니다.
+
+콘솔 에이전트는 NetApp 콘솔의 기본적인 부분입니다.  관련 상담원이 항상 가동되고, 업무를 처리하며, 접근 가능한지 확인하는 것은 고객 여러분의 책임입니다.  콘솔은 짧은 에이전트 중단은 처리할 수 있지만 인프라 장애는 신속하게 해결해야 합니다.
+
+이 문서는 EULA에 따라 관리됩니다.  설명서에 없는 방식으로 제품을 작동하면 제품의 기능과 EULA 권리에 영향을 미칠 수 있습니다.
+
+
+
+== 지원되는 위치
+
+다음 위치에 에이전트를 설치할 수 있습니다.
+
+* 아마존 웹 서비스
+* 마이크로소프트 애저
++
+Cloud Volumes ONTAP 시스템을 관리하는 것과 동일한 지역에 Azure에 콘솔 에이전트를 배포합니다.  또는 다음을 배포합니다. https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure 지역 쌍"^] .  이렇게 하면 Cloud Volumes ONTAP 과 연결된 스토리지 계정 간에 Azure Private Link 연결이 사용됩니다. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Cloud Volumes ONTAP Azure Private Link를 사용하는 방법 알아보기"^]
+
+* 구글 클라우드
++
+Google Cloud에서 콘솔과 데이터 서비스를 사용하려면 Google Cloud에 에이전트를 배포하세요.
+
+* 귀하의 구내에서
+
+
+
+
+== 클라우드 제공자와의 커뮤니케이션
+
+에이전트는 AWS, Azure, Google Cloud와의 모든 통신에 TLS 1.3을 사용합니다.
+
+
+
+== 제한 모드
+
+제한 모드에서 콘솔을 사용하려면 콘솔 에이전트를 설치하고 콘솔 에이전트에서 로컬로 실행되는 콘솔 인터페이스에 액세스해야 합니다.
+
+link:concept-modes.html["NetApp 콘솔 배포 모드에 대해 알아보세요"] .
+
+
+
+== 콘솔 에이전트를 설치하는 방법
+
+클라우드 공급업체의 마켓플레이스에서 직접 콘솔 에이전트를 설치할 수도 있고, 자신의 Linux 호스트나 VCenter 환경에 소프트웨어를 수동으로 설치하여 설치할 수도 있습니다.  시작 방법은 콘솔을 표준 모드에서 사용하는지, 제한 모드에서 사용하는지에 따라 달라집니다.
+
+* link:concept-modes.html["NetApp 콘솔 배포 모드에 대해 알아보세요"]
+* link:task-quick-start-standard-mode.html["표준 모드에서 NetApp 콘솔 시작하기"]
+* link:task-quick-start-restricted-mode.html["제한 모드에서 NetApp 콘솔 시작하기"]
+
+
+
+
+== 클라우드 권한
+
+NetApp 콘솔에서 직접 콘솔 에이전트를 생성하려면 특정 권한이 필요하고 콘솔 에이전트 인스턴스 자체에 대한 또 다른 권한 집합이 필요합니다.  AWS 또는 Azure에서 콘솔을 통해 직접 콘솔 에이전트를 만드는 경우 콘솔은 필요한 권한을 가진 콘솔 에이전트를 만듭니다.
+
+표준 모드에서 콘솔을 사용하는 경우 권한을 제공하는 방법은 콘솔 에이전트를 만들려는 방법에 따라 달라집니다.
+
+권한을 설정하는 방법을 알아보려면 다음을 참조하세요.
+
+* 표준 모드
++
+** link:concept-install-options-aws.html["AWS의 에이전트 설치 옵션"]
+** link:concept-install-options-azure.html["Azure의 에이전트 설치 옵션"]
+** link:concept-install-options-google.html["Google Cloud의 에이전트 설치 옵션"]
+** link:task-install-connector-on-prem.html#agent-permission-aws-azure["온프레미스 배포에 대한 클라우드 권한 설정"]
+
+
+* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["제한 모드에 대한 권한 설정"]
+
+
+콘솔 에이전트가 일상 업무를 수행하는 데 필요한 정확한 권한을 보려면 다음 페이지를 참조하세요.
+
+* link:reference-permissions-aws.html["콘솔 에이전트가 AWS 권한을 사용하는 방법을 알아보세요."]
+* link:reference-permissions-azure.html["콘솔 에이전트가 Azure 권한을 사용하는 방법 알아보기"]
+* link:reference-permissions-gcp.html["콘솔 에이전트가 Google Cloud 권한을 사용하는 방법을 알아보세요."]
+
+
+이후 릴리스에서 새로운 권한이 추가되면 콘솔 에이전트 정책을 업데이트하는 것은 사용자의 책임입니다.  릴리스 노트에는 새로운 권한이 나열되어 있습니다.
+
+
+
+== 에이전트 업그레이드
+
+NetApp 기능을 추가하고 안정성을 개선하기 위해 매달 에이전트 소프트웨어를 업데이트합니다.  Cloud Volumes ONTAP 및 온프레미스 ONTAP 클러스터 관리와 같은 일부 콘솔 기능은 콘솔 에이전트 버전 및 설정에 따라 달라집니다.
+
+표준 모드나 제한 모드에서는 콘솔 에이전트가 인터넷에 접속할 수 있으면 자동으로 업데이트됩니다.
+
+
+
+== 운영 체제 및 VM 유지 관리
+
+콘솔 에이전트 호스트에서 운영 체제를 유지 관리하는 것은 귀하(고객)의 책임입니다.  예를 들어, 귀하(고객)는 회사의 운영 체제 배포에 대한 표준 절차에 따라 콘솔 에이전트 호스트의 운영 체제에 보안 업데이트를 적용해야 합니다.
+
+사소한 보안 업데이트를 적용할 때 고객은 콘솔 호스트에서 어떤 서비스도 중지할 필요가 없습니다.
+
+고객이 콘솔 에이전트 VM을 중지했다가 다시 시작해야 하는 경우, 클라우드 제공업체의 콘솔에서 수행하거나 온프레미스 관리를 위한 표준 절차를 사용해야 합니다.
+
+<<connectors-must-be-operational-at-all-times,콘솔 에이전트는 항상 작동해야 합니다.>> .
+
+
+
+== 다중 시스템 및 에이전트
+
+에이전트는 콘솔에서 여러 시스템을 관리하고 데이터 서비스를 지원할 수 있습니다.  배포 규모와 사용하는 데이터 서비스에 따라 단일 에이전트를 사용하여 여러 시스템을 관리할 수 있습니다.
+
+대규모 배포의 경우 NetApp 담당자와 협력하여 환경 크기를 조정하세요.  문제가 발생하면 NetApp 지원팀에 문의하세요.
+
+에이전트 배포의 몇 가지 예는 다음과 같습니다.
+
+* 멀티클라우드 환경(예: AWS와 Azure)이 있고 AWS에 한 에이전트, Azure에 다른 에이전트를 두는 것을 선호합니다.  각각은 해당 환경에서 실행되는 Cloud Volumes ONTAP 시스템을 관리합니다.
+* 서비스 제공자는 한 콘솔 조직을 사용하여 고객에게 서비스를 제공하는 동시에, 다른 조직을 사용하여 사업부 중 하나에 대한 재해 복구를 제공할 수 있습니다.  각 조직에는 자체 에이전트가 필요합니다.
+

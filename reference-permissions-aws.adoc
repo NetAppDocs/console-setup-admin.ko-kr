@@ -1,0 +1,1287 @@
+---
+sidebar: sidebar 
+permalink: reference-permissions-aws.html 
+keywords: permissions, actions, aws, aws permissions, top secret, secret, aws top secret, aws secret, aws govcloud, govcloud, govcloud permissions, secret permissions, top secret permissions 
+summary: NetApp 콘솔이 AWS에서 에이전트 인스턴스를 시작하면 해당 인스턴스에 정책이 첨부되어 에이전트가 해당 AWS 계정 내의 리소스와 프로세스를 관리할 수 있는 권한을 부여합니다.  에이전트는 EC2, S3, CloudFormation, IAM, Key Management Service 등 여러 AWS 서비스에 대한 API 호출을 수행하기 위한 권한을 사용합니다. 
+---
+= 콘솔 에이전트에 대한 AWS 권한
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 콘솔이 AWS에서 콘솔 에이전트 인스턴스를 시작하면 해당 인스턴스에 정책을 연결하여 에이전트가 해당 AWS 계정 내의 리소스와 프로세스를 관리할 수 있는 권한을 부여합니다.  에이전트는 EC2, S3, CloudFormation, IAM, 키 관리 서비스(KMS) 등 여러 AWS 서비스에 대한 API 호출을 수행하기 위한 권한을 사용합니다.
+
+
+
+== IAM 정책
+
+아래에서 제공되는 IAM 정책은 콘솔 에이전트가 AWS 지역에 따라 퍼블릭 클라우드 환경 내의 리소스와 프로세스를 관리하는 데 필요한 권한을 제공합니다.
+
+다음 사항에 유의하세요.
+
+* 콘솔에서 직접 표준 AWS 지역에 콘솔 에이전트를 생성하면 콘솔에서 자동으로 에이전트에 정책을 적용합니다.
+* AWS Marketplace에서 에이전트를 배포하는 경우, Linux 호스트에 에이전트를 수동으로 설치하는 경우 또는 콘솔에 추가 AWS 자격 증명을 추가하려는 경우에는 정책을 직접 설정해야 합니다.
+* 어느 경우든 후속 릴리스에서 새로운 권한이 추가되므로 정책이 최신 상태인지 확인해야 합니다.  새로운 권한이 필요한 경우 릴리스 노트에 나열됩니다.
+* 필요한 경우 IAM을 사용하여 IAM 정책을 제한할 수 있습니다. `Condition` 요소. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS 설명서: 조건 요소"^]
+* 이러한 정책을 사용하기 위한 단계별 지침을 보려면 다음 페이지를 참조하세요.
++
+** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["AWS Marketplace 배포에 대한 권한 설정"]
+** link:task-install-connector-on-prem.html#agent-permission-aws-azure["온프레미스 배포에 대한 권한 설정"]
+** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["제한 모드에 대한 권한 설정"]
+
+
+
+
+필요한 정책을 보려면 해당 지역을 선택하세요.
+
+.표준 지역
+[%collapsible]
+====
+표준 지역의 경우 권한은 두 가지 정책에 걸쳐 분산됩니다.  AWS의 관리형 정책에는 최대 문자 크기 제한이 있으므로 두 개의 정책이 필요합니다.
+
+[role="tabbed-block"]
+=====
+.정책 #1
+--
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "ec2:DescribeAvailabilityZones",
+                "ec2:DescribeInstances",
+                "ec2:DescribeInstanceStatus",
+                "ec2:RunInstances",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:DescribeInstanceAttribute",
+                "ec2:DescribeRouteTables",
+                "ec2:DescribeImages",
+                "ec2:CreateTags",
+                "ec2:CreateVolume",
+                "ec2:DescribeVolumes",
+                "ec2:ModifyVolumeAttribute",
+                "ec2:CreateSecurityGroup",
+                "ec2:DescribeSecurityGroups",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeDhcpOptions",
+                "ec2:CreateSnapshot",
+                "ec2:DescribeSnapshots",
+                "ec2:GetConsoleOutput",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribeRegions",
+                "ec2:DescribeTags",
+                "ec2:AssociateIamInstanceProfile",
+                "ec2:DescribeIamInstanceProfileAssociations",
+                "ec2:DisassociateIamInstanceProfile",
+                "ec2:CreatePlacementGroup",
+                "ec2:DescribeReservedInstancesOfferings",
+                "ec2:AssignPrivateIpAddresses",
+                "ec2:CreateRoute",
+                "ec2:DescribeVpcs",
+                "ec2:ReplaceRoute",
+                "ec2:UnassignPrivateIpAddresses",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DeleteNetworkInterface",
+                "ec2:DeleteSnapshot",
+                "ec2:DeleteTags",
+                "ec2:DeleteRoute",
+                "ec2:DeletePlacementGroup",
+                "ec2:DescribePlacementGroups",
+                "ec2:DescribeVolumesModifications",
+                "ec2:ModifyVolume",
+                "cloudformation:CreateStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:ValidateTemplate",
+                "cloudformation:DeleteStack",
+                "iam:PassRole",
+                "iam:CreateRole",
+                "iam:PutRolePolicy",
+                "iam:CreateInstanceProfile",
+                "iam:AddRoleToInstanceProfile",
+                "iam:RemoveRoleFromInstanceProfile",
+                "iam:ListInstanceProfiles",
+                "iam:DeleteRole",
+                "iam:DeleteRolePolicy",
+                "iam:DeleteInstanceProfile",
+                "iam:GetRolePolicy",
+                "iam:GetRole",
+                "sts:DecodeAuthorizationMessage",
+                "sts:AssumeRole",
+                "s3:GetBucketTagging",
+                "s3:GetBucketLocation",
+                "s3:ListBucket",
+                "s3:CreateBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:ListBucketVersions",
+                "s3:GetBucketPolicyStatus",
+                "s3:GetBucketPublicAccessBlock",
+                "s3:GetBucketPolicy",
+                "s3:GetBucketAcl",
+                "s3:PutObjectTagging",
+                "s3:GetObjectTagging",
+                "s3:DeleteObject",
+                "s3:DeleteObjectVersion",
+                "s3:PutObject",
+                "s3:ListAllMyBuckets",
+                "s3:GetObject",
+                "s3:GetEncryptionConfiguration",
+                "kms:List*",
+                "kms:ReEncrypt*",
+                "kms:Describe*",
+                "kms:CreateGrant",
+                "fsx:Describe*",
+                "fsx:List*",
+                "kms:GenerateDataKeyWithoutPlaintext"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "cvoServicePolicy"
+        },
+        {
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:DescribeInstances",
+                "ec2:DescribeInstanceStatus",
+                "ec2:RunInstances",
+                "ec2:TerminateInstances",
+                "ec2:DescribeInstanceAttribute",
+                "ec2:DescribeImages",
+                "ec2:CreateTags",
+                "ec2:CreateVolume",
+                "ec2:CreateSecurityGroup",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeRegions",
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStacks",
+                "kms:List*",
+                "kms:Describe*",
+                "ec2:DescribeVpcEndpoints",
+                "kms:ListAliases",
+                "athena:StartQueryExecution",
+                "athena:GetQueryResults",
+                "athena:GetQueryExecution",
+                "glue:GetDatabase",
+                "glue:GetTable",
+                "glue:CreateTable",
+                "glue:CreateDatabase",
+                "glue:GetPartitions",
+                "glue:BatchCreatePartition",
+                "glue:BatchDeletePartition"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "backupPolicy"
+        },
+        {
+            "Action": [
+                "s3:GetBucketLocation",
+                "s3:ListAllMyBuckets",
+                "s3:ListBucket",
+                "s3:CreateBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:PutLifecycleConfiguration",
+                "s3:PutBucketTagging",
+                "s3:ListBucketVersions",
+                "s3:GetBucketAcl",
+                "s3:PutBucketPublicAccessBlock",
+                "s3:GetObject",
+                "s3:PutEncryptionConfiguration",
+                "s3:DeleteObject",
+                "s3:DeleteObjectVersion",
+                "s3:ListBucketMultipartUploads",
+                "s3:PutObject",
+                "s3:PutBucketAcl",
+                "s3:AbortMultipartUpload",
+                "s3:ListMultipartUploadParts",
+                "s3:DeleteBucket",
+                "s3:GetObjectVersionTagging",
+                "s3:GetObjectVersionAcl",
+                "s3:GetObjectRetention",
+                "s3:GetObjectTagging",
+                "s3:GetObjectVersion",
+                "s3:PutObjectVersionTagging",
+                "s3:PutObjectRetention",
+                "s3:DeleteObjectTagging",
+                "s3:DeleteObjectVersionTagging",
+                "s3:GetBucketObjectLockConfiguration",
+                "s3:GetBucketVersioning",
+                "s3:PutBucketObjectLockConfiguration",
+                "s3:PutBucketVersioning",
+                "s3:BypassGovernanceRetention",
+                "s3:PutBucketPolicy",
+                "s3:PutBucketOwnershipControls"
+            ],
+            "Resource": [
+                "arn:aws:s3:::netapp-backup-*"
+            ],
+            "Effect": "Allow",
+            "Sid": "backupS3Policy"
+        },
+        {
+            "Action": [
+                "s3:CreateBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:PutLifecycleConfiguration",
+                "s3:PutBucketTagging",
+                "s3:ListBucketVersions",
+                "s3:GetBucketPolicyStatus",
+                "s3:GetBucketPublicAccessBlock",
+                "s3:GetBucketAcl",
+                "s3:GetBucketPolicy",
+                "s3:PutBucketPublicAccessBlock",
+                "s3:DeleteBucket"
+            ],
+            "Resource": [
+                "arn:aws:s3:::fabric-pool*"
+            ],
+            "Effect": "Allow",
+            "Sid": "fabricPoolS3Policy"
+        },
+        {
+            "Action": [
+                "ec2:DescribeRegions"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "fabricPoolPolicy"
+        },
+        {
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/netapp-adc-manager": "*"
+                }
+            },
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:TerminateInstances"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*"
+            ],
+            "Effect": "Allow"
+        },
+        {
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/WorkingEnvironment": "*"
+                }
+            },
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:TerminateInstances",
+                "ec2:AttachVolume",
+                "ec2:DetachVolume",
+                "ec2:StopInstances",
+                "ec2:DeleteVolume"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*"
+            ],
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Effect": "Allow"
+        },
+        {
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/WorkingEnvironment": "*"
+                }
+            },
+            "Action": [
+                "ec2:DeleteVolume"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Effect": "Allow"
+        }
+    ]
+}
+----
+--
+.정책 #2
+--
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "ec2:CreateTags",
+                "ec2:DeleteTags",
+                "ec2:DescribeTags",
+                "tag:getResources",
+                "tag:getTagKeys",
+                "tag:getTagValues",
+                "tag:TagResources",
+                "tag:UntagResources"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "tagServicePolicy"
+        }
+    ]
+}
+----
+--
+=====
+====
+.GovCloud(미국) 지역
+[%collapsible]
+====
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:ListInstanceProfiles",
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:PutRolePolicy",
+                "iam:CreateInstanceProfile",
+                "iam:DeleteRolePolicy",
+                "iam:AddRoleToInstanceProfile",
+                "iam:RemoveRoleFromInstanceProfile",
+                "iam:DeleteInstanceProfile",
+                "ec2:ModifyVolumeAttribute",
+                "sts:DecodeAuthorizationMessage",
+                "ec2:DescribeImages",
+                "ec2:DescribeRouteTables",
+                "ec2:DescribeInstances",
+                "iam:PassRole",
+                "ec2:DescribeInstanceStatus",
+                "ec2:RunInstances",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:CreateTags",
+                "ec2:CreateVolume",
+                "ec2:DescribeVolumes",
+                "ec2:DeleteVolume",
+                "ec2:CreateSecurityGroup",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DescribeSecurityGroups",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DeleteNetworkInterface",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeDhcpOptions",
+                "ec2:CreateSnapshot",
+                "ec2:DeleteSnapshot",
+                "ec2:DescribeSnapshots",
+                "ec2:StopInstances",
+                "ec2:GetConsoleOutput",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribeRegions",
+                "ec2:DeleteTags",
+                "ec2:DescribeTags",
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:ValidateTemplate",
+                "s3:GetObject",
+                "s3:ListBucket",
+                "s3:ListAllMyBuckets",
+                "s3:GetBucketTagging",
+                "s3:GetBucketLocation",
+                "s3:CreateBucket",
+                "s3:GetBucketPolicyStatus",
+                "s3:GetBucketPublicAccessBlock",
+                "s3:GetBucketAcl",
+                "s3:GetBucketPolicy",
+                "kms:List*",
+                "kms:ReEncrypt*",
+                "kms:Describe*",
+                "kms:CreateGrant",
+                "ec2:AssociateIamInstanceProfile",
+                "ec2:DescribeIamInstanceProfileAssociations",
+                "ec2:DisassociateIamInstanceProfile",
+                "ec2:DescribeInstanceAttribute",
+                "ec2:CreatePlacementGroup",
+                "ec2:DeletePlacementGroup"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "fabricPoolPolicy",
+            "Effect": "Allow",
+            "Action": [
+                "s3:DeleteBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:PutLifecycleConfiguration",
+                "s3:PutBucketTagging",
+                "s3:ListBucketVersions",
+                "s3:GetBucketPolicyStatus",
+                "s3:GetBucketPublicAccessBlock",
+                "s3:GetBucketAcl",
+                "s3:GetBucketPolicy",
+                "s3:PutBucketPublicAccessBlock"
+            ],
+            "Resource": [
+                "arn:aws-us-gov:s3:::fabric-pool*"
+            ]
+        },
+        {
+            "Sid": "backupPolicy",
+            "Effect": "Allow",
+            "Action": [
+                "s3:DeleteBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:PutLifecycleConfiguration",
+                "s3:PutBucketTagging",
+                "s3:ListBucketVersions",
+                "s3:GetObject",
+                "s3:ListBucket",
+                "s3:ListAllMyBuckets",
+                "s3:GetBucketTagging",
+                "s3:GetBucketLocation",
+                "s3:GetBucketPolicyStatus",
+                "s3:GetBucketPublicAccessBlock",
+                "s3:GetBucketAcl",
+                "s3:GetBucketPolicy",
+                "s3:PutBucketPublicAccessBlock"
+            ],
+            "Resource": [
+                "arn:aws-us-gov:s3:::netapp-backup-*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:TerminateInstances",
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/WorkingEnvironment": "*"
+                }
+            },
+            "Resource": [
+                "arn:aws-us-gov:ec2:*:*:instance/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Resource": [
+                "arn:aws-us-gov:ec2:*:*:volume/*"
+            ]
+        }
+    ]
+}
+----
+====
+.비밀 지역
+[%collapsible]
+====
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [{
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeInstances",
+                "ec2:DescribeInstanceStatus",
+                "ec2:RunInstances",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:DescribeRouteTables",
+                "ec2:DescribeImages",
+                "ec2:CreateTags",
+                "ec2:CreateVolume",
+                "ec2:DescribeVolumes",
+                "ec2:ModifyVolumeAttribute",
+                "ec2:DeleteVolume",
+                "ec2:CreateSecurityGroup",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DescribeSecurityGroups",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DeleteNetworkInterface",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeDhcpOptions",
+                "ec2:CreateSnapshot",
+                "ec2:DeleteSnapshot",
+                "ec2:DescribeSnapshots",
+                "ec2:GetConsoleOutput",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribeRegions",
+                "ec2:DeleteTags",
+                "ec2:DescribeTags",
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:ValidateTemplate",
+                "iam:PassRole",
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:PutRolePolicy",
+                "iam:CreateInstanceProfile",
+                "iam:DeleteRolePolicy",
+                "iam:AddRoleToInstanceProfile",
+                "iam:RemoveRoleFromInstanceProfile",
+                "iam:DeleteInstanceProfile",
+                "s3:GetObject",
+                "s3:ListBucket",
+                "s3:GetBucketTagging",
+                "s3:GetBucketLocation",
+                "s3:ListAllMyBuckets",
+                "kms:List*",
+                "kms:Describe*",
+                "ec2:AssociateIamInstanceProfile",
+                "ec2:DescribeIamInstanceProfileAssociations",
+                "ec2:DisassociateIamInstanceProfile",
+                "ec2:DescribeInstanceAttribute",
+                "ec2:CreatePlacementGroup",
+                "ec2:DeletePlacementGroup",
+                "iam:ListinstanceProfiles"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "fabricPoolPolicy",
+            "Effect": "Allow",
+            "Action": [
+                "s3:DeleteBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:PutLifecycleConfiguration",
+                "s3:PutBucketTagging",
+                "s3:ListBucketVersions"
+            ],
+            "Resource": [
+                "arn:aws-iso-b:s3:::fabric-pool*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:TerminateInstances",
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/WorkingEnvironment": "*"
+                }
+            },
+            "Resource": [
+                "arn:aws-iso-b:ec2:*:*:instance/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Resource": [
+                "arn:aws-iso-b:ec2:*:*:volume/*"
+            ]
+        }
+    ]
+}
+----
+====
+.극비 지역
+[%collapsible]
+====
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [{
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeInstances",
+                "ec2:DescribeInstanceStatus",
+                "ec2:RunInstances",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:DescribeRouteTables",
+                "ec2:DescribeImages",
+                "ec2:CreateTags",
+                "ec2:CreateVolume",
+                "ec2:DescribeVolumes",
+                "ec2:ModifyVolumeAttribute",
+                "ec2:DeleteVolume",
+                "ec2:CreateSecurityGroup",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DescribeSecurityGroups",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DeleteNetworkInterface",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeDhcpOptions",
+                "ec2:CreateSnapshot",
+                "ec2:DeleteSnapshot",
+                "ec2:DescribeSnapshots",
+                "ec2:GetConsoleOutput",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribeRegions",
+                "ec2:DeleteTags",
+                "ec2:DescribeTags",
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:ValidateTemplate",
+                "iam:PassRole",
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:PutRolePolicy",
+                "iam:CreateInstanceProfile",
+                "iam:DeleteRolePolicy",
+                "iam:AddRoleToInstanceProfile",
+                "iam:RemoveRoleFromInstanceProfile",
+                "iam:DeleteInstanceProfile",
+                "s3:GetObject",
+                "s3:ListBucket",
+                "s3:GetBucketTagging",
+                "s3:GetBucketLocation",
+                "s3:ListAllMyBuckets",
+                "kms:List*",
+                "kms:Describe*",
+                "ec2:AssociateIamInstanceProfile",
+                "ec2:DescribeIamInstanceProfileAssociations",
+                "ec2:DisassociateIamInstanceProfile",
+                "ec2:DescribeInstanceAttribute",
+                "ec2:CreatePlacementGroup",
+                "ec2:DeletePlacementGroup",
+                "iam:ListinstanceProfiles"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "fabricPoolPolicy",
+            "Effect": "Allow",
+            "Action": [
+                "s3:DeleteBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:PutLifecycleConfiguration",
+                "s3:PutBucketTagging",
+                "s3:ListBucketVersions"
+            ],
+            "Resource": [
+                "arn:aws-iso:s3:::fabric-pool*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:TerminateInstances",
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/WorkingEnvironment": "*"
+                }
+            },
+            "Resource": [
+                "arn:aws-iso:ec2:*:*:instance/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Resource": [
+                "arn:aws-iso:ec2:*:*:volume/*"
+            ]
+        }
+    ]
+}
+----
+====
+
+
+== AWS 권한은 어떻게 사용되나요?
+
+다음 섹션에서는 각 NetApp 콘솔 관리 또는 데이터 서비스에 대한 권한이 어떻게 사용되는지 설명합니다.  회사 정책에 따라 필요한 경우에만 권한이 부여되는 경우 이 정보가 유용할 수 있습니다.
+
+
+
+=== ONTAP 용 Amazon FSx
+
+콘솔 에이전트는 Amazon FSx for ONTAP 파일 시스템을 관리하기 위해 다음과 같은 API 요청을 합니다.
+
+* ec2:인스턴스 설명
+* ec2:인스턴스 상태 설명
+* ec2:인스턴스 속성 설명
+* ec2:라우트테이블 설명
+* ec2:이미지 설명
+* ec2:태그 생성
+* ec2:볼륨 설명
+* ec2:보안 그룹 설명
+* ec2:네트워크 인터페이스 설명
+* ec2:서브넷 설명
+* ec2:Vpcs 설명
+* ec2:Dhcp옵션 설명
+* ec2:스냅샷 설명
+* ec2:키 쌍 설명
+* ec2:지역 설명
+* ec2:태그 설명
+* ec2:DescribeIamInstanceProfileAssociations
+* ec2:예약된 인스턴스 설명 제공
+* ec2:Vpc엔드포인트 설명
+* ec2:Vpcs 설명
+* ec2:볼륨 수정 설명
+* ec2:배치 그룹 설명
+* kms:목록*
+* kms:설명*
+* kms:CreateGrant
+* kms:별칭 목록
+* fsx:설명*
+* fsx:리스트*
+
+
+
+
+=== Amazon S3 버킷 검색
+
+콘솔 에이전트는 Amazon S3 버킷을 검색하기 위해 다음 API 요청을 합니다.
+
+s3:암호화 구성 가져오기
+
+
+
+=== NetApp 백업 및 복구
+
+에이전트는 Amazon S3에서 백업을 관리하기 위해 다음과 같은 API 요청을 합니다.
+
+* s3:버킷 위치 가져오기
+* s3:내 버킷 모두 나열
+* s3:리스트버킷
+* s3:버킷 만들기
+* s3:수명주기구성 가져오기
+* s3:PutLifecycleConfiguration
+* s3:PutBucket태깅
+* s3:리스트버킷버전
+* s3:GetBucketAcl
+* s3:PutBucketPublicAccessBlock
+* kms:목록*
+* kms:설명*
+* s3:객체 가져오기
+* ec2:Vpc엔드포인트 설명
+* kms:별칭 목록
+* s3:PutEncryptionConfiguration
+
+
+볼륨과 파일을 복원하기 위해 검색 및 복원 방법을 사용할 때 에이전트는 다음과 같은 API 요청을 합니다.
+
+* s3:버킷 만들기
+* s3:객체 삭제
+* s3:객체 버전 삭제
+* s3:GetBucketAcl
+* s3:리스트버킷
+* s3:리스트버킷버전
+* s3:ListBucketMultipartUploads
+* s3:객체 넣기
+* s3:PutBucketAcl
+* s3:PutLifecycleConfiguration
+* s3:PutBucketPublicAccessBlock
+* s3:멀티파트업로드 중단
+* s3:ListMultipartUploadParts
+* 아테나:StartQueryExecution
+* 아테나:GetQueryResults
+* 아테나:GetQueryExecution
+* 아테나:쿼리 실행 중지
+* glue:CreateDatabase
+* 접착제:CreateTable
+* 접착제:일괄 삭제 파티션
+
+
+볼륨 백업에 DataLock 및 NetApp Ransomware Resilience를 사용하는 경우 에이전트는 다음과 같은 API 요청을 합니다.
+
+* s3:GetObjectVersionTagging
+* s3:GetBucketObjectLockConfiguration
+* s3:GetObjectVersionAcl
+* s3:PutObjectTagging
+* s3:객체 삭제
+* s3:객체태깅 삭제
+* s3:객체 보존 가져오기
+* s3:DeleteObjectVersionTagging
+* s3:객체 넣기
+* s3:객체 가져오기
+* s3:PutBucketObjectLock구성
+* s3:수명주기구성 가져오기
+* s3:ListBucketByTags
+* s3:버킷태깅 가져오기
+* s3:객체 버전 삭제
+* s3:리스트버킷버전
+* s3:리스트버킷
+* s3:PutBucket태깅
+* s3:객체태깅 가져오기
+* s3:PutBucketVersioning
+* s3:PutObjectVersionTagging
+* s3:버킷 버전 가져오기
+* s3:GetBucketAcl
+* s3:바이패스거버넌스보존
+* s3:객체 보존 넣기
+* s3:버킷 위치 가져오기
+* s3:객체 버전 가져오기
+
+
+소스 볼륨에 사용하는 AWS 계정과 다른 AWS 계정을 Cloud Volumes ONTAP 백업에 사용하는 경우 에이전트는 다음과 같은 API 요청을 합니다.
+
+* s3:PutBucketPolicy
+* s3:PutBucketOwnershipControls
+
+
+
+
+=== 분류
+
+에이전트는 NetApp 데이터 분류를 배포하기 위해 다음 API 요청을 합니다.
+
+* ec2:인스턴스 설명
+* ec2:인스턴스 상태 설명
+* ec2:실행 인스턴스
+* ec2:인스턴스 종료
+* ec2:태그 생성
+* ec2:볼륨 생성
+* ec2:볼륨 첨부
+* ec2:보안 그룹 생성
+* ec2:보안 그룹 삭제
+* ec2:보안 그룹 설명
+* ec2:네트워크 인터페이스 생성
+* ec2:네트워크 인터페이스 설명
+* ec2:네트워크 인터페이스 삭제
+* ec2:서브넷 설명
+* ec2:Vpcs 설명
+* ec2:스냅샷 생성
+* ec2:지역 설명
+* 클라우드포메이션:CreateStack
+* 클라우드포메이션:DeleteStack
+* 클라우드포메이션:스택 설명
+* 클라우드포메이션:스택이벤트 설명
+* iam:인스턴스 프로필에 역할 추가
+* ec2:AssociateIamInstanceProfile
+* ec2:DescribeIamInstanceProfileAssociations
+
+
+NetApp 데이터 분류를 사용할 때 에이전트는 S3 버킷을 스캔하기 위해 다음 API 요청을 만듭니다.
+
+* iam:인스턴스 프로필에 역할 추가
+* ec2:AssociateIamInstanceProfile
+* ec2:DescribeIamInstanceProfileAssociations
+* s3:버킷태깅 가져오기
+* s3:버킷 위치 가져오기
+* s3:내 버킷 모두 나열
+* s3:리스트버킷
+* s3:버킷정책 상태 가져오기
+* s3:버킷 정책 가져오기
+* s3:GetBucketAcl
+* s3:객체 가져오기
+* iam:역할 가져오기
+* s3:객체 삭제
+* s3:객체 버전 삭제
+* s3:객체 넣기
+* sts:역할 가정
+
+
+
+
+=== Cloud Volumes ONTAP
+
+에이전트는 AWS에서 Cloud Volumes ONTAP 배포하고 관리하기 위해 다음과 같은 API 요청을 합니다.
+
+[cols="5*"]
+|===
+| 목적 | 행동 | 배포에 사용되나요? | 일상 업무에 사용되나요? | 삭제에 사용되나요? 
+
+
+.13+| Cloud Volumes ONTAP 인스턴스에 대한 IAM 역할 및 인스턴스 프로필을 생성하고 관리합니다. | iam:ListInstanceProfiles | 예 | 예 | 아니요 
+
+
+| iam:역할 생성 | 예 | 아니요 | 아니요 
+
+
+| iam:역할 삭제 | 아니요 | 예 | 예 
+
+
+| iam:역할 정책 넣기 | 예 | 아니요 | 아니요 
+
+
+| iam:인스턴스 프로필 생성 | 예 | 아니요 | 아니요 
+
+
+| iam:역할 정책 삭제 | 아니요 | 예 | 예 
+
+
+| iam:인스턴스 프로필에 역할 추가 | 예 | 아니요 | 아니요 
+
+
+| iam:인스턴스 프로필에서 역할 제거 | 아니요 | 예 | 예 
+
+
+| iam:인스턴스 프로필 삭제 | 아니요 | 예 | 예 
+
+
+| iam:PassRole | 예 | 아니요 | 아니요 
+
+
+| ec2:AssociateIamInstanceProfile | 예 | 예 | 아니요 
+
+
+| ec2:DescribeIamInstanceProfileAssociations | 예 | 예 | 아니요 
+
+
+| ec2:IamInstanceProfile 연결 해제 | 아니요 | 예 | 아니요 
+
+
+| 권한 상태 메시지 디코딩 | sts:디코드인증메시지 | 예 | 예 | 아니요 
+
+
+| 계정에서 사용 가능한 지정된 이미지(AMI)를 설명합니다. | ec2:이미지 설명 | 예 | 예 | 아니요 
+
+
+| VPC의 경로 테이블 설명(HA 쌍에만 필요) | ec2:라우트테이블 설명 | 예 | 아니요 | 아니요 
+
+
+.7+| 인스턴스 중지, 시작 및 모니터링 | ec2:시작인스턴스 | 예 | 예 | 아니요 
+
+
+| ec2:인스턴스 중지 | 예 | 예 | 아니요 
+
+
+| ec2:인스턴스 설명 | 예 | 예 | 아니요 
+
+
+| ec2:인스턴스 상태 설명 | 예 | 예 | 아니요 
+
+
+| ec2:실행 인스턴스 | 예 | 아니요 | 아니요 
+
+
+| ec2:인스턴스 종료 | 아니요 | 아니요 | 예 
+
+
+| ec2:ModifyInstanceAttribute | 아니요 | 예 | 아니요 
+
+
+| 지원되는 인스턴스 유형에 대해 향상된 네트워킹이 활성화되어 있는지 확인하세요. | ec2:인스턴스 속성 설명 | 아니요 | 예 | 아니요 
+
+
+| 유지 관리 및 비용 할당에 사용되는 "WorkingEnvironment" 및 "WorkingEnvironmentId" 태그를 사용하여 리소스에 태그를 지정합니다. | ec2:태그 생성 | 예 | 예 | 아니요 
+
+
+.6+| Cloud Volumes ONTAP 이 백엔드 스토리지로 사용하는 EBS 볼륨을 관리합니다. | ec2:볼륨 생성 | 예 | 예 | 아니요 
+
+
+| ec2:볼륨 설명 | 예 | 예 | 예 
+
+
+| ec2:볼륨 속성 수정 | 아니요 | 예 | 예 
+
+
+| ec2:볼륨 첨부 | 예 | 예 | 아니요 
+
+
+| ec2:볼륨 삭제 | 아니요 | 예 | 예 
+
+
+| ec2:볼륨 분리 | 아니요 | 예 | 예 
+
+
+.7+| Cloud Volumes ONTAP 에 대한 보안 그룹을 만들고 관리합니다. | ec2:보안 그룹 생성 | 예 | 아니요 | 아니요 
+
+
+| ec2:보안 그룹 삭제 | 아니요 | 예 | 예 
+
+
+| ec2:보안 그룹 설명 | 예 | 예 | 예 
+
+
+| ec2:보안그룹퇴장취소 | 예 | 아니요 | 아니요 
+
+
+| ec2:보안그룹 송신 권한 부여 | 예 | 아니요 | 아니요 
+
+
+| ec2:보안그룹인증 | 예 | 아니요 | 아니요 
+
+
+| ec2:보안그룹 수신 거부 | 예 | 예 | 아니요 
+
+
+.4+| 대상 서브넷에서 Cloud Volumes ONTAP 에 대한 네트워크 인터페이스를 생성하고 관리합니다. | ec2:네트워크 인터페이스 생성 | 예 | 아니요 | 아니요 
+
+
+| ec2:네트워크 인터페이스 설명 | 예 | 예 | 아니요 
+
+
+| ec2:네트워크 인터페이스 삭제 | 아니요 | 예 | 예 
+
+
+| ec2:ModifyNetworkInterfaceAttribute | 아니요 | 예 | 아니요 
+
+
+.2+| 대상 서브넷 및 보안 그룹 목록 가져오기 | ec2:서브넷 설명 | 예 | 예 | 아니요 
+
+
+| ec2:Vpcs 설명 | 예 | 예 | 아니요 
+
+
+| Cloud Volumes ONTAP 인스턴스에 대한 DNS 서버 및 기본 도메인 이름 가져오기 | ec2:Dhcp옵션 설명 | 예 | 아니요 | 아니요 
+
+
+.3+| Cloud Volumes ONTAP 위한 EBS 볼륨의 스냅샷을 찍습니다. | ec2:스냅샷 생성 | 예 | 예 | 아니요 
+
+
+| ec2:스냅샷 삭제 | 아니요 | 예 | 예 
+
+
+| ec2:스냅샷 설명 | 아니요 | 예 | 아니요 
+
+
+| AutoSupport 메시지에 연결된 Cloud Volumes ONTAP 콘솔을 캡처합니다. | ec2:GetConsoleOutput | 예 | 예 | 아니요 
+
+
+| 사용 가능한 키 쌍 목록 가져오기 | ec2:키 쌍 설명 | 예 | 아니요 | 아니요 
+
+
+| 사용 가능한 AWS 지역 목록을 가져옵니다. | ec2:지역 설명 | 예 | 예 | 아니요 
+
+
+.2+| Cloud Volumes ONTAP 인스턴스와 연결된 리소스에 대한 태그 관리 | ec2:태그 삭제 | 아니요 | 예 | 예 
+
+
+| ec2:태그 설명 | 아니요 | 예 | 아니요 
+
+
+.5+| AWS CloudFormation 템플릿에 대한 스택 생성 및 관리 | 클라우드포메이션:CreateStack | 예 | 아니요 | 아니요 
+
+
+| 클라우드포메이션:DeleteStack | 예 | 아니요 | 아니요 
+
+
+| 클라우드포메이션:스택 설명 | 예 | 예 | 아니요 
+
+
+| 클라우드포메이션:스택이벤트 설명 | 예 | 아니요 | 아니요 
+
+
+| cloudformation:ValidateTemplate | 예 | 아니요 | 아니요 
+
+
+.15+| Cloud Volumes ONTAP 시스템이 데이터 계층화를 위한 용량 계층으로 사용하는 S3 버킷을 생성하고 관리합니다. | s3:버킷 만들기 | 예 | 예 | 아니요 
+
+
+| s3:버킷 삭제 | 아니요 | 예 | 예 
+
+
+| s3:수명주기구성 가져오기 | 아니요 | 예 | 아니요 
+
+
+| s3:PutLifecycleConfiguration | 아니요 | 예 | 아니요 
+
+
+| s3:PutBucket태깅 | 아니요 | 예 | 아니요 
+
+
+| s3:리스트버킷버전 | 아니요 | 예 | 아니요 
+
+
+| s3:버킷정책 상태 가져오기 | 아니요 | 예 | 아니요 
+
+
+| s3:GetBucketPublicAccessBlock | 아니요 | 예 | 아니요 
+
+
+| s3:GetBucketAcl | 아니요 | 예 | 아니요 
+
+
+| s3:버킷 정책 가져오기 | 아니요 | 예 | 아니요 
+
+
+| s3:PutBucketPublicAccessBlock | 아니요 | 예 | 아니요 
+
+
+| s3:버킷태깅 가져오기 | 아니요 | 예 | 아니요 
+
+
+| s3:버킷 위치 가져오기 | 아니요 | 예 | 아니요 
+
+
+| s3:내 버킷 모두 나열 | 아니요 | 아니요 | 아니요 
+
+
+| s3:리스트버킷 | 아니요 | 예 | 아니요 
+
+
+.5+| AWS Key Management Service(KMS)를 사용하여 Cloud Volumes ONTAP 의 데이터 암호화를 활성화합니다. | kms:목록* | 예 | 예 | 아니요 
+
+
+| kms:재암호화* | 예 | 아니요 | 아니요 
+
+
+| kms:설명* | 예 | 예 | 아니요 
+
+
+| kms:CreateGrant | 예 | 예 | 아니요 
+
+
+| kms:GenerateDataKeyWithoutPlaintext | 예 | 예 | 아니요 
+
+
+.2+| 단일 AWS 가용성 영역에서 두 개의 HA 노드와 중재자에 대한 AWS 스프레드 배치 그룹을 생성하고 관리합니다. | ec2:배치 그룹 생성 | 예 | 아니요 | 아니요 
+
+
+| ec2:배치 그룹 삭제 | 아니요 | 예 | 예 
+
+
+.2+| 보고서 만들기 | fsx:설명* | 아니요 | 예 | 아니요 
+
+
+| fsx:리스트* | 아니요 | 예 | 아니요 
+
+
+.2+| Amazon EBS Elastic Volumes 기능을 지원하는 집계를 생성하고 관리합니다. | ec2:볼륨 수정 설명 | 아니요 | 예 | 아니요 
+
+
+| ec2:볼륨 수정 | 아니요 | 예 | 아니요 
+
+
+| 가용성 영역이 AWS 로컬 영역인지 확인하고 모든 배포 매개변수가 호환되는지 확인합니다. | ec2:가용성 구역 설명 | 예 | 아니요 | 예 
+|===
+
+
+== 변경 로그
+
+권한이 추가되거나 제거되면 아래 섹션에 기록됩니다.
+
+
+
+=== 2024년 9월 9일
+
+NetApp 콘솔이 더 이상 NetApp 에지 캐싱 및 Kubernetes 클러스터의 검색과 관리를 지원하지 않기 때문에 표준 지역에 대한 정책 #2에서 권한이 제거되었습니다.
+
+.정책에서 제거된 권한 보기
+[%collapsible]
+====
+[source, json]
+----
+        {
+            "Action": [
+                "ec2:DescribeRegions",
+                "eks:ListClusters",
+                "eks:DescribeCluster",
+                "iam:GetInstanceProfile"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "K8sServicePolicy"
+        },
+        {
+            "Action": [
+                "cloudformation:DescribeStacks",
+                "cloudwatch:GetMetricStatistics",
+                "cloudformation:ListStacks"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "GFCservicePolicy"
+        },
+        {
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/GFCInstance": "*"
+                }
+            },
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:TerminateInstances",
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*"
+            ],
+            "Effect": "Allow"
+        },
+----
+====
+
+
+=== 2024년 5월 9일
+
+이제 Cloud Volumes ONTAP 에 다음 권한이 필요합니다.
+
+ec2:가용성 구역 설명
+
+
+
+=== 2023년 6월 6일
+
+이제 Cloud Volumes ONTAP 에 다음 권한이 필요합니다.
+
+kms:GenerateDataKeyWithoutPlaintext
+
+
+
+=== 2023년 2월 14일
+
+이제 NetApp Cloud Tiering에 다음 권한이 필요합니다.
+
+ec2:Vpc엔드포인트 설명

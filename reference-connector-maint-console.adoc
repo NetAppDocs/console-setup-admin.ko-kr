@@ -1,0 +1,88 @@
+---
+sidebar: sidebar 
+permalink: reference-connector-maint-console.html 
+keywords: transparent proxy, connector certificate, agent maintenance console, proxy configuration, connector proxy. agent proxy 
+summary: 콘솔 에이전트 유지 관리 콘솔을 사용하여 콘솔 에이전트가 투명 프록시 서버를 사용하도록 구성할 수 있습니다. 
+---
+= 콘솔 에이전트 유지 관리 콘솔
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+콘솔 에이전트 유지 관리 콘솔을 사용하여 콘솔 에이전트가 투명 프록시 서버를 사용하도록 구성할 수 있습니다.
+
+
+
+== 에이전트 유지 관리 콘솔에 액세스하세요
+
+콘솔 에이전트 호스트에서 유지 관리 콘솔에 액세스할 수 있습니다.  다음 디렉토리로 이동하세요:
+
+[source, CLI]
+----
+/opt/application/netapp/service-manager-2/agent-maint-console
+----
+
+
+== 투명 프록시 명령
+
+에이전트 유지 관리 콘솔은 에이전트가 투명 프록시 서버를 사용하도록 구성하는 명령을 제공합니다.
+
+
+
+=== 현재 투명 프록시 구성 보기
+
+현재 투명 프록시 구성을 보려면 다음 명령을 사용하세요.
+
+[source, CLI]
+----
+./agent-maint-console proxy get
+----
+
+
+=== 투명 프록시 서버 추가
+
+투명 프록시 서버를 추가하려면 다음 명령을 사용하십시오. `/home/ubuntu/myCA1.pem` 프록시 서버의 인증서 파일 경로입니다.  인증서 파일은 PEM 형식이어야 합니다.
+
+[source, CLI]
+----
+./agent-maint-console proxy add -c /home/ubuntu/myCA1.pem
+----
+인증서 파일이 명령과 같은 디렉토리에 있는지 확인하거나 인증서 파일의 전체 경로를 지정하세요.
+
+
+
+=== 투명 프록시 서버에 대한 인증서 업데이트
+
+투명 프록시 서버의 인증서를 업데이트하려면 다음 명령을 사용하십시오. `/home/ubuntu/myCA1.pem` 프록시 서버의 새 인증서 파일 경로입니다.  인증서 파일은 PEM 형식이어야 합니다.
+
+[source, CLI]
+----
+./agent-maint-console proxy update -c /home/ubuntu/myCA1.pem
+----
+인증서 파일이 명령과 같은 디렉토리에 있는지 확인하거나 인증서 파일의 전체 경로를 지정하세요.
+
+
+
+=== 투명 프록시 서버 제거
+
+투명 프록시 서버를 제거하려면 다음 명령을 사용하세요.
+
+[source, CLI]
+----
+./agent-maint-console proxy remove
+----
+
+
+=== 모든 명령에 대한 도움말 보기
+
+모든 명령에 대한 도움말을 보려면 다음을 추가하세요. `--help` 명령에.  예를 들어, 도움말을 보려면 `proxy add` 명령을 사용하려면 다음 명령을 사용하세요.
+
+[source, CLI]
+----
+./agent-maint-console proxy add --help
+----

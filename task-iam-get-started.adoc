@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: task-iam-get-started.html 
+keywords: iam, quick start, get started, get started with iam, identity and access management 
+summary: NetApp 콘솔에서 ID 및 액세스 관리를 시작하려면 조직의 계층 구조를 사용자 지정하고, 추가 구성원을 추가하고, 리소스를 추가하거나 검색하고, 해당 리소스를 프로젝트와 연결합니다. 
+---
+= NetApp 콘솔에서 ID 및 액세스 시작하기
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 콘솔에 가입하면 새 조직을 만들라는 메시지가 표시됩니다.  조직에는 한 명의 구성원(조직 관리자)과 한 개의 기본 프로젝트가 포함됩니다.  비즈니스 요구 사항에 맞게 ID 및 액세스 관리(IAM)를 설정하려면 조직의 계층 구조를 사용자 지정하고, 추가 구성원을 추가하고, 리소스를 추가하거나 검색하고, 계층 구조 전반에 걸쳐 해당 리소스를 연결해야 합니다.
+
+전체 조직의 ID와 액세스를 관리하려면 *조직 관리자* 권한이 있어야 합니다.  *폴더 또는 프로젝트 관리자* 권한이 있는 경우, 권한이 있는 폴더와 프로젝트만 관리할 수 있습니다.
+
+새로운 조직을 설정하려면 다음 단계를 따르세요.  순서는 조직의 요구 사항에 따라 달라질 수 있습니다.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["하나"]기본 프로젝트를 편집하거나 조직의 계층 구조에 추가하세요
+[role="quick-margin-para"]
+기본 프로젝트를 사용하거나 비즈니스 계층 구조에 맞는 추가 프로젝트와 폴더를 만드세요.
+
+[role="quick-margin-para"]
+link:task-iam-manage-folders-projects.html["폴더와 프로젝트를 사용하여 리소스를 구성하는 방법을 알아보세요."] .
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["둘"]귀하의 조직과 회원을 연결하세요
+[role="quick-margin-para"]
+사용자 계정을 조직에 연결하고 권한을 할당합니다.  조직에 서비스 계정을 추가하는 옵션도 있습니다.
+
+[role="quick-margin-para"]
+link:task-iam-manage-members-permissions.html["멤버와 멤버의 권한을 관리하는 방법을 알아보세요"] .
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["삼"]리소스 추가 또는 검색
+[role="quick-margin-para"]
+콘솔에 리소스(시스템)를 추가하거나 검색합니다.  조직 구성원은 프로젝트 내에서 시스템을 관리합니다.
+
+[role="quick-margin-para"]
+리소스를 만들거나 검색하는 방법을 알아보세요.
+
+[role="quick-margin-list"]
+* https://docs.netapp.com/us-en/bluexp-fsx-ontap/index.html["Amazon FSx for NetApp ONTAP"^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/index.html["Azure NetApp Files"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/bluexp-e-series/index.html["E-시리즈 시스템"^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html["온프레미스 ONTAP 클러스터"^]
+* https://docs.netapp.com/us-en/bluexp-storagegrid/index.html["StorageGRID"^]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["네"]추가 프로젝트와 리소스 연결
+[role="quick-margin-para"]
+콘솔에서 시스템을 추가하거나 검색하면 해당 리소스가 현재 선택된 프로젝트와 자동으로 연결됩니다.  해당 리소스를 조직의 다른 프로젝트에서 사용할 수 있도록 하려면 해당 프로젝트와 연결하세요.  콘솔 에이전트를 사용하여 리소스를 관리하는 경우 콘솔 에이전트를 해당 프로젝트와 연결합니다.
+
+[role="quick-margin-list"]
+* link:task-iam-manage-resources.html["조직의 리소스 계층을 관리하는 방법을 알아보세요"] .
+* link:task-iam-associate-connectors.html["콘솔 에이전트를 폴더 또는 프로젝트와 연결하는 방법을 알아보세요."] .
+
+
+.관련 정보
+* link:concept-identity-and-access-management.html["NetApp 콘솔에서 ID 및 액세스 관리에 대해 알아보세요"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["ID 및 액세스를 위한 API에 대해 알아보세요"^]
+

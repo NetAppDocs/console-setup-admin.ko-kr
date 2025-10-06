@@ -1,0 +1,13 @@
+= 
+:allow-uri-read: 
+
+
+서비스 계정을 콘솔 에이전트 VM과 연결합니다.
+
+.단계
+. Google Cloud 포털로 이동하여 콘솔 에이전트 VM 인스턴스에 서비스 계정을 할당합니다.
++
+https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Google Cloud 문서: 인스턴스의 서비스 계정 및 액세스 범위 변경"^]
+
+. 다른 프로젝트의 리소스를 관리하려면 해당 프로젝트에 콘솔 에이전트 역할이 있는 서비스 계정을 추가하여 액세스 권한을 부여하세요. 각 프로젝트마다 이 단계를 반복해야 합니다.
+

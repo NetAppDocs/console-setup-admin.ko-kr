@@ -1,0 +1,11 @@
+= 
+:allow-uri-read: 
+
+
+[IMPORTANT]
+====
+* 새로운 에이전트 배포의 경우 NetApp 다음 엔드포인트를 확인합니다.link:reference-networking-saas-console.html["여기에 나열됨"^] .  업그레이드에 사용된 이전 엔드포인트를 사용하는 경우 이 구성 검사는 오류로 실패합니다.link:reference-networking-saas-console-previous.html["여기에 나열됨"] .  NetApp 최대한 빨리 현재 엔드포인트에 대한 액세스를 허용하고 이전 엔드포인트에 대한 액세스를 차단하도록 방화벽 규칙을 업데이트할 것을 권장합니다.link:reference-networking-saas-console-previous.html#update-endpoint-list["네트워킹을 업데이트하는 방법을 알아보세요"] .
+* 방화벽의 엔드포인트를 업데이트하면 기존 에이전트가 계속 작동합니다.
+
+
+====

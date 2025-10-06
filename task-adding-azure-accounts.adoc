@@ -1,0 +1,389 @@
+---
+sidebar: sidebar 
+permalink: task-adding-azure-accounts.html 
+keywords: permissions, microsoft, azure, permissions, custom role, role, json, active directory, ad, service principal, key, tenant id, application key, application id, operator role, managed identity, iam, operator, role, virtual machine, create custom role, create azure custom role, azure custom role 
+summary: NetApp 콘솔이 Azure 구독에서 클라우드 리소스를 배포하고 관리하는 데 필요한 권한을 갖도록 Azure 자격 증명을 추가하고 관리합니다.  여러 Azure Marketplace 구독을 관리하는 경우 자격 증명 페이지에서 각 구독에 다른 Azure 자격 증명을 할당할 수 있습니다. 
+---
+= NetApp 콘솔에 대한 Azure 자격 증명 및 마켓플레이스 구독 관리
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 콘솔이 Azure 구독에서 클라우드 리소스를 배포하고 관리하는 데 필요한 권한을 갖도록 Azure 자격 증명을 추가하고 관리합니다.  여러 Azure Marketplace 구독을 관리하는 경우 자격 증명 페이지에서 각 구독에 다른 Azure 자격 증명을 할당할 수 있습니다.
+
+
+
+== 개요
+
+콘솔에서 추가 Azure 구독과 자격 증명을 추가하는 방법에는 두 가지가 있습니다.
+
+. 추가 Azure 구독을 Azure 관리 ID와 연결합니다.
+. 다양한 Azure 자격 증명을 사용하여 Cloud Volumes ONTAP 배포하려면 서비스 주체를 사용하여 Azure 권한을 부여하고 해당 자격 증명을 콘솔에 추가합니다.
+
+
+
+
+== 추가 Azure 구독을 관리 ID와 연결
+
+콘솔을 사용하면 Cloud Volumes ONTAP 을 배포할 Azure 자격 증명과 Azure 구독을 선택할 수 있습니다.  관리 ID 프로필에 대해 다른 Azure 구독을 선택하려면 다음을 수행해야 합니다. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["관리되는 ID"^] 해당 구독을 통해.
+
+.이 작업에 관하여
+관리되는 ID는link:concept-accounts-azure.html["초기 Azure 계정"] 콘솔에서 콘솔 에이전트를 배포하는 경우.  콘솔 에이전트를 배포하면 콘솔은 콘솔 에이전트 가상 머신에 콘솔 운영자 역할을 할당합니다.
+
+.단계
+. Azure Portal에 로그인합니다.
+. *구독* 서비스를 열고 Cloud Volumes ONTAP 배포할 구독을 선택합니다.
+. *액세스 제어(IAM)*를 선택합니다.
++
+.. *추가* > *역할 할당 추가*를 선택한 다음 권한을 추가합니다.
++
+*** *콘솔 운영자* 역할을 선택하세요.
++
+
+NOTE: 콘솔 운영자는 콘솔 에이전트 정책에 제공되는 기본 이름입니다.  역할에 다른 이름을 선택한 경우 해당 이름을 대신 선택하세요.
+
+*** *가상 머신*에 대한 액세스 권한을 할당합니다.
+*** 콘솔 에이전트 가상 머신이 생성된 구독을 선택하세요.
+*** 콘솔 에이전트 가상 머신을 선택하세요.
+*** *저장*을 선택하세요.
+
+
+
+
+. 추가 구독에 대해 이 단계를 반복하세요.
+
+
+.결과
+새로운 시스템을 만들 때 이제 관리 ID 프로필에 대한 여러 Azure 구독 중에서 선택할 수 있습니다.
+
+image:screenshot_accounts_switch_azure_subscription.gif["Microsoft Azure 공급자 계정을 선택할 때 여러 Azure 구독을 선택할 수 있는 기능을 보여주는 스크린샷입니다."]
+
+
+
+== NetApp 콘솔에 추가 Azure 자격 증명 추가
+
+콘솔에서 콘솔 에이전트를 배포하면 콘솔은 필요한 권한이 있는 가상 머신에서 시스템이 할당한 관리 ID를 활성화합니다.  Cloud Volumes ONTAP 에 대한 새 시스템을 만들 때 콘솔은 기본적으로 이러한 Azure 자격 증명을 선택합니다.
+
+
+TIP: 기존 시스템에 콘솔 에이전트 소프트웨어를 수동으로 설치한 경우 초기 자격 증명 세트가 추가되지 않습니다. link:concept-accounts-azure.html["Azure 자격 증명 및 권한에 대해 알아보세요"] .
+
+_다른_ Azure 자격 증명을 사용하여 Cloud Volumes ONTAP 배포하려면 각 Azure 계정에 대해 Microsoft Entra ID에서 서비스 주체를 만들고 설정하여 필요한 권한을 부여해야 합니다.  그런 다음 콘솔에 새 자격 증명을 추가할 수 있습니다.
+
+
+
+=== 서비스 주체를 사용하여 Azure 권한 부여
+
+Azure에서 작업을 수행하려면 콘솔에 권한이 필요합니다.  Microsoft Entra ID에서 서비스 주체를 만들고 설정하고 콘솔에 필요한 Azure 자격 증명을 얻어 Azure 계정에 필요한 권한을 부여할 수 있습니다.
+
+.이 작업에 관하여
+다음 이미지는 콘솔이 Azure에서 작업을 수행하기 위한 권한을 얻는 방법을 보여줍니다.  하나 이상의 Azure 구독에 연결된 서비스 주체 개체는 Microsoft Entra ID의 콘솔을 나타내며 필요한 권한을 허용하는 사용자 지정 역할에 할당됩니다.
+
+image:diagram_azure_authentication.png["API 호출을 하기 전에 콘솔이 Microsoft Entra ID로부터 인증 및 권한을 얻는 모습을 보여주는 개념적 이미지입니다.  Active Directory에서 콘솔 역할은 권한을 정의합니다.  이는 하나 이상의 Azure 구독과 Cloud Manger 애플리케이션을 나타내는 서비스 주체 개체에 연결됩니다."]
+
+.단계
+. <<Microsoft Entra 애플리케이션 만들기>> .
+. <<역할에 애플리케이션 할당>> .
+. <<Windows Azure 서비스 관리 API 권한 추가>> .
+. <<애플리케이션 ID와 디렉토리 ID를 가져옵니다.>> .
+. <<클라이언트 비밀을 생성하세요>> .
+
+
+
+
+==== Microsoft Entra 애플리케이션 만들기
+
+콘솔에서 역할 기반 액세스 제어에 사용할 수 있는 Microsoft Entra 애플리케이션과 서비스 주체를 만듭니다.
+
+.단계
+. Azure에서 Active Directory 애플리케이션을 만들고 해당 애플리케이션에 역할을 할당할 수 있는 권한이 있는지 확인하세요.
++
+자세한 내용은 다음을 참조하세요. https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 설명서: 필요한 권한"^]
+
+. Azure Portal에서 *Microsoft Entra ID* 서비스를 엽니다.
++
+image:screenshot_azure_ad.png["Microsoft Azure의 Active Directory 서비스를 보여줍니다."]
+
+. 메뉴에서 *앱 등록*을 선택하세요.
+. *신규 등록*을 선택하세요.
+. 신청서에 대한 세부 사항을 지정하세요:
++
+** *이름*: 애플리케이션의 이름을 입력하세요.
+** *계정 유형*: 계정 유형을 선택하세요(모든 계정 유형이 NetApp 콘솔에서 작동합니다).
+** *리디렉션 URI*: 이 필드는 비워두어도 됩니다.
+
+
+. *등록*을 선택하세요.
++
+AD 애플리케이션과 서비스 주체를 생성했습니다.
+
+
+
+
+
+==== 역할에 애플리케이션 할당
+
+서비스 주체를 하나 이상의 Azure 구독에 바인딩하고 사용자 지정 "콘솔 운영자" 역할을 할당하여 콘솔이 Azure에서 사용 권한을 갖도록 해야 합니다.
+
+.단계
+. 사용자 정의 역할 만들기:
++
+Azure Portal, Azure PowerShell, Azure CLI 또는 REST API를 사용하여 Azure 사용자 지정 역할을 만들 수 있습니다.  다음 단계에서는 Azure CLI를 사용하여 역할을 만드는 방법을 보여줍니다.  다른 방법을 사용하려면 다음을 참조하세요. https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure 설명서"^]
+
++
+.. 내용을 복사하세요link:reference-permissions-azure.html["콘솔 에이전트에 대한 사용자 정의 역할 권한"] JSON 파일에 저장합니다.
+.. 할당 가능한 범위에 Azure 구독 ID를 추가하여 JSON 파일을 수정합니다.
++
+사용자가 Cloud Volumes ONTAP 시스템을 생성할 각 Azure 구독에 대한 ID를 추가해야 합니다.
+
++
+*예*
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+.. JSON 파일을 사용하여 Azure에서 사용자 지정 역할을 만듭니다.
++
+다음 단계에서는 Azure Cloud Shell에서 Bash를 사용하여 역할을 만드는 방법을 설명합니다.
+
++
+*** 시작 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure 클라우드 셸"^] Bash 환경을 선택하세요.
+*** JSON 파일을 업로드합니다.
++
+image:screenshot_azure_shell_upload.png["파일 업로드 옵션을 선택할 수 있는 Azure Cloud Shell의 스크린샷입니다."]
+
+*** Azure CLI를 사용하여 사용자 지정 역할을 만듭니다.
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
++
+이제 콘솔 에이전트 가상 머신에 할당할 수 있는 콘솔 운영자라는 사용자 지정 역할이 생겼습니다.
+
+
+
+
+
+. 역할에 애플리케이션을 할당합니다.
++
+.. Azure Portal에서 *구독* 서비스를 엽니다.
+.. 구독을 선택하세요.
+.. *액세스 제어(IAM) > 추가 > 역할 할당 추가*를 선택합니다.
+.. *역할* 탭에서 *콘솔 운영자* 역할을 선택하고 *다음*을 선택합니다.
+.. *멤버* 탭에서 다음 단계를 완료하세요.
++
+*** *사용자, 그룹 또는 서비스 주체*를 선택된 상태로 유지합니다.
+*** *멤버 선택*을 선택하세요.
++
+image:screenshot-azure-service-principal-role.png["애플리케이션에 역할을 추가할 때 멤버 페이지를 보여주는 Azure Portal의 스크린샷입니다."]
+
+*** 애플리케이션 이름을 검색하세요.
++
+예를 들면 다음과 같습니다.
+
++
+image:screenshot_azure_service_principal_role.png["Azure Portal의 역할 할당 추가 양식을 보여주는 Azure Portal의 스크린샷입니다."]
+
+*** 애플리케이션을 선택하고 *선택*을 선택하세요.
+*** *다음*을 선택하세요.
+
+
+.. *검토 + 할당*을 선택하세요.
++
+이제 서비스 주체는 콘솔 에이전트를 배포하는 데 필요한 Azure 권한을 갖게 되었습니다.
+
++
+여러 Azure 구독에서 Cloud Volumes ONTAP 배포하려면 각 구독에 서비스 주체를 바인딩해야 합니다.  NetApp 콘솔에서 Cloud Volumes ONTAP 배포할 때 사용할 구독을 선택할 수 있습니다.
+
+
+
+
+
+
+
+==== Windows Azure 서비스 관리 API 권한 추가
+
+서비스 주체에 "Windows Azure 서비스 관리 API" 권한을 할당해야 합니다.
+
+.단계
+. *Microsoft Entra ID* 서비스에서 *앱 등록*을 선택하고 애플리케이션을 선택합니다.
+. *API 권한 > 권한 추가*를 선택합니다.
+. *Microsoft API*에서 *Azure Service Management*를 선택합니다.
++
+image:screenshot_azure_service_mgmt_apis.gif["Azure Service Management API 권한을 보여주는 Azure Portal의 스크린샷입니다."]
+
+. *조직 사용자로 Azure Service Management에 액세스*를 선택한 다음 *권한 추가*를 선택합니다.
++
+image:screenshot_azure_service_mgmt_apis_add.gif["Azure Service Management API를 추가하는 방법을 보여주는 Azure Portal의 스크린샷입니다."]
+
+
+
+
+
+==== 애플리케이션 ID와 디렉토리 ID를 가져옵니다.
+
+콘솔에 Azure 계정을 추가하는 경우 애플리케이션(클라이언트) ID와 애플리케이션의 디렉터리(테넌트) ID를 제공해야 합니다.  콘솔은 ID를 사용하여 프로그래밍 방식으로 로그인합니다.
+
+.단계
+. *Microsoft Entra ID* 서비스에서 *앱 등록*을 선택하고 애플리케이션을 선택합니다.
+. *애플리케이션(클라이언트) ID*와 *디렉토리(테넌트) ID*를 복사합니다.
++
+image:screenshot_azure_app_ids.gif["Microsoft Entra IDy에서 애플리케이션의 애플리케이션(클라이언트) ID와 디렉토리(테넌트) ID를 보여주는 스크린샷입니다."]
+
++
+콘솔에 Azure 계정을 추가하는 경우 애플리케이션(클라이언트) ID와 애플리케이션의 디렉터리(테넌트) ID를 제공해야 합니다.  콘솔은 ID를 사용하여 프로그래밍 방식으로 로그인합니다.
+
+
+
+
+
+==== 클라이언트 비밀을 생성하세요
+
+클라이언트 비밀번호를 생성하고 해당 값을 콘솔에 제공하여 Microsoft Entra ID로 인증합니다.
+
+.단계
+. *Microsoft Entra ID* 서비스를 엽니다.
+. *앱 등록*을 선택하고 애플리케이션을 선택하세요.
+. *인증서 및 비밀번호 > 새 클라이언트 비밀번호*를 선택합니다.
+. 비밀에 대한 설명과 기간을 제공하세요.
+. *추가*를 선택하세요.
+. 클라이언트 비밀번호 값을 복사합니다.
++
+image:screenshot_azure_client_secret.gif["Microsoft Entra 서비스 주체에 대한 클라이언트 비밀을 보여주는 Azure Portal의 스크린샷입니다."]
+
+
+
+.결과
+이제 서비스 주체가 설정되었고 애플리케이션(클라이언트) ID, 디렉토리(테넌트) ID 및 클라이언트 비밀번호 값을 복사했어야 합니다.  Azure 계정을 추가할 때 콘솔에 이 정보를 입력해야 합니다.
+
+
+
+=== 콘솔에 자격 증명 추가
+
+Azure 계정에 필요한 권한을 제공한 후 해당 계정의 자격 증명을 콘솔에 추가할 수 있습니다.  이 단계를 완료하면 다양한 Azure 자격 증명을 사용하여 Cloud Volumes ONTAP 시작할 수 있습니다.
+
+.시작하기 전에
+클라우드 제공업체에서 이러한 자격 증명을 방금 만든 경우, 사용 가능해질 때까지 몇 분이 걸릴 수 있습니다.  콘솔에 자격 증명을 추가하기 전에 몇 분 정도 기다리세요.
+
+.시작하기 전에
+콘솔 설정을 변경하려면 먼저 콘솔 에이전트를 만들어야 합니다. link:concept-connectors.html#connector-installation["콘솔 에이전트를 만드는 방법을 알아보세요"] .
+
+.단계
+. *관리 > 자격 증명*을 선택합니다.
+. *자격 증명 추가*를 선택하고 마법사의 단계를 따르세요.
++
+.. *자격 증명 위치*: *Microsoft Azure > 에이전트*를 선택합니다.
+.. *자격 증명 정의*: 필요한 권한을 부여하는 Microsoft Entra 서비스 주체에 대한 정보를 입력합니다.
++
+*** 애플리케이션(클라이언트) ID
+*** 디렉토리(테넌트) ID
+*** 클라이언트 비밀번호
+
+
+.. *마켓플레이스 구독*: 지금 구독하거나 기존 구독을 선택하여 마켓플레이스 구독을 이러한 자격 증명과 연결합니다.
+.. *검토*: 새로운 자격 증명에 대한 세부 정보를 확인하고 *추가*를 선택합니다.
+
+
+
+
+.결과
+세부 정보 및 자격 증명 페이지에서 다른 자격 증명 세트로 전환할 수 있습니다. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html["콘솔에 시스템을 추가할 때"^]
+
+image:screenshot_accounts_switch_azure.gif["세부 정보 및 자격 증명 페이지에서 자격 증명 편집을 선택한 후 자격 증명을 선택하는 모습을 보여주는 스크린샷입니다."]
+
+
+
+== 기존 자격 증명 관리
+
+Marketplace 구독을 연결하고, 자격 증명을 편집하고, 삭제하여 콘솔에 이미 추가한 Azure 자격 증명을 관리합니다.
+
+
+
+=== Azure Marketplace 구독을 자격 증명에 연결
+
+콘솔에 Azure 자격 증명을 추가한 후에는 Azure Marketplace 구독을 해당 자격 증명에 연결할 수 있습니다.  구독을 사용하면 사용량에 따라 요금을 지불하는 Cloud Volumes ONTAP 시스템을 만들고 NetApp 데이터 서비스에 액세스할 수 있습니다.
+
+콘솔에 자격 증명을 추가한 후 Azure Marketplace 구독을 연결할 수 있는 시나리오는 두 가지가 있습니다.
+
+* 처음에 콘솔에 자격 증명을 추가할 때 구독을 연결하지 않았습니다.
+* Azure 자격 증명과 연결된 Azure Marketplace 구독을 변경하려고 합니다.
++
+현재 마켓플레이스 구독을 교체하면 기존 및 새로운 Cloud Volumes ONTAP 시스템에 대한 구독이 업데이트됩니다.
+
+
+
+.단계
+. *관리 > *자격 증명*을 선택합니다.
+. *조직 자격 증명*을 선택하세요.
+. 콘솔 에이전트와 연결된 자격 증명 세트에 대한 작업 메뉴를 선택한 다음 *구독 구성*을 선택합니다.
++
+콘솔 에이전트와 연결된 자격 증명을 선택해야 합니다.  NetApp 콘솔과 연결된 자격 증명에는 마켓플레이스 구독을 연결할 수 없습니다.
+
+. 자격 증명을 기존 구독과 연결하려면 아래쪽 목록에서 구독을 선택하고 *구성*을 선택합니다.
+. 자격 증명을 새 구독과 연결하려면 *구독 추가 > 계속*을 선택하고 Azure Marketplace의 단계를 따르세요.
++
+.. 메시지가 표시되면 Azure 계정에 로그인하세요.
+.. *구독*을 선택하세요.
+.. 양식을 작성하고 *구독*을 선택하세요.
+.. 구독 절차가 완료되면 *지금 계정 구성*을 선택하세요.
++
+NetApp 콘솔로 리디렉션됩니다.
+
+.. *구독 할당* 페이지에서:
++
+*** 이 구독을 연결할 콘솔 조직이나 계정을 선택하세요.
+*** *기존 구독 교체* 필드에서 하나의 조직 또는 계정에 대한 기존 구독을 이 새로운 구독으로 자동으로 교체할지 여부를 선택합니다.
++
+콘솔은 조직 또는 계정의 모든 자격 증명에 대한 기존 구독을 이 새로운 구독으로 대체합니다.  자격 증명 세트가 구독과 연결되지 않은 경우 이 새 구독은 해당 자격 증명과 연결되지 않습니다.
+
++
+다른 모든 조직이나 계정의 경우 이 단계를 반복하여 구독을 수동으로 연결해야 합니다.
+
+*** *저장*을 선택하세요.
++
+다음 비디오에서는 Azure Marketplace에서 구독하는 단계를 보여줍니다.
+
++
+.Azure Marketplace에서 NetApp Intelligent Services 구독
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
+
+
+
+
+
+
+
+
+=== 자격 증명 편집
+
+콘솔에서 Azure 자격 증명을 편집합니다.  예를 들어, 서비스 주체 애플리케이션에 대한 새 비밀이 생성된 경우 클라이언트 비밀을 업데이트할 수 있습니다.
+
+.단계
+. *관리 > 자격 증명*을 선택합니다.
+. *조직 자격 증명*을 선택하세요.
+. 자격 증명 세트에 대한 작업 메뉴를 선택한 다음 *자격 증명 편집*을 선택합니다.
+. 필요한 변경 사항을 입력한 후 *적용*을 선택하세요.
+
+
+
+
+=== 자격 증명 삭제
+
+더 이상 자격 증명이 필요하지 않으면 삭제할 수 있습니다.  시스템과 연결되지 않은 자격 증명만 삭제할 수 있습니다.
+
+.단계
+. *관리 > 자격 증명*을 선택합니다.
+. *조직 자격 증명*을 선택하세요.
+. *조직 자격 증명* 페이지에서 자격 증명 세트에 대한 작업 메뉴를 선택한 다음 *자격 증명 삭제*를 선택합니다.
+. 삭제를 선택하여 확인하세요.
+

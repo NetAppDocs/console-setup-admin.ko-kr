@@ -1,0 +1,151 @@
+= 
+:allow-uri-read: 
+
+
+.시작하기 전에
+다음 사항이 있어야 합니다.
+
+* 콘솔 에이전트를 설치하려면 루트 권한이 필요합니다.
+* 콘솔 에이전트에서 인터넷에 접속하는 데 프록시가 필요한 경우 프록시 서버에 대한 세부 정보입니다.
++
+설치 후 프록시 서버를 구성할 수 있지만, 그렇게 하려면 콘솔 에이전트를 다시 시작해야 합니다.
+
+* 프록시 서버가 HTTPS를 사용하거나 프록시가 가로채기 프록시인 경우 CA 서명 인증서가 필요합니다.
+
+
+
+NOTE: 콘솔 에이전트를 수동으로 설치하는 경우 투명 프록시 서버에 대한 인증서를 설정할 수 없습니다.  투명 프록시 서버에 대한 인증서를 설정해야 하는 경우 설치 후 유지 관리 콘솔을 사용해야 합니다. 자세히 알아보세요link:reference-connector-maint-console.html["에이전트 유지 관리 콘솔"] .
+
+.이 작업에 관하여
+NetApp 지원 사이트에서 제공되는 설치 프로그램은 이전 버전일 수 있습니다.  설치 후, 새로운 버전이 나오면 콘솔 에이전트가 자동으로 업데이트됩니다.
+
+.단계
+. 호스트에 _http_proxy_ 또는 _https_proxy_ 시스템 변수가 설정되어 있으면 제거합니다.
++
+[source, cli]
+----
+unset http_proxy
+unset https_proxy
+----
++
+이러한 시스템 변수를 제거하지 않으면 설치가 실패합니다.
+
+. 콘솔 에이전트 소프트웨어를 다운로드하세요. https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 지원 사이트"^] 그런 다음 Linux 호스트에 복사합니다.
++
+네트워크나 클라우드에서 사용할 수 있는 "온라인" 에이전트 설치 프로그램을 다운로드해야 합니다.
+
+. 스크립트를 실행할 수 있는 권한을 할당합니다.
++
+[source, cli]
+----
+chmod +x NetApp_Console_Agent_Cloud_<version>
+----
++
+여기서 <버전>은 다운로드한 콘솔 에이전트의 버전입니다.
+
+. 정부 클라우드 환경에 설치하는 경우 구성 검사를 비활성화하세요.link:task-troubleshoot-connector.html#disable-config-check["수동 설치에 대한 구성 검사를 비활성화하는 방법을 알아보세요."]
+. 설치 스크립트를 실행합니다.
++
+[source, cli]
+----
+ ./NetApp_Console_Agent_Cloud_<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+----
++
+네트워크에 인터넷 접속을 위한 프록시가 필요한 경우 프록시 정보를 추가해야 합니다.  투명 프록시나 명시적 프록시를 추가할 수 있습니다.  --proxy 및 --cacert 매개변수는 선택 사항이므로 추가하라는 메시지가 표시되지 않습니다.  프록시 서버가 있는 경우 표시된 대로 매개변수를 입력해야 합니다.
+
++
+다음은 CA 서명 인증서로 명시적 프록시 서버를 구성하는 예입니다.
+
++
+[source, cli]
+----
+ ./NetApp_Console_Agent_Cloud_v4.0.0--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+----
++
+`--proxy`다음 형식 중 하나를 사용하여 HTTP 또는 HTTPS 프록시 서버를 사용하도록 콘솔 에이전트를 구성합니다.
+
++
+** \http://주소:포트
+** \http://사용자 이름:비밀번호@주소:포트
+** \http://도메인 이름%92사용자 이름:비밀번호@주소:포트
+** \https://주소:포트
+** \https://사용자 이름:비밀번호@주소:포트
+** \https://도메인 이름%92사용자 이름:비밀번호@주소:포트
++
+다음 사항에 유의하세요.
+
++
+*** 사용자는 로컬 사용자 또는 도메인 사용자일 수 있습니다.
+*** 도메인 사용자의 경우 위에 표시된 대로 \에 대한 ASCII 코드를 사용해야 합니다.
+*** 콘솔 에이전트는 @ 문자가 포함된 사용자 이름이나 비밀번호를 지원하지 않습니다.
+*** 비밀번호에 다음과 같은 특수 문자가 포함되어 있는 경우, 백슬래시를 앞에 붙여 해당 특수 문자를 이스케이프해야 합니다: & 또는 !
++
+예를 들어:
+
++
+\http://bxpproxyuser:netapp1\!@주소:3128
+
+
+
+
+
+
+
+`--cacert`콘솔 에이전트와 프록시 서버 간 HTTPS 액세스에 사용할 CA 서명 인증서를 지정합니다.  이 매개변수는 HTTPS 프록시 서버, 인터셉트 프록시 서버, 투명 프록시 서버에 필요합니다.
+
++ 투명 프록시 서버를 구성하는 예는 다음과 같습니다.  투명 프록시를 구성할 때 프록시 서버를 정의할 필요가 없습니다.  콘솔 에이전트 호스트에 CA 서명 인증서만 추가합니다.
+
++
+
+[source, cli]
+----
+ ./NetApp_Console_Agent_Cloud_v4.0.0 --cacert /tmp/cacert/certificate.cer
+----
+. Podman을 사용한 경우 aardvark-dns 포트를 조정해야 합니다.
++
+.. 콘솔 에이전트 가상 머신에 SSH를 실행합니다.
+.. podman _/usr/share/containers/containers.conf_ 파일을 열고 Aardvark DNS 서비스에 대해 선택한 포트를 수정합니다.  예를 들어, 54로 변경합니다.
++
+[source, cli]
+----
+vi /usr/share/containers/containers.conf
+...
+# Port to use for dns forwarding daemon with netavark in rootful bridge
+# mode and dns enabled.
+# Using an alternate port might be useful if other DNS services should
+# run on the machine.
+#
+dns_bind_port = 54
+...
+Esc:wq
+----
+.. 콘솔 에이전트 가상 머신을 재부팅합니다.
+
+
+
+
+. 설치가 완료될 때까지 기다리세요.
++
+설치가 끝나면 프록시 서버를 지정한 경우 콘솔 에이전트 서비스(occm)가 두 번 다시 시작됩니다.
+
+
+
+
+NOTE: 설치에 실패하면 설치 보고서와 로그를 보고 문제를 해결하는 데 도움이 됩니다.link:task-troubleshoot-connector.html#troubleshoot-installation["설치 문제를 해결하는 방법을 알아보세요."]
+
+. 콘솔 에이전트 가상 머신에 연결된 호스트에서 웹 브라우저를 열고 다음 URL을 입력합니다.
++
+https://_ipaddress_[]
+
+. 로그인 후 콘솔 에이전트를 설정하세요.
++
+.. 콘솔 에이전트와 연결할 조직을 지정합니다.
+.. 시스템 이름을 입력하세요.
+.. *보안된 환경에서 실행하고 있습니까?*에서 제한 모드를 비활성화하세요.
++
+이 단계에서는 표준 모드에서 콘솔을 사용하는 방법을 설명하므로 제한 모드를 비활성화해야 합니다.  보안 환경이 있고 백엔드 서비스에서 이 계정의 연결을 끊으려는 경우에만 제한 모드를 활성화해야 합니다.  그렇다면,link:task-quick-start-restricted-mode.html["제한 모드에서 NetApp 콘솔을 시작하기 위한 단계를 따르세요."] .
+
+.. *시작하기*를 선택하세요.
+
+
+
