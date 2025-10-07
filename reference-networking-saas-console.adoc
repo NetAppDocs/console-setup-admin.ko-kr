@@ -46,6 +46,9 @@ NetApp 콘솔에 액세스하는 각 컴퓨터는 아래 나열된 엔드포인�
 | \ https://mysupport.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보냅니다. 
 
 
+| \ https://support.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보냅니다. 
+
+
 | \ https://signin.b2c.netapp.com | NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp 콘솔에 새로운 NSS 자격 증명을 추가합니다. 
 
 

@@ -113,6 +113,13 @@ AWS 리소스를 관리합니다.  엔드포인트는 AWS 지역에 따라 달�
 
 
  a| 
+\ https://support.netapp.com
+ a| 
+라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보냅니다.
+
+
+
+ a| 
 \ https://signin.b2c.netapp.com
  a| 
 NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp 콘솔에 새로운 NSS 자격 증명을 추가합니다.
@@ -168,6 +175,13 @@ Azure China 지역의 리소스를 관리합니다.
 
  a| 
 \ https://mysupport.netapp.com
+ a| 
+라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보냅니다.
+
+
+
+ a| 
+\ https://support.netapp.com
  a| 
 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보냅니다.
 

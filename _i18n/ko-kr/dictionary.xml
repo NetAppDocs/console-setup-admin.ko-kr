@@ -179,7 +179,6 @@
   <block id="6fc418bd4d8d26d716d678ffb2c516e9" category="paragraph">| Azure China 지역의 리소스를 관리합니다.</block>
   <block id="1e20d05d6d0ad597892e7e3d08324340" category="paragraph">| \ https://www.googleapis.com/compute/v1/ \ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \ https://www.googleapis.com/deploymentmanager/v2/projects</block>
   <block id="641d1f191c2b819061a8e9b6046fdbeb" category="paragraph">| Google Cloud에서 리소스를 관리합니다.</block>
-  <block id="2bd5e73ffa0e07df374303364b1fee7f" category="paragraph">| \ https://mysupport.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보냅니다.  | \ https://signin.b2c.netapp.com | NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp 콘솔에 새로운 NSS 자격 증명을 추가합니다.</block>
   <block id="c642b24062280a73e940087788371986" category="paragraph">| \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com | NetApp 콘솔 내에서 기능과 서비스를 제공합니다.</block>
   <block id="4600c0d23dfe95b8db6f735a4b192742" category="paragraph">a| \ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io a| 콘솔 에이전트 업그레이드를 위한 이미지를 얻습니다.</block>
   <block id="047e3fbb2dcfe77fd82c7af9c6b59cde" category="list-text">새로운 에이전트를 배포할 때 유효성 검사를 통해 현재 엔드포인트에 대한 연결성을 테스트합니다.  당신이 사용하는 경우<block ref="3f791c7fe5360af04e14756765d7002d" category="inline-link-macro-rx"></block> , 유효성 검사에 실패합니다.  이러한 실패를 방지하려면 유효성 검사를 건너뛰세요.</block>
@@ -5534,4 +5533,6 @@
   <block id="56ed5396ea479b4ed31e75f97a4377c7" category="paragraph">강화되고 재구성된 BlueXP 기반을 기반으로 구축된 NetApp 콘솔은 엔터프라이즈급 온프레미스 및 클라우드 환경 전반에서 NetApp 스토리지와 NetApp 데이터 서비스를 중앙에서 관리하여 실시간 통찰력, 더 빠른 워크플로, 높은 보안성과 규정 준수를 갖춘 간소화된 관리를 제공합니다.</block>
   <block id="e4374974e911590511a1add55932606e" category="paragraph">*저장* 메뉴에는 ONTAP 시스템 알림을 볼 수 있는 *알림*과 사용되지 않거나 활용도가 낮은 리소스를 파악하기 위한 *수명주기 계획*(이전의 *경제적 효율성*)이 포함되어 있습니다.</block>
   <block id="b3289075ae80ce2a2ae0b68cf8c95606" category="paragraph">NetApp Keystone *저장소* 메뉴로 옮겼습니다. 이 메뉴에서 NetApp Keystone 구독을 관리하고 사용량을 확인할 수 있습니다.</block>
+  <block id="e54f451349319459dd1f9900aebfc23e" category="paragraph">| \ https://mysupport.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보냅니다. | \ https://support.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보냅니다. | \ https://signin.b2c.netapp.com | NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp 콘솔에 새로운 NSS 자격 증명을 추가합니다.</block>
+  <block id="8963387394e2ee3e2a5a9ba160566a58" category="cell">\ https://support.netapp.com</block>
 </blocks>
