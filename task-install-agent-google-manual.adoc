@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: task-install-connector-aws-manual.html 
-keywords: install connector, aws connector installation, aws connector, install connector in aws, bluexp, aws marketplace, manual install, create connector 
-summary: AWS에서 실행되는 Linux 호스트에 콘솔 에이전트를 수동으로 설치할 수 있습니다.  Linux 호스트에 콘솔 에이전트를 수동으로 설치하려면 호스트 요구 사항을 검토하고, 네트워킹을 설정하고, AWS 권한을 준비하고, 콘솔 에이전트를 설치한 다음, 준비한 권한을 제공해야 합니다. 
+permalink: task-install-agent-google-manual.html 
+keywords: install connector, google cloud connector installation, google cloud connector, install connector in google cloud, bluexp, gcloud, manual install, create connector, gcp installation, gcp connector 
+summary: Linux 호스트에 콘솔 에이전트를 수동으로 설치하려면 호스트 요구 사항을 검토하고, 네트워킹을 설정하고, Google Cloud 권한을 준비하고, Google Cloud API를 활성화하고, 콘솔을 설치한 다음, 준비한 권한을 제공해야 합니다. 
 ---
-= AWS에 콘솔 에이전트를 수동으로 설치합니다.
+= Google Cloud에 콘솔 에이전트를 수동으로 설치합니다.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,10 +14,10 @@ summary: AWS에서 실행되는 Linux 호스트에 콘솔 에이전트를 수동
 
 
 [role="lead"]
-AWS에서 실행되는 Linux 호스트에 콘솔 에이전트를 수동으로 설치할 수 있습니다.  Linux 호스트에 콘솔 에이전트를 수동으로 설치하려면 호스트 요구 사항을 검토하고, 네트워킹을 설정하고, AWS 권한을 준비하고, 콘솔 에이전트를 설치한 다음, 준비한 권한을 제공해야 합니다.
+Linux 호스트에 콘솔 에이전트를 수동으로 설치하려면 호스트 요구 사항을 검토하고, 네트워킹을 설정하고, Google Cloud 권한을 준비하고, Google Cloud API를 활성화하고, 콘솔을 설치한 다음, 준비한 권한을 제공해야 합니다.
 
 .시작하기 전에
-* 당신은 ~을 가져야합니다link:concept-connectors.html["콘솔 에이전트에 대한 이해"] .
+* 당신은 ~을 가져야합니다link:concept-agents.html["콘솔 에이전트에 대한 이해"] .
 * 검토해야 합니다link:reference-limitations.html["콘솔 에이전트 제한 사항"] .
 
 
@@ -107,14 +107,10 @@ Docker 엔진 23.0.6~28.0.0.
 
 |===
 --
-AWS EC2 인스턴스 유형:: 위의 CPU 및 RAM 요구 사항을 충족하는 인스턴스 유형입니다.  t3.2xlarge를 추천합니다.
-키 쌍:: 콘솔 에이전트를 생성할 때 인스턴스와 함께 사용할 EC2 키 쌍을 선택해야 합니다.
-IMDSv2를 사용할 때 PUT 응답 홉 제한:: EC2 인스턴스에서 IMDSv2가 활성화된 경우(새로운 EC2 인스턴스의 기본 설정) 인스턴스의 PUT 응답 홉 제한을 3으로 변경해야 합니다.  EC2 인스턴스의 제한을 변경하지 않으면 에이전트를 설정하려고 할 때 UI 초기화 오류가 발생합니다.
+Google Cloud 머신 유형:: 위의 CPU 및 RAM 요구 사항을 충족하는 인스턴스 유형입니다.  n2-standard-8을 추천합니다.
 +
 --
-* link:task-require-imdsv2.html["Amazon EC2 인스턴스에서 IMDSv2 사용 요구"]
-* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-PUT-response-hop-limit["AWS 설명서: PUT 응답 홉 제한 변경"^]
-
+콘솔 에이전트는 OS가 있는 VM 인스턴스의 Google Cloud에서 지원됩니다. https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["보호된 VM 기능"^]
 
 --
 /opt의 디스크 공간:: 100GiB의 공간이 사용 가능해야 합니다.
@@ -300,7 +296,7 @@ sudo systemctl enable docker && sudo systemctl start docker
 
 == 3단계: 네트워킹 설정
 
-콘솔 에이전트를 설치하려는 네트워크 위치가 다음 요구 사항을 지원하는지 확인하세요.  이러한 요구 사항을 충족하면 콘솔 에이전트가 하이브리드 클라우드 환경 내의 리소스와 프로세스를 관리할 수 있습니다.
+하이브리드 클라우드 환경 내에서 콘솔 에이전트가 리소스와 프로세스를 관리할 수 있도록 네트워킹을 설정합니다.  예를 들어, 대상 네트워크에 연결이 가능한지, 아웃바운드 인터넷 접속이 가능한지 확인해야 합니다.
 
 대상 네트워크에 대한 연결:: 콘솔 에이전트를 사용하려면 시스템을 만들고 관리하려는 위치에 대한 네트워크 연결이 필요합니다.  예를 들어, Cloud Volumes ONTAP 시스템이나 온프레미스 환경의 스토리지 시스템을 만들 계획인 네트워크입니다.
 
@@ -329,17 +325,9 @@ link:reference-networking-saas-console.html["NetApp 콘솔을 위한 네트워�
 
 
  a| 
-AWS 서비스(amazonaws.com):
-
-* 클라우드포메이션
-* 탄력적 컴퓨팅 클라우드(EC2)
-* ID 및 액세스 관리(IAM)
-* 키 관리 서비스(KMS)
-* 보안 토큰 서비스(STS)
-* 간편 보관 서비스(S3)
-
+\ https://www.googleapis.com/compute/v1/ \ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \ https://www.googleapis.com/deploymentmanager/v2/projects
  a| 
-AWS 리소스를 관리합니다.  엔드포인트는 AWS 지역에 따라 달라집니다. https://docs.aws.amazon.com/general/latest/gr/rande.html["자세한 내용은 AWS 설명서를 참조하세요."^]
+Google Cloud에서 리소스를 관리합니다.
 
 
 
@@ -424,80 +412,140 @@ NTP 활성화:: NetApp 데이터 분류를 사용하여 회사 데이터 소스�
 
 
 
-== 4단계: 콘솔에 대한 AWS 권한 설정
+== 4단계: 콘솔 에이전트에 대한 권한 설정
 
-다음 옵션 중 하나를 사용하여 NetApp 콘솔에 AWS 권한을 제공해야 합니다.
+Google Cloud 서비스 계정은 콘솔 에이전트에 Google Cloud의 리소스를 관리하는 데 필요한 권한을 제공하는 데 필요합니다.  콘솔 에이전트를 만들 때 이 서비스 계정을 콘솔 에이전트 VM과 연결해야 합니다.
 
-* 옵션 1: IAM 정책을 만들고 EC2 인스턴스와 연결할 수 있는 IAM 역할에 정책을 연결합니다.
-* 옵션 2: 필요한 권한이 있는 IAM 사용자의 AWS 액세스 키를 콘솔에 제공합니다.
+이후 릴리스에서 새로운 권한이 추가되면 사용자 지정 역할을 업데이트하는 것은 사용자의 책임입니다.  새로운 권한이 필요한 경우 릴리스 노트에 나열됩니다.
 
-
-콘솔에 대한 권한을 준비하려면 다음 단계를 따르세요.
-
-[role="tabbed-block"]
-====
-.IAM 역할
---
 .단계
-. AWS 콘솔에 로그인하고 IAM 서비스로 이동합니다.
-. 정책을 만듭니다.
+. Google Cloud에서 사용자 지정 역할을 만듭니다.
 +
-.. *정책 > 정책 만들기*를 선택합니다.
-.. *JSON*을 선택하고 내용을 복사하여 붙여넣습니다.link:reference-permissions-aws.html["콘솔 에이전트에 대한 IAM 정책"] .
-.. 나머지 단계를 완료하여 정책을 만듭니다.
+.. 내용을 포함하는 YAML 파일을 만듭니다.link:reference-permissions-gcp.html["콘솔 에이전트에 대한 서비스 계정 권한"] .
+.. Google Cloud에서 Cloud Shell을 활성화합니다.
+.. 필요한 권한이 포함된 YAML 파일을 업로드합니다.
+.. 다음을 사용하여 사용자 정의 역할을 만듭니다. `gcloud iam roles create` 명령.
 +
-사용하려는 NetApp 데이터 서비스에 따라 두 번째 정책을 만들어야 할 수도 있습니다.  표준 지역의 경우 권한은 두 가지 정책에 걸쳐 분산됩니다.  AWS의 관리형 정책에는 최대 문자 크기 제한이 있으므로 두 개의 정책이 필요합니다. link:reference-permissions-aws.html["콘솔 에이전트에 대한 IAM 정책에 대해 자세히 알아보세요."] .
+다음 예제에서는 프로젝트 수준에서 "connector"라는 이름의 역할을 만듭니다.
+
++
+`gcloud iam roles create connector --project=myproject --file=connector.yaml`
+
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloud 문서: 사용자 지정 역할 만들기 및 관리"^]
 
 
 
-. IAM 역할을 만듭니다.
+. Google Cloud에서 서비스 계정을 만들고 서비스 계정에 역할을 할당합니다.
 +
-.. *역할 > 역할 만들기*를 선택합니다.
-.. *AWS 서비스 > EC2*를 선택합니다.
-.. 방금 만든 정책을 첨부하여 권한을 추가합니다.
+.. IAM 및 관리 서비스에서 *서비스 계정 > 서비스 계정 만들기*를 선택합니다.
+.. 서비스 계정 세부 정보를 입력하고 *만들기 및 계속*을 선택하세요.
+.. 방금 만든 역할을 선택하세요.
 .. 나머지 단계를 완료하여 역할을 만듭니다.
-
-
-
-
-.결과
-콘솔 에이전트를 설치한 후 이제 EC2 인스턴스와 연결할 수 있는 IAM 역할이 생겼습니다.
-
---
-.AWS 액세스 키
---
-.단계
-. AWS 콘솔에 로그인하고 IAM 서비스로 이동합니다.
-. 정책을 만듭니다.
 +
-.. *정책 > 정책 만들기*를 선택합니다.
-.. *JSON*을 선택하고 내용을 복사하여 붙여넣습니다.link:reference-permissions-aws.html["콘솔 에이전트에 대한 IAM 정책"] .
-.. 나머지 단계를 완료하여 정책을 만듭니다.
+https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Google Cloud 문서: 서비스 계정 만들기"^]
+
+
+
+. 콘솔 에이전트가 있는 프로젝트와 다른 프로젝트에 Cloud Volumes ONTAP 시스템을 배포하려는 경우 콘솔 에이전트의 서비스 계정에 해당 프로젝트에 대한 액세스 권한을 제공해야 합니다.
 +
-사용하려는 NetApp 데이터 서비스에 따라 두 번째 정책을 만들어야 할 수도 있습니다.
+예를 들어, 콘솔 에이전트가 프로젝트 1에 있고 프로젝트 2에 Cloud Volumes ONTAP 시스템을 만들고 싶다고 가정해 보겠습니다.  프로젝트 2에서 서비스 계정에 대한 액세스 권한을 부여해야 합니다.
 
 +
-표준 지역의 경우 권한은 두 가지 정책에 걸쳐 분산됩니다.  AWS의 관리형 정책에는 최대 문자 크기 제한이 있으므로 두 개의 정책이 필요합니다. link:reference-permissions-aws.html["콘솔 에이전트에 대한 IAM 정책에 대해 자세히 알아보세요."] .
-
-
-
-. IAM 사용자에게 정책을 연결합니다.
+.. IAM 및 관리 서비스에서 Cloud Volumes ONTAP 시스템을 만들려는 Google Cloud 프로젝트를 선택합니다.
+.. *IAM* 페이지에서 *액세스 권한 부여*를 선택하고 필요한 세부 정보를 제공합니다.
 +
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS 설명서: IAM 역할 생성"^]
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS 설명서: IAM 정책 추가 및 제거"^]
+*** 콘솔 에이전트 서비스 계정의 이메일을 입력하세요.
+*** 콘솔 에이전트의 사용자 지정 역할을 선택합니다.
+*** *저장*을 선택하세요.
 
 
-. 콘솔 에이전트를 설치한 후 NetApp 콘솔에 추가할 수 있는 액세스 키가 사용자에게 있는지 확인하세요.
 
 
-.결과
-이제 필요한 권한이 있는 IAM 사용자와 콘솔에 제공할 수 있는 액세스 키가 생겼습니다.
++
+자세한 내용은 다음을 참조하세요. https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud 문서"^]
 
---
+
+
+
+
+== 5단계: 공유 VPC 권한 설정
+
+공유 VPC를 사용하여 서비스 프로젝트에 리소스를 배포하는 경우 권한을 준비해야 합니다.
+
+이 표는 참조용이며 IAM 구성이 완료되면 사용자 환경에 권한 표가 반영되어야 합니다.
+
+.공유 VPC 권한 보기
+[%collapsible]
+====
+[cols="10,10,10,18,18,34"]
+|===
+| 신원 | 창조자 | 호스팅됨 | 서비스 프로젝트 권한 | 호스트 프로젝트 권한 | 목적 
+
+
+| 에이전트를 배포하기 위한 Google 계정 | 관습 | 봉사 프로젝트  a| 
+link:task-install-agent-google-console-gcloud.html#agent-permissions-google["에이전트 배포 정책"]
+ a| 
+컴퓨팅.네트워크사용자
+| 서비스 프로젝트에 에이전트 배포 
+
+
+| 에이전트 서비스 계정 | 관습 | 봉사 프로젝트  a| 
+link:reference-permissions-gcp.html["에이전트 서비스 계정 정책"]
+| compute.networkUser 배포 관리자.편집기 | 서비스 프로젝트에서 Cloud Volumes ONTAP 및 서비스 배포 및 유지 관리 
+
+
+| Cloud Volumes ONTAP 서비스 계정 | 관습 | 봉사 프로젝트 | storage.admin 멤버: NetApp 콘솔 서비스 계정(serviceAccount.user) | 해당 없음 | (선택 사항) NetApp 클라우드 계층화 및 NetApp 백업 및 복구용 
+
+
+| Google API 서비스 에이전트 | 구글 클라우드 | 봉사 프로젝트  a| 
+(기본값) 편집기
+ a| 
+컴퓨팅.네트워크사용자
+| 배포를 대신하여 Google Cloud API와 상호 작용합니다.  콘솔이 공유 네트워크를 사용할 수 있도록 합니다. 
+
+
+| Google Compute Engine 기본 서비스 계정 | 구글 클라우드 | 봉사 프로젝트  a| 
+(기본값) 편집기
+ a| 
+컴퓨팅.네트워크사용자
+| 배포를 대신하여 Google Cloud 인스턴스와 컴퓨팅 인프라를 배포합니다.  콘솔이 공유 네트워크를 사용할 수 있도록 합니다. 
+|===
+참고사항:
+
+. deploymentmanager.editor는 배포에 방화벽 규칙을 전달하지 않고 콘솔에서 규칙을 생성하도록 선택한 경우에만 호스트 프로젝트에서 필요합니다.  규칙이 지정되지 않으면 NetApp 콘솔은 호스트 프로젝트에 VPC0 방화벽 규칙을 포함하는 배포를 생성합니다.
+. firewall.create와 firewall.delete는 배포에 방화벽 규칙을 전달하지 않고 콘솔에서 해당 규칙을 생성하도록 선택한 경우에만 필요합니다.  이러한 권한은 콘솔 계정의 .yaml 파일에 있습니다.  공유 VPC를 사용하여 HA 쌍을 배포하는 경우 이러한 권한은 VPC1, 2, 3에 대한 방화벽 규칙을 만드는 데 사용됩니다.  다른 모든 배포의 경우 이러한 권한은 VPC0에 대한 규칙을 만드는 데에도 사용됩니다.
+. 클라우드 계층화의 경우 계층화 서비스 계정에는 프로젝트 수준뿐만 아니라 서비스 계정에 대한 serviceAccount.user 역할이 있어야 합니다.  현재 프로젝트 수준에서 serviceAccount.user를 할당하는 경우 getIAMPolicy로 서비스 계정을 쿼리할 때 권한이 표시되지 않습니다.
+
+
 ====
 
 
-== 5단계: 콘솔 에이전트 설치
+== 6단계: Google Cloud API 활성화
+
+Google Cloud에서 Cloud Volumes ONTAP 시스템을 배포하려면 먼저 여러 Google Cloud API를 활성화해야 합니다.
+
+.단계
+. 프로젝트에서 다음 Google Cloud API를 활성화하세요.
++
+** 클라우드 배포 관리자 V2 API
+** 클라우드 로깅 API
+** 클라우드 리소스 관리자 API
+** 컴퓨트 엔진 API
+** ID 및 액세스 관리(IAM) API
+** 클라우드 키 관리 서비스(KMS) API
++
+(고객 관리 암호화 키(CMEK)와 함께 NetApp Backup and Recovery를 사용하려는 경우에만 필요함)
+
+
+
+
+
+https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloud 문서: API 활성화"^]
+
+
+
+== 7단계: 콘솔 에이전트 설치
 
 필수 구성 요소를 모두 완료한 후에는 Linux 호스트에 소프트웨어를 수동으로 설치할 수 있습니다.
 
@@ -513,7 +561,7 @@ NTP 활성화:: NetApp 데이터 분류를 사용하여 회사 데이터 소스�
 
 
 
-NOTE: 콘솔 에이전트를 수동으로 설치하는 경우 투명 프록시 서버에 대한 인증서를 설정할 수 없습니다.  투명 프록시 서버에 대한 인증서를 설정해야 하는 경우 설치 후 유지 관리 콘솔을 사용해야 합니다. 자세히 알아보세요link:reference-connector-maint-console.html["에이전트 유지 관리 콘솔"] .
+NOTE: 콘솔 에이전트를 수동으로 설치하는 경우 투명 프록시 서버에 대한 인증서를 설정할 수 없습니다. 투명 프록시 서버에 대한 인증서를 설정해야 하는 경우 설치 후 유지 관리 콘솔을 사용해야 합니다. 자세히 알아보세요link:reference-agent-maint-console.html["에이전트 유지 관리 콘솔"] .
 
 .이 작업에 관하여
 NetApp 지원 사이트에서 제공되는 설치 프로그램은 이전 버전일 수 있습니다.  설치 후, 새로운 버전이 나오면 콘솔 에이전트가 자동으로 업데이트됩니다.
@@ -645,52 +693,24 @@ https://_ipaddress_[]
 .. *시작하기*를 선택하세요.
 
 
-
-
-콘솔 에이전트를 생성한 동일한 AWS 계정에 Amazon S3 버킷이 있는 경우, *시스템* 페이지에 Amazon S3 스토리지 시스템이 자동으로 표시됩니다. https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["NetApp ConsoleP에서 S3 버킷을 관리하는 방법을 알아보세요."^]
-
-
-
-== 6단계: NetApp 콘솔에 권한 제공
-
-이제 콘솔 에이전트를 설치했으므로 이전에 설정한 AWS 권한을 콘솔에 제공해야 합니다.  권한을 제공하면 콘솔 에이전트가 AWS에서 데이터 및 스토리지 인프라를 관리할 수 있습니다.
-
-[role="tabbed-block"]
-====
-.IAM 역할
---
-이전에 생성한 IAM 역할을 콘솔 에이전트 EC2 인스턴스에 연결합니다.
-
-.단계
-. Amazon EC2 콘솔로 이동합니다.
-. *인스턴스*를 선택하세요.
-. 콘솔 에이전트 인스턴스를 선택합니다.
-. *작업 > 보안 > IAM 역할 수정*을 선택합니다.
-. IAM 역할을 선택하고 *IAM 역할 업데이트*를 선택합니다.
-
-
-로 가다 https://console.netapp.com["NetApp 콘솔"^] 콘솔 에이전트를 사용하려면.
-
---
-.AWS 액세스 키
---
-필요한 권한이 있는 IAM 사용자의 AWS 액세스 키를 콘솔에 제공합니다.
-
-.단계
-. 콘솔에서 현재 올바른 콘솔 에이전트가 선택되어 있는지 확인하세요.
-. *관리 > 자격 증명*을 선택합니다.
-. *조직 자격 증명*을 선택하세요.
-. *자격 증명 추가*를 선택하고 마법사의 단계를 따르세요.
 +
-.. *자격 증명 위치*: *Amazon Web Services > 에이전트를 선택하세요.
-.. *자격 증명 정의*: AWS 액세스 키와 비밀 키를 입력합니다.
-.. *마켓플레이스 구독*: 지금 구독하거나 기존 구독을 선택하여 마켓플레이스 구독을 이러한 자격 증명과 연결합니다.
-.. *검토*: 새로운 자격 증명에 대한 세부 정보를 확인하고 *추가*를 선택합니다.
+
+NOTE: 설치에 실패하면 로그와 보고서를 보고 문제 해결에 도움을 받을 수 있습니다.link:task-troubleshoot-agent.html#troubleshoot-installation["설치 문제를 해결하는 방법을 알아보세요."]
 
 
 
+콘솔 에이전트를 생성한 동일한 Google Cloud 계정에 Google Cloud Storage 버킷이 있는 경우, *시스템* 페이지에 Google Cloud Storage 시스템이 자동으로 표시됩니다. https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html["NetApp 콘솔에서 Google Cloud Storage를 관리하는 방법을 알아보세요."^]
 
-로 가다 https://console.netapp.com["NetApp 콘솔"^] 콘솔 에이전트를 사용하려면.
 
---
-====
+
+== 8단계: 콘솔 에이전트에 권한 제공
+
+이전에 설정한 Google Cloud 권한을 콘솔 에이전트에 제공해야 합니다.  권한을 제공하면 콘솔 에이전트가 Google Cloud에서 데이터 및 스토리지 인프라를 관리할 수 있습니다.
+
+.단계
+. Google Cloud 포털로 이동하여 콘솔 에이전트 VM 인스턴스에 서비스 계정을 할당합니다.
++
+https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Google Cloud 문서: 인스턴스의 서비스 계정 및 액세스 범위 변경"^]
+
+. 다른 Google Cloud 프로젝트의 리소스를 관리하려면 해당 프로젝트에 콘솔 에이전트 역할이 있는 서비스 계정을 추가하여 액세스 권한을 부여하세요. 각 프로젝트마다 이 단계를 반복해야 합니다.
+

@@ -16,7 +16,7 @@ summary: 환경을 준비하고 콘솔 에이전트를 배포하여 제한 모�
 [role="lead"]
 환경을 준비하고 콘솔 에이전트를 배포하여 제한 모드에서 NetApp 콘솔을 시작하세요.
 
-제한 모드는 일반적으로 주 및 지방 정부와 규제 대상 기업에서 사용하며, 여기에는 AWS GovCloud 및 Azure Government 지역에 배포하는 것도 포함됩니다.  시작하기 전에 다음 사항을 이해했는지 확인하십시오.link:concept-connectors.html["콘솔 에이전트"] 그리고link:concept-modes.html["배포 모드"] .
+제한 모드는 일반적으로 주 및 지방 정부와 규제 대상 기업에서 사용하며, 여기에는 AWS GovCloud 및 Azure Government 지역에 배포하는 것도 포함됩니다. 시작하기 전에 다음 사항을 이해했는지 확인하십시오.link:concept-agents.html["콘솔 에이전트"] 그리고link:concept-modes.html["배포 모드"] .
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["하나"] link:task-prepare-restricted-mode.html["배치 준비"]
 [role="quick-margin-list"]

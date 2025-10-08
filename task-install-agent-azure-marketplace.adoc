@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task-install-connector-azure-marketplace.html 
+permalink: task-install-agent-azure-marketplace.html 
 keywords: install connector, azure connector installation, azure connector, install connector in azure, bluexp, create connector, marketplace, azure marketplace 
 summary: Azure Marketplace에서 콘솔 에이전트를 만들려면 네트워킹을 설정하고, Azure 권한을 준비하고, 인스턴스 요구 사항을 검토한 다음 콘솔 에이전트를 만들어야 합니다. 
 ---
@@ -17,7 +17,7 @@ summary: Azure Marketplace에서 콘솔 에이전트를 만들려면 네트워�
 Azure Marketplace에서 직접 Azure에서 콘솔 에이전트를 만들 수 있습니다.  Azure Marketplace에서 콘솔 에이전트를 만들려면 네트워킹을 설정하고, Azure 권한을 준비하고, 인스턴스 요구 사항을 검토한 다음 콘솔 에이전트를 만들어야 합니다.
 
 .시작하기 전에
-* 당신은 ~을 가져야합니다link:concept-connectors.html["콘솔 에이전트에 대한 이해"] .
+* 당신은 ~을 가져야합니다link:concept-agents.html["콘솔 에이전트에 대한 이해"] .
 * 검토link:reference-limitations.html["콘솔 에이전트 제한 사항"] .
 
 
@@ -376,7 +376,7 @@ image:screenshot_azure_client_secret.gif["Microsoft Entra 서비스 주체에 �
 Azure Marketplace에서 직접 콘솔 에이전트를 시작합니다.
 
 .이 작업에 관하여
-Azure Marketplace에서 콘솔 에이전트를 만들면 기본 구성으로 가상 머신이 설정됩니다. link:reference-connector-default-config.html["콘솔 에이전트의 기본 구성에 대해 알아보세요"] .
+Azure Marketplace에서 콘솔 에이전트를 만들면 기본 구성으로 가상 머신이 설정됩니다. link:reference-agent-default-config.html["콘솔 에이전트의 기본 구성에 대해 알아보세요"] .
 
 .시작하기 전에
 다음 사항이 있어야 합니다.

@@ -83,7 +83,7 @@ NetApp 에이전트 UI에 액세스할 수 없습니다.
 ====
 콘솔 에이전트 진단에 액세스하는 방법에 대한 자세한 내용은 다음 항목을 참조하세요.
 
-* link:task-maintain-connectors.html#connect-linux-host["콘솔 에이전트 상태 확인(Linux 호스트 배포용)"]
+* link:task-maintain-agents.html#connect-linux-host["콘솔 에이전트 상태 확인(Linux 호스트 배포용)"]
 * link:task-agent-vm-config.html#connect-vcenter-host["콘솔 에이전트 상태 확인(VCenter 배포용)"]
 
 

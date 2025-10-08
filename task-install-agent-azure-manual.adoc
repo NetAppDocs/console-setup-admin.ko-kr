@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task-install-connector-azure-manual.html 
+permalink: task-install-agent-azure-manual.html 
 keywords: install connector, azure connector installation, azure connector, install connector in azure, manual install 
 summary: 자신의 Linux 호스트에 콘솔 에이전트를 수동으로 설치하려면 호스트 요구 사항을 검토하고, 네트워킹을 설정하고, Azure 권한을 준비하고, 콘솔 에이전트를 설치한 다음, 준비한 권한을 제공해야 합니다. 
 ---
@@ -17,7 +17,7 @@ summary: 자신의 Linux 호스트에 콘솔 에이전트를 수동으로 설치
 자신의 Linux 호스트에 콘솔 에이전트를 수동으로 설치하려면 호스트 요구 사항을 검토하고, 네트워킹을 설정하고, Azure 권한을 준비하고, 콘솔 에이전트를 설치한 다음, 준비한 권한을 제공해야 합니다.
 
 .시작하기 전에
-* 당신은 ~을 가져야합니다link:concept-connectors.html["콘솔 에이전트에 대한 이해"] .
+* 당신은 ~을 가져야합니다link:concept-agents.html["콘솔 에이전트에 대한 이해"] .
 * 검토해야 합니다link:reference-limitations.html["콘솔 에이전트 제한 사항"] .
 
 
@@ -647,7 +647,7 @@ image:screenshot_azure_client_secret.gif["Microsoft Entra 서비스 주체에 �
 
 
 
-NOTE: 콘솔 에이전트를 수동으로 설치하는 경우 투명 프록시 서버에 대한 인증서를 설정할 수 없습니다.  투명 프록시 서버에 대한 인증서를 설정해야 하는 경우 설치 후 유지 관리 콘솔을 사용해야 합니다. 자세히 알아보세요link:reference-connector-maint-console.html["에이전트 유지 관리 콘솔"] .
+NOTE: 콘솔 에이전트를 수동으로 설치하는 경우 투명 프록시 서버에 대한 인증서를 설정할 수 없습니다. 투명 프록시 서버에 대한 인증서를 설정해야 하는 경우 설치 후 유지 관리 콘솔을 사용해야 합니다. 자세히 알아보세요link:reference-agent-maint-console.html["에이전트 유지 관리 콘솔"] .
 
 * 사용자 지정 역할을 통해 필요한 Azure 권한을 제공할 수 있도록 Azure의 VM에서 관리되는 ID를 활성화합니다.
 +

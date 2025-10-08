@@ -56,7 +56,7 @@ link:task-iam-manage-members-permissions.html["멤버와 멤버의 권한을 관
 
 [role="quick-margin-list"]
 * link:task-iam-manage-resources.html["조직의 리소스 계층을 관리하는 방법을 알아보세요"] .
-* link:task-iam-associate-connectors.html["콘솔 에이전트를 폴더 또는 프로젝트와 연결하는 방법을 알아보세요."] .
+* link:task-iam-associate-agents.html["콘솔 에이전트를 폴더 또는 프로젝트와 연결하는 방법을 알아보세요."] .
 
 
 .관련 정보

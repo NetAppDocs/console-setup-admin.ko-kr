@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: reference-connector-maint-console.html 
+permalink: reference-agent-maint-console.html 
 keywords: transparent proxy, connector certificate, agent maintenance console, proxy configuration, connector proxy. agent proxy 
 summary: 콘솔 에이전트 유지 관리 콘솔을 사용하여 콘솔 에이전트가 투명 프록시 서버를 사용하도록 구성할 수 있습니다. 
 ---

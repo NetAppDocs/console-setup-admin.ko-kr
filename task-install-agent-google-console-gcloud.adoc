@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task-install-connector-google-bluexp-gcloud.html 
+permalink: task-install-agent-google-console-gcloud.html 
 keywords: install connector, google cloud connector installation, google cloud connector, install connector in google cloud, bluexp, gcloud, create connector, gcp installation, gcp connector 
 summary: NetApp 콘솔이나 Google Cloud를 사용하여 Google Cloud에서 콘솔 에이전트를 만들려면 네트워킹을 설정하고, Google Cloud 권한을 준비하고, Google Cloud API를 활성화한 다음 콘솔 에이전트를 만들어야 합니다. 
 ---
@@ -17,7 +17,7 @@ summary: NetApp 콘솔이나 Google Cloud를 사용하여 Google Cloud에서 콘
 Google Cloud 콘솔에서 콘솔 에이전트를 만들 수 있습니다.  네트워킹을 설정하고, Google Cloud 권한을 준비하고, Google Cloud API를 활성화한 다음 콘솔 에이전트를 만들어야 합니다.
 
 .시작하기 전에
-* 당신은 ~을 가져야합니다link:concept-connectors.html["콘솔 에이전트에 대한 이해"] .
+* 당신은 ~을 가져야합니다link:concept-agents.html["콘솔 에이전트에 대한 이해"] .
 * 검토해야 합니다link:reference-limitations.html["콘솔 에이전트 제한 사항"] .
 
 
@@ -313,7 +313,7 @@ https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_
 
 
 | 에이전트를 배포하기 위한 Google 계정 | 관습 | 봉사 프로젝트  a| 
-link:task-install-connector-google-bluexp-gcloud.html#agent-permissions-google["에이전트 배포 정책"]
+link:task-install-agent-google-console-gcloud.html#agent-permissions-google["에이전트 배포 정책"]
  a| 
 컴퓨팅.네트워크사용자
 | 서비스 프로젝트에 에이전트 배포 
@@ -379,7 +379,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloud �
 콘솔에서 직접 콘솔 에이전트를 만듭니다.
 
 .이 작업에 관하여
-콘솔 에이전트를 생성하면 기본 구성을 사용하여 Google Cloud에 가상 머신 인스턴스가 배포됩니다.  콘솔 에이전트를 만든 후에는 CPU나 RAM이 적은 더 작은 VM 인스턴스로 전환하지 마세요. link:reference-connector-default-config.html["콘솔 에이전트의 기본 구성에 대해 알아보세요"] .
+콘솔 에이전트를 생성하면 기본 구성을 사용하여 Google Cloud에 가상 머신 인스턴스가 배포됩니다. 콘솔 에이전트를 만든 후에는 CPU나 RAM이 적은 더 작은 VM 인스턴스로 전환하지 마세요. link:reference-agent-default-config.html["콘솔 에이전트의 기본 구성에 대해 알아보세요"] .
 
 .시작하기 전에
 다음 사항이 있어야 합니다.

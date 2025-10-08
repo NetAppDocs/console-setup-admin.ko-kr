@@ -20,7 +20,7 @@ NetApp 콘솔이 AWS 자격 증명을 사용하여 사용자를 대신하여 작
 
 == 초기 AWS 자격 증명
 
-콘솔에서 콘솔 에이전트를 배포하는 경우 IAM 사용자의 IAM 역할 또는 액세스 키의 ARN을 제공해야 합니다.  인증 방법에는 AWS에 콘솔을 배포할 수 있는 권한이 있어야 합니다.  필요한 권한은 링크: task-install-connector-aws-the Console.html#console-permissions-aws[AWS용 에이전트 배포 정책]에 나열되어 있습니다.
+콘솔에서 콘솔 에이전트를 배포하는 경우 IAM 사용자의 IAM 역할 또는 액세스 키의 ARN을 제공해야 합니다. 인증 방법에는 AWS에 콘솔을 배포할 수 있는 권한이 있어야 합니다. 필요한 권한은 링크: task-install-agent-aws-the Console.html#console-permissions-aws[AWS용 에이전트 배포 정책]에 나열되어 있습니다.
 
 콘솔이 AWS에서 콘솔 에이전트 인스턴스를 시작하면 인스턴스에 대한 IAM 역할과 인스턴스 프로필이 생성됩니다.  또한 AWS 계정 내에서 리소스와 프로세스를 관리할 수 있는 권한을 콘솔 에이전트에 제공하는 정책도 첨부합니다. link:reference-permissions-aws.html["콘솔이 권한을 사용하는 방식을 검토하세요."] .
 
@@ -141,8 +141,8 @@ link:task-adding-aws-accounts.html#subscribe["AWS 구독을 연결하는 방법 
 
 * 표준 모드
 +
-** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["AWS Marketplace 배포에 대한 권한 설정"]
-** link:task-install-connector-on-prem.html#agent-permission-aws-azure["온프레미스 배포에 대한 권한 설정"]
+** link:task-install-agent-aws-marketplace.html#step-2-set-up-aws-permissions["AWS Marketplace 배포에 대한 권한 설정"]
+** link:task-install-agent-on-prem.html#agent-permission-aws-azure["온프레미스 배포에 대한 권한 설정"]
 
 
 * 제한 모드

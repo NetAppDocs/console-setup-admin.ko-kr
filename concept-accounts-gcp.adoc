@@ -34,7 +34,7 @@ image:diagram_permissions_gcp.png["Cloud Volumes ONTAP 배포하기 위해 Googl
 
 권한을 설정하는 방법을 알아보려면 다음 페이지를 참조하세요.
 
-* link:task-install-connector-google-bluexp-gcloud.html#agent-permissions-google["표준 모드에 대한 Google Cloud 권한 설정"]
+* link:task-install-agent-google-console-gcloud.html#agent-permissions-google["표준 모드에 대한 Google Cloud 권한 설정"]
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["제한 모드에 대한 권한 설정"]
 
 
@@ -59,6 +59,6 @@ Google Cloud 자격 증명 및 마켓플레이스 구독에 대해 다음 사항
 
 Cloud Volumes ONTAP 콘솔 에이전트와 동일한 프로젝트에 있을 수도 있고, 다른 프로젝트에 있을 수도 있습니다.  다른 프로젝트에 Cloud Volumes ONTAP 배포하려면 먼저 해당 프로젝트에 콘솔 에이전트 서비스 계정과 역할을 추가해야 합니다.
 
-* link:task-install-connector-google-bluexp-gcloud.html#agent-permissions-google["서비스 계정을 설정하는 방법을 알아보세요"]
+* link:task-install-agent-google-console-gcloud.html#agent-permissions-google["서비스 계정을 설정하는 방법을 알아보세요"]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Google Cloud에 Cloud Volumes ONTAP 배포하고 프로젝트를 선택하는 방법을 알아보세요."^]
 

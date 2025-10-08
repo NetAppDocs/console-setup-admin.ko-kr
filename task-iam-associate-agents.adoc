@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task-iam-associate-connectors.html 
+permalink: task-iam-associate-agents.html 
 keywords: agent, associate agent, folder, project, associate folder with connector, associate project with connector, associate connector with project, associate connector with resource, connector, associate connector, 
 summary: 조직의 구성원이 다른 프로젝트에서 콘솔 에이전트를 사용해야 하는 경우 해당 콘솔 에이전트를 해당 프로젝트와 연결해야 합니다. 
 ---
@@ -44,7 +44,7 @@ _폴더 또는 프로젝트 관리자_는 *에이전트* 페이지에서 모든 
 link:task-iam-manage-resources.html#associate-resource["리소스를 폴더 및 프로젝트와 연결하는 방법을 알아보세요."] .
 
 .관련 정보
-* link:concept-connectors.html["NetApp 콘솔 에이전트에 대해 알아보세요"]
+* link:concept-agents.html["NetApp 콘솔 에이전트에 대해 알아보세요"]
 * link:concept-identity-and-access-management.html["NetApp 콘솔 ID 및 액세스 관리에 대해 알아보세요"]
 * link:task-iam-get-started.html["ID 및 액세스 시작하기"]
 * https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["ID 및 액세스 관리를 위한 API에 대해 알아보세요"^]

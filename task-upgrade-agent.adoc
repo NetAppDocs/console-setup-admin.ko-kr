@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task-upgrade-connector.html 
+permalink: task-upgrade-agent.html 
 keywords: upgrade, manual upgrade, agent upgrade, manual agent upgrade, upgrade agent manually, private mode upgrade, offline upgrade, upgrade private mode, connector upgrade, agent upgrade 
 summary: 표준 모드나 제한 모드를 사용하는 경우, 콘솔 에이전트가 소프트웨어 업데이트를 받기 위해 아웃바운드 인터넷 액세스가 가능한 한 NetApp 콘솔이 자동으로 콘솔 에이전트를 최신 릴리스로 업그레이드합니다. 
 ---

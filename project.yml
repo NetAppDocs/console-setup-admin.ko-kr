@@ -19,7 +19,7 @@ sidebar:
     - title: 알려진 제한 사항
       url: "/reference-limitations.html"
     - title: 지원되는 Linux 운영 체제 변경 사항
-      url: "/reference-connector-operating-system-changes.html"
+      url: "/reference-agent-operating-system-changes.html"
   - title: 시작하기
     entries:
     - title: 기본을 배우세요
@@ -27,7 +27,7 @@ sidebar:
       - title: NetApp 콘솔
         url: "/concept-overview.html"
       - title: 콘솔 에이전트
-        url: "/concept-connectors.html"
+        url: "/concept-agents.html"
       - title: 배포 모드
         url: "/concept-modes.html"
     - title: NetApp 콘솔 어시스턴트 시작하기
@@ -49,35 +49,35 @@ sidebar:
           - title: 콘솔 에이전트 설치 옵션
             url: "/concept-install-options-aws.html"
           - title: NetApp 콘솔에서 콘솔 에이전트 만들기
-            url: "/task-install-connector-aws-bluexp.html"
+            url: "/task-install-agent-aws-console.html"
           - title: 마켓플레이스에서 콘솔 에이전트 만들기
-            url: "/task-install-connector-aws-marketplace.html"
+            url: "/task-install-agent-aws-marketplace.html"
           - title: 콘솔 에이전트를 수동으로 설치합니다.
-            url: "/task-install-connector-aws-manual.html"
+            url: "/task-install-agent-aws-manual.html"
         - title: 하늘빛
           entries:
           - title: 콘솔 에이전트 설치 옵션
             url: "/concept-install-options-azure.html"
           - title: NetApp 콘솔에서 콘솔 에이전트 만들기
-            url: "/task-install-connector-azure-bluexp.html"
+            url: "/task-install-agent-azure-console.html"
           - title: 마켓플레이스에서 콘솔 에이전트 만들기
-            url: "/task-install-connector-azure-marketplace.html"
+            url: "/task-install-agent-azure-marketplace.html"
           - title: 콘솔 에이전트를 수동으로 설치합니다.
-            url: "/task-install-connector-azure-manual.html"
+            url: "/task-install-agent-azure-manual.html"
         - title: 구글 클라우드
           entries:
           - title: 콘솔 에이전트 설치 옵션
             url: "/concept-install-options-google.html"
           - title: NetApp 콘솔에서 콘솔 에이전트 만들기
-            url: "/task-install-connector-google-bluexp-gcloud.html"
+            url: "/task-install-agent-google-console-gcloud.html"
           - title: Google Cloud에서 콘솔 에이전트 만들기
             url: "/task-install-agent-google-gcloud.html"
           - title: 콘솔 에이전트를 수동으로 설치합니다.
-            url: "/task-install-connector-google-manual.html"
+            url: "/task-install-agent-google-manual.html"
         - title: 온프레미스에 에이전트 설치
           entries:
           - title: 온프레미스에 에이전트를 수동으로 설치
-            url: "/task-install-connector-on-prem.html"
+            url: "/task-install-agent-on-prem.html"
           - title: VCenter에 온프레미스 에이전트 설치
             url: "/task-install-agent-on-prem-ova.html"
       - title: NetApp Intelligent Services 구독
@@ -125,7 +125,7 @@ sidebar:
       - title: 리소스 계층 관리
         url: "/task-iam-manage-resources.html"
       - title: 콘솔 에이전트를 다른 폴더 및 프로젝트와 연결합니다.
-        url: "/task-iam-associate-connectors.html"
+        url: "/task-iam-associate-agents.html"
       - title: 조직, 프로젝트 및 콘솔 에이전트 간 전환
         url: "/task-iam-switch-organizations-projects.html"
       - title: 조직 및 프로젝트 ID
@@ -193,7 +193,7 @@ sidebar:
     - title: 콘솔 에이전트
       entries:
       - title: VM 및 OS 유지 관리
-        url: "/task-maintain-connectors.html"
+        url: "/task-maintain-agents.html"
       - title: VCenter에 설치된 에이전트 유지 관리
         url: "/task-agent-vm-config.html"
       - title: 웹 콘솔 액세스를 위한 CA 서명 인증서 설치
@@ -202,18 +202,18 @@ sidebar:
         url: "/task-configuring-proxy.html"
       - title: EC2 인스턴스에서 IMDSv2 사용 요구
         url: "/task-require-imdsv2.html"
-      - title: 커넥터 업그레이드 관리
-        url: "/task-upgrade-connector.html"
+      - title: 에이전트 업그레이드 관리
+        url: "/task-upgrade-agent.html"
       - title: 여러 콘솔 에이전트와 함께 작업
-        url: "/task-manage-multiple-connectors.html"
+        url: "/task-manage-multiple-agents.html"
       - title: 콘솔 에이전트 문제 해결
         url: "/task-troubleshoot-agent.html"
       - title: 콘솔 에이전트를 제거하고 제거하세요
-        url: "/task-uninstall-connector.html"
+        url: "/task-uninstall-agent.html"
       - title: 기본 구성
-        url: "/reference-connector-default-config.html"
+        url: "/reference-agent-default-config.html"
       - title: NetApp 콘솔에서 ONTAP 권한 적용
-        url: "/task-ontap-access-connector.html"
+        url: "/task-ontap-access-agent.html"
     - title: 자격 증명 및 구독
       entries:
       - title: AWS
@@ -245,7 +245,7 @@ sidebar:
     - title: 에이전트 유지 관리 콘솔
       entries:
       - title: 에이전트 유지 관리 콘솔
-        url: "/reference-connector-maint-console.html"
+        url: "/reference-agent-maint-console.html"
     - title: 권한
       entries:
       - title: 권한 요약

@@ -20,7 +20,7 @@ NetApp 콘솔이 Azure 자격 증명을 사용하여 사용자를 대신하여 �
 
 == 초기 Azure 자격 증명
 
-콘솔에서 콘솔 에이전트를 배포하는 경우 콘솔 에이전트 가상 머신을 배포할 수 있는 권한이 있는 Azure 계정이나 서비스 주체를 사용해야 합니다.  필요한 권한은 다음에 나열되어 있습니다.link:task-install-connector-azure-bluexp.html#connector-custom-role["Azure에 대한 에이전트 배포 정책"] .
+콘솔에서 콘솔 에이전트를 배포하는 경우 콘솔 에이전트 가상 머신을 배포할 수 있는 권한이 있는 Azure 계정이나 서비스 주체를 사용해야 합니다. 필요한 권한은 다음에 나열되어 있습니다.link:task-install-agent-azure-console.html#agent-custom-role["Azure에 대한 에이전트 배포 정책"] .
 
 콘솔이 Azure에 콘솔 에이전트 가상 머신을 배포하면 다음을 활성화할 수 있습니다. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["시스템 할당 관리 ID"^] 가상 머신에서 사용자 지정 역할을 만들고 이를 가상 머신에 할당합니다.  이 역할은 Azure 구독 내에서 리소스와 프로세스를 관리하는 데 필요한 권한을 콘솔에 제공합니다. link:reference-permissions-azure.html["콘솔이 권한을 사용하는 방식을 검토하세요."] .
 
@@ -108,8 +108,8 @@ Marketplace를 사용하는 경우 콘솔 에이전트 VM과 시스템에서 할
 
 * 표준 모드
 +
-** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Azure Marketplace 배포에 대한 권한 설정"]
-** link:task-install-connector-on-prem.html#agent-permission-aws-azure["온프레미스 배포에 대한 권한 설정"]
+** link:task-install-agent-azure-marketplace.html#step-3-set-up-permissions["Azure Marketplace 배포에 대한 권한 설정"]
+** link:task-install-agent-on-prem.html#agent-permission-aws-azure["온프레미스 배포에 대한 권한 설정"]
 
 
 * 제한 모드

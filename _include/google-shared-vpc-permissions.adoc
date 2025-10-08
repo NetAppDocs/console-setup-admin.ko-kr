@@ -15,7 +15,7 @@
 
 
 | 에이전트를 배포하기 위한 Google 계정 | 관습 | 봉사 프로젝트  a| 
-link:task-install-connector-google-bluexp-gcloud.html#agent-permissions-google["에이전트 배포 정책"]
+link:task-install-agent-google-console-gcloud.html#agent-permissions-google["에이전트 배포 정책"]
  a| 
 컴퓨팅.네트워크사용자
 | 서비스 프로젝트에 에이전트 배포 

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: concept-connectors.html 
+permalink: concept-agents.html 
 keywords: 'concept, connectors, learn about connectors, what are connectors, what is a connector, what"s a connector, days, 14 days, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery, agents, multiple agents, what is a Console agent' 
 summary: _콘솔 에이전트_는 클라우드 네트워크나 온프레미스 네트워크에서 실행되는 NetApp 소프트웨어입니다.  콘솔 에이전트를 사용하여 NetApp 콘솔 서비스를 스토리지 환경에 연결합니다. 
 ---
@@ -147,7 +147,7 @@ NetApp 콘솔에서 직접 콘솔 에이전트를 생성하려면 특정 권한�
 ** link:concept-install-options-aws.html["AWS의 에이전트 설치 옵션"]
 ** link:concept-install-options-azure.html["Azure의 에이전트 설치 옵션"]
 ** link:concept-install-options-google.html["Google Cloud의 에이전트 설치 옵션"]
-** link:task-install-connector-on-prem.html#agent-permission-aws-azure["온프레미스 배포에 대한 클라우드 권한 설정"]
+** link:task-install-agent-on-prem.html#agent-permission-aws-azure["온프레미스 배포에 대한 클라우드 권한 설정"]
 
 
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["제한 모드에 대한 권한 설정"]
@@ -180,7 +180,7 @@ NetApp 기능을 추가하고 안정성을 개선하기 위해 매달 에이전�
 
 고객이 콘솔 에이전트 VM을 중지했다가 다시 시작해야 하는 경우, 클라우드 제공업체의 콘솔에서 수행하거나 온프레미스 관리를 위한 표준 절차를 사용해야 합니다.
 
-<<connectors-must-be-operational-at-all-times,콘솔 에이전트는 항상 작동해야 합니다.>> .
+<<agents-must-be-operational-at-all-times,콘솔 에이전트는 항상 작동해야 합니다.>> .
 
 
 

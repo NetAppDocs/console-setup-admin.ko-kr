@@ -69,7 +69,7 @@ image:screenshot-iam-switch-projects-select.png["새로운 프로젝트를 선�
 
 
 .관련 정보
-link:task-iam-associate-connectors.html["폴더 및 프로젝트와 에이전트 연결"] .
+link:task-iam-associate-agents.html["폴더 및 프로젝트와 에이전트 연결"] .
 
 
 

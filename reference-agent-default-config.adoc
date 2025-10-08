@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: reference-connector-default-config.html 
+permalink: reference-agent-default-config.html 
 keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux, connector configuration, connector installation folder, connector folder, connector log, ubuntu, agent, agent installation folder, agent configuration 
 summary: 배포하기 전에 콘솔 에이전트에 대해 자세히 알아보세요. 
 ---
@@ -34,7 +34,7 @@ summary: 배포하기 전에 콘솔 에이전트에 대해 자세히 알아보�
 운영 체제에는 GUI가 포함되어 있지 않습니다.  시스템에 접근하려면 터미널을 사용해야 합니다.
 
 * 설치에는 컨테이너 오케스트레이션 도구인 Docker Engine이 포함되어 있습니다.
-* EC2 Linux 인스턴스의 사용자 이름은 ubuntu입니다(2023년 5월 이전에 생성된 에이전트의 경우 사용자 이름은 ec2-user였습니다).
+* EC2 Linux 인스턴스의 사용자 이름은 ubuntu입니다(2023년 5월 이전에 생성된 에이전트의 경우 사용자 이름은 ec2-user입니다).
 * 기본 시스템 디스크는 100GiB gp2 디스크입니다.
 
 

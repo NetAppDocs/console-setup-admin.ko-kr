@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task-maintain-connectors.html 
+permalink: task-maintain-agents.html 
 keywords: agent operating system, agent maintenance, vm maintenance, os updates, operating system updates, stop agent, restart agent, notifications, agent health, agent disk space, agent cpu usage, agent ram usage, agent vm, agent ip address, agent uri, connector, connector health 
 summary: 에이전트 호스트에서 운영 체제를 유지 관리하는 것은 사용자의 책임입니다.  예를 들어, 회사의 운영 체제 배포 표준 절차에 따라 콘솔 에이전트 호스트의 운영 체제에 보안 업데이트를 적용해야 합니다. 
 ---
@@ -17,7 +17,7 @@ summary: 에이전트 호스트에서 운영 체제를 유지 관리하는 것�
 콘솔 에이전트 호스트에서 운영 체제를 유지 관리하는 것은 귀하(고객)의 책임입니다.  예를 들어, 귀하(고객)는 회사의 운영 체제 배포에 대한 표준 절차에 따라 에이전트 호스트의 운영 체제에 보안 업데이트를 적용해야 합니다.
 
 
-TIP: 기존 에이전트가 있는 경우 다음 사항을 알아야 합니다.link:reference-connector-operating-system-changes.html["지원되는 Linux 운영 체제 변경 사항"] .
+TIP: 기존 에이전트가 있는 경우 다음 사항을 알아야 합니다.link:reference-agent-operating-system-changes.html["지원되는 Linux 운영 체제 변경 사항"] .
 
 
 
@@ -37,7 +37,7 @@ CPU:: 8개 코어 또는 8개 vCPU
 숫양:: 32GB
 
 
-link:reference-connector-default-config.html["에이전트의 기본 구성에 대해 알아보세요"] .
+link:reference-agent-default-config.html["에이전트의 기본 구성에 대해 알아보세요"] .
 
 
 
@@ -71,7 +71,7 @@ link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations
 
 필요한 경우 클라우드 공급자의 콘솔이나 표준 온프레미스 절차를 사용하여 에이전트 VM을 중지하고 시작합니다.
 
-link:concept-connectors.html#connectors-must-be-operational-at-all-times["콘솔 에이전트는 항상 작동 중이어야 한다는 점을 알아두십시오."] .
+link:concept-agents.html#agents-must-be-operational-at-all-times["콘솔 에이전트는 항상 작동 중이어야 한다는 점을 알아두십시오."] .
 
 
 

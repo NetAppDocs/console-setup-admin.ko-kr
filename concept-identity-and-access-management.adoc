@@ -234,7 +234,7 @@ image:diagram-iam-example-hierarchy-advanced.png["3개의 폴더로 구성된 �
 * link:task-iam-manage-folders-projects.html["NetApp 콘솔에서 폴더와 프로젝트를 사용하여 리소스를 구성하세요."]
 * link:task-iam-manage-members-permissions.html["NetApp 콘솔 멤버 및 해당 권한 관리"]
 * link:task-iam-manage-resources.html["NetApp 콘솔 조직에서 리소스 계층을 관리합니다."]
-* link:task-iam-associate-connectors.html["폴더 및 프로젝트와 에이전트 연결"]
+* link:task-iam-associate-agents.html["폴더 및 프로젝트와 에이전트 연결"]
 * link:task-iam-switch-organizations-projects.html["NetApp 콘솔 프로젝트와 조직 간 전환"]
 * link:task-iam-rename-organization.html["NetApp 콘솔 조직 이름 변경"]
 * link:task-iam-audit-actions-timeline.html["IAM 활동 모니터링 또는 감사"]

@@ -18,15 +18,15 @@ Azure에서 콘솔 에이전트를 만드는 방법에는 여러 가지가 있�
 
 다음과 같은 설치 옵션을 사용할 수 있습니다.
 
-* link:task-install-connector-azure-bluexp.html["NetApp 콘솔에서 직접 콘솔 에이전트를 만듭니다."](이것은 표준 옵션입니다)
+* link:task-install-agent-azure-console.html["NetApp 콘솔에서 직접 콘솔 에이전트를 만듭니다."](이것은 표준 옵션입니다)
 +
 이 작업을 수행하면 선택한 VNet에서 Linux와 콘솔 에이전트 소프트웨어를 실행하는 VM이 시작됩니다.
 
-* link:task-install-connector-azure-marketplace.html["Azure Marketplace에서 콘솔 에이전트 만들기"]
+* link:task-install-agent-azure-marketplace.html["Azure Marketplace에서 콘솔 에이전트 만들기"]
 +
 이 작업을 수행하면 Linux와 콘솔 에이전트 소프트웨어가 실행되는 VM도 시작되지만 배포는 콘솔이 아닌 Azure Marketplace에서 직접 시작됩니다.
 
-* link:task-install-connector-azure-manual.html["자신의 Linux 호스트에 소프트웨어를 다운로드하고 수동으로 설치하세요."]
+* link:task-install-agent-azure-manual.html["자신의 Linux 호스트에 소프트웨어를 다운로드하고 수동으로 설치하세요."]
 
 
 선택하는 설치 옵션은 설치를 준비하는 방법에 영향을 미칩니다.  여기에는 Azure에서 리소스를 인증하고 관리하는 데 필요한 권한을 콘솔 에이전트에 제공하는 방법이 포함됩니다.

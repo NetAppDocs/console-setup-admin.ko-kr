@@ -28,8 +28,8 @@ Azure Marketplace에서 에이전트를 배포하거나 Linux 호스트에 에�
 
 * 이러한 정책을 사용하기 위한 단계별 지침을 보려면 다음 페이지를 참조하세요.
 +
-** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Azure Marketplace 배포에 대한 권한 설정"]
-** link:task-install-connector-on-prem.html#agent-permission-aws-azure["온프레미스 배포에 대한 권한 설정"]
+** link:task-install-agent-azure-marketplace.html#step-3-set-up-permissions["Azure Marketplace 배포에 대한 권한 설정"]
+** link:task-install-agent-on-prem.html#agent-permission-aws-azure["온프레미스 배포에 대한 권한 설정"]
 ** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["제한 모드에 대한 권한 설정"]
 
 
