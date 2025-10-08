@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task-troubleshoot-connector.html 
+permalink: task-troubleshoot-agent.html 
 keywords: troubleshoot, system id, system ID, autosupport, asup, troubleshoot connector, download failure, cloud volumes ontap download failure, agent 
 summary: 콘솔 에이전트의 문제를 해결하려면 NetApp 지원팀에 문의하세요. NetApp 지원팀에서는 시스템 ID, 에이전트 버전 또는 최신 AutoSupport 메시지를 요청할 수 있습니다.  NetApp 기술 자료를 확인하여 직접 문제를 해결할 수도 있습니다. 
 ---

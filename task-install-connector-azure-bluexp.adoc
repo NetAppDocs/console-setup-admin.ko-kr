@@ -90,6 +90,13 @@ NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp 콘�
 
 
  a| 
+\https:\\support.netapp.com
+ a| 
+라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보내고 Cloud Volumes ONTAP 에 대한 소프트웨어 업데이트를 받습니다.
+
+
+
+ a| 
 \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com
  a| 
 NetApp 콘솔 내에서 기능과 서비스를 제공합니다.
@@ -145,7 +152,7 @@ Cloud Volumes ONTAP 시스템에 AutoSupport 메시지를 보낼 아웃바운드
 --
 
 
-NTP 활성화:: NetApp 데이터 분류를 사용하여 회사 데이터 소스를 스캔하려는 경우 콘솔 에이전트와 NetApp 데이터 분류 시스템 모두에서 NTP(네트워크 시간 프로토콜) 서비스를 활성화하여 시스템 간의 시간을 동기화해야 합니다. https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["NetApp 데이터 분류에 대해 자세히 알아보세요"^]
+NTP 활성화:: NetApp 데이터 분류를 사용하여 회사 데이터 소스를 스캔하려는 경우 콘솔 에이전트와 NetApp 데이터 분류 시스템 모두에서 NTP(네트워크 시간 프로토콜) 서비스를 활성화하여 시스템 간의 시간을 동기화해야 합니다. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["NetApp 데이터 분류에 대해 자세히 알아보세요"^]
 +
 --
 콘솔 에이전트를 만든 후 이 네트워킹 요구 사항을 구현해야 합니다.
@@ -514,6 +521,6 @@ link:reference-ports-azure.html["Azure에 대한 보안 그룹 규칙 보기"] .
 프로세스가 완료되면 콘솔 에이전트를 콘솔에서 사용할 수 있습니다.
 
 
-NOTE: 배포에 실패하면 콘솔에서 보고서와 로그를 다운로드하여 문제를 해결할 수 있습니다.link:task-troubleshoot-connector.html#troubleshoot-installation["설치 문제를 해결하는 방법을 알아보세요."]
+NOTE: 배포에 실패하면 콘솔에서 보고서와 로그를 다운로드하여 문제를 해결할 수 있습니다.link:task-troubleshoot-agent.html#troubleshoot-installation["설치 문제를 해결하는 방법을 알아보세요."]
 
 콘솔 에이전트를 만든 동일한 Azure 구독에 Azure Blob 저장소가 있는 경우 *시스템* 페이지에 Azure Blob 저장소 시스템이 자동으로 표시됩니다. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["NetApp 콘솔에서 Azure Blob 스토리지를 관리하는 방법을 알아보세요."^]

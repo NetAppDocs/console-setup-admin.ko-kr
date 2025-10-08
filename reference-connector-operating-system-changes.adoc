@@ -162,7 +162,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.ht
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html["기존 Cloud Volumes ONTAP 시스템 추가"^]
 * https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["온프레미스 ONTAP 클러스터를 찾아보세요"^]
 * https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html["ONTAP 시스템용 FSx 생성 또는 검색"^]
-* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-working-env.html["Azure NetApp Files 시스템 만들기"^]
+* https://docs.netapp.com/us-en/storage-management-azure-netapp-files/task-create-system.html["Azure NetApp Files 시스템 만들기"^]
 * https://docs.netapp.com/us-en/bluexp-e-series/task-discover-e-series.html["E-시리즈 시스템을 알아보세요"^]
 * https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html["StorageGRID 시스템을 알아보세요"^]
 

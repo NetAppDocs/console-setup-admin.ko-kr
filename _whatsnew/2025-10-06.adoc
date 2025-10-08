@@ -156,7 +156,7 @@ NetApp 콘솔에서 콘솔 에이전트를 배포할 때 이제 에이전트 구
 
 === 콘솔 에이전트에 대한 문제 해결 개선
 
-콘솔 에이전트에서는 문제를 더 잘 이해하는 데 도움이 되는 오류 메시지가 개선되었습니다.link:https://docs.netapp.com/us-en/console-setup-admin/task-troubleshoot-connector.html["콘솔 에이전트 문제를 해결하는 방법을 알아보세요."]
+콘솔 에이전트에서는 문제를 더 잘 이해하는 데 도움이 되는 오류 메시지가 개선되었습니다.link:https://docs.netapp.com/us-en/console-setup-admin/task-troubleshoot-agent.html["콘솔 에이전트 문제를 해결하는 방법을 알아보세요."]
 
 
 
