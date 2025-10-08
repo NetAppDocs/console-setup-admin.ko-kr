@@ -5430,7 +5430,6 @@
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">새로운 소식</block>
   <block id="482723983a4f2af954e36ff41e567451" category="sidebar">알려진 제한 사항</block>
   <block id="e4c53684ddd66ee4898db459d57514e8" category="sidebar">기본을 배우세요</block>
-  <block id="bcb004c01b250a259c11d3d9406d9f6f" category="sidebar">NetApp 어시스턴트 시작하기</block>
   <block id="65ce4dce26160be29539699c6623e379" category="sidebar">시작하기 워크플로</block>
   <block id="1434a6bb482886cf18491c3161371a87" category="sidebar">NetApp 콘솔에 가입하세요</block>
   <block id="f3aee30a3a487c746572616e3f53dc9d" category="sidebar">콘솔 에이전트 만들기</block>
@@ -5569,4 +5568,5 @@
   <block id="61ee3fc74079e98a59bc55949818a0a9" category="admonition">설치에 실패하면 로그와 보고서를 보고 문제 해결에 도움을 받을 수 있습니다.<block ref="61c0b8f4aae5855ed1c7905138f2dd94" category="inline-link-macro-rx"></block></block>
   <block id="d06ce875f1b2887cbc5d87b38e0d0d44" category="list-text">설치 중에 아웃바운드 연결을 확인하는 구성 검사를 비활성화해야 합니다. 이 검사를 비활성화하지 않으면 수동 설치가 실패합니다.<block ref="90428b1442632a8a73b6f9660fa083c4" category="inline-link-macro-rx"></block></block>
   <block id="3bc0e23bd46bad08da1876b2cc4430a7" category="sidebar">NetApp 콘솔 어시스턴트 사용</block>
+  <block id="14a5258ed6e53fde9968f99c48b5072e" category="sidebar">NetApp 콘솔 어시스턴트 시작하기</block>
 </blocks>

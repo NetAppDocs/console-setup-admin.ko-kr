@@ -30,7 +30,7 @@ sidebar:
         url: "/concept-connectors.html"
       - title: 배포 모드
         url: "/concept-modes.html"
-    - title: NetApp 어시스턴트 시작하기
+    - title: NetApp 콘솔 어시스턴트 시작하기
       entries:
       - title: NetApp 콘솔 어시스턴트 사용
         url: "/task-console-assistant.html"
