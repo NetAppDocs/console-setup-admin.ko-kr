@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-ports-on-prem.html 
-keywords: networking, network, requirements, ports, on-prem, linux, http, https, bluexp 
+keywords: networking, network, requirements, ports, on-prem, linux, http, https, bluexp, console agent, console 
 summary: 콘솔 에이전트는 온프레미스 Linux 호스트에 수동으로 설치되는 경우 _인바운드_ 포트를 사용합니다.  계획 목적으로 다음 항구를 참조하세요. 
 ---
 = 온프레미스 콘솔 에이전트용 포트

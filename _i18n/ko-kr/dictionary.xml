@@ -5355,13 +5355,11 @@
   <block id="1dcb606a3a707c345cb54b5c3113d621" category="cell">실행 후크 템플릿 삭제</block>
   <block id="386bacb41d61c7b8e46cd3e9198743cd" category="cell">작업 요약 및 분석 대시보드 보기</block>
   <block id="8bbffbb59e50612d870c42d2db4880dc" category="cell">StorageGRID 버킷 및 스토리지 대상 보기</block>
-  <block id="c969e31f72edfcf168ffdd268986844a" category="paragraph">| \ https://mysupport.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보냅니다. | \ https://support.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보냅니다. | \ https://signin.b2c.netapp.com | NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp 콘솔에 새로운 NSS 자격 증명을 추가합니다. | \https:\\support.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보내고 Cloud Volumes ONTAP 에 대한 소프트웨어 업데이트를 받습니다.</block>
   <block id="067f3ef114756cdabe76467602ca9b2e" category="list-text">정부 클라우드 환경에 설치하는 경우 구성 검사를 비활성화하세요.<block ref="9b8bf974e42c4282e3da7fa6c59f1dce" category="inline-link-macro-rx"></block></block>
   <block id="42c16a43066627b293306439eb1732f6" category="admonition">설치에 실패하면 설치 보고서와 로그를 보고 문제를 해결하는 데 도움이 됩니다.<block ref="61c0b8f4aae5855ed1c7905138f2dd94" category="inline-link-macro-rx"></block></block>
   <block id="c2fc633e22b03955b13beee2049ac471" category="list-text">NetApp 데이터 분류를 사용하여 회사 데이터 소스를 스캔하려는 경우 콘솔 에이전트와 NetApp 데이터 분류 시스템 모두에서 NTP(네트워크 시간 프로토콜) 서비스를 활성화하여 시스템 간의 시간을 동기화해야 합니다.<block ref="95ad16386ae4ac759ff3f180dcafce84" category="inline-link-rx"></block></block>
   <block id="12ad8fdc380a2754e74763c6ec3dd093" category="paragraph">콘솔 에이전트에서는 문제를 더 잘 이해하는 데 도움이 되는 오류 메시지가 개선되었습니다.<block ref="af6db24ea837f8b9ee9738ec7c58a997" category="inline-link-macro-rx"></block></block>
   <block id="ee2dcfcc83687ed3d92f8b7d687f1f05" category="list-text"><block ref="ee2dcfcc83687ed3d92f8b7d687f1f05" category="inline-link-rx"></block></block>
-  <block id="c9c92f70006bb92009b6cd8f9b6b80f7" category="cell">\https:\\support.netapp.com</block>
   <block id="f092dc53062418401abf8d7b17161fcb" category="cell">라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보내고 Cloud Volumes ONTAP 에 대한 소프트웨어 업데이트를 받습니다.</block>
   <block id="02220399c28525a1c857a5784cf96eca" category="list-text">입력하다<block ref="c4ca4238a0b923820dcc509a6f75849b" prefix=" " category="inline-code"></block> 진단 도구에 접근하고 화면의 지시를 따르세요. + 예를 들어, 모든 에이전트 서비스가 실행 중인지 확인할 수 있습니다. <block ref="50f10aae18a0502372770b812f684d46" category="inline-link-macro-rx"></block> .</block>
   <block id="d03af09bc0729475142a25d2101f89cb" category="summary">NetApp 콘솔을 처음 사용하는 경우 콘솔 어시스턴트가 초기 설정 과정을 안내합니다.  도우미를 사용하면 NetApp 지원 사이트(NSS) 계정을 추가하고, 콘솔 에이전트를 추가하고, 클러스터를 추가하고, 라이선스나 구독을 추가하는 작업을 쉽게 수행할 수 있어 데이터 관리를 쉽게 시작할 수 있습니다.</block>
@@ -5565,4 +5563,5 @@
   <block id="26323547bd680fab40f920c84c862857" category="list-text"><block ref="26323547bd680fab40f920c84c862857" category="inline-link-rx"></block></block>
   <block id="7c9136bab44834c94b08c608870f1fd1" category="list-text"><block ref="7c9136bab44834c94b08c608870f1fd1" category="inline-link-rx"></block></block>
   <block id="d3cdb39411bce89027162422ffb460a4" category="list-text"><block ref="d3cdb39411bce89027162422ffb460a4" category="inline-link-rx"></block></block>
+  <block id="1edf01eab3b295d8836c4716654a90aa" category="paragraph">| \ https://mysupport.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보냅니다.  | \ https://support.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보냅니다.  | \ https://signin.b2c.netapp.com | NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp Console 에 새로운 NSS 자격 증명을 추가합니다.  | \ https://support.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보내고 Cloud Volumes ONTAP 에 대한 소프트웨어 업데이트를 받습니다.</block>
 </blocks>

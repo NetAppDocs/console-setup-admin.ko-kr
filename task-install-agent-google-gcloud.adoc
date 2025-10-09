@@ -75,7 +75,7 @@ NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp 콘�
 
 
  a| 
-\https:\\support.netapp.com
+\ https://support.netapp.com
  a| 
 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보내고 Cloud Volumes ONTAP 에 대한 소프트웨어 업데이트를 받습니다.
 
