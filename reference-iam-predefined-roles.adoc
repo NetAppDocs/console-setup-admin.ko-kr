@@ -146,5 +146,5 @@ NetApp 콘솔의 IAM(ID 및 액세스 관리)은 리소스 계층의 다양한 �
 * link:concept-identity-and-access-management.html["NetApp 콘솔 ID 및 액세스 관리에 대해 알아보세요"]
 * link:task-iam-get-started.html["NetApp 콘솔 IAM 시작하기"]
 * link:task-iam-manage-members-permissions.html["NetApp 콘솔 멤버 및 해당 권한 관리"]
-* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["NetApp 콘솔 IAM에 대한 API에 대해 알아보세요"^]
+* https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html["NetApp 콘솔 IAM에 대한 API에 대해 알아보세요"^]
 

@@ -647,7 +647,7 @@ https://_ipaddress_[]
 
 
 
-콘솔 에이전트를 생성한 동일한 AWS 계정에 Amazon S3 버킷이 있는 경우, *시스템* 페이지에 Amazon S3 스토리지 시스템이 자동으로 표시됩니다. https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["NetApp ConsoleP에서 S3 버킷을 관리하는 방법을 알아보세요."^]
+콘솔 에이전트를 생성한 동일한 AWS 계정에 Amazon S3 버킷이 있는 경우, *시스템* 페이지에 Amazon S3 스토리지 시스템이 자동으로 표시됩니다. https://docs.netapp.com/us-en/storage-management-s3-storage/index.html["NetApp ConsoleP에서 S3 버킷을 관리하는 방법을 알아보세요."^]
 
 
 

@@ -353,4 +353,4 @@ link:reference-ports-aws.html["AWS에 대한 보안 그룹 규칙 보기"] .
 
 NOTE: 배포에 실패하면 콘솔에서 보고서와 로그를 다운로드하여 문제를 해결할 수 있습니다.link:task-troubleshoot-agent.html#troubleshoot-installation["설치 문제를 해결하는 방법을 알아보세요."]
 
-콘솔 에이전트를 생성한 동일한 AWS 계정에 Amazon S3 버킷이 있는 경우, *시스템* 페이지에 Amazon S3 작업 환경이 자동으로 표시됩니다. https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["NetApp 콘솔에서 S3 버킷을 관리하는 방법을 알아보세요."^]
+콘솔 에이전트를 생성한 동일한 AWS 계정에 Amazon S3 버킷이 있는 경우, *시스템* 페이지에 Amazon S3 작업 환경이 자동으로 표시됩니다. https://docs.netapp.com/us-en/storage-management-s3-storage/index.html["NetApp 콘솔에서 S3 버킷을 관리하는 방법을 알아보세요."^]

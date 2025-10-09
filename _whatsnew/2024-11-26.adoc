@@ -18,16 +18,16 @@
 | 커넥터 | 3.9.46 | 사소한 보안 개선 및 버그 수정 
 
 
-| 백업 및 복구 | 2024년 11월 22일 | 로 가다 https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP backup and recovery 페이지의 새로운 기능"^] 2024년 11월 릴리스에 포함된 변경 사항을 참조하세요. 
+| 백업 및 복구 | 2024년 11월 22일 | 로 가다 https://docs.netapp.com/us-en/data-services-backup-recovery/whats-new.html["BlueXP backup and recovery 페이지의 새로운 기능"^] 2024년 11월 릴리스에 포함된 변경 사항을 참조하세요. 
 
 
-| 분류 | 2024년 11월 4일(버전 1.37) | 로 가다 https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP classification 페이지의 새로운 기능"^] 1.32에서 1.37 릴리스에 포함된 변경 사항을 참조하세요. 
+| 분류 | 2024년 11월 4일(버전 1.37) | 로 가다 https://docs.netapp.com/us-en/data-services-data-classification/whats-new.html["BlueXP classification 페이지의 새로운 기능"^] 1.32에서 1.37 릴리스에 포함된 변경 사항을 참조하세요. 
 
 
-| Cloud Volumes ONTAP 관리 | 2024년 11월 11일 | 로 가다 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP 관리 페이지의 새로운 기능"^] 2024년 10월 및 2024년 11월 릴리스에 포함된 변경 사항을 참조하세요. 
+| Cloud Volumes ONTAP 관리 | 2024년 11월 11일 | 로 가다 https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP 관리 페이지의 새로운 기능"^] 2024년 10월 및 2024년 11월 릴리스에 포함된 변경 사항을 참조하세요. 
 
 
-| 온프레미스 ONTAP 클러스터 관리 | 2024년 11월 26일 | 로 가다 https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html["온프레미스 ONTAP 클러스터 관리 페이지의 새로운 기능"^] 2024년 11월 릴리스에 포함된 변경 사항을 참조하세요. 
+| 온프레미스 ONTAP 클러스터 관리 | 2024년 11월 26일 | 로 가다 https://docs.netapp.com/us-en/storage-management-ontap-onprem/whats-new.html["온프레미스 ONTAP 클러스터 관리 페이지의 새로운 기능"^] 2024년 11월 릴리스에 포함된 변경 사항을 참조하세요. 
 |===
 BlueXP digital wallet 과 BlueXP replication 도 개인 모드에 포함되어 있지만, 이전 개인 모드 릴리스와 변경 사항은 없습니다.
 

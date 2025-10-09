@@ -38,7 +38,7 @@ summary: 에이전트의 Azure 보안 그룹에는 인바운드 규칙과 아웃
 | HTTPS | 443 | 클라이언트 웹 브라우저에서 로컬 사용자 인터페이스로의 HTTPS 액세스와 NetApp 데이터 분류 인스턴스로부터의 연결을 제공합니다. 
 
 
-| TCP | 3128 | NetApp 지원팀에 AutoSupport 메시지를 보내기 위해 Cloud Volumes ONTAP 에 인터넷 액세스를 제공합니다.  배포 후에는 수동으로 이 포트를 열어야 합니다. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport.html["에이전트가 AutoSupport 메시지의 프록시로 사용되는 방식을 알아보세요."^] 
+| TCP | 3128 | NetApp 지원팀에 AutoSupport 메시지를 보내기 위해 Cloud Volumes ONTAP 에 인터넷 액세스를 제공합니다. 배포 후에는 수동으로 이 포트를 열어야 합니다. https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-verify-autosupport.html["에이전트가 AutoSupport 메시지의 프록시로 사용되는 방식을 알아보세요."^] 
 |===
 
 

@@ -64,7 +64,7 @@ link:media/BlueXP-Private-Mode-legacy-interface.pdf["BlueXP 개인 모드에 대
 .15+| *서비스* | 알림 | 아니요 
 
 
-| 백업 및 복구 | 예https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["ONTAP 볼륨 데이터에 대해 지원되는 백업 대상 목록 보기"^] 
+| 백업 및 복구 | 예https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["ONTAP 볼륨 데이터에 대해 지원되는 백업 대상 목록 보기"^] 
 
 
 | 분류 | 예 

@@ -699,7 +699,7 @@ NOTE: 설치에 실패하면 로그와 보고서를 보고 문제 해결에 도�
 
 
 
-콘솔 에이전트를 생성한 동일한 Google Cloud 계정에 Google Cloud Storage 버킷이 있는 경우, *시스템* 페이지에 Google Cloud Storage 시스템이 자동으로 표시됩니다. https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html["NetApp 콘솔에서 Google Cloud Storage를 관리하는 방법을 알아보세요."^]
+콘솔 에이전트를 생성한 동일한 Google Cloud 계정에 Google Cloud Storage 버킷이 있는 경우, *시스템* 페이지에 Google Cloud Storage 시스템이 자동으로 표시됩니다. https://docs.netapp.com/us-en/storage-management-google-cloud-storage/index.html["NetApp 콘솔에서 Google Cloud Storage를 관리하는 방법을 알아보세요."^]
 
 
 

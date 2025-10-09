@@ -75,7 +75,7 @@ link:task-adding-aws-accounts.html#add-credentials-agent-aws["콘솔 에이전�
 
 FSx for ONTAP 시스템을 생성하고 관리하는 데 필요한 권한을 제공하려면 AWS 자격 증명을 콘솔에 추가합니다.
 
-https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Amazon FSx for ONTAP 콘솔에 AWS 자격 증명을 추가하는 방법을 알아보세요."^]
+https://docs.netapp.com/us-en/storage-management-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Amazon FSx for ONTAP 콘솔에 AWS 자격 증명을 추가하는 방법을 알아보세요."^]
 
 
 

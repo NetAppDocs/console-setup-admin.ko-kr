@@ -437,4 +437,4 @@ link:reference-ports-gcp.html["Google Cloud의 방화벽 규칙"]
 
 NOTE: 배포에 실패하면 콘솔에서 보고서와 로그를 다운로드하여 문제를 해결할 수 있습니다.link:task-troubleshoot-agent.html#troubleshoot-installation["설치 문제를 해결하는 방법을 알아보세요."]
 
-콘솔 에이전트를 생성한 동일한 Google Cloud 계정에 Google Cloud Storage 버킷이 있는 경우, *시스템* 페이지에 Google Cloud Storage 시스템이 자동으로 표시됩니다. https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html["콘솔에서 Google Cloud Storage를 관리하는 방법을 알아보세요."]
+콘솔 에이전트를 생성한 동일한 Google Cloud 계정에 Google Cloud Storage 버킷이 있는 경우, *시스템* 페이지에 Google Cloud Storage 시스템이 자동으로 표시됩니다. https://docs.netapp.com/us-en/storage-management-google-cloud-storage/index.html["콘솔에서 Google Cloud Storage를 관리하는 방법을 알아보세요."]

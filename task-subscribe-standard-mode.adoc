@@ -185,8 +185,8 @@ image:screenshot_gcp_associate.gif["구독 할당 페이지의 스크린샷입�
 --
 ====
 .관련 정보
-* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["Cloud Volumes ONTAP 대한 BYOL 용량 기반 라이선스 관리"^]
-* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["데이터 서비스에 대한 BYOL 라이선스 관리"^]
+* https://docs.netapp.com/us-en/console-licenses-subscriptions/task-manage-capacity-licenses.html["Cloud Volumes ONTAP 대한 BYOL 용량 기반 라이선스 관리"^]
+* https://docs.netapp.com/us-en/console-licenses-subscriptions/task-manage-data-services-licenses.html["데이터 서비스에 대한 BYOL 라이선스 관리"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["AWS 자격 증명 및 구독 관리"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["Azure 자격 증명 및 구독 관리"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["Google Cloud 자격 증명 및 구독 관리"]

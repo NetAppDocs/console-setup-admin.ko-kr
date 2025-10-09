@@ -47,5 +47,5 @@ link:task-iam-manage-resources.html#associate-resource["리소스를 폴더 및 
 * link:concept-agents.html["NetApp 콘솔 에이전트에 대해 알아보세요"]
 * link:concept-identity-and-access-management.html["NetApp 콘솔 ID 및 액세스 관리에 대해 알아보세요"]
 * link:task-iam-get-started.html["ID 및 액세스 시작하기"]
-* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["ID 및 액세스 관리를 위한 API에 대해 알아보세요"^]
+* https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html["ID 및 액세스 관리를 위한 API에 대해 알아보세요"^]
 

@@ -131,7 +131,7 @@ IMPORTANT: 프록시를 구성한 후에는 프록시 유형을 변경할 수 �
 
 Cloud Volumes ONTAP 사용하여 Azure Private Links를 비활성화하고 서비스 엔드포인트를 사용하는 경우 직접 API 트래픽을 활성화합니다.  그렇지 않으면 트래픽이 제대로 라우팅되지 않습니다.
 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Cloud Volumes ONTAP 에서 Azure Private Link 또는 서비스 엔드포인트를 사용하는 방법에 대해 자세히 알아보세요."^]
+https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-enabling-private-link.html["Cloud Volumes ONTAP 에서 Azure Private Link 또는 서비스 엔드포인트를 사용하는 방법에 대해 자세히 알아보세요."^]
 
 .단계
 . *관리 > 에이전트*를 선택하세요.

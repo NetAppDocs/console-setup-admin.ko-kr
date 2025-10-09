@@ -41,9 +41,9 @@
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#9-september-2024["Connector 2024년 9월 릴리스의 새로운 기능은 무엇입니까?"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#8-august-2024["Connector 2024년 8월 릴리스의 새로운 기능은 무엇입니까?"]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP backup and recovery 의 새로운 기능"^]
-* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP classification 의 새로운 기능"^]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["BlueXP 의 Cloud Volumes ONTAP 관리의 새로운 기능"^]
+* https://docs.netapp.com/us-en/data-services-backup-recovery/whats-new.html["BlueXP backup and recovery 의 새로운 기능"^]
+* https://docs.netapp.com/us-en/data-services-data-classification/whats-new.html["BlueXP classification 의 새로운 기능"^]
+* https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html["BlueXP 의 Cloud Volumes ONTAP 관리의 새로운 기능"^]
 
 
 업그레이드 방법을 포함하여 개인 모드에 대한 자세한 내용은 다음을 참조하세요.

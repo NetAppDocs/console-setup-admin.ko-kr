@@ -137,9 +137,9 @@ TIP: 캐싱을 사용하면 성능이 최적화되지만, 이 창의 데이터�
 
 ONTAP 에서 발생하는 특정 이벤트에 대한 알림을 확인합니다. 이는 EMS와 지표 기반 알림의 조합입니다.
 
-ONTAP 알림에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-alerts/index.html["ONTAP 알림 정보"^] .
+ONTAP 알림에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/console-alerts/index.html["ONTAP 알림 정보"^] .
 
-귀하가 볼 수 있는 알림 목록은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-alerts/alerts-use-dashboard.html["ONTAP 스토리지의 잠재적 위험 보기"^] .
+귀하가 볼 수 있는 알림 목록은 다음을 참조하세요. https://docs.netapp.com/us-en/console-alerts/alerts-use-dashboard.html["ONTAP 스토리지의 잠재적 위험 보기"^] .
 
 .단계
 . NetApp 콘솔 메뉴에서 ONTAP 알림 창을 검토합니다.
@@ -200,9 +200,9 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 . NetApp 콘솔 메뉴에서 랜섬웨어 복원력 창을 검토합니다.
 . 랜섬웨어 복원력 창에서 다음 중 하나를 수행하세요.
 +
-** *보기*를 선택하여 NetApp 랜섬웨어 복원력 대시보드로 이동합니다. 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-dashboard.html["NetApp 랜섬웨어 복원력 대시보드를 사용하여 워크로드 상태를 모니터링합니다."^] .
-** NetApp 랜섬웨어 복원력 대시보드에서 "권장 작업"을 검토하세요. 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-dashboard.html["NetApp 랜섬웨어 복원력 대시보드에서 보호 권장 사항을 검토하세요."^] .
-** NetApp 랜섬웨어 복원력 알림 페이지에서 알림을 검토하려면 알림 링크를 선택하세요.  자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["NetApp Ransomware Resilience를 사용하여 감지된 랜섬웨어 알림을 처리하세요"^] .
+** *보기*를 선택하여 NetApp 랜섬웨어 복원력 대시보드로 이동합니다. 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-dashboard.html["NetApp 랜섬웨어 복원력 대시보드를 사용하여 워크로드 상태를 모니터링합니다."^] .
+** NetApp 랜섬웨어 복원력 대시보드에서 "권장 작업"을 검토하세요. 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-dashboard.html["NetApp 랜섬웨어 복원력 대시보드에서 보호 권장 사항을 검토하세요."^] .
+** NetApp 랜섬웨어 복원력 알림 페이지에서 알림을 검토하려면 알림 링크를 선택하세요. 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["NetApp Ransomware Resilience를 사용하여 감지된 랜섬웨어 알림을 처리하세요"^] .
 
 
 
@@ -220,5 +220,5 @@ TIP: 캐싱을 사용하면 성능이 최적화되지만, 이 창의 데이터�
 
 .단계
 . NetApp 콘솔 메뉴에서 백업 및 복구 창을 검토합니다.
-. *보기*를 선택하여 NetApp 백업 및 복구 대시보드로 이동합니다. 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["NetApp 백업 및 복구 설명서"^] .
+. *보기*를 선택하여 NetApp 백업 및 복구 대시보드로 이동합니다. 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["NetApp 백업 및 복구 설명서"^] .
 

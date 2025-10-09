@@ -82,7 +82,7 @@ summary: 콘솔이 수행하는 작업 상태를 모니터링하여 해결해야
 
 알림 센터를 사용하면 시작한 작업의 상태를 보고 특정 유형의 시스템 활동에 대한 알림을 설정할 수 있습니다.  알림을 통해 ONTAP 스토리지 환경에서 용량, 가용성, 성능, 보호 및 보안과 관련된 문제나 잠재적 위험을 확인할 수 있습니다.
 
-https://docs.netapp.com/us-en/bluexp-alerts/index.html["NetApp 콘솔 알림에 대해 자세히 알아보세요"^]
+https://docs.netapp.com/us-en/console-alerts/index.html["NetApp 콘솔 알림에 대해 자세히 알아보세요"^]
 
 
 

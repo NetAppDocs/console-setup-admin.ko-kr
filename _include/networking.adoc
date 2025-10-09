@@ -28,7 +28,7 @@ link:reference-networking-saas-console.html["NetApp 콘솔에서 연결된 엔�
 Azure 지역:: Cloud Volumes ONTAP 사용하는 경우 콘솔 에이전트는 관리하는 Cloud Volumes ONTAP 시스템과 동일한 Azure 지역이나 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure 지역 쌍"^] Cloud Volumes ONTAP 시스템용.  이 요구 사항은 Cloud Volumes ONTAP 과 연결된 스토리지 계정 간에 Azure Private Link 연결이 사용되도록 보장합니다.
 +
 --
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Cloud Volumes ONTAP Azure Private Link를 사용하는 방법 알아보기"^]
+https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-enabling-private-link.html["Cloud Volumes ONTAP Azure Private Link를 사용하는 방법 알아보기"^]
 
 --
 

@@ -65,5 +65,5 @@ image:screenshot-iam-project-id.png["프로젝트의 작업 메뉴를 선택한 
 .관련 정보
 * link:concept-identity-and-access-management.html["ID 및 액세스 관리에 대해 알아보세요"]
 * link:task-iam-get-started.html["ID 및 액세스 시작하기"]
-* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["ID 및 액세스를 위한 API에 대해 알아보세요"^]
+* https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html["ID 및 액세스를 위한 API에 대해 알아보세요"^]
 

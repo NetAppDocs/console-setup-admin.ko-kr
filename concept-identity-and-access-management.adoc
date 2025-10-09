@@ -239,5 +239,5 @@ image:diagram-iam-example-hierarchy-advanced.png["3개의 폴더로 구성된 �
 * link:task-iam-rename-organization.html["NetApp 콘솔 조직 이름 변경"]
 * link:task-iam-audit-actions-timeline.html["IAM 활동 모니터링 또는 감사"]
 * link:reference-iam-predefined-roles.html["NetApp 콘솔 액세스 역할"]
-* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["NetApp 콘솔 IAM에 대한 API에 대해 알아보세요"^]
+* https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html["NetApp 콘솔 IAM에 대한 API에 대해 알아보세요"^]
 

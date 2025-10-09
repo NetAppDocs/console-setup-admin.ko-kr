@@ -69,7 +69,7 @@ BlueXP 에 로그인하면 다음과 같은 변경 사항을 확인할 수 있�
 
 
 .BlueXP IAM용 API
-이 변경으로 BlueXP IAM에 대한 새로운 API가 도입되었지만 이전 테넌시 API와 하위 호환됩니다. https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["BlueXP IAM API에 대해 알아보세요"^]
+이 변경으로 BlueXP IAM에 대한 새로운 API가 도입되었지만 이전 테넌시 API와 하위 호환됩니다. https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html["BlueXP IAM API에 대해 알아보세요"^]
 
 .지원되는 배포 모드
 BlueXP IAM은 BlueXP 표준 모드와 제한 모드로 사용할 때 지원됩니다.  개인 모드에서 BlueXP 사용하는 경우 BlueXP 계정을 계속 사용하여 작업 공간, 사용자 및 리소스를 관리하게 됩니다.
@@ -90,8 +90,8 @@ BlueXP IAM은 BlueXP 표준 모드와 제한 모드로 사용할 때 지원됩�
 | 커넥터 | 3.9.48 | 로 가다 https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-48["BlueXP 커넥터 페이지의 새로운 기능"] 버전 3.9.48에 포함된 변경 사항을 참조하세요. 
 
 
-| 백업 및 복구 | 2025년 2월 21일 | 로 가다 https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP backup and recovery 페이지의 새로운 기능"^] 2025년 2월 릴리스에 포함된 변경 사항을 참조하세요. 
+| 백업 및 복구 | 2025년 2월 21일 | 로 가다 https://docs.netapp.com/us-en/data-services-backup-recovery/whats-new.html["BlueXP backup and recovery 페이지의 새로운 기능"^] 2025년 2월 릴리스에 포함된 변경 사항을 참조하세요. 
 
 
-| 분류 | 2025년 1월 22일(버전 1.39) | 로 가다 https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP classification 페이지의 새로운 기능"^] 1.39 릴리스에 포함된 변경 사항을 참조하세요. 
+| 분류 | 2025년 1월 22일(버전 1.39) | 로 가다 https://docs.netapp.com/us-en/data-services-data-classification/whats-new.html["BlueXP classification 페이지의 새로운 기능"^] 1.39 릴리스에 포함된 변경 사항을 참조하세요. 
 |===

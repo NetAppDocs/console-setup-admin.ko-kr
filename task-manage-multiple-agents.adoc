@@ -56,6 +56,6 @@ image:screenshot-connector-switch.png["헤더에 에이전트 아이콘과 스�
 경합 문제를 방지하려면 기본 콘솔 에이전트만 *자동 모드*로 설정해야 합니다.
 
 +
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-settings.html["용량 관리 모드에 대해 자세히 알아보세요"^]
+https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-manage-capacity-settings.html["용량 관리 모드에 대해 자세히 알아보세요"^]
 
 

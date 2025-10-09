@@ -32,7 +32,7 @@ AWS 자격 증명을 콘솔 에이전트에 추가하여 클라우드 리소스�
 
 * FSx for ONTAP 콘솔에 AWS 자격 증명 추가
 +
-FSx for ONTAP 생성하고 관리하려면 콘솔에 새로운 AWS 자격 증명을 추가하세요. https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["FSx for ONTAP 에 대한 권한을 설정하는 방법을 알아보세요"^]
+FSx for ONTAP 생성하고 관리하려면 콘솔에 새로운 AWS 자격 증명을 추가하세요. https://docs.netapp.com/us-en/storage-management-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["FSx for ONTAP 에 대한 권한을 설정하는 방법을 알아보세요"^]
 
 
 
@@ -194,7 +194,7 @@ NetApp 콘솔 SaaS(Software as a Service) 계층이 역할을 수행할 수 있�
 
 ** 콘솔 에이전트를 만드는 데 필요한 권한을 포함하는 정책을 만듭니다.
 +
-*** https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["FSx for ONTAP 에 필요한 권한 보기"^]
+*** https://docs.netapp.com/us-en/storage-management-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["FSx for ONTAP 에 필요한 권한 보기"^]
 *** link:task-install-agent-aws-console.html#aws-permissions-agent["에이전트 배포 정책 보기"]
 
 
@@ -233,7 +233,7 @@ image:screenshot-settings-icon-organization.png["콘솔 오른쪽 상단에 있�
 
 == Amazon FSx for ONTAP 콘솔에 자격 증명 추가
 
-자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Amazon FSx for ONTAP 에 대한 콘솔 설명서"^]
+자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/storage-management-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Amazon FSx for ONTAP 에 대한 콘솔 설명서"^]
 
 
 

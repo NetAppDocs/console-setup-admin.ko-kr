@@ -24,7 +24,7 @@ _콘솔 에이전트_는 클라우드 네트워크나 온프레미스 네트워�
 
 * Amazon FSx for NetApp ONTAP
 +
-일부 작업에는 콘솔 에이전트 또는 NetApp 워크로드 링크가 필요합니다. https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html["콘솔 에이전트 또는 링크가 필요한 작업을 알아보세요."^]
+일부 작업에는 콘솔 에이전트 또는 NetApp 워크로드 링크가 필요합니다. https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fsx-aws.html["콘솔 에이전트 또는 링크가 필요한 작업을 알아보세요."^]
 
 * 자동화 허브
 * Azure NetApp Files
@@ -46,7 +46,7 @@ Azure NetApp Files 관리하려면 콘솔 에이전트가 필요하지 않지만
 온프레미스 ONTAP 클러스터를 콘솔에 추가하는 데는 콘솔 에이전트가 필요하지 않지만, 추가 콘솔 기능과 데이터 서비스를 위해서는 필요합니다.
 
 +
-https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["온프레미스 ONTAP 클러스터에 대한 검색 및 관리 옵션에 대해 자세히 알아보세요."^]
+https://docs.netapp.com/us-en/storage-management-ontap-onprem/task-discovering-ontap.html["온프레미스 ONTAP 클러스터에 대한 검색 및 관리 옵션에 대해 자세히 알아보세요."^]
 
 * 소프트웨어 업데이트
 * 지속 가능성
@@ -98,7 +98,7 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 * 아마존 웹 서비스
 * 마이크로소프트 애저
 +
-Cloud Volumes ONTAP 시스템을 관리하는 것과 동일한 지역에 Azure에 콘솔 에이전트를 배포합니다.  또는 다음을 배포합니다. https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure 지역 쌍"^] .  이렇게 하면 Cloud Volumes ONTAP 과 연결된 스토리지 계정 간에 Azure Private Link 연결이 사용됩니다. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Cloud Volumes ONTAP Azure Private Link를 사용하는 방법 알아보기"^]
+Cloud Volumes ONTAP 시스템을 관리하는 것과 동일한 지역에 Azure에 콘솔 에이전트를 배포합니다. 또는 다음을 배포합니다. https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure 지역 쌍"^] . 이렇게 하면 Cloud Volumes ONTAP 과 연결된 스토리지 계정 간에 Azure Private Link 연결이 사용됩니다. https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-enabling-private-link.html["Cloud Volumes ONTAP Azure Private Link를 사용하는 방법 알아보기"^]
 
 * 구글 클라우드
 +

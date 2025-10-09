@@ -110,5 +110,5 @@ NOTE: 검색된 리소스를 전체 조직에서 제거하려면 *시스템* 페
 
 * link:concept-identity-and-access-management.html["NetApp 콘솔에서 ID 및 액세스에 대해 알아보세요"]
 * link:task-iam-get-started.html["NetApp 콘솔에서 ID 및 액세스 시작하기"]
-* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["ID 및 액세스를 위한 API에 대해 알아보세요"^]
+* https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html["ID 및 액세스를 위한 API에 대해 알아보세요"^]
 

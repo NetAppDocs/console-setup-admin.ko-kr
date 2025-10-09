@@ -18,8 +18,8 @@
 | 커넥터 | 3.9.48 | 로 가다 https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-48["BlueXP 커넥터 페이지의 새로운 기능"] 버전 3.9.48에 포함된 변경 사항을 참조하세요. 
 
 
-| 백업 및 복구 | 2025년 2월 21일 | 로 가다 https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP backup and recovery 페이지의 새로운 기능"^] 2025년 2월 릴리스에 포함된 변경 사항을 참조하세요. 
+| 백업 및 복구 | 2025년 2월 21일 | 로 가다 https://docs.netapp.com/us-en/data-services-backup-recovery/whats-new.html["BlueXP backup and recovery 페이지의 새로운 기능"^] 2025년 2월 릴리스에 포함된 변경 사항을 참조하세요. 
 
 
-| 분류 | 2025년 1월 22일(버전 1.39) | 로 가다 https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP classification 페이지의 새로운 기능"^] 1.39 릴리스에 포함된 변경 사항을 참조하세요. 
+| 분류 | 2025년 1월 22일(버전 1.39) | 로 가다 https://docs.netapp.com/us-en/data-services-data-classification/whats-new.html["BlueXP classification 페이지의 새로운 기능"^] 1.39 릴리스에 포함된 변경 사항을 참조하세요. 
 |===

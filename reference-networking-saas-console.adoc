@@ -99,7 +99,7 @@ NetApp 콘솔에 액세스하는 각 컴퓨터는 아래 나열된 엔드포인�
 
 * link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/reference-networking-aws.html#outbound-internet-access-for-cloud-volumes-ontap-nodes["AWS의 Cloud Volumes ONTAP 엔드포인트"]
 * link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/reference-networking-azure.html["Azure의 Cloud Volumes ONTAP 엔드포인트"]
-* link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#outbound-internet-access["Google Cloud의 Cloud Volumes ONTAP 엔드포인트"]
+* link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/reference-networking-gcp.html#outbound-internet-access["Google Cloud의 Cloud Volumes ONTAP 엔드포인트"]
 
 
 https://docs.netapp.com/us-en/data-services-family/["해당 NetApp 데이터 서비스 설명서를 참조하세요."^]
