@@ -4,7 +4,7 @@ permalink: task-subscribe-standard-mode.html
 keywords: subscribe, subscription, marketplace subscription, paygo, contract, annual contract 
 summary: 클라우드 공급업체의 마켓플레이스에서 NetApp 데이터 서비스를 구독하여 시간당 요금이나 연간 계약을 통해 데이터 서비스 비용을 지불하세요.  NetApp 에서 라이선스를 구매한 경우 마켓플레이스 제공 서비스도 구독해야 합니다.  귀하의 라이센스 요금이 항상 먼저 청구되지만, 라이센스 용량을 초과하거나 라이센스 기간이 만료되면 시간당 요금이 청구됩니다. 
 ---
-= NetApp Intelligent Services(표준 모드) 구독
+= NetApp Intelligent Services (표준 모드) 구독
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,18 +14,18 @@ summary: 클라우드 공급업체의 마켓플레이스에서 NetApp 데이터 
 
 
 [role="lead"]
-클라우드 공급업체의 마켓플레이스에서 NetApp Intelligent Services를 구독하면 시간당 요금(PAYGO) 또는 연간 계약을 통해 데이터 서비스 비용을 지불할 수 있습니다.  NetApp (BYOL)에서 라이선스를 구매한 경우 마켓플레이스 제공 서비스도 구독해야 합니다.  귀하의 라이센스 요금이 항상 먼저 청구되지만, 라이센스 용량을 초과하거나 라이센스 기간이 만료되면 시간당 요금이 청구됩니다.
+클라우드 공급업체의 마켓플레이스에서 NetApp Intelligent Services 구독하면 시간당 요금(PAYGO) 또는 연간 계약을 통해 데이터 서비스 비용을 지불할 수 있습니다.  NetApp (BYOL)에서 라이선스를 구매한 경우 마켓플레이스 제공 서비스도 구독해야 합니다.  귀하의 라이센스 요금이 항상 먼저 청구되지만, 라이센스 용량을 초과하거나 라이센스 기간이 만료되면 시간당 요금이 청구됩니다.
 
 마켓플레이스 구독을 통해 다음 NetApp 데이터 서비스에 대한 요금을 청구할 수 있습니다.
 
-* NetApp 백업 및 복구
+* NetApp Backup and Recovery
 * Cloud Volumes ONTAP
-* NetApp 클라우드 계층화
-* NetApp 랜섬웨어 복원력
-* NetApp 재해 복구
+* NetApp Cloud Tiering
+* NetApp Ransomware Resilience
+* NetApp Disaster Recovery
 
 
-NetApp 데이터 분류는 구독을 통해 활성화되지만 분류 사용에는 비용이 청구되지 않습니다.
+NetApp Data Classification 구독을 통해 활성화되지만 분류 사용에는 비용이 청구되지 않습니다.
 
 .시작하기 전에
 데이터 서비스를 구독하려면 콘솔 에이전트를 이미 배포했어야 합니다.  콘솔 에이전트에 연결된 클라우드 자격 증명에 마켓플레이스 구독을 연결해야 합니다.
@@ -34,7 +34,7 @@ NetApp 데이터 분류는 구독을 통해 활성화되지만 분류 사용에�
 ====
 .AWS
 --
-다음 비디오에서는 AWS Marketplace에서 NetApp Intelligent Services를 구독하는 단계를 보여줍니다.
+다음 비디오에서는 AWS Marketplace에서 NetApp Intelligent Services 구독하는 단계를 보여줍니다.
 
 .AWS Marketplace에서 NetApp Intelligent Services 구독
 video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
@@ -43,7 +43,7 @@ video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 . *조직 자격 증명*을 선택하세요.
 . 콘솔 에이전트와 연결된 자격 증명 세트에 대한 작업 메뉴를 선택한 다음 *구독 구성*을 선택합니다.
 +
-콘솔 에이전트와 연결된 자격 증명을 선택해야 합니다.  NetApp 콘솔과 연결된 자격 증명에는 마켓플레이스 구독을 연결할 수 없습니다.
+콘솔 에이전트와 연결된 자격 증명을 선택해야 합니다.  NetApp Console 과 연결된 자격 증명에는 마켓플레이스 구독을 연결할 수 없습니다.
 
 +
 image:screenshot_aws_configure_subscription.png["기존 자격 증명 세트에 대한 작업 메뉴의 스크린샷입니다."]
@@ -55,7 +55,7 @@ image:screenshot_aws_configure_subscription.png["기존 자격 증명 세트에 
 .. *구독*을 선택하세요.
 .. *계정 설정*을 선택하세요.
 +
-NetApp 콘솔로 리디렉션됩니다.
+NetApp Console 로 리디렉션됩니다.
 
 .. *구독 할당* 페이지에서:
 +
@@ -82,7 +82,7 @@ NetApp 콘솔로 리디렉션됩니다.
 . *조직 자격 증명*을 선택하세요.
 . 콘솔 에이전트와 연결된 자격 증명 세트에 대한 작업 메뉴를 선택한 다음 *구독 구성*을 선택합니다.
 +
-콘솔 에이전트와 연결된 자격 증명을 선택해야 합니다.  NetApp 콘솔과 연결된 자격 증명에는 마켓플레이스 구독을 연결할 수 없습니다.
+콘솔 에이전트와 연결된 자격 증명을 선택해야 합니다.  NetApp Console 과 연결된 자격 증명에는 마켓플레이스 구독을 연결할 수 없습니다.
 
 . 자격 증명을 기존 구독과 연결하려면 아래쪽 목록에서 구독을 선택하고 *구성*을 선택합니다.
 . 자격 증명을 새 구독과 연결하려면 *구독 추가 > 계속*을 선택하고 Azure Marketplace의 단계를 따르세요.
@@ -92,7 +92,7 @@ NetApp 콘솔로 리디렉션됩니다.
 .. 양식을 작성하고 *구독*을 선택하세요.
 .. 구독 절차가 완료되면 *지금 계정 구성*을 선택하세요.
 +
-NetApp 콘솔로 리디렉션됩니다.
+NetApp Console 로 리디렉션됩니다.
 
 .. *구독 할당* 페이지에서:
 +
@@ -131,7 +131,7 @@ image:screenshot_gcp_associate.gif["Google Cloud 자격 증명을 위해 선택�
 . 아직 구독이 없다면 *구독 추가 > 계속*을 선택하고 Google Cloud Marketplace의 단계를 따르세요.
 +
 
-NOTE: 다음 단계를 완료하기 전에 Google Cloud 계정에서 청구 관리자 권한과 NetApp 콘솔 로그인 권한이 모두 있는지 확인하세요.
+NOTE: 다음 단계를 완료하기 전에 Google Cloud 계정에서 청구 관리자 권한과 NetApp Console 로그인 권한이 모두 있는지 확인하세요.
 
 +
 .. 당신이 리디렉션된 후 https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud Marketplace의 NetApp Intelligent Services 페이지"^] 상단 탐색 메뉴에서 올바른 프로젝트가 선택되었는지 확인하세요.
@@ -154,7 +154,7 @@ image:screenshot_gcp_marketplace_register.png["등록 팝업의 스크린샷입�
 .. *구독 할당* 페이지의 단계를 완료하세요.
 +
 
-NOTE: 귀하의 조직에서 이미 귀하의 청구 계정에서 마켓플레이스 구독을 보유한 사람이 있는 경우 귀하는 다음으로 리디렉션됩니다. https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["NetApp 콘솔 내 Cloud Volumes ONTAP 페이지"^] 대신에.  예상치 못한 상황이라면 NetApp 영업팀에 문의하세요.  Google은 Google 결제 계정당 하나의 구독만 허용합니다.
+NOTE: 귀하의 조직에서 이미 귀하의 청구 계정에서 마켓플레이스 구독을 보유한 사람이 있는 경우 귀하는 다음으로 리디렉션됩니다. https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["NetApp Console 내 Cloud Volumes ONTAP 페이지"^] 대신에.  예상치 못한 상황이라면 NetApp 영업팀에 문의하세요.  Google은 Google 결제 계정당 하나의 구독만 허용합니다.
 
 +
 *** 이 구독을 연결할 콘솔 조직이나 계정을 선택하세요.

@@ -13,7 +13,7 @@ image:screenshot_gcp_associate.gif["Google Cloud 자격 증명을 위해 선택�
 . 아직 구독이 없다면 *구독 추가 > 계속*을 선택하고 Google Cloud Marketplace의 단계를 따르세요.
 +
 
-NOTE: 다음 단계를 완료하기 전에 Google Cloud 계정에서 청구 관리자 권한과 NetApp 콘솔 로그인 권한이 모두 있는지 확인하세요.
+NOTE: 다음 단계를 완료하기 전에 Google Cloud 계정에서 청구 관리자 권한과 NetApp Console 로그인 권한이 모두 있는지 확인하세요.
 
 +
 .. 당신이 리디렉션된 후 https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud Marketplace의 NetApp Intelligent Services 페이지"^] 상단 탐색 메뉴에서 올바른 프로젝트가 선택되었는지 확인하세요.
@@ -36,7 +36,7 @@ image:screenshot_gcp_marketplace_register.png["등록 팝업의 스크린샷입�
 .. *구독 할당* 페이지의 단계를 완료하세요.
 +
 
-NOTE: 귀하의 조직에서 이미 귀하의 청구 계정에서 마켓플레이스 구독을 보유한 사람이 있는 경우 귀하는 다음으로 리디렉션됩니다. https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["NetApp 콘솔 내 Cloud Volumes ONTAP 페이지"^] 대신에.  예상치 못한 상황이라면 NetApp 영업팀에 문의하세요.  Google은 Google 결제 계정당 하나의 구독만 허용합니다.
+NOTE: 귀하의 조직에서 이미 귀하의 청구 계정에서 마켓플레이스 구독을 보유한 사람이 있는 경우 귀하는 다음으로 리디렉션됩니다. https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["NetApp Console 내 Cloud Volumes ONTAP 페이지"^] 대신에.  예상치 못한 상황이라면 NetApp 영업팀에 문의하세요.  Google은 Google 결제 계정당 하나의 구독만 허용합니다.
 
 +
 *** 이 구독을 연결할 콘솔 조직이나 계정을 선택하세요.

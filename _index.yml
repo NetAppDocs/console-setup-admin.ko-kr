@@ -1,16 +1,16 @@
 ---
 indexpage:
-  title: NetApp 콘솔 설정 및 관리 문서
-  summary: NetApp Console을 시작하여 온프레미스 및 클라우드 환경 전반에서 데이터를 구축, 보호 및 관리하세요.  설정이 완료되면
+  title: NetApp Console 설정 및 관리 문서
+  summary: NetApp Console 시작하여 온프레미스 및 클라우드 환경 전반에서 데이터를 구축, 보호 및 관리하세요.  설정이 완료되면
     IAM(ID 및 액세스 관리)을 사용하여 리소스에 대한 액세스를 제어하고, 콘솔 에이전트, 클라우드 공급자 계정 등을 관리할 수 있습니다.
   keywords: bluexp, netapp console, Console agents, accounts, get started, setup,
     administration, sign up, log in, login, permissions
-  lead: NetApp Console을 시작하여 온프레미스 및 클라우드 환경 전반에서 데이터를 구축, 보호 및 관리하세요.  설정이 완료되면 IAM(ID
+  lead: NetApp Console 시작하여 온프레미스 및 클라우드 환경 전반에서 데이터를 구축, 보호 및 관리하세요.  설정이 완료되면 IAM(ID
     및 액세스 관리)을 사용하여 리소스에 대한 액세스를 제어하고, 콘솔 에이전트, 클라우드 공급자 계정 등을 관리할 수 있습니다.
   tiles:
   - title: 시작하기
     links:
-    - title: NetApp 콘솔에 대해 알아보세요
+    - title: NetApp Console 에 대해 알아보세요
       url: concept-overview.html
     - title: 배포 모드에 대해 알아보세요
       url: concept-modes.html
@@ -22,7 +22,7 @@ indexpage:
     links:
     - title: 콘솔 ID 및 액세스 관리(IAM)에 대해 알아보세요
       url: concept-identity-and-access-management.html
-    - title: ID 및 액세스 시작하기
+    - title: 신원 및 액세스 시작하기
       url: task-iam-get-started.html
     - title: 폴더와 프로젝트로 리소스를 구성하세요
       url: task-iam-manage-folders-projects.html
@@ -80,9 +80,9 @@ indexpage:
       url: task-install-agent-on-prem-ova.html
   - title: 블로그 및 커뮤니티
     links:
-    - title: NetApp 콘솔
+    - title: NetApp Console
       url: https://www.netapp.com/console
-    - title: NetApp 데이터 서비스
+    - title: NetApp Data Services
       url: https://www.netapp.com/data-services/
     - title: NetApp 커뮤니티
       url: https://community.netapp.com/

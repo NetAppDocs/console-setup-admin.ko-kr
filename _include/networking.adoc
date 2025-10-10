@@ -17,7 +17,7 @@ VNet 및 서브넷:: 콘솔 에이전트를 만들 때는 에이전트가 상주
 아웃바운드 인터넷 접속:: 콘솔 에이전트를 배포하는 네트워크 위치에는 특정 엔드포인트에 연결하기 위한 아웃바운드 인터넷 연결이 있어야 합니다.
 
 
-NetApp 콘솔에서 연결된 엔드포인트:: SaaS 계층을 통해 제공되는 웹 기반 NetApp 콘솔을 사용하면 여러 엔드포인트에 연결하여 데이터 관리 작업을 완료할 수 있습니다.  여기에는 콘솔에서 콘솔 에이전트를 배포하기 위해 연결된 엔드포인트가 포함됩니다.
+NetApp 콘솔에서 연결된 엔드포인트:: SaaS 계층을 통해 제공되는 웹 기반 NetApp Console 사용하면 여러 엔드포인트에 연결하여 데이터 관리 작업을 완료할 수 있습니다.  여기에는 콘솔에서 콘솔 에이전트를 배포하기 위해 연결된 엔드포인트가 포함됩니다.
 +
 --
 link:reference-networking-saas-console.html["NetApp 콘솔에서 연결된 엔드포인트 목록 보기"] .
@@ -70,5 +70,5 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 --
 
 
-NTP 활성화:: NetApp 데이터 분류를 사용하여 회사 데이터 소스를 스캔하려는 경우 콘솔 에이전트와 NetApp 데이터 분류 시스템 모두에서 NTP(네트워크 시간 프로토콜) 서비스를 활성화하여 시스템 간의 시간을 동기화해야 합니다. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["NetApp 데이터 분류에 대해 자세히 알아보세요"^]
+NTP 활성화:: NetApp Data Classification 사용하여 회사 데이터 소스를 스캔하려는 경우 콘솔 에이전트와 NetApp Data Classification 시스템 모두에서 NTP(네트워크 시간 프로토콜) 서비스를 활성화하여 시스템 간의 시간을 동기화해야 합니다. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["NetApp 데이터 분류에 대해 자세히 알아보세요"^]
 

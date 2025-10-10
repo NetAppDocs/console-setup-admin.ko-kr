@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-iam-ransomware-roles.html 
 keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin, 
-summary: NetApp 콘솔 내에서 사용자에게 NetApp 랜섬웨어 복원력에 대한 액세스 권한을 부여할 수 있습니다. 
+summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience 에 대한 액세스 권한을 제공하는 역할을 부여할 수 있습니다. 
 ---
-= NetApp 콘솔의 랜섬웨어 복원력 액세스 역할
+= NetApp Console 의 랜섬웨어 복원력 액세스 역할
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: NetApp 콘솔 내에서 사용자에게 NetApp 랜섬웨어 복원력�
 
 
 [role="lead"]
-랜섬웨어 복원력 역할은 사용자에게 NetApp 랜섬웨어 복원력에 대한 액세스 권한을 제공합니다.  두 가지 역할은 랜섬웨어 보호 관리자와 랜섬웨어 보호 뷰어입니다.  두 역할의 주요 차이점은 랜섬웨어 복원력에서 취할 수 있는 조치입니다.
+랜섬웨어 복원력 역할은 사용자에게 NetApp Ransomware Resilience 에 대한 액세스 권한을 제공합니다.  두 가지 역할은 랜섬웨어 보호 관리자와 랜섬웨어 보호 뷰어입니다.  두 역할의 주요 차이점은 랜섬웨어 복원력에서 취할 수 있는 조치입니다.
 
 다음 표는 각 역할이 수행할 수 있는 작업을 보여줍니다.
 

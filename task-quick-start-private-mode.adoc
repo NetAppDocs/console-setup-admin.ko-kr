@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-quick-start-private-mode.html 
 keywords: private mode quick start, quick start, aws top secret cloud, aws secret cloud, secret cloud, top secret cloud, bluexp legacy, bluexp 
-summary: '개인 모드는 일반적으로 인터넷 연결이 없는 온프레미스 환경과 AWS Secret Cloud, AWS Top Secret Cloud, Azure IL6를 포함한 보안 클라우드 지역에서 사용됩니다.  NetApp 콘솔에서는 아직 개인 모드를 사용할 수 없습니다.  NetApp BlueXP 레거시 인터페이스를 통해 이러한 환경을 계속 지원합니다. 링크:<PDF에 대한 문서 링크>' 
+summary: '개인 모드는 일반적으로 인터넷 연결이 없는 온프레미스 환경과 AWS Secret Cloud, AWS Top Secret Cloud, Azure IL6를 포함한 보안 클라우드 지역에서 사용됩니다.  NetApp Console 에서는 아직 개인 모드를 사용할 수 없습니다.  NetApp BlueXP 레거시 인터페이스를 통해 이러한 환경을 계속 지원합니다. 링크:<PDF에 대한 문서 링크>' 
 ---
 = 시작하기 워크플로(BlueXP 개인 모드)
 :hardbreaks:

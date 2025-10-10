@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-install-options-azure.html 
 keywords: install connector azure, azure install connector, connector azure, azure connector, installation options, azure marketplace, manual install 
-summary: Azure에서 콘솔 에이전트를 만드는 방법에는 여러 가지가 있습니다.  가장 일반적인 방법은 NetApp 콘솔에서 직접 실행하는 것입니다. 
+summary: Azure에서 콘솔 에이전트를 만드는 방법에는 여러 가지가 있습니다.  가장 일반적인 방법은 NetApp Console 에서 직접 실행하는 것입니다. 
 ---
 = Azure의 콘솔 에이전트 설치 옵션
 :hardbreaks:
@@ -14,11 +14,11 @@ summary: Azure에서 콘솔 에이전트를 만드는 방법에는 여러 가지
 
 
 [role="lead"]
-Azure에서 콘솔 에이전트를 만드는 방법에는 여러 가지가 있습니다.  가장 일반적인 방법은 NetApp 콘솔에서 직접 실행하는 것입니다.
+Azure에서 콘솔 에이전트를 만드는 방법에는 여러 가지가 있습니다.  가장 일반적인 방법은 NetApp Console 에서 직접 실행하는 것입니다.
 
 다음과 같은 설치 옵션을 사용할 수 있습니다.
 
-* link:task-install-agent-azure-console.html["NetApp 콘솔에서 직접 콘솔 에이전트를 만듭니다."](이것은 표준 옵션입니다)
+* link:task-install-agent-azure-console.html["NetApp Console 에서 직접 콘솔 에이전트를 만듭니다."](이것은 표준 옵션입니다)
 +
 이 작업을 수행하면 선택한 VNet에서 Linux와 콘솔 에이전트 소프트웨어를 실행하는 VM이 시작됩니다.
 

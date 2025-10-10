@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-ports-aws.html 
 keywords: ports, security group, http, https, inbound, outbound 
-summary: 콘솔 에이전트의 AWS 보안 그룹에는 인바운드 규칙과 아웃바운드 규칙이 모두 필요합니다.  NetApp 콘솔에서 콘솔 에이전트를 생성하면 NetApp 콘솔이 자동으로 이 보안 그룹을 생성합니다.  다른 모든 설치 옵션의 경우 이 보안 그룹을 설정해야 합니다. 
+summary: 콘솔 에이전트의 AWS 보안 그룹에는 인바운드 규칙과 아웃바운드 규칙이 모두 필요합니다.  NetApp 콘솔에서 콘솔 에이전트를 생성하면 NetApp Console 자동으로 이 보안 그룹을 생성합니다.  다른 모든 설치 옵션의 경우 이 보안 그룹을 설정해야 합니다. 
 ---
 = AWS의 콘솔 에이전트 보안 그룹 규칙
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 콘솔 에이전트의 AWS 보안 그룹에는 인바운드 규칙과 �
 
 
 [role="lead"]
-에이전트의 AWS 보안 그룹에는 인바운드 규칙과 아웃바운드 규칙이 모두 필요합니다.  NetApp 콘솔에서 콘솔 에이전트를 생성하면 NetApp 콘솔이 자동으로 이 보안 그룹을 생성합니다.  다른 모든 설치 옵션의 경우 이 보안 그룹을 설정해야 합니다.
+에이전트의 AWS 보안 그룹에는 인바운드 규칙과 아웃바운드 규칙이 모두 필요합니다.  NetApp 콘솔에서 콘솔 에이전트를 생성하면 NetApp Console 자동으로 이 보안 그룹을 생성합니다.  다른 모든 설치 옵션의 경우 이 보안 그룹을 설정해야 합니다.
 
 
 
@@ -35,7 +35,7 @@ summary: 콘솔 에이전트의 AWS 보안 그룹에는 인바운드 규칙과 �
 
 
 
-| HTTPS | 443 | 로컬 사용자 인터페이스에 대한 HTTPS 액세스와 NetApp 데이터 분류 인스턴스의 연결을 제공합니다. 
+| HTTPS | 443 | 로컬 사용자 인터페이스에 대한 HTTPS 액세스와 NetApp Data Classification 인스턴스의 연결을 제공합니다. 
 
 
 | TCP | 3128 | Cloud Volumes ONTAP 에 인터넷 접속을 제공합니다.  배포 후에는 수동으로 이 포트를 열어야 합니다. 
@@ -76,7 +76,7 @@ NOTE: 소스 IP 주소는 에이전트 호스트입니다.
 | 서비스 | 규약 | 포트 | 목적지 | 목적 
 
 
-| API 호출 및 AutoSupport | HTTPS | 443 | 아웃바운드 인터넷 및 ONTAP 클러스터 관리 LIF | AWS, ONTAP, NetApp Data Classification에 대한 API 호출 및 NetApp 에 ​​대한 AutoSupport 메시지 전송 
+| API 호출 및 AutoSupport | HTTPS | 443 | 아웃바운드 인터넷 및 ONTAP 클러스터 관리 LIF | AWS, ONTAP, NetApp Data Classification 대한 API 호출 및 NetApp 에 ​​대한 AutoSupport 메시지 전송 
 
 
 .2+| API 호출 | TCP | 3000 | ONTAP HA 중재자 | ONTAP HA 중재자와의 커뮤니케이션 

@@ -40,7 +40,7 @@ NetApp 다음 Linux 운영 체제에서 에이전트를 지원합니다.
 
 
 --
-NetApp 콘솔에서 배포:: 우분투 22.04 LTS
+NetApp Console 에서 배포:: 우분투 22.04 LTS
 AWS Marketplace에서 배포:: 우분투 22.04 LTS
 Azure Marketplace에서 배포:: 우분투 22.04 LTS
 
@@ -92,7 +92,7 @@ Azure Marketplace에서 배포:: 우분투 22.04 LTS
 
 RHEL 8 및 9 지원에 대한 다음 사항을 참고하세요.
 
-제한 사항:: 온프레미스에 있는 RHEL 8 또는 9 호스트에 에이전트를 설치하는 경우 NetApp 데이터 분류가 지원됩니다.  RHEL 8 또는 9 호스트가 AWS, Azure 또는 Google Cloud에 있는 경우 지원되지 않습니다.
+제한 사항:: 온프레미스에 있는 RHEL 8 또는 9 호스트에 에이전트를 설치하는 경우 NetApp Data Classification 지원됩니다.  RHEL 8 또는 9 호스트가 AWS, Azure 또는 Google Cloud에 있는 경우 지원되지 않습니다.
 컨테이너 오케스트레이션 도구:: RHEL 8 또는 9 호스트에 콘솔 에이전트를 설치하는 경우 컨테이너 오케스트레이션 도구로 Podman 도구를 사용해야 합니다.  Docker Engine은 RHEL 8 및 9에서 지원되지 않습니다.
 배포 모드:: RHEL 8과 9는 표준 모드와 제한 모드에서 콘솔을 사용할 때 지원됩니다.
 지원되는 콘솔 에이전트 버전:: NetApp 다음 버전의 콘솔 에이전트부터 RHEL 8 및 9를 지원합니다.

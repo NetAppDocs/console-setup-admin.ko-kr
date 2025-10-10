@@ -28,7 +28,7 @@ _폴더 또는 프로젝트 관리자_는 *에이전트* 페이지에서 모든 
 +
 표 위의 검색을 사용하여 특정 콘솔 에이전트를 찾거나 리소스 계층 구조로 표를 필터링하세요.
 
-. 콘솔 에이전트에 연결된 폴더와 프로젝트를 보려면 다음을 선택하세요.image:icon-action.png["세 개의 점 아이콘"] 그런 다음 *세부정보 보기*를 선택하세요.
+. 콘솔 에이전트에 연결된 폴더와 프로젝트를 보려면 다음을 선택하세요.image:icon-action.png["세 개의 점 아이콘"] 그런 다음 *세부 정보 보기*를 선택하세요.
 +
 이 페이지에는 콘솔 에이전트와 관련된 폴더와 프로젝트에 대한 세부 정보가 표시됩니다.
 
@@ -44,8 +44,8 @@ _폴더 또는 프로젝트 관리자_는 *에이전트* 페이지에서 모든 
 link:task-iam-manage-resources.html#associate-resource["리소스를 폴더 및 프로젝트와 연결하는 방법을 알아보세요."] .
 
 .관련 정보
-* link:concept-agents.html["NetApp 콘솔 에이전트에 대해 알아보세요"]
-* link:concept-identity-and-access-management.html["NetApp 콘솔 ID 및 액세스 관리에 대해 알아보세요"]
-* link:task-iam-get-started.html["ID 및 액세스 시작하기"]
+* link:concept-agents.html["NetApp Console 에이전트에 대해 알아보세요"]
+* link:concept-identity-and-access-management.html["NetApp Console ID 및 액세스 관리에 대해 알아보세요"]
+* link:task-iam-get-started.html["신원 및 액세스 시작하기"]
 * https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html["ID 및 액세스 관리를 위한 API에 대해 알아보세요"^]
 

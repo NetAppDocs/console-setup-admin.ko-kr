@@ -4,7 +4,7 @@ permalink: task-install-agent-google-console-gcloud.html
 keywords: install connector, google cloud connector installation, google cloud connector, install connector in google cloud, bluexp, gcloud, create connector, gcp installation, gcp connector 
 summary: NetApp 콘솔이나 Google Cloud를 사용하여 Google Cloud에서 콘솔 에이전트를 만들려면 네트워킹을 설정하고, Google Cloud 권한을 준비하고, Google Cloud API를 활성화한 다음 콘솔 에이전트를 만들어야 합니다. 
 ---
-= NetApp 콘솔에서 Google Cloud에 콘솔 에이전트 만들기
+= NetApp Console 에서 Google Cloud에 콘솔 에이전트 만들기
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -70,7 +70,7 @@ Google Cloud에서 리소스를 관리합니다.
  a| 
 \ https://signin.b2c.netapp.com
  a| 
-NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp 콘솔에 새로운 NSS 자격 증명을 추가합니다.
+NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp Console 에 새로운 NSS 자격 증명을 추가합니다.
 
 
 
@@ -84,7 +84,7 @@ NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp 콘�
  a| 
 \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com
  a| 
-NetApp 콘솔 내에서 기능과 서비스를 제공합니다.
+NetApp Console 내에서 기능과 서비스를 제공합니다.
 
 
 
@@ -104,7 +104,7 @@ NetApp 콘솔 내에서 기능과 서비스를 제공합니다.
 --
 
 
-NetApp 콘솔에서 연결된 엔드포인트:: SaaS 계층을 통해 제공되는 웹 기반 NetApp 콘솔을 사용하면 여러 엔드포인트에 연결하여 데이터 관리 작업을 완료할 수 있습니다.  여기에는 콘솔에서 콘솔 에이전트를 배포하기 위해 연결된 엔드포인트가 포함됩니다.
+NetApp 콘솔에서 연결된 엔드포인트:: SaaS 계층을 통해 제공되는 웹 기반 NetApp Console 사용하면 여러 엔드포인트에 연결하여 데이터 관리 작업을 완료할 수 있습니다.  여기에는 콘솔에서 콘솔 에이전트를 배포하기 위해 연결된 엔드포인트가 포함됩니다.
 +
 --
 link:reference-networking-saas-console.html["NetApp 콘솔에서 연결된 엔드포인트 목록 보기"] .
@@ -137,7 +137,7 @@ Cloud Volumes ONTAP 시스템에 AutoSupport 메시지를 보낼 아웃바운드
 --
 
 
-NTP 활성화:: NetApp 데이터 분류를 사용하여 회사 데이터 소스를 스캔하려는 경우 콘솔 에이전트와 NetApp 데이터 분류 시스템 모두에서 NTP(네트워크 시간 프로토콜) 서비스를 활성화하여 시스템 간의 시간을 동기화해야 합니다. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["NetApp 데이터 분류에 대해 자세히 알아보세요"^]
+NTP 활성화:: NetApp Data Classification 사용하여 회사 데이터 소스를 스캔하려는 경우 콘솔 에이전트와 NetApp Data Classification 시스템 모두에서 NTP(네트워크 시간 프로토콜) 서비스를 활성화하여 시스템 간의 시간을 동기화해야 합니다. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["NetApp 데이터 분류에 대해 자세히 알아보세요"^]
 +
 --
 콘솔 에이전트를 만든 후 이 네트워킹 요구 사항을 구현합니다.
@@ -324,7 +324,7 @@ link:reference-permissions-gcp.html["에이전트 서비스 계정 정책"]
 | compute.networkUser 배포 관리자.편집기 | 서비스 프로젝트에서 Cloud Volumes ONTAP 및 서비스 배포 및 유지 관리 
 
 
-| Cloud Volumes ONTAP 서비스 계정 | 관습 | 봉사 프로젝트 | storage.admin 멤버: NetApp 콘솔 서비스 계정(serviceAccount.user) | 해당 없음 | (선택 사항) NetApp 클라우드 계층화 및 NetApp 백업 및 복구용 
+| Cloud Volumes ONTAP 서비스 계정 | 관습 | 봉사 프로젝트 | storage.admin 멤버: NetApp Console 서비스 계정(serviceAccount.user) | 해당 없음 | (선택 사항) NetApp Cloud Tiering 및 NetApp Backup and Recovery 
 
 
 | Google API 서비스 에이전트 | 구글 클라우드 | 봉사 프로젝트  a| 
@@ -342,7 +342,7 @@ link:reference-permissions-gcp.html["에이전트 서비스 계정 정책"]
 |===
 참고사항:
 
-. deploymentmanager.editor는 배포에 방화벽 규칙을 전달하지 않고 콘솔에서 규칙을 생성하도록 선택한 경우에만 호스트 프로젝트에서 필요합니다.  규칙이 지정되지 않으면 NetApp 콘솔은 호스트 프로젝트에 VPC0 방화벽 규칙을 포함하는 배포를 생성합니다.
+. deploymentmanager.editor는 배포에 방화벽 규칙을 전달하지 않고 콘솔에서 규칙을 생성하도록 선택한 경우에만 호스트 프로젝트에서 필요합니다.  규칙이 지정되지 않으면 NetApp Console 호스트 프로젝트에 VPC0 방화벽 규칙을 포함하는 배포를 생성합니다.
 . firewall.create와 firewall.delete는 배포에 방화벽 규칙을 전달하지 않고 콘솔에서 해당 규칙을 생성하도록 선택한 경우에만 필요합니다.  이러한 권한은 콘솔 계정의 .yaml 파일에 있습니다.  공유 VPC를 사용하여 HA 쌍을 배포하는 경우 이러한 권한은 VPC1, 2, 3에 대한 방화벽 규칙을 만드는 데 사용됩니다.  다른 모든 배포의 경우 이러한 권한은 VPC0에 대한 규칙을 만드는 데에도 사용됩니다.
 . 클라우드 계층화의 경우 계층화 서비스 계정에는 프로젝트 수준뿐만 아니라 서비스 계정에 대한 serviceAccount.user 역할이 있어야 합니다.  현재 프로젝트 수준에서 serviceAccount.user를 할당하는 경우 getIAMPolicy로 서비스 계정을 쿼리할 때 권한이 표시되지 않습니다.
 
@@ -364,7 +364,7 @@ link:reference-permissions-gcp.html["에이전트 서비스 계정 정책"]
 ** ID 및 액세스 관리(IAM) API
 ** 클라우드 키 관리 서비스(KMS) API
 +
-(고객 관리 암호화 키(CMEK)와 함께 NetApp Backup and Recovery를 사용하려는 경우에만 필요함)
+(고객 관리 암호화 키(CMEK)와 함께 NetApp Backup and Recovery 사용하려는 경우에만 필요함)
 
 
 
@@ -379,7 +379,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloud �
 콘솔에서 직접 콘솔 에이전트를 만듭니다.
 
 .이 작업에 관하여
-콘솔 에이전트를 생성하면 기본 구성을 사용하여 Google Cloud에 가상 머신 인스턴스가 배포됩니다. 콘솔 에이전트를 만든 후에는 CPU나 RAM이 적은 더 작은 VM 인스턴스로 전환하지 마세요. link:reference-agent-default-config.html["콘솔 에이전트의 기본 구성에 대해 알아보세요"] .
+콘솔 에이전트를 생성하면 기본 구성을 사용하여 Google Cloud에 가상 머신 인스턴스가 배포됩니다.  콘솔 에이전트를 만든 후에는 CPU나 RAM이 적은 더 작은 VM 인스턴스로 전환하지 마세요. link:reference-agent-default-config.html["콘솔 에이전트의 기본 구성에 대해 알아보세요"] .
 
 .시작하기 전에
 다음 사항이 있어야 합니다.

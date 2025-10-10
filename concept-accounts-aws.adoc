@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-accounts-aws.html 
 keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permission, aws permissions, policy, policies, credentials, marketplace, subscription, replace subscription, subscription, amazon, bluexp, agent 
-summary: NetApp 콘솔이 AWS 자격 증명을 사용하여 사용자를 대신하여 작업을 수행하는 방법과 해당 자격 증명이 마켓플레이스 구독과 연결되는 방식을 알아보세요.  이러한 세부 정보를 이해하면 콘솔에서 하나 이상의 AWS 계정에 대한 자격 증명을 관리하는 데 도움이 될 수 있습니다.  예를 들어, 콘솔에 추가 AWS 자격 증명을 추가하는 시점에 대해 알아보고 싶을 수 있습니다. 
+summary: NetApp Console AWS 자격 증명을 사용하여 사용자를 대신하여 작업을 수행하는 방법과 해당 자격 증명이 마켓플레이스 구독과 연결되는 방식을 알아보세요.  이러한 세부 정보를 이해하면 콘솔에서 하나 이상의 AWS 계정에 대한 자격 증명을 관리하는 데 도움이 될 수 있습니다.  예를 들어, 콘솔에 추가 AWS 자격 증명을 추가하는 시점에 대해 알아보고 싶을 수 있습니다. 
 ---
-= NetApp 콘솔에서 AWS 자격 증명 및 권한에 대해 알아보세요
+= NetApp Console 에서 AWS 자격 증명 및 권한에 대해 알아보세요
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: NetApp 콘솔이 AWS 자격 증명을 사용하여 사용자를 대신�
 
 
 [role="lead"]
-NetApp 콘솔이 AWS 자격 증명을 사용하여 사용자를 대신하여 작업을 수행하는 방법과 해당 자격 증명이 마켓플레이스 구독과 연결되는 방식을 알아보세요.  이러한 세부 정보를 이해하면 NetApp 콘솔에서 하나 이상의 AWS 계정에 대한 자격 증명을 관리하는 데 도움이 될 수 있습니다.  예를 들어, 추가 AWS 자격 증명을 추가해야 하는 시점에 대해 알아보고 싶을 수 있습니다.
+NetApp Console AWS 자격 증명을 사용하여 사용자를 대신하여 작업을 수행하는 방법과 해당 자격 증명이 마켓플레이스 구독과 연결되는 방식을 알아보세요.  이러한 세부 정보를 이해하면 NetApp Console 에서 하나 이상의 AWS 계정에 대한 자격 증명을 관리하는 데 도움이 될 수 있습니다.  예를 들어, 추가 AWS 자격 증명을 추가해야 하는 시점에 대해 알아보고 싶을 수 있습니다.
 
 
 
 == 초기 AWS 자격 증명
 
-콘솔에서 콘솔 에이전트를 배포하는 경우 IAM 사용자의 IAM 역할 또는 액세스 키의 ARN을 제공해야 합니다. 인증 방법에는 AWS에 콘솔을 배포할 수 있는 권한이 있어야 합니다. 필요한 권한은 링크: task-install-agent-aws-the Console.html#console-permissions-aws[AWS용 에이전트 배포 정책]에 나열되어 있습니다.
+콘솔에서 콘솔 에이전트를 배포하는 경우 IAM 사용자의 IAM 역할 또는 액세스 키의 ARN을 제공해야 합니다.  인증 방법에는 AWS에 콘솔을 배포할 수 있는 권한이 있어야 합니다.  필요한 권한은 링크: task-install-agent-aws-the Console.html#console-permissions-aws[AWS용 에이전트 배포 정책]에 나열되어 있습니다.
 
 콘솔이 AWS에서 콘솔 에이전트 인스턴스를 시작하면 인스턴스에 대한 IAM 역할과 인스턴스 프로필이 생성됩니다.  또한 AWS 계정 내에서 리소스와 프로세스를 관리할 수 있는 권한을 콘솔 에이전트에 제공하는 정책도 첨부합니다. link:reference-permissions-aws.html["콘솔이 권한을 사용하는 방식을 검토하세요."] .
 
@@ -81,7 +81,7 @@ https://docs.netapp.com/us-en/storage-management-fsx-ontap/requirements/task-set
 
 == 자격 증명 및 마켓플레이스 구독
 
-콘솔 에이전트에 추가하는 자격 증명은 AWS Marketplace 구독과 연결되어야 합니다. 이렇게 하면 시간당 요금(PAYGO)으로 Cloud Volumes ONTAP 및 기타 NetApp 데이터 서비스 또는 연간 계약을 통해 비용을 지불할 수 있습니다. link:task-adding-aws-accounts.html#subscribe["AWS 구독을 연결하는 방법 알아보기"] .
+콘솔 에이전트에 추가하는 자격 증명은 AWS Marketplace 구독과 연결되어야 합니다. 이렇게 하면 시간당 요금(PAYGO)으로 Cloud Volumes ONTAP 및 기타 NetApp 데이터 서비스 비용을 지불하거나 연간 계약을 통해 비용을 지불할 수 있습니다. link:task-adding-aws-accounts.html#subscribe["AWS 구독을 연결하는 방법 알아보기"] .
 
 AWS 자격 증명 및 마켓플레이스 구독에 대해 다음 사항을 참고하세요.
 
@@ -119,7 +119,7 @@ link:task-adding-aws-accounts.html#subscribe["AWS 구독을 연결하는 방법 
 
 동일한 AWS 계정에 속한 모든 AWS 자격 증명은 동일한 AWS Marketplace 구독과 연결됩니다.
 
-서로 다른 AWS 계정에 속한 AWS 자격 증명이 여러 개 있는 경우 해당 자격 증명을 동일한 AWS Marketplace 구독이나 다른 구독과 연결할 수 있습니다.
+서로 다른 AWS 계정에 속하는 AWS 자격 증명이 여러 개 있는 경우 해당 자격 증명을 동일한 AWS Marketplace 구독이나 다른 구독과 연결할 수 있습니다.
 
 
 

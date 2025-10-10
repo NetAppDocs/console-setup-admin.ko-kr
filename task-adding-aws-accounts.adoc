@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-adding-aws-accounts.html 
 keywords: permissions, aws, policy, iam, iam role, role, granting, policy, iam policy, iam user, access keys, arn, cloud provider accounts, aws, cloud provider profile, json, iam, credentials, adding credentials, add credentials, bluexp 
-summary: NetApp 콘솔이 AWS 계정의 클라우드 리소스를 배포하고 관리하는 데 필요한 권한을 갖도록 AWS 자격 증명을 추가하고 관리합니다.  여러 AWS 구독을 관리하는 경우 자격 증명 페이지에서 각 구독에 다른 AWS 자격 증명을 할당할 수 있습니다. 
+summary: NetApp Console AWS 계정의 클라우드 리소스를 배포하고 관리하는 데 필요한 권한을 갖도록 AWS 자격 증명을 추가하고 관리합니다.  여러 AWS 구독을 관리하는 경우 자격 증명 페이지에서 각 구독에 다른 AWS 자격 증명을 할당할 수 있습니다. 
 ---
-= NetApp 콘솔에 대한 AWS 자격 증명 및 마켓플레이스 구독 관리
+= NetApp Console 대한 AWS 자격 증명 및 마켓플레이스 구독 관리
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: NetApp 콘솔이 AWS 계정의 클라우드 리소스를 배포하고 �
 
 
 [role="lead"]
-NetApp 콘솔에서 AWS 계정의 클라우드 리소스를 배포하고 관리할 수 있도록 AWS 자격 증명을 추가하고 관리합니다.  여러 AWS Marketplace 구독을 관리하는 경우 자격 증명 페이지에서 각 구독에 다른 AWS 자격 증명을 할당할 수 있습니다.
+NetApp Console 에서 AWS 계정의 클라우드 리소스를 배포하고 관리할 수 있도록 AWS 자격 증명을 추가하고 관리합니다.  여러 AWS Marketplace 구독을 관리하는 경우 자격 증명 페이지에서 각 구독에 다른 AWS 자격 증명을 할당할 수 있습니다.
 
 
 
@@ -28,7 +28,7 @@ AWS 자격 증명을 콘솔 에이전트에 추가하여 클라우드 리소스�
 
 * 콘솔 에이전트를 생성하기 위해 콘솔에 AWS 자격 증명을 추가합니다.
 +
-콘솔에 새로운 AWS 자격 증명을 추가하면 콘솔 에이전트를 만드는 데 필요한 권한이 제공됩니다. <<add-aws-credentials-agent-creation,NetApp 콘솔에 AWS 자격 증명을 추가하는 방법을 알아보세요.>> .
+콘솔에 새로운 AWS 자격 증명을 추가하면 콘솔 에이전트를 만드는 데 필요한 권한이 제공됩니다. <<add-aws-credentials-agent-creation,NetApp Console 에 AWS 자격 증명을 추가하는 방법을 알아보세요.>> .
 
 * FSx for ONTAP 콘솔에 AWS 자격 증명 추가
 +
@@ -40,7 +40,7 @@ FSx for ONTAP 생성하고 관리하려면 콘솔에 새로운 AWS 자격 증명
 
 == 자격 증명을 회전하는 방법
 
-NetApp 콘솔을 사용하면 에이전트 인스턴스와 연결된 IAM 역할, 신뢰할 수 있는 계정에서 IAM 역할을 맡는 방법, AWS 액세스 키를 제공하는 방법 등 여러 가지 방법으로 AWS 자격 증명을 제공할 수 있습니다. link:concept-accounts-aws.html["AWS 자격 증명 및 권한에 대해 자세히 알아보세요"] .
+NetApp Console 사용하면 에이전트 인스턴스와 연결된 IAM 역할, 신뢰할 수 있는 계정에서 IAM 역할을 맡는 방법, AWS 액세스 키를 제공하는 방법 등 여러 가지 방법으로 AWS 자격 증명을 제공할 수 있습니다. link:concept-accounts-aws.html["AWS 자격 증명 및 권한에 대해 자세히 알아보세요"] .
 
 처음 두 가지 옵션을 사용하면 콘솔은 AWS 보안 토큰 서비스를 사용하여 지속적으로 순환되는 임시 자격 증명을 얻습니다.  이 프로세스는 자동화되어 있고 안전하므로 가장 좋은 방법입니다.
 
@@ -52,7 +52,7 @@ NetApp 콘솔을 사용하면 에이전트 인스턴스와 연결된 IAM 역할,
 
 퍼블릭 클라우드 환경 내에서 리소스와 프로세스를 관리하는 데 필요한 권한을 갖도록 콘솔 에이전트에 추가 AWS 자격 증명을 추가합니다.  다른 계정의 IAM 역할에 대한 ARN을 제공하거나 AWS 액세스 키를 제공할 수 있습니다.
 
-콘솔을 처음 사용하는 경우link:concept-accounts-aws.html["NetApp 콘솔이 AWS 자격 증명 및 권한을 사용하는 방법을 알아보세요."] .
+콘솔을 처음 사용하는 경우link:concept-accounts-aws.html["NetApp Console AWS 자격 증명 및 권한을 사용하는 방법을 알아보세요."] .
 
 
 
@@ -157,7 +157,7 @@ image:screenshot_accounts_switch_aws.png["세부 정보 및 자격 증명 페이
 
 === IAM 역할 설정
 
-NetApp 콘솔 SaaS(Software as a Service) 계층이 역할을 수행할 수 있도록 IAM 역할을 설정합니다.
+NetApp Console SaaS(Software as a Service) 계층이 역할을 수행할 수 있도록 IAM 역할을 설정합니다.
 
 .단계
 . 대상 계정의 IAM 콘솔로 이동합니다.
@@ -222,7 +222,7 @@ image:screenshot-settings-icon-organization.png["콘솔 오른쪽 상단에 있�
 
 . *조직 자격 증명* 또는 *계정 자격 증명* 페이지에서 *자격 증명 추가*를 선택하고 마법사의 단계를 따릅니다.
 +
-.. *자격 증명 위치*: *Amazon Web Services > NetApp 콘솔*을 선택합니다.
+.. *자격 증명 위치*: *Amazon Web Services > NetApp Console*을 선택합니다.
 .. *자격 증명 정의*: IAM 역할의 ARN(Amazon 리소스 이름)을 제공합니다.
 .. *검토*: 새로운 자격 증명에 대한 세부 정보를 확인하고 *추가*를 선택합니다.
 
@@ -253,7 +253,7 @@ AWS 자격 증명을 추가한 후에는 해당 자격 증명을 사용하여 AW
 .시작하기 전에
 구독을 구성하려면 먼저 콘솔 에이전트를 만들어야 합니다. link:concept-agents.html#agent-installation["콘솔 에이전트를 만드는 방법을 알아보세요"] .
 
-다음 비디오에서는 AWS Marketplace에서 NetApp Intelligent Services를 구독하는 단계를 보여줍니다.
+다음 비디오에서는 AWS Marketplace에서 NetApp Intelligent Services 구독하는 단계를 보여줍니다.
 
 .AWS Marketplace에서 NetApp Intelligent Services 구독
 video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
@@ -262,7 +262,7 @@ video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 . *조직 자격 증명*을 선택하세요.
 . 콘솔 에이전트와 연결된 자격 증명 세트에 대한 작업 메뉴를 선택한 다음 *구독 구성*을 선택합니다.
 +
-콘솔 에이전트와 연결된 자격 증명을 선택해야 합니다.  NetApp 콘솔과 연결된 자격 증명에는 마켓플레이스 구독을 연결할 수 없습니다.
+콘솔 에이전트와 연결된 자격 증명을 선택해야 합니다.  NetApp Console 과 연결된 자격 증명에는 마켓플레이스 구독을 연결할 수 없습니다.
 
 +
 image:screenshot_aws_configure_subscription.png["기존 자격 증명 세트에 대한 작업 메뉴의 스크린샷입니다."]
@@ -274,7 +274,7 @@ image:screenshot_aws_configure_subscription.png["기존 자격 증명 세트에 
 .. *구독*을 선택하세요.
 .. *계정 설정*을 선택하세요.
 +
-NetApp 콘솔로 리디렉션됩니다.
+NetApp Console 로 리디렉션됩니다.
 
 .. *구독 할당* 페이지에서:
 +
@@ -308,7 +308,7 @@ AWS Marketplace에서 NetApp 지능형 데이터 서비스를 구독했지만 �
 .단계
 . 구독을 콘솔 조직이나 계정과 연결하지 않았는지 확인하세요.
 +
-.. 탐색 메뉴에서 *관리 > 라이선스 및 구독*을 선택합니다.
+.. 탐색 메뉴에서 *관리 > Licenses and subscriptions*을 선택합니다.
 .. *구독*을 선택하세요.
 .. 귀하의 구독이 나타나지 않는지 확인하세요.
 +

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-ports-gcp.html 
 keywords: ports, firewall rules, http, https, inbound, outbound, connector, agent 
-summary: 에이전트에 대한 Google Cloud 방화벽 규칙에는 인바운드 규칙과 아웃바운드 규칙이 모두 필요합니다.  NetApp 콘솔에서 콘솔 에이전트를 만들면 이 보안 그룹이 자동으로 생성됩니다. 다른 설치 옵션의 경우 이 보안 그룹을 수동으로 설정해야 합니다. 
+summary: 에이전트에 대한 Google Cloud 방화벽 규칙에는 인바운드 규칙과 아웃바운드 규칙이 모두 필요합니다.  NetApp Console 에서 콘솔 에이전트를 만들면 이 보안 그룹이 자동으로 생성됩니다. 다른 설치 옵션의 경우 이 보안 그룹을 수동으로 설정해야 합니다. 
 ---
 = Google Cloud의 에이전트 방화벽 규칙
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 에이전트에 대한 Google Cloud 방화벽 규칙에는 인바운드
 
 
 [role="lead"]
-에이전트에 대한 Google Cloud 방화벽 규칙에는 인바운드 규칙과 아웃바운드 규칙이 모두 필요합니다.  NetApp 콘솔에서 콘솔 에이전트를 만들면 이 보안 그룹이 자동으로 생성됩니다. 다른 설치 옵션의 경우 이 보안 그룹을 수동으로 설정해야 합니다.
+에이전트에 대한 Google Cloud 방화벽 규칙에는 인바운드 규칙과 아웃바운드 규칙이 모두 필요합니다.  NetApp Console 에서 콘솔 에이전트를 만들면 이 보안 그룹이 자동으로 생성됩니다. 다른 설치 옵션의 경우 이 보안 그룹을 수동으로 설정해야 합니다.
 
 
 
@@ -76,7 +76,7 @@ NOTE: 소스 IP 주소는 에이전트 호스트입니다.
 | 서비스 | 규약 | 포트 | 목적지 | 목적 
 
 
-| API 호출 및 AutoSupport | HTTPS | 443 | 아웃바운드 인터넷 및 ONTAP 클러스터 관리 LIF | Google Cloud, ONTAP, NetApp Data Classification에 대한 API 호출 및 NetApp 에 ​​대한 AutoSupport 메시지 전송 
+| API 호출 및 AutoSupport | HTTPS | 443 | 아웃바운드 인터넷 및 ONTAP 클러스터 관리 LIF | Google Cloud, ONTAP, NetApp Data Classification 대한 API 호출 및 NetApp 에 ​​대한 AutoSupport 메시지 전송 
 
 
 | API 호출 | TCP | 8080 | 데이터 분류 | 배포 중 데이터 분류 인스턴스에 대한 프로브 

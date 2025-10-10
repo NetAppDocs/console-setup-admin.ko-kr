@@ -85,7 +85,7 @@ Azure China 지역의 리소스를 관리합니다.
  a| 
 \ https://signin.b2c.netapp.com
  a| 
-NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp 콘솔에 새로운 NSS 자격 증명을 추가합니다.
+NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp Console 에 새로운 NSS 자격 증명을 추가합니다.
 
 
 
@@ -99,7 +99,7 @@ NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp 콘�
  a| 
 \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com
  a| 
-NetApp 콘솔 내에서 기능과 서비스를 제공합니다.
+NetApp Console 내에서 기능과 서비스를 제공합니다.
 
 
 
@@ -144,7 +144,7 @@ Cloud Volumes ONTAP 시스템에 AutoSupport 메시지를 보낼 아웃바운드
 --
 
 
-NTP 활성화:: NetApp 데이터 분류를 사용하여 회사 데이터 소스를 스캔하려는 경우 콘솔 에이전트와 NetApp 데이터 분류 시스템 모두에서 NTP(네트워크 시간 프로토콜) 서비스를 활성화하여 시스템 간의 시간을 동기화해야 합니다. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["NetApp 데이터 분류에 대해 자세히 알아보세요"^]
+NTP 활성화:: NetApp Data Classification 사용하여 회사 데이터 소스를 스캔하려는 경우 콘솔 에이전트와 NetApp Data Classification 시스템 모두에서 NTP(네트워크 시간 프로토콜) 서비스를 활성화하여 시스템 간의 시간을 동기화해야 합니다. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["NetApp 데이터 분류에 대해 자세히 알아보세요"^]
 +
 --
 콘솔 에이전트를 만든 후 네트워킹 요구 사항을 구현합니다.
@@ -189,7 +189,7 @@ https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azur
 . 내용을 복사하세요link:reference-permissions-azure.html["커넥터에 대한 사용자 정의 역할 권한"] JSON 파일에 저장합니다.
 . 할당 가능한 범위에 Azure 구독 ID를 추가하여 JSON 파일을 수정합니다.
 +
-NetApp 콘솔과 함께 사용하려는 각 Azure 구독에 대한 ID를 추가해야 합니다.
+NetApp Console 과 함께 사용하려는 각 Azure 구독에 대한 ID를 추가해야 합니다.
 
 +
 *예*
@@ -241,7 +241,7 @@ image:screenshot_azure_ad.png["Microsoft Azure의 Active Directory 서비스를 
 . 신청서에 대한 세부 사항을 지정하세요:
 +
 ** *이름*: 애플리케이션의 이름을 입력하세요.
-** *계정 유형*: 계정 유형을 선택하세요(모든 계정 유형이 NetApp 콘솔에서 작동합니다).
+** *계정 유형*: 계정 유형을 선택하세요(모든 계정 유형이 NetApp Console 에서 작동합니다).
 ** *리디렉션 URI*: 이 필드는 비워두어도 됩니다.
 
 
@@ -325,7 +325,7 @@ image:screenshot_azure_service_principal_role.png["Azure Portal의 역할 할당
 이제 서비스 주체는 콘솔 에이전트를 배포하는 데 필요한 Azure 권한을 갖게 되었습니다.
 
 +
-여러 Azure 구독에서 Cloud Volumes ONTAP 배포하려면 각 구독에 서비스 주체를 바인딩해야 합니다.  NetApp 콘솔에서 Cloud Volumes ONTAP 배포할 때 사용할 구독을 선택할 수 있습니다.
+여러 Azure 구독에서 Cloud Volumes ONTAP 배포하려면 각 구독에 서비스 주체를 바인딩해야 합니다.  NetApp Console 에서 Cloud Volumes ONTAP 배포할 때 사용할 구독을 선택할 수 있습니다.
 
 
 
@@ -401,7 +401,7 @@ https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=L
 
 
 .단계
-. Azure Marketplace의 NetApp 콘솔 에이전트 VM 페이지로 이동합니다.
+. Azure Marketplace의 NetApp Console 에이전트 VM 페이지로 이동합니다.
 +
 https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["상업 지역을 위한 Azure Marketplace 페이지"^]
 
@@ -468,7 +468,7 @@ Azure Portal로 이동하여 하나 이상의 구독에 대한 콘솔 에이전�
 .단계
 . Azure Portal에서 *구독* 서비스를 열고 구독을 선택합니다.
 +
-*구독* 서비스에서 역할을 할당하는 것이 중요한 이유는 이를 통해 구독 수준에서 역할 할당의 범위가 지정되기 때문입니다.  _scope_는 액세스가 적용되는 리소스 집합을 정의합니다.  다른 수준(예: 가상 머신 수준)에서 범위를 지정하는 경우 NetApp 콘솔 내에서 작업을 완료하는 기능에 영향을 미칩니다.
+*구독* 서비스에서 역할을 할당하는 것이 중요한 이유는 이를 통해 구독 수준에서 역할 할당의 범위가 지정되기 때문입니다.  _scope_는 액세스가 적용되는 리소스 집합을 정의합니다.  다른 수준(예: 가상 머신 수준)에서 범위를 지정하는 경우 NetApp Console 내에서 작업을 완료하는 기능에 영향을 미칩니다.
 
 +
 https://learn.microsoft.com/en-us/azure/role-based-access-control/scope-overview["Microsoft Azure 설명서: Azure RBAC 범위 이해"^]
@@ -492,7 +492,7 @@ NOTE: 콘솔 운영자는 정책에 제공된 기본 이름입니다.  역할에
 
 
 .다음은 무엇인가요?
-로 가다 https://console.netapp.com["NetApp 콘솔"^] 콘솔 에이전트를 사용하려면.
+로 가다 https://console.netapp.com["NetApp Console"^] 콘솔 에이전트를 사용하려면.
 
 --
 .서비스 주체

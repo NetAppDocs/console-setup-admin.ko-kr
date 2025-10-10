@@ -8,7 +8,7 @@
 +
 <<podman-versions,지원되는 Podman 버전 보기>> .
 
-* Ubuntu에는 Docker Engine이 필요합니다.
+* Ubuntu에는 Docker 엔진이 필요합니다.
 +
 <<podman-versions,지원되는 Docker Engine 버전 보기>> .
 

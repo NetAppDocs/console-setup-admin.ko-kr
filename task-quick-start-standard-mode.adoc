@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-quick-start-standard-mode.html 
 keywords: quick start, standard mode quick start 
-summary: 콘솔을 위한 네트워킹을 준비하고, 가입하고 계정을 만들고, 선택적으로 콘솔 에이전트를 만들어 표준 모드에서 NetApp 콘솔을 시작하세요. 
+summary: 콘솔을 위한 네트워킹을 준비하고, 가입하고 계정을 만들고, 선택적으로 콘솔 에이전트를 만들어 표준 모드에서 NetApp Console 시작하세요. 
 ---
 = 시작하기 워크플로(표준 모드)
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: 콘솔을 위한 네트워킹을 준비하고, 가입하고 계정을 �
 
 
 [role="lead"]
-콘솔을 위한 네트워킹을 준비하고, 가입하고 계정을 만들고, 선택적으로 콘솔 에이전트를 만들어 표준 모드에서 NetApp 콘솔을 시작하세요.
+콘솔을 위한 네트워킹을 준비하고, 가입하고 계정을 만들고, 선택적으로 콘솔 에이전트를 만들어 표준 모드에서 NetApp Console 시작하세요.
 
-표준 모드에서는 NetApp 의 SaaS(Software-as-a-Service) 제품으로 호스팅되는 웹 기반 콘솔에 액세스합니다. 시작하기 전에 이해했는지 확인하세요link:concept-modes.html["배포 모드"] 그리고link:concept-agents.html["콘솔 에이전트"] .
+표준 모드에서는 NetApp 의 SaaS(Software-as-a-Service) 제품으로 호스팅되는 웹 기반 콘솔에 액세스합니다.  시작하기 전에 이해했는지 확인하세요link:concept-modes.html["배포 모드"] 그리고link:concept-agents.html["콘솔 에이전트"] .
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["하나"] link:reference-networking-saas-console.html["NetApp 콘솔을 사용하기 위한 네트워킹 준비"]
 [role="quick-margin-para"]
@@ -49,4 +49,4 @@ Google Cloud에서 NetApp Intelligent Data Services를 사용하여 스토리지
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["네"] link:task-subscribe-standard-mode.html["NetApp Intelligent Services 구독(선택 사항)"]
 [role="quick-margin-para"]
-클라우드 공급업체를 통해 NetApp Intelligent Services에 가입하여 시간당 요금(PAYGO)을 지불하거나 연간 계약을 맺으세요.  NetApp Intelligent Services에는 NetApp 백업 및 복구, Cloud Volumes ONTAP, NetApp 클라우드 계층화, NetApp 랜섬웨어 복원력 및 NetApp 재해 복구가 포함됩니다.  NetApp 데이터 분류는 추가 비용 없이 구독에 포함되어 있습니다.
+클라우드 공급업체를 통해 NetApp Intelligent Services 에 가입하여 시간당 요금(PAYGO)을 지불하거나 연간 계약을 맺으세요.  NetApp Intelligent Services 에는 NetApp Backup and Recovery, Cloud Volumes ONTAP, NetApp Cloud Tiering, NetApp Ransomware Resilience 및 NetApp Disaster Recovery 포함됩니다.  NetApp Data Classification 추가 비용 없이 구독에 포함되어 있습니다.

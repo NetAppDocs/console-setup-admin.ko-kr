@@ -4,7 +4,7 @@ permalink: reference-limitations.html
 keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, BlueXP, Cloud Volumes ONTAP, days, running, Connectors should remain running, imdsv2, https tokens, agents should remain running, Console agent 
 summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 나타냅니다. 이러한 제한 사항을 주의 깊게 검토하세요. 
 ---
-= NetApp 콘솔의 알려진 제한 사항
+= NetApp Console 의 알려진 제한 사항
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -26,7 +26,7 @@ summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않�
 
 === 172 범위의 IP 주소와 충돌이 발생할 수 있습니다.
 
-NetApp 콘솔은 172.17.0.0/16 및 172.18.0.0/16 범위의 IP 주소를 갖는 두 개의 인터페이스가 있는 에이전트를 배포합니다.
+NetApp Console 172.17.0.0/16 및 172.18.0.0/16 범위의 IP 주소를 갖는 두 개의 인터페이스가 있는 에이전트를 배포합니다.
 
 네트워크에 이러한 범위 중 하나로 구성된 서브넷이 있는 경우 콘솔에서 연결 오류가 발생할 수 있습니다.  예를 들어, 콘솔에서 온프레미스 ONTAP 클러스터를 검색하는 데 실패할 수 있습니다.
 

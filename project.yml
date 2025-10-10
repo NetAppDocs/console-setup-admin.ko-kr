@@ -10,7 +10,7 @@ settings:
   langs: ko-kr,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: NetApp 콘솔 설정 및 관리
+  - title: NetApp Console 설정 및 관리
     url: "/index.html"
   - title: 릴리스 노트
     entries:
@@ -24,23 +24,23 @@ sidebar:
     entries:
     - title: 기본을 배우세요
       entries:
-      - title: NetApp 콘솔
+      - title: NetApp Console
         url: "/concept-overview.html"
       - title: 콘솔 에이전트
         url: "/concept-agents.html"
       - title: 배포 모드
         url: "/concept-modes.html"
-    - title: NetApp 콘솔 어시스턴트 시작하기
+    - title: NetApp Console 어시스턴트 시작하기
       entries:
-      - title: NetApp 콘솔 어시스턴트 사용
+      - title: NetApp Console 어시스턴트 사용
         url: "/task-console-assistant.html"
     - title: 표준 모드로 시작하세요
       entries:
       - title: 시작하기 워크플로
         url: "/task-quick-start-standard-mode.html"
-      - title: NetApp 콘솔에 대한 네트워크 액세스 준비
+      - title: NetApp Console 대한 네트워크 액세스 준비
         url: "/reference-networking-saas-console.html"
-      - title: NetApp 콘솔에 가입하세요
+      - title: NetApp Console 에 가입하세요
         url: "/task-sign-up-saas.html"
       - title: 콘솔 에이전트 만들기
         entries:
@@ -48,7 +48,7 @@ sidebar:
           entries:
           - title: 콘솔 에이전트 설치 옵션
             url: "/concept-install-options-aws.html"
-          - title: NetApp 콘솔에서 콘솔 에이전트 만들기
+          - title: NetApp Console 에서 콘솔 에이전트 만들기
             url: "/task-install-agent-aws-console.html"
           - title: 마켓플레이스에서 콘솔 에이전트 만들기
             url: "/task-install-agent-aws-marketplace.html"
@@ -58,7 +58,7 @@ sidebar:
           entries:
           - title: 콘솔 에이전트 설치 옵션
             url: "/concept-install-options-azure.html"
-          - title: NetApp 콘솔에서 콘솔 에이전트 만들기
+          - title: NetApp Console 에서 콘솔 에이전트 만들기
             url: "/task-install-agent-azure-console.html"
           - title: 마켓플레이스에서 콘솔 에이전트 만들기
             url: "/task-install-agent-azure-marketplace.html"
@@ -68,7 +68,7 @@ sidebar:
           entries:
           - title: 콘솔 에이전트 설치 옵션
             url: "/concept-install-options-google.html"
-          - title: NetApp 콘솔에서 콘솔 에이전트 만들기
+          - title: NetApp Console 에서 콘솔 에이전트 만들기
             url: "/task-install-agent-google-console-gcloud.html"
           - title: Google Cloud에서 콘솔 에이전트 만들기
             url: "/task-install-agent-google-gcloud.html"
@@ -100,21 +100,21 @@ sidebar:
       entries:
       - title: BlueXP 레거시 인터페이스(개인 모드) 시작하기
         url: "/task-quick-start-private-mode.html"
-  - title: NetApp 콘솔 사용
+  - title: NetApp Console 사용
     entries:
-    - title: NetApp 콘솔에 로그인하세요
+    - title: NetApp Console 에 로그인하세요
       url: "/task-logging-in.html"
-    - title: NetApp 콘솔 홈페이지에서 메트릭 보기
+    - title: NetApp Console 홈페이지에서 메트릭 보기
       url: "/task-dashboard.html"
-    - title: NetApp 콘솔 사용자 설정 관리
+    - title: NetApp Console 사용자 설정 관리
       url: "/task-user-settings.html"
-  - title: NetApp 콘솔 관리
+  - title: NetApp Console 관리
     entries:
     - title: ID 및 액세스 관리
       entries:
       - title: ID 및 액세스 관리에 대해 알아보세요
         url: "/concept-identity-and-access-management.html"
-      - title: ID 및 액세스 시작하기
+      - title: 신원 및 액세스 시작하기
         url: "/task-iam-get-started.html"
       - title: 폴더와 프로젝트로 리소스를 구성하세요
         url: "/task-iam-manage-folders-projects.html"
@@ -132,9 +132,9 @@ sidebar:
         url: "/task-iam-rename-organization.html"
       - title: IAM 활동 모니터링 또는 감사
         url: "/task-iam-audit-actions-timeline.html"
-      - title: NetApp 콘솔 액세스 역할
+      - title: NetApp Console 액세스 역할
         entries:
-        - title: NetApp 콘솔 액세스 역할에 대해 알아보세요
+        - title: NetApp Console 액세스 역할에 대해 알아보세요
           url: "/reference-iam-predefined-roles.html"
         - title: 플랫폼 역할
           url: "/reference-iam-platform-roles.html"
@@ -212,7 +212,7 @@ sidebar:
         url: "/task-uninstall-agent.html"
       - title: 기본 구성
         url: "/reference-agent-default-config.html"
-      - title: NetApp 콘솔에서 ONTAP 권한 적용
+      - title: NetApp Console 에서 ONTAP 권한 적용
         url: "/task-ontap-access-agent.html"
     - title: 자격 증명 및 구독
       entries:
@@ -234,11 +234,11 @@ sidebar:
           url: "/concept-accounts-gcp.html"
         - title: 자격 증명 및 구독 관리
           url: "/task-adding-gcp-accounts.html"
-      - title: NetApp 콘솔 조직 또는 계정과 연결된 NSS 자격 증명 관리
+      - title: NetApp Console 조직 또는 계정과 연결된 NSS 자격 증명 관리
         url: "/task-adding-nss-accounts.html"
-      - title: NetApp 콘솔 로그인과 관련된 자격 증명 관리
+      - title: NetApp Console 로그인과 관련된 자격 증명 관리
         url: "/task-manage-user-credentials.html"
-    - title: NetApp 콘솔 작업 모니터링
+    - title: NetApp Console 작업 모니터링
       url: "/task-monitor-cm-operations.html"
   - title: 참조
     entries:

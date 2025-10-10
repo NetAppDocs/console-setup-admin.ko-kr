@@ -14,7 +14,7 @@ summary: 콘솔 에이전트에는 클라우드 공급자에서 작업을 수행
 
 
 [role="lead"]
-NetApp 콘솔에는 Google Cloud에서 작업을 수행하려면 권한이 필요합니다.  이러한 권한은 NetApp 에서 제공하는 사용자 정의 역할에 포함되어 있습니다.  에이전트가 이러한 권한을 어떻게 사용하는지 이해해야 합니다.
+NetApp Console Google Cloud에서 작업을 수행하려면 권한이 필요합니다.  이러한 권한은 NetApp 에서 제공하는 사용자 정의 역할에 포함되어 있습니다.  에이전트가 이러한 권한을 어떻게 사용하는지 이해해야 합니다.
 
 
 
@@ -230,7 +230,7 @@ includedPermissions:
 | - 컴퓨팅.네트워크.업데이트 정책 | HA 쌍의 VPC와 서브넷에 방화벽 규칙을 적용합니다. 
 
 
-| - compute.subnetworks.use - compute.subnetworks.useExternalIp - compute.instances.addAccessConfig | NetApp 데이터 분류를 활성화합니다. 
+| - compute.subnetworks.use - compute.subnetworks.useExternalIp - compute.instances.addAccessConfig | NetApp Data Classification 활성화하려면. 
 
 
 | - compute.instanceGroups.get - compute.addresses.get - compute.instances.updateNetworkInterface | Cloud Volumes ONTAP HA 쌍에서 스토리지 VM을 생성하고 관리합니다. 
@@ -239,7 +239,7 @@ includedPermissions:
 | - monitoring.timeSeries.list - storage.buckets.getIamPolicy | Google Cloud Storage 버킷에 대한 정보를 알아보세요. 
 
 
-| - cloudkms.cryptoKeys.get - cloudkms.cryptoKeys.getIamPolicy - cloudkms.cryptoKeys.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.keyRings.get - cloudkms.keyRings.getIamPolicy - cloudkms.keyRings.list - cloudkms.keyRings.setIamPolicy | 기본 Google 관리 암호화 키를 사용하는 대신 NetApp 백업 및 복구 활성화 마법사에서 고객이 관리하는 키를 직접 선택합니다. 
+| - cloudkms.cryptoKeys.get - cloudkms.cryptoKeys.getIamPolicy - cloudkms.cryptoKeys.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.keyRings.get - cloudkms.keyRings.getIamPolicy - cloudkms.keyRings.list - cloudkms.keyRings.setIamPolicy | 기본 Google 관리 암호화 키를 사용하는 대신 NetApp Backup and Recovery 활성화 마법사에서 고객이 관리하는 키를 직접 선택합니다. 
 |===
 
 
@@ -271,4 +271,4 @@ includedPermissions:
 * cloudkms.keyRings.setIamPolicy
 
 
-이러한 권한은 NetApp 백업 및 복구에 필요합니다.
+이러한 권한은 NetApp Backup and Recovery 에 필요합니다.

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-gcp.html 
 keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project, credential, bluexp 
-summary: NetApp 콘솔이 Google Cloud 자격 증명을 사용하여 사용자를 대신하여 작업을 수행하는 방법과 해당 자격 증명이 마켓플레이스 구독과 연결되는 방식을 알아보세요.  이러한 세부 정보를 이해하면 하나 이상의 Google Cloud 프로젝트에 대한 자격 증명을 관리하는 데 도움이 될 수 있습니다.  예를 들어, 콘솔 에이전트 VM과 연결된 서비스 계정에 대해 알아보고 싶을 수 있습니다. 
+summary: NetApp Console Google Cloud 자격 증명을 사용하여 사용자를 대신하여 작업을 수행하는 방법과 해당 자격 증명이 마켓플레이스 구독과 연결되는 방식을 알아보세요.  이러한 세부 정보를 이해하면 하나 이상의 Google Cloud 프로젝트에 대한 자격 증명을 관리하는 데 도움이 될 수 있습니다.  예를 들어, 콘솔 에이전트 VM과 연결된 서비스 계정에 대해 알아보고 싶을 수 있습니다. 
 ---
 = Google Cloud 프로젝트 및 권한에 대해 알아보세요
 :hardbreaks:
@@ -14,11 +14,11 @@ summary: NetApp 콘솔이 Google Cloud 자격 증명을 사용하여 사용자�
 
 
 [role="lead"]
-NetApp 콘솔이 Google Cloud 자격 증명을 사용하여 사용자를 대신하여 작업을 수행하는 방법과 해당 자격 증명이 마켓플레이스 구독과 연결되는 방식을 알아보세요.  이러한 세부 정보를 이해하면 하나 이상의 Google Cloud 프로젝트에 대한 자격 증명을 관리하는 데 도움이 될 수 있습니다.  예를 들어, 콘솔 에이전트 VM과 연결된 서비스 계정에 대해 알아보고 싶을 수 있습니다.
+NetApp Console Google Cloud 자격 증명을 사용하여 사용자를 대신하여 작업을 수행하는 방법과 해당 자격 증명이 마켓플레이스 구독과 연결되는 방식을 알아보세요.  이러한 세부 정보를 이해하면 하나 이상의 Google Cloud 프로젝트에 대한 자격 증명을 관리하는 데 도움이 될 수 있습니다.  예를 들어, 콘솔 에이전트 VM과 연결된 서비스 계정에 대해 알아보고 싶을 수 있습니다.
 
 
 
-== NetApp 콘솔에 대한 프로젝트 및 권한
+== NetApp Console 에 대한 프로젝트 및 권한
 
 Google Cloud 프로젝트의 리소스를 관리하기 위해 콘솔을 사용하려면 먼저 콘솔 에이전트를 배포해야 합니다.  에이전트는 귀하의 사내 또는 다른 클라우드 공급자에서 실행될 수 없습니다.
 
@@ -48,7 +48,7 @@ link:task-adding-gcp-accounts.html["Google Cloud Marketplace 구독을 연결하
 
 Google Cloud 자격 증명 및 마켓플레이스 구독에 대해 다음 사항을 참고하세요.
 
-* 콘솔 에이전트와 연결할 수 있는 Google Cloud 자격 증명 세트는 한 세트뿐입니다.
+* Google Cloud 자격 증명은 콘솔 에이전트와 한 세트만 연결할 수 있습니다.
 * 자격 증명에는 단 하나의 Google Cloud Marketplace 구독만 연결할 수 있습니다.
 * 기존 마켓플레이스 구독을 새 구독으로 교체할 수 있습니다.
 

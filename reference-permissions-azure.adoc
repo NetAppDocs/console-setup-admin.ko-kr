@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-permissions-azure.html 
 keywords: permissions, azure, azure permissions, bluexp 
-summary: NetApp 콘솔이 Azure에서 콘솔 에이전트를 시작하면 VM에 사용자 지정 역할을 연결하여 에이전트에 해당 Azure 구독 내의 리소스와 프로세스를 관리할 수 있는 권한을 부여합니다.  에이전트는 이러한 권한을 사용하여 여러 Azure 서비스에 대한 API 호출을 수행합니다. 
+summary: NetApp Console Azure에서 콘솔 에이전트를 시작하면 VM에 사용자 지정 역할을 연결하여 에이전트에 해당 Azure 구독 내의 리소스와 프로세스를 관리할 수 있는 권한을 부여합니다.  에이전트는 이러한 권한을 사용하여 여러 Azure 서비스에 대한 API 호출을 수행합니다. 
 ---
 = 콘솔 에이전트에 대한 Azure 권한
 :hardbreaks:
@@ -14,15 +14,15 @@ summary: NetApp 콘솔이 Azure에서 콘솔 에이전트를 시작하면 VM에 
 
 
 [role="lead"]
-NetApp 콘솔이 Azure에서 콘솔 에이전트를 시작하면 VM에 사용자 지정 역할을 연결하여 에이전트에 해당 Azure 구독 내의 리소스와 프로세스를 관리할 수 있는 권한을 부여합니다.  에이전트는 이러한 권한을 사용하여 여러 Azure 서비스에 대한 API 호출을 수행합니다.
+NetApp Console Azure에서 콘솔 에이전트를 시작하면 VM에 사용자 지정 역할을 연결하여 에이전트에 해당 Azure 구독 내의 리소스와 프로세스를 관리할 수 있는 권한을 부여합니다.  에이전트는 이러한 권한을 사용하여 여러 Azure 서비스에 대한 API 호출을 수행합니다.
 
 에이전트에 대해 이 사용자 지정 역할을 만들어야 하는지 여부는 해당 역할을 배포한 방법에 따라 달라집니다.
 
-.NetApp 콘솔에서 배포
+.NetApp Console 에서 배포
 콘솔을 사용하여 Azure에 에이전트 가상 머신을 배포하면 다음을 수행할 수 있습니다. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["시스템 할당 관리 ID"^] 가상 머신에서 사용자 지정 역할을 만들고 이를 가상 머신에 할당합니다.  이 역할은 Azure 구독 내에서 리소스와 프로세스를 관리하는 데 필요한 권한을 콘솔에 제공합니다.  에이전트가 업그레이드되면 역할의 권한도 최신 상태로 유지됩니다.  에이전트에 대한 이 역할을 만들거나 업데이트를 관리할 필요는 없습니다.
 
 .수동으로 또는 Azure Marketplace에서 배포
-Azure Marketplace에서 에이전트를 배포하거나 Linux 호스트에 에이전트를 수동으로 설치하는 경우 사용자 지정 역할을 직접 설정하고 변경 사항에 따라 해당 권한을 유지 관리해야 합니다.
+Azure Marketplace에서 에이전트를 배포하거나 Linux 호스트에 에이전트를 수동으로 설치하는 경우 사용자 지정 역할을 직접 설정하고 변경 사항에 따라 해당 역할을 유지 관리해야 합니다.
 
 이후 릴리스에서 새로운 권한이 추가되므로 역할이 최신 상태인지 확인해야 합니다.  새로운 권한이 필요한 경우 릴리스 노트에 나열됩니다.
 
@@ -183,7 +183,7 @@ Azure Marketplace에서 에이전트를 배포하거나 Linux 호스트에 에�
 
 === Azure NetApp Files
 
-NetApp 데이터 분류를 사용하여 Azure NetApp Files 데이터를 스캔할 때 에이전트는 다음과 같은 API 요청을 합니다.
+NetApp Data Classification 사용하여 Azure NetApp Files 데이터를 스캔할 때 에이전트는 다음과 같은 API 요청을 합니다.
 
 * NetApp/netAppAccounts/read
 * Microsoft. NetApp/netAppAccounts/capacityPools/read
@@ -194,9 +194,9 @@ NetApp 데이터 분류를 사용하여 Azure NetApp Files 데이터를 스캔�
 
 
 
-=== NetApp 백업 및 복구
+=== NetApp Backup and Recovery
 
-콘솔 에이전트는 NetApp Backup and Recovery에 대해 다음과 같은 API 요청을 합니다.
+콘솔 에이전트는 NetApp Backup and Recovery 에 대해 다음 API 요청을 수행합니다.
 
 * Microsoft.Storage/storageAccounts/listkeys/action
 * Microsoft.Storage/storageAccounts/read
@@ -242,7 +242,7 @@ NetApp 데이터 분류를 사용하여 Azure NetApp Files 데이터를 스캔�
 
 
 
-=== NetApp 데이터 분류
+=== NetApp Data Classification
 
 데이터 분류를 사용하면 에이전트는 다음과 같은 API 요청을 합니다.
 
@@ -711,7 +711,7 @@ NetApp 데이터 분류를 사용하여 Azure NetApp Files 데이터를 스캔�
 
 === 티어링
 
-NetApp Cloud Tiering을 설정하면 에이전트는 다음 API 요청을 합니다.
+NetApp Cloud Tiering 설정하면 에이전트는 다음 API 요청을 합니다.
 
 * Microsoft.Storage/storageAccounts/listkeys/action
 * Microsoft.Resources/subscriptions/resourceGroups/read
@@ -757,7 +757,7 @@ NetApp Cloud Tiering을 설정하면 에이전트는 다음 API 요청을 합니
 
 === 2023년 12월 5일
 
-NetApp Backup and Recovery에서 볼륨 데이터를 Azure Blob 스토리지에 백업할 때 다음 권한은 더 이상 필요하지 않습니다.
+NetApp Backup and Recovery 에서 볼륨 데이터를 Azure Blob 스토리지에 백업할 때 다음 권한은 더 이상 필요하지 않습니다.
 
 * Microsoft.Compute/virtualMachines/읽기
 * Microsoft.Compute/virtualMachines/시작/작업
@@ -801,7 +801,7 @@ JSON 정책에 다음 권한이 추가되었습니다.
 * Microsoft.Storage/storageAccounts/listAccountSas/action
 * Microsoft.Synapse/workspaces/privateEndpointConnectionsApproval/action
 +
-이러한 권한은 NetApp 백업 및 복구에 필요합니다.
+이러한 권한은 NetApp Backup and Recovery 에 필요합니다.
 
 * Microsoft.Network/loadBalancers/backendAddressPools/join/action
 +

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-install-restricted-mode.html 
 keywords: government region, gov, govcloud, connector, sovereign cloud 
-summary: NetApp 콘솔을 제한된 아웃바운드 연결로 사용할 수 있도록 콘솔 에이전트를 제한 모드로 배포합니다.  시작하려면 콘솔 에이전트를 설치하고, 콘솔 에이전트에서 실행되는 사용자 인터페이스에 액세스하여 콘솔을 설정한 다음, 이전에 설정한 클라우드 권한을 제공하세요. 
+summary: NetApp Console 제한된 아웃바운드 연결로 사용할 수 있도록 콘솔 에이전트를 제한 모드로 배포합니다.  시작하려면 콘솔 에이전트를 설치하고, 콘솔 에이전트에서 실행되는 사용자 인터페이스에 액세스하여 콘솔을 설정한 다음, 이전에 설정한 클라우드 권한을 제공하세요. 
 ---
 = 제한 모드로 콘솔 에이전트 배포
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: NetApp 콘솔을 제한된 아웃바운드 연결로 사용할 수 있�
 
 
 [role="lead"]
-NetApp 콘솔을 제한된 아웃바운드 연결로 사용할 수 있도록 콘솔 에이전트를 제한 모드로 배포합니다.  시작하려면 콘솔 에이전트를 설치하고, 콘솔 에이전트에서 실행되는 사용자 인터페이스에 액세스하여 콘솔을 설정한 다음, 이전에 설정한 클라우드 권한을 제공하세요.
+NetApp Console 제한된 아웃바운드 연결로 사용할 수 있도록 콘솔 에이전트를 제한 모드로 배포합니다.  시작하려면 콘솔 에이전트를 설치하고, 콘솔 에이전트에서 실행되는 사용자 인터페이스에 액세스하여 콘솔을 설정한 다음, 이전에 설정한 클라우드 권한을 제공하세요.
 
 
 
@@ -46,7 +46,7 @@ link:task-prepare-restricted-mode.html#step-3-review-host-requirements["인스�
 
 
 .단계
-. 로 가다 https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["AWS Marketplace에 NetApp 콘솔 에이전트 목록이 추가되었습니다."^]
+. 로 가다 https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["AWS Marketplace에 NetApp Console 에이전트 목록이 추가되었습니다."^]
 . 마켓플레이스 페이지에서 *구독 계속하기*를 선택하세요.
 . 소프트웨어를 구독하려면 *약관 동의*를 선택하세요.
 +
@@ -88,7 +88,7 @@ link:reference-ports-aws.html["AWS에 대한 보안 그룹 규칙 보기"] .
 AWS는 지정된 설정으로 소프트웨어를 시작합니다.  콘솔 에이전트 인스턴스와 소프트웨어는 약 5분 안에 실행됩니다.
 
 .다음은 무엇인가요?
-NetApp 콘솔을 설정합니다.
+NetApp Console 설정합니다.
 
 --
 .AWS Gov 마켓플레이스
@@ -109,13 +109,13 @@ link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["AWS 권
 
 
 .단계
-. AWS Marketplace에서 NetApp 콘솔 에이전트 제품으로 이동합니다.
+. AWS Marketplace에서 NetApp Console 에이전트 제품으로 이동합니다.
 +
 .. EC2 서비스를 열고 *인스턴스 시작*을 선택합니다.
 .. *AWS Marketplace*를 선택하세요.
-.. NetApp 콘솔을 검색하고 제품을 선택하세요.
+.. NetApp Console 검색하고 제품을 선택하세요.
 +
-image:screenshot-gov-cloud-mktp.png["AWS Marketplace에서 NetApp Console을 검색한 후 제공되는 상품을 보여주는 스크린샷"]
+image:screenshot-gov-cloud-mktp.png["AWS Marketplace에서 NetApp Console 검색한 후 제공되는 상품을 보여주는 스크린샷"]
 
 .. *계속*을 선택하세요.
 
@@ -161,7 +161,7 @@ link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Azure �
 
 
 .단계
-. Azure Marketplace의 NetApp 콘솔 에이전트 VM 페이지로 이동합니다.
+. Azure Marketplace의 NetApp Console 에이전트 VM 페이지로 이동합니다.
 +
 ** https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["상업 지역을 위한 Azure Marketplace 페이지"^]
 ** https://portal.azure.us/#create/netapp.netapp-oncommand-cloud-manageroccm-byol["Azure Government 지역에 대한 Azure Marketplace 페이지"^]
@@ -202,7 +202,7 @@ link:reference-ports-azure.html["Azure에 대한 보안 그룹 규칙 보기"] .
 Azure는 지정된 설정으로 가상 머신을 배포합니다.  가상 머신과 콘솔 에이전트 소프트웨어는 약 5분 안에 실행될 것입니다.
 
 .다음은 무엇인가요?
-NetApp 콘솔을 설정합니다.
+NetApp Console 설정합니다.
 
 --
 .수동 설치
@@ -219,9 +219,9 @@ NetApp 콘솔을 설정합니다.
 
 
 
-NOTE: 콘솔 에이전트를 수동으로 설치하는 경우 투명 프록시 서버에 대한 인증서를 설정할 수 없습니다. 투명 프록시 서버에 대한 인증서를 설정해야 하는 경우 설치 후 유지 관리 콘솔을 사용해야 합니다. 자세히 알아보세요link:reference-agent-maint-console.html["에이전트 유지 관리 콘솔"] .
+NOTE: 콘솔 에이전트를 수동으로 설치하는 경우 투명 프록시 서버에 대한 인증서를 설정할 수 없습니다.  투명 프록시 서버에 대한 인증서를 설정해야 하는 경우 설치 후 유지 관리 콘솔을 사용해야 합니다. 자세히 알아보세요link:reference-agent-maint-console.html["에이전트 유지 관리 콘솔"] .
 
-* 설치 중에 아웃바운드 연결을 확인하는 구성 검사를 비활성화해야 합니다. 이 검사를 비활성화하지 않으면 수동 설치가 실패합니다.link:task-troubleshoot-agent.html["수동 설치에 대한 구성 검사를 비활성화하는 방법을 알아보세요."]
+* 설치 중에 아웃바운드 연결을 확인하는 구성 검사를 비활성화해야 합니다.  이 검사를 비활성화하지 않으면 수동 설치가 실패합니다.link:task-troubleshoot-agent.html["수동 설치에 대한 구성 검사를 비활성화하는 방법을 알아보세요."]
 * 콘솔 에이전트를 설치하기 전에 운영 체제에 따라 Podman 또는 Docker Engine이 필요합니다.
 
 
@@ -337,13 +337,13 @@ Esc:wq
 콘솔 에이전트가 설치되었습니다.  설치가 끝나면 프록시 서버를 지정한 경우 콘솔 에이전트 서비스(occm)가 두 번 다시 시작됩니다.
 
 .다음은 무엇인가요?
-NetApp 콘솔을 설정합니다.
+NetApp Console 설정합니다.
 
 --
 ====
 
 
-== 2단계: NetApp 콘솔 설정
+== 2단계: NetApp Console 설정
 
 처음으로 콘솔에 액세스하면 콘솔 에이전트의 조직을 선택하라는 메시지가 표시되고 제한 모드를 활성화해야 합니다.
 
@@ -354,7 +354,7 @@ NetApp 콘솔을 설정합니다.
 
 .단계
 . 콘솔 에이전트 인스턴스에 연결된 호스트에서 웹 브라우저를 열고 설치한 콘솔 에이전트의 다음 URL을 입력합니다.
-. NetApp 콘솔에 가입하거나 로그인하세요.
+. NetApp Console 에 가입하거나 로그인하세요.
 . 로그인한 후 콘솔을 설정하세요.
 +
 .. 콘솔 에이전트의 이름을 입력하세요.
@@ -380,7 +380,7 @@ NetApp 콘솔을 설정합니다.
 
 
 
-== 3단계: NetApp 콘솔에 권한 제공
+== 3단계: NetApp Console 에 권한 제공
 
 Azure Marketplace에서 콘솔 에이전트를 배포했거나 콘솔 에이전트 소프트웨어를 수동으로 설치한 경우 이전에 설정한 권한을 제공해야 합니다.
 
@@ -407,7 +407,7 @@ link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["클라�
 --
 .AWS 액세스 키
 --
-필요한 권한이 있는 IAM 사용자의 AWS 액세스 키를 NetApp 콘솔에 제공합니다.
+필요한 권한이 있는 IAM 사용자의 AWS 액세스 키를 NetApp Console 에 제공합니다.
 
 .단계
 . *관리 > 자격 증명*을 선택합니다.
@@ -430,7 +430,7 @@ Azure Portal로 이동하여 하나 이상의 구독에 대한 콘솔 에이전�
 .단계
 . Azure Portal에서 *구독* 서비스를 열고 구독을 선택합니다.
 +
-*구독* 서비스에서 역할을 할당하는 것이 중요한 이유는 이를 통해 구독 수준에서 역할 할당의 범위가 지정되기 때문입니다.  _scope_는 액세스가 적용되는 리소스 집합을 정의합니다.  다른 수준(예: 가상 머신 수준)에서 범위를 지정하는 경우 NetApp 콘솔 내에서 작업을 완료하는 기능에 영향을 미칩니다.
+*구독* 서비스에서 역할을 할당하는 것이 중요한 이유는 이를 통해 구독 수준에서 역할 할당의 범위가 지정되기 때문입니다.  _scope_는 액세스가 적용되는 리소스 집합을 정의합니다.  다른 수준(예: 가상 머신 수준)에서 범위를 지정하는 경우 NetApp Console 내에서 작업을 완료하는 기능에 영향을 미칩니다.
 
 +
 https://learn.microsoft.com/en-us/azure/role-based-access-control/scope-overview["Microsoft Azure 설명서: Azure RBAC 범위 이해"^]
@@ -456,7 +456,7 @@ NOTE: 콘솔 운영자는 정책에 제공된 기본 이름입니다.  역할에
 --
 .Azure 서비스 주체
 --
-이전에 설정한 Azure 서비스 주체에 대한 자격 증명을 NetApp 콘솔에 제공합니다.
+이전에 설정한 Azure 서비스 주체에 대한 자격 증명을 NetApp Console 제공합니다.
 
 .단계
 . *관리 > 자격 증명*을 선택합니다.
@@ -477,7 +477,7 @@ NOTE: 콘솔 운영자는 정책에 제공된 기본 이름입니다.  역할에
 
 
 .결과
-이제 NetApp 콘솔은 Azure에서 사용자를 대신하여 작업을 수행하는 데 필요한 권한을 갖게 되었습니다.
+이제 NetApp Console Azure에서 사용자를 대신하여 작업을 수행하는 데 필요한 권한을 갖게 되었습니다.
 
 --
 .Google Cloud 서비스 계정
@@ -489,7 +489,7 @@ NOTE: 콘솔 운영자는 정책에 제공된 기본 이름입니다.  역할에
 +
 https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Google Cloud 문서: 인스턴스의 서비스 계정 및 액세스 범위 변경"^]
 
-. 다른 프로젝트의 리소스를 관리하려면 해당 프로젝트에 콘솔 에이전트 역할이 있는 서비스 계정을 추가하여 액세스 권한을 부여하세요. 각 프로젝트마다 이 단계를 반복해야 합니다.
+. 다른 프로젝트의 리소스를 관리하려면 해당 프로젝트에 콘솔 에이전트 역할이 있는 서비스 계정을 추가하여 액세스 권한을 부여하세요.  각 프로젝트마다 이 단계를 반복해야 합니다.
 
 
 --

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-federation-manage.html 
 keywords: federation, BlueXP, identity provider, IdP, single sign-on, SSO, verified domain, credentials, certificate, client secret, update, manage federations, security, compliance, user access, productivity, account management, authentication, access control, business continuity 
-summary: 페더레이션 연결을 추가한 후에는 NetApp 콘솔에서 해당 연결을 관리할 수 있습니다.  연결 상태를 보고, 필요에 따라 연결 기능을 활성화하거나 비활성화할 수 있습니다. 
+summary: 페더레이션 연결을 추가한 후에는 NetApp Console 에서 해당 연결을 관리할 수 있습니다.  연결 상태를 보고, 필요에 따라 연결 기능을 활성화하거나 비활성화할 수 있습니다. 
 ---
-= NetApp 콘솔에서 페더레이션 관리
+= NetApp Console 에서 페더레이션 관리
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 페더레이션 연결을 추가한 후에는 NetApp 콘솔에서 해�
 
 
 [role="lead"]
-NetApp 콘솔에서 페더레이션을 관리할 수 있습니다.  이 기능을 비활성화하고, 만료된 자격 증명을 업데이트하고, 더 이상 필요하지 않으면 비활성화할 수 있습니다.
+NetApp Console 에서 페더레이션을 관리할 수 있습니다.  이 기능을 비활성화하고, 만료된 자격 증명을 업데이트하고, 더 이상 필요하지 않으면 비활성화할 수 있습니다.
 
 
 NOTE: NetApp Cloud Central을 사용하여 페더레이션을 구성한 경우 *페더레이션* 페이지를 통해 가져와서 콘솔에서 관리하세요.link:task-federation-import.html["연방을 가져오는 방법을 알아보세요"]
@@ -22,7 +22,7 @@ NOTE: NetApp Cloud Central을 사용하여 페더레이션을 구성한 경우 *
 기존 페더레이션에 검증된 도메인을 추가할 수도 있는데, 이를 통해 페더레이션 연결에 여러 도메인을 사용할 수 있습니다.
 
 
-NOTE: 페더레이션 활성화, 비활성화, 업데이트 등의 페더레이션 관리 이벤트가 타임라인에 표시됩니다.link:task-monitor-cm-operations.html["NetApp 콘솔에서 작업 모니터링에 대해 자세히 알아보세요."]
+NOTE: 페더레이션 활성화, 비활성화, 업데이트 등의 페더레이션 관리 이벤트가 타임라인에 표시됩니다.link:task-monitor-cm-operations.html["NetApp Console 에서 작업 모니터링에 대해 자세히 알아보세요."]
 
 .필수 역할
 연합을 만들고 관리하려면 연합 관리자 역할이 필요합니다.  연방 뷰어는 연방 페이지를 볼 수 있습니다.link:reference-iam-predefined-roles.html["액세스 역할에 대해 자세히 알아보세요."]
@@ -31,7 +31,7 @@ NOTE: 페더레이션 활성화, 비활성화, 업데이트 등의 페더레이�
 
 == 연합 활성화
 
-연합을 생성했지만 활성화되지 않은 경우, *연합* 페이지를 통해 활성화할 수 있습니다.  페더레이션을 활성화하면 페더레이션에 연결된 사용자가 회사 자격 증명을 사용하여 콘솔에 로그인할 수 있습니다.  연합을 활성화하기 전에 연합을 성공적으로 만들고 테스트하세요.
+연합을 생성했지만 활성화되지 않은 경우, *연합* 페이지를 통해 활성화할 수 있습니다.  페더레이션을 활성화하면 페더레이션에 연결된 사용자가 회사 자격 증명을 사용하여 콘솔에 로그인할 수 있습니다.  연합을 활성화하기 전에 연합을 성공적으로 생성하고 테스트하세요.
 
 .단계
 . *관리 > ID 및 액세스*를 선택합니다.
@@ -82,7 +82,7 @@ IMPORTANT: 로그인 문제를 방지하려면 IdP를 업데이트하기 전에 
 . *관리 > ID 및 액세스*를 선택합니다.
 . *연방* 탭을 선택하세요.
 . 작업 메뉴를 선택하세요image:button_3_vert_dots.png["세 개의 수직 점이 있는 아이콘"] 검증된 도메인을 추가하려는 페더레이션 옆에 있는 *연결 테스트*를 선택합니다.
-. *테스트*를 선택하세요.  시스템에서 회사 자격 증명을 사용하여 로그인하라는 메시지가 표시됩니다.  연결에 성공하면 NetApp 콘솔로 리디렉션됩니다.  연결에 실패하면 페더레이션에 문제가 있음을 나타내는 오류 메시지가 표시됩니다.
+. *테스트*를 선택하세요.  시스템에서 회사 자격 증명을 사용하여 로그인하라는 메시지가 표시됩니다.  연결에 성공하면 NetApp Console 로 리디렉션됩니다.  연결에 실패하면 페더레이션에 문제가 있음을 나타내는 오류 메시지가 표시됩니다.
 . *완료*를 선택하면 *연방* 탭으로 돌아갑니다.
 
 

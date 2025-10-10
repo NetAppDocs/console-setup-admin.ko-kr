@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-iam-get-started.html 
 keywords: iam, quick start, get started, get started with iam, identity and access management 
-summary: NetApp 콘솔에서 ID 및 액세스 관리를 시작하려면 조직의 계층 구조를 사용자 지정하고, 추가 구성원을 추가하고, 리소스를 추가하거나 검색하고, 해당 리소스를 프로젝트와 연결합니다. 
+summary: NetApp Console 에서 ID 및 액세스 관리를 시작하려면 조직의 계층 구조를 사용자 지정하고, 추가 구성원을 추가하고, 리소스를 추가하거나 검색하고, 해당 리소스를 프로젝트와 연결합니다. 
 ---
-= NetApp 콘솔에서 ID 및 액세스 시작하기
+= NetApp Console 에서 ID 및 액세스 시작하기
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: NetApp 콘솔에서 ID 및 액세스 관리를 시작하려면 조직�
 
 
 [role="lead"]
-NetApp 콘솔에 가입하면 새 조직을 만들라는 메시지가 표시됩니다.  조직에는 한 명의 구성원(조직 관리자)과 한 개의 기본 프로젝트가 포함됩니다.  비즈니스 요구 사항에 맞게 ID 및 액세스 관리(IAM)를 설정하려면 조직의 계층 구조를 사용자 지정하고, 추가 구성원을 추가하고, 리소스를 추가하거나 검색하고, 계층 구조 전반에 걸쳐 해당 리소스를 연결해야 합니다.
+NetApp Console 에 가입하면 새 조직을 만들라는 메시지가 표시됩니다.  조직에는 한 명의 구성원(조직 관리자)과 한 개의 기본 프로젝트가 포함됩니다.  비즈니스 요구 사항에 맞게 ID 및 액세스 관리(IAM)를 설정하려면 조직의 계층 구조를 사용자 지정하고, 추가 구성원을 추가하고, 리소스를 추가하거나 검색하고, 계층 구조 전반에 걸쳐 해당 리소스를 연결해야 합니다.
 
 전체 조직의 ID와 액세스를 관리하려면 *조직 관리자* 권한이 있어야 합니다.  *폴더 또는 프로젝트 관리자* 권한이 있는 경우, 권한이 있는 폴더와 프로젝트만 관리할 수 있습니다.
 
 새로운 조직을 설정하려면 다음 단계를 따르세요.  순서는 조직의 요구 사항에 따라 달라질 수 있습니다.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["하나"]기본 프로젝트를 편집하거나 조직의 계층 구조에 추가하세요
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["하나"]기본 프로젝트를 편집하거나 조직의 계층 구조에 추가하세요.
 [role="quick-margin-para"]
 기본 프로젝트를 사용하거나 비즈니스 계층 구조에 맞는 추가 프로젝트와 폴더를 만드세요.
 
@@ -60,6 +60,6 @@ link:task-iam-manage-members-permissions.html["멤버와 멤버의 권한을 관
 
 
 .관련 정보
-* link:concept-identity-and-access-management.html["NetApp 콘솔에서 ID 및 액세스 관리에 대해 알아보세요"]
+* link:concept-identity-and-access-management.html["NetApp Console 에서 ID 및 액세스 관리에 대해 알아보세요"]
 * https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html["ID 및 액세스를 위한 API에 대해 알아보세요"^]
 

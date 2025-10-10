@@ -26,7 +26,7 @@ link:reference-permissions-gcp.html["에이전트 서비스 계정 정책"]
 | compute.networkUser 배포 관리자.편집기 | 서비스 프로젝트에서 Cloud Volumes ONTAP 및 서비스 배포 및 유지 관리 
 
 
-| Cloud Volumes ONTAP 서비스 계정 | 관습 | 봉사 프로젝트 | storage.admin 멤버: NetApp 콘솔 서비스 계정(serviceAccount.user) | 해당 없음 | (선택 사항) NetApp 클라우드 계층화 및 NetApp 백업 및 복구용 
+| Cloud Volumes ONTAP 서비스 계정 | 관습 | 봉사 프로젝트 | storage.admin 멤버: NetApp Console 서비스 계정(serviceAccount.user) | 해당 없음 | (선택 사항) NetApp Cloud Tiering 및 NetApp Backup and Recovery 
 
 
 | Google API 서비스 에이전트 | 구글 클라우드 | 봉사 프로젝트  a| 
@@ -44,7 +44,7 @@ link:reference-permissions-gcp.html["에이전트 서비스 계정 정책"]
 |===
 참고사항:
 
-. deploymentmanager.editor는 배포에 방화벽 규칙을 전달하지 않고 콘솔에서 규칙을 생성하도록 선택한 경우에만 호스트 프로젝트에서 필요합니다.  규칙이 지정되지 않으면 NetApp 콘솔은 호스트 프로젝트에 VPC0 방화벽 규칙을 포함하는 배포를 생성합니다.
+. deploymentmanager.editor는 배포에 방화벽 규칙을 전달하지 않고 콘솔에서 규칙을 생성하도록 선택한 경우에만 호스트 프로젝트에서 필요합니다.  규칙이 지정되지 않으면 NetApp Console 호스트 프로젝트에 VPC0 방화벽 규칙을 포함하는 배포를 생성합니다.
 . firewall.create와 firewall.delete는 배포에 방화벽 규칙을 전달하지 않고 콘솔에서 해당 규칙을 생성하도록 선택한 경우에만 필요합니다.  이러한 권한은 콘솔 계정의 .yaml 파일에 있습니다.  공유 VPC를 사용하여 HA 쌍을 배포하는 경우 이러한 권한은 VPC1, 2, 3에 대한 방화벽 규칙을 만드는 데 사용됩니다.  다른 모든 배포의 경우 이러한 권한은 VPC0에 대한 규칙을 만드는 데에도 사용됩니다.
 . 클라우드 계층화의 경우 계층화 서비스 계정에는 프로젝트 수준뿐만 아니라 서비스 계정에 대한 serviceAccount.user 역할이 있어야 합니다.  현재 프로젝트 수준에서 serviceAccount.user를 할당하는 경우 getIAMPolicy로 서비스 계정을 쿼리할 때 권한이 표시되지 않습니다.
 

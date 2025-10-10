@@ -28,5 +28,5 @@
 ** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS 설명서: IAM 정책 추가 및 제거"^]
 
 
-. 콘솔 에이전트를 설치한 후 NetApp 콘솔에 추가할 수 있는 액세스 키가 사용자에게 있는지 확인하세요.
+. 콘솔 에이전트를 설치한 후 NetApp Console 에 추가할 수 있는 액세스 키가 사용자에게 있는지 확인하세요.
 

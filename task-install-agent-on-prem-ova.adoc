@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-install-agent-on-prem-ova.html 
 keywords: install agent, on prem agent installation, on prem connector, vmware, OVA, manual install 
-summary: VMWare 사용자인 경우 OVA를 사용하여 VCenter에 콘솔 에이전트를 설치할 수 있습니다.  OVA 다운로드 또는 URL은 NetApp 콘솔을 통해 이용할 수 있습니다. 
+summary: VMWare 사용자인 경우 OVA를 사용하여 VCenter에 콘솔 에이전트를 설치할 수 있습니다.  OVA 다운로드 또는 URL은 NetApp Console 통해 이용할 수 있습니다. 
 ---
 = VCenter를 사용하여 온프레미스에 콘솔 에이전트 설치
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: VMWare 사용자인 경우 OVA를 사용하여 VCenter에 콘솔 에이
 
 
 [role="lead"]
-VMWare 사용자인 경우 OVA를 사용하여 VCenter에 콘솔 에이전트를 설치할 수 있습니다.  OVA 다운로드 또는 URL은 NetApp 콘솔을 통해 이용할 수 있습니다.
+VMWare 사용자인 경우 OVA를 사용하여 VCenter에 콘솔 에이전트를 설치할 수 있습니다.  OVA 다운로드 또는 URL은 NetApp Console 통해 이용할 수 있습니다.
 
 
 NOTE: VCenter 도구와 함께 콘솔 에이전트를 설치하면 VM 웹 콘솔을 사용하여 유지 관리 작업을 수행할 수 있습니다.link:task-agent-vm-config.html["에이전트의 VM 콘솔에 대해 자세히 알아보세요."]
@@ -53,7 +53,7 @@ NOTE: ESXi 호스트에 직접 설치하는 대신 vCenter 환경에 에이전�
 아웃바운드 인터넷 접속:: 콘솔 에이전트를 배포하는 네트워크 위치에는 특정 엔드포인트에 연결하기 위한 아웃바운드 인터넷 연결이 있어야 합니다.
 
 
-웹 기반 NetApp 콘솔을 사용할 때 컴퓨터에서 연결된 엔드포인트::
+웹 기반 NetApp Console 사용할 때 컴퓨터에서 연결된 엔드포인트::
 +
 --
 웹 브라우저에서 콘솔에 액세스하는 컴퓨터는 여러 엔드포인트에 접속할 수 있어야 합니다.  콘솔 에이전트를 설정하고 콘솔을 일상적으로 사용하려면 콘솔을 사용해야 합니다.
@@ -122,7 +122,7 @@ AWS 리소스를 관리합니다.  엔드포인트는 AWS 지역에 따라 달�
  a| 
 \ https://signin.b2c.netapp.com
  a| 
-NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp 콘솔에 새로운 NSS 자격 증명을 추가합니다.
+NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp Console 에 새로운 NSS 자격 증명을 추가합니다.
 
 
 
@@ -136,7 +136,7 @@ NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp 콘�
  a| 
 \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com
  a| 
-NetApp 콘솔 내에서 기능과 서비스를 제공합니다.
+NetApp Console 내에서 기능과 서비스를 제공합니다.
 
 
 
@@ -197,7 +197,7 @@ Azure China 지역의 리소스를 관리합니다.
  a| 
 \ https://signin.b2c.netapp.com
  a| 
-NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp 콘솔에 새로운 NSS 자격 증명을 추가합니다.
+NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp Console 에 새로운 NSS 자격 증명을 추가합니다.
 
 
 
@@ -211,7 +211,7 @@ NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp 콘�
  a| 
 \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com
  a| 
-NetApp 콘솔 내에서 기능과 서비스를 제공합니다.
+NetApp Console 내에서 기능과 서비스를 제공합니다.
 
 
 
@@ -255,7 +255,7 @@ Cloud Volumes ONTAP 시스템에 AutoSupport 메시지를 보낼 아웃바운드
 --
 
 
-NTP 활성화:: NetApp 데이터 분류를 사용하여 회사 데이터 소스를 스캔하려는 경우 콘솔 에이전트와 NetApp 데이터 분류 시스템 모두에서 NTP(네트워크 시간 프로토콜) 서비스를 활성화하여 시스템 간의 시간을 동기화해야 합니다. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["NetApp 데이터 분류에 대해 자세히 알아보세요"^]
+NTP 활성화:: NetApp Data Classification 사용하여 회사 데이터 소스를 스캔하려는 경우 콘솔 에이전트와 NetApp Data Classification 시스템 모두에서 NTP(네트워크 시간 프로토콜) 서비스를 활성화하여 시스템 간의 시간을 동기화해야 합니다. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["NetApp 데이터 분류에 대해 자세히 알아보세요"^]
 
 
 
@@ -296,7 +296,7 @@ NOTE: 사내에 설치된 콘솔 에이전트로는 Google Cloud의 리소스를
 ** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS 설명서: IAM 정책 추가 및 제거"^]
 
 
-. 콘솔 에이전트를 설치한 후 NetApp 콘솔에 추가할 수 있는 액세스 키가 사용자에게 있는지 확인하세요.
+. 콘솔 에이전트를 설치한 후 NetApp Console 에 추가할 수 있는 액세스 키가 사용자에게 있는지 확인하세요.
 
 
 .결과
@@ -305,7 +305,7 @@ NOTE: 사내에 설치된 콘솔 에이전트로는 Google Cloud의 리소스를
 --
 .하늘빛
 --
-온프레미스에 콘솔 에이전트를 설치하는 경우 Microsoft Entra ID에서 서비스 주체를 설정하고 콘솔 에이전트에 필요한 Azure 자격 증명을 가져와 콘솔 에이전트에 Azure 권한을 부여해야 합니다.
+온프레미스에 콘솔 에이전트를 설치하는 경우 Microsoft Entra ID에서 서비스 주체를 설정하고 콘솔 에이전트에 필요한 Azure 자격 증명을 가져와서 콘솔 에이전트에 Azure 권한을 부여해야 합니다.
 
 .역할 기반 액세스 제어를 위한 Microsoft Entra 애플리케이션 만들기
 . Azure에서 Active Directory 애플리케이션을 만들고 해당 애플리케이션에 역할을 할당할 수 있는 권한이 있는지 확인하세요.
@@ -321,7 +321,7 @@ image:screenshot_azure_ad.png["Microsoft Azure의 Active Directory 서비스를 
 . 신청서에 대한 세부 사항을 지정하세요:
 +
 ** *이름*: 애플리케이션의 이름을 입력하세요.
-** *계정 유형*: 계정 유형을 선택하세요(모든 계정 유형이 NetApp 콘솔에서 작동합니다).
+** *계정 유형*: 계정 유형을 선택하세요(모든 계정 유형이 NetApp Console 에서 작동합니다).
 ** *리디렉션 URI*: 이 필드는 비워두어도 됩니다.
 
 
@@ -405,7 +405,7 @@ image:screenshot_azure_service_principal_role.png["Azure Portal의 역할 할당
 이제 서비스 주체는 콘솔 에이전트를 배포하는 데 필요한 Azure 권한을 갖게 되었습니다.
 
 +
-여러 Azure 구독에서 Cloud Volumes ONTAP 배포하려면 각 구독에 서비스 주체를 바인딩해야 합니다.  NetApp 콘솔에서 Cloud Volumes ONTAP 배포할 때 사용할 구독을 선택할 수 있습니다.
+여러 Azure 구독에서 Cloud Volumes ONTAP 배포하려면 각 구독에 서비스 주체를 바인딩해야 합니다.  NetApp Console 에서 Cloud Volumes ONTAP 배포할 때 사용할 구독을 선택할 수 있습니다.
 
 
 
@@ -453,13 +453,13 @@ image:screenshot_azure_client_secret.gif["Microsoft Entra 서비스 주체에 �
 
 == VCenter 환경에 콘솔 에이전트 설치
 
-NetApp VCenter 환경에 콘솔 에이전트를 설치하는 것을 지원합니다.  OVA 파일에는 VMware 환경에 배포할 수 있는 미리 구성된 VM 이미지가 포함되어 있습니다.  파일 다운로드나 URL 배포는 NetApp 콘솔에서 직접 가능합니다.  여기에는 콘솔 에이전트 소프트웨어와 자체 서명 인증서가 포함됩니다.
+NetApp VCenter 환경에 콘솔 에이전트를 설치하는 것을 지원합니다.  OVA 파일에는 VMware 환경에 배포할 수 있는 미리 구성된 VM 이미지가 포함되어 있습니다.  파일 다운로드나 URL 배포는 NetApp Console 에서 직접 사용할 수 있습니다.  여기에는 콘솔 에이전트 소프트웨어와 자체 서명 인증서가 포함됩니다.
 
 
 
 === OVA를 다운로드하거나 URL을 복사하세요
 
-OVA를 다운로드하거나 NetApp 콘솔에서 OVA URL을 직접 복사하세요.
+OVA를 다운로드하거나 NetApp Console 에서 OVA URL을 직접 복사하세요.
 
 . *관리 > 에이전트*를 선택하세요.
 . *개요* 페이지에서 *에이전트 배포 > 온프레미스*를 선택합니다.
@@ -505,7 +505,7 @@ OVA를 다운로드하거나 NetApp 콘솔에서 OVA URL을 직접 복사하세�
 +
 *** *구성 확인 건너뛰기*: 이 확인란은 기본적으로 선택 해제되어 있으며, 이는 에이전트가 네트워크 액세스를 검증하기 위해 구성 확인을 실행한다는 것을 의미합니다.
 +
-**** NetApp 에이전트의 구성 검사를 설치 과정에 포함하도록 이 상자를 선택하지 않는 것이 좋습니다.  구성 검사는 에이전트가 필요한 엔드포인트에 대한 네트워크 액세스 권한이 있는지 확인합니다.  연결 문제로 인해 배포에 실패하면 에이전트 호스트에서 유효성 검사 보고서와 로그에 액세스할 수 있습니다.  어떤 경우에는 에이전트가 네트워크에 접속할 수 있다고 확신하는 경우 검사를 건너뛸 수 있습니다.  예를 들어, 여전히 다음을 사용하고 있는 경우link:reference-networking-saas-console-previous.html["이전 종료점"] 에이전트 업그레이드에 사용되면 유효성 검사가 오류로 인해 실패합니다.  이를 방지하려면 유효성 검사 없이 설치하려면 확인란을 선택하세요. link:reference-networking-saas-console-previous.html#update-endpoint-list["엔드포인트 목록을 업데이트하는 방법을 알아보세요"] .
+**** NetApp 에이전트의 구성 검사를 설치 과정에 포함하도록 이 상자를 선택하지 않을 것을 권장합니다.  구성 검사는 에이전트가 필요한 엔드포인트에 대한 네트워크 액세스 권한이 있는지 확인합니다.  연결 문제로 인해 배포에 실패하면 에이전트 호스트에서 유효성 검사 보고서와 로그에 액세스할 수 있습니다.  어떤 경우에는 에이전트가 네트워크에 접속할 수 있다고 확신하는 경우 검사를 건너뛸 수 있습니다.  예를 들어, 여전히 다음을 사용하고 있는 경우link:reference-networking-saas-console-previous.html["이전 종료점"] 에이전트 업그레이드에 사용되면 유효성 검사가 오류로 인해 실패합니다.  이를 방지하려면 유효성 검사 없이 설치하려면 확인란을 선택하세요. link:reference-networking-saas-console-previous.html#update-endpoint-list["엔드포인트 목록을 업데이트하는 방법을 알아보세요"] .
 
 
 *** *유지관리 비밀번호* : 비밀번호를 설정하세요. `maint` 에이전트 유지 관리 콘솔에 액세스할 수 있는 사용자입니다.
@@ -534,7 +534,7 @@ NOTE: 배포에 실패하면 에이전트 호스트에서 검증 보고서와 �
 
 
 
-== NetApp 콘솔에 콘솔 에이전트 등록
+== NetApp Console 에 콘솔 에이전트 등록
 
 콘솔에 로그인하고 콘솔 에이전트를 조직과 연결합니다.  로그인 방법은 콘솔을 사용하는 모드에 따라 달라집니다.  표준 모드로 콘솔을 사용하는 경우 SaaS 웹사이트를 통해 로그인합니다.  제한 모드나 비공개 모드로 콘솔을 사용하는 경우 콘솔 에이전트 호스트에서 로컬로 로그인합니다.
 
@@ -583,7 +583,7 @@ AWS 자격 증명을 방금 만든 경우 사용할 수 있게 되는 데 몇 �
 
 
 
-이제 다음으로 이동할 수 있습니다. https://console.netapp.com["NetApp 콘솔"^] 콘솔 에이전트를 사용하려면.
+이제 다음으로 이동할 수 있습니다. https://console.netapp.com["NetApp Console"^] 콘솔 에이전트를 사용하려면.
 
 --
 .하늘빛
@@ -610,7 +610,7 @@ Azure 자격 증명을 방금 만든 경우 사용 가능해지는 데 몇 분 �
 
 
 .결과
-이제 콘솔 에이전트는 Azure에서 사용자를 대신하여 작업을 수행하는 데 필요한 권한을 갖게 되었습니다.  이제 다음으로 이동할 수 있습니다. https://console.netapp.com["NetApp 콘솔"^] 콘솔 에이전트를 사용하려면.
+이제 콘솔 에이전트는 Azure에서 사용자를 대신하여 작업을 수행하는 데 필요한 권한을 갖게 되었습니다.  이제 다음으로 이동할 수 있습니다. https://console.netapp.com["NetApp Console"^] 콘솔 에이전트를 사용하려면.
 
 --
 ====

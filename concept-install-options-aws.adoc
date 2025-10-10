@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-install-options-aws.html 
 keywords: install connector aws, aws install connector, connector aws, aws connector, installation options, aws marketplace, manual install, deploy 
-summary: AWS에서 콘솔 에이전트를 만드는 방법에는 여러 가지가 있습니다.  가장 일반적인 방법은 NetApp 콘솔에서 직접 실행하는 것입니다. 
+summary: AWS에서 콘솔 에이전트를 만드는 방법에는 여러 가지가 있습니다.  가장 일반적인 방법은 NetApp Console 에서 직접 실행하는 것입니다. 
 ---
 = AWS의 콘솔 에이전트 설치 옵션
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: AWS에서 콘솔 에이전트를 만드는 방법에는 여러 가지�
 
 
 [role="lead"]
-AWS에서 콘솔 에이전트를 만드는 방법에는 여러 가지가 있습니다.  가장 일반적인 방법은 NetApp 콘솔에서 직접 실행하는 것입니다.
+AWS에서 콘솔 에이전트를 만드는 방법에는 여러 가지가 있습니다.  가장 일반적인 방법은 NetApp Console 에서 직접 실행하는 것입니다.
 
 다음과 같은 설치 옵션을 사용할 수 있습니다.
 

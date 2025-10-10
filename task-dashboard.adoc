@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-dashboard.html 
 keywords: bluexp, dashboard, console, home page 
-summary: NetApp 콘솔 내에서 홈페이지에서 메트릭을 볼 수 있습니다. 
+summary: NetApp Console 내에서 홈페이지에서 메트릭을 볼 수 있습니다. 
 ---
-= NetApp 콘솔 홈페이지에서 메트릭 보기
+= NetApp Console 홈페이지에서 메트릭 보기
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: NetApp 콘솔 내에서 홈페이지에서 메트릭을 볼 수 있습�
 
 
 [role="lead"]
-저장소의 상태를 모니터링하면 저장소 보호에 문제가 있는 경우 이를 인지하고 이를 해결하기 위한 조치를 취할 수 있습니다.  NetApp 콘솔 홈페이지를 사용하면 NetApp Backup and Recovery에서 수행한 백업 및 복원 상태를 볼 수 있으며, NetApp Ransomware Resilience에서 표시된 대로 랜섬웨어 공격 위험이 있거나 보호되는 워크로드 수를 볼 수 있습니다.  개별 클러스터와 Cloud Volumes ONTAP 의 스토리지 용량, ONTAP 알림, 클러스터 또는 Cloud Volumes ONTAP 시스템당 스토리지 성능 용량, 보유한 다양한 유형의 라이선스 등을 검토할 수 있습니다.
+저장소의 상태를 모니터링하면 저장소 보호에 문제가 있는 경우 이를 인지하고 이를 해결하기 위한 조치를 취할 수 있습니다.  NetApp Console 홈페이지를 사용하면 NetApp Backup and Recovery 에서 수행한 백업 및 복원 상태를 볼 수 있으며, NetApp Ransomware Resilience 에서 표시된 대로 랜섬웨어 공격 위험이 있거나 보호되는 워크로드 수를 볼 수 있습니다.  개별 클러스터와 Cloud Volumes ONTAP 의 스토리지 용량, ONTAP 알림, 클러스터 또는 Cloud Volumes ONTAP 시스템당 스토리지 성능 용량, 보유한 다양한 유형의 라이선스 등을 검토할 수 있습니다.
 
 홈페이지의 모든 창에는 조직 수준의 데이터가 표시됩니다.  저장소 용량 및 저장소 성능 창에는 사용자가 IAM 권한에 따라 액세스할 수 있는 프로젝트와 연결된 시스템이 표시됩니다.
 
@@ -25,35 +25,35 @@ NOTE: 홈페이지에서 정확한 지표를 얻으려면 적절한 크기와 �
 
 
 
-== 필수 NetApp 콘솔 역할
+== 필수 NetApp Console 역할
 
 홈페이지의 각 창에는 서로 다른 사용자 역할이 필요합니다.
 
-* *저장 용량 창*: NetApp 콘솔 시스템 페이지를 볼 수 있는 기능
+* *저장 용량 창*: NetApp Console 시스템 페이지를 볼 수 있는 기능
 * * ONTAP 알림 창*: 폴더 또는 프로젝트 관리자, 운영 지원 분석가, 조직 관리자, 조직 뷰어, 슈퍼 관리자, 슈퍼 뷰어
-* *스토리지 성능 용량 창*: NetApp 콘솔 시스템 페이지를 볼 수 있는 기능
-* *라이선스 및 구독 창*: 폴더 또는 프로젝트 관리자, 조직 관리자, 조직 뷰어, 슈퍼 관리자, 슈퍼 뷰어
+* *스토리지 성능 용량 창*: NetApp Console 시스템 페이지를 볼 수 있는 기능
+* * Licenses and subscriptions 창*: 폴더 또는 프로젝트 관리자, 조직 관리자, 조직 뷰어, 슈퍼 관리자, 슈퍼 뷰어
 * *랜섬웨어 복원력 창*: 폴더 또는 프로젝트 관리자, 조직 관리자, 랜섬웨어 복원력 관리자, 랜섬웨어 복원력 뷰어, 슈퍼 관리자, 슈퍼 뷰어
 * *백업 및 복구 창*: 백업 및 복구 백업 관리자, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 뷰어, 백업 및 복구 복제 관리자, 폴더 또는 프로젝트 관리자, 조직 관리자, 백업 및 복구 복원 관리자, 슈퍼 관리자, 슈퍼 뷰어
 
 
 창에 액세스할 권한이 없는 경우 해당 창에는 해당 창을 사용할 권한이 없다는 메시지가 표시됩니다.
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["NetApp 콘솔 액세스 역할에 대해 알아보세요."] .
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["NetApp Console 액세스 역할에 대해 알아보세요."] .
 
 .단계
-. NetApp 콘솔 메뉴에서 *홈*을 선택합니다.
+. NetApp Console 메뉴에서 *홈*을 선택합니다.
 +
 조직 관리자 역할이 있고 에이전트나 스토리지 시스템이 설정되어 있지 않으면 홈페이지에 시작 정보가 표시됩니다.
 
 +
-image:screenshot-home-greenfield.png["NetApp 콘솔 홈페이지에서 새 사용자를 환영합니다."]
+image:screenshot-home-greenfield.png["NetApp Console 홈페이지에서 새 사용자를 환영합니다."]
 
 +
-NetApp 콘솔을 이미 설정한 경우, 하나 이상의 콘솔 에이전트가 활성화되어 있고 해당 에이전트에 하나 이상의 클러스터 또는 Cloud Volumes ONTAP 시스템이 추가되어 있으면 홈페이지에 스토리지 환경에 대한 메트릭이 표시됩니다.
+NetApp Console 이미 설정한 경우, 하나 이상의 콘솔 에이전트가 활성화되어 있고 해당 에이전트에 하나 이상의 클러스터 또는 Cloud Volumes ONTAP 시스템이 추가되어 있으면 홈페이지에 스토리지 환경에 대한 메트릭이 표시됩니다.
 
 +
-image:screenshot-home-metrics.png["메트릭을 보여주는 NetApp 콘솔 홈페이지"]
+image:screenshot-home-metrics.png["메트릭을 보여주는 NetApp Console 홈페이지"]
 
 
 
@@ -63,7 +63,7 @@ image:screenshot-home-metrics.png["메트릭을 보여주는 NetApp 콘솔 홈�
 
 다음 조건이 충족되면 홈페이지에서 지표를 볼 수 있습니다.
 
-* NetApp 콘솔의 SaaS 인스턴스에 로그인했습니다.
+* NetApp Console 의 SaaS 인스턴스에 로그인했습니다.
 * 기존 스토리지 리소스(에이전트 및 클러스터 또는 Cloud Volumes ONTAP 시스템)가 있는 조직에 속해 있습니다.
 * 최소한 하나의 콘솔 에이전트가 활성화되어 있습니다.
 * 해당 에이전트에 하나 이상의 클러스터 또는 Cloud Volumes ONTAP 시스템이 추가되었습니다.
@@ -94,7 +94,7 @@ image:screenshot-home-metrics.png["메트릭을 보여주는 NetApp 콘솔 홈�
 TIP: 여러 프로젝트가 있는 경우 시스템 페이지와 비교하여 저장소 용량 창에 다른 데이터가 표시될 수 있습니다.  시스템 페이지는 프로젝트 수준에 따른 정보를 표시하는 반면, 스토리지 용량 창은 조직 수준의 정보를 표시하기 때문입니다.  또한, 성능 최적화를 위해 데이터가 최대 15분 동안 캐시되므로 이 창의 데이터는 최대 15분 동안 실제 값과 다를 수 있습니다.
 
 .단계
-. NetApp 콘솔 메뉴에서 스토리지 용량 창을 검토합니다.
+. NetApp Console 메뉴에서 스토리지 용량 창을 검토합니다.
 . 저장 용량 창에서 *보기*를 선택하여 콘솔 시스템 페이지로 이동합니다.
 . 시스템 페이지에서 보려는 클러스터가 포함된 프로젝트를 선택합니다.
 . 시스템 페이지에서 클러스터를 선택하면 해당 클러스터에 대한 자세한 내용을 볼 수 있습니다.
@@ -104,7 +104,7 @@ TIP: 여러 프로젝트가 있는 경우 시스템 페이지와 비교하여 �
 
 == ONTAP 알림 보기
 
-NetApp 온프레미스 ONTAP 환경에서 발생하는 문제나 잠재적 위험을 확인하세요. EMS가 아닌 알림과 EMS 알림을 볼 수 있습니다.
+NetApp 온프레미스 ONTAP 환경에서 발생하는 문제나 잠재적 위험을 확인하세요.  EMS가 아닌 알림과 EMS 알림을 볼 수 있습니다.
 
 데이터는 5분마다 업데이트됩니다.
 
@@ -135,14 +135,14 @@ TIP: 캐싱을 사용하면 성능이 최적화되지만, 이 창의 데이터�
 
 *지원되는 데이터 소스*
 
-ONTAP 에서 발생하는 특정 이벤트에 대한 알림을 확인합니다. 이는 EMS와 지표 기반 알림의 조합입니다.
+ONTAP 에서 발생하는 특정 이벤트에 대한 알림을 확인합니다.  이는 EMS와 지표 기반 알림의 조합입니다.
 
 ONTAP 알림에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/console-alerts/index.html["ONTAP 알림 정보"^] .
 
 귀하가 볼 수 있는 알림 목록은 다음을 참조하세요. https://docs.netapp.com/us-en/console-alerts/alerts-use-dashboard.html["ONTAP 스토리지의 잠재적 위험 보기"^] .
 
 .단계
-. NetApp 콘솔 메뉴에서 ONTAP 알림 창을 검토합니다.
+. NetApp Console 메뉴에서 ONTAP 알림 창을 검토합니다.
 . 선택적으로 심각도 수준을 선택하여 알림을 필터링하거나 필터를 변경하여 영향 영역을 기준으로 알림을 표시합니다.
 . ONTAP 알림 창에서 *보기*를 선택하여 콘솔 알림 페이지로 이동합니다.
 
@@ -159,7 +159,7 @@ ONTAP 알림에 대한 자세한 내용은 다음을 참조하세요. https://do
 TIP: 캐싱을 사용하면 성능이 최적화되지만, 이 창의 데이터가 최대 15분 동안 실제 값과 달라질 수 있습니다.
 
 .단계
-. NetApp 콘솔 메뉴에서 스토리지 성능 창을 검토합니다.
+. NetApp Console 메뉴에서 스토리지 성능 창을 검토합니다.
 . 저장소 성능 창에서 *보기*를 선택하면 성능 페이지로 이동합니다. 이 페이지에는 모든 클러스터와 Cloud Volumes ONTAP 시스템의 성능, 용량, IOPS, 지연 시간 데이터가 나열되어 있습니다.
 . 시스템 관리자에서 세부 정보를 보려면 클러스터를 선택하세요.
 
@@ -168,7 +168,7 @@ TIP: 캐싱을 사용하면 성능이 최적화되지만, 이 창의 데이터�
 
 == 귀하가 보유한 라이센스 및 구독을 확인하세요
 
-라이선스 및 구독 창에서 다음 정보를 검토하세요.
+Licenses and subscriptions 창에서 다음 정보를 검토하세요.
 
 * 귀하가 보유한 라이선스 및 구독의 총 수입니다.
 * 귀하가 보유한 각 유형의 라이선스 및 구독 수(직접 라이선스, 연간 계약 또는 PAYGO).
@@ -182,27 +182,27 @@ TIP: 캐싱을 사용하면 성능이 최적화되지만, 이 창의 데이터�
 TIP: 캐싱을 사용하면 성능이 최적화되지만, 이 창의 데이터가 최대 15분 동안 실제 값과 달라질 수 있습니다.
 
 .단계
-. NetApp 콘솔 메뉴에서 라이선스 및 구독 창을 검토합니다.
-. 라이선스 및 구독 창에서 *보기*를 선택하여 콘솔 라이선스 및 구독 페이지로 이동합니다.
+. NetApp Console 메뉴에서 Licenses and subscriptions 창을 검토합니다.
+. Licenses and subscriptions 창에서 *보기*를 선택하여 콘솔 Licenses and subscriptions 페이지로 이동합니다.
 
 
 
 
 == 랜섬웨어 복원력 상태 보기
 
-워크로드가 랜섬웨어 공격의 위험에 처해 있는지, 아니면 NetApp 랜섬웨어 복원력 데이터 서비스로 보호되는지 알아보세요.  보호되는 총 데이터 양을 검토하고, 권장되는 작업 수를 보고, 랜섬웨어 보호와 관련된 알림 수를 볼 수 있습니다.
+워크로드가 랜섬웨어 공격의 위험에 처해 있는지, 아니면 NetApp Ransomware Resilience 데이터 서비스로 보호되는지 알아보세요.  보호되는 총 데이터 양을 검토하고, 권장되는 작업 수를 보고, 랜섬웨어 보호와 관련된 알림 수를 볼 수 있습니다.
 
-데이터는 5분마다 새로 고쳐지며 NetApp 랜섬웨어 복원력 대시보드에 표시된 데이터와 일치합니다.
+데이터는 5분마다 새로 고쳐지며 NetApp Ransomware Resilience 대시보드에 표시된 데이터와 일치합니다.
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["NetApp 랜섬웨어 복원력에 대해 알아보세요"^] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["NetApp Ransomware Resilience 에 대해 알아보세요"^] .
 
 .단계
-. NetApp 콘솔 메뉴에서 랜섬웨어 복원력 창을 검토합니다.
+. NetApp Console 메뉴에서 랜섬웨어 복원력 창을 검토합니다.
 . 랜섬웨어 복원력 창에서 다음 중 하나를 수행하세요.
 +
-** *보기*를 선택하여 NetApp 랜섬웨어 복원력 대시보드로 이동합니다. 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-dashboard.html["NetApp 랜섬웨어 복원력 대시보드를 사용하여 워크로드 상태를 모니터링합니다."^] .
-** NetApp 랜섬웨어 복원력 대시보드에서 "권장 작업"을 검토하세요. 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-dashboard.html["NetApp 랜섬웨어 복원력 대시보드에서 보호 권장 사항을 검토하세요."^] .
-** NetApp 랜섬웨어 복원력 알림 페이지에서 알림을 검토하려면 알림 링크를 선택하세요. 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["NetApp Ransomware Resilience를 사용하여 감지된 랜섬웨어 알림을 처리하세요"^] .
+** *보기*를 선택하여 NetApp Ransomware Resilience 보드로 이동합니다. 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-dashboard.html["NetApp Ransomware Resilience 보드를 사용하여 워크로드 상태를 모니터링합니다."^] .
+** NetApp Ransomware Resilience 보드에서 "권장 작업"을 검토하세요. 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-dashboard.html["NetApp Ransomware Resilience 대시보드에서 보호 권장 사항을 검토하세요."^] .
+** NetApp Ransomware Resilience 알림 페이지에서 알림을 검토하려면 알림 링크를 선택하세요.  자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["NetApp Ransomware Resilience 사용하여 감지된 랜섬웨어 알림을 처리하세요"^] .
 
 
 
@@ -211,7 +211,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 == 백업 및 복구 상태 보기
 
-NetApp Backup and Recovery에서 백업 및 복원의 전반적인 상태를 검토합니다.  보호된 리소스와 보호되지 않은 리소스의 수를 볼 수 있습니다.  또한 작업 부하를 보호하기 위해 백업 및 복원 작업의 비율도 확인할 수 있습니다.  백분율이 높을수록 데이터 보호가 향상되었음을 나타냅니다.
+NetApp Backup and Recovery 에서 백업 및 복원의 전반적인 상태를 검토합니다.  보호된 리소스와 보호되지 않은 리소스의 수를 볼 수 있습니다.  또한 작업 부하를 보호하기 위해 백업 및 복원 작업의 비율도 확인할 수 있습니다.  백분율이 높을수록 데이터 보호가 향상되었음을 나타냅니다.
 
 데이터는 5분마다 새로 고쳐집니다.
 
@@ -219,6 +219,6 @@ NetApp Backup and Recovery에서 백업 및 복원의 전반적인 상태를 검
 TIP: 캐싱을 사용하면 성능이 최적화되지만, 이 창의 데이터가 최대 15분 동안 실제 값과 달라질 수 있습니다.
 
 .단계
-. NetApp 콘솔 메뉴에서 백업 및 복구 창을 검토합니다.
-. *보기*를 선택하여 NetApp 백업 및 복구 대시보드로 이동합니다. 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["NetApp 백업 및 복구 설명서"^] .
+. NetApp Console 메뉴에서 백업 및 복구 창을 검토합니다.
+. *보기*를 선택하여 NetApp Backup and Recovery 보드로 이동합니다. 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["NetApp Backup and Recovery 설명서"^] .
 

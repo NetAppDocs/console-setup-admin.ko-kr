@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-iam-audit-actions-timeline.html 
 keywords: iam, audit, monitor, audit iam actions, monitor iam actions 
-summary: 감사 페이지에서 NetApp 콘솔 ID 및 액세스 관리 작업을 모니터링하거나 감사합니다. 
+summary: 감사 페이지에서 NetApp Console ID 및 액세스 관리 작업을 모니터링하거나 감사합니다. 
 ---
 = IAM 활동 모니터링 또는 감사
 :hardbreaks:
