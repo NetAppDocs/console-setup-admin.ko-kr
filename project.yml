@@ -154,7 +154,7 @@ sidebar:
             url: "/reference-iam-backup-rec-roles.html"
           - title: 재해 복구 역할
             url: "/reference-iam-disaster-rec-roles.html"
-          - title: 랜섬웨어 보호 역할
+          - title: 랜섬웨어 복원력 역할
             url: "/reference-iam-ransomware-roles.html"
     - title: 파트너 기관
       entries:

@@ -71,7 +71,7 @@ https://docs.netapp.com/us-en/storage-management-ontap-onprem/task-discovering-o
 * 경제적 효율성 ^1^
 * Google Cloud Storage 버킷
 * NetApp 데이터 서비스와 온프레미스 ONTAP 클러스터 통합
-* NetApp 랜섬웨어 복원력
+* NetApp Ransomware Resilience
 * StorageGRID 시스템
 * NetApp Cloud Tiering
 * NetApp Volume Caching

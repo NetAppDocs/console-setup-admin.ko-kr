@@ -85,7 +85,7 @@ link:media/BlueXP-Private-Mode-legacy-interface.pdf["BlueXP 개인 모드에 대
 | 경제적 효율성 | 아니요 
 
 
-| 랜섬웨어 보호 | 아니요 
+| 랜섬웨어 복원력 | 아니요 
 
 
 | 복제 | 예 

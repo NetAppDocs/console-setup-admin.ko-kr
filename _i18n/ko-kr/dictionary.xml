@@ -1298,7 +1298,6 @@
   <block id="c7a576f5db262c0475afa4a53822979e" category="list-text">경제적 효율성 ^1^</block>
   <block id="390e388eccc77b388b4d54d73b76f902" category="list-text">Google Cloud Storage 버킷</block>
   <block id="016d4dd0efd43648613b0639e13ba2c7" category="list-text">NetApp 데이터 서비스와 온프레미스 ONTAP 클러스터 통합</block>
-  <block id="cf399270632323e6349a7298f0e7eb09" category="list-text">NetApp 랜섬웨어 복원력</block>
   <block id="a94a2dfcff08cd86c973716edaf32722" category="list-text">NetApp Cloud Tiering</block>
   <block id="6f267103f7f652e22e0ead9f66014cd4" category="list-text">NetApp Volume Caching</block>
   <block id="06f4d4213c3d87db39929c4ce6ffcc0f" category="paragraph">^1^ 콘솔 에이전트 없이도 이러한 서비스에 액세스할 수 있지만, 작업을 시작하려면 콘솔 에이전트가 필요합니다.</block>
@@ -2214,7 +2213,6 @@
   <block id="065933ac7339c32c2a386f3f69e4fd61" category="list-text"><block ref="065933ac7339c32c2a386f3f69e4fd61" category="inline-link-macro-rx"></block></block>
   <block id="470bbf3695958272c2830107baeb6411" category="summary">NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience 에 대한 액세스 권한을 제공하는 역할을 부여할 수 있습니다.</block>
   <block id="5f87170a21a0b0d135060af816ac1433" category="doc">NetApp Console 의 랜섬웨어 복원력 액세스 역할</block>
-  <block id="9d9ae6ee36b5e9aae30cd19d4d3c6b92" category="paragraph">랜섬웨어 복원력 역할은 사용자에게 NetApp Ransomware Resilience 에 대한 액세스 권한을 제공합니다.  두 가지 역할은 랜섬웨어 보호 관리자와 랜섬웨어 보호 뷰어입니다.  두 역할의 주요 차이점은 랜섬웨어 복원력에서 취할 수 있는 조치입니다.</block>
   <block id="e6d88107afe61c1a78c0dac0689d8fac" category="paragraph">다음 표는 각 역할이 수행할 수 있는 작업을 보여줍니다.</block>
   <block id="2961ef9224153d664a9bde6ee6ef2570" category="cell">대시보드에서 권장 사항 상태를 업데이트합니다.</block>
   <block id="bb73fa2a07d0c544491039dc1ffed7b8" category="cell">워크로드 재발견 시작</block>
@@ -4005,8 +4003,6 @@
   <block id="cf3b3d414366a26f5b43041b5056897c" category="summary">NetApp Console 내에서 사용자가 수행해야 할 작업과 위치에 따라 역할을 할당할 수 있습니다.</block>
   <block id="14750286cb2a5a61bf62b65d9b9d2112" category="doc">역할을 사용하여 NetApp Console 리소스에 대한 사용자 액세스를 관리합니다.</block>
   <block id="5f24947dab075e3413b914aa36df023a" category="paragraph">콘솔 내에서 사용자에게 수행해야 할 작업과 위치에 따라 역할을 할당할 수 있습니다.</block>
-  <block id="e5bb4954536b904550d932928f88306d" category="paragraph">*조직 관리자* 또는 *폴더 또는 프로젝트 관리자* 역할을 맡은 사용자는 다른 사용자에게 역할을 할당할 책임이 있습니다.  프로젝트 또는 폴더 기준으로 액세스 역할을 할당할 수 있습니다.  예를 들어, 한 프로젝트에는 사용자에게 랜섬웨어 보호 관리자 역할을 할당하고 다른 프로젝트에는 SnapCenter 관리자 역할을 할당할 수 있습니다.  또는 사용자에게 특정 폴더 내의 모든 프로젝트에 대한 분류 관리자 역할이 필요한 경우 폴더 수준에서 이 역할을 부여할 수 있습니다.</block>
-  <block id="982e57f560511ceb443082e656219246" category="paragraph">액세스 역할을 사용하여 사용자가 수행해야 하는 특정 작업에 따라 스토리지 리소스에 대한 액세스 권한을 할당합니다.  예를 들어, 사용자가 랜섬웨어 보호 서비스와 상호 작용해야 하는 경우 해당 액세스 역할이 부여된 프로젝트의 랜섬웨어 보호 서비스에 대한 보기 또는 관리 권한이 포함된 액세스 역할이 부여되어야 합니다.</block>
   <block id="61258c54d2a7f09077a72a4eeb56874d" category="paragraph">IAM 전략에 따라 사용자에게 역할을 할당하여 보안을 강화하세요.  IAM 역할은 사용자에게 필요한 액세스 권한만 부여합니다.</block>
   <block id="3908f1e42aa5b81b8316befd30a6965d" category="inline-link-macro">폴더와 프로젝트를 사용하여 리소스를 구성하는 방법을 알아보세요.</block>
   <block id="ecdeffad8e53c7c9b1fb61f02a3cb5d1" category="admonition">리소스에 대한 액세스 권한을 직접 부여할 수 없다는 점을 기억하세요.  먼저 프로젝트에 리소스를 할당하세요.  사용자에게 액세스 권한을 할당하기 전에 리소스 계층 구조를 설정하는 것이 좋습니다.<block ref="122b4639308e055d5bdfeb8a65e1794d" category="inline-link-macro-rx"></block></block>
@@ -4016,7 +4012,6 @@
   <block id="12815307393fa19648b391d49b4282e4" category="section-title">멤버에게 액세스 역할 추가</block>
   <block id="9a9b4b286a389bc98dfdeb3214c134a1" category="paragraph">일반적으로 조직에 구성원을 추가할 때 역할을 할당하지만, 역할을 제거하거나 추가하여 언제든지 역할을 업데이트할 수 있습니다.</block>
   <block id="ba364a79f6fbfab0c8591198ecfd87cc" category="paragraph">사용자에게 조직, 폴더 또는 프로젝트에 대한 액세스 역할을 할당할 수 있습니다.</block>
-  <block id="9e9b03c43a95d80b4d040ec538e41373" category="paragraph">멤버는 동일한 프로젝트 내에서도, 그리고 서로 다른 프로젝트에서도 여러 역할을 맡을 수 있습니다.  예를 들어, 소규모 조직에서는 사용 가능한 모든 액세스 역할을 동일한 사용자에게 할당하는 반면, 대규모 조직에서는 사용자에게 더 전문적인 작업을 맡길 수 있습니다.  또는 조직의 랜섬웨어 보호 관리자 역할을 한 사용자에게 할당할 수도 있습니다.  해당 예에서 사용자는 조직 내의 모든 프로젝트에서 랜섬웨어 보호 작업을 수행할 수 있습니다.</block>
   <block id="7a43b6f649f8cf73a12056888057076b" category="paragraph">액세스 역할 전략은 NetApp 리소스를 구성한 방식과 일치해야 합니다.</block>
   <block id="20c36cd6c77d407b6118c77ebe403934" category="admonition">조직 관리자 역할이 할당된 구성원에게는 추가 역할을 할당할 수 없습니다.  그들은 이미 조직 전체에 대한 권한을 가지고 있습니다.  폴더 또는 프로젝트 역할이 있는 멤버는 해당 역할이 이미 있는 폴더 또는 프로젝트 내에서 다른 역할을 할당받을 수 없습니다.  두 역할 모두 할당된 범위 내의 모든 서비스에 대한 액세스 권한을 제공합니다.</block>
   <block id="068135177d9d1843118236d5f10dc5b7" category="section-title">멤버의 할당된 역할 변경</block>
@@ -4978,7 +4973,6 @@
   <block id="99cee3b8f810202d675de978cef4f9da" category="cell">예<block ref="514d17d2eb0e043089e13542661abd63" category="inline-link-rx"></block></block>
   <block id="e216b7a924341f796bca310d1d812baf" category="cell">복사 및 동기화</block>
   <block id="645a84975202e30700b572b49a5ee29d" category="cell">재해 복구</block>
-  <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="cell">랜섬웨어 보호</block>
   <block id="ff45d71e69fb5930de79de7c94326d7b" category="cell">볼륨 캐싱</block>
   <block id="35ccbae2ce9b9594b9af9196a3bed361" category="cell">작업량 공장</block>
   <block id="3d1f92a565d3b1a61880236e33c49bf3" category="cell">타임라인</block>
@@ -5531,7 +5525,6 @@
   <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="sidebar">데이터 서비스 역할</block>
   <block id="38dd106db79e0463f64b237d9de58a8e" category="sidebar">백업 및 복구 역할</block>
   <block id="2879d04f18c304fb2a3d5cf00deff6e2" category="sidebar">재해 복구 역할</block>
-  <block id="0310ff69ee2ad8b9fa1fbf2f23946a8e" category="sidebar">랜섬웨어 보호 역할</block>
   <block id="4dd7bf281f080fe43c775a741f9f2cc1" category="sidebar">파트너 기관</block>
   <block id="d6cca643be1ccfaa32ccfdc068061f15" category="sidebar">조직 파트너십에 대해 알아보세요</block>
   <block id="d88a163f40de4d60f08d7006db6dbc69" category="sidebar">조직 파트너십을 만드세요</block>
@@ -5564,4 +5557,11 @@
   <block id="abfd94e3956e611a257a32b0f396af25" category="sidebar">Google Cloud의 콘솔 에이전트 방화벽 규칙</block>
   <block id="e4c0002e4f9f19273bc004922899fb85" category="sidebar">콘솔 네트워크 액세스(레거시)</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">지식과 지원</block>
+  <block id="253b718b7b0bb8f190e2ebe1c721295e" category="paragraph">랜섬웨어 복원력 역할은 사용자에게 NetApp Ransomware Resilience 에 대한 액세스 권한을 제공합니다. 랜섬웨어 복원력은 다음과 같은 역할을 지원합니다.</block>
+  <block id="b7055c90f2b38b6e2d3cddd08ec5c936" category="paragraph">역할에 따라 설정과 작업에 대한 액세스 권한이 달라집니다.  의심스러운 사용자 행동 활동을 구성하거나 보려면 사용자 행동 역할 중 하나를 사용해야 합니다.</block>
+  <block id="f75989b6aa2a7a3c16b04e40aebffd8f" category="paragraph">*조직 관리자* 또는 *폴더 또는 프로젝트 관리자* 역할을 맡은 사용자는 다른 사용자에게 역할을 할당할 책임이 있습니다. 프로젝트 또는 폴더 기준으로 액세스 역할을 할당할 수 있습니다. 예를 들어, 한 프로젝트에는 사용자에게 랜섬웨어 복원력 관리자 역할을 할당하고, 다른 프로젝트에는 SnapCenter 관리자 역할을 할당할 수 있습니다. 또는 사용자에게 특정 폴더 내의 모든 프로젝트에 대한 분류 관리자 역할이 필요한 경우 폴더 수준에서 이 역할을 부여할 수 있습니다.</block>
+  <block id="e55d79a6c1774cf0f39d67ca04d67bc0" category="paragraph">액세스 역할을 사용하여 사용자가 수행해야 하는 특정 작업에 따라 스토리지 리소스에 대한 액세스 권한을 할당합니다. 예를 들어, 사용자가 랜섬웨어 복원력과 상호 작용해야 하는 경우, 해당 액세스 역할이 부여된 프로젝트에 대한 랜섬웨어 복원력에 대한 보기 또는 관리 권한이 포함된 액세스 역할이 부여되어야 합니다.</block>
+  <block id="e6bf2bfbd541e12c3cb2fca42df08ed3" category="paragraph">멤버는 동일한 프로젝트 내에서도, 그리고 서로 다른 프로젝트에서도 여러 역할을 맡을 수 있습니다. 예를 들어, 소규모 조직에서는 사용 가능한 모든 액세스 역할을 동일한 사용자에게 할당하는 반면, 대규모 조직에서는 사용자에게 더 전문적인 작업을 맡길 수 있습니다. 또는 조직의 랜섬웨어 복원력 관리자 역할을 한 사용자에게 할당할 수도 있습니다.  해당 예에서 사용자는 조직 내 모든 프로젝트에서 랜섬웨어 복원력 작업을 수행할 수 있습니다.</block>
+  <block id="c36b12344113082dcf8a9786e36a3536" category="cell">랜섬웨어 복원력</block>
+  <block id="16a7e3e925ade6eef4533f96172d423f" category="sidebar">랜섬웨어 복원력 역할</block>
 </blocks>
