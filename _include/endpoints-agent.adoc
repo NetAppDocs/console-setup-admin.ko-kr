@@ -42,13 +42,13 @@
 
 | Google Cloud에서 리소스를 관리합니다.
 
-| \ https://mysupport.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보냅니다. | \ https://support.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보냅니다. | \ https://signin.b2c.netapp.com | NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp Console 에 새로운 NSS 자격 증명을 추가합니다. | \ https://support.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보내고 Cloud Volumes ONTAP 에 대한 소프트웨어 업데이트를 받습니다.
+| \ https://mysupport.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보냅니다. | \ https://signin.b2c.netapp.com | NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp Console 에 새로운 NSS 자격 증명을 추가합니다. | \ https://support.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보내고 Cloud Volumes ONTAP 에 대한 소프트웨어 업데이트를 받습니다.
 
 | \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com | NetApp Console 내에서 기능과 서비스를 제공합니다.
 
 a| \ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io a| 콘솔 에이전트 업그레이드를 위한 이미지를 얻습니다.
 
-* 새로운 에이전트를 배포할 때 유효성 검사를 통해 현재 엔드포인트에 대한 연결성을 테스트합니다.  당신이 사용하는 경우link:link:reference-networking-saas-console-previous.html["이전 종료점"] , 유효성 검사에 실패합니다.  이러한 실패를 방지하려면 유효성 검사를 건너뛰세요.
+* 새로운 에이전트를 배포할 때 유효성 검사를 통해 현재 엔드포인트에 대한 연결성을 테스트합니다. 당신이 사용하는 경우link:reference-networking-saas-console-previous.html["이전 종료점"] , 유효성 검사에 실패합니다. 이러한 실패를 방지하려면 유효성 검사를 건너뛰세요.
 +
 이전 엔드포인트는 계속 지원되지만 NetApp 가능한 한 빨리 현재 엔드포인트에 맞게 방화벽 규칙을 업데이트할 것을 권장합니다. link:reference-networking-saas-console-previous.html#update-endpoint-list["엔드포인트 목록을 업데이트하는 방법을 알아보세요"] .
 

@@ -164,7 +164,7 @@ API 엔드포인트:: API 호출은 에이전트 가상 머신에 이루어집�
 | Azure NetApp Files | 전면적인 지원 
 
 
-| 백업 및 복구 | 제한 모드가 적용된 정부 지역 및 상업 지역에서 지원됩니다. 제한 모드가 적용된 주권 지역에서는 지원되지 않습니다. 제한 모드에서 NetApp Backup and Recovery ONTAP 볼륨 데이터의 백업 및 복원만 지원합니다. https://docs.netapp.com/us-en/data-services-disaster-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["ONTAP 데이터에 대해 지원되는 백업 대상 목록 보기"^] 애플리케이션 데이터와 가상 머신 데이터의 백업 및 복원은 지원되지 않습니다. 
+| 백업 및 복구 | 제한 모드가 적용된 정부 지역 및 상업 지역에서 지원됩니다. 제한 모드가 적용된 주권 지역에서는 지원되지 않습니다. 제한 모드에서 NetApp Backup and Recovery ONTAP 볼륨 데이터의 백업 및 복원만 지원합니다. https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["ONTAP 데이터에 대해 지원되는 백업 대상 목록 보기"^] 애플리케이션 데이터와 가상 머신 데이터의 백업 및 복원은 지원되지 않습니다. 
 
 
 | NetApp Data Classification  a| 
