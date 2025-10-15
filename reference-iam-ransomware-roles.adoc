@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-iam-ransomware-roles.html 
 keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin, 
-summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience 에 대한 액세스 권한을 제공하는 역할을 부여할 수 있습니다. 
+summary: 랜섬웨어 복원력은 권한 작업 및 보고서에 대한 액세스를 관리하기 위해 다양한 사용자 역할을 제공합니다. 
 ---
 = NetApp Console 의 랜섬웨어 복원력 액세스 역할
 :hardbreaks:
@@ -22,32 +22,26 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 * 랜섬웨어 복원력 사용자 동작 뷰어
 
 
-역할에 따라 설정과 작업에 대한 액세스 권한이 달라집니다.  의심스러운 사용자 행동 활동을 구성하거나 보려면 사용자 행동 역할 중 하나를 사용해야 합니다.
+역할은 설정과 작업에 대한 다양한 수준의 액세스 권한을 부여합니다.
 
-다음 표는 각 역할이 수행할 수 있는 작업을 보여줍니다.
+Ransomware Resilience 사용자 동작 관리자 및 사용자 동작 뷰어 역할에 사용 가능한 작업은 다음으로 제한됩니다. link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["의심스러운 사용자 활동"^]. 이러한 역할은 랜섬웨어 복원력 관리자 또는 뷰어 역할에 추가되도록 설계되었습니다. 의심스러운 사용자 동작 설정을 구성하고 알림에 대응하려면 사용자에게 랜섬웨어 복원력 사용자 동작 관리자 역할이 있어야 합니다. 의심스러운 사용자 동작 알림만 보려면 사용자에게 랜섬웨어 복원력 사용자 동작 뷰어 역할이 있어야 합니다.
 
-[cols="40,20a,20a,20a,20a"]
+다음 표에서는 랜섬웨어 복원력 관리자 역할과 랜섬웨어 복원력 뷰어 역할에서 사용 가능한 작업을 구분하여 보여줍니다.
+
+[cols="40,20a,20a"]
 |===
-| 특징과 동작 | 랜섬웨어 복원력 관리자 | 랜섬웨어 복원력 뷰어 | 랜섬웨어 복원력 사용자 행동 관리자 | 랜섬웨어 복원력 사용자 동작 뷰어 
+| 특징과 동작 | 랜섬웨어 복원력 관리자 | 랜섬웨어 복원력 뷰어 
 
 
 | 대시보드 및 모든 탭 보기  a| 
 예
  a| 
 예
- a| 
-아니요
- a| 
-아니요
 
 
 
 | 대시보드에서 권장 사항 상태를 업데이트합니다.  a| 
 예
- a| 
-아니요
- a| 
-아니요
  a| 
 아니요
 
@@ -57,19 +51,11 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 예
  a| 
 아니요
- a| 
-아니요
- a| 
-아니요
 
 
 
 | 워크로드 검색 시작  a| 
 예
- a| 
-아니요
- a| 
-아니요
  a| 
 아니요
 
@@ -79,22 +65,14 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 예
  a| 
 아니요
- a| 
-아니요
- a| 
-아니요
 
 
 
-5+| *보호 탭에서*: 
+3+| *보호 탭에서*: 
 
 
 | 보호 계획 추가, 수정 또는 삭제  a| 
 예
- a| 
-아니요
- a| 
-아니요
  a| 
 아니요
 
@@ -104,19 +82,11 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 예
  a| 
 아니요
- a| 
-아니요
- a| 
-아니요
 
 
 
 | 민감한 데이터에 대한 노출 식별  a| 
 예
- a| 
-아니요
- a| 
-아니요
  a| 
 아니요
 
@@ -126,10 +96,6 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 예
  a| 
 예
- a| 
-아니요
- a| 
-아니요
 
 
 
@@ -137,10 +103,6 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 예
  a| 
 예
- a| 
-아니요
- a| 
-아니요
 
 
 
@@ -148,19 +110,11 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 예
  a| 
 예
- a| 
-아니요
- a| 
-아니요
 
 
 
 | 보호 그룹 생성, 편집 또는 삭제  a| 
 예
- a| 
-아니요
- a| 
-아니요
  a| 
 아니요
 
@@ -170,33 +124,21 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 예
  a| 
 예
- a| 
-아니요
- a| 
-아니요
 
 
 
-5+| *알림 탭에서*: 
+3+| *알림 탭에서*: 
 
 
 | 알림 및 알림 세부 정보 보기  a| 
 예
  a| 
 예
- a| 
-아니요
- a| 
-아니요
 
 
 
 | 사고 상태 편집  a| 
 예
- a| 
-아니요
- a| 
-아니요
  a| 
 아니요
 
@@ -206,10 +148,6 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 예
  a| 
 아니요
- a| 
-아니요
- a| 
-아니요
 
 
 
@@ -217,19 +155,11 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 예
  a| 
 예
- a| 
-아니요
- a| 
-아니요
 
 
 
 | 사고를 기각하거나 해결합니다  a| 
 예
- a| 
-아니요
- a| 
-아니요
  a| 
 아니요
 
@@ -239,19 +169,11 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 예
  a| 
 아니요
- a| 
-아니요
- a| 
-아니요
 
 
 
 | 영향을 받은 파일의 전체 목록을 받으세요  a| 
 예
- a| 
-아니요
- a| 
-아니요
  a| 
 아니요
 
@@ -261,10 +183,6 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 예
  a| 
 예
- a| 
-아니요
- a| 
-아니요
 
 
 
@@ -272,22 +190,14 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 아니요
  a| 
 아니요
- a| 
-예
- a| 
-예
 
 
 
-5+| *복구 탭에서*: 
+3+| *복구 탭에서*: 
 
 
 | 영향을 받은 파일 다운로드  a| 
 예
- a| 
-아니요
- a| 
-아니요
  a| 
 아니요
 
@@ -297,10 +207,6 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 예
  a| 
 아니요
- a| 
-아니요
- a| 
-아니요
 
 
 
@@ -308,10 +214,6 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 예
  a| 
 예
- a| 
-아니요
- a| 
-아니요
 
 
 
@@ -319,22 +221,14 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 예
  a| 
 예
- a| 
-아니요
- a| 
-아니요
 
 
 
-5+| *설정 탭에서*: 
+3+| *설정 탭에서*: 
 
 
 | 백업 대상 추가 또는 수정  a| 
 예
- a| 
-아니요
- a| 
-아니요
  a| 
 아니요
 
@@ -344,10 +238,6 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 예
  a| 
 예
- a| 
-아니요
- a| 
-아니요
 
 
 
@@ -355,19 +245,11 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 예
  a| 
 예
- a| 
-아니요
- a| 
-아니요
 
 
 
 | SIEM 대상 추가 또는 수정  a| 
 예
- a| 
-아니요
- a| 
-아니요
  a| 
 아니요
 
@@ -377,19 +259,11 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 예
  a| 
 아니요
- a| 
-아니요
- a| 
-아니요
 
 
 
 | 준비 훈련 시작  a| 
 예
- a| 
-아니요
- a| 
-아니요
  a| 
 아니요
 
@@ -399,19 +273,11 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 예
  a| 
 아니요
- a| 
-아니요
- a| 
-아니요
 
 
 
 | 편집 준비 훈련  a| 
 예
- a| 
-아니요
- a| 
-아니요
  a| 
 아니요
 
@@ -421,19 +287,11 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 예
  a| 
 예
- a| 
-아니요
- a| 
-아니요
 
 
 
 | 검색 구성 업데이트  a| 
 예
- a| 
-아니요
- a| 
-아니요
  a| 
 아니요
 
@@ -443,10 +301,6 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 예
  a| 
 예
- a| 
-아니요
- a| 
-아니요
 
 
 
@@ -454,23 +308,15 @@ summary: NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience �
 아니요
  a| 
 아니요
- a| 
-예
- a| 
-아니요
 
 
 
-5+| *보고서 탭에서*: 
+3+| *보고서 탭에서*: 
 
 
 | 보고서 다운로드  a| 
 예
  a| 
 예
- a| 
-아니요
- a| 
-아니요
 
 |===

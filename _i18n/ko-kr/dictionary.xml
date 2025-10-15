@@ -2207,9 +2207,7 @@
   <block id="05271cfa0bdeea693a59837fb97cbc3b" category="list-text"><block ref="05271cfa0bdeea693a59837fb97cbc3b" category="inline-link-macro-rx"></block></block>
   <block id="d5c64a8daa89e747afab2353c532cfd0" category="inline-link-macro">NetApp Console IAM 시작하기</block>
   <block id="065933ac7339c32c2a386f3f69e4fd61" category="list-text"><block ref="065933ac7339c32c2a386f3f69e4fd61" category="inline-link-macro-rx"></block></block>
-  <block id="470bbf3695958272c2830107baeb6411" category="summary">NetApp Console 내에서 사용자에게 NetApp Ransomware Resilience 에 대한 액세스 권한을 제공하는 역할을 부여할 수 있습니다.</block>
   <block id="5f87170a21a0b0d135060af816ac1433" category="doc">NetApp Console 의 랜섬웨어 복원력 액세스 역할</block>
-  <block id="e6d88107afe61c1a78c0dac0689d8fac" category="paragraph">다음 표는 각 역할이 수행할 수 있는 작업을 보여줍니다.</block>
   <block id="2961ef9224153d664a9bde6ee6ef2570" category="cell">대시보드에서 권장 사항 상태를 업데이트합니다.</block>
   <block id="bb73fa2a07d0c544491039dc1ffed7b8" category="cell">워크로드 재발견 시작</block>
   <block id="26548eb85488e3cdc0f0b9b27802995f" category="cell">*보호 탭에서*:</block>
@@ -2219,7 +2217,6 @@
   <block id="e1b7f478f4648932399a0f8d6835740b" category="cell">보호 계획 및 세부 정보 목록</block>
   <block id="8921dd8678af3de7359bee784af9a8e0" category="cell">보호 그룹 목록</block>
   <block id="97803e7af23cd9dd5e46bef4245a8480" category="cell">보호 그룹 세부 정보 보기</block>
-  <block id="70348d94ac22a6df8ff175b1e3a7535b" category="cell">보호 그룹 생성, 편집 또는 삭제</block>
   <block id="4330b42a340140b836c42bbe9c7105be" category="cell">데이터 다운로드</block>
   <block id="b1e60ac72e50f485ca0a5ea9c82143d2" category="cell">*알림 탭에서*:</block>
   <block id="a0da34eb7fa7ce71299612d3548b6f6a" category="cell">알림 및 알림 세부 정보 보기</block>
@@ -5519,8 +5516,6 @@
   <block id="a11961cab6627eac643ea36ae57ce8df" category="sidebar">Keystone 역할</block>
   <block id="7654fe6ca44295ba5f844fc9798f0103" category="sidebar">스토리지 역할</block>
   <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="sidebar">데이터 서비스 역할</block>
-  <block id="38dd106db79e0463f64b237d9de58a8e" category="sidebar">백업 및 복구 역할</block>
-  <block id="2879d04f18c304fb2a3d5cf00deff6e2" category="sidebar">재해 복구 역할</block>
   <block id="4dd7bf281f080fe43c775a741f9f2cc1" category="sidebar">파트너 기관</block>
   <block id="d6cca643be1ccfaa32ccfdc068061f15" category="sidebar">조직 파트너십에 대해 알아보세요</block>
   <block id="d88a163f40de4d60f08d7006db6dbc69" category="sidebar">조직 파트너십을 만드세요</block>
@@ -5554,7 +5549,6 @@
   <block id="e4c0002e4f9f19273bc004922899fb85" category="sidebar">콘솔 네트워크 액세스(레거시)</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">지식과 지원</block>
   <block id="253b718b7b0bb8f190e2ebe1c721295e" category="paragraph">랜섬웨어 복원력 역할은 사용자에게 NetApp Ransomware Resilience 에 대한 액세스 권한을 제공합니다. 랜섬웨어 복원력은 다음과 같은 역할을 지원합니다.</block>
-  <block id="b7055c90f2b38b6e2d3cddd08ec5c936" category="paragraph">역할에 따라 설정과 작업에 대한 액세스 권한이 달라집니다.  의심스러운 사용자 행동 활동을 구성하거나 보려면 사용자 행동 역할 중 하나를 사용해야 합니다.</block>
   <block id="f75989b6aa2a7a3c16b04e40aebffd8f" category="paragraph">*조직 관리자* 또는 *폴더 또는 프로젝트 관리자* 역할을 맡은 사용자는 다른 사용자에게 역할을 할당할 책임이 있습니다. 프로젝트 또는 폴더 기준으로 액세스 역할을 할당할 수 있습니다. 예를 들어, 한 프로젝트에는 사용자에게 랜섬웨어 복원력 관리자 역할을 할당하고, 다른 프로젝트에는 SnapCenter 관리자 역할을 할당할 수 있습니다. 또는 사용자에게 특정 폴더 내의 모든 프로젝트에 대한 분류 관리자 역할이 필요한 경우 폴더 수준에서 이 역할을 부여할 수 있습니다.</block>
   <block id="e55d79a6c1774cf0f39d67ca04d67bc0" category="paragraph">액세스 역할을 사용하여 사용자가 수행해야 하는 특정 작업에 따라 스토리지 리소스에 대한 액세스 권한을 할당합니다. 예를 들어, 사용자가 랜섬웨어 복원력과 상호 작용해야 하는 경우, 해당 액세스 역할이 부여된 프로젝트에 대한 랜섬웨어 복원력에 대한 보기 또는 관리 권한이 포함된 액세스 역할이 부여되어야 합니다.</block>
   <block id="e6bf2bfbd541e12c3cb2fca42df08ed3" category="paragraph">멤버는 동일한 프로젝트 내에서도, 그리고 서로 다른 프로젝트에서도 여러 역할을 맡을 수 있습니다. 예를 들어, 소규모 조직에서는 사용 가능한 모든 액세스 역할을 동일한 사용자에게 할당하는 반면, 대규모 조직에서는 사용자에게 더 전문적인 작업을 맡길 수 있습니다. 또는 조직의 랜섬웨어 복원력 관리자 역할을 한 사용자에게 할당할 수도 있습니다.  해당 예에서 사용자는 조직 내 모든 프로젝트에서 랜섬웨어 복원력 작업을 수행할 수 있습니다.</block>
@@ -5564,4 +5558,12 @@
   <block id="4ed68ecf8e006d0fab7f06897731cf53" category="list-text">새로운 에이전트를 배포할 때 유효성 검사를 통해 현재 엔드포인트에 대한 연결성을 테스트합니다. 당신이 사용하는 경우<block ref="99a33b76fea6c3306005dfd630a43c9c" category="inline-link-macro-rx"></block> , 유효성 검사에 실패합니다. 이러한 실패를 방지하려면 유효성 검사를 건너뛰세요.</block>
   <block id="cfc9caf6832f568fe347d970af78e108" category="list-text">Red Hat Enterprise Linux를 사용하는 경우 Podman 버전이 CNI 대신 Netavark Aardvark DNS를 사용하는지 확인하십시오.</block>
   <block id="a0a50b50b6bb8edb1f818d3ca9526b4b" category="cell">제한 모드가 적용된 정부 지역 및 상업 지역에서 지원됩니다. 제한 모드가 적용된 주권 지역에서는 지원되지 않습니다. 제한 모드에서 NetApp Backup and Recovery ONTAP 볼륨 데이터의 백업 및 복원만 지원합니다.<block ref="99e4ad11b9403b4c917ec7ce872ad637" category="inline-link-rx"></block> 애플리케이션 데이터와 가상 머신 데이터의 백업 및 복원은 지원되지 않습니다.</block>
+  <block id="7ce9d6824315daa5b3ba4a80bef8768d" category="summary">랜섬웨어 복원력은 권한 작업 및 보고서에 대한 액세스를 관리하기 위해 다양한 사용자 역할을 제공합니다.</block>
+  <block id="f74b0b36940f757370478cb904680fe8" category="paragraph">역할은 설정과 작업에 대한 다양한 수준의 액세스 권한을 부여합니다.</block>
+  <block id="d8ed8dce9d98718d4019d9388c24353d" category="inline-link-macro">의심스러운 사용자 활동</block>
+  <block id="592abd5ea65ad47726532e14cc5e25d7" category="paragraph">Ransomware Resilience 사용자 동작 관리자 및 사용자 동작 뷰어 역할에 사용 가능한 작업은 다음으로 제한됩니다. <block ref="ab0f0a524b6807cce9d5b60fdac0f887" category="inline-link-macro-rx"></block>. 이러한 역할은 랜섬웨어 복원력 관리자 또는 뷰어 역할에 추가되도록 설계되었습니다. 의심스러운 사용자 동작 설정을 구성하고 알림에 대응하려면 사용자에게 랜섬웨어 복원력 사용자 동작 관리자 역할이 있어야 합니다. 의심스러운 사용자 동작 알림만 보려면 사용자에게 랜섬웨어 복원력 사용자 동작 뷰어 역할이 있어야 합니다.</block>
+  <block id="6ebf0d56afdbe7f6542cf91826e113ef" category="paragraph">다음 표에서는 랜섬웨어 복원력 관리자 역할과 랜섬웨어 복원력 뷰어 역할에서 사용 가능한 작업을 구분하여 보여줍니다.</block>
+  <block id="1ea8198251e36e2c445f036c869bfd7f" category="cell">보호 그룹 생성, 편집 또는 삭제</block>
+  <block id="a8b7063e167b83f7676ad4659510d5ea" category="sidebar">백업 및 복구 역할</block>
+  <block id="ffce0d237e59f85993727b9607fade6c" category="sidebar">재해 복구 역할</block>
 </blocks>
