@@ -2,10 +2,6 @@
 :allow-uri-read: 
 
 
-다음 비디오에서는 AWS Marketplace에서 NetApp Intelligent Services 구독하는 단계를 보여줍니다.
-
-.AWS Marketplace에서 NetApp Intelligent Services 구독
-video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 .단계
 . *관리 > 자격 증명*을 선택합니다.
 . *조직 자격 증명*을 선택하세요.

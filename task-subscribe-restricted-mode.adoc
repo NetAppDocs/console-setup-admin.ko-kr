@@ -34,10 +34,6 @@ NetApp Data Classification 구독을 통해 활성화되지만 분류 사용에�
 ====
 .AWS
 --
-다음 비디오에서는 AWS Marketplace에서 NetApp Intelligent Services 구독하는 단계를 보여줍니다.
-
-.AWS Marketplace에서 NetApp Intelligent Services 구독
-video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 .단계
 . *관리 > 자격 증명*을 선택합니다.
 . *조직 자격 증명*을 선택하세요.
@@ -105,12 +101,6 @@ NetApp Console 로 리디렉션됩니다.
 다른 모든 조직이나 계정의 경우 이 단계를 반복하여 구독을 수동으로 연결해야 합니다.
 
 *** *저장*을 선택하세요.
-+
-다음 비디오에서는 Azure Marketplace에서 구독하는 단계를 보여줍니다.
-
-+
-.Azure Marketplace에서 NetApp Intelligent Services 구독
-video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 
 
 
@@ -170,19 +160,15 @@ NOTE: 귀하의 조직에서 이미 귀하의 청구 계정에서 마켓플레�
 다른 모든 조직이나 계정의 경우 이 단계를 반복하여 구독을 수동으로 연결해야 합니다.
 
 *** *저장*을 선택하세요.
-+
-다음 비디오에서는 Google Cloud Marketplace에서 구독하는 단계를 보여줍니다.
-
-+
-.Google Cloud Marketplace에서 구독하세요
-video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 
 
-.. 이 프로세스가 완료되면 콘솔의 자격 증명 페이지로 돌아가서 새 구독을 선택하세요.
+
+
+
+
+. 이 프로세스가 완료되면 콘솔의 자격 증명 페이지로 돌아가서 새 구독을 선택하세요.
 +
 image:screenshot_gcp_associate.gif["구독 할당 페이지의 스크린샷입니다."]
-
-
 
 
 
