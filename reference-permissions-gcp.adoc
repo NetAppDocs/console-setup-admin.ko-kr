@@ -14,7 +14,7 @@ summary: 콘솔 에이전트에는 클라우드 공급자에서 작업을 수행
 
 
 [role="lead"]
-NetApp Console Google Cloud에서 작업을 수행하려면 권한이 필요합니다.  이러한 권한은 NetApp 에서 제공하는 사용자 정의 역할에 포함되어 있습니다.  에이전트가 이러한 권한을 어떻게 사용하는지 이해해야 합니다.
+콘솔 에이전트에는 Google Cloud에서 작업을 수행하려면 권한이 필요합니다. 이러한 권한은 NetApp 에서 제공하는 사용자 정의 역할에 포함되어 있습니다. 에이전트가 이러한 권한을 어떻게 사용하는지 이해해야 합니다.
 
 
 
@@ -33,7 +33,7 @@ NetApp Console Google Cloud에서 작업을 수행하려면 권한이 필요합�
 [source, yaml]
 ----
 title: NetApp Console agent
-description: Permissions for the service account associated with the Console agent instance.
+description: Permissions for the service account associated with the Console agent.
 stage: GA
 includedPermissions:
 - iam.serviceAccounts.actAs

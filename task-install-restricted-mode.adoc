@@ -38,9 +38,9 @@ link:task-prepare-restricted-mode.html["네트워킹 요구 사항에 대해 알
 link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["AWS 권한을 설정하는 방법을 알아보세요"]
 
 * IAM 사용자가 AWS Marketplace를 구독하고 구독을 취소할 수 있는 권한입니다.
-* 인스턴스에 필요한 CPU 및 RAM 요구 사항을 이해합니다.
+* 에이전트의 CPU 및 RAM 요구 사항에 대한 이해.
 +
-link:task-prepare-restricted-mode.html#step-3-review-host-requirements["인스턴스 요구 사항 검토"] .
+link:task-prepare-restricted-mode.html#step-3-review-host-requirements["에이전트 요구 사항 검토"].
 
 * EC2 인스턴스에 대한 키 쌍입니다.
 
@@ -85,7 +85,7 @@ link:reference-ports-aws.html["AWS에 대한 보안 그룹 규칙 보기"] .
 
 
 .결과
-AWS는 지정된 설정으로 소프트웨어를 시작합니다.  콘솔 에이전트 인스턴스와 소프트웨어는 약 5분 안에 실행됩니다.
+AWS는 지정된 설정으로 소프트웨어를 시작합니다. 콘솔 에이전트는 약 5분 안에 배포됩니다.
 
 .다음은 무엇인가요?
 NetApp Console 설정합니다.
@@ -139,7 +139,7 @@ image:screenshot_aws_iam_role.gif["AWS의 인스턴스 구성 페이지에 있�
 
 
 .결과
-AWS는 지정된 설정으로 소프트웨어를 시작합니다.  콘솔 에이전트 인스턴스와 소프트웨어는 약 5분 안에 실행됩니다.
+AWS는 지정된 설정으로 소프트웨어를 시작합니다. 콘솔 에이전트는 약 5분 안에 배포됩니다.
 
 .다음은 무엇인가요?
 콘솔을 설정합니다.
@@ -180,7 +180,7 @@ VM을 구성할 때 다음 사항에 유의하세요.
 image:screenshot-azure-sku.png["SKU 필드에서 기본을 선택할 수 있는 Azure에서 새 IP 주소를 만드는 스크린샷입니다."]
 
 +
-대신 표준 SKU IP 주소를 사용하면 콘솔은 공용 IP 대신 콘솔 에이전트의 _개인_ IP 주소를 사용합니다.  콘솔에 액세스하는 데 사용하는 컴퓨터가 해당 개인 IP 주소에 액세스할 수 없는 경우 콘솔의 작업은 실패합니다.
+대신 표준 SKU IP 주소를 사용하면 콘솔은 공용 IP 대신 콘솔 에이전트의 _개인_ IP 주소를 사용합니다. 콘솔에 액세스하는 데 사용하는 컴퓨터가 해당 개인 IP 주소에 액세스할 수 없는 경우 콘솔의 작업은 실패합니다.
 
 +
 https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Azure 설명서: 공용 IP SKU"^]

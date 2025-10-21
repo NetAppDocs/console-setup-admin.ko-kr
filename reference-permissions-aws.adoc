@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-permissions-aws.html 
 keywords: permissions, actions, aws, aws permissions, top secret, secret, aws top secret, aws secret, aws govcloud, govcloud, govcloud permissions, secret permissions, top secret permissions 
-summary: NetApp Console AWS에서 에이전트 인스턴스를 시작하면 해당 인스턴스에 정책이 첨부되어 에이전트가 해당 AWS 계정 내의 리소스와 프로세스를 관리할 수 있는 권한을 부여합니다.  에이전트는 EC2, S3, CloudFormation, IAM, Key Management Service 등 여러 AWS 서비스에 대한 API 호출을 수행하기 위한 권한을 사용합니다. 
+summary: NetApp Console AWS에서 에이전트를 시작하면 에이전트에 해당 AWS 계정 내의 리소스와 프로세스를 관리할 수 있는 권한을 제공하는 정책이 에이전트에 연결됩니다. 에이전트는 EC2, S3, CloudFormation, IAM, Key Management Service 등 여러 AWS 서비스에 대한 API 호출을 수행하기 위한 권한을 사용합니다. 
 ---
 = 콘솔 에이전트에 대한 AWS 권한
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: NetApp Console AWS에서 에이전트 인스턴스를 시작하면 해�
 
 
 [role="lead"]
-NetApp Console AWS에서 콘솔 에이전트 인스턴스를 시작하면 해당 인스턴스에 정책을 연결하여 에이전트가 해당 AWS 계정 내의 리소스와 프로세스를 관리할 수 있는 권한을 부여합니다.  에이전트는 EC2, S3, CloudFormation, IAM, 키 관리 서비스(KMS) 등 여러 AWS 서비스에 대한 API 호출을 수행하기 위한 권한을 사용합니다.
+NetApp Console AWS에서 콘솔 에이전트를 시작하면 에이전트에 해당 AWS 계정 내의 리소스와 프로세스를 관리할 수 있는 권한을 제공하는 정책이 에이전트에 연결됩니다. 에이전트는 EC2, S3, CloudFormation, IAM, 키 관리 서비스(KMS) 등 여러 AWS 서비스에 대한 API 호출을 수행하기 위한 권한을 사용합니다.
 
 
 
