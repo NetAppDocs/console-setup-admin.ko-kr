@@ -572,8 +572,6 @@
   <block id="b4b78d037549f1e53319a933fd923727" category="list-text">로그인 후 콘솔을 설정하세요.</block>
   <block id="fa4a4ed3171c9645519ee525ed212db9" category="list-text">콘솔 에이전트와 연결할 콘솔 조직을 지정합니다.</block>
   <block id="d1caa1543690181f63b8c0e0933c0c49" category="paragraph">콘솔 에이전트가 온프레미스에 설치된 경우 제한 모드는 지원되지 않습니다.</block>
-  <block id="af60e7ca775342cbe207d574ae3a82ef" category="paragraph">다음 비디오에서는 AWS Marketplace에서 NetApp Intelligent Services 구독하는 단계를 보여줍니다.</block>
-  <block id="1cfe9a2e660a541826be5b5cc3018fdd" category="video-title">AWS Marketplace에서 NetApp Intelligent Services 구독</block>
   <block id="aaf23e1cf00fee0789e1c392da395cc9" category="list-text">콘솔 에이전트와 연결된 자격 증명 세트에 대한 작업 메뉴를 선택한 다음 *구독 구성*을 선택합니다.</block>
   <block id="601c60f4bc1d60fb12bbba2d26b90b33" category="paragraph">콘솔 에이전트와 연결된 자격 증명을 선택해야 합니다.  NetApp Console 과 연결된 자격 증명에는 마켓플레이스 구독을 연결할 수 없습니다.</block>
   <block id="0d28acbceed906f52a206d0f3fb0add2" category="inline-image-macro">기존 자격 증명 세트에 대한 작업 메뉴의 스크린샷입니다.</block>
@@ -593,8 +591,6 @@
   <block id="7dffa6296286b12f66d638f53340316c" category="list-text">메시지가 표시되면 Azure 계정에 로그인하세요.</block>
   <block id="9dc9a5b2f23fe90a0fd71125f3034dfd" category="list-text">양식을 작성하고 *구독*을 선택하세요.</block>
   <block id="3221538307211e131f96e1a83b1a5235" category="list-text">구독 절차가 완료되면 *지금 계정 구성*을 선택하세요.</block>
-  <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">다음 비디오에서는 Azure Marketplace에서 구독하는 단계를 보여줍니다.</block>
-  <block id="930540e35d6a8bd81f5882c46e1f93c2" category="video-title">Azure Marketplace에서 NetApp Intelligent Services 구독</block>
   <block id="ef5d79e3ae5671ca28e5f6e3b02eed27" category="list-text">선택한 자격 증명으로 기존 구독을 구성하려면 드롭다운 목록에서 Google Cloud 프로젝트와 구독을 선택한 다음 *구성*을 선택합니다.</block>
   <block id="fff6f5125be05a94543d2e88dbd30b27" category="inline-image-macro">Google Cloud 자격 증명을 위해 선택된 Google Cloud 프로젝트 및 구독의 스크린샷입니다.</block>
   <block id="cab980518d03aa36afc924b709828a6e" category="paragraph"><block ref="cab980518d03aa36afc924b709828a6e" category="inline-image-macro-rx" type="image"></block></block>
@@ -613,8 +609,6 @@
   <block id="825c72d4114a9a71a355213f6b79c642" category="list-text">*구독 할당* 페이지의 단계를 완료하세요.</block>
   <block id="58575503869d282abe104097770af48c" category="inline-link">NetApp Console 내 Cloud Volumes ONTAP 페이지</block>
   <block id="f363e3b5ffcff31a7405fb7c63982e48" category="admonition">귀하의 조직에서 이미 귀하의 청구 계정에서 마켓플레이스 구독을 보유한 사람이 있는 경우 귀하는 다음으로 리디렉션됩니다.<block ref="eeda9d490d323c6921491a4ef94ce954" category="inline-link-rx"></block> 대신에.  예상치 못한 상황이라면 NetApp 영업팀에 문의하세요.  Google은 Google 결제 계정당 하나의 구독만 허용합니다.</block>
-  <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">다음 비디오에서는 Google Cloud Marketplace에서 구독하는 단계를 보여줍니다.</block>
-  <block id="c9b7d3dfb0a91a99ab5deba597b6741a" category="video-title">Google Cloud Marketplace에서 구독하세요</block>
   <block id="a5a1d94d16067bff86c06d08991b799b" category="list-text">이 프로세스가 완료되면 콘솔의 자격 증명 페이지로 돌아가서 새 구독을 선택하세요.</block>
   <block id="467e5d6bbcd0ea531c8f7285b69e29ee" category="inline-image-macro">구독 할당 페이지의 스크린샷입니다.</block>
   <block id="60d2ed6f6e1774535b6e69274800381d" category="paragraph"><block ref="60d2ed6f6e1774535b6e69274800381d" category="inline-image-macro-rx" type="image"></block></block>
@@ -5602,4 +5596,5 @@
   <block id="8a62551759227881974703cf10bfc946" category="paragraph"><block ref="e2790838ef7051b1907224142bc33625" category="inline-link-macro-rx"></block>.</block>
   <block id="446a691d3cf6457cb60610b81794fdbc" category="paragraph">AWS는 지정된 설정으로 소프트웨어를 시작합니다. 콘솔 에이전트는 약 5분 안에 배포됩니다.</block>
   <block id="118b5697b68c5f4ada51d65dffac2674" category="paragraph">대신 표준 SKU IP 주소를 사용하면 콘솔은 공용 IP 대신 콘솔 에이전트의 _개인_ IP 주소를 사용합니다. 콘솔에 액세스하는 데 사용하는 컴퓨터가 해당 개인 IP 주소에 액세스할 수 없는 경우 콘솔의 작업은 실패합니다.</block>
+  <block id="d1cb423c9810b1ddd65eea821845fff2" category="admonition">의심스러운 사용자 활동 감지를 활성화하려면 콘솔 조직 관리자 역할이 있어야 합니다.</block>
 </blocks>
