@@ -148,7 +148,7 @@ CPU:: 8개 코어 또는 8개 vCPU
 숫양:: 32GB
 
 
-AWS EC2 인스턴스 유형:: 위의 CPU 및 RAM 요구 사항을 충족하는 인스턴스 유형입니다.  t3.2xlarge를 추천합니다.
+AWS EC2 인스턴스 유형:: CPU 및 RAM 요구 사항을 충족하는 인스턴스 유형입니다.  NetApp t3.2xlarge를 권장합니다.
 
 
 키 쌍:: 콘솔 에이전트를 생성할 때 인스턴스와 함께 사용할 EC2 키 쌍을 선택해야 합니다.
@@ -164,10 +164,10 @@ IMDSv2를 사용할 때 PUT 응답 홉 제한:: EC2 인스턴스에서 IMDSv2가
 --
 
 
-Azure VM 크기:: 위의 CPU 및 RAM 요구 사항을 충족하는 인스턴스 유형입니다.  Standard_D8s_v3을 권장합니다.
+Azure VM 크기:: CPU 및 RAM 요구 사항을 충족하는 인스턴스 유형입니다.  NetApp Standard_D8s_v3를 권장합니다.
 
 
-Google Cloud 머신 유형:: 위의 CPU 및 RAM 요구 사항을 충족하는 인스턴스 유형입니다.  n2-standard-8을 추천합니다.
+Google Cloud 머신 유형:: CPU 및 RAM 요구 사항을 충족하는 인스턴스 유형입니다.  NetApp n2-standard-8을 권장합니다.
 +
 --
 콘솔 에이전트는 OS가 있는 VM 인스턴스의 Google Cloud에서 지원됩니다. https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["보호된 VM 기능"^]

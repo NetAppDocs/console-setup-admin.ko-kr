@@ -140,16 +140,16 @@ RHEL 7 또는 CentOS 7에서 기존 에이전트를 실행 중인 경우 NetApp 
 ====
 .표준 모드
 --
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["온프레미스에 콘솔 에이전트 설치 및 설정"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html["AWS에 콘솔 에이전트를 수동으로 설치합니다."]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html["Azure에 콘솔 에이전트를 수동으로 설치합니다."]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html["Google Cloud에 콘솔 에이전트를 수동으로 설치합니다."]
+* https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["온프레미스에 콘솔 에이전트 설치 및 설정"]
+* https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-aws-manual.html["AWS에 콘솔 에이전트를 수동으로 설치합니다."]
+* https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-azure-manual.html["Azure에 콘솔 에이전트를 수동으로 설치합니다."]
+* https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-google-manual.html["Google Cloud에 콘솔 에이전트를 수동으로 설치합니다."]
 
 
 --
 .제한 모드
 --
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html["제한 모드에서 배포 준비"]
+https://docs.netapp.com/us-en/console-setup-admin/task-prepare-restricted-mode.html["제한 모드에서 배포 준비"]
 
 --
 ====
@@ -161,7 +161,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.ht
 
 * https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-adding-systems.html["기존 Cloud Volumes ONTAP 시스템 추가"^]
 * https://docs.netapp.com/us-en/storage-management-ontap-onprem/task-discovering-ontap.html["온프레미스 ONTAP 클러스터를 찾아보세요"^]
-* https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-creating-fsx-working-environment.html["ONTAP 시스템용 FSx 생성 또는 검색"^]
+* https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-create-fsx-system.html["ONTAP 시스템용 FSx 생성 또는 검색"^]
 * https://docs.netapp.com/us-en/storage-management-azure-netapp-files/task-create-system.html["Azure NetApp Files 시스템 만들기"^]
 * https://docs.netapp.com/us-en/storage-management-e-series/task-discover-e-series.html["E-시리즈 시스템을 알아보세요"^]
 * https://docs.netapp.com/us-en/storage-management-storagegrid/task-discover-storagegrid.html["StorageGRID 시스템을 알아보세요"^]

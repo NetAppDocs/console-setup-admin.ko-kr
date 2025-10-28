@@ -177,7 +177,7 @@ NTP 활성화:: NetApp Data Classification 사용하여 회사 데이터 소스�
 
 CPU:: 8개 코어 또는 8개 vCPU
 숫양:: 32GB
-AWS EC2 인스턴스 유형:: 위의 CPU 및 RAM 요구 사항을 충족하는 인스턴스 유형입니다.  t3.2xlarge를 추천합니다.
+AWS EC2 인스턴스 유형:: CPU 및 RAM 요구 사항을 충족하는 인스턴스 유형입니다.  NetApp t3.2xlarge를 권장합니다.
 
 
 

@@ -50,6 +50,7 @@ NOTE: 콘솔 에이전트는 UID와 GID 범위를 19000~19200으로 예약합니
 
 
 --
+Azure VM 크기:: CPU 및 RAM 요구 사항을 충족하는 인스턴스 유형입니다.  NetApp Standard_D8s_v3를 권장합니다.
 하이퍼바이저:: 지원되는 운영 체제를 실행하도록 인증된 베어 메탈 또는 호스팅 하이퍼바이저가 필요합니다.
 [[podman-versions]]운영 체제 및 컨테이너 요구 사항:: 콘솔 에이전트는 표준 모드 또는 제한 모드에서 콘솔을 사용할 때 다음 운영 체제에서 지원됩니다.  에이전트를 설치하기 전에 컨테이너 오케스트레이션 도구가 필요합니다.
 +
@@ -106,19 +107,6 @@ Docker 엔진 23.0.6~28.0.0.
 지원되지 않음
 
 |===
---
-Azure VM 크기:: 위의 CPU 및 RAM 요구 사항을 충족하는 인스턴스 유형입니다.  Standard_D8s_v3을 권장합니다.
-/opt의 디스크 공간:: 100GiB의 공간이 사용 가능해야 합니다.
-+
---
-에이전트는 다음을 사용합니다. `/opt` 설치하려면 `/opt/application/netapp` 디렉토리와 그 내용.
-
---
-/var의 디스크 공간:: 20GiB의 공간이 사용 가능해야 합니다.
-+
---
-콘솔 에이전트에는 이 공간이 필요합니다. `/var` Docker나 Podman은 이 디렉토리 내에서 컨테이너를 생성하도록 설계되었기 때문입니다.  특히, 그들은 컨테이너를 생성할 것입니다. `/var/lib/containers/storage` 예배 규칙서.  이 공간에서는 외부 마운트나 심볼릭 링크가 작동하지 않습니다.
-
 --
 
 
@@ -466,7 +454,7 @@ image:screenshot_azure_shell_upload.png["파일 업로드 옵션을 선택할 �
 +
 [source, azurecli]
 ----
-az role definition create --role-definition Connector_Policy.json
+az role definition create --role-definition agent_Policy.json
 ----
 
 
@@ -537,7 +525,7 @@ image:screenshot_azure_shell_upload.png["파일 업로드 옵션을 선택할 �
 +
 [source, azurecli]
 ----
-az role definition create --role-definition Connector_Policy.json
+az role definition create --role-definition agent_Policy.json
 ----
 +
 이제 콘솔 에이전트 가상 머신에 할당할 수 있는 콘솔 운영자라는 사용자 지정 역할이 생겼습니다.
