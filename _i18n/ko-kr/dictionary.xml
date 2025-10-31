@@ -1012,7 +1012,6 @@
   <block id="e95d0df05962f4456b8b569c54b396c6" category="paragraph">4.0.0 릴리스는 표준 모드와 제한 모드에서 사용할 수 있습니다.</block>
   <block id="5412276bd0dd11677309c5862e9a5a84" category="section-title">필수 네트워크 엔드포인트의 통합 및 축소</block>
   <block id="d0994d4e248da3f28077f3de0aa07b31" category="paragraph">NetApp 콘솔 및 콘솔 에이전트에 필요한 네트워크 엔드포인트를 줄여 보안을 강화하고 배포를 간소화했습니다.  중요한 점은 버전 4.0.0 이전의 모든 배포가 계속해서 완벽하게 지원된다는 것입니다.  기존 에이전트에서는 이전 엔드포인트를 계속 사용할 수 있지만 NetApp 에이전트 업그레이드가 성공적으로 완료되었음을 확인한 후 현재 엔드포인트에 대한 방화벽 규칙을 업데이트할 것을 강력히 권장합니다.</block>
-  <block id="cca12c7916c4a96b099460567ed56f7b" category="list-text"><block ref="8aad0fd6d4c3bc8fa0ee8715b00de090" category="inline-link-macro-rx"></block> .</block>
   <block id="8880ac717c8ca7c5aacda1dbf0aa76b4" category="inline-link-macro">필수 엔드포인트에 대해 자세히 알아보세요.</block>
   <block id="a65e1c365f170de138a296cb93571b83" category="list-text"><block ref="a65e1c365f170de138a296cb93571b83" category="inline-link-macro-rx"></block></block>
   <block id="dcd681e02807cfe12b61283485a64b57" category="section-title">콘솔 에이전트의 VCenter 배포 지원</block>
@@ -5547,7 +5546,6 @@
   <block id="446a691d3cf6457cb60610b81794fdbc" category="paragraph">AWS는 지정된 설정으로 소프트웨어를 시작합니다. 콘솔 에이전트는 약 5분 안에 배포됩니다.</block>
   <block id="118b5697b68c5f4ada51d65dffac2674" category="paragraph">대신 표준 SKU IP 주소를 사용하면 콘솔은 공용 IP 대신 콘솔 에이전트의 _개인_ IP 주소를 사용합니다. 콘솔에 액세스하는 데 사용하는 컴퓨터가 해당 개인 IP 주소에 액세스할 수 없는 경우 콘솔의 작업은 실패합니다.</block>
   <block id="d1cb423c9810b1ddd65eea821845fff2" category="admonition">의심스러운 사용자 활동 감지를 활성화하려면 콘솔 조직 관리자 역할이 있어야 합니다.</block>
-  <block id="148a5defddc98b9d994f39780f74e348" category="cell">*이전 종료점*</block>
   <block id="c563d78603e1e09616c6c043a19061ba" category="cell">*4.0.0 이상용 엔드포인트*</block>
   <block id="1463a95efc33a52765f03569e1e39a10" category="cell">*목적*</block>
   <block id="3b02fb538695ecfedde92943f6fd865e" category="paragraph">NetApp 지원팀에 라이선스를 요청하고 문의하세요.</block>
@@ -5599,4 +5597,7 @@
   <block id="a64b4879b658ef7dd1a5bf863f66e510" category="section-title">클라우드 공급자 엔드포인트가 콘솔 에이전트에 연결되었습니다.</block>
   <block id="334af2b72c201a4f9aea3650a21ea8ec" category="paragraph">콘솔 에이전트를 설치하기 전에 클라우드 공급자 네트워크 엔드포인트 액세스를 설정하세요.</block>
   <block id="9ccb545b97d1ad0ce41d2577f6ae2e82" category="section-title">3단계: 콘솔 에이전트에 권한 제공</block>
+  <block id="9c4179cb78e78f8bd52b0a9525df84e3" category="cell">*3.9.55 이하 엔드포인트*</block>
+  <block id="af1ce09274091f662d34169f09b1482e" category="inline-link-macro">엔드포인트 목록을 업데이트하고 비교를 보는 방법을 알아보세요.</block>
+  <block id="87bf0287482e9096c75805420a81b7ea" category="list-text"><block ref="eaf36d8f2aa9f00c9dd600ce08237a22" category="inline-link-macro-rx"></block>.</block>
 </blocks>

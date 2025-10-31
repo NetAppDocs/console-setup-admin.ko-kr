@@ -152,7 +152,7 @@ image:https://docs.netapp.com/us-en/console-setup-admin/media/screenshot-agent-i
 
 NetApp 콘솔 및 콘솔 에이전트에 필요한 네트워크 엔드포인트를 줄여 보안을 강화하고 배포를 간소화했습니다.  중요한 점은 버전 4.0.0 이전의 모든 배포가 계속해서 완벽하게 지원된다는 것입니다.  기존 에이전트에서는 이전 엔드포인트를 계속 사용할 수 있지만 NetApp 에이전트 업그레이드가 성공적으로 완료되었음을 확인한 후 현재 엔드포인트에 대한 방화벽 규칙을 업데이트할 것을 강력히 권장합니다.
 
-* link:https://docs.netapp.com/us-en/console-setup-admin/reference-networking-saas-console-previous.html#update-endpoint-list["엔드포인트 목록을 업데이트하는 방법을 알아보세요"] .
+* link:https://docs.netapp.com/us-en/console-setup-admin/reference-networking-saas-console-previous.html#update-endpoint-list["엔드포인트 목록을 업데이트하고 비교를 보는 방법을 알아보세요."].
 * link:https://docs.netapp.com/us-en/console-setup-admin/reference-networking-saas-console.html["필수 엔드포인트에 대해 자세히 알아보세요."]
 
 
