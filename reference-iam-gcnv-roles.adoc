@@ -19,4 +19,5 @@ NetApp Console 에서 Google Cloud NetApp Volumes 에 대한 액세스 권한을
 Google Cloud NetApp Volumes 다음 역할을 사용합니다.
 
 * * Google Cloud NetApp Volumes 관리자*: 콘솔에서 Google Cloud NetApp Volumes 검색하고 관리합니다.
+* * Google Cloud NetApp Volumes 사용자*: 콘솔에서 Google Cloud NetApp Volumes 확인하세요.
 

@@ -5600,4 +5600,8 @@
   <block id="9c4179cb78e78f8bd52b0a9525df84e3" category="cell">*3.9.55 이하 엔드포인트*</block>
   <block id="af1ce09274091f662d34169f09b1482e" category="inline-link-macro">엔드포인트 목록을 업데이트하고 비교를 보는 방법을 알아보세요.</block>
   <block id="87bf0287482e9096c75805420a81b7ea" category="list-text"><block ref="eaf36d8f2aa9f00c9dd600ce08237a22" category="inline-link-macro-rx"></block>.</block>
+  <block id="2962c1a7fe92cfcf3549be1fab41fe03" category="list-text">* Google Cloud NetApp Volumes 사용자*: 콘솔에서 Google Cloud NetApp Volumes 확인하세요.</block>
+  <block id="17cdef451662108afad065e4f519eb25" category="inline-link-macro">Google Cloud NetApp Volumes 사용자</block>
+  <block id="19183ef46064eef64c72d986b0ab1571" category="cell"><block ref="19183ef46064eef64c72d986b0ab1571" category="inline-link-macro-rx"></block></block>
+  <block id="caf28471250404467f130940e7fd6e28" category="cell">Google Cloud NetApp Volumes 사용자 역할이 있는 사용자는 Google Cloud NetApp Volumes 볼 수 있습니다.</block>
 </blocks>
