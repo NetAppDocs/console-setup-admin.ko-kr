@@ -460,7 +460,6 @@
   <block id="7b948bab9b4003048f0e729d2dd1b238" category="cell">지원되는 OS 버전</block>
   <block id="b16ae794e2eeb2136b3c004c421fa714" category="cell">지원되는 에이전트 버전</block>
   <block id="301e9d698830f505ef2566dfc5a26274" category="cell">필수 컨테이너 도구</block>
-  <block id="f2ee533052f51406bfa3283372f0af96" category="cell">SELinux a</block>
   <block id="c73bbd3786350b0a8d3577d82afdf489" category="paragraph">레드햇 엔터프라이즈 리눅스</block>
   <block id="94d03d842e38bfc8ebeb1cd5999b1321" category="paragraph">9.1에서 9.4까지</block>
   <block id="597f1630cd21d22c527f63002e42f059" category="paragraph">8.6에서 8.10까지</block>
@@ -5609,4 +5608,5 @@
   <block id="827939177a8e56e6d981ae1fc3dcb065" category="section-title">2024년 9월 9일</block>
   <block id="be8fd45f96dc537f9f4473811d5a2cb7" category="paragraph">콘솔이 AWS에서 콘솔 에이전트를 시작하면 에이전트에 대한 IAM 역할과 프로필이 생성됩니다. 또한 AWS 계정 내에서 리소스와 프로세스를 관리할 수 있는 권한을 콘솔 에이전트에 제공하는 정책도 첨부합니다. <block ref="c8fcf01cd703cc98adb501c59ec6e8ce" category="inline-link-macro-rx"></block>.</block>
   <block id="fe4b6329accdde90ed8d83073374f9cc" category="paragraph">위 섹션에서는 콘솔에서 콘솔 에이전트를 배포하는 데 권장되는 방법을 설명합니다. AWS Marketplace에서 AWS에 에이전트를 배포할 수도 있고, 자신의 Linux 호스트나 VCenter에 콘솔 에이전트 소프트웨어를 수동으로 설치할 수도 있습니다.</block>
+  <block id="7294c37d50c105bffdf0e10ac05a9beb" category="paragraph">Podman 버전 5.4.0과 podman-compose 1.5.0.</block>
 </blocks>
