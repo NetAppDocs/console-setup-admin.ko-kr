@@ -1165,7 +1165,6 @@
   <block id="70b92c994098903dd4d795e576df0178" category="section-title">기존 Cloud Volumes ONTAP 시스템을 다른 AWS 계정으로 옮길 수 있나요?</block>
   <block id="76dceba3264b49dee2ad272ffb9d4744" category="paragraph">아니요, Cloud Volumes ONTAP 시스템과 연결된 AWS 리소스를 다른 AWS 계정으로 이동하는 것은 불가능합니다.</block>
   <block id="d8313e84240e5bf3fd7c17d104ad227d" category="section-title">마켓플레이스 배포와 온프레미스 배포에서 자격 증명은 어떻게 작동합니까?</block>
-  <block id="e69076ba30bc8d2834e054c4781b1d9d" category="paragraph">위 섹션에서는 콘솔에서 콘솔 에이전트를 배포하는 데 권장되는 방법을 설명합니다.  AWS Marketplace에서 AWS에 에이전트를 배포할 수도 있고, 자신의 Linux 호스트에 콘솔 에이전트 소프트웨어를 수동으로 설치할 수도 있습니다.</block>
   <block id="a4542ce435b67066671321f478dce8cc" category="paragraph">마켓플레이스를 사용하는 경우에도 동일한 방식으로 권한이 제공됩니다.  IAM 역할을 수동으로 생성하고 설정한 다음, 추가 계정에 대한 권한을 제공하기만 하면 됩니다.</block>
   <block id="13faeab8d56294c16f52b682c4081994" category="paragraph">온프레미스 배포의 경우 콘솔에 대한 IAM 역할을 설정할 수 없지만 AWS 액세스 키를 사용하여 권한을 제공할 수 있습니다.</block>
   <block id="796c918f0fce99224fa4a1b54f518f96" category="paragraph">권한을 설정하는 방법을 알아보려면 다음 페이지를 참조하세요.</block>
@@ -5400,7 +5399,6 @@
   <block id="648c906efc1699c9d3ad4578bac84bd5" category="paragraph">콘솔은 조직의 모든 자격 증명에 대한 기존 구독을 이 새로운 구독으로 대체합니다. 자격 증명 세트가 구독과 연결되지 않은 경우 이 새 구독은 해당 자격 증명과 연결되지 않습니다.</block>
   <block id="fec37ac1cd6af148e5a37feded7851f2" category="paragraph">콘솔에서 콘솔 에이전트를 배포하는 경우 IAM 사용자의 IAM 역할 또는 액세스 키의 ARN을 제공해야 합니다. 인증 방법에는 AWS에 콘솔을 배포할 수 있는 권한이 있어야 합니다. 필요한 권한은 링크: task-install-agent-aws-the Console.html#aws-permissions-agent[AWS용 에이전트 배포 정책]에 나열되어 있습니다.</block>
   <block id="6d98b6cff569df2b13894056f584ec94" category="inline-link-macro">에이전트가 권한을 사용하는 방식을 검토하세요.</block>
-  <block id="2530b567a30729c8ca55db7e56f9039a" category="paragraph">콘솔이 AWS에서 콘솔 에이전트를 시작하면 에이전트에 대한 IAM 역할과 프로필이 생성됩니다. 또한 AWS 계정 내에서 리소스와 프로세스를 관리할 수 있는 권한을 콘솔 에이전트에 제공하는 정책도 첨부합니다. <block ref="c8fcf01cd703cc98adb501c59ec6e8ce" category="inline-link-macro-rx"></block>.</block>
   <block id="9bdb90e2cf9f7f97285de5520ab53a37" category="inline-image-macro">AWS 계정에 콘솔 에이전트를 배포하는 콘솔을 보여주는 개념적 이미지입니다. IAM 정책은 콘솔에 연결된 IAM 역할에 할당됩니다.</block>
   <block id="6200ddd5978ec4a6ebc04f286e729487" category="paragraph"><block ref="6200ddd5978ec4a6ebc04f286e729487" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1aed0c96ab82a81ab5988e9702bb43da" category="paragraph">위 섹션에서 설명한 대로 콘솔을 사용하면 여러 가지 방법으로 AWS 자격 증명을 제공할 수 있습니다. 콘솔 에이전트와 연결된 IAM 역할, 신뢰할 수 있는 계정에서 IAM 역할을 맡는 방법, AWS 액세스 키를 제공하는 방법 등이 있습니다.</block>
@@ -5609,4 +5607,6 @@
   <block id="527d18dfa760fc67196d102d429a8ea0" category="section-title">2024년 12월 9일</block>
   <block id="f66c63cf0ff76c19209f85ca687a2fb4" category="section-title">2024년 10월 7일</block>
   <block id="827939177a8e56e6d981ae1fc3dcb065" category="section-title">2024년 9월 9일</block>
+  <block id="be8fd45f96dc537f9f4473811d5a2cb7" category="paragraph">콘솔이 AWS에서 콘솔 에이전트를 시작하면 에이전트에 대한 IAM 역할과 프로필이 생성됩니다. 또한 AWS 계정 내에서 리소스와 프로세스를 관리할 수 있는 권한을 콘솔 에이전트에 제공하는 정책도 첨부합니다. <block ref="c8fcf01cd703cc98adb501c59ec6e8ce" category="inline-link-macro-rx"></block>.</block>
+  <block id="fe4b6329accdde90ed8d83073374f9cc" category="paragraph">위 섹션에서는 콘솔에서 콘솔 에이전트를 배포하는 데 권장되는 방법을 설명합니다. AWS Marketplace에서 AWS에 에이전트를 배포할 수도 있고, 자신의 Linux 호스트나 VCenter에 콘솔 에이전트 소프트웨어를 수동으로 설치할 수도 있습니다.</block>
 </blocks>
