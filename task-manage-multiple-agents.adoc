@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-manage-multiple-agents.html 
 keywords: switch connectors, multiple connectors, disaster recovery, dr, two connectors 
-summary: 여러 개의 콘솔 에이전트를 사용하는 경우 콘솔에서 해당 에이전트 간에 직접 전환할 수 있습니다.  여러 콘솔 에이전트를 사용하여 단일 시스템을 관리할 수도 있습니다. 
+summary: 여러 개의 콘솔 에이전트를 사용하는 경우 콘솔에서 해당 에이전트 간에 직접 전환할 수 있습니다. 
 ---
 = 여러 콘솔 에이전트와 함께 작업
 :hardbreaks:
@@ -36,26 +36,3 @@ image:screenshot-connector-switch.png["헤더에 에이전트 아이콘과 스�
 
 .결과
 콘솔이 새로 고쳐지고 선택한 에이전트와 관련된 시스템이 표시됩니다.
-
-
-
-== 재해 복구 구성 설정
-
-재해 복구 목적으로 여러 콘솔 에이전트를 동시에 사용하여 시스템을 관리할 수 있습니다.  콘솔 에이전트 하나가 다운되면 다른 에이전트로 전환하여 즉시 시스템을 관리할 수 있습니다.
-
-.단계
-. 콘솔 에이전트로 관리하려는 다른 콘솔 에이전트로 전환합니다.
-. 기존 시스템을 알아보세요.
-+
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["기존 Cloud Volumes ONTAP 시스템을 콘솔에 추가합니다."^]
-** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["ONTAP 클러스터를 찾아보세요"^]
-
-
-. Cloud Volumes ONTAP 시스템을 관리하는 경우 용량 관리 모드를 *수동 모드*로 조정하세요.
-+
-경합 문제를 방지하려면 기본 콘솔 에이전트만 *자동 모드*로 설정해야 합니다.
-
-+
-https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-manage-capacity-settings.html["용량 관리 모드에 대해 자세히 알아보세요"^]
-
-

@@ -24,7 +24,7 @@ summary: 배포하기 전에 콘솔 에이전트에 대해 자세히 알아보�
 
 
 
-=== AWS 세부 정보
+=== AWS용 콘솔 에이전트 VM 세부 정보
 
 콘솔이나 클라우드 공급자의 마켓플레이스에서 콘솔 에이전트를 배포한 경우 다음 사항에 유의하세요.
 
@@ -40,7 +40,7 @@ summary: 배포하기 전에 콘솔 에이전트에 대해 자세히 알아보�
 
 
 
-=== Azure 세부 정보
+=== Azure용 콘솔 에이전트 VM 세부 정보
 
 콘솔이나 클라우드 공급자의 마켓플레이스에서 콘솔 에이전트를 배포한 경우 다음 사항에 유의하세요.
 
@@ -55,7 +55,7 @@ summary: 배포하기 전에 콘솔 에이전트에 대해 자세히 알아보�
 
 
 
-=== Google Cloud 세부 정보
+=== Google Cloud용 콘솔 에이전트 VM 세부 정보
 
 콘솔에서 콘솔 에이전트를 배포한 경우 다음 사항에 유의하세요.
 
@@ -74,7 +74,7 @@ summary: 배포하기 전에 콘솔 에이전트에 대해 자세히 알아보�
 
 에이전트 설치 폴더는 다음 위치에 있습니다.
 
-/opt/application/netapp/클라우드매니저
+`/opt/application/netapp/cloudmanager`
 
 
 
@@ -82,12 +82,12 @@ summary: 배포하기 전에 콘솔 에이전트에 대해 자세히 알아보�
 
 로그 파일은 다음 폴더에 있습니다.
 
-* /opt/application/netapp/cloudmanager/log 또는
-* /opt/application/netapp/service-manager-2/logs(새로운 3.9.23 설치부터)
+* `/opt/application/netapp/cloudmanager/log` 또는
+* `/opt/application/netapp/service-manager-2/logs` (새로운 3.9.23 설치부터)
 +
 이러한 폴더의 로그는 콘솔 에이전트에 대한 세부 정보를 제공합니다.
 
-* /opt/application/netapp/cloudmanager/docker_occm/데이터/로그
+* `/opt/application/netapp/cloudmanager/docker_occm/data/log`
 +
 이 폴더의 로그는 클라우드 서비스와 콘솔 에이전트에서 실행되는 콘솔 서비스에 대한 세부 정보를 제공합니다.
 
@@ -122,11 +122,11 @@ MySQL 서비스가 중단되면 occm 서비스도 중단됩니다.
 
 * 에이전트 설치 폴더는 다음 위치에 있습니다.
 +
-/opt/application/netapp/ds
+`/opt/application/netapp/ds`
 
 * 로그 파일은 다음 폴더에 있습니다.
 +
-/var/lib/docker/volumes/ds_occmdata/_data/log
+`/var/lib/docker/volumes/ds_occmdata/_data/log`
 
 +
 이 폴더의 로그는 콘솔 에이전트와 Docker 이미지에 대한 세부 정보를 제공합니다.
