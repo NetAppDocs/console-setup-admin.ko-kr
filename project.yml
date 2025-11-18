@@ -20,8 +20,6 @@ sidebar:
       url: "/whats-new.html"
     - title: 알려진 제한 사항
       url: "/reference-limitations.html"
-    - title: 지원되는 Linux 운영 체제 변경 사항
-      url: "/reference-agent-operating-system-changes.html"
   - title: 시작하기
     entries:
     - title: 기본을 배우세요

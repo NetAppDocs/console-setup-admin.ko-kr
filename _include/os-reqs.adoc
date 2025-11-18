@@ -52,6 +52,27 @@ NOTE: 콘솔 에이전트는 UID와 GID 범위를 19000~19200으로 예약합니
 
  a| 
  a| 
+9.6
+
+* 영어 버전만 제공됩니다.
+* 호스트는 Red Hat Subscription Management에 등록되어야 합니다.  등록되지 않은 경우 호스트는 에이전트 설치 중에 필요한 타사 소프트웨어를 업데이트하기 위해 저장소에 액세스할 수 없습니다.
+
+ a| 
+4.0.0 이상, 콘솔이 표준 모드 또는 제한 모드인 경우
+ a| 
+Podman 버전 5.4.0과 podman-compose 1.5.0.
+
+<<podman-configuration,Podman 구성 요구 사항 보기>> .
+ a| 
+강제 모드 또는 허용 모드에서 지원됨
+
+* Cloud Volumes ONTAP 시스템 관리는 운영 체제에서 SELinux가 활성화된 에이전트에서는 지원되지 않습니다.
+
+
+
+
+ a| 
+ a| 
 9.1에서 9.4까지
 
 * 영어 버전만 제공됩니다.
@@ -60,7 +81,7 @@ NOTE: 콘솔 에이전트는 UID와 GID 범위를 19000~19200으로 예약합니
  a| 
 3.9.50 이상, 콘솔이 표준 모드 또는 제한 모드인 경우
  a| 
-Podman 버전 5.4.0과 podman-compose 1.5.0.
+Podman 버전 4.9.4와 podman-compose 1.5.0.
 
 <<podman-configuration,Podman 구성 요구 사항 보기>> .
  a| 
@@ -81,7 +102,7 @@ Podman 버전 5.4.0과 podman-compose 1.5.0.
  a| 
 3.9.50 이상, 콘솔이 표준 모드 또는 제한 모드인 경우
  a| 
-Podman 버전 4.6.1 또는 4.9.4
+Podman 버전 4.6.1 또는 4.9.4와 podman-compose 1.0.6.
 
 <<podman-configuration,Podman 구성 요구 사항 보기>> .
  a| 
