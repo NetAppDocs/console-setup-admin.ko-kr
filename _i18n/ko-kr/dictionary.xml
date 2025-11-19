@@ -5563,12 +5563,6 @@
   <block id="b3df2aaed88f61f572a7284cb28844ec" category="inline-link-macro">운영 체제 요구 사항 보기</block>
   <block id="43a9602052a44f890e2bbc95a0205a46" category="paragraph">콘솔 에이전트를 수동으로 설치할 때 에이전트는 이제 Podman 5.4.0이 포함된 RHEL 9.6을 지원합니다. 또한 RHEL 9 이상을 사용하는 경우 NetApp podman-compose 1.5.0을 지원합니다. <block ref="dd394ea917033ddbf269729b5d828637" category="inline-link-macro-rx"></block>.</block>
   <block id="823f8bc81b61298de6fde6292c77465f" category="list-text">시스템을 재발견하세요.</block>
-  <block id="0d23055c9cd9e24b47c678ce2ce12890" category="doc">rootful bridge에서 netavark를 사용하여 DNS 전달 데몬에 사용할 포트</block>
-  <block id="a4a1852476f94952d74e4b8343a1caa2" category="paragraph">vi /usr/share/containers/containers.conf</block>
-  <block id="d5b159520f19881fc40a4bd748f62fc6" category="section-title">모드와 DNS가 활성화되었습니다.</block>
-  <block id="b1a96ed8e5a02719308e8b11ad1f055b" category="section-title">다른 DNS 서비스가 필요한 경우 대체 포트를 사용하는 것이 유용할 수 있습니다.</block>
-  <block id="090648da33ae39ea5780d1a31fb1c849" category="section-title">기계에서 실행됩니다.</block>
-  <block id="876565374bfaef3930e6f9d90f47177b" category="paragraph"># dns_bind_port = 54</block>
   <block id="f20af7c9fe0c9b9091735f55df3a51e1" category="list-text">콘솔에서 직접 표준 AWS 지역에 콘솔 에이전트를 생성하면 콘솔이 자동으로 에이전트에 정책을 적용합니다.</block>
   <block id="8a2272b9faf18eb35a631e80900ec216" category="section-title">백업 및 복구에 대한 레거시 권한</block>
   <block id="cf1f3a91d24e23f8dd4687e01a5c8192" category="paragraph">인덱싱 v2가 출시되기 전에 레거시 인덱싱 기능을 활성화한 경우에만 다음 권한이 필요합니다.</block>
@@ -5600,4 +5594,8 @@
   <block id="04a0a4e163c04f3082e39c4a05b56121" category="paragraph">AWS 자격 증명을 추가하면 콘솔 에이전트를 생성할 수 있는 권한이 제공됩니다.</block>
   <block id="325cf27c7a62fb4beb8b270094e56814" category="paragraph">시간당 요금(PAYGO)으로 Cloud Volumes ONTAP 및 기타 NetApp 데이터 서비스에 대한 비용을 지불하거나 연간 계약을 통해 비용을 지불하려면 콘솔 에이전트에 추가하는 자격 증명을 AWS Marketplace 구독과 연결해야 합니다. <block ref="ec04a55c38de32bb88fa7b4155061e7c" category="inline-link-macro-rx"></block>.</block>
   <block id="349b76807d98d4378df29b585951b7a4" category="summary">AWS, Azure, Google Cloud에서 인터넷 접속이 가능한 표준 배포에 대한 콘솔 에이전트 기본 구성과 온프레미스 환경에서 인터넷 접속이 불가능한 제한된 배포에 대한 콘솔 에이전트 기본 구성에 대해 알아보세요.</block>
+  <block id="95df10d2ac630ff125b089e1f8e0e67f" category="paragraph">네트워크에 인터넷 접속을 위한 프록시가 필요한 경우 프록시 정보를 추가해야 합니다. 투명 프록시나 명시적 프록시를 추가할 수 있습니다. --proxy 및 --cacert 매개변수는 선택 사항이므로 추가하라는 메시지가 표시되지 않습니다. 프록시 서버가 있는 경우 표시된 대로 매개변수를 입력해야 합니다.</block>
+  <block id="64de7c6251637d266e8df72d8ab7c1d3" category="paragraph">--proxy는 다음 형식 중 하나를 사용하여 HTTP 또는 HTTPS 프록시 서버를 사용하도록 콘솔 에이전트를 구성합니다.</block>
+  <block id="9d9d85de516d17d89215c336041bd69c" category="paragraph">--cacert는 콘솔 에이전트와 프록시 서버 간 HTTPS 액세스에 사용할 CA 서명 인증서를 지정합니다. 이 매개변수는 HTTPS 프록시 서버, 인터셉트 프록시 서버, 투명 프록시 서버에 필요합니다.</block>
+  <block id="fa5c0c80d3dab7b433f9ebd1f6d0e8db" category="paragraph">투명 프록시 서버를 구성하는 예는 다음과 같습니다. 투명 프록시를 구성할 때 프록시 서버를 정의할 필요가 없습니다. 콘솔 에이전트 호스트에 CA 서명 인증서만 추가합니다.</block>
 </blocks>
