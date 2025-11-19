@@ -287,15 +287,17 @@ NOTE: 를 사용하여 `dnf install` 명령은 PATH 환경 변수에 podman-comp
 
 
 . 다음 명령을 실행하여 networkBackend가 CNI로 설정되어 있는지 확인하세요.
-+
-[source, cli]
+
+
+[listing]
 ----
 podman info | grep networkBackend
 ----
 . networkBackend가 설정된 경우 `CNI` , 당신은 그것을 변경해야 합니다 `netavark` .
 . 설치하다 `netavark` 그리고 `aardvark-dns` 다음 명령을 사용합니다.
-+
-[source, cli]
+
+
+[listing]
 ----
 dnf install aardvark-dns netavark
 ----
@@ -305,21 +307,21 @@ dnf install aardvark-dns netavark
 
 +
 .. Podman을 다시 시작하세요.
-+
-[source, cli]
+
+
+
+
+[listing]
 ----
 systemctl restart podman
 ----
-.. 다음 명령을 사용하여 networkBackend가 이제 "netavark"로 변경되었는지 확인하세요.
-+
-[source, cli]
+. 다음 명령을 사용하여 networkBackend가 이제 "netavark"로 변경되었는지 확인하세요.
+
+
+[listing]
 ----
 podman info | grep networkBackend
 ----
-
-
-
-
 --
 .도커 엔진
 --
@@ -584,7 +586,7 @@ chmod +x NetApp_Console_Agent_Cloud_<version>
 +
 [source, cli]
 ----
- ./NetApp_Console_Agent_Cloud_<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+./NetApp_Console_Agent_Cloud_<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
 ----
 +
 네트워크에 인터넷 접속을 위한 프록시가 필요한 경우 프록시 정보를 추가해야 합니다. 설치 중에 명시적 프록시를 추가할 수 있습니다. --proxy 및 --cacert 매개변수는 선택 사항이므로 추가하라는 메시지가 표시되지 않습니다. 명시적 프록시 서버가 있는 경우 표시된 대로 매개변수를 입력해야 합니다.
@@ -595,7 +597,7 @@ chmod +x NetApp_Console_Agent_Cloud_<version>
 +
 [source, cli]
 ----
- ./NetApp_Console_Agent_Cloud_v4.0.0--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+./NetApp_Console_Agent_Cloud_v4.0.0--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 `--proxy`다음 형식 중 하나를 사용하여 HTTP 또는 HTTPS 프록시 서버를 사용하도록 콘솔 에이전트를 구성합니다.
@@ -638,15 +640,19 @@ NOTE: 투명 프록시를 구성하려면 설치 후에 구성하면 됩니다. 
 [source, cli]
 ----
 vi /usr/share/containers/containers.conf
-...
+----
++
+예를 들어:
+
++
+[source, text]
+----
 # Port to use for dns forwarding daemon with netavark in rootful bridge
 # mode and dns enabled.
 # Using an alternate port might be useful if other DNS services should
 # run on the machine.
 #
 dns_bind_port = 54
-...
-Esc:wq
 ----
 .. 콘솔 에이전트 가상 머신을 재부팅합니다.
 

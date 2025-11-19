@@ -176,7 +176,7 @@ systemctl stop netapp-service-manager.service
 +
 [source, json]
 ----
-  "skipConfigCheck": true,
+  "skipConfigCheck": true
 ----
 . 파일을 저장하세요.
 . 다음 명령을 실행하여 서비스 관리자 2 서비스를 다시 시작합니다.

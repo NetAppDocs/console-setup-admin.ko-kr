@@ -114,27 +114,28 @@ https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google C
 
 +
 .. Cloud Volumes ONTAP CLI에서 권한 수준을 고급으로 설정합니다.
-+
-[source, cli]
+
+
+
+
+[listing]
 ----
 set -privilege advanced
 ----
-.. 다음 명령을 실행하여 현재 백업 대상을 표시합니다.
-+
-[source, cli]
+. 다음 명령을 실행하여 현재 백업 대상을 표시합니다.
+
+
+[listing]
 ----
 system configuration backup settings show
 ----
-.. 다음 명령을 실행하여 백업 대상의 IP 주소를 업데이트합니다.
-+
-[source, cli]
+. 다음 명령을 실행하여 백업 대상의 IP 주소를 업데이트합니다.
+
+
+[listing]
 ----
 system configuration backup settings modify -destination <target-location>
 ----
-
-
-
-
 
 
 == 에이전트의 URI 편집

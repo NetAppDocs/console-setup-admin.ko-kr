@@ -48,8 +48,11 @@ SAML 2.0 공급자와 페더레이션 연결을 설정하면 콘솔에 대한 SS
 . NetApp 서비스 공급자로 신뢰하도록 SAML ID 공급자를 구성합니다.  이 단계는 SAML 공급자 서버에서 수행해야 합니다.
 +
 .. IdP에 속성이 있는지 확인하세요. `email` 사용자의 이메일 주소로 설정됩니다.  이는 콘솔이 사용자를 올바르게 식별하는 데 필요합니다.
-+
-[source, xml]
+
+
+
+
+[listing]
 ----
 <saml:AttributeStatement xmlns:x500="urn:oasis:names:tc:SAML:2.0:profiles:attribute:X500" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <saml:Attribute Name="email" NameFormat="urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName">
@@ -57,36 +60,37 @@ SAML 2.0 공급자와 페더레이션 연결을 설정하면 콘솔에 대한 SS
     </saml:Attribute>
 </saml:AttributeStatement>
 ----
-.. 콘솔에 SAML 애플리케이션을 등록할 때 다음 값을 사용하세요.
+. 콘솔에 SAML 애플리케이션을 등록할 때 다음 값을 사용하세요.
 +
-*** *답변 URL* 또는 *Assertion Consumer Service(ACS) URL*의 경우 다음을 사용하세요. `https://netapp-cloud-account.auth0.com/login/callback`
-*** *로그아웃 URL*의 경우 다음을 사용하세요. `https://netapp-cloud-account.auth0.com/logout`
-*** *대상/엔터티 ID*의 경우 다음을 사용하세요. `urn:auth0:netapp-cloud-account:<fed-domain-name-saml>` 여기서 <fed-domain-name-saml>은 페더레이션에 사용하려는 도메인 이름입니다.  예를 들어, 귀하의 도메인이 `example.com` , 대상/엔터티 ID는 다음과 같습니다. `urn:auth0:netapp-cloud-account:fed-example-com-samlp` .
+** *답변 URL* 또는 *Assertion Consumer Service(ACS) URL*의 경우 다음을 사용하세요. `https://netapp-cloud-account.auth0.com/login/callback`
+** *로그아웃 URL*의 경우 다음을 사용하세요. `https://netapp-cloud-account.auth0.com/logout`
+** *대상/엔터티 ID*의 경우 다음을 사용하세요. `urn:auth0:netapp-cloud-account:<fed-domain-name-saml>` 여기서 <fed-domain-name-saml>은 페더레이션에 사용하려는 도메인 이름입니다.  예를 들어, 귀하의 도메인이 `example.com` , 대상/엔터티 ID는 다음과 같습니다. `urn:auth0:netapp-cloud-account:fed-example-com-samlp` .
 
 
-.. 신뢰를 생성한 후 SAML 공급자 서버에서 다음 값을 복사합니다.
+. 신뢰를 생성한 후 SAML 공급자 서버에서 다음 값을 복사합니다.
 +
-*** 로그인 URL
-*** 로그아웃 URL(선택 사항)
+** 로그인 URL
+** 로그아웃 URL(선택 사항)
 
 
-.. SAML 공급자 서버에서 X.509 인증서를 다운로드합니다.  PEM, CER 또는 CRT 형식이어야 합니다.
-
-
-. 콘솔로 돌아가서 *다음*을 선택하여 연결을 만듭니다.
-. SAML로 연결을 생성합니다.
+. SAML 공급자 서버에서 X.509 인증서를 다운로드합니다.  PEM, CER 또는 CRT 형식이어야 합니다.
 +
-.. SAML 서버의 *로그인 URL*을 입력하세요.
-.. SAML 공급자 서버에서 다운로드한 X.509 인증서를 업로드합니다.
-.. 선택적으로 SAML 서버의 *로그아웃 URL*을 입력하세요.
+.. 콘솔로 돌아가서 *다음*을 선택하여 연결을 만듭니다.
+.. SAML로 연결을 생성합니다.
 
 
-. *연결 만들기*를 선택하세요.  시스템은 몇 초 안에 연결을 생성합니다.
-. *다음*을 선택하세요.
-. 연결을 테스트하려면 *연결 테스트*를 선택하세요.  IdP 서버의 로그인 페이지로 이동됩니다.  테스트를 완료하려면 IdP 자격 증명으로 로그인하고 콘솔로 돌아가서 연결을 활성화하세요.
-. *다음*을 선택하세요.
-. *페더레이션 활성화* 페이지에서 페더레이션 세부 정보를 검토한 다음 *페더레이션 활성화*를 선택합니다.
-. *마침*을 선택하여 과정을 완료하세요.
+. SAML 서버의 *로그인 URL*을 입력하세요.
+. SAML 공급자 서버에서 다운로드한 X.509 인증서를 업로드합니다.
+. 선택적으로 SAML 서버의 *로그아웃 URL*을 입력하세요.
++
+.. *연결 만들기*를 선택하세요.  시스템은 몇 초 안에 연결을 생성합니다.
+.. *다음*을 선택하세요.
+.. 연결을 테스트하려면 *연결 테스트*를 선택하세요.  IdP 서버의 로그인 페이지로 이동됩니다.  테스트를 완료하려면 IdP 자격 증명으로 로그인하고 콘솔로 돌아가서 연결을 활성화하세요.
+.. *다음*을 선택하세요.
+.. *페더레이션 활성화* 페이지에서 페더레이션 세부 정보를 검토한 다음 *페더레이션 활성화*를 선택합니다.
+.. *마침*을 선택하여 과정을 완료하세요.
+
+
 
 
 페더레이션을 활성화하면 사용자는 회사 자격 증명을 사용하여 NetApp Console 에 로그인할 수 있습니다.

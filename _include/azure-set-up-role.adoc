@@ -17,6 +17,7 @@ NetApp Console 과 함께 사용하려는 각 Azure 구독에 대한 ID를 추�
 "/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
 "/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
 "/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+]
 ----
 . JSON 파일을 사용하여 Azure에서 사용자 지정 역할을 만듭니다.
 +

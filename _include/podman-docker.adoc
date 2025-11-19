@@ -118,15 +118,17 @@ NOTE: 를 사용하여 `dnf install` 명령은 PATH 환경 변수에 podman-comp
 
 
 . 다음 명령을 실행하여 networkBackend가 CNI로 설정되어 있는지 확인하세요.
-+
-[source, cli]
+
+
+[listing]
 ----
 podman info | grep networkBackend
 ----
 . networkBackend가 설정된 경우 `CNI` , 당신은 그것을 변경해야 합니다 `netavark` .
 . 설치하다 `netavark` 그리고 `aardvark-dns` 다음 명령을 사용합니다.
-+
-[source, cli]
+
+
+[listing]
 ----
 dnf install aardvark-dns netavark
 ----
@@ -136,21 +138,21 @@ dnf install aardvark-dns netavark
 
 +
 .. Podman을 다시 시작하세요.
-+
-[source, cli]
+
+
+
+
+[listing]
 ----
 systemctl restart podman
 ----
-.. 다음 명령을 사용하여 networkBackend가 이제 "netavark"로 변경되었는지 확인하세요.
-+
-[source, cli]
+. 다음 명령을 사용하여 networkBackend가 이제 "netavark"로 변경되었는지 확인하세요.
+
+
+[listing]
 ----
 podman info | grep networkBackend
 ----
-
-
-
-
 --
 .도커 엔진
 --

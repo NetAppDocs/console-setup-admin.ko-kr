@@ -68,7 +68,7 @@ _com/opt/application/netapp/service-manager-2/config.json_ 파일에서 _isUpgra
 +
 [source, json]
 ----
-  "isUpgradeDisabled": true,
+  "isUpgradeDisabled": true
 ----
 . 파일을 저장하세요.
 . 다음 명령을 실행하여 서비스 관리자 2 서비스를 다시 시작합니다.
@@ -82,7 +82,6 @@ systemctl restart netapp-service-manager.service
 [source, cli]
 ----
 systemctl status netapp-service-manager.service
-_
 ----
 
 

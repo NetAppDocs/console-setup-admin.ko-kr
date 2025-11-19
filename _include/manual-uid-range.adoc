@@ -44,7 +44,7 @@ chmod +x NetApp-Console-Agent-<version>
 +
 [source, cli]
 ----
- ./NetApp-Console-Agent-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+./NetApp-Console-Agent-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
 ----
 +
 --proxy 및 --cacert 매개변수는 선택 사항입니다.  프록시 서버가 있는 경우 표시된 대로 매개변수를 입력해야 합니다.  설치 프로그램에서는 프록시에 대한 정보를 제공하라는 메시지를 표시하지 않습니다.
@@ -55,7 +55,7 @@ chmod +x NetApp-Console-Agent-<version>
 +
 [source, cli]
 ----
- ./NetApp-Console-Agent-v4.0.0--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+./NetApp-Console-Agent-v4.0.0--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 --proxy는 다음 형식 중 하나를 사용하여 HTTP 또는 HTTPS 프록시 서버를 사용하도록 에이전트를 구성합니다.
@@ -96,15 +96,19 @@ chmod +x NetApp-Console-Agent-<version>
 [source, cli]
 ----
 vi /usr/share/containers/containers.conf
-...
+----
++
+예를 들어:
+
++
+[source, text]
+----
 # Port to use for dns forwarding daemon with netavark in rootful bridge
 # mode and dns enabled.
 # Using an alternate port might be useful if other DNS services should
 # run on the machine.
 #
 dns_bind_port = 54
-...
-Esc:wq
 ----
 .. 에이전트 가상 머신을 재부팅합니다.
 
