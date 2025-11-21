@@ -141,111 +141,341 @@ includedPermissions:
 
 == Google Cloud 권한 사용 방법
 
-[cols="50,50"]
+[cols="5*"]
 |===
-| 행위 | 목적 
+| 행위 | 목적 | 배포에 사용되나요? | 일상 업무에 사용되나요? | 삭제에 사용되나요? 
 
 
-| - compute.disks.create - compute.disks.createSnapshot - compute.disks.delete - compute.disks.get - compute.disks.list - compute.disks.setLabels - compute.disks.use | Cloud Volumes ONTAP 에 대한 디스크를 생성하고 관리합니다. 
+| 계산.디스크.생성 .7+| Cloud Volumes ONTAP 에 대한 디스크를 생성하고 관리합니다. | 예 | 예 | 아니요 
 
 
-| - 컴퓨트 방화벽 생성 - 컴퓨트 방화벽 삭제 - 컴퓨트 방화벽 가져오기 - 컴퓨트 방화벽 목록 | Cloud Volumes ONTAP 에 대한 방화벽 규칙을 만듭니다. 
+| 컴퓨팅.디스크.스냅샷 생성 | 아니요 | 예 | 아니요 
 
 
-| - 컴퓨트.글로벌운영.get | 작업 상태를 파악하려면 
+| 컴퓨팅.디스크.삭제 | 아니요 | 예 | 예 
 
 
-| - compute.images.get - compute.images.getFromFamily - compute.images.list - compute.images.useReadOnly | VM 인스턴스에 대한 이미지를 가져옵니다. 
+| 컴퓨팅.디스크.get | 아니요 | 예 | 아니요 
 
 
-| - 컴퓨트 인스턴스.디스크 연결 - 컴퓨트 인스턴스.디스크 분리 | Cloud Volumes ONTAP 에 디스크를 연결하고 분리합니다. 
+| 컴퓨팅.디스크.목록 | 예 | 예 | 아니요 
 
 
-| - 컴퓨팅.인스턴스.생성 - 컴퓨팅.인스턴스.삭제 | Cloud Volumes ONTAP VM 인스턴스를 생성하고 삭제합니다. 
+| 컴퓨팅.디스크.레이블 설정 | 예 | 예 | 아니요 
 
 
-| - 컴퓨트.인스턴스.get | VM 인스턴스를 나열합니다. 
+| 컴퓨팅.디스크.사용 | 아니요 | 예 | 아니요 
 
 
-| - compute.instances.getSerialPortOutput | 콘솔 로그를 얻으려면. 
+| 컴퓨팅.방화벽.생성 .4+| Cloud Volumes ONTAP 에 대한 방화벽 규칙을 만듭니다. | 예 | 아니요 | 아니요 
 
 
-| - 컴퓨트.인스턴스.리스트 | 영역의 인스턴스 목록을 검색합니다. 
+| 컴퓨팅.방화벽.삭제 | 아니요 | 예 | 예 
 
 
-| - compute.instances.setDeletionProtection | 인스턴스에 삭제 보호를 설정합니다. 
+| 컴퓨팅.방화벽.get | 예 | 예 | 아니요 
 
 
-| - 컴퓨트.인스턴스.세트레이블 | 라벨을 추가하려면. 
+| 컴퓨팅.방화벽.목록 | 예 | 예 | 아니요 
 
 
-| - compute.instances.setMachineType - compute.instances.setMinCpuPlatform | Cloud Volumes ONTAP 의 머신 유형을 변경하려면 
+| 컴퓨트.글로벌운영.get. | 작업 상태를 파악하려면 | 예 | 예 | 아니요 
 
 
-| - 컴퓨트.인스턴스.메타데이터 설정 | 메타데이터를 추가합니다. 
+| 계산.이미지.get .4+| VM 인스턴스에 대한 이미지를 가져옵니다. | 예 | 아니요 | 아니요 
 
 
-| - 컴퓨팅.인스턴스.태그 설정 | 방화벽 규칙에 대한 태그를 추가합니다. 
+| 계산.이미지.패밀리에서 가져오기 | 예 | 아니요 | 아니요 
 
 
-| - compute.instances.start - compute.instances.stop - compute.instances.updateDisplayDevice | Cloud Volumes ONTAP 시작하고 중지합니다. 
+| 계산.이미지.목록 | 예 | 아니요 | 아니요 
 
 
-| - 컴퓨트.머신타입.get | 할당량을 확인하기 위해 코어의 개수를 얻습니다. 
+| 계산.이미지.읽기 전용 사용 | 예 | 아니요 | 아니요 
 
 
-| - 컴퓨트.프로젝트.get | 다양한 프로젝트를 지원합니다. 
+| 컴퓨팅.인스턴스.디스크 연결 .2+| Cloud Volumes ONTAP 에 디스크를 연결하고 분리합니다. | 예 | 예 | 아니요 
 
 
-| - 컴퓨트.스냅샷.생성 - 컴퓨트.스냅샷.삭제 - 컴퓨트.스냅샷.가져오기 - 컴퓨트.스냅샷.목록 - 컴퓨트.스냅샷.레이블 설정 | 영구 디스크 스냅샷을 만들고 관리합니다. 
+| 컴퓨팅.인스턴스.디스크 분리 | 아니요 | 예 | 예 
 
 
-| - compute.networks.get - compute.networks.list - compute.regions.get - compute.regions.list - compute.subnetworks.get - compute.subnetworks.list - compute.zoneOperations.get - compute.zones.get - compute.zones.list | 새로운 Cloud Volumes ONTAP 가상 머신 인스턴스를 만드는 데 필요한 네트워킹 정보를 얻으세요. 
+| 컴퓨팅.인스턴스.생성 .2+| Cloud Volumes ONTAP VM 인스턴스를 생성하고 삭제합니다. | 예 | 아니요 | 아니요 
 
 
-| - deploymentmanager.compositeTypes.get - deploymentmanager.compositeTypes.list - deploymentmanager.deployments.create - deploymentmanager.deployments.delete - deploymentmanager.deployments.get - deploymentmanager.deployments.list - deploymentmanager.manifests.get - deploymentmanager.manifests.list - deploymentmanager.operations.get - deploymentmanager.operations.list - deploymentmanager.resources.get - deploymentmanager.resources.list - deploymentmanager.typeProviders.get - deploymentmanager.typeProviders.list - deploymentmanager.types.get - deploymentmanager.types.list | Google Cloud Deployment Manager를 사용하여 Cloud Volumes ONTAP 가상 머신 인스턴스를 배포합니다. 
+| 컴퓨팅.인스턴스.삭제 | 아니요 | 아니요 | 예 
 
 
-| - 로깅.로그항목.목록 - 로깅.개인로그항목.목록 | 스택 로그 드라이브를 얻으려면. 
+| 컴퓨팅.인스턴스.get | VM 인스턴스를 나열합니다. | 예 | 예 | 아니요 
 
 
-| - resourcemanager.projects.get | 다양한 프로젝트를 지원합니다. 
+| 컴퓨팅.인스턴스.getSerialPortOutput | 콘솔 로그를 얻으려면. | 예 | 예 | 아니요 
 
 
-| - storage.buckets.create - storage.buckets.delete - storage.buckets.get - storage.buckets.list - storage.buckets.update | 데이터 계층화를 위해 Google Cloud Storage 버킷을 만들고 관리합니다. 
+| 컴퓨팅.인스턴스.목록 | 영역의 인스턴스 목록을 검색합니다. | 예 | 예 | 아니요 
 
 
-| - cloudkms.cryptoKeyVersions.useToEncrypt - cloudkms.cryptoKeys.get - cloudkms.cryptoKeys.list - cloudkms.keyRings.list | Cloud Volumes ONTAP 과 함께 Cloud Key Management Service의 고객 관리 암호화 키를 사용합니다. 
+| 컴퓨팅.인스턴스.삭제 보호 설정 | 인스턴스에 삭제 보호를 설정합니다. | 예 | 아니요 | 아니요 
 
 
-| - compute.instances.setServiceAccount - iam.serviceAccounts.actAs - iam.serviceAccounts.getIamPolicy - iam.serviceAccounts.list - storage.objects.get - storage.objects.list | Cloud Volumes ONTAP 인스턴스에 서비스 계정을 설정하려면  이 서비스 계정은 Google Cloud Storage 버킷에 대한 데이터 계층화 권한을 제공합니다. 
+| 컴퓨팅.인스턴스.setLabels | 라벨을 추가하려면. | 예 | 아니요 | 아니요 
 
 
-| - 주소 목록을 계산합니다. | HA 쌍을 배포할 때 지역의 주소를 검색합니다. 
+| 컴퓨팅.인스턴스.setMachineType .2+| Cloud Volumes ONTAP 의 머신 유형을 변경하려면 | 예 | 예 | 아니요 
 
 
-| - compute.backendServices.create - compute.regionBackendServices.create - compute.regionBackendServices.get - compute.regionBackendServices.list | HA 쌍에서 트래픽을 분산하기 위한 백엔드 서비스를 구성합니다. 
+| 컴퓨팅.인스턴스.setMinCpuPlatform | 예 | 예 | 아니요 
 
 
-| - 컴퓨팅.네트워크.업데이트 정책 | HA 쌍의 VPC와 서브넷에 방화벽 규칙을 적용합니다. 
+| 컴퓨팅.인스턴스.메타데이터 설정 | 메타데이터를 추가합니다. | 예 | 예 | 아니요 
 
 
-| - compute.subnetworks.use - compute.subnetworks.useExternalIp - compute.instances.addAccessConfig | NetApp Data Classification 활성화하려면. 
+| 컴퓨팅.인스턴스.태그 설정 | 방화벽 규칙에 대한 태그를 추가합니다. | 예 | 예 | 아니요 
 
 
-| - compute.instanceGroups.get - compute.addresses.get - compute.instances.updateNetworkInterface | Cloud Volumes ONTAP HA 쌍에서 스토리지 VM을 생성하고 관리합니다. 
+| 컴퓨팅.인스턴스.시작 .3+| Cloud Volumes ONTAP 시작하고 중지합니다. | 예 | 예 | 아니요 
 
 
-| - monitoring.timeSeries.list - storage.buckets.getIamPolicy | Google Cloud Storage 버킷에 대한 정보를 알아보세요. 
+| 컴퓨팅.인스턴스.중지 | 예 | 예 | 아니요 
 
 
-| - cloudkms.cryptoKeys.get - cloudkms.cryptoKeys.getIamPolicy - cloudkms.cryptoKeys.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.keyRings.get - cloudkms.keyRings.getIamPolicy - cloudkms.keyRings.list - cloudkms.keyRings.setIamPolicy | 기본 Google 관리 암호화 키를 사용하는 대신 NetApp Backup and Recovery 활성화 마법사에서 고객이 관리하는 키를 직접 선택합니다. 
+| 컴퓨팅.인스턴스.업데이트디스플레이장치 | 예 | 예 | 아니요 
+
+
+| 계산.머신타입.get | 할당량을 확인하기 위해 코어 수를 얻습니다. | 예 | 아니요 | 아니요 
+
+
+| 계산.프로젝트.get | 다양한 프로젝트를 지원합니다. | 예 | 아니요 | 아니요 
+
+
+| 계산.스냅샷.생성 .5+| 영구 디스크 스냅샷을 만들고 관리합니다. | 예 | 예 | 아니요 
+
+
+| 계산.스냅샷.삭제 | 아니요 | 예 | 예 
+
+
+| 계산.스냅샷.get | 아니요 | 예 | 아니요 
+
+
+| 컴퓨팅.스냅샷.목록 | 아니요 | 예 | 아니요 
+
+
+| 계산.스냅샷.설정.레이블 | 예 | 예 | 아니요 
+
+
+| 컴퓨팅.네트워크.get .9+| 새로운 Cloud Volumes ONTAP 가상 머신 인스턴스를 만드는 데 필요한 네트워킹 정보를 얻으세요. | 예 | 예 | 아니요 
+
+
+| 컴퓨팅.네트워크.목록 | 예 | 예 | 아니요 
+
+
+| 계산.지역.get | 예 | 예 | 아니요 
+
+
+| 계산.지역.목록 | 예 | 예 | 아니요 
+
+
+| 컴퓨팅.서브네트워크.get | 예 | 예 | 아니요 
+
+
+| 컴퓨팅.서브네트워크.목록 | 예 | 예 | 아니요 
+
+
+| 컴퓨팅.zoneOperations.get | 예 | 예 | 아니요 
+
+
+| 컴퓨팅.존.get | 예 | 예 | 아니요 
+
+
+| 컴퓨팅.존.리스트 | 예 | 예 | 아니요 
+
+
+| 배포 관리자.compositeTypes.get .16+| Google Cloud Deployment Manager를 사용하여 Cloud Volumes ONTAP 가상 머신 인스턴스를 배포합니다. | 예 | 아니요 | 아니요 
+
+
+| 배포 관리자.compositeTypes.list | 예 | 아니요 | 아니요 
+
+
+| 배포 관리자.배포.생성 | 예 | 아니요 | 아니요 
+
+
+| 배포 관리자.배포.삭제 | 예 | 아니요 | 아니요 
+
+
+| 배포 관리자.배포.get | 예 | 아니요 | 아니요 
+
+
+| 배포 관리자.배포.목록 | 예 | 아니요 | 아니요 
+
+
+| 배포 관리자.매니페스트.get | 예 | 아니요 | 아니요 
+
+
+| 배포 관리자.매니페스트.목록 | 예 | 아니요 | 아니요 
+
+
+| 배포 관리자.운영.get | 예 | 아니요 | 아니요 
+
+
+| 배포 관리자.운영.목록 | 예 | 아니요 | 아니요 
+
+
+| 배포 관리자.리소스.get | 예 | 아니요 | 아니요 
+
+
+| 배포 관리자.리소스.목록 | 예 | 아니요 | 아니요 
+
+
+| 배포 관리자.typeProviders.get | 예 | 아니요 | 아니요 
+
+
+| 배포 관리자.유형 공급자.목록 | 예 | 아니요 | 아니요 
+
+
+| 배포 관리자.유형.get | 예 | 아니요 | 아니요 
+
+
+| 배포 관리자.유형.목록 | 예 | 아니요 | 아니요 
+
+
+| 로깅.로그 항목.목록 .2+| 스택 로그 드라이브를 얻으려면. | 예 | 예 | 아니요 
+
+
+| 로깅.privateLogEntries.list | 예 | 예 | 아니요 
+
+
+| 리소스 관리자.프로젝트.get | 다양한 프로젝트를 지원합니다. | 예 | 예 | 아니요 
+
+
+| 저장소.버킷.생성 .5+| 데이터 계층화를 위해 Google Cloud Storage 버킷을 만들고 관리합니다. | 예 | 예 | 아니요 
+
+
+| 저장소.버킷.삭제 | 아니요 | 예 | 예 
+
+
+| 스토리지.버킷.get | 아니요 | 예 | 아니요 
+
+
+| 스토리지.버킷.리스트 | 아니요 | 예 | 아니요 
+
+
+| 저장소.버킷.업데이트 | 아니요 | 예 | 아니요 
+
+
+| cloudkms.cryptoKeyVersions.useToEncrypt .4+| Cloud Volumes ONTAP 과 함께 Cloud Key Management Service의 고객 관리 암호화 키를 사용합니다. | 예 | 예 | 아니요 
+
+
+| cloudkms.cryptoKeys.get | 예 | 예 | 아니요 
+
+
+| cloudkms.cryptoKeys.list | 예 | 예 | 아니요 
+
+
+| cloudkms.keyRings.list | 예 | 예 | 아니요 
+
+
+| 컴퓨팅.인스턴스.서비스 계정 설정 .6+| Cloud Volumes ONTAP 인스턴스에 서비스 계정을 설정하려면  이 서비스 계정은 Google Cloud Storage 버킷에 대한 데이터 계층화 권한을 제공합니다. | 예 | 예 | 아니요 
+
+
+| iam.serviceAccounts.actAs | 예 | 아니요 | 아니요 
+
+
+| iam.serviceAccounts.getIamPolicy | 예 | 예 | 아니요 
+
+
+| iam.serviceAccounts.list | 예 | 예 | 아니요 
+
+
+| 저장소.객체.get | 예 | 예 | 아니요 
+
+
+| 저장소.객체.목록 | 예 | 예 | 아니요 
+
+
+| 계산.주소.목록 | HA 쌍을 배포할 때 지역의 주소를 검색합니다. | 예 | 아니요 | 아니요 
+
+
+| 컴퓨팅.백엔드서비스.생성 .4+| HA 쌍에서 트래픽을 분산하기 위한 백엔드 서비스를 구성합니다. | 예 | 아니요 | 아니요 
+
+
+| 컴퓨팅.regionBackendServices.생성 | 예 | 아니요 | 아니요 
+
+
+| 컴퓨팅.regionBackendServices.get | 예 | 아니요 | 아니요 
+
+
+| 컴퓨팅.regionBackendServices.list | 예 | 아니요 | 아니요 
+
+
+| 컴퓨팅.네트워크.업데이트 정책 | HA 쌍의 VPC와 서브넷에 방화벽 규칙을 적용합니다. | 예 | 아니요 | 아니요 
+
+
+| 컴퓨팅.인스턴스그룹.get .3+| Cloud Volumes ONTAP HA 쌍에서 스토리지 VM을 생성하고 관리합니다. | 예 | 예 | 아니요 
+
+
+| 계산.주소.가져오기 | 예 | 예 | 아니요 
+
+
+| 컴퓨팅.인스턴스.네트워크인터페이스 업데이트 | 예 | 예 | 아니요 
+
+
+| 모니터링.timeSeries.list .2+| Google Cloud Storage 버킷에 대한 정보를 알아보세요. | 예 | 예 | 아니요 
+
+
+| 저장소.버킷.getIamPolicy | 예 | 예 | 아니요 
+|===
+
+
+=== NetApp Backup and Recovery 에 사용되는 권한
+
+[cols="5*"]
+|===
+
+
+| 행위 | 목적 | 배포에 사용되나요? | 일상 업무에 사용되나요? | 삭제에 사용되나요? 
+
+
+ a| 
+* cloudkms.cryptoKeys.get
+* cloudkms.cryptoKeys.getIamPolicy
+* cloudkms.cryptoKeys.list
+* cloudkms.cryptoKeys.setIamPolicy
+* cloudkms.keyRings.get
+* cloudkms.keyRings.getIamPolicy
+* cloudkms.keyRings.list
+* cloudkms.keyRings.setIamPolicy
+
+| 기본 Google 관리 암호화 키를 사용하는 대신 NetApp Backup and Recovery 활성화 마법사에서 고객이 관리하는 키를 직접 선택합니다. | 예 | 예 | 아니요 
+|===
+
+
+=== NetApp Data Classification 에 사용되는 권한
+
+[cols="5*"]
+|===
+
+
+| 행위 | 목적 | 배포에 사용되나요? | 일상 업무에 사용되나요? | 삭제에 사용되나요? 
+
+
+ a| 
+* 컴퓨팅.서브네트워크.사용
+* 컴퓨팅.서브네트워크.외부 IP 사용
+* 컴퓨팅.인스턴스.addAccessConfig
+
+| NetApp Data Classification 활성화하려면. | 예 | 아니요 | 아니요 
 |===
 
 
 == 변경 로그
 
 권한이 추가되거나 제거되면 아래 섹션에 기록됩니다.
+
+
+
+=== 2025년 11월 26일
+
+사용에 대한 명확성을 높이기 위해 권한이 업데이트되었지만, 권한이 추가되거나 제거되지는 않았습니다. 각 권한이 배포, 일상 작업 또는 삭제에 사용되는지 여부를 나타내는 세 개의 열이 추가되었습니다. 이 외에도 몇 가지 권한은 NetApp Data Classification 및 NetApp Backup and Recovery 에 대한 사용 여부에 따라 분리됩니다.
 
 
 
