@@ -20,7 +20,7 @@ summary: 제한 모드에서 NetApp Console 실행한 후에는 제한 모드에
 
 * https://docs.netapp.com/us-en/storage-management-azure-netapp-files/index.html["Azure NetApp Files 문서"^]
 * https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["백업 및 복구 문서"^]
-* https://docs.netapp.com/us-en/data-services-data-classification/index.html["분류 문서"^]
+* https://docs.netapp.com/us-en/data-services-data-classification/index.html["데이터 분류 문서"^]
 * https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP 문서"^]
 * https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html["디지털 지갑 문서"^]
 * https://docs.netapp.com/us-en/storage-management-ontap-onprem/index.html["온프레미스 ONTAP 클러스터 문서"^]
