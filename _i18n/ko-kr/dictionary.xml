@@ -5457,7 +5457,6 @@
   <block id="247a6a0ee254b2ff09347b727ee46227" category="inline-link-macro">에이전트 유지 관리 콘솔에 대해 알아보세요</block>
   <block id="ed63faa45dd9543220a2183fa0e02b97" category="admonition">투명 프록시를 구성하려면 설치 후에 구성하면 됩니다. <block ref="6d6c38ccb358695b7ab850225fcd83aa" category="inline-link-macro-rx"></block></block>
   <block id="fbcd7669a7a0c8cc9053c7c78029654b" category="admonition">콘솔 에이전트를 수동으로 설치하는 경우 투명 프록시 서버에 대한 인증서를 설정할 수 없습니다. 투명 프록시 서버에 대한 인증서를 설정해야 하는 경우 설치 후 유지 관리 콘솔을 사용해야 합니다. 자세히 알아보세요<block ref="d3f69ee6935d5f5f8542f4da69ac2bb6" category="inline-link-macro-rx"></block> .</block>
-  <block id="4fcd2b24226e5ab1f33572cdc55d9b7b" category="list-text">Red Hat Enterprise 9를 사용하는 경우:</block>
   <block id="334ed7efb24267c8a9d5f60a214ee627" category="list-text">podman-compose 패키지 1.5.0을 설치합니다.</block>
   <block id="83291537b9ae75a78c7add56b73a4688" category="list-text">Red Hat Enterprise Linux 8을 사용하는 경우:</block>
   <block id="9c1b6a208384484254769349d91e3af9" category="doc">콘솔 에이전트 4.1.0</block>
@@ -5659,4 +5658,5 @@
   <block id="bf58c65de2201356b331dfea5e7eb976" category="paragraph">Red Hat Enterprise Linux 저장소에서 Podman을 가져옵니다.</block>
   <block id="2632bb82f2d43ffb72d31ea06ed68352" category="list-text">podman-compose를 얻으려면 EPEL을 설치하세요.</block>
   <block id="3c7d277b4a6a1367e3f2567411648df9" category="paragraph">다음 단계에 따라 지원되는 Docker Engine 버전을 설치하세요. 콘솔에서 최신 버전을 지원하지 않으므로 최신 버전을 설치하지 마세요.</block>
+  <block id="18ecbdaa6bb0f123dda150b973bd53b7" category="list-text">Red Hat Enterprise 9.1~9.6을 사용하는 경우:</block>
 </blocks>
