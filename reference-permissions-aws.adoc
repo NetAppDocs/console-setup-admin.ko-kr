@@ -881,7 +881,7 @@ s3:암호화 구성 가져오기
 
 
 
-=== 데이터 분류
+=== 분류
 
 에이전트는 NetApp Data Classification 배포하기 위해 다음 API 요청을 합니다.
 

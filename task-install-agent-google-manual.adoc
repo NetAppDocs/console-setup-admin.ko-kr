@@ -30,7 +30,7 @@ Linux 호스트에 콘솔 에이전트를 수동으로 설치하려면 호스트
 
 NOTE: 콘솔 에이전트는 UID와 GID 범위를 19000~19200으로 예약합니다.  이 범위는 고정되어 있으며 수정할 수 없습니다.  호스트의 타사 소프트웨어가 이 범위 내의 UID나 GID를 사용하는 경우 에이전트 설치가 실패합니다.  NetApp 충돌을 피하기 위해 타사 소프트웨어가 없는 호스트를 사용할 것을 권장합니다.
 
-전담 호스트:: 콘솔 에이전트는 다른 애플리케이션과 공유되는 호스트에서는 지원되지 않습니다. 호스트는 전담 호스트여야 합니다.  호스트는 다음 크기 요구 사항을 충족하는 모든 아키텍처일 수 있습니다.
+전담 호스트:: 콘솔 에이전트를 실행하려면 전용 호스트가 필요합니다.  다음의 크기 요건을 충족하는 모든 아키텍처가 지원됩니다.
 +
 --
 * CPU: 8개 코어 또는 8개 vCPU
@@ -43,14 +43,14 @@ NOTE: 콘솔 에이전트는 UID와 GID 범위를 19000~19200으로 예약합니
 
 ** `/var`: 40GiB의 공간이 사용 가능해야 합니다.
 +
-콘솔 에이전트에는 이 공간이 필요합니다. `/var` Docker나 Podman은 이 디렉토리 내에서 컨테이너를 생성하도록 설계되었기 때문입니다.  특히, 그들은 컨테이너를 생성할 것입니다. `/var/lib/containers/storage` 예배 규칙서.  이 공간에서는 외부 마운트나 심볼릭 링크가 작동하지 않습니다.
+콘솔 에이전트는 다음 공간이 필요합니다. `/var` Podman이나 Docker는 컨테이너를 이 디렉터리 내에 생성하도록 설계되었기 때문입니다.  구체적으로, 그들은 컨테이너를 생성할 것입니다. `/var/lib/containers/storage` 디렉토리 및 `/var/lib/docker` Docker용입니다. 이 공간에서는 외부 마운트나 심볼릭 링크가 작동하지 않습니다.
 
 
 
 
 
 --
-Google Cloud 머신 유형:: CPU 및 RAM 요구 사항을 충족하는 인스턴스 유형입니다.  NetApp n2-standard-8을 권장합니다.
+Google Cloud 머신 유형:: CPU 및 RAM 요구 사항을 충족하는 인스턴스 유형입니다. NetApp n2-standard-8을 권장합니다.
 +
 --
 콘솔 에이전트는 OS가 있는 VM 인스턴스의 Google Cloud에서 지원됩니다. https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["보호된 VM 기능"^]
@@ -161,7 +161,7 @@ Docker 엔진 23.0.6~28.0.0.
 지원되지 않음
 
 |===
-Google Cloud 머신 유형:: CPU 및 RAM 요구 사항을 충족하는 인스턴스 유형입니다.  NetApp n2-standard-8을 권장합니다.
+Google Cloud 머신 유형:: CPU 및 RAM 요구 사항을 충족하는 인스턴스 유형입니다. NetApp n2-standard-8을 권장합니다.
 +
 --
 콘솔 에이전트는 OS가 있는 VM 인스턴스의 Google Cloud에서 지원됩니다. https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["보호된 VM 기능"^]
@@ -190,13 +190,13 @@ Google Cloud 머신 유형:: CPU 및 RAM 요구 사항을 충족하는 인스턴
 ====
 .포드만
 --
-Podman 설치 및 구성:
+Podman을 설치하고 구성하려면 다음 단계를 따르세요.
 
 * podman.socket 서비스를 활성화하고 시작합니다.
 * python3 설치
-* 해당 podman-compose 패키지를 설치하세요
+* podman-compose 패키지 버전 1.0.6을 설치하세요
 * PATH 환경 변수에 podman-compose를 추가합니다.
-* Podman 버전이 CNI 대신 Netavark Aardvark DNS를 사용하고 있는지 확인하세요.
+* Red Hat Enterprise Linux를 사용하는 경우 Podman 버전이 CNI 대신 Netavark Aardvark DNS를 사용하는지 확인하십시오.
 
 
 
@@ -212,7 +212,7 @@ rm /var/run/docker.sock
 ----
 . Podman을 설치하세요.
 +
-Red Hat Enterprise Linux 저장소에서 Podman을 가져옵니다.
+공식 Red Hat Enterprise Linux 저장소에서 Podman을 다운로드할 수 있습니다.
 
 +
 Red Hat Enterprise Linux 9의 경우:
@@ -248,32 +248,34 @@ sudo systemctl enable --now podman.socket
 ----
 sudo dnf install python3
 ----
-. podman-compose를 얻으려면 EPEL을 설치하세요.
-+
-.. Red Hat Enterprise 9.1~9.6을 사용하는 경우:
+. 시스템에 EPEL 저장소 패키지가 아직 없으면 설치하세요.
+
+
+이 단계는 podman-compose가 EPEL(Enterprise Linux용 추가 패키지) 저장소에서 사용 가능하기 때문에 필요합니다.
+
+. Red Hat Enterprise 9.1~9.6을 사용하는 경우:
 +
 [source, cli]
 ----
 sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 ----
-
-
-. podman-compose 패키지 1.5.0을 설치합니다.
++
+.. podman-compose 패키지 1.5.0을 설치합니다.
 +
 [source, cli]
 ----
 sudo dnf install podman-compose-1.5.0
 ----
-+
-.. Red Hat Enterprise Linux 8을 사용하는 경우:
+
+
+. Red Hat Enterprise Linux 8을 사용하는 경우:
 +
 [source, cli]
 ----
 sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 ----
-
-
-. podman-compose 패키지 1.0.6을 설치합니다.
++
+.. podman-compose 패키지 1.0.6을 설치합니다.
 +
 [source, cli]
 ----
@@ -283,11 +285,10 @@ sudo dnf install podman-compose-1.0.6
 
 NOTE: 를 사용하여 `dnf install` 명령은 PATH 환경 변수에 podman-compose를 추가하는 요구 사항을 충족합니다.  설치 명령은 이미 포함되어 있는 /usr/bin에 podman-compose를 추가합니다. `secure_path` 호스트의 옵션.
 
-. Red Hat Enterprise Linux 8을 사용하는 경우 Podman 버전이 CNI 대신 Aardvark DNS와 함께 NetAvark를 사용하는지 확인하세요.
-+
-.. 다음 명령을 실행하여 networkBackend가 CNI로 설정되어 있는지 확인하세요.
+.. Red Hat Enterprise Linux 8을 사용하는 경우 Podman 버전이 CNI 대신 Aardvark DNS와 함께 NetAvark를 사용하는지 확인하세요.
 
 
+. 다음 명령을 실행하여 networkBackend가 CNI로 설정되어 있는지 확인하세요.
 
 
 [listing]
@@ -331,7 +332,7 @@ Docker Engine을 설치하려면 Docker 설명서를 따르세요.
 .단계
 . https://docs.docker.com/engine/install/["Docker에서 설치 지침 보기"^]
 +
-다음 단계에 따라 지원되는 Docker Engine 버전을 설치하세요. 콘솔에서 최신 버전을 지원하지 않으므로 최신 버전을 설치하지 마세요.
+지원되는 Docker Engine 버전을 설치하려면 다음 단계를 따르세요. 콘솔에서 지원되지 않으므로 최신 버전을 설치하지 마세요.
 
 . Docker가 활성화되어 실행 중인지 확인하세요.
 +
@@ -376,7 +377,7 @@ link:reference-networking-saas-console.html["NetApp 콘솔을 위한 네트워�
 
 
  a| 
-\ https://www.googleapis.com/compute/v1/ \ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \ https://www.googleapis.com/deploymentmanager/v2/projects
+https://www.googleapis.com/compute/v1/ https://compute.googleapis.com/compute/v1 https://cloudresourcemanager.googleapis.com/v1/projects https://www.googleapis.com/compute/beta https://storage.googleapis.com/storage/v1 https://www.googleapis.com/storage/v1 https://iam.googleapis.com/v1 https://cloudkms.googleapis.com/v1 // https://config.googleapis.com/v1/projects
  a| 
 Google Cloud에서 리소스를 관리합니다.
 
@@ -470,10 +471,10 @@ Google Cloud 서비스 계정은 콘솔 에이전트에 Google Cloud의 리소�
 .. 필요한 권한이 포함된 YAML 파일을 업로드합니다.
 .. 다음을 사용하여 사용자 정의 역할을 만듭니다. `gcloud iam roles create` 명령.
 +
-다음 예제에서는 프로젝트 수준에서 "connector"라는 이름의 역할을 만듭니다.
+다음 예제는 프로젝트 수준에서 "agent"라는 이름의 역할을 생성합니다.
 
 +
-`gcloud iam roles create connector --project=myproject --file=connector.yaml`
+`gcloud iam roles create connector --project=myproject --file=agent.yaml`
 
 +
 https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloud 문서: 사용자 지정 역할 만들기 및 관리"^]
@@ -567,11 +568,12 @@ link:reference-permissions-gcp.html["에이전트 서비스 계정 정책"]
 
 == 6단계: Google Cloud API 활성화
 
-Google Cloud에서 Cloud Volumes ONTAP 시스템을 배포하려면 먼저 여러 Google Cloud API를 활성화해야 합니다.
+Google Cloud에 콘솔 에이전트를 배포하려면 먼저 몇 가지 Google Cloud API를 사용 설정해야 합니다.
 
 .단계
 . 프로젝트에서 다음 Google Cloud API를 활성화하세요.
 +
+** 클라우드 인프라 관리자 API
 ** 클라우드 배포 관리자 V2 API
 ** 클라우드 로깅 API
 ** 클라우드 리소스 관리자 API
@@ -593,6 +595,8 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloud �
 
 필수 구성 요소를 모두 완료한 후에는 Linux 호스트에 소프트웨어를 수동으로 설치할 수 있습니다.
 
+에이전트를 배포하면 시스템에서 배포 파일을 저장할 Google Cloud 버킷도 생성합니다.
+
 .시작하기 전에
 다음 사항이 있어야 합니다.
 
@@ -605,10 +609,10 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloud �
 
 
 
-NOTE: 콘솔 에이전트를 수동으로 설치하는 경우 투명 프록시 서버에 대한 인증서를 설정할 수 없습니다.  투명 프록시 서버에 대한 인증서를 설정해야 하는 경우 설치 후 유지 관리 콘솔을 사용해야 합니다. 자세히 알아보세요link:reference-agent-maint-console.html["에이전트 유지 관리 콘솔"] .
+NOTE: 콘솔 에이전트를 수동으로 설치하는 경우 투명 프록시 서버에 대한 인증서를 설정할 수 없습니다. 투명 프록시 서버에 대한 인증서를 설정해야 하는 경우 설치 후 유지 관리 콘솔을 사용해야 합니다. 자세히 알아보세요link:reference-agent-maint-console-proxy.html["에이전트 유지 관리 콘솔"] .
 
 .이 작업에 관하여
-NetApp 지원 사이트에서 제공되는 설치 프로그램은 이전 버전일 수 있습니다.  설치 후, 새로운 버전이 나오면 콘솔 에이전트가 자동으로 업데이트됩니다.
+설치 후, 새로운 버전이 나오면 콘솔 에이전트가 자동으로 업데이트됩니다.
 
 .단계
 . 호스트에 _http_proxy_ 또는 _https_proxy_ 시스템 변수가 설정되어 있으면 제거합니다.
@@ -621,9 +625,14 @@ unset https_proxy
 +
 이러한 시스템 변수를 제거하지 않으면 설치가 실패합니다.
 
-. 콘솔 에이전트 소프트웨어를 다운로드하세요. https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 지원 사이트"^] 그런 다음 Linux 호스트에 복사합니다.
+. 콘솔 에이전트 소프트웨어를 다운로드한 다음 Linux 호스트에 복사하십시오.  NetApp Console 또는 NetApp 지원 사이트에서 다운로드할 수 있습니다.
 +
-네트워크나 클라우드에서 사용할 수 있는 "온라인" 에이전트 설치 프로그램을 다운로드해야 합니다.
+** NetApp Console: *에이전트 > 관리 > 에이전트 배포 > 온프레미스 > 수동 설치*로 이동합니다.
++
+에이전트 설치 파일 다운로드 또는 파일 URL 다운로드를 선택하십시오.
+
+** NetApp 지원 사이트 (콘솔에 대한 액세스 권한이 없는 경우 필요) https://mysupport.netapp.com/site/products/all/details/netapp-console/downloads-tab["NetApp 지원 사이트"^] ,
+
 
 . 스크립트를 실행할 수 있는 권한을 할당합니다.
 +
@@ -683,7 +692,7 @@ chmod +x NetApp_Console_Agent_Cloud_<version>
 
 
 
-NOTE: 투명 프록시를 구성하려면 설치 후에 구성하면 됩니다. link:reference-agent-maint-console.html["에이전트 유지 관리 콘솔에 대해 알아보세요"]
+NOTE: 투명 프록시를 구성하려면 설치 후에 구성하면 됩니다. link:reference-agent-maint-console-proxy.html["에이전트 유지 관리 콘솔에 대해 알아보세요"]
 
 . Podman을 사용한 경우 aardvark-dns 포트를 조정해야 합니다.
 +

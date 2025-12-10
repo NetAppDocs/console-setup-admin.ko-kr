@@ -18,7 +18,7 @@ NetApp 대부분의 메뉴 옵션을 왼쪽 탐색 창으로 옮기고 NetApp Co
 
 ==== Canvas는 시스템 페이지로 대체됩니다.
 
-NetApp Canvas의 이름을 *시스템* 페이지로 변경했습니다.  *저장소 > 관리* 메뉴에서 *시스템* 페이지로 이동합니다.
+NetApp Canvas의 이름을 *시스템* 페이지로 변경했습니다. 저장소 > 관리 메뉴에서 시스템 페이지로 이동합니다.
 
 image:https://docs.netapp.com/us-en/console-setup-admin/media/screenshot-storage-mgmt.png["시스템 페이지의 스크린샷."]
 

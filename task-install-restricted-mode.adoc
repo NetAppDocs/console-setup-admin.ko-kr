@@ -27,7 +27,7 @@ NetApp Console 제한된 아웃바운드 연결로 사용할 수 있도록 콘�
 .AWS 커머셜 마켓플레이스
 --
 .시작하기 전에
-다음 사항이 있어야 합니다.
+다음 사항을 숙지하십시오:
 
 * 네트워킹 요구 사항을 충족하는 VPC 및 서브넷.
 +
@@ -94,7 +94,7 @@ NetApp Console 설정합니다.
 .AWS Gov 마켓플레이스
 --
 .시작하기 전에
-다음 사항이 있어야 합니다.
+다음 사항을 숙지하십시오:
 
 * 네트워킹 요구 사항을 충족하는 VPC 및 서브넷.
 +
@@ -120,7 +120,7 @@ image:screenshot-gov-cloud-mktp.png["AWS Marketplace에서 NetApp Console 검색
 .. *계속*을 선택하세요.
 
 
-. 프롬프트에 따라 인스턴스를 구성하고 배포하세요.
+. 안내에 따라 인스턴스를 설정하고 시작하십시오.
 +
 ** *인스턴스 유형 선택*: 지역별 가용성에 따라 지원되는 인스턴스 유형 중 하나를 선택합니다(t3.2xlarge 권장).
 +
@@ -175,12 +175,12 @@ VM을 구성할 때 다음 사항에 유의하세요.
 +
 ** *VM 크기*: CPU 및 RAM 요구 사항을 충족하는 VM 크기를 선택하세요.  Standard_D8s_v3을 권장합니다.
 ** *디스크*: 콘솔 에이전트는 HDD 또는 SSD 디스크를 사용하면 최적의 성능을 발휘할 수 있습니다.
-** *공용 IP*: 콘솔 에이전트 VM에서 공용 IP 주소를 사용하려면 콘솔에서 이 공용 IP 주소를 사용할 수 있도록 IP 주소에 기본 SKU를 사용해야 합니다.
+** *공용 IP*: 콘솔 에이전트 VM에서 공용 IP 주소를 사용하려면 기본 SKU를 선택하십시오.
 +
 image:screenshot-azure-sku.png["SKU 필드에서 기본을 선택할 수 있는 Azure에서 새 IP 주소를 만드는 스크린샷입니다."]
 
 +
-대신 표준 SKU IP 주소를 사용하면 콘솔은 공용 IP 대신 콘솔 에이전트의 _개인_ IP 주소를 사용합니다. 콘솔에 액세스하는 데 사용하는 컴퓨터가 해당 개인 IP 주소에 액세스할 수 없는 경우 콘솔의 작업은 실패합니다.
+대신 표준 SKU IP 주소를 사용하면 콘솔은 공용 IP 대신 콘솔 에이전트의 _개인_ IP 주소를 사용합니다. 콘솔에 접속하는 데 사용하는 기기가 사설 IP 주소에 연결할 수 없는 경우 콘솔이 작동하지 않습니다.
 
 +
 https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Azure 설명서: 공용 IP SKU"^]
@@ -191,7 +191,7 @@ link:reference-ports-azure.html["Azure에 대한 보안 그룹 규칙 보기"] .
 
 ** *ID*: *관리*에서 *시스템에서 할당한 관리 ID 사용*을 선택합니다.
 +
-이 설정은 관리되는 ID를 통해 콘솔 에이전트 가상 머신이 자격 증명을 제공하지 않고도 Microsoft Entra ID로 자신을 식별할 수 있기 때문에 중요합니다. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Azure 리소스에 대한 관리 ID에 대해 자세히 알아보세요."^] .
+관리되는 ID를 사용하면 콘솔 에이전트 VM이 자격 증명 없이 Microsoft Entra ID에 자신을 식별할 수 있습니다. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Azure 리소스에 대한 관리 ID에 대해 자세히 알아보세요."^] .
 
 
 
@@ -219,14 +219,14 @@ NetApp Console 설정합니다.
 
 
 
-NOTE: 콘솔 에이전트를 수동으로 설치하는 경우 투명 프록시 서버에 대한 인증서를 설정할 수 없습니다.  투명 프록시 서버에 대한 인증서를 설정해야 하는 경우 설치 후 유지 관리 콘솔을 사용해야 합니다. 자세히 알아보세요link:reference-agent-maint-console.html["에이전트 유지 관리 콘솔"] .
+NOTE: 콘솔 에이전트를 수동으로 설치하는 경우 투명 프록시 서버에 대한 인증서를 설정할 수 없습니다. 투명 프록시 서버에 대한 인증서를 설정해야 하는 경우 설치 후 유지 관리 콘솔을 사용해야 합니다. 자세히 알아보세요link:reference-agent-maint-console-proxy.html["에이전트 유지 관리 콘솔"] .
 
 * 설치 중에 아웃바운드 연결을 확인하는 구성 검사를 비활성화해야 합니다.  이 검사를 비활성화하지 않으면 수동 설치가 실패합니다.link:task-troubleshoot-agent.html["수동 설치에 대한 구성 검사를 비활성화하는 방법을 알아보세요."]
 * 콘솔 에이전트를 설치하기 전에 운영 체제에 따라 Podman 또는 Docker Engine이 필요합니다.
 
 
 .이 작업에 관하여
-NetApp 지원 사이트에서 제공되는 설치 프로그램은 이전 버전일 수 있습니다.  설치 후, 새로운 버전이 나오면 콘솔 에이전트가 자동으로 업데이트됩니다.
+설치 후, 새로운 버전이 나오면 콘솔 에이전트가 자동으로 업데이트됩니다.
 
 .단계
 . 호스트에 _http_proxy_ 또는 _https_proxy_ 시스템 변수가 설정되어 있으면 제거합니다.
@@ -239,9 +239,14 @@ unset https_proxy
 +
 이러한 시스템 변수를 제거하지 않으면 설치가 실패합니다.
 
-. 콘솔 에이전트 소프트웨어를 다운로드하세요. https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 지원 사이트"^] 그런 다음 Linux 호스트에 복사합니다.
+. 콘솔 에이전트 소프트웨어를 다운로드한 다음 Linux 호스트에 복사하십시오.  NetApp Console 또는 NetApp 지원 사이트에서 다운로드할 수 있습니다.
 +
-네트워크나 클라우드에서 사용할 수 있는 "온라인" 에이전트 설치 프로그램을 다운로드해야 합니다.
+** NetApp Console: *에이전트 > 관리 > 에이전트 배포 > 온프레미스 > 수동 설치*로 이동합니다.
++
+에이전트 설치 파일 다운로드 또는 파일 URL 다운로드를 선택하십시오.
+
+** NetApp 지원 사이트 (콘솔에 대한 액세스 권한이 없는 경우 필요) https://mysupport.netapp.com/site/products/all/details/netapp-console/downloads-tab["NetApp 지원 사이트"^] ,
+
 
 . 스크립트를 실행할 수 있는 권한을 할당합니다.
 +
@@ -301,7 +306,7 @@ chmod +x NetApp_Console_Agent_Cloud_<version>
 
 
 
-NOTE: 투명 프록시를 구성하려면 설치 후에 구성하면 됩니다. link:reference-agent-maint-console.html["에이전트 유지 관리 콘솔에 대해 알아보세요"]
+NOTE: 투명 프록시를 구성하려면 설치 후에 구성하면 됩니다. link:reference-agent-maint-console-proxy.html["에이전트 유지 관리 콘솔에 대해 알아보세요"]
 
 . Podman을 사용한 경우 aardvark-dns 포트를 조정해야 합니다.
 +
@@ -347,7 +352,7 @@ NetApp Console 설정합니다.
 .시작하기 전에
 콘솔 에이전트를 설정하는 사람은 콘솔 조직에 속하지 않은 로그인을 사용하여 콘솔에 로그인해야 합니다.
 
-귀하의 로그인이 다른 조직과 연계되어 있는 경우, 새로운 로그인으로 가입해야 합니다.  그렇지 않으면 설정 화면에서 제한 모드를 활성화하는 옵션이 표시되지 않습니다.
+로그인 정보가 다른 기관과 연결되어 있는 경우, 새 로그인 정보를 사용하여 가입해야 합니다.  그렇지 않으면 설정 화면에서 제한 모드를 활성화하는 옵션이 표시되지 않습니다.
 
 .단계
 . 콘솔 에이전트 인스턴스에 연결된 호스트에서 웹 브라우저를 열고 설치한 콘솔 에이전트의 다음 URL을 입력합니다.
@@ -379,7 +384,7 @@ NetApp Console 설정합니다.
 
 == 3단계: 콘솔 에이전트에 권한 제공
 
-Azure Marketplace에서 콘솔 에이전트를 배포했거나 콘솔 에이전트 소프트웨어를 수동으로 설치한 경우 이전에 설정한 권한을 제공해야 합니다.
+Azure Marketplace에서 또는 수동으로 콘솔 에이전트를 설치한 경우 이전에 설정한 권한을 부여해야 합니다.
 
 배포 중에 필요한 IAM 역할을 선택했기 때문에 AWS Marketplace에서 콘솔 에이전트를 배포한 경우에는 이러한 단계가 적용되지 않습니다.
 

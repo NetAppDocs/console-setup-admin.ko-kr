@@ -14,10 +14,10 @@
 
 
 
-NOTE: 콘솔 에이전트를 수동으로 설치하는 경우 투명 프록시 서버에 대한 인증서를 설정할 수 없습니다.  투명 프록시 서버에 대한 인증서를 설정해야 하는 경우 설치 후 유지 관리 콘솔을 사용해야 합니다. 자세히 알아보세요link:reference-agent-maint-console.html["에이전트 유지 관리 콘솔"] .
+NOTE: 콘솔 에이전트를 수동으로 설치하는 경우 투명 프록시 서버에 대한 인증서를 설정할 수 없습니다. 투명 프록시 서버에 대한 인증서를 설정해야 하는 경우 설치 후 유지 관리 콘솔을 사용해야 합니다. 자세히 알아보세요link:reference-agent-maint-console-proxy.html["에이전트 유지 관리 콘솔"] .
 
 .이 작업에 관하여
-NetApp 지원 사이트에서 제공되는 설치 프로그램은 이전 버전일 수 있습니다.  설치 후, 새로운 버전이 나오면 콘솔 에이전트가 자동으로 업데이트됩니다.
+설치 후, 새로운 버전이 나오면 콘솔 에이전트가 자동으로 업데이트됩니다.
 
 .단계
 . 호스트에 _http_proxy_ 또는 _https_proxy_ 시스템 변수가 설정되어 있으면 제거합니다.
@@ -30,9 +30,14 @@ unset https_proxy
 +
 이러한 시스템 변수를 제거하지 않으면 설치가 실패합니다.
 
-. 콘솔 에이전트 소프트웨어를 다운로드하세요. https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 지원 사이트"^] 그런 다음 Linux 호스트에 복사합니다.
+. 콘솔 에이전트 소프트웨어를 다운로드한 다음 Linux 호스트에 복사하십시오.  NetApp Console 또는 NetApp 지원 사이트에서 다운로드할 수 있습니다.
 +
-네트워크나 클라우드에서 사용할 수 있는 "온라인" 에이전트 설치 프로그램을 다운로드해야 합니다.
+** NetApp Console: *에이전트 > 관리 > 에이전트 배포 > 온프레미스 > 수동 설치*로 이동합니다.
++
+에이전트 설치 파일 다운로드 또는 파일 URL 다운로드를 선택하십시오.
+
+** NetApp 지원 사이트 (콘솔에 대한 액세스 권한이 없는 경우 필요) https://mysupport.netapp.com/site/products/all/details/netapp-console/downloads-tab["NetApp 지원 사이트"^] ,
+
 
 . 스크립트를 실행할 수 있는 권한을 할당합니다.
 +
@@ -92,7 +97,7 @@ chmod +x NetApp_Console_Agent_Cloud_<version>
 
 
 
-NOTE: 투명 프록시를 구성하려면 설치 후에 구성하면 됩니다. link:reference-agent-maint-console.html["에이전트 유지 관리 콘솔에 대해 알아보세요"]
+NOTE: 투명 프록시를 구성하려면 설치 후에 구성하면 됩니다. link:reference-agent-maint-console-proxy.html["에이전트 유지 관리 콘솔에 대해 알아보세요"]
 
 . Podman을 사용한 경우 aardvark-dns 포트를 조정해야 합니다.
 +

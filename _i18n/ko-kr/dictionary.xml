@@ -173,7 +173,6 @@
   <block id="4e223f64569ea1042cb81c1032cff1f8" category="paragraph">| Azure Government 지역의 리소스를 관리합니다.</block>
   <block id="2b7f6d951b3a705af72cb63a7d0788dd" category="paragraph">| \ https://management.chinacloudapi.cn \ https://login.chinacloudapi.cn \ https://blob.core.chinacloudapi.cn \ https://core.chinacloudapi.cn</block>
   <block id="6fc418bd4d8d26d716d678ffb2c516e9" category="paragraph">| Azure China 지역의 리소스를 관리합니다.</block>
-  <block id="1e20d05d6d0ad597892e7e3d08324340" category="paragraph">| \ https://www.googleapis.com/compute/v1/ \ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \ https://www.googleapis.com/deploymentmanager/v2/projects</block>
   <block id="641d1f191c2b819061a8e9b6046fdbeb" category="paragraph">| Google Cloud에서 리소스를 관리합니다.</block>
   <block id="c642b24062280a73e940087788371986" category="paragraph">| \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com | NetApp Console 내에서 기능과 서비스를 제공합니다.</block>
   <block id="4600c0d23dfe95b8db6f735a4b192742" category="paragraph">a| \ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io a| 콘솔 에이전트 업그레이드를 위한 이미지를 얻습니다.</block>
@@ -238,10 +237,7 @@
   <block id="8f93743fbd54f532def6ac1dbad2311c" category="list-text">관리자 권한이 있는 IdP 계정이 필요합니다.  IdP 관리자와 협력하여 단계를 완료하세요.</block>
   <block id="6b46a604d63ba159459b8912d7a91a98" category="inline-link-macro">NetApp Console 에서 도메인을 확인하세요</block>
   <block id="323b172f396879dcec7aaeccff2097c0" category="list-text">페더레이션에 사용할 도메인을 식별합니다.  귀하의 이메일 도메인이나 귀하가 소유한 다른 도메인을 사용할 수 있습니다.  이메일 도메인이 아닌 다른 도메인을 사용하려면 먼저 콘솔에서 도메인을 확인해야 합니다.  다음 단계에 따라 이 작업을 수행할 수 있습니다.<block ref="a68d68e2e08ca1853c0f2263bccee217" category="inline-link-macro-rx"></block> 주제.</block>
-  <block id="1f6f159c41e8184975acbe6c7565ebfd" category="list-text">연결을 테스트하려면 *연결 테스트*를 선택하세요.  IdP 서버의 로그인 페이지로 이동됩니다.  테스트를 완료하려면 IdP 자격 증명으로 로그인하고 콘솔로 돌아가서 연결을 활성화하세요.</block>
-  <block id="f0761ff93e66859d8caa58e0c31e7b93" category="list-text">*페더레이션 활성화* 페이지에서 페더레이션 세부 정보를 검토한 다음 *페더레이션 활성화*를 선택합니다.</block>
   <block id="c27bc1dfe805a5825a9acbc35c1a7070" category="list-text">*마침*을 선택하여 과정을 완료하세요.</block>
-  <block id="862a4be632d4835e1b078c54f61faa22" category="paragraph">페더레이션을 활성화하면 사용자는 회사 자격 증명을 사용하여 NetApp Console 에 로그인할 수 있습니다.</block>
   <block id="f9e5e080572c03ab317bbccdc54d6420" category="list-text">도메인 세부 정보를 입력하세요:</block>
   <block id="9532d6ece2fef47ed8c4e96a717a9d5a" category="list-text">검증된 도메인을 사용할지, 이메일 도메인을 사용할지 선택하세요.  이메일 도메인은 로그인한 계정과 연결된 도메인입니다.</block>
   <block id="7418fbd49ebe84785dec096769ba5b4d" category="list-text">구성 중인 페더레이션의 이름을 입력하세요.</block>
@@ -266,8 +262,6 @@
   <block id="49cfb78048f1f3515483265f3346abf2" category="list-text">Google Cloud에서 Cloud Shell을 활성화합니다.</block>
   <block id="58ffd52090b3c8f5d53c7a41dce5badd" category="list-text">필요한 권한이 포함된 YAML 파일을 업로드합니다.</block>
   <block id="e53a12ca8bd24ad75a525265c644c5c7" category="list-text">다음을 사용하여 사용자 정의 역할을 만듭니다.<block ref="46cbf543e45ddd605bb826dcc9a3c498" prefix=" " category="inline-code"></block> 명령.</block>
-  <block id="60696c8c3376d314543ef1f6c5dd3364" category="paragraph">다음 예제에서는 프로젝트 수준에서 "connector"라는 이름의 역할을 만듭니다.</block>
-  <block id="faa2f324a4d310b356e12aa82056254e" category="paragraph"><block ref="c95ec05c4ecf0f3a1ae9ac9ed3381eba" prefix="" category="inline-code"></block></block>
   <block id="bddcef6ecce1c29406e404e0432421e3" category="inline-link">Google Cloud 문서: 사용자 지정 역할 만들기 및 관리</block>
   <block id="df04ae29fdadbced9cd2cbe7c3037ab8" category="paragraph"><block ref="df04ae29fdadbced9cd2cbe7c3037ab8" category="inline-link-rx"></block></block>
   <block id="2afbc6cdafdfd50d0796ff7ccdc0fd3e" category="list-text">Google Cloud에서 서비스 계정을 만들고 서비스 계정에 역할을 할당합니다.</block>
@@ -290,7 +284,6 @@
   <block id="a586afd44f6b4a0aadf87baaebfe958b" category="list-text">정의된 권한을 포함하는 YAML 파일을 만듭니다.<block ref="5fa46f1796046b3ca5c88fd6f18f408a" category="inline-link-macro-rx"></block> .</block>
   <block id="dea708cc736d31b65dc27e1f81cc0f15" category="list-text">콘솔 에이전트에 필요한 권한이 포함된 YAML 파일을 업로드합니다.</block>
   <block id="bd67573655874b669c5ced800e8181a2" category="list-text">Google Cloud에서 서비스 계정을 만듭니다.</block>
-  <block id="9ed3505a9736251271f6b1b08b3433f5" category="paragraph">이제 콘솔 에이전트 VM 인스턴스에 할당할 수 있는 서비스 계정이 생겼습니다.</block>
   <block id="258ec60588311e40d9028ecd4b015f8a" category="paragraph">공유 VPC를 사용하여 서비스 프로젝트에 리소스를 배포하는 경우 권한을 준비해야 합니다.</block>
   <block id="d723567d50507549f1f0eed5e785438e" category="paragraph">이 표는 참조용이며 IAM 구성이 완료되면 사용자 환경에 권한 표가 반영되어야 합니다.</block>
   <block id="658340d0aa3e36a759f733841569dc13" category="example-title">공유 VPC 권한 보기</block>
@@ -332,7 +325,6 @@
   <block id="4417d966b724524a7dd995ebe740c6cb" category="paragraph">설치 후 프록시 서버를 구성할 수 있지만, 그렇게 하려면 콘솔 에이전트를 다시 시작해야 합니다.</block>
   <block id="a9f9e821b8a8692181584ef4520bb0f5" category="list-text">프록시 서버가 HTTPS를 사용하거나 프록시가 가로채기 프록시인 경우 CA 서명 인증서가 필요합니다.</block>
   <block id="f055093e2366ca02aea03df7cfb1248e" category="inline-link-macro">에이전트 유지 관리 콘솔</block>
-  <block id="4439aaaad475e34c70f12f09ad6165d9" category="admonition">콘솔 에이전트를 수동으로 설치하는 경우 투명 프록시 서버에 대한 인증서를 설정할 수 없습니다.  투명 프록시 서버에 대한 인증서를 설정해야 하는 경우 설치 후 유지 관리 콘솔을 사용해야 합니다. 자세히 알아보세요<block ref="0f8b8c9e4ded9a5f5a72925670422347" category="inline-link-macro-rx"></block> .</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">이 작업에 관하여</block>
   <block id="659f0b9a6a18db69662f4738cacedeb4" category="paragraph">NetApp 지원 사이트에서 제공되는 설치 프로그램은 이전 버전일 수 있습니다.  설치 후, 새로운 버전이 나오면 콘솔 에이전트가 자동으로 업데이트됩니다.</block>
   <block id="16c184ab0a5376cef0ecef7f0da93ac2" category="list-text">호스트에 _http_proxy_ 또는 _https_proxy_ 시스템 변수가 설정되어 있으면 제거합니다.</block>
@@ -436,7 +428,6 @@
   <block id="9c0e62a86b9fe558cad9c4d280ea439d" category="list-text">NTP 활성화</block>
   <block id="62286fee1b0c285ac291bc232fe7f74f" category="inline-link">NetApp 데이터 분류에 대해 자세히 알아보세요</block>
   <block id="c2fc633e22b03955b13beee2049ac471" category="list-text">NetApp Data Classification 사용하여 회사 데이터 소스를 스캔하려는 경우 콘솔 에이전트와 NetApp Data Classification 시스템 모두에서 NTP(네트워크 시간 프로토콜) 서비스를 활성화하여 시스템 간의 시간을 동기화해야 합니다.<block ref="95ad16386ae4ac759ff3f180dcafce84" category="inline-link-rx"></block></block>
-  <block id="da9c5bf0a2786648e8cd1c7f9b39bd31" category="list-text">콘솔 에이전트는 다른 애플리케이션과 공유되는 호스트에서는 지원되지 않습니다. 호스트는 전담 호스트여야 합니다.  호스트는 다음 크기 요구 사항을 충족하는 모든 아키텍처일 수 있습니다.</block>
   <block id="df4af5ebfed55f726690fe09695fb1fa" category="list-text">CPU: 8개 코어 또는 8개 vCPU</block>
   <block id="357a496c919d7b340d6f4582397b89b5" category="list-text">램: 32GB</block>
   <block id="69fc366414a2e0b9932f47f1ac056ee7" category="list-text">디스크 공간: 호스트에 권장되는 디스크 공간은 165GB이며, 다음 파티션 요구 사항이 적용됩니다.</block>
@@ -482,7 +473,6 @@
   <block id="607262a04e5c4340fc8d641e874a5695" category="paragraph">3.9.29 이상</block>
   <block id="a3336db0e9f7b6341a12794c144076b6" category="paragraph">Docker 엔진 23.0.6~26.0.0</block>
   <block id="5556c95763913c6cfa8f61d9cab4f4f2" category="paragraph">26.0.0은 _new_ agent 3.9.44 이상 설치에서 지원됩니다.</block>
-  <block id="2482bd6110246df30d07035a37ec9284" category="list-text">SELinux가 운영 체제에서 활성화된 에이전트에서는 Cloud Volumes ONTAP 시스템 관리가 지원되지 않습니다.</block>
   <block id="afaf0577b469adb0296b4fcfa6f2af91" category="list-text">콘솔 에이전트는 이러한 운영 체제의 영어 버전에서 지원됩니다.</block>
   <block id="31acdb1c0f97e43347645b47a1cb7ad5" category="list-text">RHEL의 경우 호스트를 Red Hat Subscription Management에 등록해야 합니다.  등록되지 않은 경우 호스트는 에이전트 설치 중에 필요한 타사 소프트웨어를 업데이트하기 위해 저장소에 액세스할 수 없습니다.</block>
   <block id="2b55387dd066c5bac646ac61543d152d" category="list-text">CPU</block>
@@ -493,7 +483,6 @@
   <block id="6cd56a4cc4ddbbfd2bc9d57de5d788aa" category="list-text">키 쌍</block>
   <block id="56ff78b5911451c928f64308fe1d80b3" category="list-text">콘솔 에이전트를 생성할 때 인스턴스와 함께 사용할 EC2 키 쌍을 선택해야 합니다.</block>
   <block id="c8e7383477673ee726b6ba29dc487444" category="list-text">IMDSv2를 사용할 때 PUT 응답 홉 제한</block>
-  <block id="6072a0c0865bf8071e3960e01a77d5f4" category="list-text">EC2 인스턴스에서 IMDSv2가 활성화된 경우(새로운 EC2 인스턴스의 기본 설정) 인스턴스의 PUT 응답 홉 제한을 3으로 변경해야 합니다.  EC2 인스턴스의 제한을 변경하지 않으면 에이전트를 설정하려고 할 때 UI 초기화 오류가 발생합니다.</block>
   <block id="98dddf7eafbbdfa88756d62945237473" category="inline-link-macro">Amazon EC2 인스턴스에서 IMDSv2 사용 요구</block>
   <block id="8d8efedf65fe740dfe59c5779c9d745c" category="list-text"><block ref="8d8efedf65fe740dfe59c5779c9d745c" category="inline-link-macro-rx"></block></block>
   <block id="75c0fbf84b1614b17a984df62bf849f6" category="inline-link">AWS 설명서: PUT 응답 홉 제한 변경</block>
@@ -944,7 +933,6 @@
   <block id="0b0a6d9ce7462fc9a218e93ccbee32e7" category="section-title">탐색 메뉴 및 페이지</block>
   <block id="7ceea4a6639fef28fae4477857f229e5" category="paragraph">NetApp 대부분의 메뉴 옵션을 왼쪽 탐색 창으로 옮기고 NetApp Console 에서 더 쉽게 탐색할 수 있도록 메뉴를 재구성했습니다.</block>
   <block id="4fa56c3d158c844dc75b2826ee4c98d0" category="section-title">Canvas는 시스템 페이지로 대체됩니다.</block>
-  <block id="e98962c5bb7d0d1afd483518e730b4c8" category="paragraph">NetApp Canvas의 이름을 *시스템* 페이지로 변경했습니다.  *저장소 &gt; 관리* 메뉴에서 *시스템* 페이지로 이동합니다.</block>
   <block id="ddd56b1479dbec10cfb6fc0a3a8afe57" category="inline-image-macro">시스템 페이지의 스크린샷.</block>
   <block id="028a5defa734a1e5527100ece8ea2e66" category="paragraph"><block ref="028a5defa734a1e5527100ece8ea2e66" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e6ee78fd171283b1b449978ae0c73e06" category="section-title">확장된 스토리지 메뉴</block>
@@ -1136,7 +1124,6 @@
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="section-title">자주 묻는 질문</block>
   <block id="d33d86c6f3f99b3b9b1b988bde0679bd" category="paragraph">다음 질문은 자격 증명 및 구독과 관련이 있습니다.</block>
   <block id="70bfaa19a89e29bf0fc2b34b8f3150ba" category="section-title">AWS 자격 증명을 안전하게 회전하려면 어떻게 해야 하나요?</block>
-  <block id="3f306aaee2a65dfda1ad13f709a0b4ae" category="paragraph">처음 두 가지 옵션을 사용하면 콘솔은 AWS 보안 토큰 서비스를 사용하여 지속적으로 순환되는 임시 자격 증명을 얻습니다.  이 프로세스는 자동화되어 있고 안전하기 때문에 가장 좋은 방법입니다.</block>
   <block id="0756a90a4a5e55dd02063c7dc80562de" category="paragraph">콘솔에 AWS 액세스 키를 제공하는 경우 정기적으로 콘솔에서 키를 업데이트하여 키를 순환해야 합니다.  이는 완전히 수동적인 과정입니다.</block>
   <block id="c32ecd65cd5790ceb41fc1ef7d6a6e7d" category="section-title">Cloud Volumes ONTAP 시스템에 대한 AWS Marketplace 구독을 변경할 수 있나요?</block>
   <block id="469da6edf5632bcbb4aae525bd58406a" category="paragraph">네, 가능합니다.  자격 증명 세트와 연결된 AWS Marketplace 구독을 변경하면 모든 기존 및 새 Cloud Volumes ONTAP 시스템에 새 구독 요금이 청구됩니다.</block>
@@ -1617,7 +1604,6 @@
   <block id="eda63b570db82e05c2fd7b5f0c3bb20f" category="cell">심사</block>
   <block id="6c781c37150950b9639b1a88927fa671" category="summary">NetApp Console 에서 조직 간 파트너십을 구축하면 조직 파트너가 조직 경계를 넘어 NetApp 리소스를 안전하게 관리하여 협업을 간소화하고 보안을 강화할 수 있습니다.</block>
   <block id="48b10af85ea37189fccab5406ba059ed" category="doc">NetApp Console 의 파트너십</block>
-  <block id="7fa861748c4d1659172de0b58f97b1f9" category="paragraph">조직 간 파트너십을 구축하는 NetApp Console 사용하면 파트너가 조직 경계를 넘어 NetApp 리소스를 안전하게 관리하여 협업을 간소화하고 보안을 강화할 수 있습니다.</block>
   <block id="8f032c748fc26fa9d1200f8efa6a0d8c" category="paragraph-title">필수 역할</block>
   <block id="8dab33dda3f37e096d3ad18f7ab81434" category="paragraph">파트너십 관리자<block ref="8f129ac67aaaf533c741c49d131f7a5d" category="inline-link-macro-rx"></block></block>
   <block id="324861aee136989b2cba2eb117747e57" category="paragraph">파트너십을 통해 콘솔에서 역할 기반 관계를 사용하여 조직 전체에서 NetApp 리소스를 안전하게 관리할 수 있습니다.  시작 조직은 리소스에 대한 액세스 권한을 부여하고, 수락 조직은 액세스 권한이 부여될 사용자 또는 서비스 계정을 제공합니다.  파트너십은 셀프 서비스 워크플로를 통해 구축되며, 이를 통해 시작한 조직은 어떤 리소스를 공유할지, 어떤 역할을 할당할지, 필요에 따라 파트너 액세스를 온보딩, 관리 또는 취소할 수 있는 권한을 완벽하게 제어할 수 있습니다.</block>
@@ -1775,19 +1761,12 @@
   <block id="590b2ea5933ad8ead3c9a15a914f1a9c" category="list-text">모든 서비스는 Docker 컨테이너 내부에서 실행됩니다.</block>
   <block id="f76b4c57c56377745199382d59cdeed3" category="paragraph">서비스는 실행 중인 Docker 런타임 서비스에 따라 달라집니다.</block>
   <block id="846c386cf81542225b98b6f2bb22ac66" category="summary">콘솔 에이전트 유지 관리 콘솔을 사용하여 콘솔 에이전트가 투명 프록시 서버를 사용하도록 구성할 수 있습니다.</block>
-  <block id="201ded18828aa36cabf001ad5b286fef" category="doc">콘솔 에이전트 유지 관리 콘솔</block>
   <block id="64a20b3b93e3313beb44e4cdfaa3fc62" category="section-title">에이전트 유지 관리 콘솔에 액세스하세요</block>
   <block id="54b21d666b59ebab4d006b20d3923a8a" category="paragraph">콘솔 에이전트 호스트에서 유지 관리 콘솔에 액세스할 수 있습니다.  다음 디렉토리로 이동하세요:</block>
   <block id="38c16b07265a0ea453b6c31b87484378" category="section-title">투명 프록시 명령</block>
-  <block id="4108bec2e5adefed2de8ccea6de208c1" category="paragraph">에이전트 유지 관리 콘솔은 에이전트가 투명 프록시 서버를 사용하도록 구성하는 명령을 제공합니다.</block>
-  <block id="67ee408ff988e76f6d3799ac5efa460f" category="section-title">현재 투명 프록시 구성 보기</block>
-  <block id="a2a14e0f8a35f998c35eb5e7b4f11c63" category="paragraph">현재 투명 프록시 구성을 보려면 다음 명령을 사용하세요.</block>
-  <block id="2060dbc448df049844e06c84fd90c8cc" category="section-title">투명 프록시 서버 추가</block>
   <block id="d55c6a8d11c5ba3e1a749110d08d13a0" category="paragraph">투명 프록시 서버를 추가하려면 다음 명령을 사용하십시오.<block ref="b2ade5ab23fdcff48ad66c933b8c0a7a" prefix=" " category="inline-code"></block> 프록시 서버의 인증서 파일 경로입니다.  인증서 파일은 PEM 형식이어야 합니다.</block>
   <block id="2dfbed833348a18ef6acd6126802e582" category="paragraph">인증서 파일이 명령과 같은 디렉토리에 있는지 확인하거나 인증서 파일의 전체 경로를 지정하세요.</block>
-  <block id="37113521420e96a3a50c96de96815289" category="section-title">투명 프록시 서버에 대한 인증서 업데이트</block>
   <block id="7e3520831eb4f49402b5e66b7de0cf9b" category="paragraph">투명 프록시 서버의 인증서를 업데이트하려면 다음 명령을 사용하십시오.<block ref="b2ade5ab23fdcff48ad66c933b8c0a7a" prefix=" " category="inline-code"></block> 프록시 서버의 새 인증서 파일 경로입니다.  인증서 파일은 PEM 형식이어야 합니다.</block>
-  <block id="f45f29ba66bb2b571ee2752605accdb9" category="section-title">투명 프록시 서버 제거</block>
   <block id="0bddca9be37ec136c74bc13d67a2327c" category="paragraph">투명 프록시 서버를 제거하려면 다음 명령을 사용하세요.</block>
   <block id="e73e4a152d192531e90aca4120b4f30b" category="section-title">모든 명령에 대한 도움말 보기</block>
   <block id="6e59373a630740150c04aaac47bb0503" category="paragraph">모든 명령에 대한 도움말을 보려면 다음을 추가하세요.<block ref="0c113ca6d57519b559ba5a426be3c6b6" prefix=" " category="inline-code"></block> 명령에.  예를 들어, 도움말을 보려면<block ref="08bc9d3537a56e203564c5b4357049f4" prefix=" " category="inline-code"></block> 명령을 사용하려면 다음 명령을 사용하세요.</block>
@@ -1818,9 +1797,7 @@
   <block id="8f4f872a5a91b4fda0f95e21e0b83fb1" category="list-text"><block ref="8f4f872a5a91b4fda0f95e21e0b83fb1" category="inline-link-rx"></block></block>
   <block id="d85b01f001ee16ebd8eb1917c739d824" category="inline-link">StorageGRID 시스템을 알아보세요</block>
   <block id="6dd67f54d38094b3a7d65e4eeed06755" category="list-text"><block ref="6dd67f54d38094b3a7d65e4eeed06755" category="inline-link-rx"></block></block>
-  <block id="9957f1fffd0798d003f7701530308820" category="summary">NetApp Console ID 및 액세스 관리 기능은 모니터링 및 지원 사례를 지원하는 지원 분석가 역할을 제공합니다.</block>
   <block id="bd35c1f622cddab38a157ba7ccffd7a0" category="doc">NetApp Console 에 대한 운영 지원 분석가 액세스 역할</block>
-  <block id="7e901891254682b3e1fddc06e4e1938a" category="paragraph">사용자에게 다음 역할을 할당하여 알림 및 모니터링에 대한 액세스 권한을 제공할 수 있습니다. 이 역할을 가진 사용자는 지원 사례를 열 수도 있습니다.</block>
   <block id="a9c987c5ba386ab7cea1039db6dab527" category="section-title">운영 지원 분석가</block>
   <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">일</block>
   <block id="6b67f7084bd7c23cc1a6915c07f7db8a" category="cell">수행할 수 있습니다</block>
@@ -2175,7 +2152,6 @@
   <block id="1dc9c22149f4c0ef8e2fc6c49159dc73" category="cell">사용자 자격 증명</block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 나타냅니다. 이러한 제한 사항을 주의 깊게 검토하세요.</block>
   <block id="c6fe3fe7cf3d078b181c8a9d01950402" category="doc">NetApp Console 의 알려진 제한 사항</block>
-  <block id="882e98b214f100c29ca675a0c0b4c5a4" category="paragraph">이러한 제한 사항은 NEtApp 콘솔 및 관리(에이전트, SaaS(Software as a Service) 플랫폼 등) 설정과 관련된 것입니다.</block>
   <block id="66bf395a11c3c005c11b5085fdfc7337" category="section-title">콘솔 에이전트 제한 사항</block>
   <block id="911d15b7ac55478d2b567e8488658687" category="section-title">172 범위의 IP 주소와 충돌이 발생할 수 있습니다.</block>
   <block id="c4c2e36276fced82261124b9b0bb8f65" category="paragraph">NetApp Console 172.17.0.0/16 및 172.18.0.0/16 범위의 IP 주소를 갖는 두 개의 인터페이스가 있는 에이전트를 배포합니다.</block>
@@ -2609,9 +2585,6 @@
   <block id="accd9735475d1c9d7b0b5006261d6484" category="summary">콘솔 에이전트에는 클라우드 공급자에서 작업을 수행하려면 권한이 필요합니다.  이러한 권한은 NetApp 에서 제공하는 정책에 포함되어 있습니다.  에이전트가 이러한 권한을 어떻게 사용하는지 이해해야 합니다.</block>
   <block id="1a24ebef5708132569792a414e03e094" category="doc">콘솔 에이전트에 대한 Google Cloud 권한</block>
   <block id="6b45b097205607d8631a7d487a76da98" category="section-title">서비스 계정 권한</block>
-  <block id="48f3320f6327aedea52854dfcbcf31d9" category="paragraph">아래에 표시된 사용자 지정 역할은 콘솔 에이전트가 Google Cloud 네트워크 내의 리소스와 프로세스를 관리하는 데 필요한 권한을 제공합니다.</block>
-  <block id="82a6f573069dcbf74094644066f00ff8" category="paragraph">콘솔 에이전트 VM에 연결된 서비스 계정에 이 사용자 지정 역할을 적용해야 합니다.</block>
-  <block id="4560d9b851db1f575c8bd1ba53369c0a" category="paragraph">이후 릴리스에서 새로운 권한이 추가되므로 역할이 최신 상태인지도 확인해야 합니다.  새로운 권한이 필요한 경우 릴리스 노트에 나열됩니다.</block>
   <block id="823b2e7894c2b52c1e9adc9ea10b9be5" category="section-title">Google Cloud 권한 사용 방법</block>
   <block id="06df33001c1d7187fdd81ea1f5b277aa" category="cell">행위</block>
   <block id="f66d598893a55fa43b7676b10c66160f" category="cell">Cloud Volumes ONTAP 에 대한 디스크를 생성하고 관리합니다.</block>
@@ -2644,12 +2617,10 @@
   <block id="c5338aa09d091a71f3080053c9a0edc0" category="cell">Cloud Volumes ONTAP HA 쌍에서 스토리지 VM을 생성하고 관리합니다.</block>
   <block id="884e026d3505b2b3847b25f6cecb4de7" category="cell">Google Cloud Storage 버킷에 대한 정보를 알아보세요.</block>
   <block id="d07a6a967273763e473875b528aab4ea" category="cell">기본 Google 관리 암호화 키를 사용하는 대신 NetApp Backup and Recovery 활성화 마법사에서 고객이 관리하는 키를 직접 선택합니다.</block>
-  <block id="00e6f4ddf63e81c5de84a3913163d11d" category="section-title">2023년 2월 06일</block>
   <block id="26e9753e85fc2c13a9569cd1345a5b06" category="paragraph">이 정책에 다음 권한이 추가되었습니다.</block>
   <block id="3503950ea6a1ba87d4be44e07b1a16c8" category="list-text">컴퓨팅.인스턴스.네트워크인터페이스 업데이트</block>
   <block id="0f30e2d10fca6f69c5f7a23bb2b30b1b" category="paragraph">이 권한은 Cloud Volumes ONTAP 에 필요합니다.</block>
   <block id="8988a38ba3aaf6cb48e549dc3babd50e" category="section-title">2023년 1월 27일</block>
-  <block id="6f3dd3aa6f04d6f98a881afe84a14828" category="paragraph">정책에 다음 권한이 추가되었습니다.</block>
   <block id="d5b52c55f0ffe2752d39b0d85f9ad0ef" category="list-text">cloudkms.cryptoKeys.getIamPolicy</block>
   <block id="631730c9e44e80f5f69e36901808bf98" category="list-text">cloudkms.cryptoKeys.setIamPolicy</block>
   <block id="7d5beaedd0c93a11314ff6699a51454e" category="list-text">cloudkms.keyRings.get</block>
@@ -3028,21 +2999,6 @@
   <block id="a7f8ea7817d42a132120d2a3377b0d22" category="paragraph">콘솔에서 Azure 자격 증명을 편집합니다.  예를 들어, 서비스 주체 애플리케이션에 대한 새 비밀이 생성된 경우 클라이언트 비밀을 업데이트할 수 있습니다.</block>
   <block id="fca161e7e3d0f11c877617c572f2054d" category="list-text">자격 증명 세트에 대한 작업 메뉴를 선택한 다음 *자격 증명 편집*을 선택합니다.</block>
   <block id="343f14fa04538530ee19575d02711691" category="list-text">*조직 자격 증명* 페이지에서 자격 증명 세트에 대한 작업 메뉴를 선택한 다음 *자격 증명 삭제*를 선택합니다.</block>
-  <block id="aca93a34ac0830ae93442a45a45230ca" category="summary">마켓플레이스 구독을 연결하고 구독 프로세스의 문제를 해결하여 콘솔 에이전트 VM 인스턴스와 연결된 Google Cloud 자격 증명을 관리할 수 있습니다.  이 두 가지 작업을 통해 마켓플레이스 구독을 사용하여 데이터 서비스 비용을 지불할 수 있습니다.</block>
-  <block id="7fb6ce6ba61ee2f889266f6591c8bf62" category="paragraph">마켓플레이스 구독을 연결하고 구독 프로세스의 문제를 해결하여 콘솔 에이전트 VM 인스턴스와 연결된 Google Cloud 자격 증명을 관리할 수 있습니다.  이 두 가지 작업을 통해 마켓플레이스 구독을 사용하여 데이터 서비스 비용을 지불할 수 있습니다.</block>
-  <block id="209e33f8aa50ade8c82e5bc82a8c023d" category="section-title">Google Cloud 자격 증명과 Marketplace 구독 연결</block>
-  <block id="eb7e6d1f8bb6ef3fd9a4c9dde493222f" category="paragraph">Google Cloud에 콘솔 에이전트를 배포하면 콘솔은 콘솔 에이전트 VM 인스턴스와 연결된 기본 자격 증명 세트를 생성합니다.  언제든지 이러한 자격 증명과 연결된 Google Cloud Marketplace 구독을 변경할 수 있습니다.  구독을 통해 사용량에 따라 요금을 지불하는 Cloud Volumes ONTAP 시스템을 만들고 다른 데이터 서비스를 이용할 수 있습니다.</block>
-  <block id="55c766cf4228626844250621a71175de" category="section-title">마켓플레이스 구독 프로세스 문제 해결</block>
-  <block id="5e8a9e85694a19d502ffc719ffe16636" category="inline-link">Google Cloud Marketplace의 NetApp 페이지</block>
-  <block id="d6e50a6d3ec0159b4980423911b0d4c3" category="list-text">로 이동합니다<block ref="50dc0afbab90b927abe9802e2e044626" category="inline-link-rx"></block> 주문 상태를 확인하세요.  페이지에 *공급업체 관리*라고 표시되어 있으면 아래로 스크롤하여 *주문 관리*를 선택하세요.</block>
-  <block id="1602e955f4d68623784fbd9b3e232de3" category="inline-image-macro">구독 후 마켓플레이스 페이지의 스크린샷입니다.</block>
-  <block id="138509c56fb0084f814c9be7b6c3f21d" category="paragraph"><block ref="138509c56fb0084f814c9be7b6c3f21d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e934500d9ced37392a4bfadda2e26daf" category="list-text">주문에 녹색 확인 표시가 나타나는데 이것이 예상치 못한 경우, 동일한 청구 계정을 사용하는 조직 내 다른 누군가가 이미 구독했을 수 있습니다.  예상치 못한 상황이거나 이 구독에 대한 세부 정보가 필요한 경우 NetApp 영업팀에 문의하세요.</block>
-  <block id="bb7a877315ec49d95bef4521481a238d" category="inline-image-macro">승인된 권한의 스크린샷입니다.</block>
-  <block id="57c37d5700a1b0612b4ca2402852172a" category="paragraph"><block ref="57c37d5700a1b0612b4ca2402852172a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="342df35452bbec008148c714d47038f6" category="list-text">주문에 시계와 *보류* 상태가 표시되면 마켓플레이스 페이지로 돌아가서 *공급업체 관리*를 선택하여 위에 설명된 대로 프로세스를 완료하세요.</block>
-  <block id="9547217bb6aa822040056cba67310321" category="inline-image-macro">보류 중인 마켓플레이스 권한의 스크린샷입니다.</block>
-  <block id="e6ec8d6dff39d45a9056311495699cef" category="paragraph"><block ref="e6ec8d6dff39d45a9056311495699cef" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2ef5f9dff59a7d4a9d1cf5d43f11c644" category="summary">Cloud Volumes ONTAP 의 주요 워크플로를 활성화하려면 NetApp 지원 사이트 계정을 NetApp Console 조직과 연결하세요.  이러한 NSS 자격증은 조직 전체와 연관되어 있습니다.</block>
   <block id="1f2fc513e25e1f4b4fdc575d67f8f88d" category="doc">NetApp Console 과 관련된 NSS 자격 증명 관리</block>
   <block id="b7dc979cedad1454168cefa97164fdc4" category="paragraph">NetApp 지원 사이트 계정을 콘솔 조직과 연결하여 스토리지 관리를 위한 주요 워크플로를 활성화하세요.  이러한 NSS 자격증은 조직 전체와 연관되어 있습니다.</block>
@@ -3205,7 +3161,6 @@
   <block id="b797d654931eeb3fd544b972b537bc1a" category="paragraph">인증서 파일이 PEM 형식이고 명령과 같은 디렉토리에 있는지 확인하거나 인증서 파일의 전체 경로를 지정하세요.</block>
   <block id="76fe97fb8546b1f5923f0501c8e25ae0" category="section-title">콘솔 에이전트에 대한 투명 프록시 수정</block>
   <block id="92621940050d65fc4b47ade313d8f178" category="inline-link-macro">에이전트 유지 관리 콘솔</block>
-  <block id="20257cdf81419bff017c7b16260ebb25" category="paragraph">다음을 사용하여 콘솔 에이전트의 기존 투명 프록시 서버를 업데이트할 수 있습니다.<block ref="091092579ca8cede1b760e7c5a90a003" prefix=" " category="inline-code"></block> 투명 프록시 서버를 명령하거나 제거하려면 다음을 사용하십시오.<block ref="ef5ebb9e0c08ee0463e7503ff1111f4c" prefix=" " category="inline-code"></block> 명령.  자세한 내용은 다음 문서를 검토하세요.<block ref="9370e1eb4855e9767e8414447e836404" category="inline-link-macro-rx"></block> .</block>
   <block id="349027440539dc46278ee9e93260025d" category="section-title">인터넷에 액세스할 수 없게 되면 콘솔 에이전트 프록시를 업데이트합니다.</block>
   <block id="71164e4bc7911ce651a366899f4f487b" category="paragraph">네트워크의 프록시 구성이 변경되면 에이전트가 인터넷에 액세스할 수 없게 될 수 있습니다.  예를 들어, 누군가가 프록시 서버의 비밀번호를 변경하거나 인증서를 업데이트하는 경우입니다.  이 경우 콘솔 에이전트 호스트에서 직접 UI에 액세스하여 설정을 업데이트해야 합니다.  콘솔 에이전트 호스트에 대한 네트워크 액세스가 가능하고 콘솔에 로그인할 수 있는지 확인하세요.</block>
   <block id="54734e5bba3b83b2757e43d1ff24b2c4" category="section-title">직접 API 트래픽 활성화</block>
@@ -3601,19 +3556,14 @@
   <block id="c91d4274dbc95093979f44d9158f63c4" category="doc">폴더와 프로젝트를 사용하여 NetApp Console 리소스를 구성하세요.</block>
   <block id="6dca94e5f8ef4f7534b19b4528884acb" category="paragraph">NetApp Console 내에서 프로젝트와 폴더를 사용하여 NetApp 리소스를 구성합니다.  _프로젝트_는 조직 구성원이 _리소스_(예: Cloud Volumes ONTAP 시스템)를 관리하기 위해 액세스하는 콘솔의 작업 공간을 나타냅니다.  _폴더_는 관련된 프로젝트를 함께 그룹화합니다.  리소스를 폴더와 프로젝트로 구성한 후 조직 구성원에게 특정 폴더와 프로젝트에 대한 권한을 부여하여 리소스에 대한 세부적인 액세스 권한을 부여할 수 있습니다.</block>
   <block id="c08b7d4448e95633b73e2495389e853c" category="section-title">폴더 또는 프로젝트 추가</block>
-  <block id="bbc694ba62c62df49795c9c42c96c762" category="paragraph">조직을 만들면 단일 프로젝트가 포함됩니다.  프로젝트를 추가하여 리소스와 폴더를 관리하고 관련 프로젝트를 그룹화합니다.</block>
-  <block id="c35523034b7fc4da98dc5a67f27b9d9d" category="paragraph">조직의 리소스 계층 구조는 최대 7개 수준으로 구성될 수 있으며, 폴더는 6단계까지 중첩되고 프로젝트는 7번째 수준에 위치합니다.</block>
   <block id="8b2ab7e3ad5d97cdc07606024ad7cd90" category="list-text">*조직*을 선택하세요.</block>
   <block id="54f6cd3aa5e387ea27f8d46fcd265b0f" category="list-text">*조직* 페이지에서 *폴더 또는 프로젝트 추가*를 선택합니다.</block>
   <block id="0bb9526fc793356f11cea651032b1b15" category="list-text">*폴더* 또는 *프로젝트*를 선택하세요.</block>
-  <block id="5506a3204ff4171234856af0ca0d34fd" category="list-text">폴더 또는 프로젝트에 대한 세부 정보를 제공하세요.</block>
-  <block id="dd3673b97acb6c067381ad1c2f6b16eb" category="list-text">*이름 및 위치*: 폴더 또는 프로젝트의 이름을 입력하고 계층 구조에서 위치를 선택합니다.  폴더나 프로젝트는 조직 바로 아래에 있을 수도 있고 폴더 내부에 있을 수도 있습니다.</block>
   <block id="f46059ba82cb53e4af025ce918760999" category="list-text">*리소스*: 이 폴더나 프로젝트와 연결할 리소스를 선택하세요.</block>
   <block id="3c3738a24f68869d5cec5d24654be31c" category="paragraph">상위 폴더나 프로젝트와 연관된 리소스를 선택할 수 있습니다.</block>
   <block id="2aa8f2be43810963811ccc42047d868e" category="inline-link-macro">리소스를 폴더와 연결할 시기 알아보기</block>
   <block id="1cfaf9081db0e3182d27f586bb481603" category="paragraph"><block ref="9b735c42d80f104cecdf7ab600a203a6" category="inline-link-macro-rx"></block> .</block>
   <block id="8bb3c5dc86a399d0babf2eb49831e5ec" category="list-text">*액세스*: 리소스 계층 구조에 이미 정의된 기존 권한에 따라 폴더 또는 프로젝트에 액세스할 수 있는 멤버를 확인합니다.</block>
-  <block id="bb1674c6ad82758dbe5312cfed6ce30a" category="paragraph">*멤버 추가*를 선택하면 추가 멤버에게 액세스 권한과 역할을 할당할 수 있습니다. 역할은 멤버가 폴더나 프로젝트에 대해 갖는 권한을 정의합니다.</block>
   <block id="7f394af8afb3598061eec3ed6197180d" category="section-title">폴더 또는 프로젝트 이름 바꾸기</block>
   <block id="f8ca84129dded5d2d753c0d0cc1ddea1" category="paragraph">필요한 경우 폴더와 프로젝트의 이름을 변경할 수 있습니다.</block>
   <block id="f53392d049b9dddff4ba55ad74c96588" category="inline-image-macro">세 개의 점이 있는 아이콘</block>
@@ -3621,9 +3571,6 @@
   <block id="ec4b36b02d2682a0624b6df463ee2789" category="list-text">*편집* 페이지에서 새 이름을 입력하고 *적용*을 선택합니다.</block>
   <block id="03b976867f3d4bd64ebf2dde3b296e4d" category="section-title">폴더 또는 프로젝트 삭제</block>
   <block id="486b799bb85b3d2fe9d51e27f973ebbf" category="paragraph">더 이상 필요하지 않은 폴더와 프로젝트를 삭제하세요.</block>
-  <block id="11c35e27e51a047151d75fb0ede09570" category="inline-xref">리소스 분리 방법 알아보기</block>
-  <block id="9a4d17fef1beed2567fc013cd2bec581" category="list-text">폴더나 프로젝트에 연관된 리소스가 없는지 확인하세요. <block ref="802e9206ed2588cee6f64d588f1bc58d" category="inline-xref-macro-rx"></block> .</block>
-  <block id="7e3bd90255d7fc608bda397ba970467a" category="list-text">폴더나 프로젝트에 연관된 리소스가 없는지 확인하세요.</block>
   <block id="42f2baba648ca8f4aea79acfaf1465c8" category="list-text">*조직* 페이지에서 표의 프로젝트나 폴더로 이동하여 다음을 선택합니다.<block ref="e85cc783c74f9ef35cfeeca99fcaf6f6" category="inline-image-macro-rx" type="image"></block> 그런 다음 *삭제*를 선택하세요.</block>
   <block id="48a726f3d57687547ef8fb70fab0c713" category="list-text">폴더나 프로젝트를 삭제할지 확인하세요.</block>
   <block id="7ef08e2a2795e0ebd33ca241791da34d" category="section-title">폴더 또는 프로젝트와 관련된 리소스 보기</block>
@@ -3635,7 +3582,6 @@
   <block id="a470fed0aa4603c3c8d460c4028252f1" category="list-text">연관된 리소스를 보려면 *리소스*를 선택하세요.  표에서 *상태* 열은 폴더나 프로젝트와 연관된 리소스를 식별합니다.</block>
   <block id="c2fdbd86cd719dffbb80161af27b0ec9" category="inline-image-macro">프로젝트에 연결하거나 연결 해제할 수 있는 사용 가능한 리소스를 보여주는 프로젝트 편집 페이지의 스크린샷입니다.</block>
   <block id="65381685a85e45e94ee53dbceff322ff" category="paragraph"><block ref="65381685a85e45e94ee53dbceff322ff" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="df3e2bd0fe2ced6b1bd1a55dad748146" category="section-title">폴더 또는 프로젝트와 연관된 리소스 수정</block>
   <block id="189b8907a7ab6c4c7b1ea92510e40d70" category="paragraph">폴더 또는 프로젝트에 대한 권한이 있는 멤버는 연관된 리소스에 액세스할 수 있습니다.</block>
   <block id="0727cfa5c59f7b7114ac7246e406611c" category="list-text">*편집* 페이지에서 *리소스*를 선택합니다.</block>
   <block id="d66e1bd376f74d0703fc72b368b92cd7" category="paragraph">표에서 *상태* 열은 폴더나 프로젝트와 연관된 리소스를 식별합니다.</block>
@@ -3643,15 +3589,12 @@
   <block id="77132bcd63b33103ab4d954f60736e06" category="list-text">선택한 리소스에 따라 *프로젝트와 연결* 또는 *프로젝트와 연결 해제*를 선택합니다.</block>
   <block id="152ff89b1af4f8995e50a4b8f158db52" category="inline-image-macro">현재 연결되어 있지 않은 리소스를 선택한 후 사용할 수 있는 리소스 연결 옵션을 보여주는 프로젝트 편집 페이지의 스크린샷입니다.</block>
   <block id="883f9a97670aa2ea1a29d0163ef97be1" category="paragraph"><block ref="883f9a97670aa2ea1a29d0163ef97be1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c16f1c2a54634bdad6dee177f8131ef5" category="list-text">*적용*을 선택하세요</block>
   <block id="e3621d23b92254c73b3a713d227a66f5" category="section-title">폴더 또는 프로젝트와 연관된 멤버 보기</block>
   <block id="6b1db5558a176057dbfc6d02d715d5ee" category="list-text">폴더나 프로젝트에 접근할 수 있는 멤버를 보려면 *접근*을 선택하세요.</block>
   <block id="68f9e92246f3af16e2706083b8012f92" category="inline-image-macro">프로젝트에 액세스할 수 있는 멤버를 보여주는 프로젝트 편집 페이지의 스크린샷입니다.</block>
   <block id="e537768f43901c1791172250c6c08115" category="paragraph"><block ref="e537768f43901c1791172250c6c08115" category="inline-image-macro-rx" type="image"></block></block>
   <block id="19df46354fac1ffd06065f8388377f84" category="section-title">폴더 또는 프로젝트에 대한 멤버 액세스 수정</block>
-  <block id="838d404665efe77bad8374ea27c3b7ca" category="paragraph">올바른 멤버가 연관된 리소스에 액세스할 수 있도록 멤버 액세스를 수정합니다.</block>
   <block id="f676fbba085923546a37baf94ce6784b" category="inline-link-macro">회원 페이지에서 권한 관리</block>
-  <block id="08e3536d495a23d703d2d1e7d2054ba1" category="paragraph">상위 계층에서 제공되는 멤버 접근 권한은 하위 계층에서 변경할 수 없습니다.  액세스 권한을 변경하려면 상위 계층 수준에서 멤버 권한을 업데이트합니다.  또는 다음을 수행할 수 있습니다.<block ref="2e250d63a19626cb0aeed14260bd2f59" category="inline-link-macro-rx"></block> .</block>
   <block id="6774afc9942c8dcab2e06828e8f199cb" category="inline-link-macro">역할 상속에 대해 자세히 알아보세요</block>
   <block id="8945f05b50a19ebe83ee85e629a09120" category="paragraph"><block ref="e2e11ae218588663759cb10a40da4876" category="inline-link-macro-rx"></block> .</block>
   <block id="2bd6967deb6b9eb3d79e794bad318fb4" category="list-text">*편집* 페이지에서 *액세스*를 선택하면 선택한 폴더나 프로젝트에 액세스할 수 있는 멤버 목록을 볼 수 있습니다.</block>
@@ -3672,7 +3615,6 @@
   <block id="f2822d5dedda5be93d6f6e298458878b" category="paragraph">이 역할을 가진 사용자는 지정된 폴더 또는 프로젝트의 멤버만 관리할 수 있습니다.</block>
   <block id="31c547d7cd4c250a91b1a8bef306d954" category="paragraph">_폴더 또는 프로젝트 관리자_는 *멤버* 페이지에서 모든 멤버를 볼 수 있지만, 액세스 권한이 있는 폴더와 프로젝트에 대한 권한만 관리할 수 있습니다. <block ref="c691e2b9b4224ed90bb4f1f11059b372" category="inline-link-macro-rx"></block> .</block>
   <block id="e3a1bd8f43fc761424ef512d07c27a8b" category="section-title">조직에 구성원 추가</block>
-  <block id="af1944d628b4a4ffaf6c377d8bfd75a9" category="paragraph">조직에는 사용자 계정과 서비스 계정이라는 두 가지 유형의 구성원을 추가할 수 있습니다. 애플리케이션은 서비스 계정을 사용하여 인간의 개입 없이 API 작업을 수행합니다.  사람들은 일반적으로 사용자 계정을 사용하여 로그인하고 리소스를 관리합니다.</block>
   <block id="4a6e57c6cb2443ee81ba504493e38c0d" category="paragraph">사용자를 조직에 추가하거나 역할을 할당하려면 먼저 NetApp Console 에 가입해야 합니다.  콘솔에서 직접 서비스 계정을 만들 수 있습니다.</block>
   <block id="e882dcb285b727741daef45bc38e2d7b" category="paragraph">사용자와 해당 권한을 관리하려면 *조직 관리자* 역할이나 *폴더 또는 프로젝트 관리자* 역할이 있어야 합니다.  *폴더 또는 프로젝트 관리자* 역할이 있는 사용자는 관리자 권한이 있는 폴더 또는 프로젝트의 멤버만 관리할 수 있습니다.</block>
   <block id="7915733bd673ab1728be20879c847f08" category="section-title">사용자 계정 추가</block>
@@ -3698,7 +3640,6 @@
   <block id="8e7e960ee764c7e6e42c82f1edaa4133" category="list-text">*회원 유형*에서 *서비스 계정*을 선택하세요.</block>
   <block id="e14a6ae0776860dda96f0e481824bccd" category="list-text">서비스 계정의 이름을 입력하세요.</block>
   <block id="ebcb63e875051cc6846253b2c9ce48da" category="list-text">JWT 인증을 사용하려면 *개인 키 JWT 인증 사용*을 선택하고 공개 RSA 키 또는 인증서를 업로드하세요.  대신 클라이언트 ID와 비밀번호를 사용하려면 이 단계를 건너뜁니다.</block>
-  <block id="f17ae6fd3e69f0e9652031dd252bbc3e" category="paragraph">귀하의 X.509 인증서.  PEM, CRT 또는 CER 형식이어야 합니다.</block>
   <block id="fc0041752419b9f94c8f1b7af4db8c4a" category="list-text">*범주*를 선택한 다음, 해당 조직, 폴더 또는 프로젝트에 연결된 리소스에 대한 권한을 멤버에게 제공하는 *역할*을 선택합니다.</block>
   <block id="78f6d8218cb580b136d9697f7235ad36" category="list-text">JWT 인증을 사용하지 않기로 선택한 경우 클라이언트 ID와 클라이언트 비밀번호를 다운로드하거나 복사하세요.  + 콘솔에는 클라이언트 비밀번호가 한 번만 표시됩니다.  안전하게 복사해 두세요. 나중에 필요하면 다시 만들 수 있습니다.</block>
   <block id="3f1c25aff6cde8c3443a53dfb8490e46" category="list-text">JWT 인증을 선택한 경우 클라이언트 ID와 JWT 대상을 다운로드하거나 복사하세요.  이 정보는 한 번만 표시되며 나중에 검색할 수 없습니다.</block>
@@ -3712,7 +3653,6 @@
   <block id="d5e4a18be128c90b65012755ecabfe00" category="paragraph">*구성원* 표에는 조직의 구성원이 나열됩니다.</block>
   <block id="4137654b2b560bb6af478553cbc120b2" category="section-title">조직에서 구성원 제거</block>
   <block id="e4cb5729a397d486706aec2c33ce4ea6" category="paragraph">예를 들어, 회사를 떠나는 경우와 같이 조직에서 구성원을 제거해야 할 수도 있습니다.</block>
-  <block id="b6be293e7a1c53f72d15da417976fc81" category="paragraph">시스템은 멤버의 권한을 제거하지만 콘솔과 NetApp 지원 사이트 계정은 유지합니다.</block>
   <block id="17968a6208774a9e7e1a042da70ec52f" category="list-text">*회원* 페이지에서 테이블의 회원으로 이동하여 다음을 선택합니다.<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> 그런 다음 *사용자 삭제*를 선택하세요.</block>
   <block id="6e49938f1c5b86ad879eeaf086442b08" category="list-text">조직에서 해당 구성원을 제거할 것인지 확인하세요.</block>
   <block id="a657b530c9804722859fcb4792bf4466" category="section-title">서비스 계정의 자격 증명을 다시 만듭니다.</block>
@@ -3720,10 +3660,8 @@
   <block id="587ee44a2d8c31788fd2c2219c69f11c" category="paragraph">자격 증명을 다시 만들면 서비스 계정의 기존 자격 증명을 삭제하고 새 자격 증명을 만듭니다. 이전 자격 증명을 사용할 수 없습니다.</block>
   <block id="bb0f4333667b84217bd737a0e3fc6024" category="list-text">*멤버* 테이블에서 서비스 계정으로 이동하여 다음을 선택합니다.<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> 그런 다음 *비밀 다시 만들기*를 선택하세요.</block>
   <block id="8de213850e1e3dc79a14014382d25163" category="list-text">*다시 만들기*를 선택하세요.</block>
-  <block id="26099ee95e920d1bb32d1205490ad92b" category="list-text">클라이언트 ID와 클라이언트 비밀번호를 다운로드하거나 복사하세요.  + 클라이언트 비밀번호는 한 번만 표시됩니다. 복사하거나 다운로드하여 안전하게 보관하세요.</block>
   <block id="25240dbf964ce37736226ead112d31f2" category="section-title">사용자의 다중 인증 요소(MFA) 관리</block>
   <block id="50ce8407589b8befd67cd61c66e1dd17" category="paragraph">사용자가 MFA 장치에 대한 액세스 권한을 잃은 경우 MFA 구성을 제거하거나 비활성화할 수 있습니다.</block>
-  <block id="a860c0a128dada61cfda723f07532eda" category="paragraph">제거 후 사용자는 로그인 시 MFA를 다시 구성해야 합니다.  사용자가 MFA 장치에 대한 액세스 권한을 일시적으로 잃은 경우 MFA를 설정할 때 저장한 복구 코드를 사용하여 로그인할 수 있습니다.</block>
   <block id="e0703bf0ce92b0a162c7173416f52e67" category="paragraph">복구 코드가 없는 경우 MFA를 일시적으로 비활성화하여 로그인을 허용합니다. 사용자의 MFA를 비활성화하면 8시간 동안만 비활성화되고 그 후 자동으로 다시 활성화됩니다. 사용자는 해당 기간 동안 MFA 없이 한 번만 로그인할 수 있습니다. 8시간이 지나면 사용자는 MFA를 사용하여 로그인해야 합니다.</block>
   <block id="5882327647586429810441bede064892" category="admonition">사용자의 다중 요소 인증을 관리하려면 영향을 받는 사용자와 동일한 도메인에 이메일 주소가 있어야 합니다.</block>
   <block id="4c03cc49e70b34418f2385277d266d90" category="list-text">*회원* 페이지에서 테이블의 회원으로 이동하여 다음을 선택합니다.<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> 그런 다음 *다중 인증 관리*를 선택하세요.</block>
@@ -3731,11 +3669,8 @@
   <block id="2fe6c9d572351b2d4e0b387a62bdf1e2" category="summary">특정 프로젝트 및 폴더와 리소스를 연결하여 조직의 리소스 계층 구조를 관리합니다.</block>
   <block id="0b99b236783ea746ceb31085990e767d" category="paragraph">조직에 구성원을 연결하면 조직, 폴더 또는 프로젝트 수준에서 권한이 제공됩니다.  해당 구성원이 올바른 리소스에 액세스할 수 있는 권한을 갖도록 하려면 리소스를 특정 프로젝트 및 폴더와 연결하여 조직의 리소스 계층 구조를 관리해야 합니다.  _리소스_는 콘솔이 이미 관리하거나 알고 있는 저장 시스템이나 콘솔 에이전트입니다.</block>
   <block id="98ca801aa8933a24531043c30c475e2e" category="section-title">귀하의 조직의 리소스를 확인하세요</block>
-  <block id="19c483b3cc14239dca4a799e0b75956f" category="paragraph">귀하의 조직과 관련된 발견된 리소스와 발견되지 않은 리소스를 모두 볼 수 있습니다. 발견되지 않은 리소스는 식별되었지만 아직 콘솔에 추가되지 않은 저장 리소스입니다.</block>
-  <block id="90e05d9e1b72166781e95442b46203c0" category="admonition">참고: 사용자가 Amazon FSx for NetApp ONTAP 리소스를 역할과 연결할 수 없으므로 리소스 페이지에서 해당 리소스가 제외됩니다.  시스템 페이지나 워크로드에서 확인하세요.</block>
   <block id="95c9ea5440ca8b54a3d3dae8e1d1f492" category="list-text">*리소스*를 선택하세요.</block>
   <block id="a5d2efab4d8509840f3f76fe8f0a57c1" category="list-text">*고급 검색 및 필터링*을 선택하세요.</block>
-  <block id="3d1bc41342a56d581edf9d1765f01a0b" category="list-text">사용 가능한 옵션을 사용하여 원하는 리소스를 찾으세요.</block>
   <block id="48ca2619b5dca392dc3969df94469cf3" category="list-text">*리소스 이름으로 검색*: 텍스트 문자열을 입력하고 *추가*를 선택합니다.</block>
   <block id="b2efca9e0863336ee0d7aa6af1771c24" category="list-text">*플랫폼*: Amazon Web Services 등 하나 이상의 플랫폼을 선택하세요.</block>
   <block id="e6d1209910233e075e359b7fdb3892a8" category="list-text">*리소스*: Cloud Volumes ONTAP 과 같은 하나 이상의 리소스를 선택합니다.</block>
@@ -3761,10 +3696,8 @@
   <block id="0d8f80667cd7bc86a6f6ea26c12d18b9" category="paragraph">다음 예에서는 하나의 프로젝트와 연관된 리소스를 보여줍니다.</block>
   <block id="a46cbe82e9adff7ecc82d6eadb58aa97" category="inline-image-macro">조직 바로 아래에 있는 프로젝트와 연관된 리소스를 보여주는 리소스 세부 정보 페이지의 스크린샷입니다.</block>
   <block id="7cadbb5f400f149f938a910df5c5cb0d" category="paragraph"><block ref="7cadbb5f400f149f938a910df5c5cb0d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7e77a0d272b850a5b082c2fed060594a" category="admonition">리소스에 액세스할 수 있는 조직 구성원을 확인해야 하는 경우 다음을 수행할 수 있습니다.<block ref="7b75e3c2af3e500cfb657c057dbc7c5e" category="inline-link-macro-rx"></block> .</block>
   <block id="02daa88c7c6888cad8b055624d764072" category="section-title">폴더 또는 프로젝트에서 리소스 제거</block>
   <block id="101c2fc402187ad7ad2fa40cf25d35b2" category="paragraph">폴더나 프로젝트에서 리소스를 제거하려면 폴더나 프로젝트와 리소스 간의 연결을 제거해야 합니다. 연결을 제거하면 멤버가 폴더나 프로젝트의 리소스를 관리할 수 없게 됩니다.</block>
-  <block id="0ca2d7cec61f3ffe672d4b8efae574f3" category="admonition">검색된 리소스를 전체 조직에서 제거하려면 *시스템* 페이지에서 시스템을 제거하세요.</block>
   <block id="a55ecc4bf928da93f86f41bb1fa482cc" category="inline-image-macro">쓰레기통 아이콘</block>
   <block id="4fc3c6ef596dbec8a3af38f79c84cf02" category="list-text">리소스를 제거하려는 폴더 또는 프로젝트에 대해 다음을 선택하세요.<block ref="5aa3fbfa4a030d3d0fb7677a91fd2eba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ece216a1c354b015ef19084b08f5e92f" category="list-text">*삭제*를 선택하여 연결을 제거할지 확인하세요.</block>
@@ -3772,11 +3705,9 @@
   <block id="cf3b3d414366a26f5b43041b5056897c" category="summary">NetApp Console 내에서 사용자가 수행해야 할 작업과 위치에 따라 역할을 할당할 수 있습니다.</block>
   <block id="14750286cb2a5a61bf62b65d9b9d2112" category="doc">역할을 사용하여 NetApp Console 리소스에 대한 사용자 액세스를 관리합니다.</block>
   <block id="5f24947dab075e3413b914aa36df023a" category="paragraph">콘솔 내에서 사용자에게 수행해야 할 작업과 위치에 따라 역할을 할당할 수 있습니다.</block>
-  <block id="61258c54d2a7f09077a72a4eeb56874d" category="paragraph">IAM 전략에 따라 사용자에게 역할을 할당하여 보안을 강화하세요.  IAM 역할은 사용자에게 필요한 액세스 권한만 부여합니다.</block>
   <block id="3908f1e42aa5b81b8316befd30a6965d" category="inline-link-macro">폴더와 프로젝트를 사용하여 리소스를 구성하는 방법을 알아보세요.</block>
   <block id="ecdeffad8e53c7c9b1fb61f02a3cb5d1" category="admonition">리소스에 대한 액세스 권한을 직접 부여할 수 없다는 점을 기억하세요.  먼저 프로젝트에 리소스를 할당하세요.  사용자에게 액세스 권한을 할당하기 전에 리소스 계층 구조를 설정하는 것이 좋습니다.<block ref="122b4639308e055d5bdfeb8a65e1794d" category="inline-link-macro-rx"></block></block>
   <block id="34025ad60edecbf8612a359edaca8684" category="section-title">멤버에게 할당된 역할 보기</block>
-  <block id="aa71b6597d142a17d9d21782a5fd883b" category="paragraph">조직에 구성원을 추가하면 해당 구성원에게 역할을 할당하라는 메시지가 표시됩니다.  회원들은 현재 자신에게 할당된 역할을 확인할 수 있습니다.</block>
   <block id="317e1169ce13ad8808ce0775bf310cef" category="paragraph">_폴더 또는 프로젝트 관리자_ 역할이 있는 경우 해당 페이지에는 조직의 모든 구성원이 표시됩니다.  하지만 권한이 있는 폴더와 프로젝트에 대해서만 멤버 권한을 보고 관리할 수 있습니다. <block ref="c691e2b9b4224ed90bb4f1f11059b372" category="inline-link-macro-rx"></block> .</block>
   <block id="12815307393fa19648b391d49b4282e4" category="section-title">멤버에게 액세스 역할 추가</block>
   <block id="9a9b4b286a389bc98dfdeb3214c134a1" category="paragraph">일반적으로 조직에 구성원을 추가할 때 역할을 할당하지만, 역할을 제거하거나 추가하여 언제든지 역할을 업데이트할 수 있습니다.</block>
@@ -3784,7 +3715,6 @@
   <block id="7a43b6f649f8cf73a12056888057076b" category="paragraph">액세스 역할 전략은 NetApp 리소스를 구성한 방식과 일치해야 합니다.</block>
   <block id="20c36cd6c77d407b6118c77ebe403934" category="admonition">조직 관리자 역할이 할당된 구성원에게는 추가 역할을 할당할 수 없습니다.  그들은 이미 조직 전체에 대한 권한을 가지고 있습니다.  폴더 또는 프로젝트 역할이 있는 멤버는 해당 역할이 이미 있는 폴더 또는 프로젝트 내에서 다른 역할을 할당받을 수 없습니다.  두 역할 모두 할당된 범위 내의 모든 서비스에 대한 액세스 권한을 제공합니다.</block>
   <block id="068135177d9d1843118236d5f10dc5b7" category="section-title">멤버의 할당된 역할 변경</block>
-  <block id="88ccee89efe2b556b8fcc7b01ae63c9f" category="paragraph">사용자의 액세스 권한을 조정해야 하는 경우 멤버에게 할당된 역할을 변경할 수 있습니다.</block>
   <block id="4edfdeb74f014e9408efa692c71a9d2e" category="admonition">사용자에게는 최소한 하나의 역할이 할당되어야 합니다.  사용자에게서 모든 역할을 제거할 수는 없습니다.  모든 역할을 제거해야 하는 경우 조직에서 해당 사용자를 삭제해야 합니다.</block>
   <block id="2be01e6baa22b9b0a4f0a2c054fe7289" category="summary">필요한 경우 NetApp Console 조직의 이름을 변경할 수 있습니다.</block>
   <block id="1920da3586c2e2872f88b02997c971c3" category="doc">조직 및 프로젝트 ID</block>
@@ -3901,7 +3831,6 @@
   <block id="80308b1bd5b2d563350bbb74c701710f" category="section-title">3단계: 네트워킹 설정</block>
   <block id="80196471f6a2f8c78a5455f640296b19" category="paragraph">콘솔 에이전트를 설치하려는 네트워크 위치가 다음 요구 사항을 지원하는지 확인하세요.  이러한 요구 사항을 충족하면 콘솔 에이전트가 하이브리드 클라우드 환경 내의 리소스와 프로세스를 관리할 수 있습니다.</block>
   <block id="c39c5a4e7fd2ccefcd663038795421ed" category="section-title">4단계: 콘솔에 대한 AWS 권한 설정</block>
-  <block id="103049e74e847c769a97fe33d5d46712" category="paragraph">다음 옵션 중 하나를 사용하여 NetApp Console 에 AWS 권한을 제공해야 합니다.</block>
   <block id="168b098cb315f9dde326e5fcaa738ac3" category="list-text">옵션 1: IAM 정책을 만들고 EC2 인스턴스와 연결할 수 있는 IAM 역할에 정책을 연결합니다.</block>
   <block id="ab285b81ee6660fa09c5ad9eb7eb49a6" category="list-text">옵션 2: 필요한 권한이 있는 IAM 사용자의 AWS 액세스 키를 콘솔에 제공합니다.</block>
   <block id="380b440efe1d4d54168900055656ba0c" category="paragraph">콘솔에 대한 권한을 준비하려면 다음 단계를 따르세요.</block>
@@ -3918,8 +3847,6 @@
   <block id="b3175a7a8c2ba73aad02f57026632d9b" category="inline-link">NetApp ConsoleP에서 S3 버킷을 관리하는 방법을 알아보세요.</block>
   <block id="cb0908023b296d7d49436ab6f97e1722" category="paragraph">콘솔 에이전트를 생성한 동일한 AWS 계정에 Amazon S3 버킷이 있는 경우, *시스템* 페이지에 Amazon S3 스토리지 시스템이 자동으로 표시됩니다.<block ref="e807fcbb34e8f3cdd2199d0fc61d445e" category="inline-link-rx"></block></block>
   <block id="c38f7847f04d50ab6fcbc66333ed1e25" category="section-title">6단계: NetApp Console 에 권한 제공</block>
-  <block id="abdfcd483825370c001a0b749d453dc4" category="paragraph">이제 콘솔 에이전트를 설치했으므로 이전에 설정한 AWS 권한을 콘솔에 제공해야 합니다.  권한을 제공하면 콘솔 에이전트가 AWS에서 데이터 및 스토리지 인프라를 관리할 수 있습니다.</block>
-  <block id="5a52914d8d01c8e84d9a721dbf01a42b" category="paragraph">이전에 생성한 IAM 역할을 콘솔 에이전트 EC2 인스턴스에 연결합니다.</block>
   <block id="0ceede4f3f6785079b421e3b767884a7" category="paragraph">로 가다<block ref="9fa63571706fcef6edc9d423212e6d10" category="inline-link-rx"></block> 콘솔 에이전트를 사용하려면.</block>
   <block id="478934e77aeec11eff664bb1d6c547a8" category="paragraph">필요한 권한이 있는 IAM 사용자의 AWS 액세스 키를 콘솔에 제공합니다.</block>
   <block id="0950c5af4754899d3da4c72fa2993986" category="list-text">콘솔에서 현재 올바른 콘솔 에이전트가 선택되어 있는지 확인하세요.</block>
@@ -4073,7 +4000,6 @@
   <block id="702a1eca6754acddde443fd4cb404a99" category="doc">NetApp Console 에서 Google Cloud에 콘솔 에이전트 만들기</block>
   <block id="4b4904242b46a5c5de838c3bf8de1c06" category="paragraph">Google Cloud 콘솔에서 콘솔 에이전트를 만들 수 있습니다.  네트워킹을 설정하고, Google Cloud 권한을 준비하고, Google Cloud API를 활성화한 다음 콘솔 에이전트를 만들어야 합니다.</block>
   <block id="05e4e55b4a1ded174cd4d080db80632c" category="paragraph">콘솔 에이전트가 대상 네트워크에 연결하고 아웃바운드 인터넷에 접속하여 리소스를 관리할 수 있도록 네트워킹을 설정합니다.</block>
-  <block id="47bf230a49ecee72c3b36a37f9758812" category="paragraph">\ https://www.googleapis.com/compute/v1/ \ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \ https://www.googleapis.com/deploymentmanager/v2/projects</block>
   <block id="1ac278db12cb6e29a5837e46be7230d6" category="paragraph">콘솔 에이전트를 만든 후 이 네트워킹 요구 사항을 구현합니다.</block>
   <block id="367fc1a15d8d93ee5b98ec9fb0626a3f" category="section-title">2단계: 콘솔 에이전트를 생성하기 위한 권한 설정</block>
   <block id="770085896a0aaa47d2b2a21de5e713fe" category="paragraph">콘솔에서 콘솔 에이전트를 배포하려면 먼저 콘솔 에이전트 VM을 배포하는 Google 플랫폼 사용자의 권한을 설정해야 합니다.</block>
@@ -4162,7 +4088,6 @@
   <block id="d7134f839db72245fe3e0d8d0bfce146" category="section-title">4단계: 콘솔 에이전트에 대한 권한 설정</block>
   <block id="a0e4b6848b26b9f671f19438b07d341b" category="section-title">5단계: 공유 VPC 권한 설정</block>
   <block id="ed699bb1e56dba725718c6f093e80619" category="section-title">6단계: Google Cloud API 활성화</block>
-  <block id="69f380f2398b7565bd53d007caa73472" category="paragraph">Google Cloud에서 Cloud Volumes ONTAP 시스템을 배포하려면 먼저 여러 Google Cloud API를 활성화해야 합니다.</block>
   <block id="e8e253336558188ed5f5c2ffa5852d13" category="section-title">7단계: 콘솔 에이전트 설치</block>
   <block id="99564e0e630cf4a642f3e276f6caacab" category="inline-link">NetApp Console 에서 Google Cloud Storage를 관리하는 방법을 알아보세요.</block>
   <block id="22a243e5f9859fe3d0fcb5d054ec0f43" category="paragraph">콘솔 에이전트를 생성한 동일한 Google Cloud 계정에 Google Cloud Storage 버킷이 있는 경우, *시스템* 페이지에 Google Cloud Storage 시스템이 자동으로 표시됩니다.<block ref="f4a6f159093eba0ffefdac7ab4ea2c30" category="inline-link-rx"></block></block>
@@ -4297,7 +4222,6 @@
   <block id="25ed61080ee73d701a5ba6feef931050" category="paragraph"><block ref="25ed61080ee73d701a5ba6feef931050" category="inline-link-macro-rx"></block></block>
   <block id="8ac340f924d72696326df51a32dbdee5" category="inline-link">Azure Government 지역에 대한 Azure Marketplace 페이지</block>
   <block id="cc337b5a93c54f8a59d4731866297bf2" category="list-text"><block ref="cc337b5a93c54f8a59d4731866297bf2" category="inline-link-rx"></block></block>
-  <block id="ece4476b2389e3e8eff9a96e00d892b7" category="list-text">*공용 IP*: 콘솔 에이전트 VM에서 공용 IP 주소를 사용하려면 콘솔에서 이 공용 IP 주소를 사용할 수 있도록 IP 주소에 기본 SKU를 사용해야 합니다.</block>
   <block id="92fa0fc1299e55c066d0a19cd22b4e7b" category="list-text">*ID*: *관리*에서 *시스템에서 할당한 관리 ID 사용*을 선택합니다.</block>
   <block id="b99469b29b000bd070b5f230caa3b887" category="paragraph">Azure는 지정된 설정으로 가상 머신을 배포합니다.  가상 머신과 콘솔 에이전트 소프트웨어는 약 5분 안에 실행될 것입니다.</block>
   <block id="8f40f6b9cda905fc9a83217435e6b940" category="open-title">수동 설치</block>
@@ -4307,7 +4231,6 @@
   <block id="dff3d2b179cc5b62a2e772cc8404f515" category="section-title">2단계: NetApp Console 설정</block>
   <block id="673e7aa51056c2e179dd721d8108e744" category="paragraph">처음으로 콘솔에 액세스하면 콘솔 에이전트의 조직을 선택하라는 메시지가 표시되고 제한 모드를 활성화해야 합니다.</block>
   <block id="94c608264d0740c1539084d4a2415780" category="paragraph">콘솔 에이전트를 설정하는 사람은 콘솔 조직에 속하지 않은 로그인을 사용하여 콘솔에 로그인해야 합니다.</block>
-  <block id="09bf19e6ad387b1e458c5178d9016692" category="paragraph">귀하의 로그인이 다른 조직과 연계되어 있는 경우, 새로운 로그인으로 가입해야 합니다.  그렇지 않으면 설정 화면에서 제한 모드를 활성화하는 옵션이 표시되지 않습니다.</block>
   <block id="e698c1fd9cae8de09d0fab313c0adf0b" category="list-text">콘솔 에이전트 인스턴스에 연결된 호스트에서 웹 브라우저를 열고 설치한 콘솔 에이전트의 다음 URL을 입력합니다.</block>
   <block id="2f8c3ab071a9ded2677148c9c94dcab3" category="list-text">NetApp Console 에 가입하거나 로그인하세요.</block>
   <block id="7c129580ce3fdaedbab5835e1c6efc59" category="list-text">로그인한 후 콘솔을 설정하세요.</block>
@@ -4319,7 +4242,6 @@
   <block id="e9a22dbe949aceeeba0832b4920f12de" category="paragraph">정부 지역에 콘솔 에이전트를 배포한 경우 확인란이 이미 활성화되어 있으므로 변경할 수 없습니다.  제한 모드는 정부 지역에서 지원되는 유일한 모드이기 때문입니다.</block>
   <block id="34ef49f2003b645a0f1b248a8e158945" category="paragraph">이제 콘솔 에이전트가 설치되고 콘솔 조직에 설정되었습니다.  모든 사용자는 콘솔 에이전트 인스턴스의 IP 주소를 사용하여 콘솔에 액세스해야 합니다.</block>
   <block id="cb763b4641bf6e6767c99d379a3c59aa" category="paragraph">이전에 설정한 권한을 콘솔에 제공하세요.</block>
-  <block id="0d90b7023964fcc3c91d83c1e214d24e" category="paragraph">Azure Marketplace에서 콘솔 에이전트를 배포했거나 콘솔 에이전트 소프트웨어를 수동으로 설치한 경우 이전에 설정한 권한을 제공해야 합니다.</block>
   <block id="9ec50c85d379863701d46321169dc12e" category="paragraph">배포 중에 필요한 IAM 역할을 선택했기 때문에 AWS Marketplace에서 콘솔 에이전트를 배포한 경우에는 이러한 단계가 적용되지 않습니다.</block>
   <block id="d8325912caeaba85aaefdb17eacaea8d" category="inline-link-macro">클라우드 권한을 준비하는 방법을 알아보세요</block>
   <block id="1b9eb4a1347f52519d9e7d0e26300a53" category="paragraph"><block ref="01cf67ff20127008355664826b726767" category="inline-link-macro-rx"></block> .</block>
@@ -4905,7 +4827,6 @@
   <block id="a6c767dcba3869189c00afe8384d49d1" category="inline-link-macro">NetApp 지식 기반.</block>
   <block id="c5210c54ffa8d650855e8cf9ce855ee5" category="paragraph">NetApp 지원 사이트 계정이 있는 경우 다음을 볼 수도 있습니다.<block ref="b7101d8626a4e0032aefbb96762d5e1f" category="inline-link-macro-rx"></block></block>
   <block id="980194f6da5ee72bc5d20ee6e316a73f" category="section-title">일반적인 오류 메시지 및 해결 방법</block>
-  <block id="ece4155d60ae4e8dfd6eeb423c8526dd" category="paragraph">다음 표에는 일반적인 오류 메시지와 해결 방법이 나와 있습니다.</block>
   <block id="e20cbb947afcf84cf58de1358ee1068d" category="cell">오류 메시지</block>
   <block id="b72ac10807b29c77f5b7e4b80ea40414" category="cell">설명</block>
   <block id="a18bb1dfc38a5f8bdbcc37d7ddf92320" category="cell">무엇을 해야 할까</block>
@@ -4926,7 +4847,6 @@
   <block id="41dd69dc7c6b4f3a269a4e72a6eedce5" category="list-text">OCCM 컨테이너가 실행 중이고 제대로 작동하는지 확인하세요.</block>
   <block id="2fa1ea75814dc1fdfdc37b059a82eaea" category="paragraph">에이전트에 대한 지원 정보를 로드할 수 없습니다.</block>
   <block id="f741099adb576ac2cebaca78923cb39c" category="paragraph">이 메시지는 상담원이 귀하의 지원 계정에 액세스할 수 없는 경우 표시됩니다.</block>
-  <block id="8c301b35d1707a20114f884ea75e3e4f" category="paragraph">* *.</block>
   <block id="f1250585f9c248976b034c285b91672c" category="paragraph">다음 명령 중 하나를 사용하여 콘솔 에이전트를 확인하세요.  모든 서비스의 상태는 _실행중_이어야 합니다.  그렇지 않은 경우 NetApp 지원팀에 문의하세요.</block>
   <block id="0960e06fac3e48e6403802fb4aa8fbde" category="paragraph">콘솔 에이전트 진단에 액세스하는 방법에 대한 자세한 내용은 다음 항목을 참조하세요.</block>
   <block id="a25b82d4083e9054d77530a1b1771861" category="inline-link-macro">콘솔 에이전트 상태 확인(Linux 호스트 배포용)</block>
@@ -4945,10 +4865,6 @@
   <block id="3b2256fce45383ccea4ebfc8f456dcf9" category="section-title">콘솔 에이전트 설치 문제</block>
   <block id="2cca0346972b04930650bf988ebae1ab" category="paragraph">설치에 실패하면 보고서와 로그를 보고 문제를 해결하세요.</block>
   <block id="f8a1a17cd9b62f1fc12e61715a042238" category="section-title">수동 설치에 대한 구성 확인 비활성화</block>
-  <block id="849f51f76842f376ad2d4b11f1383701" category="paragraph">설치 중에 아웃바운드 연결을 확인하는 구성 검사를 비활성화해야 할 때가 있을 수 있습니다. 예를 들어:</block>
-  <block id="763a64c54c72ab3083be417c5fc344f7" category="list-text">정부 클라우드 환경에 에이전트를 수동으로 설치하는 경우 구성 검사를 비활성화해야 합니다. 그렇지 않으면 설치가 실패합니다.</block>
-  <block id="09791c89411350b678fc1839765eab56" category="list-text">에이전트 업그레이드를 위해 이전 엔드포인트 목록을 계속 사용하는 경우 이러한 검사를 비활성화하는 것이 좋습니다.</block>
-  <block id="d904cff226021034938fcc2411d0007a" category="paragraph">_com/opt/application/netapp/service-manager-2/config.json_ 파일에서 _skipConfigCheck_ 플래그를 설정하여 구성 확인을 비활성화합니다.  기본적으로 이 플래그는 false로 설정되고 구성 검사는 에이전트에 대한 아웃바운드 액세스를 확인합니다.  검사를 비활성화하려면 이 플래그를 true로 설정합니다.  이 단계를 완료하기 전에 JSON 구문에 익숙해야 합니다.</block>
   <block id="2b7c431e56422c4f2f72e4103ac272de" category="paragraph">구성 확인을 다시 활성화하려면 다음 단계를 사용하고 _skipConfigCheck_ 플래그를 false로 설정합니다.</block>
   <block id="e67f6596d19ecc5846a8d78e917daf2d" category="list-text">루트 또는 sudo 권한으로 콘솔 에이전트 호스트에 액세스합니다.</block>
   <block id="d0ec983e93943635bce3349bbdcbf79e" category="list-text">변경 사항을 되돌릴 수 있도록 _/opt/application/netapp/service-manager-2/config.json_ 파일의 백업 사본을 만드세요.</block>
@@ -4956,13 +4872,6 @@
   <block id="e5a62c3c41fbb902bf1696d9b5ee861e" category="list-text">_/opt/application/netapp/service-manager-2/config.json_ 파일을 편집하고 _skipConfigCheck_ 플래그 값을 true로 변경합니다.</block>
   <block id="9e3e4c61d70076bf677edfc157a67761" category="list-text">파일을 저장하세요.</block>
   <block id="92ae5258778c2fa8ece2b13c88ec0853" category="list-text">다음 명령을 실행하여 서비스 관리자 2 서비스를 다시 시작합니다.</block>
-  <block id="662f9a338a22b54f53c272273a014b79" category="section-title">업그레이드에 사용된 엔드포인트에서 설치 실패</block>
-  <block id="433bf8d69523b6c45bd3e9074176c8e4" category="paragraph">아직도 사용 중이라면<block ref="99a33b76fea6c3306005dfd630a43c9c" category="inline-link-macro-rx"></block> 에이전트 업그레이드에 사용되면 유효성 검사가 오류로 인해 실패합니다.  이를 방지하려면 *유효성 검사 에이전트 구성* 확인란의 선택을 취소하거나 VCenter에 설치할 때 구성 확인을 건너뜁니다.</block>
-  <block id="b223d695dc0a3cfeb346189c2e0da719" category="inline-link-macro">현재 종료점</block>
-  <block id="6ff810ad8ac9135f58145c78533c4ad6" category="inline-link-macro">엔드포인트를 업데이트하는 방법을 알아보세요</block>
-  <block id="1d9f2c477941ad369756e011cc9d7f3f" category="paragraph">NetApp 방화벽 규칙을 업데이트하여 액세스를 허용할 것을 권장합니다.<block ref="4eae8a7245c9e90ebe2b3731e8a0c4a1" category="inline-link-macro-rx"></block> 귀하의 편의에 따라 최대한 빨리. <block ref="81e8d12b12d5dbcaca843cd6eacbf7e1" category="inline-link-macro-rx"></block> .</block>
-  <block id="651580bc14c37a80ea60b4945de22424" category="paragraph">유일한 오류가 이전 엔드포인트와 관련이 있는지 확인하세요.</block>
-  <block id="5142e35e06a4059a377c9fc09d2a174e" category="paragraph">다른 오류가 있는 경우 계속 진행하기 전에 해당 오류를 해결해야 합니다.</block>
   <block id="efc08f7ae120eb6ea0a122c03f686581" category="section-title">NetApp 지원팀과 협력하세요</block>
   <block id="d0bc8404c6e69b4ebc8cadb9768f40e3" category="paragraph">콘솔 에이전트로 문제를 해결할 수 없는 경우 NetApp 지원팀에 문의해 보세요.  NetApp 지원팀에서는 콘솔 에이전트 ID를 요청할 수도 있고, 아직 콘솔 에이전트 로그가 없는 경우 해당 로그를 NetApp 지원팀으로 보내달라고 요청할 수도 있습니다.</block>
   <block id="7a4c595a1d52f82afae3ef326e950386" category="section-title">콘솔 에이전트 ID 찾기</block>
@@ -5376,10 +5285,6 @@
   <block id="63355a9119047d0bb5216fe09819ed76" category="admonition">콘솔 에이전트 인스턴스 또는 Amazon FSx for ONTAP 인스턴스와 연결된 인스턴스 프로필의 자격 증명은 편집할 수 없습니다. FSx for ONTAP 인스턴스의 자격 증명 이름만 바꿀 수 있습니다.</block>
   <block id="f2a10e059f22d2e4e590bf375629f82c" category="list-text">*조직 자격 증명* 페이지에서 자격 증명 세트에 대한 작업 메뉴를 선택한 다음 *자격 증명 편집*을 선택합니다.</block>
   <block id="76f673856509040ebe6f53809741b891" category="admonition">콘솔 에이전트와 연결된 인스턴스 프로필의 자격 증명은 삭제할 수 없습니다.</block>
-  <block id="fe0e7233937189ab2b2856c5f3bbfefc" category="doc">콘솔 에이전트 자격 증명을 Google Cloud 구독과 연결하세요.</block>
-  <block id="be6d6ead122d68c4f8ddf176dfa23437" category="paragraph">Google Cloud에서 콘솔 에이전트를 만들면 연관된 자격 증명을 사용하여 Cloud Volumes ONTAP 및 NetApp 데이터 서비스를 포함하는 NetApp Intelligent Services 를 구독할 수 있습니다.  서비스 비용을 지불하는 데 사용할 자격 증명을 가진 에이전트와 구독을 연결해야 합니다.</block>
-  <block id="1e494b5627bead907a00e4ea2064baa4" category="paragraph">현재 마켓플레이스 구독을 새 구독으로 교체하면 기존 및 새로운 Cloud Volumes ONTAP 시스템의 구독이 업데이트됩니다.</block>
-  <block id="0e0ee6c108e2775832f3d4fec4e5c9ab" category="paragraph">Google Cloud Marketplace를 통해 NetApp 데이터 서비스를 구독하는 경우 권한이 잘못되었거나 콘솔로의 리디렉션이 누락되어 구독이 실패할 수 있습니다. 이런 일이 발생하면 다음 단계에 따라 구독 절차를 완료하세요.</block>
   <block id="743026d6272c7eac4898bf78c6a0ec00" category="paragraph">VPC에 콘솔 에이전트를 배포하려면 먼저 콘솔이 AWS에서 인증을 받아야 합니다. 다음 인증 방법 중 하나를 선택할 수 있습니다.</block>
   <block id="3c3077c55d74474a96914d3933e99034" category="paragraph">두 옵션 모두 첫 번째 단계는 IAM 정책을 만드는 것입니다. 이 정책에는 AWS 콘솔에서 콘솔 에이전트를 시작하는 데 필요한 권한만 포함되어 있습니다.</block>
   <block id="a6ff8031b9b97942fbb164a958bb15cb" category="inline-link-macro">콘솔 에이전트 자체에 필요한 권한 보기</block>
@@ -5399,7 +5304,6 @@
   <block id="b40610ec83466e7c103049d70ad18892" category="inline-link-macro">에이전트 요구 사항 검토</block>
   <block id="8a62551759227881974703cf10bfc946" category="paragraph"><block ref="e2790838ef7051b1907224142bc33625" category="inline-link-macro-rx"></block>.</block>
   <block id="446a691d3cf6457cb60610b81794fdbc" category="paragraph">AWS는 지정된 설정으로 소프트웨어를 시작합니다. 콘솔 에이전트는 약 5분 안에 배포됩니다.</block>
-  <block id="118b5697b68c5f4ada51d65dffac2674" category="paragraph">대신 표준 SKU IP 주소를 사용하면 콘솔은 공용 IP 대신 콘솔 에이전트의 _개인_ IP 주소를 사용합니다. 콘솔에 액세스하는 데 사용하는 컴퓨터가 해당 개인 IP 주소에 액세스할 수 없는 경우 콘솔의 작업은 실패합니다.</block>
   <block id="d1cb423c9810b1ddd65eea821845fff2" category="admonition">의심스러운 사용자 활동 감지를 활성화하려면 콘솔 조직 관리자 역할이 있어야 합니다.</block>
   <block id="c563d78603e1e09616c6c043a19061ba" category="cell">*4.0.0 이상용 엔드포인트*</block>
   <block id="1463a95efc33a52765f03569e1e39a10" category="cell">*목적*</block>
@@ -5418,7 +5322,6 @@
   <block id="30c4239755a3fa7fe7952fafec8297dd" category="paragraph">일상 업무에 사용.</block>
   <block id="533560d1d92ef216fc2f7047b132da5b" category="list-text">CPU 및 RAM 요구 사항을 충족하는 인스턴스 유형입니다.  NetApp t3.2xlarge를 권장합니다.</block>
   <block id="5218e689f8059e737f702b1608b1d2aa" category="list-text">CPU 및 RAM 요구 사항을 충족하는 인스턴스 유형입니다.  NetApp Standard_D8s_v3를 권장합니다.</block>
-  <block id="8cf6ae40c51e78159e689e6172cff9c8" category="list-text">CPU 및 RAM 요구 사항을 충족하는 인스턴스 유형입니다.  NetApp n2-standard-8을 권장합니다.</block>
   <block id="9588595fbe3fa7f47431af3c53dbfa23" category="list-text"><block ref="9588595fbe3fa7f47431af3c53dbfa23" category="inline-link-rx"></block></block>
   <block id="cb4f6677094ab1c46678dcab5e428e83" category="summary">콘솔과 설치한 모든 에이전트가 제대로 작동하려면 올바른 네트워크 액세스 권한이 있는지 확인해야 합니다.</block>
   <block id="08c556d51e4f6c65d7b6fa418e7669be" category="doc">3.9.55 이하 버전에 필요한 네트워크 액세스</block>
@@ -5455,7 +5358,6 @@
   <block id="7d04a8adb8b138151b42f809761295c7" category="cell"><block ref="7d04a8adb8b138151b42f809761295c7" category="inline-link-macro-rx"></block></block>
   <block id="a5e170ce8c9d104f0b20e67e54257be5" category="paragraph">네트워크에 인터넷 접속을 위한 프록시가 필요한 경우 프록시 정보를 추가해야 합니다. 설치 중에 명시적 프록시를 추가할 수 있습니다. --proxy 및 --cacert 매개변수는 선택 사항이므로 추가하라는 메시지가 표시되지 않습니다. 명시적 프록시 서버가 있는 경우 표시된 대로 매개변수를 입력해야 합니다.</block>
   <block id="247a6a0ee254b2ff09347b727ee46227" category="inline-link-macro">에이전트 유지 관리 콘솔에 대해 알아보세요</block>
-  <block id="ed63faa45dd9543220a2183fa0e02b97" category="admonition">투명 프록시를 구성하려면 설치 후에 구성하면 됩니다. <block ref="6d6c38ccb358695b7ab850225fcd83aa" category="inline-link-macro-rx"></block></block>
   <block id="fbcd7669a7a0c8cc9053c7c78029654b" category="admonition">콘솔 에이전트를 수동으로 설치하는 경우 투명 프록시 서버에 대한 인증서를 설정할 수 없습니다. 투명 프록시 서버에 대한 인증서를 설정해야 하는 경우 설치 후 유지 관리 콘솔을 사용해야 합니다. 자세히 알아보세요<block ref="d3f69ee6935d5f5f8542f4da69ac2bb6" category="inline-link-macro-rx"></block> .</block>
   <block id="334ed7efb24267c8a9d5f60a214ee627" category="list-text">podman-compose 패키지 1.5.0을 설치합니다.</block>
   <block id="83291537b9ae75a78c7add56b73a4688" category="list-text">Red Hat Enterprise Linux 8을 사용하는 경우:</block>
@@ -5464,11 +5366,9 @@
   <block id="e32e1b9613d2e086e1fc46ae7489620c" category="paragraph">4.1.0 릴리스는 표준 모드와 제한 모드에서 사용할 수 있습니다.</block>
   <block id="650940dddaeb353d547fc2674ba4d35b" category="paragraph-title">이름이 변경된 에이전트 상태 표시기</block>
   <block id="9722491a4236a9be86f414fa5b3eebb8" category="paragraph">콘솔 에이전트의 상태 표시기 이름을 *활성* 및 *비활성*에서 *연결됨* 및 *연결 끊김*으로 변경하여 그 목적을 더 명확하게 했습니다.</block>
-  <block id="d9e7da7d4b9cc9086a7ab3a5a270f7da" category="paragraph-title">Redhat Enterprise Linux(RHEL) 9.6 및 Podman 5.4.0 지원</block>
   <block id="2749b80160d80f9500fa8b5d5b4da1ba" category="section-title">NetApp Console 관리</block>
   <block id="a0d96dec6c85f67c2563063cec22ac66" category="paragraph">이 릴리스에는 다음이 포함됩니다.</block>
   <block id="ac740509743c941164fb7e88fc8b768e" category="paragraph-title">NetApp Console 알림을 위한 새 이메일 주소</block>
-  <block id="3ded9fa2f8cf197bdf563d5509101e3a" category="paragraph">NetApp Console 알림을 보내는 이메일 주소가 *service@console.bluexp.netapp.com*에서 *service@console.netapp.com*으로 변경되었습니다. NetApp NetApp Console 이메일 알림을 계속 받으려면 모든 이메일 규칙을 *service@console.netapp.com*으로 업데이트할 것을 권장합니다.</block>
   <block id="e079e06be34bd849355b3a013a28ade3" category="section-title">AWS용 콘솔 에이전트 VM 세부 정보</block>
   <block id="0759ecf4e00f5c23dd6fcb46adfd5f73" category="section-title">Azure용 콘솔 에이전트 VM 세부 정보</block>
   <block id="a284e20714904b80b3bc57b894975967" category="section-title">Google Cloud용 콘솔 에이전트 VM 세부 정보</block>
@@ -5550,7 +5450,6 @@
   <block id="4a882eeef3e6c50d3bb4d82f84d57379" category="cell">컴퓨팅.방화벽.삭제</block>
   <block id="29dc352467775fda0809adc424204117" category="cell">컴퓨팅.방화벽.get</block>
   <block id="dbfb0e7e24eb5b7c01752edd4c67baa0" category="cell">컴퓨팅.방화벽.목록</block>
-  <block id="4a1e6993ee92e55c56f575a1285bdc17" category="cell">컴퓨트.글로벌운영.get.</block>
   <block id="d8bd74ea171478953e02b86e43191839" category="cell">계산.이미지.get</block>
   <block id="a2f8719fc4688979942132e6c83c9b02" category="cell">계산.이미지.패밀리에서 가져오기</block>
   <block id="0c47c066c21579629745163c6286259e" category="cell">계산.이미지.목록</block>
@@ -5637,26 +5536,333 @@
   <block id="a4421516ae043bd916b22750fd43a081" category="list-text">컴퓨팅.서브네트워크.사용</block>
   <block id="e308cbdddf34fb65f938301ff80d4538" category="list-text">컴퓨팅.서브네트워크.외부 IP 사용</block>
   <block id="bc803c81454ea9df76e9060827a7bc53" category="list-text">컴퓨팅.인스턴스.addAccessConfig</block>
-  <block id="f14cdbbd5f80553660910a0a1219e605" category="section-title">2025년 11월 26일</block>
   <block id="3f7540ad5f30cb6539b7476d85d2f608" category="paragraph">사용에 대한 명확성을 높이기 위해 권한이 업데이트되었지만, 권한이 추가되거나 제거되지는 않았습니다. 각 권한이 배포, 일상 작업 또는 삭제에 사용되는지 여부를 나타내는 세 개의 열이 추가되었습니다. 이 외에도 몇 가지 권한은 NetApp Data Classification 및 NetApp Backup and Recovery 에 대한 사용 여부에 따라 분리됩니다.</block>
-  <block id="babdf7713555e95437e95d0dc578e050" category="list-text">*재해 복구 관리자*: 모든 작업을 수행합니다.</block>
-  <block id="756062c061caa73b104caf35ad95abd9" category="list-text">*재해 복구 장애 조치 관리자*: 장애 조치 및 마이그레이션을 수행합니다.</block>
-  <block id="99c828ca537070159318271d66dda996" category="list-text">*재해 복구 애플리케이션 관리자*: 복제 계획을 만듭니다. 복제 계획을 수정합니다. 테스트 장애 조치를 시작합니다.</block>
-  <block id="10bfeabec8da9ffb3c60c40834621a5d" category="list-text">*재해 복구 뷰어*: 정보만 봅니다.</block>
-  <block id="f66b3ba81642886354f66476eebc171c" category="cell">사용자가 NetApp Data Classification 검사 결과를 볼 수 있습니다. 이 역할이 있는 사용자는 규정 준수 정보를 보고 액세스 권한이 있는 리소스에 대한 보고서를 생성할 수 있습니다. 이러한 사용자는 볼륨, 버킷 또는 데이터베이스 스키마의 스캐닝을 활성화하거나 비활성화할 수 없습니다. 데이터 분류에는 관리자 역할이 없습니다.</block>
-  <block id="9320804217d782369dccfe3cfe90fd29" category="inline-link">데이터 분류 문서</block>
-  <block id="81584a5aa440695d6dd39594311c7b2d" category="list-text"><block ref="81584a5aa440695d6dd39594311c7b2d" category="inline-link-rx"></block></block>
-  <block id="d1047a2a7e1c25fc1d5cbd4c2dea5954" category="paragraph">*조직 관리자* 또는 *폴더 또는 프로젝트 관리자* 역할을 맡은 사용자는 다른 사용자에게 역할을 할당할 책임이 있습니다. 프로젝트 또는 폴더 기준으로 액세스 역할을 할당할 수 있습니다. 예를 들어, 한 프로젝트에는 사용자에게 랜섬웨어 복원력 관리자 역할을 할당하고, 다른 프로젝트에는 SnapCenter 관리자 역할을 할당할 수 있습니다. 또는 사용자에게 특정 폴더 내의 모든 프로젝트에 대한 랜섬웨어 복원력 관리자 역할이 필요한 경우 폴더 수준에서 이 역할을 부여할 수 있습니다.</block>
-  <block id="4c56531120cb5dd49448926a4a5fd1fd" category="paragraph">파트너 사용자에게 다음 역할을 할당할 수 있습니다.</block>
-  <block id="c291dac152d909d3eb9020000be43137" category="inline-link-macro">데이터 분류 뷰어</block>
-  <block id="c7e28713a896e9488b74e428eb025ad0" category="list-text"><block ref="c7e28713a896e9488b74e428eb025ad0" category="inline-link-macro-rx"></block></block>
-  <block id="08324e7c6f4c191ebd76163dd3616c9a" category="list-text"><block ref="08324e7c6f4c191ebd76163dd3616c9a" category="inline-link-macro-rx"></block></block>
-  <block id="4feead535ae6dd1e4ba78516194fe4b1" category="list-text"><block ref="4feead535ae6dd1e4ba78516194fe4b1" category="inline-link-macro-rx"></block></block>
-  <block id="6131a90681ddf9c2c7134fa754e90d4e" category="paragraph">Podman 설치 및 구성:</block>
-  <block id="68d20f859d04971de5875c315c929e92" category="list-text">해당 podman-compose 패키지를 설치하세요</block>
-  <block id="5448bfba9b19b99ebf560293cc6b89ab" category="list-text">Podman 버전이 CNI 대신 Netavark Aardvark DNS를 사용하고 있는지 확인하세요.</block>
-  <block id="bf58c65de2201356b331dfea5e7eb976" category="paragraph">Red Hat Enterprise Linux 저장소에서 Podman을 가져옵니다.</block>
-  <block id="2632bb82f2d43ffb72d31ea06ed68352" category="list-text">podman-compose를 얻으려면 EPEL을 설치하세요.</block>
-  <block id="3c7d277b4a6a1367e3f2567411648df9" category="paragraph">다음 단계에 따라 지원되는 Docker Engine 버전을 설치하세요. 콘솔에서 최신 버전을 지원하지 않으므로 최신 버전을 설치하지 마세요.</block>
   <block id="18ecbdaa6bb0f123dda150b973bd53b7" category="list-text">Red Hat Enterprise 9.1~9.6을 사용하는 경우:</block>
+  <block id="2f78cc1ceedbe872d890b3b087731dee" category="paragraph">| NetApp ONTAP 용 Amazon FSX:</block>
+  <block id="fccc45024c0efe519c08e43bb1bd4c5f" category="list-text">api.workloads.netapp.com</block>
+  <block id="5e57ad0482de1c13a4a285a6101f6c13" category="paragraph">웹 기반 콘솔은 이 엔드포인트에 연결하여 Workload Factory API와 상호 작용함으로써 ONTAP 기반 워크로드용 FSx를 관리하고 운영합니다.</block>
+  <block id="d273096b8b8c7966eb2a2fb6ca248366" category="paragraph">| \ https://www.googleapis.com/compute/v1/ \ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \// https://config.googleapis.com/v1/projects</block>
+  <block id="f8cd35bf6f398c2f8c485bfd95309caa" category="list-text">. 연결을 테스트하려면 *연결 테스트*를 선택하세요. IdP 서버의 로그인 페이지로 이동됩니다. IdP 자격 증명으로 로그인하세요.  로그인 후 콘솔로 돌아가서 연결을 활성화하세요.</block>
+  <block id="61169bbb57ab5c82abb2ac47499153f3" category="list-text">콘솔에서 *다음*을 선택하여 요약 페이지를 검토하십시오.</block>
+  <block id="95d9f0b87c61b5cd1f8c21678ced4a5c" category="list-text">알림을 설정하세요.</block>
+  <block id="ec811988404f148d3a7f84f040f45531" category="paragraph">7일 또는 30일 중에서 선택하세요.  이 시스템은 만료 알림을 이메일로 발송하고 콘솔에 표시하며, 해당 알림은 슈퍼 관리자, 조직 관리자, 페더레이션 관리자 및 페더레이션 뷰어 역할을 가진 모든 사용자에게 제공됩니다.</block>
+  <block id="88f10db937786a2fa2751961ec03f831" category="list-text">연동 세부 정보를 검토한 다음 *연동 활성화*를 선택하십시오.</block>
+  <block id="a59486087b1574debcf33e28dd13ed9f" category="paragraph">페더레이션을 활성화하면 사용자는 회사 자격 증명을 사용하여 NetApp Console 에 로그인합니다.</block>
+  <block id="15b890fd729e8bd42b01f29b115cdada" category="list-text">클라우드 인프라 관리자 API</block>
+  <block id="10cefdd3da771664f7b0150b62c249ed" category="paragraph">다음 예제는 프로젝트 수준에서 "agent"라는 이름의 역할을 생성합니다.</block>
+  <block id="1d98a973e28127ca1d5a524c0a65c609" category="paragraph"><block ref="6970de80a07cb67923442f88622aa01f" prefix="" category="inline-code"></block></block>
+  <block id="f84b7166fdd9d73f9025b6ebc8f1a1e2" category="admonition">콘솔 에이전트를 수동으로 설치하는 경우 투명 프록시 서버에 대한 인증서를 설정할 수 없습니다. 투명 프록시 서버에 대한 인증서를 설정해야 하는 경우 설치 후 유지 관리 콘솔을 사용해야 합니다. 자세히 알아보세요<block ref="67604b84b6c55a93968d120e00fd25fc" category="inline-link-macro-rx"></block> .</block>
+  <block id="e6153b5af910bd914558e46567df943b" category="paragraph">설치 후, 새로운 버전이 나오면 콘솔 에이전트가 자동으로 업데이트됩니다.</block>
+  <block id="5f8a3be418076860c7498d8c5d0e14c3" category="list-text">콘솔 에이전트 소프트웨어를 다운로드한 다음 Linux 호스트에 복사하십시오.  NetApp Console 또는 NetApp 지원 사이트에서 다운로드할 수 있습니다.</block>
+  <block id="4775980021a4840f05c457f43800b94a" category="list-text">NetApp Console: *에이전트 &gt; 관리 &gt; 에이전트 배포 &gt; 온프레미스 &gt; 수동 설치*로 이동합니다.</block>
+  <block id="06f42bb69fed27c52f7bae78f3878026" category="paragraph">에이전트 설치 파일 다운로드 또는 파일 URL 다운로드를 선택하십시오.</block>
+  <block id="0501357b97c3d33dc8ef20b31207b3cc" category="list-text">NetApp 지원 사이트 (콘솔에 대한 액세스 권한이 없는 경우 필요)<block ref="384f9db5f56c00fd1d970f44502ee5ff" category="inline-link-rx"></block> ,</block>
+  <block id="1619892cf61e304c5a69af0282981660" category="admonition">투명 프록시를 구성하려면 설치 후에 구성하면 됩니다. <block ref="42ec89ae005e4bc718304f7a7f9af7dd" category="inline-link-macro-rx"></block></block>
+  <block id="f74259191e67bafc8413f9d445c37856" category="list-text">콘솔 에이전트를 실행하려면 전용 호스트가 필요합니다.  다음의 크기 요건을 충족하는 모든 아키텍처가 지원됩니다.</block>
+  <block id="1123fbbce8c7742c0e3dcd6cccd5cce6" category="paragraph">콘솔 에이전트는 다음 공간이 필요합니다.<block ref="ca905eb4a00d34150573153a09e2e79b" prefix=" " category="inline-code"></block> Podman이나 Docker는 컨테이너를 이 디렉터리 내에 생성하도록 설계되었기 때문입니다.  구체적으로, 그들은 컨테이너를 생성할 것입니다.<block ref="af5045a6e72956f67984a97cd3e8b9da" prefix=" " category="inline-code"></block> 디렉토리 및<block ref="2e1a4e3f55001820560b237188c70bc3" prefix=" " category="inline-code"></block> Docker용입니다. 이 공간에서는 외부 마운트나 심볼릭 링크가 작동하지 않습니다.</block>
+  <block id="1c6e1ba9ff363a7122e316a4b7f2c7e3" category="list-text">IMDSv2가 활성화된 경우(새 EC2 인스턴스의 기본값) PUT 응답 홉 제한을 3으로 설정하십시오.  그렇게 하지 않으면 에이전트 설정 중에 시스템에 UI 초기화 오류가 표시됩니다.</block>
+  <block id="328d5228f325395bc3a386f41499640a" category="list-text">CPU 및 RAM 요구 사항을 충족하는 인스턴스 유형입니다. NetApp n2-standard-8을 권장합니다.</block>
+  <block id="36321f8de6704271c20efb18c2788361" category="paragraph">Podman을 설치하고 구성하려면 다음 단계를 따르세요.</block>
+  <block id="e7655ce2e211e4106a4d229011bca18b" category="list-text">podman-compose 패키지 버전 1.0.6을 설치하세요</block>
+  <block id="cfc9caf6832f568fe347d970af78e108" category="list-text">Red Hat Enterprise Linux를 사용하는 경우 Podman 버전이 CNI 대신 Netavark Aardvark DNS를 사용하는지 확인하십시오.</block>
+  <block id="e822146085e921b554750abcae74cd4a" category="paragraph">공식 Red Hat Enterprise Linux 저장소에서 Podman을 다운로드할 수 있습니다.</block>
+  <block id="97c0d440ee76e86ece38ee9da4a462cb" category="list-text">시스템에 EPEL 저장소 패키지가 아직 없으면 설치하세요.</block>
+  <block id="93052470e7c6a20358c8d89c161e4880" category="paragraph">이 단계는 podman-compose가 EPEL(Enterprise Linux용 추가 패키지) 저장소에서 사용 가능하기 때문에 필요합니다.</block>
+  <block id="657da9022df45645ff2569b61278d3c3" category="paragraph">지원되는 Docker Engine 버전을 설치하려면 다음 단계를 따르세요. 콘솔에서 지원되지 않으므로 최신 버전을 설치하지 마세요.</block>
+  <block id="ae41cdf98d6f24f84727785b0c41cda9" category="paragraph">NetApp Canvas의 이름을 *시스템* 페이지로 변경했습니다. 저장소 &gt; 관리 메뉴에서 시스템 페이지로 이동합니다.</block>
+  <block id="6f111d20190d5490668e3e0ac2cad5d2" category="paragraph-title">Red Hat Enterprise Linux(RHEL) 9.6 및 Podman 5.4.0 지원</block>
+  <block id="db70fced03768e8735fbdebf7ea67e66" category="paragraph">NetApp Console 알림을 보내는 이메일 주소가 *service@console.bluexp.netapp.com*에서 *service@console.netapp.com*으로 변경되었습니다. NetApp NetApp Console 이메일 알림을 계속 수신할 수 있도록 *service@console.netapp.com*을 허용하도록 이메일 규칙을 업데이트하는 것을 권장합니다.</block>
+  <block id="026970f0ac157044199489d6744c2491" category="doc">콘솔 에이전트 4.2.0</block>
+  <block id="7051fe17573689080a1f11b0e88a8603" category="paragraph">4.2.0 버전은 표준 모드와 제한 모드를 모두 지원합니다.</block>
+  <block id="dfcd07d4790b963532ec4f8f70f184cd" category="paragraph-title">Google Cloud Infrastructure Manager 지원</block>
+  <block id="221dc7db98837c8091cba0d42f55b28d" category="inline-link-macro">클라우드 배포 관리자</block>
+  <block id="e7858dcbf9687c88e071775eb4ee07ea" category="paragraph">NetApp 이제 Google Cloud Deployment Manager 대신 Google Cloud Infrastructure Manager(IM)를 사용하여 Google Cloud에 에이전트를 배포하고 관리합니다.  이러한 변경은 Google이 해당 기능을 더 이상 지원하지 않기로 했기 때문에 이루어졌습니다.<block ref="9574f21b6b64ac1c3366333a9bb489f6" category="inline-link-macro-rx"></block> .</block>
+  <block id="817a59a137d2f36b17e19b14b0e90545" category="inline-link-macro">권한 변경 로그를 확인하세요.</block>
+  <block id="05345eddc0e94be562e27e8d53b608ae" category="list-text">4.2.0 이상 버전의 모든 새로운 에이전트는 인프라 관리자를 사용하므로 배포에 사용되는 사용자 계정과 서비스 계정의 권한을 모두 업데이트해야 합니다.<block ref="ca3a237b8d0ef6729093b3abe4bab2f0" category="inline-link-macro-rx"></block></block>
+  <block id="cc598dc1e413aff136dd2366a85faf46" category="list-text">에이전트를 배포하면 시스템에서 배포 파일을 저장할 Google Cloud 버킷도 생성합니다.</block>
+  <block id="d9dfb1e70d9002b82990e5020a243087" category="list-title">콘솔 에이전트에 대한 구성 검사 기능이 향상되었습니다.</block>
+  <block id="1c113e32e8394b861faad1f61a9626cb" category="inline-link-macro">콘솔 에이전트에 필요한 엔드포인트에 대해 자세히 알아보세요.</block>
+  <block id="675d71adc8a1b2329a23e817b7275840" category="list-text">콘솔 에이전트는 이제 구성 검사를 수행할 때 더 이상 사용되지 않는 엔드포인트를 확인합니다.  4.0.0 이상 버전의 새로운 엔드포인트 목록으로 업데이트하지 않은 경우, 시스템이 이전 엔드포인트 목록에 연결할 수 있다면 설치가 성공적으로 완료됩니다.<block ref="4fa9d5f65f1179ca8dedab794aee5677" category="inline-link-macro-rx"></block></block>
+  <block id="5cf1eebafa9e566db5b16d2f75b10866" category="inline-link-macro">콘솔 에이전트에 대한 구성 검사를 실행하는 방법을 알아보세요.</block>
+  <block id="532e2205eae250e20138ac0d4fb7670a" category="list-text">콘솔 또는 에이전트 유지 관리 콘솔에서 설치된 콘솔 에이전트에 대한 구성 검사를 실행하여 연결을 확인하고 문제를 해결하십시오.<block ref="2d14832e5c27ace253e7c4b1295d1814" category="inline-link-macro-rx"></block></block>
+  <block id="f1a69f998a4fd4d34f139b76d2b1cf5d" category="paragraph-title">NetApp Console 에서 에이전트 소프트웨어를 직접 다운로드하세요.</block>
+  <block id="ffb09157eddacde0f2ddbb27b8b5a58d" category="inline-link-macro">NetApp Console 에서 콘솔 에이전트 소프트웨어를 직접 다운로드하는 방법을 알아보세요.</block>
+  <block id="0d8ee60431ecde7e8c0ca3d789c24bae" category="paragraph">에이전트를 수동으로 설치해야 하는 경우 NetApp 지원 사이트 외에도 NetApp Console 에서 에이전트 소프트웨어에 직접 액세스할 수 있습니다.<block ref="3ce006bd909dc885369b2f86674a08a3" category="inline-link-macro-rx"></block></block>
+  <block id="f33a1c02aef9134dd317909d568855ae" category="paragraph-title">자격 증명 만료에 대한 알림을 설정할 수 있는 기능</block>
+  <block id="eb85d454a2ba07f1bf0f8e315ae0b696" category="paragraph">서비스 계정 및 페더레이션의 자격 증명 만료에 대한 알림을 설정하세요.  7일 또는 30일 중에서 선택하세요.  콘솔은 적절한 역할을 가진 사용자에게 알림을 표시하고 이메일을 보냅니다.  조직 관리자는 서비스 계정 알림을 받습니다.  조직 관리자, 연합 관리자 및 연합 뷰어는 연합 알림을 받습니다.</block>
+  <block id="c76ecba1e00b52577de6653acbf29014" category="paragraph-title">페더레이션을 활성화한 후에는 로컬 로그인을 사용할 수 없습니다.</block>
+  <block id="e713ec00d2b4c1f46099d8669c70bc4a" category="paragraph">콘솔 조직에 대해 페더레이션을 활성화하면 사용자는 로컬 로그인을 사용할 수 없으며 페더레이션 로그인으로 전환됩니다.</block>
+  <block id="37922d4b00cf704156c5276d88caa05c" category="paragraph-title">저장소 관리 페이지의 사용성 개선</block>
+  <block id="e8f9974435fe7b24ffa11827d0104693" category="paragraph">이제 스토리지 관리 페이지에서 온프레미스 ONTAP 시스템(및 ONTAP 용 FSx)에 대한 자세한 정보를 더 쉽게 확인하고 관리할 수 있습니다.</block>
+  <block id="c513928c0b95afec773bd29d135d4632" category="list-text">* Discoverable systems* 페이지는 요약 정보와 사용 가능한 시스템의 탭 형식 표시를 분리하여 검색 가능한 시스템에 대한 포괄적인 정보를 더 쉽게 볼 수 있도록 합니다.</block>
+  <block id="044a03cc529cee34c57112a210e50b35" category="paragraph">처음 두 가지 옵션을 사용하면 콘솔은 AWS 보안 토큰 서비스를 사용하여 지속적으로 순환되는 임시 자격 증명을 얻습니다. 이 과정은 최적의 방식이며, 자동화되어 있고 안전합니다.</block>
+  <block id="b0d37b69696e5fe98085933a2a7e3fc1" category="paragraph">NetApp Console 에서 조직 간 파트너십을 구축하면 파트너는 조직 경계를 넘어 NetApp 리소스를 안전하게 관리하여 협업을 간소화하고 보안을 강화할 수 있습니다.</block>
+  <block id="d7046de4945385aed3cb44fde274d256" category="doc">유지 관리 콘솔을 사용한 에이전트 유효성 검사</block>
+  <block id="af6e565b77baba04e851ef6db3453fab" category="paragraph">콘솔 에이전트 유지 관리 콘솔을 사용하여 콘솔 에이전트의 설치 및 구성을 검증할 수 있습니다.</block>
+  <block id="2df2419e3b3e4992394516227a5f4a71" category="section-title">설정 검사기 유효성 검사</block>
+  <block id="11d2b70f92f5671a073ee7f95edbc568" category="paragraph">그만큼<block ref="2df2419e3b3e4992394516227a5f4a71" prefix=" " category="inline-code"></block> 이 명령어를 사용하면 콘솔 에이전트의 구성을 검증할 수 있습니다.</block>
+  <block id="3225a10b07f1580f10dee4abc3779e6c" category="section-title">매개변수</block>
+  <block id="bb9f0d8e73ffa6630952dc1ecc6cd9de" category="paragraph"><block ref="6a11199e55b0cb53d751c5170e5f74f9" prefix="" category="inline-code"></block>--*필수의*--</block>
+  <block id="69dfddf838a2ddd2939ee5adc69cb83c" category="paragraph">검증할 서비스를 하나 이상 선택하세요.  유효한 서비스 이름은 다음과 같습니다.<block ref="8b55a44b49368262df89fd0e17b1a181" prefix="*" category="inline-code"></block> 필수 콘솔 엔드포인트에 대한 네트워크 연결 상태를 검증합니다.</block>
+  <block id="1fde504b28ae1c1b6dbb99c104b00a85" category="paragraph"><block ref="693f786102104e01b7396235926fc506" prefix="" category="inline-code"></block>--*필수*-- 실행할 유효성 검사 유형을 하나 이상 선택하세요.  유효한 유효성 검사 유형은 다음과 같습니다. *<block ref="25835188a2355e9530d3a10fcbe4c65b" prefix=" " category="inline-code"></block> 필수 콘솔 엔드포인트에 대한 네트워크 연결 상태를 검증합니다.</block>
+  <block id="b3c3244f084b65704359870cc6488d93" category="paragraph"><block ref="f2d537814e28e44e0e35d5b4ce13cadb" prefix="" category="inline-code"></block>--*선택 과목*--</block>
+  <block id="d076e244720434cf026cb278c7f19d8e" category="paragraph">유효성 검사에 사용할 프록시 서버 URL을 지정합니다.  에이전트가 프록시 서버를 사용하도록 구성된 경우 필수입니다.</block>
+  <block id="775c73e442d845c4596a67e7c69aefd9" category="paragraph"><block ref="b58f4fd799634e7ef624ae15a007f9bb" prefix="" category="inline-code"></block>--*선택 과목*--</block>
+  <block id="4ed623d06dfe32e4f16db9d33c5ede6c" category="paragraph">유효성 검사에 사용할 하나 이상의 인증서 파일의 경로를 지정합니다.  인증서 파일은 PEM 형식이어야 합니다.  여러 경로를 쉼표로 구분하세요.  에이전트에서 사용자 지정 인증서를 사용하는 경우 이 매개변수가 필수입니다.</block>
+  <block id="6a90f9864a2f9aa8de0590c60d07a970" category="section-title">설정 검사기 유효성 검사 예제</block>
+  <block id="56cc3a7f96b8e67c7d92a9185e36c08e" category="listing-title">기본 유효성 검사:</block>
+  <block id="2947152e0492b862524897c4ae5ba389" category="listing-title">에이전트에 프록시 서버가 사용되는 경우의 유효성 검사:</block>
+  <block id="97df144968d77a81cf138d0e4021ce2c" category="listing-title">에이전트에 인증서가 사용되는 유효성 검사:</block>
+  <block id="6db60e859007b84c686f5dc3f04f4697" category="section-title">프록시 가져오기</block>
+  <block id="5b9ef687e725b42e8780bea1b481641c" category="paragraph">그만큼<block ref="6db60e859007b84c686f5dc3f04f4697" prefix=" " category="inline-code"></block> 이 명령은 현재 투명 프록시 서버 구성에 대한 정보를 표시합니다.  현재 투명 프록시 서버 구성을 보려면 다음 명령을 사용하십시오.</block>
+  <block id="e08f6bee8517842a48e4ef6996aea3e0" category="section-title">프록시 가져오기 예시</block>
+  <block id="73c7d09b23bd1ddf9009062714384bf3" category="paragraph">현재 투명 프록시 서버 구성을 보려면 다음 명령을 사용하십시오.</block>
+  <block id="08bc9d3537a56e203564c5b4357049f4" category="section-title">프록시 추가</block>
+  <block id="74c09d7b43cd297a5639a898e7348c8b" category="paragraph">그만큼<block ref="08bc9d3537a56e203564c5b4357049f4" prefix=" " category="inline-code"></block> 이 명령은 에이전트가 투명 프록시 서버를 사용하도록 구성합니다.</block>
+  <block id="0e2fd9178e3f3c1cede27d7b2ecab1c8" category="paragraph"><block ref="681b381a05010f3412144ddec4fb6462" prefix="" category="inline-code"></block></block>
+  <block id="6868c5dea32c658d31e34cd6c643eda9" category="paragraph">프록시 서버의 인증서 파일 경로를 지정합니다.  인증서 파일은 PEM 형식이어야 합니다. 인증서 파일이 명령과 같은 디렉토리에 있는지 확인하거나 인증서 파일의 전체 경로를 지정하세요.</block>
+  <block id="b7660892597c4cc86dbc7d99b33701af" category="section-title">프록시 추가 예시</block>
+  <block id="091092579ca8cede1b760e7c5a90a003" category="section-title">프록시 업데이트</block>
+  <block id="6902b4aa3527b74bdb35b5dd12aec412" category="paragraph">그만큼<block ref="091092579ca8cede1b760e7c5a90a003" prefix=" " category="inline-code"></block> 이 명령어를 사용하면 투명 프록시의 인증서를 업데이트할 수 있습니다.</block>
+  <block id="6f1a60eec202a10b5b6d62f479ba4428" category="paragraph"><block ref="681b381a05010f3412144ddec4fb6462" prefix="" category="inline-code"></block>프록시 서버의 인증서 파일 경로를 지정합니다.  인증서 파일은 PEM 형식이어야 합니다.</block>
+  <block id="06b30352eda5cf9b69816fe23dff936f" category="section-title">프록시 업데이트 예시</block>
+  <block id="ef5ebb9e0c08ee0463e7503ff1111f4c" category="section-title">프록시 제거</block>
+  <block id="f07ee52c9fc05f9047d0eb5e87de40b1" category="paragraph">그만큼<block ref="ef5ebb9e0c08ee0463e7503ff1111f4c" prefix=" " category="inline-code"></block> 이 명령은 에이전트에서 투명 프록시 서버 구성을 제거합니다.</block>
+  <block id="7aa5255fb9f7e29b797e1c6816a0d999" category="section-title">프록시 제거 예시</block>
+  <block id="e1c2619e19fc02c38aacafc93d795901" category="summary">운영 지원 분석가 역할을 사용자에게 할당하면 해당 사용자에게 알림 및 모니터링 기능에 대한 접근 권한을 부여할 수 있습니다. 이 역할을 가진 사용자는 지원 사례를 열 수도 있습니다.</block>
+  <block id="3db89b44d26706e71a450352c7c5a1da" category="list-text">*재해 복구 관리자*: 모든 작업을 수행합니다.</block>
+  <block id="1e732ca66bd89df595b8e795e5dfa4ac" category="list-text">*재해 복구 장애 조치 관리자*: 장애 조치 및 마이그레이션을 수행합니다.</block>
+  <block id="014b84d038553d60cf09cbddcb4e7d08" category="list-text">*재해 복구 애플리케이션 관리자*: 복제 계획을 만듭니다. 복제 계획을 수정합니다. 테스트 장애 조치를 시작합니다.</block>
+  <block id="ca931702830a76aaa24d5f451156d2b4" category="list-text">*재해 복구 뷰어*: 정보만 봅니다.</block>
+  <block id="71aa2505b70e192a741f69ce63677f4b" category="cell">재해 복구 장애 조치 관리자</block>
+  <block id="49f16ca5444f519e5203bb5067957eef" category="cell">재해 복구 애플리케이션 관리자</block>
+  <block id="49868b41c479810c405bc3509cdb1907" category="cell">사용자가 NetApp Data Classification 검사 결과를 볼 수 있습니다. 이 역할이 있는 사용자는 규정 준수 정보를 보고 액세스 권한이 있는 리소스에 대한 보고서를 생성할 수 있습니다. 이러한 사용자는 볼륨, 버킷 또는 데이터베이스 스키마의 스캐닝을 활성화하거나 비활성화할 수 없습니다. 분류에는 관리자 역할이 없습니다.</block>
+  <block id="7fefc96661449151a3bee08edda3e255" category="paragraph">이러한 제한 사항은 NetApp Console 및 관리 설정(에이전트, 서비스형 소프트웨어(SaaS) 플랫폼 등)에만 적용됩니다.</block>
+  <block id="332ea1ed79fb36acca4a28cb73bfb8c3" category="section-title">Google Cloud 사용자 계정 권한</block>
+  <block id="83ad392c56898ad2bc9258551bd9dc50" category="paragraph">아래의 사용자 지정 역할은 Google Cloud 사용자에게 에이전트를 배포하는 데 필요한 권한을 부여합니다.  에이전트를 배포할 사용자에게 이 사용자 지정 역할을 적용하십시오.</block>
+  <block id="3434c5106687454490c5ce3fd3325b7e" category="example-title">Google Cloud 사용자 계정 권한 보기</block>
+  <block id="5e03aefcc897db1801bbaa45747a2971" category="paragraph">아래의 사용자 지정 역할은 콘솔 에이전트에 연결된 Google Cloud 서비스 계정에 Google Cloud 네트워크의 리소스 및 프로세스를 관리하는 데 필요한 권한을 부여합니다.</block>
+  <block id="d25721a787a66e973329bd6a7db30c28" category="paragraph">콘솔 에이전트 VM에 연결된 서비스 계정에 이 사용자 지정 역할을 적용합니다.</block>
+  <block id="60067761727ed2480c4d7988a096bea6" category="example-title">Google 서비스 계정 권한 보기</block>
+  <block id="2ed702ae3741d2ab2632b3029a0f8e32" category="inline-link-macro">Google 권한 변경 로그를 검토하세요.</block>
+  <block id="46bc318b70c402ba98ca33c35bb84afc" category="inline-link-macro">Google 클라우드 서비스 계정을 추가하는 방법을 살펴보세요.</block>
+  <block id="8dcaddb2ef42a50a271974a377b95e29" category="paragraph">향후 릴리스에서 새로운 권한이 추가되거나 제거될 경우 역할이 최신 상태인지 확인하십시오.  변경 로그에는 필요한 새 권한이 나열되어 있습니다.<block ref="d7c0ba232558007d3f0cd6897a857261" category="inline-link-macro-rx"></block> <block ref="a191fc816c4388da3117cded8f9ecd39" category="inline-link-macro-rx"></block></block>
+  <block id="99b25e2af002c77f33933ee7b2cca7b6" category="paragraph">콘솔 에이전트는 사용자 지정 역할의 권한을 사용하여 Google Cloud 네트워크에서 Cloud Volumes ONTAP 리소스와 NetApp 데이터 서비스 프로세스를 관리합니다.  다음 섹션에서는 에이전트가 이러한 권한을 사용하는 방법을 설명합니다.</block>
+  <block id="ba28f37a50f35b5b62bf9d0cebb79e6a" category="section-title">Cloud Volumes ONTAP 에 사용되는 권한</block>
+  <block id="45c85e2fcbcad00a3b3aff5447627a5b" category="paragraph">콘솔 에이전트는 사용자 지정 역할의 권한을 사용하여 Google Cloud 네트워크에서 Cloud Volumes ONTAP 리소스 및 프로세스를 관리합니다.  다음 섹션에서는 에이전트가 이러한 권한을 사용하는 방법을 설명합니다.</block>
+  <block id="05fedb77715f320017d52f66da44b1b0" category="example-title">Cloud Volumes ONTAP 에 대한 권한</block>
+  <block id="1978fc577443d8841749463c81c14e1b" category="cell">*config.deployments.create*</block>
+  <block id="7011503cf97d17706ff8163876018fb2" category="cell">Google Cloud Infrastructure Manager를 사용하여 Cloud Volumes ONTAP 가상 머신 인스턴스를 배포하는 방법입니다.</block>
+  <block id="90859ccfb98bd6357cfd9888e01654f7" category="cell">*config.deployments.delete*</block>
+  <block id="1c823c113d5b21854ab32fb4006d239e" category="cell">*config.deployments.deleteState*</block>
+  <block id="4aef8bfd5362969e0a14daaef6aa2206" category="cell">*config.deployments.get*</block>
+  <block id="39871c3ed7f15a544a81dd29a8f6d5be" category="cell">*config.deployments.getLock*</block>
+  <block id="6f5bdaf7fca0180616b4ae4d03d58a28" category="cell">*config.deployments.getState*</block>
+  <block id="3f52aa0019ca6c92a0b2ce5ef1585bb7" category="cell">*config.deployments.list*</block>
+  <block id="91ea1caf7d132e95307e5641e3eb678a" category="cell">*config.deployments.lock*</block>
+  <block id="5cea6e43ecc95c4f000154ebf17ffe41" category="cell">*config.deployments.update*</block>
+  <block id="efda381a960e37f6857c4e005d80f4d4" category="cell">*config.deployments.updateState*</block>
+  <block id="527ac12ac6f7f67f130d341677f2666a" category="cell">*config.operations.get*</block>
+  <block id="09cbd21df4067bcce7aca81e1d55d7f9" category="cell">*config.previews.get*</block>
+  <block id="4f81cd437237e3919ef57ccf6f896eab" category="cell">*config.previews.list*</block>
+  <block id="25beaddbb4bfa58c896401064f614a49" category="cell">*config.resources.list*</block>
+  <block id="b47fce5e3845afb2bed0589dd445f4b1" category="cell">*config.revisions.get*</block>
+  <block id="6e9d76e8116c43eb4d333f5e51a59158" category="cell">*compute.forwardingRules.create*</block>
+  <block id="1204549a036d6f1fa0e77a33b66ba5fc" category="cell">백엔드 서비스로의 트래픽 라우팅을 위한 포워딩 규칙을 생성합니다.</block>
+  <block id="51f4457e4ce6f71c07304daee30d55a4" category="cell">*compute.forwardingRules.delete*</block>
+  <block id="5625df4a9e5fad50b5ed7483ef854ba0" category="cell">기존 전달 규칙을 삭제합니다.</block>
+  <block id="2747d1bc3f8c306dcd87a303e8d46ac4" category="cell">*compute.forwardingRules.get*</block>
+  <block id="518cdf23dbd2f2786baa04a1b251789f" category="cell">기존 전달 규칙에 대한 세부 정보를 검색합니다.</block>
+  <block id="be4ea57d513cf3eb072627e23f9ab07d" category="cell">*compute.forwardingRules.setLabels*</block>
+  <block id="f5be53441d39f1e3531a7e05f4c9cb41" category="cell">조직에 대한 전달 규칙의 레이블을 설정하거나 업데이트합니다.</block>
+  <block id="2df5b761a5ee0099ec61a876d1eb970a" category="cell">compute.globalOperations.get</block>
+  <block id="e91ad303361b5fdc2d2c5336e085b399" category="cell">*compute.healthChecks.create*</block>
+  <block id="cd9c9102f061e7080ec044f1de8be60f" category="cell">백엔드 서비스 상태를 모니터링하기 위한 상태 점검을 생성하고 관리합니다.</block>
+  <block id="69c63ecfab8251f5332b3f093989452b" category="cell">*compute.healthChecks.delete*</block>
+  <block id="91fc716755c2ccb249d395deaddc51d1" category="cell">*compute.healthChecks.get*</block>
+  <block id="1d0d0f012d65150fe8a659ddc5246c6b" category="cell">*compute.healthChecks.useReadOnly*</block>
+  <block id="51c92eabc0dc72041fa2d618c547a3b3" category="cell">*compute.instances.use*</block>
+  <block id="60f9a4c26542d13806ebfceda41b622a" category="cell">가상 머신 인스턴스를 사용합니다(시작, 중지, 연결 작업).</block>
+  <block id="7694a96be1a3706f979373e54371672a" category="cell">*compute.resourcePolicies.create*</block>
+  <block id="69c9360ed1f6b9f362a8bb04cc2f9976" category="cell">자동화된 리소스 관리를 위한 리소스 정책을 생성하고 관리합니다.</block>
+  <block id="5c1436481ccb784f0099a466930a9d4b" category="cell">*compute.resourcePolicies.delete*</block>
+  <block id="79c6a1fb6244cc1241f910477c4585fa" category="cell">*compute.resourcePolicies.get*</block>
+  <block id="946819076f570f98fc2669abc5ebb221" category="cell">*logging.logEntries.create*</block>
+  <block id="365620bda694367699a9e977c245c99d" category="cell">모니터링, 디버깅 및 감사를 위한 로그 항목을 생성하고 라우팅합니다.</block>
+  <block id="24073bc546846441de345b264ff9733b" category="cell">*logging.logEntries.route*</block>
+  <block id="af467f9a70abceae95e202a38cab79bc" category="cell">*cloudbuild.builds.get*</block>
+  <block id="f93ac717762cc8fe2abd2d13026a6e0c" category="cell">*iam.serviceAccounts.create*</block>
+  <block id="97f415e7bf3ae2691c030ac84e8a7ab4" category="cell">*iam.serviceAccountKeys.create*</block>
+  <block id="d097a5e02531e9d8606a4b9016211fb0" category="cell">스토리지.객체.생성</block>
+  <block id="18e2e5fd1011d7608a9039b76959973f" category="cell">Google Cloud Storage 버킷에 객체(파일)를 생성하고 관리합니다.</block>
+  <block id="877dd561e8b326f974d6649bf025cc47" category="cell">저장소.객체.삭제</block>
+  <block id="75c9b1d045f5bd31e38a2fe8fc99685b" category="cell">*compute.addresses.createInternal*</block>
+  <block id="a01609be65377c550c1f3f9c95e301e9" category="cell">리소스 할당을 위해 VPC 네트워크 내에 내부 IP 주소를 생성합니다.</block>
+  <block id="67ce54621d28117b563f4a29bba7ea15" category="cell">*compute.addresses.deleteInternal*</block>
+  <block id="eb8b5851a4b3813a0b7d8271e9390168" category="cell">리소스 정리를 위해 내부 IP 주소를 삭제합니다.</block>
+  <block id="4a9033f2bc4de0bb816e8bb0b5d4f954" category="cell">*주소를 계산하고 레이블을 설정합니다*</block>
+  <block id="c9100b96b75009cc80c0b2c138896bf1" category="cell">Address 리소스의 레이블을 업데이트합니다.</block>
+  <block id="f80885b173b15e9ea2234f900e51e402" category="cell">*compute.addresses.useInternal*</block>
+  <block id="d52c5aaec9bec122290d546577a86741" category="cell">네트워크 통신에는 내부 IP 주소를 사용하십시오.</block>
+  <block id="6cf64ac632269f6541c1da37cd735d52" category="cell">트래픽 라우팅을 위한 백엔드 서비스를 생성하고 관리합니다.</block>
+  <block id="d8e30cab07834e99dd81b60d6b1eb695" category="cell">*compute.regionBackendServices.delete*</block>
+  <block id="d71ae8f686ef0997fc9137df9832b3a3" category="cell">*compute.regionBackendServices.update*</block>
+  <block id="6ffa2106d04c5f11c8219cf00218c867" category="cell">*compute.regionBackendServices.use*</block>
+  <block id="8afe1371ad74901fbfca12f6507394f7" category="cell">*compute.instanceGroups.create*</block>
+  <block id="31837e29feaf463250d44e6b633644d1" category="cell">*compute.instanceGroups.delete*</block>
+  <block id="a231c32ea863f8bc2002ebefe954023f" category="cell">*compute.instanceGroups.update*</block>
+  <block id="008a67a6e66af0c91194d03a05ed9ca6" category="cell">*compute.instanceGroups.use*</block>
+  <block id="fee9fb5dae000866e2823c08577b5639" category="paragraph">콘솔 에이전트는 사용자 지정 역할의 권한을 사용하여 Google Cloud 네트워크에서 NetApp Backup and Recovery 리소스와 프로세스를 관리합니다.  다음 섹션에서는 에이전트가 이러한 권한을 사용하는 방법을 설명합니다.</block>
+  <block id="a696d2e75adad45b4173573021542ba7" category="example-title">NetApp Backup and Recovery 에 대한 보기 권한을 확인하세요.</block>
+  <block id="d5ca4eff15be43a2a5ebcb745899160d" category="paragraph">콘솔 에이전트는 사용자 지정 역할의 권한을 사용하여 Google Cloud 네트워크에서 NetApp Data Classification 리소스 및 프로세스를 관리합니다.  다음 섹션에서는 에이전트가 이러한 권한을 사용하는 방법을 설명합니다.</block>
+  <block id="b8eb36ca4f2271dadd68e9f2f9d9f7b6" category="example-title">NetApp Data Classification 에 대한 보기 권한</block>
+  <block id="7a5913617c08594a652178dd2ed587bf" category="paragraph">추가되거나 삭제된 권한은 아래에 명시되어 있습니다.</block>
+  <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025년 12월 8일</block>
+  <block id="a70054dca76030cd2e7762887511fa92" category="paragraph">NetApp Google Cloud에서 콘솔 에이전트를 배포하고 실행하기 위해 Google Cloud Deployment Manager에서 Google Cloud Infrastructure Manager(IM)로 전환하고 있습니다.  이러한 변경 사항을 지원하기 위해 다음과 같은 권한이 추가되었습니다.</block>
+  <block id="9460401daaedfab505f0b1eadec0cb88" category="paragraph">에이전트를 배포하는 Google Cloud 사용자에게는 다음과 같은 추가 권한이 필요합니다.</block>
+  <block id="e198f8a2ce0814efb4de119c73722602" category="list-text">저장 폴더 생성</block>
+  <block id="89d185c8189ca757fe8cb3161961069c" category="list-text">iam.serviceAccount.actAs</block>
+  <block id="7ead255295d96ea6de46a56ecad36e7d" category="list-text">config.deployments.create</block>
+  <block id="b00d998cacf7883bfb4d60b7f7b8dbe6" category="list-text">구성.작업.get</block>
+  <block id="a77f8f520fc19fb807c12336eeb6e0f1" category="paragraph">일상적인 운영에 사용되는 Google Cloud 서비스 계정에 다음과 같은 추가 권한이 필요합니다.</block>
+  <block id="9c91d0a29ec8c0b89d42f6feb1b8b213" category="list-text">클라우드빌드.연결.목록</block>
+  <block id="d22ee60cbc3ff63b0c7d8688d3ea75be" category="list-text">클라우드빌드.리포지토리.액세스리드토큰</block>
+  <block id="7848d877069a98fcc73fd0262b50d5dc" category="list-text">클라우드빌드.리포지토리.리스트</block>
+  <block id="0e3e1067c310a197feb8287fe779ff81" category="list-text">클라우드 할당량.할당량.받기</block>
+  <block id="a3b719875760fa108520adf339dee562" category="list-text">config.artifacts.import</block>
+  <block id="55cd451af096a93731b1e3d7e3429492" category="list-text">config.deployments.deleteState</block>
+  <block id="cd9b1a46a946b53d4fc054be8e028486" category="list-text">config.deployments.getLock</block>
+  <block id="995b280499f482fca8bf81a7ede55340" category="list-text">config.deployments.getState</block>
+  <block id="1b4d8bafd38f9bad158f509da5c485c6" category="list-text">config.deployments.updateState</block>
+  <block id="44c2cc8ff119df5a29b6a6ccee852e48" category="list-text">설정 미리보기 업로드</block>
+  <block id="2ae9911aee10f552e485d65f256fff31" category="list-text">config.revisions.getState</block>
+  <block id="77d9be0a069b64561dcc06d563707f9c" category="list-text">logging.logEntries.create</block>
+  <block id="3cae5e024ce5f256c03eeb10c3ad4e19" category="list-text">저장소 객체 업데이트</block>
+  <block id="f91284eb9de39f3d7e2a21cf5994571d" category="list-text">iam.serviceAccounts.get</block>
+  <block id="5c2f845538267fafb03ca99ce0dc3f48" category="paragraph">Cloud Volumes ONTAP 배포하려면 다음과 같은 추가 권한이 필요합니다.</block>
+  <block id="c163c809c2a0ca0c891139509a6ca65b" category="list-text">클라우드빌드.빌드.겟</block>
+  <block id="8e69fbd4d05c5ecfcdaac5c9421ee931" category="list-text">config.deployments.delete</block>
+  <block id="36f59298cb7a695036b1f410b8e7a025" category="list-text">config.deployments.get</block>
+  <block id="12daf2722e0103231cb0dd113fd916ec" category="list-text">config.deployments.list</block>
+  <block id="f3c2c7bca6e535ec0244d2c8af06efd6" category="list-text">config.deployments.update</block>
+  <block id="44f3f9390fa3822713843b857e27b3fe" category="list-text">config.previews.get</block>
+  <block id="fa7d29940aaac850cb247120a867e23e" category="list-text">설정 미리보기 목록</block>
+  <block id="7f61b5a7a77adeb9e9f1790f452235c4" category="list-text">config.revisions.get</block>
+  <block id="635a490a44ad3028c4acede5b8484cc2" category="list-text">구성 리소스 목록</block>
+  <block id="9989c44bee8dee4cb7f01266fafda94f" category="list-text">iam.serviceAccountKeys.create</block>
+  <block id="ee0506f09d6a7976f7ba93533e0a25a9" category="list-text">iam.serviceAccounts.create</block>
+  <block id="dd7e4582f9999edf3b40d496843fa529" category="paragraph">Cloud Volumes ONTAP 의 일상적인 운영에 사용되는 서비스 계정에 다음과 같은 추가 권한이 필요합니다.</block>
+  <block id="5fb65d9866ed23983e68b0b7fddd0d15" category="list-text">compute.addresses.createInternal</block>
+  <block id="c2bc156592faf656f145d38a4823df20" category="list-text">compute.addresses.deleteInternal</block>
+  <block id="ef34b61f78525c155ff3b7e9c0b2be2d" category="list-text">compute.addresses.setLabels</block>
+  <block id="4a8f52870b8cc6d947fd943722432e79" category="list-text">compute.addresses.useInternal</block>
+  <block id="d57d373ca78566db582c948674bf5b7f" category="list-text">계산.전달규칙.생성</block>
+  <block id="448aabe83942e3bb9ef25173b527144e" category="list-text">compute.forwardingRules.delete</block>
+  <block id="1a7221f68ba7e68197368c69ea43808d" category="list-text">compute.forwardingRules.get</block>
+  <block id="dc6e0a34de68c5e87f224f9d6f2eaddb" category="list-text">compute.forwardingRules.setLabels</block>
+  <block id="663b65df0be4371d9e7079d58724e3ca" category="list-text">compute.healthChecks.create</block>
+  <block id="6b0675fc6728b7261f48895cbdaa668b" category="list-text">compute.healthChecks.delete</block>
+  <block id="761112290226750e922fcc41ea79565e" category="list-text">compute.healthChecks.get</block>
+  <block id="1ff641b277f1da1dc822ea8772aa7f7d" category="list-text">compute.healthChecks.useReadOnly</block>
+  <block id="007222f573b047fac21eb0c4010a04ae" category="list-text">compute.instanceGroups.create</block>
+  <block id="6fc202cfdabf6604e7e98cf9441ec3c9" category="list-text">compute.instanceGroups.delete</block>
+  <block id="b27ccd3f28fa1ae2c4c242ce4375b0d3" category="list-text">compute.instanceGroups.update</block>
+  <block id="756a8e6c0ce83856240259584a8f747f" category="list-text">compute.instanceGroups.use</block>
+  <block id="5a83ef5325f336f451391fea875ac476" category="list-text">compute.instances.use</block>
+  <block id="3341ac251f90eb3feda08fa2af91c449" category="list-text">compute.regionBackendServices.delete</block>
+  <block id="8c5348684057fdb6ea94f53d6e91debe" category="list-text">compute.regionBackendServices.업데이트</block>
+  <block id="413fb87968c99457c19bc2cedb8a31e4" category="list-text">compute.regionBackendServices.use</block>
+  <block id="0b257a26721cbf5e7a10cd95066d7b49" category="list-text">compute.resourcePolicies.create</block>
+  <block id="738061c248141ac453e6b42cf82c2a8e" category="list-text">compute.resourcePolicies.delete</block>
+  <block id="32c06ac076ffdc3b2ccf1214454c6243" category="list-text">compute.resourcePolicies.get</block>
+  <block id="72ca8180a628903ebd8eea37a1c92bcc" category="list-text">logging.logEntries.route</block>
+  <block id="f3f7e6957e72ba16a78d58e8ac7a43cd" category="list-text">config.deployments.lock</block>
+  <block id="33fb61c4c752d541a30c9ba8194091da" category="section-title">2025년 11월 26일</block>
+  <block id="90e7692e452d555a08bc34e6a38ecd0c" category="section-title">2023년 2월 6일</block>
+  <block id="47d455f427b4674cc00157a8a2934409" category="paragraph">다음 권한이 이 정책에 추가되었습니다.</block>
+  <block id="e97ae785ddbd746339946844f92175e6" category="inline-link">분류 문서</block>
+  <block id="6847efe16c9bfc0feacaef65fc05b7b9" category="list-text"><block ref="6847efe16c9bfc0feacaef65fc05b7b9" category="inline-link-rx"></block></block>
+  <block id="9b894a36c4ebb01df8469fa98daba21f" category="summary">NetApp Google Cloud에 콘솔 에이전트를 배포할 때 사용되는 서비스 계정에 필요한 권한을 때때로 업데이트합니다.</block>
+  <block id="d6d6c33d995f278b372d3d2f7a10524d" category="doc">Google Cloud 배포에 대한 콘솔 에이전트 권한 관리</block>
+  <block id="daf1fbd23852baa7dc431ec2658722d9" category="inline-link-macro">필요한 Google 권한 목록을 확인하세요</block>
+  <block id="c35025e4c3afa1c5d645893259cbce25" category="paragraph"><block ref="df29c88404b44d3e8df12197653b40b2" category="inline-link-macro-rx"></block>.</block>
+  <block id="4860b54918e1580143a7c01984c21fe1" category="paragraph">Google Cloud 콘솔을 사용하여 서비스 계정에 할당된 IAM 역할을 새 권한 세트에 맞게 업데이트하세요.</block>
+  <block id="34e82a1501cca5af4e190be9c03c0fbb" category="inline-link-macro">Google Cloud 문서: 사용자 지정 역할 편집</block>
+  <block id="322a5219fa870735040f24cb43da8303" category="paragraph"><block ref="322a5219fa870735040f24cb43da8303" category="inline-link-macro-rx"></block></block>
+  <block id="16d62d361fbd1153b9fe75b035aa7c51" category="paragraph">콘솔 에이전트의 기존 투명 프록시 서버는 다음 방법을 사용하여 업데이트할 수 있습니다.<block ref="091092579ca8cede1b760e7c5a90a003" prefix=" " category="inline-code"></block> 명령어를 사용하거나 투명 프록시 서버를 제거하려면 다음 방법을 사용하십시오.<block ref="ef5ebb9e0c08ee0463e7503ff1111f4c" prefix=" " category="inline-code"></block> 명령.  더 자세한 내용은 관련 문서를 참조하십시오.<block ref="1b2f5cd7e64b458e431e40fa20571324" category="inline-link-macro-rx"></block> .</block>
+  <block id="6c69cf52de815b4e3d26a89db4f26c8a" category="paragraph">조직을 만들면 단일 프로젝트가 포함됩니다. 프로젝트를 추가하여 리소스를 관리하고, 폴더를 추가하여 관련 프로젝트를 그룹화하세요.</block>
+  <block id="2bc87be9675bb8a069610f3430a1e3e8" category="paragraph">조직의 리소스 구조에서 최대 7단계의 폴더와 프로젝트를 생성할 수 있습니다.  조직 구조를 중첩적으로 구축하려면 폴더 안에 또 다른 폴더를 만드세요.</block>
+  <block id="e403ae80ee5407293bf60157033759c8" category="list-text">폴더 또는 프로젝트 세부 정보를 입력하세요:</block>
+  <block id="e3a15113b550a2e5d2560f495223b05a" category="list-text">*이름 및 위치*: 폴더 또는 프로젝트의 이름을 입력하고 계층 구조에서 위치를 선택합니다. 폴더나 프로젝트를 조직 아래에 또는 다른 폴더 안에 배치하세요.</block>
+  <block id="d67cf2e8c3d97e0eed9561206ed3e9ca" category="paragraph">액세스 권한과 역할을 할당하려면 *멤버 추가*를 선택하세요.</block>
+  <block id="70fdeef63f056c10a8cdcc5f3fbc8eb3" category="inline-xref">리소스를 제거하는 방법을 알아보세요</block>
+  <block id="d66b571e57bc053e8b1ad8e43b91ee4e" category="paragraph">폴더나 프로젝트를 삭제하기 전에 해당 폴더에 리소스가 포함되어 있지 않은지 확인하십시오. <block ref="2ce0cd71e2b80657c61ce3337cd46c5f" category="inline-xref-macro-rx"></block>.</block>
+  <block id="2634a609591cac73e3cee6d75b3a8299" category="section-title">폴더 또는 프로젝트와 관련된 리소스를 변경합니다.</block>
+  <block id="e1485c69a5051018e6f541a40ac64334" category="paragraph">리소스 접근을 제어하려면 멤버 접근 권한을 수정하세요.</block>
+  <block id="3aab6b4b2431f483b7e867e25c7dc17f" category="paragraph">구성원 액세스가 더 높은 계층 수준에서 상속되는 경우 더 낮은 수준에서 변경할 수 없습니다. 액세스 권한을 변경하려면 상위 계층 수준에서 멤버 권한을 업데이트합니다. 또는 키키<block ref="2e250d63a19626cb0aeed14260bd2f59" category="inline-link-macro-rx"></block>를 사용할 수 있습니다.</block>
+  <block id="dc56ef546dad0049c4fe42c718817af1" category="paragraph">조직에는 사용자 계정과 서비스 계정이라는 두 가지 유형의 구성원을 추가할 수 있습니다. 애플리케이션은 서비스 계정을 사용하여 API 작업을 자동으로 수행합니다.  사람들은 사용자 계정을 사용하여 로그인하고 리소스를 관리합니다.</block>
+  <block id="0a8fdeec95373b802409cb30efb505de" category="paragraph">귀하의 X.509 인증서. PEM, CRT 또는 CER 형식이어야 합니다.</block>
+  <block id="81e59e8e4bf25fcadc8863ff39bcfc04" category="list-text">인증서 만료 알림을 설정하세요.  7일 또는 30일 중에서 선택하세요.  만료 알림은 슈퍼 관리자 또는 조직 관리자 역할을 가진 사용자에게 이메일로 전송되고 콘솔에 표시됩니다.</block>
+  <block id="1753b2507377ecd0602ed08944b9d1b2" category="paragraph">멤버를 제거하면 시스템에서 해당 멤버의 권한을 취소하지만 콘솔 및 NetApp 지원 사이트 계정은 유지합니다.</block>
+  <block id="a758e86398ed40898f56dc46bf8d3b3b" category="list-text">클라이언트 ID와 클라이언트 비밀번호를 다운로드하거나 복사하세요. + 콘솔에는 클라이언트 비밀 키가 한 번만 표시됩니다. 복사하거나 다운로드하여 안전하게 보관하세요.</block>
+  <block id="a3d754fa6f41840770949e7570cb4dc0" category="paragraph">사용자는 MFA를 제거한 후 로그인할 때 다시 설정해야 합니다. 사용자가 MFA 장치에 대한 액세스 권한을 일시적으로 잃은 경우 MFA를 설정할 때 저장한 복구 코드를 사용하여 로그인할 수 있습니다.</block>
+  <block id="e41f7fb86a6b410ae7e503a4ccc83ef6" category="paragraph">귀하의 조직과 관련된 발견된 리소스와 발견되지 않은 리소스를 모두 볼 수 있습니다. 시스템은 스토리지 리소스를 찾고 사용자가 콘솔에 추가할 때까지 해당 리소스를 검색되지 않은 상태로 표시합니다.</block>
+  <block id="fc35c417bbb2c0ec9081298a05b3071b" category="admonition">리소스 페이지에서는 사용자가 Amazon FSx for NetApp ONTAP 리소스를 역할과 연결할 수 없으므로 해당 리소스가 제외됩니다.  해당 정보는 *시스템* 페이지 또는 워크로드에서 확인할 수 있습니다.</block>
+  <block id="62ff23d019d29d30b64698ce14ebdc09" category="list-text">제공되는 옵션을 활용하여 필요한 자료를 찾아보세요.</block>
+  <block id="aaff9ff22e8e6739bcdc8cc79cb3614b" category="inline-link-macro">관련 폴더 및 프로젝트에 대한 액세스 권한이 있는 구성원을 봅니다.</block>
+  <block id="8b3be42a579e101783dbee0366282232" category="admonition">어떤 조직 구성원이 해당 리소스에 접근할 수 있는지 확인하려면,<block ref="d3f770deeda88cc3cea0d73a63cf7240" category="inline-link-macro-rx"></block> .</block>
+  <block id="d23b81e3e519af34ae1d1368f055ab5c" category="admonition">검색된 리소스를 조직 전체에서 제거하려면 *시스템* 페이지로 이동하여 해당 시스템을 제거하십시오.</block>
+  <block id="876c2ced14b405974ba0e1bffce7d0d5" category="paragraph">*조직 관리자* 또는 *폴더 또는 프로젝트 관리자* 역할을 맡은 사용자는 다른 사용자에게 역할을 할당할 책임이 있습니다. 프로젝트 또는 폴더 기준으로 액세스 역할을 할당할 수 있습니다. 프로젝트 또는 폴더별로 접근 권한을 할당하세요.  예를 들어, 한 프로젝트에는 랜섬웨어 복원력 관리자 역할을, 다른 프로젝트에는 SnapCenter 관리자 역할을 사용자에게 할당할 수 있습니다.  폴더 내 모든 프로젝트에 대해 사용자에게 랜섬웨어 복원력 관리자 역할을 부여하려면 폴더 수준에서 역할을 할당하십시오.</block>
+  <block id="ed59bba19a8b1215a5da046694459de3" category="paragraph">보안을 강화하려면 IAM 전략에 따라 역할을 할당하십시오.  IAM 역할은 사용자의 접근 권한을 필요한 수준으로만 제한합니다.</block>
+  <block id="dff14b7229aae5e011982b724c9867d3" category="paragraph">조직에 구성원을 추가하면 해당 구성원에게 역할을 할당하라는 메시지가 표시됩니다. 현재 그들에게 어떤 역할이 부여되었는지 확인할 수 있습니다.</block>
+  <block id="d47741191d2932672428925f5a647577" category="paragraph">멤버의 역할을 변경하여 접근 권한을 업데이트하세요.</block>
+  <block id="c0597b9526c7ff0d7645fb305fbbb302" category="paragraph">Amazon FsX for NetApp ONTAP:</block>
+  <block id="deb5ab06bb4820c3ddaf1096673112dd" category="paragraph">웹 기반 콘솔은 이 엔드포인트에 연결하여 Workload Factory API와 상호 작용함으로써 ONTAP 기반 워크로드용 FSx를 관리하고 운영합니다.</block>
+  <block id="92e2005838617f772873a40c3ba5ee87" category="paragraph">콘솔 에이전트 소프트웨어가 실행되는 호스트가 운영 체제, RAM 및 포트 요구 사항을 충족하는지 확인하십시오.</block>
+  <block id="7477110a62e7e23490489fd5dde0d9b3" category="paragraph">콘솔 에이전트가 하이브리드 클라우드의 리소스를 관리할 수 있도록 네트워크 위치가 다음 요구 사항을 충족하는지 확인하십시오.</block>
+  <block id="4a2cd5186a22d99f67f031f282623ea8" category="paragraph">다음 옵션 중 하나를 사용하여 NetApp Console 에 AWS 권한을 부여하십시오.</block>
+  <block id="cb55016940e52c1c7b882becfa96703f" category="paragraph">필수 조건을 모두 충족한 후에는 Linux 호스트에 소프트웨어를 수동으로 설치하십시오.</block>
+  <block id="3a25df27a9593be32d58d660128319d2" category="paragraph">콘솔 에이전트를 설치한 후에는 콘솔 에이전트가 AWS에서 데이터 및 스토리지 인프라를 관리할 수 있도록 설정한 AWS 권한을 제공해야 합니다.</block>
+  <block id="5c585aa7c70930b73bdafb2cb9161f8a" category="paragraph">생성한 IAM 역할을 콘솔 에이전트 EC2 인스턴스에 연결합니다.</block>
+  <block id="ba496406ba5e67bd0a486e583b8cd337" category="paragraph">https://www.googleapis.com/compute/v1/ https://compute.googleapis.com/compute/v1 https://cloudresourcemanager.googleapis.com/v1/projects https://www.googleapis.com/compute/beta https://storage.googleapis.com/storage/v1 https://www.googleapis.com/storage/v1 https://iam.googleapis.com/v1 https://cloudkms.googleapis.com/v1 // https://config.googleapis.com/v1/projects</block>
+  <block id="483f6f30ec7b7da81659462b08c18e8a" category="paragraph">다음 예제는 프로젝트 수준에서 "agentDeployment"라는 이름의 역할을 생성합니다.</block>
+  <block id="606b4f54c298cd84f8c9d4d46c74820a" category="paragraph">gcloud iam roles create connectorDeployment --project=myproject --file=agent-deployment.yaml</block>
+  <block id="a447c4cad2c58e7308d516639f777fff" category="section-title">3단계: 에이전트와 함께 사용할 Google Cloud 서비스 계정을 생성합니다.</block>
+  <block id="45395d40cf0cb384fb917beab8ac0f5c" category="admonition">Google Cloud에 에이전트를 배포하면 에이전트가 배포 파일을 저장할 버킷을 생성합니다.</block>
+  <block id="478d6690c508002bc0e2f9e7c3ee46d5" category="paragraph">Google Cloud에 콘솔 에이전트를 배포하려면 먼저 몇 가지 Google Cloud API를 사용 설정해야 합니다.</block>
+  <block id="1fe3854ddba0cc13565a8a11d513f6a0" category="paragraph">다음 사항을 숙지하십시오:</block>
+  <block id="989c7bb7f839354a9ed40ce2b95bb63a" category="list-text">안내에 따라 인스턴스를 설정하고 시작하십시오.</block>
+  <block id="b95854f0f3ff949a77556f1717a2053a" category="list-text">*공용 IP*: 콘솔 에이전트 VM에서 공용 IP 주소를 사용하려면 기본 SKU를 선택하십시오.</block>
+  <block id="14b08ffab5a3e9a00dd089a48d7cb1c4" category="paragraph">대신 표준 SKU IP 주소를 사용하면 콘솔은 공용 IP 대신 콘솔 에이전트의 _개인_ IP 주소를 사용합니다. 콘솔에 접속하는 데 사용하는 기기가 사설 IP 주소에 연결할 수 없는 경우 콘솔이 작동하지 않습니다.</block>
+  <block id="e1f80f0a4664c5510ddb707c6296dd7c" category="paragraph">관리되는 ID를 사용하면 콘솔 에이전트 VM이 자격 증명 없이 Microsoft Entra ID에 자신을 식별할 수 있습니다.<block ref="f91ce7faef49711445322691b4d6ac64" category="inline-link-rx"></block> .</block>
+  <block id="c5edce68cac7e488fac66a004543fa61" category="paragraph">로그인 정보가 다른 기관과 연결되어 있는 경우, 새 로그인 정보를 사용하여 가입해야 합니다.  그렇지 않으면 설정 화면에서 제한 모드를 활성화하는 옵션이 표시되지 않습니다.</block>
+  <block id="b32ca5cd3832e04aa3786f7647aecbcc" category="paragraph">Azure Marketplace에서 또는 수동으로 콘솔 에이전트를 설치한 경우 이전에 설정한 권한을 부여해야 합니다.</block>
+  <block id="124aaa31a673a34a4e59e30b752222d2" category="paragraph">콘솔 에이전트를 연결해야 편집할 수 있습니다.</block>
+  <block id="aa5691f6d018b3411c8082be20a4529f" category="paragraph">파트너 사용자에게 다음 역할을 할당할 수 있습니다.</block>
+  <block id="eaec472b7a23d9c311a78adfd10b1032" category="inline-link-macro">백업 및 복구 관리자</block>
+  <block id="9b589496549b93bcbd645613fbd03c9c" category="list-text"><block ref="9b589496549b93bcbd645613fbd03c9c" category="inline-link-macro-rx"></block></block>
+  <block id="760c54a4cb61f02dffc8c2331073ae1d" category="list-text"><block ref="760c54a4cb61f02dffc8c2331073ae1d" category="inline-link-macro-rx"></block></block>
+  <block id="db385d806691bf16134876c971ae47ac" category="list-text"><block ref="db385d806691bf16134876c971ae47ac" category="inline-link-macro-rx"></block></block>
+  <block id="456f871b4f4ee4ad376b69d4040f5120" category="list-text"><block ref="456f871b4f4ee4ad376b69d4040f5120" category="inline-link-macro-rx"></block></block>
+  <block id="78d4b42d7cc8df44f5151da486494386" category="list-text"><block ref="78d4b42d7cc8df44f5151da486494386" category="inline-link-macro-rx"></block></block>
+  <block id="67580c71df9613a2df5711bad8e2d8d9" category="list-text"><block ref="67580c71df9613a2df5711bad8e2d8d9" category="inline-link-macro-rx"></block></block>
+  <block id="7c53729e63e6d7b0ff2748297a9aa07d" category="paragraph">이 표는 일반적인 오류 메시지와 해결 방법을 보여줍니다.</block>
+  <block id="5d3a908b240fe98ac0740455635b4cc0" category="list-text">문제가 계속 발생하면 고객 지원팀에 문의하십시오.</block>
+  <block id="13ab9425db1c4ad9c7ca529999f6de24" category="list-text">에이전트가 필요한 엔드포인트에 대한 아웃바운드 액세스 권한을 가지고 있는지 확인하십시오.<block ref="c7fe41b97889c23a57defbbf2129845e" category="inline-link-macro-rx"></block></block>
+  <block id="61af83c0a45998dc351428765c46fa2e" category="section-title">콘솔 에이전트에 대한 구성 검사를 실행합니다.</block>
+  <block id="764bd6d2ae27e2401a34b6a482fc62d3" category="paragraph">콘솔 또는 에이전트 유지 관리 콘솔에서 콘솔 에이전트에 대한 구성 검사를 실행하여 연결 상태를 확인하십시오.</block>
+  <block id="cb4e992a592d7b26e6c218cdde9ee1b5" category="inline-link-macro">config-checker validate 명령어 사용 방법에 대해 자세히 알아보세요.</block>
+  <block id="adbf5b321ab6472093079a96d92216c2" category="paragraph">에이전트 유지 관리 콘솔을 사용하여 구성 검사를 실행할 수도 있습니다.<block ref="714b5c6de8ffee7e082263b89290e9dc" category="inline-link-macro-rx"></block></block>
+  <block id="2c8b526b02d94d86279aebb87311c90d" category="admonition">*연결됨* 상태인 에이전트만 인증할 수 있습니다.</block>
+  <block id="2256ce9e5331fffeb7ded438ec67c9bf" category="list-title">콘솔에서 시작하는 단계</block>
+  <block id="80ed8e269497520c11a5f07aaac10ca9" category="list-text">확인하려는 콘솔 에이전트의 작업 메뉴를 선택하고 *유효성 검사*를 선택합니다.</block>
+  <block id="5dfebfd3b68f37eb76c1cbde60947384" category="inline-image-macro">상담원의 작업 메뉴에 있는 유효성 검사 옵션을 보여주는 스크린샷입니다.</block>
+  <block id="9bccdaa91fb930ee1c5038c140fa7f92" category="paragraph"><block ref="9bccdaa91fb930ee1c5038c140fa7f92" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5a8fd97dba9bde8fc857ad3f2edce597" category="paragraph">검증에는 최대 15분이 소요될 수 있습니다.  결과는 완료되면 표시됩니다.</block>
+  <block id="e1da0c759b99b40771f992144973dfe0" category="paragraph">설치 중에 아웃바운드 연결을 확인하는 구성 검사를 비활성화해야 할 때가 있을 수 있습니다. 예를 들어, 정부 클라우드 환경에 에이전트를 수동으로 설치할 때는 구성 검사를 비활성화해야 합니다. 그렇지 않으면 설치가 실패합니다.</block>
+  <block id="749e848334a8eeda9b72b5bef6878260" category="paragraph">_com/opt/application/netapp/service-manager-2/config.json_ 파일에서 _skipConfigCheck_ 플래그를 설정하여 구성 확인을 비활성화합니다. 기본적으로 이 플래그는 false로 설정되고 구성 검사는 에이전트에 대한 아웃바운드 액세스를 확인합니다. 검사를 비활성화하려면 이 플래그를 true로 설정합니다. 이 단계를 완료하기 전에 JSON 구문에 익숙해지십시오.</block>
+  <block id="174dd97dd1f160583ac76fa482fa6a5e" category="section-title">2025년 12월 10일</block>
+  <block id="426c031f387e762bb968fd54671cf5a6" category="paragraph">&lt;stdin&gt;에서 해결되지 않은 지시문 - include::_whatsnew/2025-12-08.adoc[]</block>
+  <block id="5a348f21cc989b094b43c61561c46351" category="sidebar">구성 검사</block>
+  <block id="800641e37082e3805299720dbe2f9713" category="sidebar">투명 프록시</block>
 </blocks>

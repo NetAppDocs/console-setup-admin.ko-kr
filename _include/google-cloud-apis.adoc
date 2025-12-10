@@ -2,6 +2,7 @@
 :allow-uri-read: 
 
 
+* 클라우드 인프라 관리자 API
 * 클라우드 배포 관리자 V2 API
 * 클라우드 로깅 API
 * 클라우드 리소스 관리자 API

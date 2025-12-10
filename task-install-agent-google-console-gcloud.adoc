@@ -47,7 +47,7 @@ VPC 및 서브넷:: 콘솔 에이전트를 생성할 때는 에이전트가 상�
 
 
  a| 
-\ https://www.googleapis.com/compute/v1/ \ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \ https://www.googleapis.com/deploymentmanager/v2/projects
+https://www.googleapis.com/compute/v1/ https://compute.googleapis.com/compute/v1 https://cloudresourcemanager.googleapis.com/v1/projects https://www.googleapis.com/compute/beta https://storage.googleapis.com/storage/v1 https://www.googleapis.com/storage/v1 https://iam.googleapis.com/v1 https://cloudkms.googleapis.com/v1 // https://config.googleapis.com/v1/projects
  a| 
 Google Cloud에서 리소스를 관리합니다.
 
@@ -155,6 +155,8 @@ title: Console agent deployment policy
 description: Permissions for the user who deploys the Console agent
 stage: GA
 includedPermissions:
+
+- cloudbuild.builds.get
 - compute.disks.create
 - compute.disks.get
 - compute.disks.list
@@ -192,6 +194,19 @@ includedPermissions:
 - compute.zoneOperations.get
 - compute.zones.get
 - compute.zones.list
+- *config.deployments.create*
+- *config.operations.get*
+- *config.deployments.delete*
+- *config.deployments.deleteState*
+- *config.deployments.get*
+- *config.deployments.getState*
+- *config.deployments.list*
+- *config.deployments.update*
+- *config.deployments.updateState*
+- *config.previews.get*
+- *config.previews.list*
+- *config.revisions.get*
+- *config.resources.list*
 - deploymentmanager.compositeTypes.get
 - deploymentmanager.compositeTypes.list
 - deploymentmanager.deployments.create
@@ -210,16 +225,25 @@ includedPermissions:
 - deploymentmanager.types.list
 - resourcemanager.projects.get
 - compute.instances.setServiceAccount
+- *iam.serviceAccounts.actAs*
+- *iam.serviceAccounts.create*
 - iam.serviceAccounts.list
+- *iam.serviceAccountKeys.create*
+- *storage.buckets.create*
+- *storage.buckets.get*
+- *storage.objects.create*
+- *storage.folders.create*
+- *storage.objects.list*
+
 ----
 .. Google Cloud에서 Cloud Shell을 활성화합니다.
 .. 필요한 권한이 포함된 YAML 파일을 업로드합니다.
 .. 다음을 사용하여 사용자 정의 역할을 만듭니다. `gcloud iam roles create` 명령.
 +
-다음 예제에서는 프로젝트 수준에서 "connectorDeployment"라는 역할을 만듭니다.
+다음 예제는 프로젝트 수준에서 "agentDeployment"라는 이름의 역할을 생성합니다.
 
 +
-gcloud iam 역할 커넥터 배포 생성 --project=myproject --file=connector-deployment.yaml
+gcloud iam roles create connectorDeployment --project=myproject --file=agent-deployment.yaml
 
 +
 https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloud 문서: 사용자 지정 역할 만들기 및 관리"^]
@@ -234,7 +258,7 @@ https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single
 
 
 
-== 3단계: 콘솔 에이전트 작업에 대한 권한 설정
+== 3단계: 에이전트와 함께 사용할 Google Cloud 서비스 계정을 생성합니다.
 
 Google Cloud 서비스 계정은 콘솔 에이전트에 Google Cloud의 리소스를 관리하는 데 필요한 권한을 제공하는 데 필요합니다.  콘솔 에이전트를 만들 때 이 서비스 계정을 콘솔 에이전트 VM과 연결해야 합니다.
 
@@ -248,10 +272,10 @@ Google Cloud 서비스 계정은 콘솔 에이전트에 Google Cloud의 리소�
 .. 필요한 권한이 포함된 YAML 파일을 업로드합니다.
 .. 다음을 사용하여 사용자 정의 역할을 만듭니다. `gcloud iam roles create` 명령.
 +
-다음 예제에서는 프로젝트 수준에서 "connector"라는 이름의 역할을 만듭니다.
+다음 예제는 프로젝트 수준에서 "agent"라는 이름의 역할을 생성합니다.
 
 +
-`gcloud iam roles create connector --project=myproject --file=connector.yaml`
+`gcloud iam roles create connector --project=myproject --file=agent.yaml`
 
 +
 https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloud 문서: 사용자 지정 역할 만들기 및 관리"^]
@@ -350,6 +374,7 @@ link:reference-permissions-gcp.html["에이전트 서비스 계정 정책"]
 .단계
 . 프로젝트에서 다음 Google Cloud API를 활성화하세요.
 +
+** 클라우드 인프라 관리자 API
 ** 클라우드 배포 관리자 V2 API
 ** 클라우드 로깅 API
 ** 클라우드 리소스 관리자 API
@@ -371,8 +396,10 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloud �
 
 콘솔에서 직접 콘솔 에이전트를 만듭니다.
 
-.이 작업에 관하여
 콘솔 에이전트를 생성하면 기본 구성을 사용하여 Google Cloud에 가상 머신 인스턴스가 배포됩니다.  콘솔 에이전트를 만든 후에는 CPU나 RAM이 적은 더 작은 VM 인스턴스로 전환하지 마세요. link:reference-agent-default-config.html["콘솔 에이전트의 기본 구성에 대해 알아보세요"] .
+
+
+NOTE: Google Cloud에 에이전트를 배포하면 에이전트가 배포 파일을 저장할 버킷을 생성합니다.
 
 .시작하기 전에
 다음 사항이 있어야 합니다.

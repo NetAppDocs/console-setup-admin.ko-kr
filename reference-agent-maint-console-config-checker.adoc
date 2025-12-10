@@ -1,0 +1,84 @@
+---
+sidebar: sidebar 
+permalink: reference-agent-maint-console-config-checker.html 
+keywords: transparent proxy, connector certificate, agent maintenance console, proxy configuration, connector proxy. agent proxy 
+summary: 콘솔 에이전트 유지 관리 콘솔을 사용하여 콘솔 에이전트가 투명 프록시 서버를 사용하도록 구성할 수 있습니다. 
+---
+= 유지 관리 콘솔을 사용한 에이전트 유효성 검사
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+콘솔 에이전트 유지 관리 콘솔을 사용하여 콘솔 에이전트의 설치 및 구성을 검증할 수 있습니다.
+
+
+
+== 에이전트 유지 관리 콘솔에 액세스하세요
+
+콘솔 에이전트 호스트에서 유지 관리 콘솔에 액세스할 수 있습니다.  다음 디렉토리로 이동하세요:
+
+[source, cli]
+----
+/opt/application/netapp/service-manager-2/agent-maint-console
+----
+
+
+== 설정 검사기 유효성 검사
+
+그만큼 `config-checker validate` 이 명령어를 사용하면 콘솔 에이전트의 구성을 검증할 수 있습니다.
+
+
+
+=== 매개변수
+
+`--services <comma-separated list of services to validate>`--*필수의*--
+
+[role="quick-margin-para"]
+검증할 서비스를 하나 이상 선택하세요.  유효한 서비스 이름은 다음과 같습니다.*`PLATFORM` 필수 콘솔 엔드포인트에 대한 네트워크 연결 상태를 검증합니다.
+
+`--validationTypes <comma-separated list validation types to run>`--*필수*-- 실행할 유효성 검사 유형을 하나 이상 선택하세요.  유효한 유효성 검사 유형은 다음과 같습니다. * `NETWORK` 필수 콘솔 엔드포인트에 대한 네트워크 연결 상태를 검증합니다.
+
+`--proxy <url>`--*선택 과목*--
+
+[role="quick-margin-para"]
+유효성 검사에 사용할 프록시 서버 URL을 지정합니다.  에이전트가 프록시 서버를 사용하도록 구성된 경우 필수입니다.
+
+`--certs <paths>`--*선택 과목*--
+
+[role="quick-margin-para"]
+유효성 검사에 사용할 하나 이상의 인증서 파일의 경로를 지정합니다.  인증서 파일은 PEM 형식이어야 합니다.  여러 경로를 쉼표로 구분하세요.  에이전트에서 사용자 지정 인증서를 사용하는 경우 이 매개변수가 필수입니다.
+
+
+
+=== 설정 검사기 유효성 검사 예제
+
+.기본 유효성 검사:
+[source, cli]
+----
+./agent-maint-console config-checker validate --services PLATFORM --validationTypes NETWORK
+----
+.에이전트에 프록시 서버가 사용되는 경우의 유효성 검사:
+[source, cli]
+----
+./agent-maint-console config-checker validate --services PLATFORM --validationTypes NETWORK --proxy http://proxy.company.com:8080
+----
+.에이전트에 인증서가 사용되는 유효성 검사:
+[source, cli]
+----
+./agent-maint-console config-checker validate --services PLATFORM --validationTypes NETWORK --certs /path/to/cert1.pem,/path/to/cert2.pem
+----
+
+
+=== 모든 명령에 대한 도움말 보기
+
+모든 명령에 대한 도움말을 보려면 다음을 추가하세요. `--help` 명령에.  예를 들어, 도움말을 보려면 `proxy add` 명령을 사용하려면 다음 명령을 사용하세요.
+
+[source, cli]
+----
+./agent-maint-console proxy add --help
+----

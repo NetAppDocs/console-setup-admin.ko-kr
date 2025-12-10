@@ -244,8 +244,10 @@ sidebar:
     entries:
     - title: 에이전트 유지 관리 콘솔
       entries:
-      - title: 에이전트 유지 관리 콘솔
+      - title: 구성 검사
         url: "/reference-agent-maint-console.html"
+      - title: 투명 프록시
+        url: "/reference-agent-maint-console-proxy.html"
     - title: 권한
       entries:
       - title: 권한 요약

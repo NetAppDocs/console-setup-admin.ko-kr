@@ -18,6 +18,57 @@ NetApp Console 관리 기능의 새로운 기능에 대해 알아보세요: ID �
 
 
 
+== 2025년 12월 10일
+
+
+
+=== 콘솔 에이전트 4.2.0
+
+4.2.0 버전은 표준 모드와 제한 모드를 모두 지원합니다.
+
+이 콘솔 에이전트 릴리스에는 보안 개선, 버그 수정 및 다음 기능이 포함되어 있습니다.
+
+.Google Cloud Infrastructure Manager 지원
+NetApp 이제 Google Cloud Deployment Manager 대신 Google Cloud Infrastructure Manager(IM)를 사용하여 Google Cloud에 에이전트를 배포하고 관리합니다.  이러한 변경은 Google이 해당 기능을 더 이상 지원하지 않기로 했기 때문에 이루어졌습니다.link:https://docs.cloud.google.com/deployment-manager/docs/deprecations["클라우드 배포 관리자"] .
+
+* 4.2.0 이상 버전의 모든 새로운 에이전트는 인프라 관리자를 사용하므로 배포에 사용되는 사용자 계정과 서비스 계정의 권한을 모두 업데이트해야 합니다.link:https://docs.netapp.com/us-en/console-setup-admin/reference-permissions-gcp.html#gcp-permissions-change-log["권한 변경 로그를 확인하세요."^]
+* 에이전트를 배포하면 시스템에서 배포 파일을 저장할 Google Cloud 버킷도 생성합니다.
+
+
+.콘솔 에이전트에 대한 구성 검사 기능이 향상되었습니다.
+* 콘솔 에이전트는 이제 구성 검사를 수행할 때 더 이상 사용되지 않는 엔드포인트를 확인합니다.  4.0.0 이상 버전의 새로운 엔드포인트 목록으로 업데이트하지 않은 경우, 시스템이 이전 엔드포인트 목록에 연결할 수 있다면 설치가 성공적으로 완료됩니다.link:https://docs.netapp.com/us-en/console-setup-admin/reference-networking-saas-console-previous.html#update-endpoint-list["콘솔 에이전트에 필요한 엔드포인트에 대해 자세히 알아보세요."^]
+* 콘솔 또는 에이전트 유지 관리 콘솔에서 설치된 콘솔 에이전트에 대한 구성 검사를 실행하여 연결을 확인하고 문제를 해결하십시오.link:https://docs.netapp.com/us-en/console-setup-admin/task-troubleshoot-agent.html#verify-network-access["콘솔 에이전트에 대한 구성 검사를 실행하는 방법을 알아보세요."^]
+
+
+.NetApp Console 에서 에이전트 소프트웨어를 직접 다운로드하세요.
+에이전트를 수동으로 설치해야 하는 경우 NetApp 지원 사이트 외에도 NetApp Console 에서 에이전트 소프트웨어에 직접 액세스할 수 있습니다.link:https://docs.netapp.com/us-en/console-setup-admin/task-install-agent-on-prem.html#install-the-console-agent-manually["NetApp Console 에서 콘솔 에이전트 소프트웨어를 직접 다운로드하는 방법을 알아보세요."^]
+
+
+
+=== NetApp Console 관리
+
+이 릴리스에는 다음이 포함됩니다.
+
+.자격 증명 만료에 대한 알림을 설정할 수 있는 기능
+서비스 계정 및 페더레이션의 자격 증명 만료에 대한 알림을 설정하세요.  7일 또는 30일 중에서 선택하세요.  콘솔은 적절한 역할을 가진 사용자에게 알림을 표시하고 이메일을 보냅니다.  조직 관리자는 서비스 계정 알림을 받습니다.  조직 관리자, 연합 관리자 및 연합 뷰어는 연합 알림을 받습니다.
+
+.페더레이션을 활성화한 후에는 로컬 로그인을 사용할 수 없습니다.
+콘솔 조직에 대해 페더레이션을 활성화하면 사용자는 로컬 로그인을 사용할 수 없으며 페더레이션 로그인으로 전환됩니다.
+
+.저장소 관리 페이지의 사용성 개선
+이제 스토리지 관리 페이지에서 온프레미스 ONTAP 시스템(및 ONTAP 용 FSx)에 대한 자세한 정보를 더 쉽게 확인하고 관리할 수 있습니다.
+
+* * Discoverable systems* 페이지는 요약 정보와 사용 가능한 시스템의 탭 형식 표시를 분리하여 검색 가능한 시스템에 대한 포괄적인 정보를 더 쉽게 볼 수 있도록 합니다.
+
+
+
+
+== 2025년 12월 8일
+
+<stdin>에서 해결되지 않은 지시문 - include::_whatsnew/2025-12-08.adoc[]
+
+
+
 == 2025년 11월 10일
 
 
@@ -31,7 +82,7 @@ NetApp Console 관리 기능의 새로운 기능에 대해 알아보세요: ID �
 .이름이 변경된 에이전트 상태 표시기
 콘솔 에이전트의 상태 표시기 이름을 *활성* 및 *비활성*에서 *연결됨* 및 *연결 끊김*으로 변경하여 그 목적을 더 명확하게 했습니다.
 
-.Redhat Enterprise Linux(RHEL) 9.6 및 Podman 5.4.0 지원
+.Red Hat Enterprise Linux(RHEL) 9.6 및 Podman 5.4.0 지원
 콘솔 에이전트를 수동으로 설치할 때 에이전트는 이제 Podman 5.4.0이 포함된 RHEL 9.6을 지원합니다. 또한 RHEL 9 이상을 사용하는 경우 NetApp podman-compose 1.5.0을 지원합니다. link:https://docs.netapp.com/us-en/console-setup-admin/task-install-agent-on-prem.html["운영 체제 요구 사항 보기"].
 
 
@@ -41,7 +92,7 @@ NetApp Console 관리 기능의 새로운 기능에 대해 알아보세요: ID �
 이 릴리스에는 다음이 포함됩니다.
 
 .NetApp Console 알림을 위한 새 이메일 주소
-NetApp Console 알림을 보내는 이메일 주소가 *service@console.bluexp.netapp.com*에서 *service@console.netapp.com*으로 변경되었습니다. NetApp NetApp Console 이메일 알림을 계속 받으려면 모든 이메일 규칙을 *service@console.netapp.com*으로 업데이트할 것을 권장합니다.
+NetApp Console 알림을 보내는 이메일 주소가 *service@console.bluexp.netapp.com*에서 *service@console.netapp.com*으로 변경되었습니다. NetApp NetApp Console 이메일 알림을 계속 수신할 수 있도록 *service@console.netapp.com*을 허용하도록 이메일 규칙을 업데이트하는 것을 권장합니다.
 
 
 
@@ -63,7 +114,7 @@ NetApp 대부분의 메뉴 옵션을 왼쪽 탐색 창으로 옮기고 NetApp Co
 
 ==== Canvas는 시스템 페이지로 대체됩니다.
 
-NetApp Canvas의 이름을 *시스템* 페이지로 변경했습니다.  *저장소 > 관리* 메뉴에서 *시스템* 페이지로 이동합니다.
+NetApp Canvas의 이름을 *시스템* 페이지로 변경했습니다. 저장소 > 관리 메뉴에서 시스템 페이지로 이동합니다.
 
 image:https://docs.netapp.com/us-en/console-setup-admin/media/screenshot-storage-mgmt.png["시스템 페이지의 스크린샷."]
 

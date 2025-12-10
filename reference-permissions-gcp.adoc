@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-permissions-gcp.html 
-keywords: permissions, gcp, gcp permissions, bluexp 
+keywords: permissions, gcp, gcp permissions, bluexp, console agent 
 summary: 콘솔 에이전트에는 클라우드 공급자에서 작업을 수행하려면 권한이 필요합니다.  이러한 권한은 NetApp 에서 제공하는 정책에 포함되어 있습니다.  에이전트가 이러한 권한을 어떻게 사용하는지 이해해야 합니다. 
 ---
 = 콘솔 에이전트에 대한 Google Cloud 권한
@@ -18,17 +18,117 @@ summary: 콘솔 에이전트에는 클라우드 공급자에서 작업을 수행
 
 
 
+== Google Cloud 사용자 계정 권한
+
+아래의 사용자 지정 역할은 Google Cloud 사용자에게 에이전트를 배포하는 데 필요한 권한을 부여합니다.  에이전트를 배포할 사용자에게 이 사용자 지정 역할을 적용하십시오.
+
+.Google Cloud 사용자 계정 권한 보기
+[%collapsible]
+====
+[source, yaml]
+----
+title: Console agent deployment policy
+description: Permissions for the user who deploys the Console agent
+stage: GA
+includedPermissions:
+
+- cloudbuild.builds.get
+- compute.disks.create
+- compute.disks.get
+- compute.disks.list
+- compute.disks.setLabels
+- compute.disks.use
+- compute.firewalls.create
+- compute.firewalls.delete
+- compute.firewalls.get
+- compute.firewalls.list
+- compute.globalOperations.get
+- compute.images.get
+- compute.images.getFromFamily
+- compute.images.list
+- compute.images.useReadOnly
+- compute.instances.attachDisk
+- compute.instances.create
+- compute.instances.get
+- compute.instances.list
+- compute.instances.setDeletionProtection
+- compute.instances.setLabels
+- compute.instances.setMachineType
+- compute.instances.setMetadata
+- compute.instances.setTags
+- compute.instances.start
+- compute.instances.updateDisplayDevice
+- compute.machineTypes.get
+- compute.networks.get
+- compute.networks.list
+- compute.networks.updatePolicy
+- compute.projects.get
+- compute.regions.get
+- compute.regions.list
+- compute.subnetworks.get
+- compute.subnetworks.list
+- compute.zoneOperations.get
+- compute.zones.get
+- compute.zones.list
+- *config.deployments.create*
+- *config.operations.get*
+- *config.deployments.delete*
+- *config.deployments.deleteState*
+- *config.deployments.get*
+- *config.deployments.getState*
+- *config.deployments.list*
+- *config.deployments.update*
+- *config.deployments.updateState*
+- *config.previews.get*
+- *config.previews.list*
+- *config.revisions.get*
+- *config.resources.list*
+- deploymentmanager.compositeTypes.get
+- deploymentmanager.compositeTypes.list
+- deploymentmanager.deployments.create
+- deploymentmanager.deployments.delete
+- deploymentmanager.deployments.get
+- deploymentmanager.deployments.list
+- deploymentmanager.manifests.get
+- deploymentmanager.manifests.list
+- deploymentmanager.operations.get
+- deploymentmanager.operations.list
+- deploymentmanager.resources.get
+- deploymentmanager.resources.list
+- deploymentmanager.typeProviders.get
+- deploymentmanager.typeProviders.list
+- deploymentmanager.types.get
+- deploymentmanager.types.list
+- resourcemanager.projects.get
+- compute.instances.setServiceAccount
+- *iam.serviceAccounts.actAs*
+- *iam.serviceAccounts.create*
+- iam.serviceAccounts.list
+- *iam.serviceAccountKeys.create*
+- *storage.buckets.create*
+- *storage.buckets.get*
+- *storage.objects.create*
+- *storage.folders.create*
+- *storage.objects.list*
+
+----
+====
+
+
 == 서비스 계정 권한
 
-아래에 표시된 사용자 지정 역할은 콘솔 에이전트가 Google Cloud 네트워크 내의 리소스와 프로세스를 관리하는 데 필요한 권한을 제공합니다.
+아래의 사용자 지정 역할은 콘솔 에이전트에 연결된 Google Cloud 서비스 계정에 Google Cloud 네트워크의 리소스 및 프로세스를 관리하는 데 필요한 권한을 부여합니다.
 
-콘솔 에이전트 VM에 연결된 서비스 계정에 이 사용자 지정 역할을 적용해야 합니다.
+콘솔 에이전트 VM에 연결된 서비스 계정에 이 사용자 지정 역할을 적용합니다.
 
 * link:task-install-agent-google-console-gcloud.html#agent-permissions-google["표준 모드에 대한 Google Cloud 권한 설정"]
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["제한 모드에 대한 권한 설정"]
 
 
-이후 릴리스에서 새로운 권한이 추가되므로 역할이 최신 상태인지도 확인해야 합니다.  새로운 권한이 필요한 경우 릴리스 노트에 나열됩니다.
+.Google 서비스 계정 권한 보기
+[%collapsible]
+====
+향후 릴리스에서 새로운 권한이 추가되거나 제거될 경우 역할이 최신 상태인지 확인하십시오.  변경 로그에는 필요한 새 권한이 나열되어 있습니다.link:reference-permissions-gcp.html#gcp-permissions-change-log["Google 권한 변경 로그를 검토하세요."] link:task-adding-gcp-accounts.html["Google 클라우드 서비스 계정을 추가하는 방법을 살펴보세요."]
 
 [source, yaml]
 ----
@@ -36,13 +136,46 @@ title: NetApp Console agent
 description: Permissions for the service account associated with the Console agent.
 stage: GA
 includedPermissions:
-- iam.serviceAccounts.actAs
+- *cloudbuild.builds.get*
+- *cloudbuild.connections.list*
+- *cloudbuild.repositories.accessReadToken*
+- *cloudbuild.repositories.list*
+- *cloudquotas.quotas.get*
+- cloudkms.cryptoKeys.getIamPolicy
+- cloudkms.cryptoKeys.setIamPolicy
+- cloudkms.keyRings.get
+- cloudkms.keyRings.getIamPolicy
+- cloudkms.keyRings.setIamPolicy
+- *config.artifacts.import*
+- *config.deployments.create*
+- *config.deployments.delete*
+- *config.deployments.deleteState*
+- *config.deployments.get*
+- *config.deployments.getLock*
+- *config.deployments.getState*
+- *config.deployments.update*
+- *config.deployments.updateState*
+- *config.previews.upload*
+- *config.revisions.get*
+- *config.revisions.getState*
+- *config.deployments.getLock*
+- *config.deployments.list*
+- *config.deployments.lock*
+- *config.operations.get*
+- *config.previews.get*
+- *config.previews.list*
+- *config.resources.list*
 - compute.regionBackendServices.create
 - compute.regionBackendServices.get
 - compute.regionBackendServices.list
+- *compute.regionBackendServices.update*
 - compute.networks.updatePolicy
+- *compute.addresses.createInternal*
+- *compute.addresses.deleteInternal*
+- *compute.addresses.list*
+- *compute.addresses.setLabels*
+- *compute.addresses.useInternal*
 - compute.backendServices.create
-- compute.addresses.list
 - compute.disks.create
 - compute.disks.createSnapshot
 - compute.disks.delete
@@ -54,7 +187,15 @@ includedPermissions:
 - compute.firewalls.delete
 - compute.firewalls.get
 - compute.firewalls.list
+- *compute.forwardingRules.create*
+- *compute.forwardingRules.delete*
+- *compute.forwardingRules.get*
+- *compute.forwardingRules.setLabels*
 - compute.globalOperations.get
+- *compute.healthChecks.create*
+- *compute.healthChecks.delete*
+- *compute.healthChecks.get*
+- *compute.healthChecks.useReadOnly*
 - compute.images.get
 - compute.images.getFromFamily
 - compute.images.list
@@ -75,15 +216,26 @@ includedPermissions:
 - compute.instances.start
 - compute.instances.stop
 - compute.instances.updateDisplayDevice
+- *compute.instances.use*
+- *compute.instanceGroups.create*
+- *compute.instanceGroups.delete*
 - compute.instanceGroups.get
+- *compute.instanceGroups.update*
+- *compute.instanceGroups.use*
 - compute.addresses.get
 - compute.instances.updateNetworkInterface
+- compute.instances.setMinCpuPlatform
 - compute.machineTypes.get
 - compute.networks.get
 - compute.networks.list
 - compute.projects.get
 - compute.regions.get
 - compute.regions.list
+- *compute.regionBackendServices.delete*
+- *compute.regionBackendServices.use*
+- *compute.resourcePolicies.create*
+- *compute.resourcePolicies.delete*
+- *compute.resourcePolicies.get*
 - compute.snapshots.create
 - compute.snapshots.delete
 - compute.snapshots.get
@@ -115,35 +267,98 @@ includedPermissions:
 - deploymentmanager.types.list
 - logging.logEntries.list
 - logging.privateLogEntries.list
+- *logging.logEntries.create*
+- *logging.logEntries.route*
+- monitoring.timeSeries.list
 - resourcemanager.projects.get
 - storage.buckets.create
 - storage.buckets.delete
 - storage.buckets.get
 - storage.buckets.list
+- *storage.objects.create*
+- *storage.objects.delete*
+- *storage.objects.update*
 - cloudkms.cryptoKeyVersions.useToEncrypt
 - cloudkms.cryptoKeys.get
 - cloudkms.cryptoKeys.list
 - cloudkms.keyRings.list
 - storage.buckets.update
+- iam.serviceAccounts.actAs
+- *iam.serviceAccounts.create*
+- *iam.serviceAccounts.get*
 - iam.serviceAccounts.getIamPolicy
 - iam.serviceAccounts.list
+- *iam.serviceAccountKeys.create*
 - storage.objects.get
-- storage.objects.list
-- monitoring.timeSeries.list
 - storage.buckets.getIamPolicy
-- cloudkms.cryptoKeys.getIamPolicy
-- cloudkms.cryptoKeys.setIamPolicy
-- cloudkms.keyRings.get
-- cloudkms.keyRings.getIamPolicy
-- cloudkms.keyRings.setIamPolicy
+
+
+
 ----
+====
 
 
 == Google Cloud 권한 사용 방법
 
+콘솔 에이전트는 사용자 지정 역할의 권한을 사용하여 Google Cloud 네트워크에서 Cloud Volumes ONTAP 리소스와 NetApp 데이터 서비스 프로세스를 관리합니다.  다음 섹션에서는 에이전트가 이러한 권한을 사용하는 방법을 설명합니다.
+
+
+
+=== Cloud Volumes ONTAP 에 사용되는 권한
+
+콘솔 에이전트는 사용자 지정 역할의 권한을 사용하여 Google Cloud 네트워크에서 Cloud Volumes ONTAP 리소스 및 프로세스를 관리합니다.  다음 섹션에서는 에이전트가 이러한 권한을 사용하는 방법을 설명합니다.
+
+.Cloud Volumes ONTAP 에 대한 권한
+[%collapsible]
+====
 [cols="5*"]
 |===
 | 행위 | 목적 | 배포에 사용되나요? | 일상 업무에 사용되나요? | 삭제에 사용되나요? 
+
+
+| *config.deployments.create* .15+| Google Cloud Infrastructure Manager를 사용하여 Cloud Volumes ONTAP 가상 머신 인스턴스를 배포하는 방법입니다. | 예 | 아니요 | 아니요 
+
+
+| *config.deployments.delete* | 아니요 | 아니요 | 예 
+
+
+| *config.deployments.deleteState* | 아니요 | 아니요 | 예 
+
+
+| *config.deployments.get* | 아니요 | 예 | 아니요 
+
+
+| *config.deployments.getLock* | 아니요 | 예 | 아니요 
+
+
+| *config.deployments.getState* | 아니요 | 예 | 아니요 
+
+
+| *config.deployments.list* | 아니요 | 예 | 아니요 
+
+
+| *config.deployments.lock* | 아니요 | 예 | 아니요 
+
+
+| *config.deployments.update* | 아니요 | 예 | 아니요 
+
+
+| *config.deployments.updateState* | 아니요 | 예 | 아니요 
+
+
+| *config.operations.get* | 아니요 | 예 | 아니요 
+
+
+| *config.previews.get* | 아니요 | 예 | 아니요 
+
+
+| *config.previews.list* | 아니요 | 예 | 아니요 
+
+
+| *config.resources.list* | 아니요 | 예 | 아니요 
+
+
+| *config.revisions.get* | 아니요 | 예 | 아니요 
 
 
 | 계산.디스크.생성 .7+| Cloud Volumes ONTAP 에 대한 디스크를 생성하고 관리합니다. | 예 | 예 | 아니요 
@@ -179,7 +394,31 @@ includedPermissions:
 | 컴퓨팅.방화벽.목록 | 예 | 예 | 아니요 
 
 
-| 컴퓨트.글로벌운영.get. | 작업 상태를 파악하려면 | 예 | 예 | 아니요 
+| *compute.forwardingRules.create* | 백엔드 서비스로의 트래픽 라우팅을 위한 포워딩 규칙을 생성합니다. | 아니요 | 예 | 아니요 
+
+
+| *compute.forwardingRules.delete* | 기존 전달 규칙을 삭제합니다. | 아니요 | 예 | 아니요 
+
+
+| *compute.forwardingRules.get* | 기존 전달 규칙에 대한 세부 정보를 검색합니다. | 아니요 | 예 | 아니요 
+
+
+| *compute.forwardingRules.setLabels* | 조직에 대한 전달 규칙의 레이블을 설정하거나 업데이트합니다. | 아니요 | 예 | 아니요 
+
+
+| compute.globalOperations.get | 작업 상태를 파악하려면 | 예 | 예 | 아니요 
+
+
+| *compute.healthChecks.create* .4+| 백엔드 서비스 상태를 모니터링하기 위한 상태 점검을 생성하고 관리합니다. | 아니요 | 예 | 아니요 
+
+
+| *compute.healthChecks.delete* | 아니요 | 예 | 아니요 
+
+
+| *compute.healthChecks.get* | 아니요 | 예 | 아니요 
+
+
+| *compute.healthChecks.useReadOnly* | 아니요 | 예 | 아니요 
 
 
 | 계산.이미지.get .4+| VM 인스턴스에 대한 이미지를 가져옵니다. | 예 | 아니요 | 아니요 
@@ -242,10 +481,22 @@ includedPermissions:
 | 컴퓨팅.인스턴스.업데이트디스플레이장치 | 예 | 예 | 아니요 
 
 
+| *compute.instances.use* | 가상 머신 인스턴스를 사용합니다(시작, 중지, 연결 작업). | 아니요 | 예 | 아니요 
+
+
 | 계산.머신타입.get | 할당량을 확인하기 위해 코어 수를 얻습니다. | 예 | 아니요 | 아니요 
 
 
 | 계산.프로젝트.get | 다양한 프로젝트를 지원합니다. | 예 | 아니요 | 아니요 
+
+
+| *compute.resourcePolicies.create* .3+| 자동화된 리소스 관리를 위한 리소스 정책을 생성하고 관리합니다. | 아니요 | 예 | 아니요 
+
+
+| *compute.resourcePolicies.delete* | 아니요 | 예 | 아니요 
+
+
+| *compute.resourcePolicies.get* | 아니요 | 예 | 아니요 
 
 
 | 계산.스냅샷.생성 .5+| 영구 디스크 스냅샷을 만들고 관리합니다. | 예 | 예 | 아니요 
@@ -344,6 +595,12 @@ includedPermissions:
 | 로깅.privateLogEntries.list | 예 | 예 | 아니요 
 
 
+| *logging.logEntries.create* .2+| 모니터링, 디버깅 및 감사를 위한 로그 항목을 생성하고 라우팅합니다. | 예 | 예 | 아니요 
+
+
+| *logging.logEntries.route* | 예 | 예 | 아니요 
+
+
 | 리소스 관리자.프로젝트.get | 다양한 프로젝트를 지원합니다. | 예 | 예 | 아니요 
 
 
@@ -362,7 +619,7 @@ includedPermissions:
 | 저장소.버킷.업데이트 | 아니요 | 예 | 아니요 
 
 
-| cloudkms.cryptoKeyVersions.useToEncrypt .4+| Cloud Volumes ONTAP 과 함께 Cloud Key Management Service의 고객 관리 암호화 키를 사용합니다. | 예 | 예 | 아니요 
+| cloudkms.cryptoKeyVersions.useToEncrypt .5+| Cloud Volumes ONTAP 과 함께 Cloud Key Management Service의 고객 관리 암호화 키를 사용합니다. | 예 | 예 | 아니요 
 
 
 | cloudkms.cryptoKeys.get | 예 | 예 | 아니요 
@@ -374,16 +631,31 @@ includedPermissions:
 | cloudkms.keyRings.list | 예 | 예 | 아니요 
 
 
+| *cloudbuild.builds.get* | 예 | 아니요 | 아니요 
+
+
 | 컴퓨팅.인스턴스.서비스 계정 설정 .6+| Cloud Volumes ONTAP 인스턴스에 서비스 계정을 설정하려면  이 서비스 계정은 Google Cloud Storage 버킷에 대한 데이터 계층화 권한을 제공합니다. | 예 | 예 | 아니요 
 
 
 | iam.serviceAccounts.actAs | 예 | 아니요 | 아니요 
 
 
+| *iam.serviceAccounts.create* | 예 | 아니요 | 아니요 
+
+
 | iam.serviceAccounts.getIamPolicy | 예 | 예 | 아니요 
 
 
 | iam.serviceAccounts.list | 예 | 예 | 아니요 
+
+
+| *iam.serviceAccountKeys.create* | 예 | 아니요 | 아니요 
+
+
+| 스토리지.객체.생성 .4+| Google Cloud Storage 버킷에 객체(파일)를 생성하고 관리합니다. | 예 | 예 | 아니요 
+
+
+| 저장소.객체.삭제 | 아니요 | 아니요 | 예 
 
 
 | 저장소.객체.get | 예 | 예 | 아니요 
@@ -395,22 +667,43 @@ includedPermissions:
 | 계산.주소.목록 | HA 쌍을 배포할 때 지역의 주소를 검색합니다. | 예 | 아니요 | 아니요 
 
 
-| 컴퓨팅.백엔드서비스.생성 .4+| HA 쌍에서 트래픽을 분산하기 위한 백엔드 서비스를 구성합니다. | 예 | 아니요 | 아니요 
+| *compute.addresses.createInternal* | 리소스 할당을 위해 VPC 네트워크 내에 내부 IP 주소를 생성합니다. | 아니요 | 예 | 아니요 
 
 
-| 컴퓨팅.regionBackendServices.생성 | 예 | 아니요 | 아니요 
+| *compute.addresses.deleteInternal* | 리소스 정리를 위해 내부 IP 주소를 삭제합니다. | 아니요 | 예 | 아니요 
+
+
+| *주소를 계산하고 레이블을 설정합니다* | Address 리소스의 레이블을 업데이트합니다. | 아니요 | 예 | 아니요 
+
+
+| *compute.addresses.useInternal* | 네트워크 통신에는 내부 IP 주소를 사용하십시오. | 아니요 | 예 | 아니요 
+
+
+| 컴퓨팅.백엔드서비스.생성 | HA 쌍에서 트래픽을 분산하기 위한 백엔드 서비스를 구성합니다. | 예 | 아니요 | 아니요 
+
+
+| 컴퓨팅.regionBackendServices.생성 .6+| 트래픽 라우팅을 위한 백엔드 서비스를 생성하고 관리합니다. | 예 | 아니요 | 아니요 
+
+
+| *compute.regionBackendServices.delete* | 아니요 | 예 | 아니요 
 
 
 | 컴퓨팅.regionBackendServices.get | 예 | 아니요 | 아니요 
 
 
+| *compute.regionBackendServices.update* | 예 | 예 | 아니요 
+
+
 | 컴퓨팅.regionBackendServices.list | 예 | 아니요 | 아니요 
+
+
+| *compute.regionBackendServices.use* | 아니요 | 예 | 아니요 
 
 
 | 컴퓨팅.네트워크.업데이트 정책 | HA 쌍의 VPC와 서브넷에 방화벽 규칙을 적용합니다. | 예 | 아니요 | 아니요 
 
 
-| 컴퓨팅.인스턴스그룹.get .3+| Cloud Volumes ONTAP HA 쌍에서 스토리지 VM을 생성하고 관리합니다. | 예 | 예 | 아니요 
+| 컴퓨팅.인스턴스그룹.get .7+| Cloud Volumes ONTAP HA 쌍에서 스토리지 VM을 생성하고 관리합니다. | 예 | 예 | 아니요 
 
 
 | 계산.주소.가져오기 | 예 | 예 | 아니요 
@@ -419,15 +712,33 @@ includedPermissions:
 | 컴퓨팅.인스턴스.네트워크인터페이스 업데이트 | 예 | 예 | 아니요 
 
 
+| *compute.instanceGroups.create* | 아니요 | 예 | 아니요 
+
+
+| *compute.instanceGroups.delete* | 아니요 | 예 | 아니요 
+
+
+| *compute.instanceGroups.update* | 아니요 | 예 | 아니요 
+
+
+| *compute.instanceGroups.use* | 아니요 | 예 | 아니요 
+
+
 | 모니터링.timeSeries.list .2+| Google Cloud Storage 버킷에 대한 정보를 알아보세요. | 예 | 예 | 아니요 
 
 
 | 저장소.버킷.getIamPolicy | 예 | 예 | 아니요 
 |===
+====
 
 
 === NetApp Backup and Recovery 에 사용되는 권한
 
+콘솔 에이전트는 사용자 지정 역할의 권한을 사용하여 Google Cloud 네트워크에서 NetApp Backup and Recovery 리소스와 프로세스를 관리합니다.  다음 섹션에서는 에이전트가 이러한 권한을 사용하는 방법을 설명합니다.
+
+.NetApp Backup and Recovery 에 대한 보기 권한을 확인하세요.
+[%collapsible]
+====
 [cols="5*"]
 |===
 
@@ -447,10 +758,16 @@ includedPermissions:
 
 | 기본 Google 관리 암호화 키를 사용하는 대신 NetApp Backup and Recovery 활성화 마법사에서 고객이 관리하는 키를 직접 선택합니다. | 예 | 예 | 아니요 
 |===
+====
 
 
 === NetApp Data Classification 에 사용되는 권한
 
+콘솔 에이전트는 사용자 지정 역할의 권한을 사용하여 Google Cloud 네트워크에서 NetApp Data Classification 리소스 및 프로세스를 관리합니다.  다음 섹션에서는 에이전트가 이러한 권한을 사용하는 방법을 설명합니다.
+
+.NetApp Data Classification 에 대한 보기 권한
+[%collapsible]
+====
 [cols="5*"]
 |===
 
@@ -465,11 +782,103 @@ includedPermissions:
 
 | NetApp Data Classification 활성화하려면. | 예 | 아니요 | 아니요 
 |===
+====
 
 
 == 변경 로그
 
-권한이 추가되거나 제거되면 아래 섹션에 기록됩니다.
+추가되거나 삭제된 권한은 아래에 명시되어 있습니다.
+
+
+
+=== 2025년 12월 8일
+
+NetApp Google Cloud에서 콘솔 에이전트를 배포하고 실행하기 위해 Google Cloud Deployment Manager에서 Google Cloud Infrastructure Manager(IM)로 전환하고 있습니다.  이러한 변경 사항을 지원하기 위해 다음과 같은 권한이 추가되었습니다.
+
+에이전트를 배포하는 Google Cloud 사용자에게는 다음과 같은 추가 권한이 필요합니다.
+
+* 저장소.버킷.생성
+* 스토리지.버킷.get
+* 스토리지.객체.생성
+* 저장 폴더 생성
+* 저장소.객체.목록
+* iam.serviceAccount.actAs
+* config.deployments.create
+* 구성.작업.get
+
+
+일상적인 운영에 사용되는 Google Cloud 서비스 계정에 다음과 같은 추가 권한이 필요합니다.
+
+* 클라우드빌드.연결.목록
+* 클라우드빌드.리포지토리.액세스리드토큰
+* 클라우드빌드.리포지토리.리스트
+* 클라우드 할당량.할당량.받기
+* config.artifacts.import
+* config.deployments.deleteState
+* config.deployments.getLock
+* config.deployments.getState
+* config.deployments.updateState
+* 설정 미리보기 업로드
+* config.revisions.getState
+* logging.logEntries.create
+* 스토리지.객체.생성
+* 저장소.객체.삭제
+* 저장소 객체 업데이트
+* iam.serviceAccounts.get
+
+
+Cloud Volumes ONTAP 배포하려면 다음과 같은 추가 권한이 필요합니다.
+
+* 클라우드빌드.빌드.겟
+* config.deployments.delete
+* config.deployments.deleteState
+* config.deployments.get
+* config.deployments.getState
+* config.deployments.list
+* config.deployments.update
+* config.deployments.updateState
+* config.previews.get
+* 설정 미리보기 목록
+* config.revisions.get
+* 구성 리소스 목록
+* iam.serviceAccountKeys.create
+* iam.serviceAccounts.create
+
+
+Cloud Volumes ONTAP 의 일상적인 운영에 사용되는 서비스 계정에 다음과 같은 추가 권한이 필요합니다.
+
+* compute.addresses.createInternal
+* compute.addresses.deleteInternal
+* compute.addresses.setLabels
+* compute.addresses.useInternal
+* 계산.전달규칙.생성
+* compute.forwardingRules.delete
+* compute.forwardingRules.get
+* compute.forwardingRules.setLabels
+* compute.healthChecks.create
+* compute.healthChecks.delete
+* compute.healthChecks.get
+* compute.healthChecks.useReadOnly
+* compute.instanceGroups.create
+* compute.instanceGroups.delete
+* compute.instanceGroups.update
+* compute.instanceGroups.use
+* compute.instances.use
+* compute.regionBackendServices.delete
+* compute.regionBackendServices.업데이트
+* compute.regionBackendServices.use
+* compute.resourcePolicies.create
+* compute.resourcePolicies.delete
+* compute.resourcePolicies.get
+* logging.logEntries.route
+* config.deployments.create
+* config.deployments.delete
+* config.deployments.get
+* config.deployments.update
+* config.revisions.get
+* config.deployments.lock
+* 구성.작업.get
+
 
 
 
@@ -479,7 +888,7 @@ includedPermissions:
 
 
 
-=== 2023년 2월 06일
+=== 2023년 2월 6일
 
 이 정책에 다음 권한이 추가되었습니다.
 
@@ -492,7 +901,7 @@ includedPermissions:
 
 === 2023년 1월 27일
 
-정책에 다음 권한이 추가되었습니다.
+다음 권한이 이 정책에 추가되었습니다.
 
 * cloudkms.cryptoKeys.getIamPolicy
 * cloudkms.cryptoKeys.setIamPolicy

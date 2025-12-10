@@ -25,12 +25,12 @@ AWS에서 실행되는 Linux 호스트에 콘솔 에이전트를 수동으로 �
 
 == 1단계: 호스트 요구 사항 검토
 
-콘솔 에이전트 소프트웨어는 특정 운영 체제 요구 사항, RAM 요구 사항, 포트 요구 사항 등을 충족하는 호스트에서 실행되어야 합니다.
+콘솔 에이전트 소프트웨어가 실행되는 호스트가 운영 체제, RAM 및 포트 요구 사항을 충족하는지 확인하십시오.
 
 
 NOTE: 콘솔 에이전트는 UID와 GID 범위를 19000~19200으로 예약합니다.  이 범위는 고정되어 있으며 수정할 수 없습니다.  호스트의 타사 소프트웨어가 이 범위 내의 UID나 GID를 사용하는 경우 에이전트 설치가 실패합니다.  NetApp 충돌을 피하기 위해 타사 소프트웨어가 없는 호스트를 사용할 것을 권장합니다.
 
-전담 호스트:: 콘솔 에이전트는 다른 애플리케이션과 공유되는 호스트에서는 지원되지 않습니다. 호스트는 전담 호스트여야 합니다.  호스트는 다음 크기 요구 사항을 충족하는 모든 아키텍처일 수 있습니다.
+전담 호스트:: 콘솔 에이전트를 실행하려면 전용 호스트가 필요합니다.  다음의 크기 요건을 충족하는 모든 아키텍처가 지원됩니다.
 +
 --
 * CPU: 8개 코어 또는 8개 vCPU
@@ -43,7 +43,7 @@ NOTE: 콘솔 에이전트는 UID와 GID 범위를 19000~19200으로 예약합니
 
 ** `/var`: 40GiB의 공간이 사용 가능해야 합니다.
 +
-콘솔 에이전트에는 이 공간이 필요합니다. `/var` Docker나 Podman은 이 디렉토리 내에서 컨테이너를 생성하도록 설계되었기 때문입니다.  특히, 그들은 컨테이너를 생성할 것입니다. `/var/lib/containers/storage` 예배 규칙서.  이 공간에서는 외부 마운트나 심볼릭 링크가 작동하지 않습니다.
+콘솔 에이전트는 다음 공간이 필요합니다. `/var` Podman이나 Docker는 컨테이너를 이 디렉터리 내에 생성하도록 설계되었기 때문입니다.  구체적으로, 그들은 컨테이너를 생성할 것입니다. `/var/lib/containers/storage` 디렉토리 및 `/var/lib/docker` Docker용입니다. 이 공간에서는 외부 마운트나 심볼릭 링크가 작동하지 않습니다.
 
 
 
@@ -157,7 +157,7 @@ Docker 엔진 23.0.6~28.0.0.
 
 |===
 키 쌍:: 콘솔 에이전트를 생성할 때 인스턴스와 함께 사용할 EC2 키 쌍을 선택해야 합니다.
-IMDSv2를 사용할 때 PUT 응답 홉 제한:: EC2 인스턴스에서 IMDSv2가 활성화된 경우(새로운 EC2 인스턴스의 기본 설정) 인스턴스의 PUT 응답 홉 제한을 3으로 변경해야 합니다.  EC2 인스턴스의 제한을 변경하지 않으면 에이전트를 설정하려고 할 때 UI 초기화 오류가 발생합니다.
+IMDSv2를 사용할 때 PUT 응답 홉 제한:: IMDSv2가 활성화된 경우(새 EC2 인스턴스의 기본값) PUT 응답 홉 제한을 3으로 설정하십시오.  그렇게 하지 않으면 에이전트 설정 중에 시스템에 UI 초기화 오류가 표시됩니다.
 +
 --
 * link:task-require-imdsv2.html["Amazon EC2 인스턴스에서 IMDSv2 사용 요구"]
@@ -188,13 +188,13 @@ IMDSv2를 사용할 때 PUT 응답 홉 제한:: EC2 인스턴스에서 IMDSv2가
 ====
 .포드만
 --
-Podman 설치 및 구성:
+Podman을 설치하고 구성하려면 다음 단계를 따르세요.
 
 * podman.socket 서비스를 활성화하고 시작합니다.
 * python3 설치
-* 해당 podman-compose 패키지를 설치하세요
+* podman-compose 패키지 버전 1.0.6을 설치하세요
 * PATH 환경 변수에 podman-compose를 추가합니다.
-* Podman 버전이 CNI 대신 Netavark Aardvark DNS를 사용하고 있는지 확인하세요.
+* Red Hat Enterprise Linux를 사용하는 경우 Podman 버전이 CNI 대신 Netavark Aardvark DNS를 사용하는지 확인하십시오.
 
 
 
@@ -210,7 +210,7 @@ rm /var/run/docker.sock
 ----
 . Podman을 설치하세요.
 +
-Red Hat Enterprise Linux 저장소에서 Podman을 가져옵니다.
+공식 Red Hat Enterprise Linux 저장소에서 Podman을 다운로드할 수 있습니다.
 
 +
 Red Hat Enterprise Linux 9의 경우:
@@ -246,32 +246,34 @@ sudo systemctl enable --now podman.socket
 ----
 sudo dnf install python3
 ----
-. podman-compose를 얻으려면 EPEL을 설치하세요.
-+
-.. Red Hat Enterprise 9.1~9.6을 사용하는 경우:
+. 시스템에 EPEL 저장소 패키지가 아직 없으면 설치하세요.
+
+
+이 단계는 podman-compose가 EPEL(Enterprise Linux용 추가 패키지) 저장소에서 사용 가능하기 때문에 필요합니다.
+
+. Red Hat Enterprise 9.1~9.6을 사용하는 경우:
 +
 [source, cli]
 ----
 sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 ----
-
-
-. podman-compose 패키지 1.5.0을 설치합니다.
++
+.. podman-compose 패키지 1.5.0을 설치합니다.
 +
 [source, cli]
 ----
 sudo dnf install podman-compose-1.5.0
 ----
-+
-.. Red Hat Enterprise Linux 8을 사용하는 경우:
+
+
+. Red Hat Enterprise Linux 8을 사용하는 경우:
 +
 [source, cli]
 ----
 sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 ----
-
-
-. podman-compose 패키지 1.0.6을 설치합니다.
++
+.. podman-compose 패키지 1.0.6을 설치합니다.
 +
 [source, cli]
 ----
@@ -281,11 +283,10 @@ sudo dnf install podman-compose-1.0.6
 
 NOTE: 를 사용하여 `dnf install` 명령은 PATH 환경 변수에 podman-compose를 추가하는 요구 사항을 충족합니다.  설치 명령은 이미 포함되어 있는 /usr/bin에 podman-compose를 추가합니다. `secure_path` 호스트의 옵션.
 
-. Red Hat Enterprise Linux 8을 사용하는 경우 Podman 버전이 CNI 대신 Aardvark DNS와 함께 NetAvark를 사용하는지 확인하세요.
-+
-.. 다음 명령을 실행하여 networkBackend가 CNI로 설정되어 있는지 확인하세요.
+.. Red Hat Enterprise Linux 8을 사용하는 경우 Podman 버전이 CNI 대신 Aardvark DNS와 함께 NetAvark를 사용하는지 확인하세요.
 
 
+. 다음 명령을 실행하여 networkBackend가 CNI로 설정되어 있는지 확인하세요.
 
 
 [listing]
@@ -329,7 +330,7 @@ Docker Engine을 설치하려면 Docker 설명서를 따르세요.
 .단계
 . https://docs.docker.com/engine/install/["Docker에서 설치 지침 보기"^]
 +
-다음 단계에 따라 지원되는 Docker Engine 버전을 설치하세요. 콘솔에서 최신 버전을 지원하지 않으므로 최신 버전을 설치하지 마세요.
+지원되는 Docker Engine 버전을 설치하려면 다음 단계를 따르세요. 콘솔에서 지원되지 않으므로 최신 버전을 설치하지 마세요.
 
 . Docker가 활성화되어 실행 중인지 확인하세요.
 +
@@ -345,7 +346,7 @@ sudo systemctl enable docker && sudo systemctl start docker
 
 == 3단계: 네트워킹 설정
 
-콘솔 에이전트를 설치하려는 네트워크 위치가 다음 요구 사항을 지원하는지 확인하세요.  이러한 요구 사항을 충족하면 콘솔 에이전트가 하이브리드 클라우드 환경 내의 리소스와 프로세스를 관리할 수 있습니다.
+콘솔 에이전트가 하이브리드 클라우드의 리소스를 관리할 수 있도록 네트워크 위치가 다음 요구 사항을 충족하는지 확인하십시오.
 
 대상 네트워크에 대한 연결:: 콘솔 에이전트를 사용하려면 시스템을 만들고 관리하려는 위치에 대한 네트워크 연결이 필요합니다.  예를 들어, Cloud Volumes ONTAP 시스템이나 온프레미스 환경의 스토리지 시스템을 만들 계획인 네트워크입니다.
 
@@ -385,6 +386,16 @@ AWS 서비스(amazonaws.com):
 
  a| 
 AWS 리소스를 관리합니다.  엔드포인트는 AWS 지역에 따라 달라집니다. https://docs.aws.amazon.com/general/latest/gr/rande.html["자세한 내용은 AWS 설명서를 참조하세요."^]
+
+
+
+ a| 
+Amazon FsX for NetApp ONTAP:
+
+* api.workloads.netapp.com
+
+ a| 
+웹 기반 콘솔은 이 엔드포인트에 연결하여 Workload Factory API와 상호 작용함으로써 ONTAP 기반 워크로드용 FSx를 관리하고 운영합니다.
 
 
 
@@ -464,7 +475,7 @@ NTP 활성화:: NetApp Data Classification 사용하여 회사 데이터 소스�
 
 == 4단계: 콘솔에 대한 AWS 권한 설정
 
-다음 옵션 중 하나를 사용하여 NetApp Console 에 AWS 권한을 제공해야 합니다.
+다음 옵션 중 하나를 사용하여 NetApp Console 에 AWS 권한을 부여하십시오.
 
 * 옵션 1: IAM 정책을 만들고 EC2 인스턴스와 연결할 수 있는 IAM 역할에 정책을 연결합니다.
 * 옵션 2: 필요한 권한이 있는 IAM 사용자의 AWS 액세스 키를 콘솔에 제공합니다.
@@ -537,7 +548,7 @@ NTP 활성화:: NetApp Data Classification 사용하여 회사 데이터 소스�
 
 == 5단계: 콘솔 에이전트 설치
 
-필수 구성 요소를 모두 완료한 후에는 Linux 호스트에 소프트웨어를 수동으로 설치할 수 있습니다.
+필수 조건을 모두 충족한 후에는 Linux 호스트에 소프트웨어를 수동으로 설치하십시오.
 
 .시작하기 전에
 다음 사항이 있어야 합니다.
@@ -551,10 +562,10 @@ NTP 활성화:: NetApp Data Classification 사용하여 회사 데이터 소스�
 
 
 
-NOTE: 콘솔 에이전트를 수동으로 설치하는 경우 투명 프록시 서버에 대한 인증서를 설정할 수 없습니다.  투명 프록시 서버에 대한 인증서를 설정해야 하는 경우 설치 후 유지 관리 콘솔을 사용해야 합니다. 자세히 알아보세요link:reference-agent-maint-console.html["에이전트 유지 관리 콘솔"] .
+NOTE: 콘솔 에이전트를 수동으로 설치하는 경우 투명 프록시 서버에 대한 인증서를 설정할 수 없습니다. 투명 프록시 서버에 대한 인증서를 설정해야 하는 경우 설치 후 유지 관리 콘솔을 사용해야 합니다. 자세히 알아보세요link:reference-agent-maint-console-proxy.html["에이전트 유지 관리 콘솔"] .
 
 .이 작업에 관하여
-NetApp 지원 사이트에서 제공되는 설치 프로그램은 이전 버전일 수 있습니다.  설치 후, 새로운 버전이 나오면 콘솔 에이전트가 자동으로 업데이트됩니다.
+설치 후, 새로운 버전이 나오면 콘솔 에이전트가 자동으로 업데이트됩니다.
 
 .단계
 . 호스트에 _http_proxy_ 또는 _https_proxy_ 시스템 변수가 설정되어 있으면 제거합니다.
@@ -567,9 +578,14 @@ unset https_proxy
 +
 이러한 시스템 변수를 제거하지 않으면 설치가 실패합니다.
 
-. 콘솔 에이전트 소프트웨어를 다운로드하세요. https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 지원 사이트"^] 그런 다음 Linux 호스트에 복사합니다.
+. 콘솔 에이전트 소프트웨어를 다운로드한 다음 Linux 호스트에 복사하십시오.  NetApp Console 또는 NetApp 지원 사이트에서 다운로드할 수 있습니다.
 +
-네트워크나 클라우드에서 사용할 수 있는 "온라인" 에이전트 설치 프로그램을 다운로드해야 합니다.
+** NetApp Console: *에이전트 > 관리 > 에이전트 배포 > 온프레미스 > 수동 설치*로 이동합니다.
++
+에이전트 설치 파일 다운로드 또는 파일 URL 다운로드를 선택하십시오.
+
+** NetApp 지원 사이트 (콘솔에 대한 액세스 권한이 없는 경우 필요) https://mysupport.netapp.com/site/products/all/details/netapp-console/downloads-tab["NetApp 지원 사이트"^] ,
+
 
 . 스크립트를 실행할 수 있는 권한을 할당합니다.
 +
@@ -629,7 +645,7 @@ chmod +x NetApp_Console_Agent_Cloud_<version>
 
 
 
-NOTE: 투명 프록시를 구성하려면 설치 후에 구성하면 됩니다. link:reference-agent-maint-console.html["에이전트 유지 관리 콘솔에 대해 알아보세요"]
+NOTE: 투명 프록시를 구성하려면 설치 후에 구성하면 됩니다. link:reference-agent-maint-console-proxy.html["에이전트 유지 관리 콘솔에 대해 알아보세요"]
 
 . Podman을 사용한 경우 aardvark-dns 포트를 조정해야 합니다.
 +
@@ -688,13 +704,13 @@ https://_ipaddress_[]
 
 == 6단계: NetApp Console 에 권한 제공
 
-이제 콘솔 에이전트를 설치했으므로 이전에 설정한 AWS 권한을 콘솔에 제공해야 합니다.  권한을 제공하면 콘솔 에이전트가 AWS에서 데이터 및 스토리지 인프라를 관리할 수 있습니다.
+콘솔 에이전트를 설치한 후에는 콘솔 에이전트가 AWS에서 데이터 및 스토리지 인프라를 관리할 수 있도록 설정한 AWS 권한을 제공해야 합니다.
 
 [role="tabbed-block"]
 ====
 .IAM 역할
 --
-이전에 생성한 IAM 역할을 콘솔 에이전트 EC2 인스턴스에 연결합니다.
+생성한 IAM 역할을 콘솔 에이전트 EC2 인스턴스에 연결합니다.
 
 .단계
 . Amazon EC2 콘솔로 이동합니다.

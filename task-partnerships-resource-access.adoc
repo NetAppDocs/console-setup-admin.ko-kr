@@ -37,16 +37,12 @@ summary: 조직 내 폴더와 프로젝트에 대한 특정 역할을 할당하�
 * link:reference-iam-backup-rec-roles.html["백업 뷰어"]
 * link:reference-iam-backup-rec-roles.html["관리자 복원"]
 * link:reference-iam-backup-rec-roles.html["관리자 복제"]
-* link:reference-iam-predefined-roles.html["데이터 분류 뷰어"]
-* link:reference-iam-disaster-rec-roles.html["재해 복구 관리자"]
+* link:reference-iam-disaster-rec-roles.html["재해 복구 관리"]
 * link:reference-iam-disaster-rec-roles.html["재해 복구 장애 조치 관리자"]
 * link:reference-iam-disaster-rec-roles.html["재해 복구 애플리케이션 관리자"]
 * link:reference-iam-disaster-rec-roles.html["재해 복구 뷰어"]
 * link:reference-iam-storage-roles.html["운영 지원 분석가"]
-* link:reference-iam-ransomware-roles.html["랜섬웨어 복원력 관리자"]
-* link:reference-iam-ransomware-roles.html["랜섬웨어 복원력 뷰어"]
-* link:reference-iam-ransomware-roles.html#user-behavior-roles["랜섬웨어 복원력 사용자 행동 관리자"]
-* link:reference-iam-ransomware-roles.html#user-behavior-roles["랜섬웨어 복원력 사용자 동작 뷰어"]
+* link:reference-iam-predefined-roles.html["분류 뷰어"]
 
 
 link:reference-iam-predefined-roles.html["미리 정의된 역할에 대해 자세히 알아보세요"]

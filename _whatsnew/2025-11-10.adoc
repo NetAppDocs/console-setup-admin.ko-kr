@@ -13,7 +13,7 @@
 .이름이 변경된 에이전트 상태 표시기
 콘솔 에이전트의 상태 표시기 이름을 *활성* 및 *비활성*에서 *연결됨* 및 *연결 끊김*으로 변경하여 그 목적을 더 명확하게 했습니다.
 
-.Redhat Enterprise Linux(RHEL) 9.6 및 Podman 5.4.0 지원
+.Red Hat Enterprise Linux(RHEL) 9.6 및 Podman 5.4.0 지원
 콘솔 에이전트를 수동으로 설치할 때 에이전트는 이제 Podman 5.4.0이 포함된 RHEL 9.6을 지원합니다. 또한 RHEL 9 이상을 사용하는 경우 NetApp podman-compose 1.5.0을 지원합니다. link:https://docs.netapp.com/us-en/console-setup-admin/task-install-agent-on-prem.html["운영 체제 요구 사항 보기"].
 
 
@@ -23,4 +23,4 @@
 이 릴리스에는 다음이 포함됩니다.
 
 .NetApp Console 알림을 위한 새 이메일 주소
-NetApp Console 알림을 보내는 이메일 주소가 *service@console.bluexp.netapp.com*에서 *service@console.netapp.com*으로 변경되었습니다. NetApp NetApp Console 이메일 알림을 계속 받으려면 모든 이메일 규칙을 *service@console.netapp.com*으로 업데이트할 것을 권장합니다.
+NetApp Console 알림을 보내는 이메일 주소가 *service@console.bluexp.netapp.com*에서 *service@console.netapp.com*으로 변경되었습니다. NetApp NetApp Console 이메일 알림을 계속 수신할 수 있도록 *service@console.netapp.com*을 허용하도록 이메일 규칙을 업데이트하는 것을 권장합니다.

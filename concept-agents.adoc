@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-agents.html 
-keywords: 'concept, connectors, learn about connectors, what are connectors, what is a connector, what"s a connector, days, 14 days, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery, agents, multiple agents, what is a Console agent' 
+keywords: 'concept, Console agents, learn about agents, what are connectors, what is a connector, what"s a connector, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery, agents, multiple agents, what is a Console agent' 
 summary: _콘솔 에이전트_는 클라우드 네트워크나 온프레미스 네트워크에서 실행되는 NetApp 소프트웨어입니다.  콘솔 에이전트를 사용하여 NetApp Console 서비스를 스토리지 환경에 연결합니다. 
 ---
 = NetApp Console 에이전트에 대해 알아보세요
