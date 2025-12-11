@@ -63,12 +63,6 @@ NetApp 이제 Google Cloud Deployment Manager 대신 Google Cloud Infrastructure
 
 
 
-== 2025년 12월 8일
-
-<stdin>에서 해결되지 않은 지시문 - include::_whatsnew/2025-12-08.adoc[]
-
-
-
 == 2025년 11월 10일
 
 
