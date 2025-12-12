@@ -202,8 +202,6 @@ sidebar:
         url: "/task-configuring-proxy.html"
       - title: EC2 인스턴스에서 IMDSv2 사용 요구
         url: "/task-require-imdsv2.html"
-      - title: 에이전트 업그레이드 관리
-        url: "/task-upgrade-agent.html"
       - title: 여러 콘솔 에이전트와 함께 작업
         url: "/task-manage-multiple-agents.html"
       - title: 콘솔 에이전트 문제 해결
