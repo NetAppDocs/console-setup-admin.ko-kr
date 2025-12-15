@@ -5402,14 +5402,7 @@
   <block id="46602301e1e9b92a123cc69be96445a2" category="paragraph">콘솔 에이전트는 기본 NetApp Backup and Recovery 기능에 대해 다음과 같은 API 요청을 합니다.</block>
   <block id="ff9be13f0dd01fa19eeb632c57e75912" category="list-text">Microsoft.Authorization/locks/write</block>
   <block id="9c54728f345d88de2c032cfb76dbdb17" category="list-text">Microsoft.Authorization/locks/read</block>
-  <block id="761a802cfbda43d4d27ac578e6d1127e" category="section-title">추가 백업 및 복구 권한</block>
   <block id="02eee31e5109fac37be42cd2ad631e0f" category="paragraph">콘솔 에이전트는 고급 백업 및 복구 작업과 검색 및 복원 기능을 위해 다음 API 요청을 합니다. 이러한 권한을 통해 네트워킹, 키 보관소 및 관리 ID를 관리할 수 있습니다.</block>
-  <block id="9db96a7be686af799d5b0df68ebdf3a8" category="paragraph">검색 및 복원 기능을 사용하면 에이전트는 다음과 같은 API 요청을 합니다. 인덱싱 v2가 출시되기 전에 레거시 인덱싱 기능을 활성화한 경우에만 이러한 권한이 필요합니다.</block>
-  <block id="d3a274c843d8b8ce75d55d7c7829a6af" category="paragraph">백업 및 복구에 필요한 최소 권한을 예시에 반영할 수 있도록 JSON 역할 예시에서 다음 권한이 제거되었습니다.</block>
-  <block id="f4b5566a2cd5de876b361e9f7aaa2d92" category="list-text">Microsoft.Insights/메트릭/읽기</block>
-  <block id="542e0e990e0a90f3111cc38f8fc96301" category="list-text">Microsoft.Compute/virtualMachines/extensions/write</block>
-  <block id="027acd9694c335956d7cb35872c2d7f5" category="list-text">Microsoft.Compute/virtualMachines/extensions/read</block>
-  <block id="ebd9939fa785bda0707a6efaf5d7b8da" category="paragraph">JSON 역할 예제에 다음 권한이 추가되었습니다.</block>
   <block id="73361bbe50a41bd2e76e59f453c19c62" category="paragraph">레거시 인덱싱을 사용하지 않는 한 다음 권한은 더 이상 백업 및 복구에 필요하지 않습니다.</block>
   <block id="c47b4df454cbc8c7bf8207225c8c507d" category="paragraph">다음 권한은 최소 구성에 필요하지 않으므로 "추가 백업 및 복구 권한" 섹션으로 이동되었습니다.</block>
   <block id="862b252e960e9fce5bfb6811edec4eb5" category="list-text">다음 명령을 실행하고 에이전트 상태가 _active(running)_로 표시되는지 확인하세요.</block>
@@ -5812,4 +5805,9 @@
   <block id="d5bf119df844977ba02663feefe22591" category="list-text">Red Hat Enterprise Linux 9.1~9.4 버전의 경우:</block>
   <block id="4fcd2b24226e5ab1f33572cdc55d9b7b" category="list-text">Red Hat Enterprise 9를 사용하는 경우:</block>
   <block id="fd1ad73a99f49752f7ad262decfb3b45" category="list-text">EPEL 저장소 패키지를 설치하세요.</block>
+  <block id="b83fdcee3fd8ba30cb801a52c12a57c3" category="paragraph">다음 섹션에서는 NetApp Backup and Recovery 에서 권한이 사용되는 방식을 설명합니다.</block>
+  <block id="7b1fb20ba83a0d151738ea779ef6b541" category="section-title">고급 백업 및 복구 권한</block>
+  <block id="f81364bddd76f5bb00fa7ea1afb1e8f3" category="paragraph">검색 및 복원 기능을 사용하면 에이전트는 다음과 같은 API 요청을 합니다. 2025년 2월 인덱싱 v2 출시 이전에 레거시 인덱싱 기능을 활성화한 경우에만 이러한 권한이 필요합니다.</block>
+  <block id="6b3f95e18a1ba0f839260ac943cc5e73" category="paragraph">최소한의 권한과 최소한의 범위를 반영하는 사용자 지정 JSON 정책이 추가되었습니다.</block>
+  <block id="0a466732427ffe0e3d3bf69fe76471c6" category="paragraph">최소 백업 및 복구 권한 목록에 다음 권한이 추가되었습니다.</block>
 </blocks>
