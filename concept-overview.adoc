@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-overview.html 
 keywords: overview, concepts, features, use case, cloud manager, bluexp, how bluexp works, supported cloud providers, cloud providers, hyperscalers, aws, google, how NetApp Console works 
-summary: NetApp Console 기업 규모로 온프레미스 및 클라우드 환경 전반에서 NetApp 스토리지 및 데이터 서비스를 중앙에서 관리할 수 있는 기능을 제공합니다. 
+summary: 콘솔은 통합 데이터 서비스를 통해 하이브리드 멀티 클라우드 전반의 스토리지 관리 및 보호를 통합하여 데이터를 보호하고 최적화합니다. 
 ---
 = NetApp Console 에 대해 알아보세요
 :hardbreaks:
@@ -14,25 +14,19 @@ summary: NetApp Console 기업 규모로 온프레미스 및 클라우드 환경
 
 
 [role="lead"]
-NetApp Console 온프레미스 및 클라우드 환경 전반에서 NetApp 스토리지와 NetApp Data Services 엔터프라이즈급으로 중앙에서 관리하여 실시간 통찰력, 더 빠른 워크플로, 간소화된 관리를 제공하며, 높은 보안성과 규정 준수를 보장합니다.
-
-스토리지 관리, 데이터 이동성, 데이터 보호, 데이터 분석 및 제어를 제공하는 서비스형(SaaS) 플랫폼으로 제공됩니다.  관리 기능은 웹 기반 콘솔과 API를 통해 제공됩니다.
-
-
-
-== 특징
-
 콘솔은 통합 데이터 서비스를 통해 하이브리드 멀티 클라우드 전반의 스토리지 관리 및 보호를 통합하여 데이터를 보호하고 최적화합니다.
 
+이 솔루션은 서비스형 소프트웨어(SaaS) 플랫폼으로 제공되거나, 자체 클라우드에 설치하여 사용할 수 있는 셀프 호스팅 옵션으로 제공됩니다. 이 시스템은 스토리지 관리, 데이터 이동성, 데이터 보호, 데이터 분석 및 제어 기능을 제공합니다. 관리 기능은 웹 기반 콘솔과 API를 통해 제공됩니다.
 
 
-=== 중앙 집중식 스토리지 관리
+
+== 중앙 집중식 스토리지 관리
 
 콘솔을 사용하여 클라우드 및 온프레미스 스토리지를 검색, 배포 및 관리하세요.
 
 
 
-==== 지원되는 클라우드 및 온프레미스 스토리지
+=== 지원되는 클라우드 및 온프레미스 스토리지
 
 콘솔에서 다음 유형의 저장소를 관리할 수 있습니다.
 
@@ -68,15 +62,15 @@ NetApp Console 온프레미스 및 클라우드 환경 전반에서 NetApp 스�
 
 
 
-==== 스토리지 관리
+=== 스토리지 관리
 
 콘솔 내에서 _시스템_은 검색되거나 배포된 저장소를 나타냅니다.  NetApp 데이터 서비스와 통합하거나 볼륨을 추가하는 등 스토리지를 관리할 _시스템_을 선택할 수 있습니다.
 
-image:screenshot-canvas.png["여러 시스템을 보여주는 콘솔의 스크린샷으로, 그 중 하나가 선택되어 있으며 NetApp 데이터 서비스를 활성화하거나 *시스템 입력*을 선택하여 스토리지를 관리할 수 있는 기능을 보여줍니다."]
+image:screenshot-canvas.png["콘솔 화면에 여러 시스템이 표시된 스크린샷입니다. 하나를 선택하면 NetApp 데이터 서비스를 활성화하거나 스토리지 관리를 위해 *시스템 입력*을 선택할 수 있는 기능이 표시됩니다."]
 
 
 
-=== 데이터를 보호, 보안 및 최적화하기 위한 통합 데이터 서비스 및 스토리지 관리
+== 데이터를 보호, 보안 및 최적화하기 위한 통합 데이터 서비스 및 스토리지 관리
 
 콘솔은 저장 공간 가용성을 보호하고 유지하기 위한 데이터 서비스를 제공합니다.
 
@@ -147,11 +141,11 @@ link:concept-agents.html["콘솔 에이전트에 대해 자세히 알아보세�
 
 
 
-=== 배포 모드
+=== SaaS와 주권 클라우드 배포 비교
 
-NetApp NetApp Console 에 대해 두 가지 배포 모드를 제공합니다. _표준 모드_는 모든 기능을 위해 SaaS(Software as a Service) 계층을 사용하는 반면, _제한 모드_는 아웃바운드 연결을 제한합니다.
+NetApp Console SaaS 제품에 가입하거나 자체 클라우드에 배포하여 사용을 시작할 수 있습니다. NetApp Console 독립형 클라우드에 배포하면 NetApp 조직의 보안 및 규정 준수 요구 사항을 충족하기 위해 아웃바운드 연결을 제한합니다. 콘솔을 주권 클라우드에 배포할 경우 모든 기능과 서비스를 사용할 수 있는 것은 아닙니다.
 
-NetApp 아웃바운드 연결이 필요 없는 사이트에 BlueXP 계속 제공합니다.  BlueXP 비공개 모드에서만 사용할 수 있습니다.link:task-quick-start-private-mode.html["인터넷 연결이 없는 사이트를 위한 BlueXP (비공개 모드)에 대해 알아보세요."]
+NetApp 외부 연결이 필요 없는 사이트를 위해 BlueXP 계속해서 제공합니다. BlueXP 외부 연결 없이 네트워크에 설치할 수 있습니다. link:task-quick-start-private-mode.html["인터넷 연결이 없는 사이트를 위한 BlueXP (비공개 모드)에 대해 알아보세요."]
 
 link:concept-modes.html["배포 모드에 대해 자세히 알아보세요"] .
 

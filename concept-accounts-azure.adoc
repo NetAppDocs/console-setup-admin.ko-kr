@@ -44,7 +44,7 @@ image:screenshot_accounts_select_azure.gif["세부 정보 및 자격 증명 페�
 
 콘솔에서 다른 Azure 자격 증명을 사용하려면 다음을 통해 필요한 권한을 부여해야 합니다.link:task-adding-azure-accounts.html["Microsoft Entra ID에서 서비스 주체 만들기 및 설정"] 각 Azure 계정에 대해.  다음 이미지는 서비스 주체와 권한을 제공하는 사용자 지정 역할이 설정된 두 개의 추가 계정을 보여줍니다.
 
-image:diagram_permissions_multiple_azure.png["사용자 지정 역할과 관리 ID를 통해 권한을 받는 초기 Azure 계정과 사용자 지정 역할과 서비스 주체를 통해 권한을 받는 두 개의 추가 계정을 보여주는 개념적 이미지입니다."]
+image:diagram_permissions_multiple_azure.png["이 개념 이미지는 사용자 지정 역할과 관리 ID를 통해 권한을 부여받는 최초 Azure 계정과 사용자 지정 역할 및 서비스 주체를 통해 권한을 부여받는 두 개의 추가 계정을 보여줍니다."]
 
 그러면 당신은link:task-adding-azure-accounts.html#add-credentials-azure["콘솔에 계정 자격 증명을 추가합니다."] AD 서비스 주체에 대한 세부 정보를 제공합니다.
 

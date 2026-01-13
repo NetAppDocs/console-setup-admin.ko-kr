@@ -24,7 +24,7 @@ NetApp Console 에서 직접 AWS 자격 증명과 마켓플레이스 구독을 �
 
 콘솔이 AWS에서 콘솔 에이전트를 시작하면 에이전트에 대한 IAM 역할과 프로필이 생성됩니다. 또한 AWS 계정 내에서 리소스와 프로세스를 관리할 수 있는 권한을 콘솔 에이전트에 제공하는 정책도 첨부합니다. link:reference-permissions-aws.html["에이전트가 권한을 사용하는 방식을 검토하세요."].
 
-image:diagram_permissions_initial_aws.png["AWS 계정에 콘솔 에이전트를 배포하는 콘솔을 보여주는 개념적 이미지입니다. IAM 정책은 콘솔에 연결된 IAM 역할에 할당됩니다."]
+image:diagram_permissions_initial_aws.png["AWS 계정에 콘솔 에이전트를 배포하는 콘솔을 보여주는 개념적 이미지입니다."]
 
 새로운 Cloud Volumes ONTAP 시스템을 추가하는 경우 콘솔은 기본적으로 다음 AWS 자격 증명을 선택합니다.
 
@@ -51,7 +51,7 @@ image:screenshot_accounts_select_aws.gif["세부 정보 및 자격 증명 페이
 
 추가 AWS 계정으로 콘솔을 사용하려면 신뢰할 수 있는 계정의 역할에 대한 AWS 키 또는 ARN을 제공하세요. 다음 이미지는 두 개의 추가 계정을 보여줍니다. 하나는 신뢰할 수 있는 계정의 IAM 역할을 통해 권한을 제공하고, 다른 하나는 IAM 사용자의 AWS 키를 통해 권한을 제공합니다.
 
-image:diagram_permissions_multiple_aws.png["두 개의 추가 계정을 보여주는 개념적 이미지입니다.  각각에는 IAM 정책이 있으며, 하나는 IAM 사용자에게 연결되고 다른 하나는 IAM 역할에 연결됩니다."]
+image:diagram_permissions_multiple_aws.png["두 개의 추가 계정을 보여주는 개념 이미지입니다. 각각은 IAM 정책을 가지고 있습니다. 하나는 IAM 사용자에게 연결되고 다른 하나는 IAM 역할에 연결됩니다."]
 
 IAM 역할의 Amazon 리소스 이름(ARN)이나 IAM 사용자의 AWS 키를 지정하여 콘솔에 계정 자격 증명을 추가합니다.
 

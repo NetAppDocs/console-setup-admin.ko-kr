@@ -14,7 +14,7 @@ summary: NetApp Console 기능과 서비스를 사용하려면 콘솔이 클라�
 
 
 [role="lead"]
-NetApp Console 기능과 서비스를 사용하려면 콘솔 에이전트가 클라우드 환경에서 작업을 수행할 수 있도록 권한을 제공해야 합니다. 이 페이지의 링크를 사용하면 목표에 따라 필요한 권한에 빠르게 액세스할 수 있습니다.
+콘솔 에이전트가 클라우드 환경에서 작업을 수행할 수 있도록 적절한 권한을 부여해야 합니다. 이 페이지의 링크를 사용하여 목표에 따라 필요한 권한에 빠르게 접근하세요.
 
 
 
@@ -31,10 +31,7 @@ NetApp Console 콘솔 에이전트와 개별 서비스에 대한 AWS 권한이 �
 | 목표 | 설명 | 링크 
 
 
-| 콘솔에서 콘솔 에이전트 배포 | 콘솔에서 콘솔 에이전트를 생성하는 사용자는 AWS에 에이전트를 배포하기 위한 특정 권한이 필요합니다. | link:task-install-agent-aws-console.html#aws-permissions-agent["AWS 권한 설정"] 
-
-
-| 콘솔 에이전트에 대한 권한 제공 | 콘솔이 콘솔 에이전트를 배포하면 AWS 계정의 리소스와 프로세스를 관리하는 데 필요한 권한을 제공하는 정책을 에이전트에 연결합니다.  AWS Marketplace에서 콘솔 에이전트를 배포하거나 콘솔 에이전트를 수동으로 설치하거나 다음을 수행하는 경우 정책을 직접 설정해야 합니다.link:task-adding-aws-accounts.html#add-credentials-agent-aws["콘솔 에이전트에 AWS 자격 증명 추가"] . 이후 릴리스에서 새로운 권한이 추가되므로 정책이 최신 상태인지 확인해야 합니다. | link:reference-permissions-aws.html["콘솔 에이전트에 대한 AWS 권한"] 
+| 콘솔에서 콘솔 에이전트를 배포하려면 AWS에 콘솔 에이전트를 배포하기 위해 사용자에게 특정 권한이 필요합니다. | link:task-install-agent-aws-console.html#aws-permissions-agent["AWS 권한 설정"] | 콘솔 에이전트에 대한 권한 제공 
 |===
 
 
@@ -67,7 +64,7 @@ NetApp Console 콘솔 에이전트와 개별 서비스에 대한 AWS 권한이 �
 | 목표 | 설명 | 링크 
 
 
-| AWS에 데이터 브로커 배포 | 데이터 브로커를 배포하는 데 사용하는 AWS 사용자 계정에는 특정 권한이 있어야 합니다. | https://docs.netapp.com/us-en/data-services-copy-sync/task-installing-aws.html#permissions-required-to-deploy-the-data-broker-in-aws["AWS에 데이터 브로커를 배포하는 데 필요한 권한"^] 
+| AWS에 데이터 브로커 배포 | 데이터 브로커를 배포하는 데 사용하는 AWS 사용자 계정에는 필요한 권한이 있어야 합니다. | https://docs.netapp.com/us-en/data-services-copy-sync/task-installing-aws.html#permissions-required-to-deploy-the-data-broker-in-aws["AWS에 데이터 브로커를 배포하는 데 필요한 권한"^] 
 
 
 | 데이터 브로커에 대한 권한 제공 | NetApp Copy and Sync 데이터 브로커를 배포하면 데이터 브로커 인스턴스에 대한 IAM 역할이 생성됩니다.  원하는 경우 사용자 고유의 IAM 역할을 사용하여 데이터 브로커를 배포할 수 있습니다. | https://docs.netapp.com/us-en/data-services-copy-sync/task-installing-aws.html#requirements-to-use-your-own-iam-role-with-the-aws-data-broker["AWS 데이터 브로커에서 자체 IAM 역할을 사용하기 위한 요구 사항"^] 
@@ -95,7 +92,7 @@ NetApp Console 콘솔 에이전트와 개별 서비스에 대한 AWS 권한이 �
 | 목표 | 설명 | 링크 
 
 
-| 온프레미스 ONTAP 클러스터를 Amazon S3로 계층화 | AWS에 대한 NetApp Cloud Tiering 활성화하면 마법사에서 액세스 키와 비밀 키를 입력하라는 메시지가 표시됩니다.  이러한 자격 증명은 ONTAP 클러스터로 전달되어 ONTAP 이 데이터를 S3 버킷에 계층화할 수 있도록 합니다. | https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions["계층화를 위한 S3 권한 설정"^] 
+| 온프레미스 ONTAP 클러스터를 Amazon S3로 계층화 | NetApp Cloud Tiering AWS에 활성화할 때 액세스 키와 비밀 키를 입력해야 합니다. 이러한 자격 증명은 ONTAP 클러스터로 전달되어 ONTAP 데이터를 S3 버킷으로 계층화할 수 있도록 합니다. | https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions["계층화를 위한 S3 권한 설정"^] 
 |===
 
 
@@ -120,7 +117,7 @@ NetApp Console 콘솔 에이전트와 개별 서비스에 대한 AWS 권한이 �
 
 마켓플레이스에서 콘솔 에이전트를 시작하거나 콘솔 에이전트를 수동으로 설치하거나 사용자 지정 역할을 직접 설정해야 합니다.link:task-adding-azure-accounts.html#add-credentials-azure["콘솔 에이전트에 Azure 자격 증명 추가"] .
 
-이후 릴리스에서 새로운 권한이 추가되므로 정책이 최신 상태인지 확인해야 합니다.
+향후 릴리스에서 새로운 권한이 추가될 경우 정책을 최신 상태로 유지하십시오.
  a| 
 link:reference-permissions-azure.html["콘솔 에이전트에 대한 Azure 권한"]
 
@@ -146,7 +143,7 @@ NetApp Backup and Recovery 사용하여 Cloud Volumes ONTAP 백업하는 경우 
 
 
 
-| 온프레미스 ONTAP 클러스터를 Azure Blob Storage에 백업 | NetApp Backup and Recovery 사용하여 온프레미스 ONTAP 클러스터를 백업하는 경우 "검색 및 복원" 기능을 사용하려면 콘솔 에이전트에 권한을 추가해야 합니다. | https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-backup-onprem-azure.html["백업 및 복구를 사용하여 온-프레미스 ONTAP 데이터를 Azure Blob 저장소에 백업합니다."^] 
+| 온프레미스 ONTAP 클러스터를 Azure Blob Storage에 백업 | NetApp Backup and Recovery 사용하여 온프레미스 ONTAP 클러스터를 백업할 때 콘솔 에이전트가 "검색 및 복원" 기능을 사용할 수 있도록 권한을 추가해야 합니다. | https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-backup-onprem-azure.html["백업 및 복구를 사용하여 온-프레미스 ONTAP 데이터를 Azure Blob 저장소에 백업합니다."^] 
 |===
 
 
@@ -177,7 +174,7 @@ NetApp Backup and Recovery 사용하여 Cloud Volumes ONTAP 백업하는 경우 
 | 콘솔에서 콘솔 에이전트 배포 | Google Cloud 콘솔에서 콘솔 에이전트를 배포하는 Google Cloud 사용자는 Google Cloud에서 콘솔 에이전트를 배포하기 위한 특정 권한이 필요합니다. | link:task-install-agent-google-console-gcloud.html#console-permissions-google["콘솔 에이전트를 생성하기 위한 권한 설정"] 
 
 
-| 콘솔 에이전트에 대한 권한 제공 | 콘솔 에이전트의 서비스 계정에는 일상 업무에 대한 특정 권한이 있어야 합니다. 배포하는 동안 서비스 계정을 콘솔 에이전트와 연결해야 합니다. 이후 릴리스에서 새로운 권한이 추가되므로 정책이 최신 상태인지 확인해야 합니다. | link:task-install-agent-google-console-gcloud.html#console-permissions-google["콘솔 에이전트에 대한 권한 설정"] 
+| 콘솔 에이전트에 대한 권한 제공 | 콘솔 에이전트의 서비스 계정은 일상적인 운영을 위해 특정 권한을 보유해야 합니다. 배포 중에 서비스 계정을 콘솔 에이전트와 연결해야 합니다. 향후 릴리스에서 새로운 권한이 추가될 경우 정책을 최신 상태로 유지하십시오. | link:task-install-agent-google-console-gcloud.html#console-permissions-google["콘솔 에이전트에 대한 권한 설정"] 
 |===
 
 
@@ -201,7 +198,7 @@ NetApp Backup and Recovery 사용하여 Cloud Volumes ONTAP 백업하는 경우 
 
 
 
-| 온프레미스 ONTAP 클러스터를 Google Cloud에 백업 | NetApp Backup and Recovery 사용하여 온프레미스 ONTAP 클러스터를 백업하는 경우 "검색 및 복원" 기능을 사용하려면 콘솔 에이전트에 권한을 추가해야 합니다. | https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-backup-onprem-gcp.html["백업 및 복구를 사용하여 온프레미스 ONTAP 데이터를 Google Cloud Storage에 백업하세요."^] 
+| 온프레미스 ONTAP 클러스터를 Google Cloud에 백업 | NetApp Backup and Recovery 사용하여 온프레미스 ONTAP 클러스터를 백업할 때 콘솔 에이전트가 "검색 및 복원" 기능을 사용할 수 있도록 권한을 추가해야 합니다. | https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-backup-onprem-gcp.html["백업 및 복구를 사용하여 온프레미스 ONTAP 데이터를 Google Cloud Storage에 백업하세요."^] 
 |===
 
 

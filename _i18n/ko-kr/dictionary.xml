@@ -598,7 +598,6 @@
   <block id="bd572303cf9daecbf8e01f72f337d250" category="list-text">멤버의 기존 역할을 변경하거나 역할을 제거할 수 있습니다.</block>
   <block id="4e650af420bdf02411b6420197fa8b73" category="list-text">멤버의 역할을 변경하려면 변경하려는 역할 옆에 있는 *변경*을 선택하세요.  동일한 역할 범주 내에서만 역할을 변경할 수 있습니다.  예를 들어, 한 데이터 서비스 역할에서 다른 역할로 변경할 수 있습니다.  변경 사항을 확인하세요.</block>
   <block id="9a3441a99feefccc201b51666c68d0d2" category="inline-image-macro">쓰레기통 모양의 아이콘</block>
-  <block id="9410d39af130c313b964685327e24e7a" category="list-text">멤버의 역할을 할당 해제하려면 다음을 선택하세요.<block ref="65d5e1d842da62aa3653eba17c2cb20e" category="inline-image-macro-rx" type="image"></block> 역할 옆에 있는 버튼을 눌러 멤버에게 해당 역할을 할당 해제합니다.  삭제를 확인하라는 메시지가 표시됩니다.</block>
   <block id="d63f1c66d83451eade374ce0e602a4b4" category="list-text">표에서 멤버에게 할당된 역할을 보고 싶은 조직, 폴더 또는 프로젝트에 해당하는 행을 확장하고 *역할* 열에서 *보기*를 선택합니다.</block>
   <block id="45e27b9fcac7d60b4663ab56a2bac350" category="paragraph">다음 디렉토리에 있는 콘솔 에이전트 호스트에서 직접 JSON 형식의 검증 보고서와 구성 로그에 액세스할 수도 있습니다.</block>
   <block id="647fa610609fa01d971d4fbb3656f443" category="paragraph">*검토* 페이지에서 *에이전트 구성 검증* 확인란을 선택한 경우 콘솔은 콘솔 에이전트가 생성된 후 해당 구성을 검증합니다.  콘솔에서 에이전트를 배포하지 못하면 문제 해결에 도움이 되는 다운로드 가능한 보고서가 제공됩니다.</block>
@@ -1009,75 +1008,20 @@
   <block id="9c1c5b1b2bca352ed0ccb3521d870e14" category="section-title">지원 채팅이 제거되었습니다.</block>
   <block id="6a6050b7d9c0524d1d41dffdc70d6613" category="paragraph">NetApp NetApp Console 에서 지원 채팅 기능을 제거했습니다.  *관리 &gt; 지원* 페이지를 사용하여 지원 사례를 만들고 관리하세요.</block>
   <block id="d6b258792ff06f82933c74eeb8aef591" category="doc">조직</block>
-  <block id="3c4f7accda6c4e5b05c122dfef01bebe" category="paragraph">다음 섹션에서는 BlueXP 내에서 IAM을 사용하는 다양한 구성 요소를 설명합니다.</block>
-  <block id="7d5499ec968e6c97c7264ba95116b2d6" category="paragraph">BlueXP IAM을 사용하면 다음 구성 요소를 관리하게 됩니다.</block>
-  <block id="ba49e39a2ccedcfe8d31a1eb6440393b" category="list-text">조직</block>
   <block id="60c7502b5c40479908aed919a94c1786" category="list-text">폴더</block>
   <block id="54e1d44609e3abed11f6e1eb6ae54988" category="list-text">프로젝트</block>
   <block id="ddcf50c29294d4414f3f7c1bbc892cb5" category="list-text">리소스</block>
   <block id="ef53538ae41a651c7f72ab6cb1135d8c" category="list-text">회원들</block>
-  <block id="cc3fc292512275828d3e52e16ae33c1e" category="list-text">역할 및 권한</block>
-  <block id="63d750f29eced0ef6f1a75aa4da71fd5" category="paragraph">BlueXP 리소스는 계층적으로 구성됩니다.</block>
-  <block id="790fa8644dbcadf85fb5b45d7fca979d" category="list-text">조직은 계층 구조의 최상위에 있습니다.</block>
-  <block id="2ede3ee5af948d52fa8b02b8b724edbc" category="list-text">폴더는 조직이나 다른 폴더의 자식입니다.</block>
-  <block id="c6d4d895d45b22ea5448413edb3695fb" category="list-text">프로젝트는 조직이나 폴더의 자식입니다.</block>
-  <block id="d328918eb0bde8153b59b715b29dab04" category="list-text">리소스는 하나 이상의 폴더 또는 프로젝트와 연결됩니다.</block>
   <block id="c811c1fbfa4dd81873bbea559d575b16" category="paragraph">다음 이미지는 기본적인 수준의 계층 구조를 보여줍니다.</block>
-  <block id="10119787527a31da075fede0d76f0203" category="inline-image-macro">BlueXP IAM의 리소스 계층 구조(조직, 폴더, 프로젝트, 리소스)를 보여주는 개념적 다이어그램입니다.</block>
-  <block id="7e775be1764f78009e9846f9006651fa" category="paragraph"><block ref="7e775be1764f78009e9846f9006651fa" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="31e872437335d3d81483e87525b418b2" category="paragraph">_조직_은 BlueXP IAM 시스템의 최상위 수준이며 일반적으로 회사를 나타냅니다.  조직은 폴더, 프로젝트, 구성원, 역할 및 리소스로 구성됩니다.  커넥터는 조직 내의 특정 프로젝트와 연관됩니다.</block>
-  <block id="2514dc2ef1e14f7696838f5cc8280315" category="paragraph">BlueXP 에 가입하면 새로운 조직을 만들라는 메시지가 표시됩니다.</block>
-  <block id="ee07c487a7e0b5c18c94b4bded207535" category="paragraph">_폴더_를 사용하면 관련 프로젝트를 함께 그룹화하고 조직 내 다른 프로젝트와 분리할 수 있습니다.  예를 들어, 폴더는 지리적 위치(EU 또는 미국 동부), 사이트(런던 또는 토론토), 사업부(엔지니어링 또는 마케팅)를 나타낼 수 있습니다.</block>
-  <block id="4f4b6c71ed586432b1f40e519b555023" category="paragraph">폴더에는 프로젝트, 다른 폴더 또는 두 가지의 조합이 포함될 수 있습니다.</block>
-  <block id="073b4a34202498afcb0022a2400e1b32" category="paragraph">_프로젝트_는 조직 구성원이 BlueXP 캔버스에서 액세스하여 리소스를 관리하는 BlueXP 의 작업 공간을 나타냅니다.  예를 들어, 프로젝트에는 Cloud Volumes ONTAP 시스템, 온프레미스 ONTAP 클러스터 또는 FSx for ONTAP 파일 시스템이 포함될 수 있습니다.</block>
-  <block id="420332558cea2f6b48a90723f1ba988b" category="paragraph">조직에는 하나 이상의 프로젝트가 있을 수 있습니다.  프로젝트는 조직 바로 아래나 폴더 내에 있을 수 있습니다.</block>
-  <block id="6df9abd9c7b51bbfb5b24919ebf7a0d9" category="paragraph">_리소스_는 BlueXP 에서 만들거나 발견한 작업 환경입니다.</block>
-  <block id="4bcb4158bb794b5f6897b12a3d885700" category="paragraph">리소스를 만들거나 검색하면 해당 리소스가 현재 선택된 프로젝트와 연결됩니다.  이 리소스와 연관시키고 싶은 유일한 프로젝트일 수도 있습니다.  하지만 조직의 다른 프로젝트와 리소스를 연결하도록 선택할 수 있습니다.</block>
-  <block id="448d5e2671e1140d3206b53b2cd8fcb3" category="paragraph">예를 들어, Cloud Volumes ONTAP 시스템을 하나의 추가 프로젝트나 조직의 모든 프로젝트와 연결할 수 있습니다.  리소스를 연결하는 방법은 조직의 요구 사항에 따라 달라집니다.</block>
-  <block id="168c1dcd033cefa7491c208fa91302b0" category="inline-xref">BlueXP IAM과 함께 커넥터를 사용하는 방법에 대해 자세히 알아보세요.</block>
-  <block id="41b86f6155d6363543815bac5dea73ad" category="admonition">또한 커넥터를 조직 내의 다른 폴더나 프로젝트에 연결할 수도 있습니다. <block ref="9e7f5047feaf45527e5897b8e3a9f3c3" category="inline-xref-macro-rx"></block> .</block>
   <block id="45fe20b7675ad9a40c796bc19a899151" category="section-title">리소스를 폴더와 연결할 때</block>
-  <block id="e95e1ea14aa7dd2b3186795a75b45b13" category="paragraph">책임이나 저장 리소스를 분리해야 할 때 리소스를 폴더로 구성할 수 있습니다.</block>
-  <block id="c2b6281f68ca211ace1d3b7217d3af91" category="paragraph">_조직 관리자_는 리소스를 폴더와 연결할 수 있으며, _폴더 또는 프로젝트 관리자_는 해당 리소스를 폴더에 있는 적절한 프로젝트와 연결할 수 있습니다.</block>
   <block id="1058f4a748781e5148a8a3c55abb0aab" category="paragraph">예를 들어, 두 개의 프로젝트가 포함된 폴더가 있다고 가정해 보겠습니다.</block>
   <block id="6ca67105e5f9ace975f61928538c4611" category="inline-image-macro">폴더와 폴더 안에 있는 두 개의 프로젝트(프로젝트 A와 프로젝트 B)를 보여주는 다이어그램입니다.</block>
   <block id="754e6597ff2f536e3e344211df138650" category="paragraph"><block ref="754e6597ff2f536e3e344211df138650" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0f7b8351932b4b34ebd9a3c35f609142" category="paragraph">_조직 관리자_는 리소스를 폴더와 연결할 수 있습니다.</block>
-  <block id="13d52e7b25d0d3a36ee2a18423d7e3fc" category="inline-image-macro">폴더, 폴더와 연결된 리소스, 폴더에 있는 두 개의 프로젝트(프로젝트 A와 프로젝트 B)를 보여주는 다이어그램입니다.</block>
-  <block id="a762f5e5e726c59b96c9704f6690afd5" category="paragraph"><block ref="a762f5e5e726c59b96c9704f6690afd5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="abcb4f764f4be71c7de8f1f00d041876" category="paragraph">리소스를 폴더와 연결해도 폴더 내 모든 프로젝트에서 해당 리소스에 자동으로 액세스할 수 있는 것은 아닙니다.  하지만 _폴더 또는 프로젝트 관리자_는 해당 리소스를 어떤 프로젝트에 제공할지 결정할 수 있습니다.  해당 결정을 내린 후 관리자는 해당 리소스를 올바른 프로젝트와 연결할 수 있습니다.</block>
   <block id="390c53a5725b855c6866ac325cec9ffc" category="paragraph">이 예에서 관리자는 리소스를 프로젝트 A와 연결합니다.</block>
-  <block id="a6359392d37b223c34ad47dc59840824" category="inline-image-macro">폴더, 폴더에 있는 두 개의 프로젝트(프로젝트 A와 프로젝트 B) 및 프로젝트 A와 연결된 리소스를 보여주는 다이어그램입니다.</block>
-  <block id="033735cdc14884b812013b44ececf16d" category="paragraph"><block ref="033735cdc14884b812013b44ececf16d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7daf841f0e77802f670d882e89b2933a" category="paragraph">프로젝트 A에 대한 권한이 있는 멤버는 이제 리소스에 액세스할 수 있습니다.</block>
   <block id="edd719acf18ba2b24326bae940c8d405" category="paragraph">조직의 구성원은 사용자 계정 또는 서비스 계정입니다.  서비스 계정은 일반적으로 애플리케이션에서 사람의 개입 없이 지정된 작업을 완료하는 데 사용됩니다.</block>
-  <block id="1e600081d8c3ddee81a1c4fde234a8ea" category="paragraph">조직에는 _조직 관리자_ 역할을 가진 사용자가 최소 한 명 있습니다(조직을 만든 사용자에게는 자동으로 이 역할이 할당됩니다).  조직에 다른 구성원을 추가하고 리소스 계층의 다양한 수준에 따라 다른 권한을 할당할 수 있습니다.</block>
-  <block id="f7498a2b1cad9068d22c6cae249fa86a" category="paragraph">BlueXP IAM에서는 조직 구성원에게 직접 권한을 부여하지 않습니다.  대신 각 멤버에게 역할을 부여합니다.  역할에는 멤버가 리소스 계층의 특정 수준에서 특정 작업을 수행할 수 있도록 하는 권한 집합이 포함되어 있습니다.</block>
-  <block id="113f89b00e292b60a3abd42cf2ae334d" category="paragraph">리소스 계층 구조의 특정 부분에서 권한을 제공하면 멤버가 작업을 완료하는 데 필요한 리소스에만 액세스 권한을 제한할 수 있습니다.</block>
-  <block id="805218308fdc32b426f980b2af2fc1bb" category="section-title">계층 구조에서 역할을 할당할 수 있는 위치</block>
-  <block id="3b9526de74c9dc5ffc9af4580bef6209" category="paragraph">멤버를 역할에 연결할 때는 전체 조직, 특정 폴더 또는 특정 프로젝트를 선택해야 합니다.  선택한 역할에 따라 구성원에게 계층 구조의 선택된 부분에 있는 리소스에 대한 권한이 부여됩니다.</block>
-  <block id="3a3412900d3c19fdb5732fe4f6694e1d" category="section-title">역할 상속</block>
-  <block id="1dbcc05186db9ce123a5c671a4b5512c" category="paragraph">역할을 할당하면 해당 역할은 조직 계층 구조 아래로 상속됩니다.</block>
-  <block id="54e4ca1414109471d3f30c5ad4a0e082" category="list-text">조직 수준에서 부여하는 역할은 조직 내의 모든 폴더, 프로젝트 및 리소스에 상속됩니다.  즉, 구성원은 조직 내 모든 것에 대한 권한을 가지고 있습니다.</block>
-  <block id="352f1c445e075db00bbcab968cda6823" category="list-text">폴더 수준에서 부여한 역할은 해당 폴더 내의 모든 폴더, 프로젝트 및 리소스에 상속됩니다.</block>
-  <block id="5ac64a6676e634fcfd02895729d7efc4" category="paragraph">예를 들어, 폴더 수준에서 역할을 할당하고 해당 폴더에 프로젝트가 3개 있는 경우, 멤버는 해당 3개 프로젝트와 관련 리소스에 대한 권한을 갖게 됩니다.</block>
-  <block id="f7cc750b6297ad0e9c4ddc933def018d" category="list-text">프로젝트 수준에서 부여하는 역할은 해당 프로젝트와 연관된 모든 리소스에 상속됩니다.</block>
-  <block id="d91e4a7f7d3d057f2ceb3bf51ca4b809" category="section-title">다양한 역할</block>
-  <block id="3a6537a8a84cacd748ff26028e103b68" category="paragraph">조직 계층 구조의 다양한 수준에서 각 조직 구성원에게 역할을 할당할 수 있습니다.  같은 역할일 수도 있고 다른 역할일 수도 있습니다.  예를 들어, 프로젝트 1과 프로젝트 2에 대해 멤버 역할 A를 할당할 수 있습니다.  또는 프로젝트 1에는 멤버 역할 A를 할당하고, 프로젝트 2에는 역할 B를 할당할 수 있습니다.</block>
-  <block id="b1371d1a1eaa0db34a42be4569a94358" category="section-title">액세스 역할</block>
-  <block id="55b6d94d9ad6439fe5c46ccdba149ed3" category="paragraph">BlueXP 조직의 구성원에게 할당할 수 있는 여러 가지 액세스 역할을 지원합니다.</block>
   <block id="f0b3d6677a212276d758f01224d831be" category="paragraph"><block ref="358dd7829c43f386bdd1bc16bf83b432" category="inline-link-macro-rx"></block> .</block>
-  <block id="1f2652079b5030c3e1f5c5b95701a71c" category="paragraph">_조직 관리자_가 커넥터를 생성하면 BlueXP 해당 커넥터를 조직 및 현재 선택된 프로젝트와 자동으로 연결합니다.  _조직 관리자_는 조직 내 어디에서나 해당 커넥터에 자동으로 액세스할 수 있습니다.  하지만 조직 내에 다른 역할을 맡은 다른 구성원이 있는 경우, 해당 커넥터를 다른 프로젝트와 연결하지 않는 한 해당 구성원은 해당 커넥터가 만들어진 프로젝트의 커넥터에만 액세스할 수 있습니다.</block>
-  <block id="a84eaa1aafc5282e553ddc52e74d77b9" category="paragraph">다음과 같은 경우 다른 프로젝트에서 커넥터를 사용할 수 있도록 설정할 수 있습니다.</block>
-  <block id="9ce6bd5f8ae0c74108c66519e8a1d5dd" category="list-text">조직의 구성원이 기존 커넥터를 사용하여 다른 프로젝트에서 추가 작업 환경을 만들거나 검색할 수 있도록 허용하려고 합니다.</block>
-  <block id="1294a41af24549496295a289ef7392a4" category="list-text">기존 리소스를 다른 프로젝트와 연결했으며 해당 리소스는 커넥터에서 관리됩니다.</block>
-  <block id="73cf487cae9590b5cffed6be5a610252" category="paragraph">추가 프로젝트와 연결한 리소스가 BlueXP 커넥터를 사용하여 검색된 경우, 해당 리소스가 현재 연결된 프로젝트에도 커넥터를 연결해야 합니다.  그렇지 않으면 _조직 관리자_ 역할이 없는 멤버는 BlueXP 캔버스에서 커넥터와 관련 리소스에 액세스할 수 없습니다.</block>
-  <block id="6d257318c199abbb1afe6c1bda69ac59" category="paragraph">BlueXP IAM의 *커넥터* 페이지에서 연결을 만들 수 있습니다.</block>
-  <block id="878220f2fc28384f3ff6858db2ecdbb8" category="list-text">커넥터를 프로젝트와 연결</block>
-  <block id="840678c266fb13b1e6f3bb15d8389d12" category="paragraph">커넥터를 프로젝트와 연결하면 프로젝트를 볼 때 BlueXP 캔버스에서 해당 커넥터에 액세스할 수 있습니다.</block>
-  <block id="e85ac916ed94cb910b4635be78c76be1" category="list-text">폴더와 커넥터 연결</block>
-  <block id="b586758af094fc2bd17d0a7998a3c157" category="paragraph">커넥터를 폴더와 연결해도 폴더 내 모든 프로젝트에서 해당 커넥터에 자동으로 액세스할 수 있는 것은 아닙니다.  조직 구성원은 커넥터를 특정 프로젝트와 연결할 때까지 프로젝트에서 커넥터에 액세스할 수 없습니다.</block>
-  <block id="201614334b2723fd3338cf698f37ecd4" category="paragraph">_조직 관리자_는 커넥터를 폴더와 연결하여 _폴더 또는 프로젝트 관리자_가 해당 커넥터를 폴더에 있는 적절한 프로젝트와 연결할지 결정할 수 있도록 할 수 있습니다.</block>
   <block id="e54158140168d6bfda7951dabc8a0468" category="doc">NetApp Console 에서 AWS 자격 증명 및 권한에 대해 알아보세요</block>
   <block id="9ef43b020d41cab5808d78fdf855c429" category="section-title">초기 AWS 자격 증명</block>
   <block id="055263949ee2b6bf634a650444f9e58d" category="inline-link-macro">콘솔이 권한을 사용하는 방식을 검토하세요.</block>
@@ -1091,8 +1035,6 @@
   <block id="3f9d6d7606eb17252b87adea9b9f458c" category="list-text">ONTAP 파일 시스템용 FSx를 생성하고 관리하려면</block>
   <block id="1fba93959336f34e08c6d34d0ca68230" category="paragraph">자세한 내용은 아래 섹션을 참조하세요.</block>
   <block id="660e634b3a4b701f7ae1b606cb192b19" category="section-title">다른 AWS 계정으로 콘솔 에이전트를 사용하려면 AWS 자격 증명을 추가하세요.</block>
-  <block id="25743d3dcac2dfe95c6e899571bfccc3" category="inline-image-macro">두 개의 추가 계정을 보여주는 개념적 이미지입니다.  각각에는 IAM 정책이 있으며, 하나는 IAM 사용자에게 연결되고 다른 하나는 IAM 역할에 연결됩니다.</block>
-  <block id="49a11e441cb19dc0d43b1d3a3794d033" category="paragraph"><block ref="49a11e441cb19dc0d43b1d3a3794d033" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f1e73f0a47d8521aadcfb5742670657b" category="paragraph">예를 들어, 새로운 Cloud Volumes ONTAP 시스템을 생성할 때 자격 증명 간에 전환할 수 있습니다.</block>
   <block id="21eadec2055a6f0a03fad1207bdeece7" category="inline-image-macro">세부 정보 및 자격 증명 페이지에서 계정 전환을 선택한 후 클라우드 공급자 계정 간에 선택하는 모습을 보여주는 스크린샷입니다.</block>
   <block id="670a8a47b7b3908f997fce0320ebba4d" category="paragraph"><block ref="516be10b96635b1f3aefce4dcd4540dd" category="inline-image-macro-rx" type="image"></block></block>
@@ -1152,8 +1094,6 @@
   <block id="87201b9d2d1782996b39bbbe3547cd00" category="section-title">추가 Azure 자격 증명</block>
   <block id="b63eb36e7e2e258bb1104cee2cd67c79" category="inline-link-macro">Microsoft Entra ID에서 서비스 주체 만들기 및 설정</block>
   <block id="f1670184aa6276ac8e4f4912d0a7301a" category="paragraph">콘솔에서 다른 Azure 자격 증명을 사용하려면 다음을 통해 필요한 권한을 부여해야 합니다.<block ref="45c7e71be639d18293cd100d389b6dc3" category="inline-link-macro-rx"></block> 각 Azure 계정에 대해.  다음 이미지는 서비스 주체와 권한을 제공하는 사용자 지정 역할이 설정된 두 개의 추가 계정을 보여줍니다.</block>
-  <block id="21df124adba9039de035d33b17717b15" category="inline-image-macro">사용자 지정 역할과 관리 ID를 통해 권한을 받는 초기 Azure 계정과 사용자 지정 역할과 서비스 주체를 통해 권한을 받는 두 개의 추가 계정을 보여주는 개념적 이미지입니다.</block>
-  <block id="0d613716f3793197f23817b5b3a36ec3" category="paragraph"><block ref="0d613716f3793197f23817b5b3a36ec3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="41c4f1179d3acc3642596a9782001d66" category="inline-link-macro">콘솔에 계정 자격 증명을 추가합니다.</block>
   <block id="225be26a904a308465cc03d3c32bef0d" category="paragraph">그러면 당신은<block ref="207228f9151d3df069fb7f16dfb3c529" category="inline-link-macro-rx"></block> AD 서비스 주체에 대한 세부 정보를 제공합니다.</block>
   <block id="451c5548be4e9e7bdee0e30d3122050a" category="paragraph"><block ref="5df7abb03e9cd39c0665b677aaa45ef4" category="inline-image-macro-rx" type="image"></block></block>
@@ -1198,42 +1138,20 @@
   <block id="1833b862078dbb4dc1ea1c935b25b75f" category="list-text"><block ref="1833b862078dbb4dc1ea1c935b25b75f" category="inline-link-macro-rx"></block></block>
   <block id="4ec920ccbe2fc417ccd7dcd957eb9653" category="inline-link">Google Cloud에 Cloud Volumes ONTAP 배포하고 프로젝트를 선택하는 방법을 알아보세요.</block>
   <block id="eae530fcdecfaf8ee890d4814cafd997" category="list-text"><block ref="eae530fcdecfaf8ee890d4814cafd997" category="inline-link-rx"></block></block>
-  <block id="1ffac481825810aa6d8bc2bbd6e9f0d5" category="summary">_콘솔 에이전트_는 클라우드 네트워크나 온프레미스 네트워크에서 실행되는 NetApp 소프트웨어입니다.  콘솔 에이전트를 사용하여 NetApp Console 서비스를 스토리지 환경에 연결합니다.</block>
   <block id="53101ed6c57b4f1b9f3eb58eb938c2b1" category="doc">NetApp Console 에이전트에 대해 알아보세요</block>
-  <block id="a2bc646d8356827e60828ee5d135d25a" category="paragraph">_콘솔 에이전트_는 클라우드 네트워크나 온프레미스 네트워크에서 실행됩니다.  콘솔 에이전트를 사용하여 NetApp Console 서비스를 스토리지 환경에 연결합니다.</block>
-  <block id="34dc0992630166a9ee338cb2bbcf285f" category="section-title">콘솔 에이전트 없이 할 수 있는 일</block>
-  <block id="5c3c98f86750c7b0364106f4c4c18721" category="paragraph">콘솔 에이전트를 배포하지 않아도 일부 콘솔 기능과 서비스를 사용할 수 있습니다.</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">Amazon FSx for NetApp ONTAP</block>
-  <block id="2e25b2633a61a7b4243d119b40c693e8" category="inline-link">콘솔 에이전트 또는 링크가 필요한 작업을 알아보세요.</block>
-  <block id="f2a98b63d5b6deacc3ab5c090502f1f2" category="paragraph">일부 작업에는 콘솔 에이전트 또는 NetApp 워크로드 링크가 필요합니다.<block ref="df41765196184a753d31e48b088e08b6" category="inline-link-rx"></block></block>
   <block id="8d3abfc56116d32646bce9531012ccf6" category="list-text">자동화 허브</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="list-text">Azure NetApp Files</block>
-  <block id="f991c5969c5c46c6f408fd726f910304" category="paragraph">Azure NetApp Files 관리하려면 콘솔 에이전트가 필요하지 않지만 NetApp Data Classification 사용하여 Azure NetApp Files 검사하려면 콘솔 에이전트가 필요합니다.</block>
   <block id="4b3238b2edd994dbf80a66b2fce8841e" category="list-text">NetApp Copy and Sync</block>
-  <block id="bc2098e843ff2dcfb064f6b75537efac" category="list-text">라이센스 사용량 모니터링, 구독 모니터링에는 콘솔 에이전트가 필요합니다.</block>
-  <block id="90cc27614de74bfaac946da5abcad817" category="paragraph">일반적으로 콘솔 에이전트 없이도 NetApp Console 에 라이선스를 추가할 수 있습니다.</block>
-  <block id="6a0be6d5fa404fc685fcda4dec15c177" category="paragraph">데이터가 Cloud Volumes ONTAP 시스템에 설치된 라이선스에서 나오므로, 에이전트는 Cloud Volumes ONTAP 노드 기반 라이선스를 추가해야 합니다.</block>
-  <block id="184e70c253a2ad370c338775e7482497" category="list-text">온프레미스 ONTAP 클러스터 직접 검색</block>
-  <block id="f9b71618b1d05cfcd0726a79c3f829f8" category="paragraph">온프레미스 ONTAP 클러스터를 콘솔에 추가하는 데는 콘솔 에이전트가 필요하지 않지만, 추가 콘솔 기능과 데이터 서비스를 위해서는 필요합니다.</block>
-  <block id="9b049adb8a41cc7a0f049e9ffbda62b5" category="inline-link">온프레미스 ONTAP 클러스터에 대한 검색 및 관리 옵션에 대해 자세히 알아보세요.</block>
-  <block id="557086d692ef9d1cc86a94361985a0fe" category="paragraph"><block ref="557086d692ef9d1cc86a94361985a0fe" category="inline-link-rx"></block></block>
   <block id="01ea8320c69e46ffe573d0801d9eefe1" category="list-text">NetApp 워크로드</block>
-  <block id="17adde6aed0933a9e39d1cd0883785c4" category="section-title">콘솔 에이전트가 필요한 경우</block>
-  <block id="ea7e44bae4d44c1c658ffe4ef1d40fab" category="paragraph">표준 모드에서는 콘솔에 다음을 위한 콘솔 에이전트가 필요합니다.</block>
   <block id="df583ae7ba964fd4806b55904da81813" category="list-text">알림</block>
-  <block id="234eb6bb27d592cbf06aa6537a33a380" category="list-text">Amazon FSx for ONTAP 관리 기능</block>
   <block id="d79294e72dc3584cc12c98a7a931315d" category="list-text">Amazon S3 스토리지</block>
   <block id="2b3e8f910d66604cd77f93b333670468" category="list-text">Azure Blob 저장소</block>
   <block id="cc6088539286339733631d73fb51774b" category="list-text">NetApp Backup and Recovery</block>
   <block id="604880f6f585767eee17ec85b3c76533" category="list-text">데이터 분류</block>
   <block id="19cbafc0246850c97323cac4fb786794" category="list-text">NetApp Disaster Recovery</block>
-  <block id="c7a576f5db262c0475afa4a53822979e" category="list-text">경제적 효율성 ^1^</block>
-  <block id="390e388eccc77b388b4d54d73b76f902" category="list-text">Google Cloud Storage 버킷</block>
-  <block id="016d4dd0efd43648613b0639e13ba2c7" category="list-text">NetApp 데이터 서비스와 온프레미스 ONTAP 클러스터 통합</block>
   <block id="a94a2dfcff08cd86c973716edaf32722" category="list-text">NetApp Cloud Tiering</block>
   <block id="6f267103f7f652e22e0ead9f66014cd4" category="list-text">NetApp Volume Caching</block>
-  <block id="06f4d4213c3d87db39929c4ce6ffcc0f" category="paragraph">^1^ 콘솔 에이전트 없이도 이러한 서비스에 액세스할 수 있지만, 작업을 시작하려면 콘솔 에이전트가 필요합니다.</block>
-  <block id="2f7410e0094251e63bad9225a4bd4205" category="paragraph">제한 모드에서 콘솔을 사용하려면 항상 콘솔 에이전트가 필요합니다.</block>
   <block id="9e70ee0a0c0f8a306b9fcce2746cc5c8" category="section-title">콘솔 에이전트는 항상 작동해야 합니다.</block>
   <block id="d8df9e40feabe0bd65e73cc9203b2219" category="paragraph">콘솔 에이전트는 NetApp Console 의 기본적인 부분입니다.  관련 상담원이 항상 가동되고, 업무를 처리하며, 접근 가능한지 확인하는 것은 고객 여러분의 책임입니다.  콘솔은 짧은 에이전트 중단은 처리할 수 있지만 인프라 장애는 신속하게 해결해야 합니다.</block>
   <block id="2834a9b643366c558b54d8d3426db386" category="paragraph">이 문서는 EULA에 따라 관리됩니다.  설명서에 없는 방식으로 제품을 작동하면 제품의 기능과 EULA 권리에 영향을 미칠 수 있습니다.</block>
@@ -1250,13 +1168,11 @@
   <block id="09e422c729719f602773531e14c7fdcb" category="inline-link-macro">NetApp Console 배포 모드에 대해 알아보세요</block>
   <block id="0f99c6c066f1002e098cbdaa87427745" category="paragraph"><block ref="d0fb4185dcdae7937ec99f5b30ad1a65" category="inline-link-macro-rx"></block> .</block>
   <block id="277baff1e6ebc32f068b4cb7de953e5e" category="section-title">콘솔 에이전트를 설치하는 방법</block>
-  <block id="db9101be071ebe11e7a67828afb8c886" category="paragraph">콘솔에서 직접 콘솔 에이전트를 설치하거나, 클라우드 공급업체의 마켓플레이스를 이용하거나, 자신의 Linux 호스트나 VCenter 환경에 소프트웨어를 수동으로 설치할 수 있습니다.  시작 방법은 콘솔을 표준 모드에서 사용하는지 제한 모드에서 사용하는지에 따라 달라집니다.</block>
   <block id="d0fb4185dcdae7937ec99f5b30ad1a65" category="list-text"><block ref="d0fb4185dcdae7937ec99f5b30ad1a65" category="inline-link-macro-rx"></block></block>
   <block id="22f7b8c9e3cec45bb0909cca22e4e862" category="inline-link-macro">표준 모드에서 NetApp Console 시작하기</block>
   <block id="1b04b04eae157b7a2e94f5fe3a41ed68" category="list-text"><block ref="1b04b04eae157b7a2e94f5fe3a41ed68" category="inline-link-macro-rx"></block></block>
   <block id="bb052ff727ad3405f9e377f005178fd8" category="inline-link-macro">제한 모드에서 NetApp Console 시작하기</block>
   <block id="07a84f2a895ff5384ba250bbd0694216" category="list-text"><block ref="07a84f2a895ff5384ba250bbd0694216" category="inline-link-macro-rx"></block></block>
-  <block id="51364b16802c39c0a147dcd705c784df" category="section-title">클라우드 권한</block>
   <block id="cc8f36711f6212dccee4062562263a83" category="paragraph">표준 모드에서 콘솔을 사용하는 경우 권한을 제공하는 방법은 콘솔 에이전트를 만들려는 방법에 따라 달라집니다.</block>
   <block id="235df19fd66aa61dd8174f1a6480f822" category="paragraph">권한을 설정하는 방법을 알아보려면 다음을 참조하세요.</block>
   <block id="961f8ee244937e243425632b39f7defe" category="inline-link-macro">AWS의 에이전트 설치 옵션</block>
@@ -1277,7 +1193,6 @@
   <block id="108ad88d40691c0e1197ab3eba5b6fd5" category="paragraph">이후 릴리스에서 새로운 권한이 추가되면 콘솔 에이전트 정책을 업데이트하는 것은 사용자의 책임입니다.  릴리스 노트에는 새로운 권한이 나열되어 있습니다.</block>
   <block id="6b5f02c0e240003ab735d340f52a7333" category="section-title">에이전트 업그레이드</block>
   <block id="7c1aeb8999deeb4f5ccaa49b7d44e424" category="paragraph">NetApp 기능을 추가하고 안정성을 개선하기 위해 매달 에이전트 소프트웨어를 업데이트합니다.  Cloud Volumes ONTAP 및 온프레미스 ONTAP 클러스터 관리와 같은 일부 콘솔 기능은 콘솔 에이전트 버전 및 설정에 따라 달라집니다.</block>
-  <block id="5ae32585fa310b47843d2bd6a91b4832" category="paragraph">표준 모드나 제한 모드에서는 콘솔 에이전트가 인터넷에 접속할 수 있으면 자동으로 업데이트됩니다.</block>
   <block id="28d40d49edc5d8557dfa8624f4921f55" category="section-title">운영 체제 및 VM 유지 관리</block>
   <block id="09ecb112c1af6628255a4b08c6a7cbed" category="inline-xref">콘솔 에이전트는 항상 작동해야 합니다.</block>
   <block id="2686a2ef3c47d0e0eafe183d768a5487" category="paragraph"><block ref="f653f7d16df54a3c9e88f23235c315ba" category="inline-xref-macro-rx"></block> .</block>
@@ -1336,78 +1251,18 @@
   <block id="b76c6c3c96f9fd2d4a4d8f47ff90bcb3" category="list-text"><block ref="b76c6c3c96f9fd2d4a4d8f47ff90bcb3" category="inline-link-macro-rx"></block></block>
   <block id="3f2aa4bd073d2458603c46bc293f8ade" category="inline-link-macro">SAML ID 공급자와 페더레이션 연결 설정</block>
   <block id="00aef0f14c29d451cdbf8446ce6b0b8e" category="list-text"><block ref="00aef0f14c29d451cdbf8446ce6b0b8e" category="inline-link-macro-rx"></block></block>
-  <block id="080468cc3bf22fc3af03a81a687c09f8" category="summary">NetApp Console 의 ID 및 액세스 관리(IAM)를 사용하면 조직의 리소스에 대한 액세스를 제어할 수 있습니다.</block>
   <block id="728d17e7146dcd6218a24c46a1de8943" category="doc">NetApp Console ID 및 액세스 관리에 대해 알아보세요</block>
-  <block id="88d2fb652b1708341e0fb25f72c33e7c" category="paragraph">NetApp Console 내의 IAM(ID 및 액세스 관리)을 사용하면 NetApp 리소스에 대한 액세스를 구성하고 제어할 수 있습니다.  조직의 계층 구조에 따라 리소스를 구성할 수 있습니다.  예를 들어, 지리적 위치, 사이트 또는 사업부별로 리소스를 구성할 수 있습니다.  그런 다음 계층 구조의 특정 부분에 있는 멤버에게 IAM 역할을 할당하여 계층 구조의 다른 부분에 있는 리소스에 액세스하지 못하도록 할 수 있습니다.</block>
   <block id="557e5a677a2db55310052bc62fe96998" category="inline-link-macro">콘솔 배포 모드에 대해 알아보세요</block>
-  <block id="8405362106e8a6cec493f51b335fe282" category="list-text"><block ref="8405362106e8a6cec493f51b335fe282" category="inline-link-macro-rx"></block></block>
-  <block id="76d639487fb1b996848978763a4f48b3" category="section-title">IAM 작동 방식</block>
-  <block id="079eba20aee75f3f1ce07584c0cfd5bf" category="paragraph">IAM을 사용하면 계층 구조의 특정 부분에 대한 액세스 역할을 사용자에게 할당하여 리소스 액세스 권한을 부여할 수 있습니다.  예를 들어, 5개의 리소스가 있는 프로젝트에 대해 멤버에게 폴더 또는 프로젝트 관리자 역할이 할당될 수 있습니다.</block>
-  <block id="f11f3311a89dff4cf9dfbbd01eab9de5" category="paragraph">IAM을 사용하면 다음 구성 요소를 관리할 수 있습니다.</block>
-  <block id="d209d8595b2fe961ab6003a04a35f614" category="paragraph">리소스는 계층적으로 구성됩니다.</block>
-  <block id="13282f3859807af569124a1afe5ca477" category="inline-image-macro">액세스 관리를 위한 리소스 계층 구조(조직, 폴더, 프로젝트, 리소스)를 보여주는 개념적 다이어그램입니다.</block>
-  <block id="919a61a743c246bba2996c30968a5a9e" category="paragraph"><block ref="919a61a743c246bba2996c30968a5a9e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e5c1519cd8d7472771e0a519c54ccae1" category="paragraph">_조직_은 콘솔 IAM 시스템의 최상위 수준이며 일반적으로 회사를 나타냅니다.  조직은 폴더, 프로젝트, 구성원, 역할 및 리소스로 구성됩니다.  에이전트는 조직 내의 특정 프로젝트와 연관되어 있습니다.</block>
-  <block id="d1a673947eb13f6a24d3391e4329c5be" category="paragraph">프로젝트나 다른 폴더, 또는 둘 다를 포함하도록 폴더를 구성할 수 있습니다.  이는 선택 사항입니다.</block>
-  <block id="4dca17714b7d6f905b41c25867af08ac" category="paragraph">_프로젝트_는 조직 구성원이 리소스를 관리하기 위해 *시스템* 페이지에서 액세스하는 콘솔의 작업 공간을 나타냅니다.  예를 들어, 프로젝트에는 Cloud Volumes ONTAP 시스템, 온프레미스 ONTAP 클러스터 또는 FSx for ONTAP 파일 시스템이 포함될 수 있습니다.</block>
-  <block id="d335f0c6c7c4582889ad18b13e897975" category="paragraph">_리소스_는 콘솔에서 생성하거나 발견한 시스템입니다.</block>
-  <block id="dc961b0ec9508c7ece5d2241e545258d" category="inline-xref">IAM에서 에이전트 사용에 대해 자세히 알아보세요</block>
-  <block id="9e4accfff2796f8555c64502739ce18d" category="admonition">에이전트는 두 개 이상의 프로젝트와 연관될 수도 있습니다. <block ref="9c62b344f0c4c5a47c0b67109239d190" category="inline-xref-macro-rx"></block> .</block>
-  <block id="fc684e5246159b2c02963d967d21fdff" category="paragraph">리소스를 폴더와 연결하는 옵션도 있지만, 이는 선택 사항이며 특정 사용 사례의 요구 사항을 충족합니다.</block>
   <block id="6c8d76b40d187de98318661a9cab7239" category="paragraph">_조직 관리자_는 리소스를 폴더와 연결할 수 있으므로 _폴더 또는 프로젝트 관리자_는 이를 폴더 내의 적절한 프로젝트에 연결할 수 있습니다.</block>
   <block id="13a6a98927a83ffb05bccef1ebf3e2a4" category="paragraph">리소스를 폴더와 연결해도 모든 프로젝트에서 액세스할 수 있는 것은 아닙니다. 폴더 또는 프로젝트 관리자만 볼 수 있습니다.  _폴더 또는 프로젝트 관리자_는 어떤 프로젝트가 액세스할 수 있는지 결정하고 리소스를 적절한 프로젝트와 연결합니다.</block>
-  <block id="8292dcb0cfa074e6ae26b46ddc606162" category="paragraph">각 조직에는 _조직 관리자_ 역할이 있는 사용자가 한 명 이상 포함됩니다(콘솔은 조직을 만든 사용자에게 자동으로 이 역할을 할당합니다).  조직에 다른 구성원을 추가하고 리소스 계층의 다양한 수준에 따라 다른 권한을 할당할 수 있습니다.</block>
-  <block id="f8a1d162e7dda7b8ac65995a5416eeb3" category="paragraph">조직 구성원에게 직접 권한을 부여하지 않습니다.  대신 각 멤버에게 역할을 부여합니다.  역할에는 멤버가 리소스 계층의 특정 수준에서 특정 작업을 수행할 수 있도록 하는 권한 집합이 포함되어 있습니다.</block>
-  <block id="d0a2fd44b574c80dea744b29f7095360" category="paragraph">계층 수준에서 역할을 부여하면 구성원에게 필요한 리소스와 서비스에 대한 액세스가 제한됩니다.</block>
-  <block id="7e5a81668c826cd6eb55e2a526c3b3fc" category="list-text">조직 수준에서 구성원에게 액세스 역할을 부여하면 해당 구성원은 모든 폴더, 프로젝트 및 리소스에 대한 권한을 갖게 됩니다.</block>
-  <block id="f4a866cc8d962c94d7c7fd8decdd7e6c" category="list-text">폴더 수준에서 액세스 역할을 부여하면 해당 폴더의 모든 폴더, 프로젝트 및 리소스가 해당 역할을 상속받습니다.</block>
-  <block id="34aee3ad45d37ad6cf603311eb0838fb" category="list-text">프로젝트 수준에서 액세스 역할을 부여하면 해당 프로젝트와 연결된 모든 리소스가 해당 역할을 상속받습니다.</block>
   <block id="2c2e7be4268cd14a5e106bbdd7de7669" category="section-title">액세스 역할</block>
   <block id="d1e1d436ff9ab09fa8255740cda7f298" category="paragraph">콘솔은 조직의 구성원에게 할당할 수 있는 액세스 역할을 제공합니다.</block>
-  <block id="180a151cc1c6549cc0d70497f6ef52f2" category="paragraph">_조직 관리자_가 콘솔 에이전트를 생성하면 콘솔은 해당 에이전트를 조직 및 현재 선택된 프로젝트에 자동으로 연결합니다.  _조직 관리자_는 조직 내 어디에서나 해당 에이전트에 자동으로 액세스할 수 있습니다.  하지만 조직 내에 다른 역할을 맡은 다른 구성원이 있는 경우, 해당 에이전트를 다른 프로젝트에 연결하지 않는 한 해당 구성원은 해당 에이전트가 생성된 프로젝트의 에이전트에만 액세스할 수 있습니다.</block>
-  <block id="0b35624e47f777c075433bd07405bc7b" category="paragraph">다음의 경우 다른 프로젝트에서 콘솔 에이전트를 사용할 수 있습니다.</block>
-  <block id="61aed18951cb3655f76053b824f65366" category="list-text">조직의 구성원이 기존 에이전트를 사용하여 다른 프로젝트에서 추가 시스템을 만들거나 검색할 수 있도록 허용하려고 합니다.</block>
-  <block id="75adf56287e5fede53eed009fe4bb57c" category="list-text">기존 리소스를 다른 프로젝트와 연결했으며 해당 리소스는 콘솔 에이전트에서 관리됩니다.</block>
-  <block id="7b275cfe45d5807fa2ff28352f86b675" category="paragraph">콘솔 에이전트를 사용하여 추가 프로젝트와 연결한 리소스가 발견된 경우 해당 리소스가 현재 연결된 프로젝트에도 에이전트를 연결해야 합니다. 그렇지 않으면 _조직 관리자_ 역할이 없는 구성원은 *시스템* 페이지에서 에이전트와 연결된 리소스에 액세스할 수 없습니다.</block>
-  <block id="22e4429379f26aa3a67cf79e0cf36ee5" category="paragraph">콘솔 IAM 내의 *에이전트* 페이지에서 연결을 생성할 수 있습니다.</block>
-  <block id="cb328ffeba08b23f00e4a2b11f345edd" category="list-text">콘솔 에이전트를 프로젝트와 연결</block>
-  <block id="d7b6e36e14f890cd30414dd8c36b315a" category="paragraph">콘솔 에이전트를 프로젝트와 연결하면 프로젝트를 볼 때 *시스템* 페이지에서 해당 에이전트에 액세스할 수 있습니다.</block>
-  <block id="292a4ccb006ad9eb35d4c3e0307d5d52" category="list-text">콘솔 에이전트를 폴더와 연결</block>
-  <block id="8b8aab150b57c51a433433f6e9fced92" category="paragraph">콘솔 에이전트를 폴더와 연결해도 폴더 내 모든 프로젝트에서 해당 에이전트에 자동으로 액세스할 수 있는 것은 아닙니다.  조직 구성원은 특정 프로젝트와 에이전트를 연결할 때까지 프로젝트에서 콘솔 에이전트에 액세스할 수 없습니다.</block>
-  <block id="ecbfa727d7fbe0557035d8c9b8e89ae6" category="paragraph">_조직 관리자_는 콘솔 에이전트를 폴더와 연결하여 _폴더 또는 프로젝트 관리자_가 해당 에이전트를 폴더에 있는 적절한 프로젝트와 연결할지 결정할 수 있도록 할 수 있습니다.</block>
-  <block id="0561b5e58584cfa2d9e645e47c0c3bb1" category="section-title">IAM 예시</block>
-  <block id="5f340589d07c141520bb25fe26a78177" category="paragraph">이러한 예는 조직을 설정하는 방법을 보여줍니다.</block>
-  <block id="135b3c5ddb2b53a7189302bba4295fc6" category="section-title">간단한 조직</block>
-  <block id="bc43b12884b61655079a5a16d18ad9de" category="paragraph">다음 다이어그램은 기본 프로젝트를 사용하고 폴더를 사용하지 않는 조직의 간단한 예를 보여줍니다.  한 명의 구성원이 조직 전체를 관리합니다.</block>
-  <block id="a72765d3ccd5c52417f70bed4c7b5d10" category="inline-image-macro">프로젝트, 관련 리소스, 한 명의 조직 관리자가 있는 조직을 보여주는 개념적 다이어그램입니다.</block>
-  <block id="face2518a7991fc077049ce88a451506" category="paragraph"><block ref="face2518a7991fc077049ce88a451506" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="59621237129094427f9a72a5abd1c4ab" category="section-title">고급 조직</block>
-  <block id="c6b77e1242f5c61d1b3a4fcc23ecbc5f" category="paragraph">다음 다이어그램은 폴더를 사용하여 회사의 각 지리적 위치에 대한 프로젝트를 구성하는 조직을 보여줍니다.  각 프로젝트에는 연관된 리소스 세트가 있습니다.  구성원에는 조직 관리자와 조직 내 각 폴더의 관리자가 포함됩니다.</block>
-  <block id="c42c21a7b10f03efb2158ca490037fe6" category="inline-image-macro">3개의 폴더로 구성된 조직을 보여주는 개념적 다이어그램으로, 각 폴더에는 3개의 프로젝트와 관련 리소스가 있습니다.  구성원은 4명입니다. 조직 관리자 1명과 폴더 관리자 3명입니다.</block>
-  <block id="bf82c3800cfba815226d6198ee52f743" category="paragraph"><block ref="bf82c3800cfba815226d6198ee52f743" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b6e184636b4849c22597dc9f585f903c" category="section-title">IAM으로 할 수 있는 일</block>
-  <block id="ae938f0d309c4a1db08d3c8f262b39eb" category="paragraph">다음 예에서는 IAM을 사용하여 콘솔 조직을 관리하는 방법을 설명합니다.</block>
-  <block id="8ee1b3030cf2306807b2455986fcdbb7" category="list-text">특정 멤버에게 특정 역할을 부여하여 필요한 작업만 완료할 수 있도록 합니다.</block>
-  <block id="f91eea9f01a5fb5fa77a710b4ba9c3f8" category="list-text">부서를 옮기거나 추가적인 책임이 있는 경우 구성원의 권한을 수정합니다.</block>
-  <block id="ef27124892f4f09e9c2bb90c1203ff27" category="list-text">회사를 떠난 사용자를 제거합니다.</block>
-  <block id="e1f2316dbf17a6638de690d7aa30435a" category="list-text">새로운 사업부에 NetApp 스토리지가 추가되었으므로 계층 구조에 폴더나 프로젝트를 추가하세요.</block>
-  <block id="b2cc75cf0917e7a2e3b9e5436f277bca" category="list-text">해당 리소스가 다른 팀에서 활용할 수 있는 용량을 가지고 있으므로 해당 리소스와 다른 프로젝트를 연결합니다.</block>
-  <block id="4d7877e30c207ca4005b216478fe60b7" category="list-text">회원이 접근할 수 있는 리소스를 확인하세요.</block>
-  <block id="6cb05f8d1ecb6a2e9d2feda7fc446108" category="list-text">특정 프로젝트와 관련된 멤버와 리소스를 확인하세요.</block>
   <block id="41428e1a8f5e5ef9e0277fc3516edda7" category="inline-link-macro">NetApp Console 에서 IAM 시작하기</block>
   <block id="ce33d88948928be33d0ed21e3173d5f6" category="list-text"><block ref="ce33d88948928be33d0ed21e3173d5f6" category="inline-link-macro-rx"></block></block>
-  <block id="4091566b79f546023e0b3c3dca45e391" category="inline-link-macro">NetApp Console 에서 폴더와 프로젝트를 사용하여 리소스를 구성하세요.</block>
-  <block id="ca50d057fbbad3c8ec7e5344b112803e" category="list-text"><block ref="ca50d057fbbad3c8ec7e5344b112803e" category="inline-link-macro-rx"></block></block>
   <block id="6ed38fc27f6f1161e50eaf968f5ac26a" category="inline-link-macro">NetApp Console 멤버 및 해당 권한 관리</block>
   <block id="ec180bba6d4f60fdcf634df6bbc386ce" category="list-text"><block ref="ec180bba6d4f60fdcf634df6bbc386ce" category="inline-link-macro-rx"></block></block>
-  <block id="fd345e29cb62c01ba1d4171017902879" category="inline-link-macro">NetApp Console 조직에서 리소스 계층을 관리합니다.</block>
-  <block id="471aa63a508cd0a524e051c1eee8bb18" category="list-text"><block ref="471aa63a508cd0a524e051c1eee8bb18" category="inline-link-macro-rx"></block></block>
   <block id="15f73bdf087fb0fd54c4481d4dc02d6c" category="inline-link-macro">폴더 및 프로젝트와 에이전트 연결</block>
-  <block id="58b4c1c7f9a637ac28d3e6f5fb5503dc" category="list-text"><block ref="58b4c1c7f9a637ac28d3e6f5fb5503dc" category="inline-link-macro-rx"></block></block>
-  <block id="fcf7f94bff9ad201c2ad67548361caa3" category="inline-link-macro">NetApp Console 프로젝트와 조직 간 전환</block>
-  <block id="cb4c504866718434ac51aadba7ecd536" category="list-text"><block ref="cb4c504866718434ac51aadba7ecd536" category="inline-link-macro-rx"></block></block>
-  <block id="b2e7e5223ec4cb6c91429bf7de09474b" category="inline-link-macro">NetApp Console 조직 이름 변경</block>
-  <block id="b4627a29a833ca738523505c6101b826" category="list-text"><block ref="b4627a29a833ca738523505c6101b826" category="inline-link-macro-rx"></block></block>
   <block id="01e8a182567bd2c2dcbbff70cc3ab8df" category="inline-link-macro">IAM 활동 모니터링 또는 감사</block>
   <block id="08f5de863be0cce720d83cf5f9e2325a" category="list-text"><block ref="08f5de863be0cce720d83cf5f9e2325a" category="inline-link-macro-rx"></block></block>
   <block id="f50849d7a51a2af22661c16f98df65ff" category="inline-link-macro">NetApp Console 액세스 역할</block>
@@ -1492,8 +1347,6 @@
   <block id="d96ba69951eb7ddb699d3c264ee7fa6e" category="cell">마켓플레이스 구독 및 BYOL</block>
   <block id="49aa7067a1e5b4d8f3ea23a65bb94a2e" category="paragraph">다음 섹션을 읽어 이러한 모드에 대해 자세히 알아보세요. 여기에는 어떤 NetApp Console 기능과 서비스가 지원되는지도 포함됩니다.</block>
   <block id="cc59a00ae083d792f922023c8850d35c" category="paragraph">다음 이미지는 표준 모드 배포의 예입니다.</block>
-  <block id="1700f6f559d78aa24bdb6c977e878329" category="inline-image-macro">웹 기반 콘솔, SaaS 계층, auth0 인증을 사용할 수 있는 공용 인터넷, 콘솔 에이전트가 Cloud Volumes ONTAP 실행하고 관리하는 클라우드의 가상 네트워크, 온프레미스 데이터 센터의 AFF 클러스터를 보여주는 개념적 이미지입니다.</block>
-  <block id="c7c404be9c360b8321cf141fe96f0ed3" category="paragraph"><block ref="c7c404be9c360b8321cf141fe96f0ed3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ca136a9cca838ef5c3092290e511fb42" category="paragraph">콘솔은 표준 모드에서 다음과 같이 작동합니다.</block>
   <block id="7b0c55f247d6f53c6782615b53af4619" category="list-text">아웃바운드 커뮤니케이션</block>
   <block id="c43c363ca98a3640bd064d1c0bd3a413" category="list-text">콘솔 에이전트에서 콘솔 SaaS 계층, 클라우드 공급자의 공개적으로 사용 가능한 리소스 및 일상 운영에 필수적인 기타 구성 요소로의 연결이 필요합니다.</block>
@@ -1526,8 +1379,6 @@
   <block id="e9fd7484e38200d8baa6e573d1d7294a" category="inline-link-macro">표준 모드를 시작하는 방법을 알아보세요</block>
   <block id="52599219f6b08bb2ce3fc85743943c5e" category="paragraph"><block ref="d7d87d0a148c81603b40370c84cf5979" category="inline-link-macro-rx"></block> .</block>
   <block id="88f3c518a924b9747d81192ccc7eeaeb" category="paragraph">다음 이미지는 제한 모드 배포의 예입니다.</block>
-  <block id="5c6ad751df2bb486ab60a2eaa01a789c" category="inline-image-macro">SaaS 계층과 auth0 인증을 사용할 수 있는 공용 인터넷, 콘솔 에이전트가 실행되어 웹 기반 콘솔에 대한 액세스를 제공하는 클라우드의 가상 네트워크, 온프레미스 데이터 센터의 Cloud Volumes ONTAP 및 AFF 클러스터를 관리하는 모습을 보여주는 개념적 이미지입니다.</block>
-  <block id="247b31d452bc370c193d56244d236305" category="paragraph"><block ref="247b31d452bc370c193d56244d236305" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b8302c030e9a62244d45c84ad8ce6eb8" category="paragraph">제한 모드에서 콘솔은 다음과 같이 작동합니다.</block>
   <block id="12e0780cde42b76465d8a45194d8c0f2" category="list-text">에이전트는 데이터 서비스, 소프트웨어 업그레이드, 인증 및 메타데이터 전송을 위해 콘솔 SaaS 계층에 대한 아웃바운드 연결이 필요합니다.</block>
   <block id="a932bee9dfd2d4381168cfa68eca19a8" category="paragraph">콘솔 SaaS 계층은 에이전트와의 통신을 시작하지 않습니다.  에이전트는 콘솔 SaaS 계층과의 모든 통신을 시작하여 필요에 따라 데이터를 가져오거나 푸시합니다.</block>
@@ -1624,11 +1475,7 @@
   <block id="c0e2dcb1678fc18292f1a56144d5f43a" category="paragraph">조직 내의 특정 프로젝트나 폴더에 역할을 할당하여 이를 수행할 수 있습니다.</block>
   <block id="0f5725960c303f4472d3cc7550c2fd5a" category="inline-image-macro">리소스 공유를 보여주는 다이어그램</block>
   <block id="4830e6d5d6c968f2f2908ed6acc095af" category="paragraph"><block ref="4830e6d5d6c968f2f2908ed6acc095af" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8663789040cc1ce772d464910f7dfa02" category="summary">NetApp Console 기업 규모로 온프레미스 및 클라우드 환경 전반에서 NetApp 스토리지 및 데이터 서비스를 중앙에서 관리할 수 있는 기능을 제공합니다.</block>
   <block id="b0be8ab9543f692468afd4189eda23e9" category="doc">NetApp Console 에 대해 알아보세요</block>
-  <block id="7bc83ccf5497bea26ff35d73f1bf2427" category="paragraph">NetApp Console 온프레미스 및 클라우드 환경 전반에서 NetApp 스토리지와 NetApp Data Services 엔터프라이즈급으로 중앙에서 관리하여 실시간 통찰력, 더 빠른 워크플로, 간소화된 관리를 제공하며, 높은 보안성과 규정 준수를 보장합니다.</block>
-  <block id="a844cc34d4be653e82cc15771dd9efd2" category="paragraph">스토리지 관리, 데이터 이동성, 데이터 보호, 데이터 분석 및 제어를 제공하는 서비스형(SaaS) 플랫폼으로 제공됩니다.  관리 기능은 웹 기반 콘솔과 API를 통해 제공됩니다.</block>
-  <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">특징</block>
   <block id="34af3a9c49c2c5c991ebfa2c64342ed6" category="paragraph">콘솔은 통합 데이터 서비스를 통해 하이브리드 멀티 클라우드 전반의 스토리지 관리 및 보호를 통합하여 데이터를 보호하고 최적화합니다.</block>
   <block id="7d55a867fdb967d9025d0801ef6eb458" category="section-title">중앙 집중식 스토리지 관리</block>
   <block id="6601d888a62f87cae78b273d4598403b" category="paragraph">콘솔을 사용하여 클라우드 및 온프레미스 스토리지를 검색, 배포 및 관리하세요.</block>
@@ -1640,8 +1487,6 @@
   <block id="b9c8cb06fa02abe70007fad1ae9d0b57" category="list-text">클라우드 객체 스토리지</block>
   <block id="bfd15aa26ba0ced782240c4a8b7e517e" category="section-title">스토리지 관리</block>
   <block id="0182e364824d96db33c54a813b67edca" category="paragraph">콘솔 내에서 _시스템_은 검색되거나 배포된 저장소를 나타냅니다.  NetApp 데이터 서비스와 통합하거나 볼륨을 추가하는 등 스토리지를 관리할 _시스템_을 선택할 수 있습니다.</block>
-  <block id="a8ce21090a27e3689291a21b27b1f817" category="inline-image-macro">여러 시스템을 보여주는 콘솔의 스크린샷으로, 그 중 하나가 선택되어 있으며 NetApp 데이터 서비스를 활성화하거나 *시스템 입력*을 선택하여 스토리지를 관리할 수 있는 기능을 보여줍니다.</block>
-  <block id="a40a174407ed88cfdc63249b07e3ae40" category="paragraph"><block ref="a40a174407ed88cfdc63249b07e3ae40" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3212175a9a38f1ace0526f2a09ce6c99" category="section-title">데이터를 보호, 보안 및 최적화하기 위한 통합 데이터 서비스 및 스토리지 관리</block>
   <block id="f9f008da2a17fe3a33a465a0c004c33e" category="paragraph">콘솔은 저장 공간 가용성을 보호하고 유지하기 위한 데이터 서비스를 제공합니다.</block>
   <block id="a0409ef7729969662c91fdaee22bc933" category="list-text">저장 알림</block>
@@ -1686,10 +1531,7 @@
   <block id="b5d4f8f6ade5a4fbfeb3724b7bbc0b5e" category="paragraph">일부 추가 기능과 데이터 서비스를 사용하려면 콘솔 에이전트가 필요합니다.  온프레미스와 클라우드 환경 전반에서 리소스와 프로세스를 관리할 수 있습니다.  일부 시스템(예: Cloud Volumes ONTAP)을 관리하고 일부 NetApp 데이터 서비스를 사용하려면 필요합니다.</block>
   <block id="919907c49b488683fa1ddd5c9088c12b" category="inline-link-macro">콘솔 에이전트에 대해 자세히 알아보세요</block>
   <block id="9e97ec538c2df79d1e5e48262f80e2f3" category="paragraph"><block ref="a0861367aee4f711e39ff50c5df170be" category="inline-link-macro-rx"></block> .</block>
-  <block id="05cb21b1c0958252effc11eb9d437f38" category="section-title">배포 모드</block>
-  <block id="189b4f6eadcbbd36f0feb8dc1b8e1caf" category="paragraph">NetApp NetApp Console 에 대해 두 가지 배포 모드를 제공합니다. _표준 모드_는 모든 기능을 위해 SaaS(Software as a Service) 계층을 사용하는 반면, _제한 모드_는 아웃바운드 연결을 제한합니다.</block>
   <block id="93ed0ac1db1f6b5a46cfc5e5f9034f18" category="inline-link-macro">인터넷 연결이 없는 사이트를 위한 BlueXP (비공개 모드)에 대해 알아보세요.</block>
-  <block id="d104909de4dacb114d4d06622a661f95" category="paragraph">NetApp 아웃바운드 연결이 필요 없는 사이트에 BlueXP 계속 제공합니다.  BlueXP 비공개 모드에서만 사용할 수 있습니다.<block ref="f1018912945653d0f5d1d6c88d05acfe" category="inline-link-macro-rx"></block></block>
   <block id="cf7a9a2cd5377e378f9b1405ec142a3b" category="inline-link-macro">배포 모드에 대해 자세히 알아보세요</block>
   <block id="e9dbe7d99d4ec8722dd3b33c7c526c3e" category="paragraph"><block ref="fb1800a80fb75441187032d2305f2c40" category="inline-link-macro-rx"></block> .</block>
   <block id="0b43e955bb49e08923e9b43ee20ef2b3" category="section-title">SOC 2 유형 2 인증</block>
@@ -1999,7 +1841,6 @@
   <block id="ebf2e736fadeb05a39d24aa702faf1b3" category="cell"><block ref="ebf2e736fadeb05a39d24aa702faf1b3" category="inline-link-macro-rx"></block></block>
   <block id="f2ad52479c9d7a5dc51ed3f3ab03e45a" category="cell">사용자에게 조직 내의 모든 프로젝트와 폴더에 대한 제한 없는 액세스를 허용하고, 모든 프로젝트나 폴더에 멤버를 추가하고, 명시적인 역할이 지정되지 않은 모든 작업을 수행하고 모든 데이터 서비스를 사용할 수 있도록 허용합니다.  이 역할을 가진 사용자는 폴더와 프로젝트를 만들고, 역할을 할당하고, 사용자를 추가하고, 적절한 자격 증명이 있는 경우 시스템을 관리하여 조직을 관리합니다.  이는 콘솔 에이전트를 생성할 수 있는 유일한 액세스 역할입니다.</block>
   <block id="b749e7fb3c856e9ce827dee8e365115c" category="cell"><block ref="b749e7fb3c856e9ce827dee8e365115c" category="inline-link-macro-rx"></block></block>
-  <block id="358da483c73c4b8118c411b88ef8c480" category="cell">사용자에게 할당된 프로젝트와 폴더에 대한 제한 없는 액세스를 허용합니다.  자신이 관리하는 폴더나 프로젝트에 멤버를 추가할 수 있고, 할당된 폴더나 프로젝트 내의 리소스에 대한 모든 작업을 수행하고 모든 데이터 서비스나 애플리케이션을 사용할 수 있습니다.  폴더 또는 프로젝트 관리자는 콘솔 에이전트를 생성할 수 없습니다.</block>
   <block id="e8df21ebe8cfc76c6960895bb0bc899b" category="cell"><block ref="e8df21ebe8cfc76c6960895bb0bc899b" category="inline-link-macro-rx"></block></block>
   <block id="f086bc5e806b733d57a2a45ac22134d5" category="cell">사용자가 콘솔을 사용하여 페더레이션을 만들고 관리할 수 있으며, 이를 통해 SSO(Single Sign-On)가 가능합니다.</block>
   <block id="fe0c8042406bdaec2695339b5ae04e72" category="cell"><block ref="fe0c8042406bdaec2695339b5ae04e72" category="inline-link-macro-rx"></block></block>
@@ -2626,9 +2467,6 @@
   <block id="2d3fc94cd0898448a15e6e05f4098b6f" category="inline-link-macro">AWS 권한 설정</block>
   <block id="e1ab6ce5f78b6cffa4cb98b58c75ca74" category="cell"><block ref="e1ab6ce5f78b6cffa4cb98b58c75ca74" category="inline-link-macro-rx"></block></block>
   <block id="78b382509bdd4a7b6a4640d195cfbf2a" category="cell">콘솔 에이전트에 대한 권한 제공</block>
-  <block id="c9c719cb0217b958ec8c7414fa63880a" category="inline-link-macro">콘솔 에이전트에 AWS 자격 증명 추가</block>
-  <block id="9c0558b0c2119452ada22cb61fbef4d9" category="inline-link-macro">콘솔 에이전트에 대한 AWS 권한</block>
-  <block id="5fcaed6ff7619142f6cf0442d3bfaa6b" category="cell"><block ref="5fcaed6ff7619142f6cf0442d3bfaa6b" category="inline-link-macro-rx"></block></block>
   <block id="c926e674205f7757d37d0a06a12a2b10" category="cell">NetApp Backup and Recovery 사용하여 온프레미스 ONTAP 클러스터를 Amazon S3에 백업</block>
   <block id="194ec4e4b51309967d460875197de1ae" category="cell">ONTAP 볼륨에서 백업을 활성화할 때 NetApp Backup and Recovery 특정 권한이 있는 IAM 사용자의 액세스 키와 비밀번호를 입력하라는 메시지가 표시됩니다.</block>
   <block id="ba37f89d4d4c6ea1b335169793666fbe" category="inline-link">백업을 위한 S3 권한 설정</block>
@@ -2638,7 +2476,6 @@
   <block id="421a1f316880c0380ff3114c3bf34f83" category="inline-link">IAM 역할을 직접 설정하는 방법을 알아보세요</block>
   <block id="45c54074547a6e7b96c3122cd38fa458" category="cell"><block ref="45c54074547a6e7b96c3122cd38fa458" category="inline-link-rx"></block></block>
   <block id="07914074e8936595a39fa14377c5047c" category="cell">AWS에 데이터 브로커 배포</block>
-  <block id="18a3707b00c2a06ba4d52fc010e2ac0e" category="cell">데이터 브로커를 배포하는 데 사용하는 AWS 사용자 계정에는 특정 권한이 있어야 합니다.</block>
   <block id="572539efea3b8fc37d4d9f01097ce1b1" category="inline-link">AWS에 데이터 브로커를 배포하는 데 필요한 권한</block>
   <block id="cfddb3eace2cd819afed174de216343e" category="cell"><block ref="cfddb3eace2cd819afed174de216343e" category="inline-link-rx"></block></block>
   <block id="5a4538181503849bbcd06a951c8a8e2d" category="cell">데이터 브로커에 대한 권한 제공</block>
@@ -2655,7 +2492,6 @@
   <block id="8d5c6b0c966cc9b5f51ab3ebb991e7ec" category="inline-link">FSx에 대한 AWS 자격 증명을 설정하는 방법을 알아보세요</block>
   <block id="fd5c2279fb88ee0ad3118f3be652a1a6" category="cell"><block ref="fd5c2279fb88ee0ad3118f3be652a1a6" category="inline-link-rx"></block></block>
   <block id="6bc8bd282f003afcaaf88391550efbaf" category="cell">온프레미스 ONTAP 클러스터를 Amazon S3로 계층화</block>
-  <block id="10c690a39fb5b28e51f8b6d7c7fd3552" category="cell">AWS에 대한 NetApp Cloud Tiering 활성화하면 마법사에서 액세스 키와 비밀 키를 입력하라는 메시지가 표시됩니다.  이러한 자격 증명은 ONTAP 클러스터로 전달되어 ONTAP 이 데이터를 S3 버킷에 계층화할 수 있도록 합니다.</block>
   <block id="827bb82562627531a1105788bd9826e6" category="inline-link">계층화를 위한 S3 권한 설정</block>
   <block id="5f2c172dbfc6022aa5027029dc114852" category="cell"><block ref="5f2c172dbfc6022aa5027029dc114852" category="inline-link-rx"></block></block>
   <block id="bf689424a4d3a62d9c0d40a07107c3d2" category="section-title">Azure 권한</block>
@@ -2667,7 +2503,6 @@
   <block id="610a789ea69218ae2657ee289d3ea1ab" category="paragraph">콘솔이 Azure에 콘솔 에이전트 VM을 배포하면 해당 Azure 구독 내에서 리소스와 프로세스를 관리하는 데 필요한 권한을 제공하는 사용자 지정 역할이 생성됩니다.</block>
   <block id="410f33250f13598d6849ceba7b4120a3" category="inline-link-macro">콘솔 에이전트에 Azure 자격 증명 추가</block>
   <block id="e1e6784eb91937369cc77d605f81165a" category="paragraph">마켓플레이스에서 콘솔 에이전트를 시작하거나 콘솔 에이전트를 수동으로 설치하거나 사용자 지정 역할을 직접 설정해야 합니다.<block ref="b386d5f716662b44565e96428cb16fbd" category="inline-link-macro-rx"></block> .</block>
-  <block id="bcfaa2da0752134728f286af2b223842" category="paragraph">이후 릴리스에서 새로운 권한이 추가되므로 정책이 최신 상태인지 확인해야 합니다.</block>
   <block id="8c605586e9435454b7e63325e36fa996" category="inline-link-macro">콘솔 에이전트에 대한 Azure 권한</block>
   <block id="0f1b892db46ff16e97b0f8d8338ef138" category="paragraph"><block ref="0f1b892db46ff16e97b0f8d8338ef138" category="inline-link-macro-rx"></block></block>
   <block id="51fa9005485af9016610af9875c0e913" category="cell">Cloud Volumes ONTAP Azure Blob 스토리지에 백업</block>
@@ -2677,7 +2512,6 @@
   <block id="8625ed737cea7841c422023f4e27bc1d" category="inline-link">백업 및 복구를 사용하여 Cloud Volumes ONTAP 데이터를 Azure Blob 스토리지에 백업합니다.</block>
   <block id="19aa170b6eb2d116be230ed7b485bbe6" category="list-text"><block ref="19aa170b6eb2d116be230ed7b485bbe6" category="inline-link-rx"></block></block>
   <block id="f66493a5c1b72a6a6a675e1d79371789" category="cell">온프레미스 ONTAP 클러스터를 Azure Blob Storage에 백업</block>
-  <block id="df8a92294eabcce5e6356671d915d447" category="cell">NetApp Backup and Recovery 사용하여 온프레미스 ONTAP 클러스터를 백업하는 경우 "검색 및 복원" 기능을 사용하려면 콘솔 에이전트에 권한을 추가해야 합니다.</block>
   <block id="957901780fae6c72beed34248e8e252d" category="inline-link">백업 및 복구를 사용하여 온-프레미스 ONTAP 데이터를 Azure Blob 저장소에 백업합니다.</block>
   <block id="651492a6900c9cc9941c3dd88935a740" category="cell"><block ref="651492a6900c9cc9941c3dd88935a740" category="inline-link-rx"></block></block>
   <block id="2647d0cabcc3f6f95c50e907a499a04c" category="section-title">NetApp 복사 및 동기화</block>
@@ -2952,8 +2786,6 @@
   <block id="6e95efa08c25f0af7a47ce778b6734b5" category="section-title">서비스 주체를 사용하여 Azure 권한 부여</block>
   <block id="a06070c99bdaf961ed7ad071a020fa3b" category="paragraph">Azure에서 작업을 수행하려면 콘솔에 권한이 필요합니다.  Microsoft Entra ID에서 서비스 주체를 만들고 설정하고 콘솔에 필요한 Azure 자격 증명을 얻어 Azure 계정에 필요한 권한을 부여할 수 있습니다.</block>
   <block id="58dd89cf40cb35c7db016a8034997010" category="paragraph">다음 이미지는 콘솔이 Azure에서 작업을 수행하기 위한 권한을 얻는 방법을 보여줍니다.  하나 이상의 Azure 구독에 연결된 서비스 주체 개체는 Microsoft Entra ID의 콘솔을 나타내며 필요한 권한을 허용하는 사용자 지정 역할에 할당됩니다.</block>
-  <block id="2696fa794fd6dbc8ce1bfa48d130afda" category="inline-image-macro">API 호출을 하기 전에 콘솔이 Microsoft Entra ID로부터 인증 및 권한을 얻는 모습을 보여주는 개념적 이미지입니다.  Active Directory에서 콘솔 역할은 권한을 정의합니다.  이는 하나 이상의 Azure 구독과 Cloud Manger 애플리케이션을 나타내는 서비스 주체 개체에 연결됩니다.</block>
-  <block id="2a61a7e0fe7c15660322ffb9d88588d0" category="paragraph"><block ref="2a61a7e0fe7c15660322ffb9d88588d0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f2ef9d77d1510f334154dfe7d165c04f" category="list-text"><block ref="f6c5720bdbe1f9f8e6fbf04de7a942ac" category="inline-xref-macro-rx"></block> .</block>
   <block id="b5cf760d7a6af85b245fd69703dbf615" category="list-text"><block ref="043a4d29eb639fbbd1f56826dde09f8f" category="inline-xref-macro-rx"></block> .</block>
   <block id="a7fa3c1cd24012fd30c1c780e76ed243" category="list-text"><block ref="64c971bf921f5a3e2106b2880ac38406" category="inline-xref-macro-rx"></block> .</block>
@@ -3160,25 +2992,10 @@
   <block id="c569dd49f93a05d537d61130ed43e6e9" category="list-text">옵션을 활성화하려면 확인란을 선택한 다음 *저장*을 선택하세요.</block>
   <block id="d03af09bc0729475142a25d2101f89cb" category="summary">NetApp Console 처음 사용하는 경우 콘솔 어시스턴트가 초기 설정 과정을 안내합니다.  도우미를 사용하면 NetApp 지원 사이트(NSS) 계정을 추가하고, 콘솔 에이전트를 추가하고, 클러스터를 추가하고, 라이선스나 구독을 추가하는 작업을 쉽게 수행할 수 있어 데이터 관리를 쉽게 시작할 수 있습니다.</block>
   <block id="d87d84551cb844b0885926102e010a21" category="doc">NetApp Console 어시스턴트를 사용하여 시작하세요</block>
-  <block id="353de4ac300e65b2fec1e023d43775e8" category="paragraph">조직 관리자 역할로 NetApp Console 처음 사용하는 경우 콘솔 도우미를 사용하여 초기 설정 프로세스를 안내받을 수 있습니다.  도우미를 사용하면 NetApp 지원 사이트(NSS) 계정을 추가하고, 콘솔 에이전트를 추가하고, 클러스터를 추가하고, 라이선스나 구독을 추가하는 작업을 쉽게 수행할 수 있어 데이터 관리를 쉽게 시작할 수 있습니다.</block>
   <block id="8cef8f584fd9250404884341b9d1faf9" category="section-title">콘솔 어시스턴트에 액세스하는 데 필요한 역할</block>
   <block id="62e7589e6fbf937c65e401243a7b18fc" category="paragraph">콘솔 어시스턴트는 조직 관리자 역할이 있는 사용자만 사용할 수 있습니다.</block>
-  <block id="3f8d156ec79d1ba58a6edcc11b513c8f" category="section-title">콘솔 어시스턴트는 언제 나타나나요?</block>
-  <block id="b849ed2934d21e42ae7ade5deab5eb71" category="paragraph">콘솔 어시스턴트는 필수 설정 작업이 완료될 때까지 NetApp Console 홈페이지에서 사용할 수 있습니다.</block>
-  <block id="66e107092fbbaa7674c253527698105d" category="paragraph">도우미를 사용하여 다음과 같은 작업을 완료하세요. 이 중 일부는 필수입니다.</block>
   <block id="63cc3bd9a1d39c996544d35459a3e83f" category="list-text">NetApp 지원 사이트(NSS) 계정을 추가합니다.</block>
-  <block id="9a1d2c3a232f3692f2db1f53e2ff513f" category="list-text">콘솔 에이전트를 배포하여 스토리지 공간에 연결합니다(필수 단계).</block>
-  <block id="2999351f71503eb3b6d48edab88260fd" category="list-text">클러스터를 추가하거나 검색하여 시스템을 관리합니다(필수 단계).</block>
   <block id="eda3fd992dc421b5ecf21b005442d1e7" category="list-text">마켓플레이스 구독이나 PAYGO 라이선스를 추가합니다.</block>
-  <block id="54b1f34b39c971ce20ffd13604bb074c" category="list-text">오픈 데이터 서비스 링크.</block>
-  <block id="e2109b57fa6348f346526f55a48f78ba" category="section-title">콘솔 어시스턴트 활성화</block>
-  <block id="1d4f06583c930c65d01139af412243e9" category="paragraph">기본적으로 NetApp Console 조직 관리자 역할이 있는 신규 사용자를 위해 홈페이지에 콘솔 도우미를 표시합니다.</block>
-  <block id="0261c21f37275db55da37598552a89dc" category="admonition">본인이나 다른 사람이 필수 항목을 완료한 후에만 도우미를 직접 해고할 수 있습니다.  필수 항목을 완료하면 조직의 모든 사용자에 대한 도우미가 해제되고 다시 나타나지 않습니다.</block>
-  <block id="beb8b9e8503d0cddbe7c900d24ead8cd" category="section-title">콘솔 어시스턴트를 사용하여 시작하세요</block>
-  <block id="67cd761b7682bdb0c49c488e0f4f66f5" category="paragraph">콘솔 어시스턴트는 다음 작업을 통해 NetApp Console 환경을 설정하는 과정을 안내합니다.</block>
-  <block id="0f2d8c8746eb76dda55a87c37bf8f14a" category="list-text">온프레미스 또는 클라우드에서 콘솔 에이전트를 배포하여 스토리지 공간에 연결합니다.  수동으로 배포하거나 OVA를 다운로드하여 배포할 수 있습니다.  이 단계는 필수입니다.</block>
-  <block id="c257e840ff1ccd2003959f24bf40a4d2" category="list-text">클러스터를 추가하거나 검색하여 시스템을 관리합니다.  이 단계는 필수입니다.</block>
-  <block id="97f1d4158178271a52111e6b3daa25f3" category="list-text">NetApp 데이터 서비스에 대해 자세히 알아보세요.</block>
   <block id="51aed162f3c6042839d754cf42646aba" category="summary">NetApp Console 내에서 홈페이지에서 메트릭을 볼 수 있습니다.</block>
   <block id="67cd51096613271a527ad4c74859b513" category="doc">NetApp Console 홈페이지에서 메트릭 보기</block>
   <block id="1f466765e1b1ec24319b452d85efe642" category="paragraph">저장소의 상태를 모니터링하면 저장소 보호에 문제가 있는 경우 이를 인지하고 이를 해결하기 위한 조치를 취할 수 있습니다.  NetApp Console 홈페이지를 사용하면 NetApp Backup and Recovery 에서 수행한 백업 및 복원 상태를 볼 수 있으며, NetApp Ransomware Resilience 에서 표시된 대로 랜섬웨어 공격 위험이 있거나 보호되는 워크로드 수를 볼 수 있습니다.  개별 클러스터와 Cloud Volumes ONTAP 의 스토리지 용량, ONTAP 알림, 클러스터 또는 Cloud Volumes ONTAP 시스템당 스토리지 성능 용량, 보유한 다양한 유형의 라이선스 등을 검토할 수 있습니다.</block>
@@ -3332,9 +3149,7 @@
   <block id="ba953e551c9ecc7acec5e18af7b8cd22" category="paragraph">NetApp Console 에서 페더레이션을 관리할 수 있습니다.  이 기능을 비활성화하고, 만료된 자격 증명을 업데이트하고, 더 이상 필요하지 않으면 비활성화할 수 있습니다.</block>
   <block id="6ead1a7fe0f07609f377bd234facc0ef" category="inline-link-macro">연방을 가져오는 방법을 알아보세요</block>
   <block id="fc29dd2df36c6f92f02b69ad5460a804" category="admonition">NetApp Cloud Central을 사용하여 페더레이션을 구성한 경우 *페더레이션* 페이지를 통해 가져와서 콘솔에서 관리하세요.<block ref="57d57f1ec815a326ebb31008786ac229" category="inline-link-macro-rx"></block></block>
-  <block id="22ae8cdedea46c7c71a0f34e66a726f1" category="paragraph">기존 페더레이션에 검증된 도메인을 추가할 수도 있는데, 이를 통해 페더레이션 연결에 여러 도메인을 사용할 수 있습니다.</block>
   <block id="f18af734247953cdba78d6c868dcac9a" category="inline-link-macro">NetApp Console 에서 작업 모니터링에 대해 자세히 알아보세요.</block>
-  <block id="ba62bfb16bdbe93296e3748cf258d5d8" category="admonition">페더레이션 활성화, 비활성화, 업데이트 등의 페더레이션 관리 이벤트가 타임라인에 표시됩니다.<block ref="2aa37a4e40a079c9408b3b80517b92fa" category="inline-link-macro-rx"></block></block>
   <block id="70428325999b48bdeb21b0cdde9e5656" category="section-title">연합 활성화</block>
   <block id="1f979d105f20c2f806605c287fb09d85" category="paragraph">연합을 생성했지만 활성화되지 않은 경우, *연합* 페이지를 통해 활성화할 수 있습니다.  페더레이션을 활성화하면 페더레이션에 연결된 사용자가 회사 자격 증명을 사용하여 콘솔에 로그인할 수 있습니다.  연합을 활성화하기 전에 연합을 성공적으로 생성하고 테스트하세요.</block>
   <block id="af4be6fc4403cc728a8d4fd4f3f9bf83" category="list-text">작업 메뉴를 선택하세요<block ref="be3f2325aec41f7d51bd119595280fab" category="inline-image-macro-rx" type="image"></block> 활성화하려는 페더레이션 옆에 있는 *활성화*를 선택합니다.</block>
@@ -3480,11 +3295,7 @@
   <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*사건 종결*: 사건을 종결하는 이유를 자세히 입력하고 *사건 종결*을 선택하세요.</block>
   <block id="3a466826add50c0d11b1af2f3a6f205b" category="summary">조직의 구성원이 다른 프로젝트에서 콘솔 에이전트를 사용해야 하는 경우 해당 콘솔 에이전트를 해당 프로젝트와 연결해야 합니다.</block>
   <block id="604b1e0e127703c0aac25f4d3b41ca32" category="doc">콘솔 에이전트를 다른 폴더 및 프로젝트와 연결합니다.</block>
-  <block id="3d79cee328fb60e08f1baec96bc0b245" category="paragraph">_조직 관리자_가 콘솔 에이전트를 생성하면 콘솔 에이전트는 조직 내에서 현재 선택된 프로젝트와 자동으로 연결됩니다.  _조직 관리자_ 역할을 가진 사람은 조직 내 어디에서나 해당 콘솔 에이전트에 액세스할 수 있습니다.  조직의 다른 구성원은 해당 콘솔 에이전트를 다른 프로젝트와 연결하지 않는 한, 해당 콘솔 에이전트가 생성된 프로젝트의 콘솔 에이전트에만 액세스할 수 있습니다.</block>
-  <block id="f9b40aef917036a67168f93e72e934ae" category="inline-link-macro">Identity and Access를 사용하여 콘솔 에이전트 사용에 대해 알아보세요.</block>
-  <block id="e8b08b08780a84ed7e1857ed55d272fe" category="paragraph">콘솔 에이전트 연결이 어떻게 작동하는지 검토하세요. <block ref="17f629c1b89232701064739c047ad5dd" category="inline-link-macro-rx"></block> .</block>
   <block id="6955c430a5d86c9667f05d296c1693d4" category="inline-link-macro">_폴더 또는 프로젝트 관리자_가 완료할 수 있는 작업에 대해 자세히 알아보세요.</block>
-  <block id="69495461d46af3256edcb3d822fba6a9" category="paragraph">_폴더 또는 프로젝트 관리자_는 *에이전트* 페이지에서 모든 콘솔 에이전트를 볼 수 있지만, 콘솔 에이전트를 해당 권한이 있는 폴더 및 프로젝트에만 연결할 수 있습니다. <block ref="c691e2b9b4224ed90bb4f1f11059b372" category="inline-link-macro-rx"></block> .</block>
   <block id="79a2660261144427a97767c88661ef7a" category="list-text">*관리 &gt; ID 및 액세스* &gt; *에이전트*를 선택합니다.</block>
   <block id="a529344e6caf745d7286ce181133d987" category="list-text">표에서 연결하려는 콘솔 에이전트를 찾으세요.</block>
   <block id="bc10bf1996aa6f35549e32f7bd090043" category="paragraph">표 위의 검색을 사용하여 특정 콘솔 에이전트를 찾거나 리소스 계층 구조로 표를 필터링하세요.</block>
@@ -3512,14 +3323,12 @@
   <block id="a27e2b8a6be7b119af3800fb970ed3db" category="summary">NetApp Console 에서 ID 및 액세스 관리를 시작하려면 조직의 계층 구조를 사용자 지정하고, 추가 구성원을 추가하고, 리소스를 추가하거나 검색하고, 해당 리소스를 프로젝트와 연결합니다.</block>
   <block id="47bacd4194e86b90323ba31bf380b83d" category="doc">NetApp Console 에서 ID 및 액세스 시작하기</block>
   <block id="d417a89f8b21634545227f1b0d709411" category="paragraph">NetApp Console 에 가입하면 새 조직을 만들라는 메시지가 표시됩니다.  조직에는 한 명의 구성원(조직 관리자)과 한 개의 기본 프로젝트가 포함됩니다.  비즈니스 요구 사항에 맞게 ID 및 액세스 관리(IAM)를 설정하려면 조직의 계층 구조를 사용자 지정하고, 추가 구성원을 추가하고, 리소스를 추가하거나 검색하고, 계층 구조 전반에 걸쳐 해당 리소스를 연결해야 합니다.</block>
-  <block id="82b6ac73919b1688c48b6dada131ca75" category="paragraph">전체 조직의 ID와 액세스를 관리하려면 *조직 관리자* 권한이 있어야 합니다.  *폴더 또는 프로젝트 관리자* 권한이 있는 경우, 권한이 있는 폴더와 프로젝트만 관리할 수 있습니다.</block>
   <block id="bf68d30e1bc63322cf5255688ebb2637" category="paragraph">새로운 조직을 설정하려면 다음 단계를 따르세요.  순서는 조직의 요구 사항에 따라 달라질 수 있습니다.</block>
   <block id="4e7ef180350510bb1b5495edc59a540f" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>기본 프로젝트를 편집하거나 조직의 계층 구조에 추가하세요.</block>
   <block id="c10c892886acddf2e2cadd07adf17f76" category="paragraph">기본 프로젝트를 사용하거나 비즈니스 계층 구조에 맞는 추가 프로젝트와 폴더를 만드세요.</block>
   <block id="3a55ab4fb3114696e0b9c8d3786a3a95" category="inline-link-macro">폴더와 프로젝트를 사용하여 리소스를 구성하는 방법을 알아보세요.</block>
   <block id="3d19bf548c854ffd6c0292d1875e0edd" category="paragraph"><block ref="968e8791737599307dd67fcbe92e9cbd" category="inline-link-macro-rx"></block> .</block>
   <block id="9fea0b15c1b7bd94f7011cdc6e6829b3" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>귀하의 조직과 회원을 연결하세요</block>
-  <block id="5f0c1ea8d372a78f97a32424761815a8" category="paragraph">사용자 계정을 조직에 연결하고 권한을 할당합니다.  조직에 서비스 계정을 추가하는 옵션도 있습니다.</block>
   <block id="9ec5c0ba9365bb27b016a700955f883d" category="inline-link-macro">멤버와 멤버의 권한을 관리하는 방법을 알아보세요</block>
   <block id="2d9d027ed40d94b5797f8ff2eac12474" category="paragraph"><block ref="20fed5a6fd937b8ae02cbbc8c36e0fcb" category="inline-link-macro-rx"></block> .</block>
   <block id="369419be6c2d63174cdf720283757d9b" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>리소스 추가 또는 검색</block>
@@ -3541,25 +3350,15 @@
   <block id="e2a0d9cb668e6b8456f193f9e7481e9e" category="list-text"><block ref="e2a0d9cb668e6b8456f193f9e7481e9e" category="inline-link-macro-rx"></block></block>
   <block id="d74a08d7ee858b57e9e95937c86453c6" category="inline-link">ID 및 액세스를 위한 API에 대해 알아보세요</block>
   <block id="51ddea41addd6afba49a3f8917e6dd1c" category="list-text"><block ref="51ddea41addd6afba49a3f8917e6dd1c" category="inline-link-rx"></block></block>
-  <block id="6b2ba5a58459a38337e4a785867d2123" category="summary">NetApp Console 내에서 ID 및 액세스 관리를 사용하면 폴더와 프로젝트를 사용하여 완전한 리소스 계층을 표현할 수 있습니다.</block>
-  <block id="c91d4274dbc95093979f44d9158f63c4" category="doc">폴더와 프로젝트를 사용하여 NetApp Console 리소스를 구성하세요.</block>
-  <block id="6dca94e5f8ef4f7534b19b4528884acb" category="paragraph">NetApp Console 내에서 프로젝트와 폴더를 사용하여 NetApp 리소스를 구성합니다.  _프로젝트_는 조직 구성원이 _리소스_(예: Cloud Volumes ONTAP 시스템)를 관리하기 위해 액세스하는 콘솔의 작업 공간을 나타냅니다.  _폴더_는 관련된 프로젝트를 함께 그룹화합니다.  리소스를 폴더와 프로젝트로 구성한 후 조직 구성원에게 특정 폴더와 프로젝트에 대한 권한을 부여하여 리소스에 대한 세부적인 액세스 권한을 부여할 수 있습니다.</block>
   <block id="c08b7d4448e95633b73e2495389e853c" category="section-title">폴더 또는 프로젝트 추가</block>
   <block id="8b2ab7e3ad5d97cdc07606024ad7cd90" category="list-text">*조직*을 선택하세요.</block>
   <block id="54f6cd3aa5e387ea27f8d46fcd265b0f" category="list-text">*조직* 페이지에서 *폴더 또는 프로젝트 추가*를 선택합니다.</block>
   <block id="0bb9526fc793356f11cea651032b1b15" category="list-text">*폴더* 또는 *프로젝트*를 선택하세요.</block>
-  <block id="f46059ba82cb53e4af025ce918760999" category="list-text">*리소스*: 이 폴더나 프로젝트와 연결할 리소스를 선택하세요.</block>
-  <block id="3c3738a24f68869d5cec5d24654be31c" category="paragraph">상위 폴더나 프로젝트와 연관된 리소스를 선택할 수 있습니다.</block>
-  <block id="2aa8f2be43810963811ccc42047d868e" category="inline-link-macro">리소스를 폴더와 연결할 시기 알아보기</block>
-  <block id="1cfaf9081db0e3182d27f586bb481603" category="paragraph"><block ref="9b735c42d80f104cecdf7ab600a203a6" category="inline-link-macro-rx"></block> .</block>
-  <block id="8bb3c5dc86a399d0babf2eb49831e5ec" category="list-text">*액세스*: 리소스 계층 구조에 이미 정의된 기존 권한에 따라 폴더 또는 프로젝트에 액세스할 수 있는 멤버를 확인합니다.</block>
   <block id="7f394af8afb3598061eec3ed6197180d" category="section-title">폴더 또는 프로젝트 이름 바꾸기</block>
-  <block id="f8ca84129dded5d2d753c0d0cc1ddea1" category="paragraph">필요한 경우 폴더와 프로젝트의 이름을 변경할 수 있습니다.</block>
   <block id="f53392d049b9dddff4ba55ad74c96588" category="inline-image-macro">세 개의 점이 있는 아이콘</block>
   <block id="0ae32f0f3a313260aebd33e0703d5276" category="list-text">*조직* 페이지에서 표의 프로젝트나 폴더로 이동하여 다음을 선택합니다.<block ref="e85cc783c74f9ef35cfeeca99fcaf6f6" category="inline-image-macro-rx" type="image"></block> 그런 다음 *폴더 편집* 또는 *프로젝트 편집*을 선택합니다.</block>
   <block id="ec4b36b02d2682a0624b6df463ee2789" category="list-text">*편집* 페이지에서 새 이름을 입력하고 *적용*을 선택합니다.</block>
   <block id="03b976867f3d4bd64ebf2dde3b296e4d" category="section-title">폴더 또는 프로젝트 삭제</block>
-  <block id="486b799bb85b3d2fe9d51e27f973ebbf" category="paragraph">더 이상 필요하지 않은 폴더와 프로젝트를 삭제하세요.</block>
   <block id="42f2baba648ca8f4aea79acfaf1465c8" category="list-text">*조직* 페이지에서 표의 프로젝트나 폴더로 이동하여 다음을 선택합니다.<block ref="e85cc783c74f9ef35cfeeca99fcaf6f6" category="inline-image-macro-rx" type="image"></block> 그런 다음 *삭제*를 선택하세요.</block>
   <block id="48a726f3d57687547ef8fb70fab0c713" category="list-text">폴더나 프로젝트를 삭제할지 확인하세요.</block>
   <block id="7ef08e2a2795e0ebd33ca241791da34d" category="section-title">폴더 또는 프로젝트와 관련된 리소스 보기</block>
@@ -3571,11 +3370,9 @@
   <block id="a470fed0aa4603c3c8d460c4028252f1" category="list-text">연관된 리소스를 보려면 *리소스*를 선택하세요.  표에서 *상태* 열은 폴더나 프로젝트와 연관된 리소스를 식별합니다.</block>
   <block id="c2fdbd86cd719dffbb80161af27b0ec9" category="inline-image-macro">프로젝트에 연결하거나 연결 해제할 수 있는 사용 가능한 리소스를 보여주는 프로젝트 편집 페이지의 스크린샷입니다.</block>
   <block id="65381685a85e45e94ee53dbceff322ff" category="paragraph"><block ref="65381685a85e45e94ee53dbceff322ff" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="189b8907a7ab6c4c7b1ea92510e40d70" category="paragraph">폴더 또는 프로젝트에 대한 권한이 있는 멤버는 연관된 리소스에 액세스할 수 있습니다.</block>
   <block id="0727cfa5c59f7b7114ac7246e406611c" category="list-text">*편집* 페이지에서 *리소스*를 선택합니다.</block>
   <block id="d66e1bd376f74d0703fc72b368b92cd7" category="paragraph">표에서 *상태* 열은 폴더나 프로젝트와 연관된 리소스를 식별합니다.</block>
   <block id="95e3e0534ba1d2354c42f80be5302007" category="list-text">연결하거나 연결 해제할 리소스를 선택하세요.</block>
-  <block id="77132bcd63b33103ab4d954f60736e06" category="list-text">선택한 리소스에 따라 *프로젝트와 연결* 또는 *프로젝트와 연결 해제*를 선택합니다.</block>
   <block id="152ff89b1af4f8995e50a4b8f158db52" category="inline-image-macro">현재 연결되어 있지 않은 리소스를 선택한 후 사용할 수 있는 리소스 연결 옵션을 보여주는 프로젝트 편집 페이지의 스크린샷입니다.</block>
   <block id="883f9a97670aa2ea1a29d0163ef97be1" category="paragraph"><block ref="883f9a97670aa2ea1a29d0163ef97be1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e3621d23b92254c73b3a713d227a66f5" category="section-title">폴더 또는 프로젝트와 연관된 멤버 보기</block>
@@ -3584,8 +3381,6 @@
   <block id="e537768f43901c1791172250c6c08115" category="paragraph"><block ref="e537768f43901c1791172250c6c08115" category="inline-image-macro-rx" type="image"></block></block>
   <block id="19df46354fac1ffd06065f8388377f84" category="section-title">폴더 또는 프로젝트에 대한 멤버 액세스 수정</block>
   <block id="f676fbba085923546a37baf94ce6784b" category="inline-link-macro">회원 페이지에서 권한 관리</block>
-  <block id="6774afc9942c8dcab2e06828e8f199cb" category="inline-link-macro">역할 상속에 대해 자세히 알아보세요</block>
-  <block id="8945f05b50a19ebe83ee85e629a09120" category="paragraph"><block ref="e2e11ae218588663759cb10a40da4876" category="inline-link-macro-rx"></block> .</block>
   <block id="2bd6967deb6b9eb3d79e794bad318fb4" category="list-text">*편집* 페이지에서 *액세스*를 선택하면 선택한 폴더나 프로젝트에 액세스할 수 있는 멤버 목록을 볼 수 있습니다.</block>
   <block id="904a2691210bbfe6dfc1b17db516d71c" category="list-text">멤버 접근 권한 수정:</block>
   <block id="b49630790a232696bd0f62fa51014e55" category="list-text">*멤버 추가*: 폴더나 프로젝트에 추가하려는 멤버를 선택하고 역할을 할당합니다.</block>
@@ -3597,56 +3392,27 @@
   <block id="0d1eeacefa3d24f7c6debacd39a43d19" category="inline-link">ID 및 액세스 API에 대해 알아보세요</block>
   <block id="a580f203efb1da76755f79253a21d96f" category="list-text"><block ref="a580f203efb1da76755f79253a21d96f" category="inline-link-rx"></block></block>
   <block id="0574e6792e501b2d7f486dd56c08812e" category="summary">조직의 리소스 계층 구조의 다양한 수준에서 권한을 제공하기 위해 조직의 구성원을 관리합니다.</block>
-  <block id="b3977944ab3f32dc0aa6da440a2a0fd6" category="doc">NetApp Console 에 멤버 및 서비스 계정 추가</block>
-  <block id="d2729cf62f219b942e9e38ba9c0da3f4" category="paragraph">콘솔 내에서 조직에 사용자와 서비스 계정을 추가하고 리소스 계층 구조에서 하나 이상의 역할을 할당할 수 있습니다.  _역할_에는 멤버(사용자 또는 서비스 계정)가 리소스 계층의 특정 수준에서 특정 작업을 수행할 수 있도록 하는 권한 집합이 포함되어 있습니다.</block>
-  <block id="a7e18bbc5b8b0662f8ea820c5452bb8a" category="paragraph">사용자와 권한을 관리하려면 다음 역할 중 하나가 필요합니다.</block>
-  <block id="e315fd1b95b71681931eeb8955a37b50" category="paragraph">이 역할을 가진 사용자는 모든 멤버를 관리할 수 있습니다.</block>
-  <block id="f2822d5dedda5be93d6f6e298458878b" category="paragraph">이 역할을 가진 사용자는 지정된 폴더 또는 프로젝트의 멤버만 관리할 수 있습니다.</block>
-  <block id="31c547d7cd4c250a91b1a8bef306d954" category="paragraph">_폴더 또는 프로젝트 관리자_는 *멤버* 페이지에서 모든 멤버를 볼 수 있지만, 액세스 권한이 있는 폴더와 프로젝트에 대한 권한만 관리할 수 있습니다. <block ref="c691e2b9b4224ed90bb4f1f11059b372" category="inline-link-macro-rx"></block> .</block>
   <block id="e3a1bd8f43fc761424ef512d07c27a8b" category="section-title">조직에 구성원 추가</block>
-  <block id="4a6e57c6cb2443ee81ba504493e38c0d" category="paragraph">사용자를 조직에 추가하거나 역할을 할당하려면 먼저 NetApp Console 에 가입해야 합니다.  콘솔에서 직접 서비스 계정을 만들 수 있습니다.</block>
-  <block id="e882dcb285b727741daef45bc38e2d7b" category="paragraph">사용자와 해당 권한을 관리하려면 *조직 관리자* 역할이나 *폴더 또는 프로젝트 관리자* 역할이 있어야 합니다.  *폴더 또는 프로젝트 관리자* 역할이 있는 사용자는 관리자 권한이 있는 폴더 또는 프로젝트의 멤버만 관리할 수 있습니다.</block>
-  <block id="7915733bd673ab1728be20879c847f08" category="section-title">사용자 계정 추가</block>
-  <block id="61b25900484f4653d66349a1077ef91b" category="paragraph">사용자는 스스로 NetApp Console 에 가입하지만, 콘솔의 리소스에 액세스하려면 조직이나 특정 폴더 또는 프로젝트에 명시적으로 추가되어야 합니다.</block>
-  <block id="831942abb5f1b9a9ec740d02e462f971" category="list-text">사용자에게 방문을 지시합니다<block ref="d6205946f936217747639e85e1340e8f" category="inline-link-rx"></block> 가입하려면.</block>
-  <block id="8e4777899f695a88ae50392658e4266a" category="paragraph">사용자가 가입하면 *가입* 페이지를 작성하고 이메일을 확인한 후 로그인합니다. 콘솔에서 사용자에게 조직을 만들라는 메시지가 표시되면 사용자는 조직을 닫고 계정 생성을 알립니다.  그런 다음 기존 조직에 사용자를 추가할 수 있습니다.</block>
-  <block id="6f034702a5231360e52dfa4cc279ea49" category="inline-link-macro">NetApp Console 에 가입하는 방법을 알아보세요</block>
-  <block id="01a31119d3a813ace884be299c703439" category="paragraph"><block ref="a0f72a4c67ea8ac6a261dd3d8edfdf13" category="inline-link-macro-rx"></block> .</block>
   <block id="ea06d0aa9a6946f5aa264a3c85890998" category="list-text">*회원*을 선택하세요.</block>
   <block id="e85e93a55281258b0ff57a7eebf50647" category="list-text">*멤버 추가*를 선택하세요.</block>
   <block id="05533f1c305372580b0cd9f811f822da" category="list-text">*회원 유형*에서 *사용자*를 선택된 상태로 둡니다.</block>
-  <block id="ebf7a6ceca553d47e6a21df7caf226f8" category="list-text">*사용자 이메일*에는 사용자가 만든 로그인과 연결된 이메일 주소를 입력합니다.</block>
   <block id="c195c34006590ba56c537be59fbae354" category="list-text">*조직, 폴더 또는 프로젝트 선택* 섹션을 사용하여 멤버에게 권한이 부여되어야 하는 리소스 계층 수준을 선택합니다.</block>
   <block id="6cb5506ebf4b8ed9628e8a45d42029e3" category="list-text">권한이 있는 폴더와 프로젝트에서만 선택할 수 있습니다.</block>
   <block id="3ce6287f1ae7f02bd3111aa0ca0f28cb" category="list-text">조직이나 폴더를 선택하면 구성원에게 해당 조직의 모든 내용에 대한 권한이 부여됩니다.</block>
   <block id="1b9e5023b15875b95f973dcf33f7796c" category="list-text">*조직 관리자* 역할은 조직 수준에서만 할당할 수 있습니다.</block>
   <block id="864ccda1428bb8cb646ce133e0de4547" category="list-text">*카테고리를 선택한 다음* 해당 조직, 폴더 또는 프로젝트에 연결된 리소스에 대한 권한을 멤버에게 제공하는 *역할*을 선택합니다.</block>
-  <block id="ea4cc374b24c1005ebd8e491476f9b1c" category="list-text">선택 사항: 추가 역할이나 프로젝트를 선택하세요.  조직 내 추가 폴더나 프로젝트에 대한 액세스 권한을 제공하거나 선택한 영역에서 사용자에게 추가 역할을 부여하려면 *역할 추가*를 선택하고 다른 폴더나 프로젝트 또는 다른 역할 범주를 지정한 다음 역할을 선택합니다.</block>
-  <block id="86def4e3ac446d357ad611b113041c94" category="paragraph">콘솔은 사용자에게 지침이 포함된 이메일을 보냅니다.</block>
   <block id="e2bb94000e1f96727eb1486d97c66971" category="section-title">서비스 계정 추가</block>
-  <block id="aef45d07fb51a333e17b1c8c36ced315" category="paragraph">서비스 계정을 사용하여 작업을 자동화하고 콘솔 API와 안전하게 통합할 수 있습니다.  서비스 계정을 생성할 때 클라이언트 ID와 비밀번호를 사용하거나 JWT(JSON 웹 토큰) 인증을 사용하는 두 가지 인증 방법 중에서 선택합니다.  클라이언트 ID와 비밀번호 방식은 간단한 설정에 적합한 반면, JWT 인증은 자동화 또는 클라우드 기반 환경에 더 강력한 보안을 제공합니다.  귀하의 보안 요구 사항과 콘솔 사용 방법에 가장 적합한 옵션을 선택하세요.</block>
-  <block id="fee7ad7f5c8a95539509eabf92d63cd8" category="paragraph">JWT 인증을 사용하려면 공개 키나 인증서를 준비하세요.</block>
   <block id="8e7e960ee764c7e6e42c82f1edaa4133" category="list-text">*회원 유형*에서 *서비스 계정*을 선택하세요.</block>
   <block id="e14a6ae0776860dda96f0e481824bccd" category="list-text">서비스 계정의 이름을 입력하세요.</block>
-  <block id="ebcb63e875051cc6846253b2c9ce48da" category="list-text">JWT 인증을 사용하려면 *개인 키 JWT 인증 사용*을 선택하고 공개 RSA 키 또는 인증서를 업로드하세요.  대신 클라이언트 ID와 비밀번호를 사용하려면 이 단계를 건너뜁니다.</block>
-  <block id="fc0041752419b9f94c8f1b7af4db8c4a" category="list-text">*범주*를 선택한 다음, 해당 조직, 폴더 또는 프로젝트에 연결된 리소스에 대한 권한을 멤버에게 제공하는 *역할*을 선택합니다.</block>
-  <block id="78f6d8218cb580b136d9697f7235ad36" category="list-text">JWT 인증을 사용하지 않기로 선택한 경우 클라이언트 ID와 클라이언트 비밀번호를 다운로드하거나 복사하세요.  + 콘솔에는 클라이언트 비밀번호가 한 번만 표시됩니다.  안전하게 복사해 두세요. 나중에 필요하면 다시 만들 수 있습니다.</block>
-  <block id="3f1c25aff6cde8c3443a53dfb8490e46" category="list-text">JWT 인증을 선택한 경우 클라이언트 ID와 JWT 대상을 다운로드하거나 복사하세요.  이 정보는 한 번만 표시되며 나중에 검색할 수 없습니다.</block>
   <block id="4a553bf9ebe9a32a6743c78be912cfbc" category="list-text">*닫기*를 선택하세요.</block>
   <block id="043819e1bae944c0c66cfa39d92d377a" category="section-title">조직 구성원 보기</block>
   <block id="27b4994b9febc0cd4f07d6077ad313fb" category="inline-link-macro">역할을 사용하여 콘솔 리소스에 대한 액세스를 제어하는 방법을 알아보세요.</block>
   <block id="059a12d70c6724987881cc65dc77dc2c" category="paragraph">조직의 리소스 계층 구조에서 다양한 수준에서 멤버에게 할당된 역할을 보면 멤버에게 어떤 리소스와 권한이 제공되는지 파악할 수 있습니다.<block ref="91d9a5d394e3e0818e3adc3a6b8470f5" category="inline-link-macro-rx"></block></block>
-  <block id="bfec8ea1e6ffe7b45777eaa357499fd3" category="paragraph">*회원* 페이지에서 사용자 계정과 서비스 계정을 모두 볼 수 있습니다.</block>
-  <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">자세히 알아보기</block>
-  <block id="d7a7789c661ae542fd74704356987fed" category="admonition">특정 폴더나 프로젝트에 연관된 모든 멤버를 볼 수도 있습니다. <block ref="b14f5e106a01ebd026991543e5a0ffc8" category="inline-link-macro-rx"></block> .</block>
   <block id="d5e4a18be128c90b65012755ecabfe00" category="paragraph">*구성원* 표에는 조직의 구성원이 나열됩니다.</block>
   <block id="4137654b2b560bb6af478553cbc120b2" category="section-title">조직에서 구성원 제거</block>
-  <block id="e4cb5729a397d486706aec2c33ce4ea6" category="paragraph">예를 들어, 회사를 떠나는 경우와 같이 조직에서 구성원을 제거해야 할 수도 있습니다.</block>
   <block id="17968a6208774a9e7e1a042da70ec52f" category="list-text">*회원* 페이지에서 테이블의 회원으로 이동하여 다음을 선택합니다.<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> 그런 다음 *사용자 삭제*를 선택하세요.</block>
   <block id="6e49938f1c5b86ad879eeaf086442b08" category="list-text">조직에서 해당 구성원을 제거할 것인지 확인하세요.</block>
   <block id="a657b530c9804722859fcb4792bf4466" category="section-title">서비스 계정의 자격 증명을 다시 만듭니다.</block>
-  <block id="80b918917d33f94b9ba8a9bd70d3703a" category="paragraph">자격 증명을 분실하거나 업데이트해야 하는 경우 새로운 자격 증명을 만드세요.</block>
-  <block id="587ee44a2d8c31788fd2c2219c69f11c" category="paragraph">자격 증명을 다시 만들면 서비스 계정의 기존 자격 증명을 삭제하고 새 자격 증명을 만듭니다. 이전 자격 증명을 사용할 수 없습니다.</block>
   <block id="bb0f4333667b84217bd737a0e3fc6024" category="list-text">*멤버* 테이블에서 서비스 계정으로 이동하여 다음을 선택합니다.<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> 그런 다음 *비밀 다시 만들기*를 선택하세요.</block>
   <block id="8de213850e1e3dc79a14014382d25163" category="list-text">*다시 만들기*를 선택하세요.</block>
   <block id="25240dbf964ce37736226ead112d31f2" category="section-title">사용자의 다중 인증 요소(MFA) 관리</block>
@@ -3655,8 +3421,6 @@
   <block id="5882327647586429810441bede064892" category="admonition">사용자의 다중 요소 인증을 관리하려면 영향을 받는 사용자와 동일한 도메인에 이메일 주소가 있어야 합니다.</block>
   <block id="4c03cc49e70b34418f2385277d266d90" category="list-text">*회원* 페이지에서 테이블의 회원으로 이동하여 다음을 선택합니다.<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> 그런 다음 *다중 인증 관리*를 선택하세요.</block>
   <block id="d999f1f9870b33a6f990ea80c528cd45" category="list-text">사용자의 MFA 구성을 제거할지 또는 비활성화할지 선택합니다.</block>
-  <block id="2fe6c9d572351b2d4e0b387a62bdf1e2" category="summary">특정 프로젝트 및 폴더와 리소스를 연결하여 조직의 리소스 계층 구조를 관리합니다.</block>
-  <block id="0b99b236783ea746ceb31085990e767d" category="paragraph">조직에 구성원을 연결하면 조직, 폴더 또는 프로젝트 수준에서 권한이 제공됩니다.  해당 구성원이 올바른 리소스에 액세스할 수 있는 권한을 갖도록 하려면 리소스를 특정 프로젝트 및 폴더와 연결하여 조직의 리소스 계층 구조를 관리해야 합니다.  _리소스_는 콘솔이 이미 관리하거나 알고 있는 저장 시스템이나 콘솔 에이전트입니다.</block>
   <block id="98ca801aa8933a24531043c30c475e2e" category="section-title">귀하의 조직의 리소스를 확인하세요</block>
   <block id="95c9ea5440ca8b54a3d3dae8e1d1f492" category="list-text">*리소스*를 선택하세요.</block>
   <block id="a5d2efab4d8509840f3f76fe8f0a57c1" category="list-text">*고급 검색 및 필터링*을 선택하세요.</block>
@@ -3666,16 +3430,12 @@
   <block id="4a42d7a28e04f8a9b2270b8906ae904c" category="list-text">*조직, 폴더 또는 프로젝트*: 전체 조직, 특정 폴더 또는 특정 프로젝트를 선택합니다.</block>
   <block id="fb3b214ed2681d71df95f0a2e1ad7ee8" category="list-text">*검색*을 선택하세요.</block>
   <block id="6b979ebd5780c7df2c462682bbe1749e" category="section-title">리소스를 폴더 및 프로젝트와 연결</block>
-  <block id="78165857205234d373bb942f86a37fe3" category="paragraph">리소스를 폴더나 프로젝트에 연결하여 사용할 수 있도록 합니다.</block>
-  <block id="123b63ad16a2eb2123e4d954ed9b410d" category="inline-link-macro">리소스에 대해 알아보세요. 리소스를 폴더와 연결할 시기도 포함됩니다.</block>
-  <block id="aa17a9cf1b2a8bd01a901a0eb2e99eee" category="paragraph">리소스 연결이 어떻게 작동하는지 이해해야 합니다. <block ref="a1afb03a32649c13d619ffef925eefd6" category="inline-link-macro-rx"></block> .</block>
   <block id="0ba76e0dec90ea0767d0bea623254565" category="list-text">*리소스* 페이지에서 표의 리소스로 이동하여 다음을 선택합니다.<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> 그런 다음 *폴더 또는 프로젝트에 연결*을 선택합니다.</block>
   <block id="40604a706a532d51e9c0e2942f20bbbd" category="list-text">추가 폴더나 프로젝트를 연결하려면 *폴더 또는 프로젝트 추가*를 선택한 다음 폴더나 프로젝트를 선택합니다.</block>
   <block id="227d0042933a910c506c0345c27ef64f" category="paragraph">관리자 권한이 있는 폴더와 프로젝트에서만 선택할 수 있습니다.</block>
   <block id="5c4e241b983cce10c131e9a51dc2f2e5" category="list-text">*리소스 연결*을 선택하세요.</block>
   <block id="b2576d5e19367669910225493514c6ca" category="list-text">리소스와 프로젝트를 연결한 경우 해당 프로젝트에 대한 권한이 있는 멤버는 이제 콘솔에서 리소스에 액세스할 수 있습니다.</block>
   <block id="6330741dc930a8e0cff70d2bbd0c2a2d" category="inline-link-macro">리소스를 폴더와 연결하는 방법에 대해 알아보세요</block>
-  <block id="d7d29cb540549064e90bd51cfc84f41b" category="list-text">리소스를 폴더와 연결한 경우, 폴더 또는 프로젝트 관리자는 이제 리소스에 액세스하여 폴더 내의 프로젝트와 연결할 수 있습니다. <block ref="a53b921d2a913725c8b4e28a24824743" category="inline-link-macro-rx"></block> .</block>
   <block id="5fa00154da6a08931f0c26c47b3ca339" category="paragraph">콘솔 에이전트를 사용하여 리소스를 발견한 경우 콘솔 에이전트를 프로젝트와 연결하여 액세스 권한을 부여합니다.  그렇지 않으면 _조직 관리자_ 역할이 없는 구성원은 콘솔 에이전트와 관련 리소스에 액세스할 수 없습니다.</block>
   <block id="3a04b19767b9262d748f5bc93b4d433d" category="section-title">리소스와 연관된 폴더 및 프로젝트 보기</block>
   <block id="1dc54c786b9042ae57ddce705cbaa9dc" category="paragraph">특정 리소스와 관련된 폴더와 프로젝트를 볼 수 있습니다.</block>
@@ -3686,23 +3446,15 @@
   <block id="a46cbe82e9adff7ecc82d6eadb58aa97" category="inline-image-macro">조직 바로 아래에 있는 프로젝트와 연관된 리소스를 보여주는 리소스 세부 정보 페이지의 스크린샷입니다.</block>
   <block id="7cadbb5f400f149f938a910df5c5cb0d" category="paragraph"><block ref="7cadbb5f400f149f938a910df5c5cb0d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="02daa88c7c6888cad8b055624d764072" category="section-title">폴더 또는 프로젝트에서 리소스 제거</block>
-  <block id="101c2fc402187ad7ad2fa40cf25d35b2" category="paragraph">폴더나 프로젝트에서 리소스를 제거하려면 폴더나 프로젝트와 리소스 간의 연결을 제거해야 합니다. 연결을 제거하면 멤버가 폴더나 프로젝트의 리소스를 관리할 수 없게 됩니다.</block>
   <block id="a55ecc4bf928da93f86f41bb1fa482cc" category="inline-image-macro">쓰레기통 아이콘</block>
-  <block id="4fc3c6ef596dbec8a3af38f79c84cf02" category="list-text">리소스를 제거하려는 폴더 또는 프로젝트에 대해 다음을 선택하세요.<block ref="5aa3fbfa4a030d3d0fb7677a91fd2eba" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ece216a1c354b015ef19084b08f5e92f" category="list-text">*삭제*를 선택하여 연결을 제거할지 확인하세요.</block>
   <block id="a4fbefb4650f29051f939c158582897d" category="list-text"><block ref="a4fbefb4650f29051f939c158582897d" category="inline-link-macro-rx"></block></block>
   <block id="cf3b3d414366a26f5b43041b5056897c" category="summary">NetApp Console 내에서 사용자가 수행해야 할 작업과 위치에 따라 역할을 할당할 수 있습니다.</block>
-  <block id="14750286cb2a5a61bf62b65d9b9d2112" category="doc">역할을 사용하여 NetApp Console 리소스에 대한 사용자 액세스를 관리합니다.</block>
-  <block id="5f24947dab075e3413b914aa36df023a" category="paragraph">콘솔 내에서 사용자에게 수행해야 할 작업과 위치에 따라 역할을 할당할 수 있습니다.</block>
-  <block id="3908f1e42aa5b81b8316befd30a6965d" category="inline-link-macro">폴더와 프로젝트를 사용하여 리소스를 구성하는 방법을 알아보세요.</block>
-  <block id="ecdeffad8e53c7c9b1fb61f02a3cb5d1" category="admonition">리소스에 대한 액세스 권한을 직접 부여할 수 없다는 점을 기억하세요.  먼저 프로젝트에 리소스를 할당하세요.  사용자에게 액세스 권한을 할당하기 전에 리소스 계층 구조를 설정하는 것이 좋습니다.<block ref="122b4639308e055d5bdfeb8a65e1794d" category="inline-link-macro-rx"></block></block>
   <block id="34025ad60edecbf8612a359edaca8684" category="section-title">멤버에게 할당된 역할 보기</block>
   <block id="317e1169ce13ad8808ce0775bf310cef" category="paragraph">_폴더 또는 프로젝트 관리자_ 역할이 있는 경우 해당 페이지에는 조직의 모든 구성원이 표시됩니다.  하지만 권한이 있는 폴더와 프로젝트에 대해서만 멤버 권한을 보고 관리할 수 있습니다. <block ref="c691e2b9b4224ed90bb4f1f11059b372" category="inline-link-macro-rx"></block> .</block>
   <block id="12815307393fa19648b391d49b4282e4" category="section-title">멤버에게 액세스 역할 추가</block>
   <block id="9a9b4b286a389bc98dfdeb3214c134a1" category="paragraph">일반적으로 조직에 구성원을 추가할 때 역할을 할당하지만, 역할을 제거하거나 추가하여 언제든지 역할을 업데이트할 수 있습니다.</block>
   <block id="ba364a79f6fbfab0c8591198ecfd87cc" category="paragraph">사용자에게 조직, 폴더 또는 프로젝트에 대한 액세스 역할을 할당할 수 있습니다.</block>
   <block id="7a43b6f649f8cf73a12056888057076b" category="paragraph">액세스 역할 전략은 NetApp 리소스를 구성한 방식과 일치해야 합니다.</block>
-  <block id="20c36cd6c77d407b6118c77ebe403934" category="admonition">조직 관리자 역할이 할당된 구성원에게는 추가 역할을 할당할 수 없습니다.  그들은 이미 조직 전체에 대한 권한을 가지고 있습니다.  폴더 또는 프로젝트 역할이 있는 멤버는 해당 역할이 이미 있는 폴더 또는 프로젝트 내에서 다른 역할을 할당받을 수 없습니다.  두 역할 모두 할당된 범위 내의 모든 서비스에 대한 액세스 권한을 제공합니다.</block>
   <block id="068135177d9d1843118236d5f10dc5b7" category="section-title">멤버의 할당된 역할 변경</block>
   <block id="4edfdeb74f014e9408efa692c71a9d2e" category="admonition">사용자에게는 최소한 하나의 역할이 할당되어야 합니다.  사용자에게서 모든 역할을 제거할 수는 없습니다.  모든 역할을 제거해야 하는 경우 조직에서 해당 사용자를 삭제해야 합니다.</block>
   <block id="2be01e6baa22b9b0a4f0a2c054fe7289" category="summary">필요한 경우 NetApp Console 조직의 이름을 변경할 수 있습니다.</block>
@@ -3738,9 +3490,7 @@
   <block id="ee335870b9e8c6514985b62ef0af3e87" category="inline-image-macro">조직 드롭다운을 선택한 후 다른 조직을 선택할 수 있는 상단 배너의 스크린샷입니다.</block>
   <block id="83d920a7f91f27f7b69139239db8ffbb" category="paragraph"><block ref="83d920a7f91f27f7b69139239db8ffbb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8f6dcd7bef7e7ddc82fef633c6535db1" category="list-text">파트너십 조직이 있는 경우, *파트너십* 탭을 선택하여 사용 가능한 파트너 조직을 확인하세요.</block>
-  <block id="927ac89a95ebc902198129b49e2915fa" category="paragraph">+ 파트너 조직이 없으면 *파트너십* 탭이 표시되지 않습니다.</block>
   <block id="eb5df30f07def91b4af8259255a5d626" category="list-text">다른 조직을 선택한 다음 *전환*을 선택하세요.</block>
-  <block id="c8fbc7269e6d5c9b80acffc154de6e43" category="paragraph">+ 파트너십 조직이 있는 경우, *파트너십* 탭을 선택하여 사용 가능한 파트너 조직을 확인하세요.</block>
   <block id="94b85a1c5a643296b6d5ecd3976a9159" category="section-title">프로젝트 간 전환</block>
   <block id="6346841107e9c8e2be1fd621b47ca24c" category="paragraph">귀하의 조직에 여러 프로젝트가 포함되어 있고 해당 프로젝트에 대한 액세스 권한이 있는 경우 언제든지 프로젝트 간에 전환할 수 있습니다.</block>
   <block id="a249a1ac87b4adc711b0c58bcaaaf23f" category="admonition">*ID 및 액세스* 페이지를 보고 있는 동안에는 다른 프로젝트로 전환할 수 없습니다.</block>
@@ -4213,7 +3963,6 @@
   <block id="cc337b5a93c54f8a59d4731866297bf2" category="list-text"><block ref="cc337b5a93c54f8a59d4731866297bf2" category="inline-link-rx"></block></block>
   <block id="92fa0fc1299e55c066d0a19cd22b4e7b" category="list-text">*ID*: *관리*에서 *시스템에서 할당한 관리 ID 사용*을 선택합니다.</block>
   <block id="b99469b29b000bd070b5f230caa3b887" category="paragraph">Azure는 지정된 설정으로 가상 머신을 배포합니다.  가상 머신과 콘솔 에이전트 소프트웨어는 약 5분 안에 실행될 것입니다.</block>
-  <block id="8f40f6b9cda905fc9a83217435e6b940" category="open-title">수동 설치</block>
   <block id="d06ce875f1b2887cbc5d87b38e0d0d44" category="list-text">설치 중에 아웃바운드 연결을 확인하는 구성 검사를 비활성화해야 합니다.  이 검사를 비활성화하지 않으면 수동 설치가 실패합니다.<block ref="90428b1442632a8a73b6f9660fa083c4" category="inline-link-macro-rx"></block></block>
   <block id="2866ea542642e0051f06f0462f4f5e80" category="list-text">콘솔 에이전트를 설치하기 전에 운영 체제에 따라 Podman 또는 Docker Engine이 필요합니다.</block>
   <block id="4a5aa670ff7341f391971ddd6994ac6d" category="paragraph">콘솔 에이전트가 설치되었습니다.  설치가 끝나면 프록시 서버를 지정한 경우 콘솔 에이전트 서비스(occm)가 두 번 다시 시작됩니다.</block>
@@ -4301,8 +4050,6 @@
   <block id="b3cb6ababbe01759cd13ec3fb3684c1a" category="summary">에이전트 호스트에서 운영 체제를 유지 관리하는 것은 사용자의 책임입니다.  예를 들어, 회사의 운영 체제 배포 표준 절차에 따라 콘솔 에이전트 호스트의 운영 체제에 보안 업데이트를 적용해야 합니다.</block>
   <block id="6148da760abfb5167327e2dbd67b1724" category="doc">콘솔 에이전트 VM 및 운영 체제 유지 관리</block>
   <block id="5279ec16620bed638d689fb55a687bf8" category="paragraph">콘솔 에이전트 호스트에서 운영 체제를 유지 관리하는 것은 귀하(고객)의 책임입니다.  예를 들어, 귀하(고객)는 회사의 운영 체제 배포에 대한 표준 절차에 따라 에이전트 호스트의 운영 체제에 보안 업데이트를 적용해야 합니다.</block>
-  <block id="32ecd7116f82d32fc86313604d074f12" category="inline-link-macro">지원되는 Linux 운영 체제 변경 사항</block>
-  <block id="b1b07a21d749d47b74e5826a57b17eaf" category="admonition">기존 에이전트가 있는 경우 다음 사항을 알아야 합니다.<block ref="8d716f5c1f2e0c5f076bb39a15dd1a47" category="inline-link-macro-rx"></block> .</block>
   <block id="35379aa08313c0fa9274fecfc86b4cc0" category="section-title">운영 체제 패치 및 에이전트</block>
   <block id="e841c125c9e210ed4ede7a3ae1c5ada8" category="paragraph">에이전트 호스트 서비스를 중단하지 않고 OS 보안 패치를 적용합니다.</block>
   <block id="d54ab8a1d5dd0b1066137c76d5021844" category="section-title">VM 또는 인스턴스 유형</block>
@@ -4636,19 +4383,12 @@
   <block id="1d682899a424ef1c9395956d4422fd8a" category="inline-link-macro">NetApp Intelligent Services 구독(선택 사항)</block>
   <block id="e7dd7f23b1ff3326cdebf5cb759f7a6f" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> <block ref="60f282c89397f6d15a4ed422eccb831c" category="inline-link-macro-rx"></block></block>
   <block id="d1d624aaa80d4b95ecda4ca00906004a" category="paragraph">선택 사항: 클라우드 공급업체의 마켓플레이스에서 NetApp Intelligent Services 구독하여 시간당 요금(PAYGO) 또는 연간 계약을 통해 데이터 서비스 비용을 지불하세요.  NetApp Intelligent Services 에는 NetApp Backup and Recovery, Cloud Volumes ONTAP, NetApp Cloud Tiering, NetApp Ransomware Resilience 및 NetApp Disaster Recovery 포함됩니다.  NetApp Data Classification 추가 비용 없이 구독에 포함되어 있습니다.</block>
-  <block id="6d4ac1cbd4bd47313400a32115439002" category="summary">콘솔을 위한 네트워킹을 준비하고, 가입하고 계정을 만들고, 선택적으로 콘솔 에이전트를 만들어 표준 모드에서 NetApp Console 시작하세요.</block>
-  <block id="2c4bc70d5e888213a3bca35048028c96" category="doc">시작하기 워크플로(표준 모드)</block>
-  <block id="f17ca32b513f955e12b0e36662eed21b" category="paragraph">표준 모드에서는 NetApp 의 SaaS(Software-as-a-Service) 제품으로 호스팅되는 웹 기반 콘솔에 액세스합니다.  시작하기 전에 이해했는지 확인하세요<block ref="dd9572e43b86cdf1b1d508e121fd732e" category="inline-link-macro-rx"></block> 그리고<block ref="4beb4752043a55296423922b143dd023" category="inline-link-macro-rx"></block> .</block>
   <block id="4a5cd58a00c166a3e1b93ea2c38ae5db" category="inline-link-macro">NetApp 콘솔을 사용하기 위한 네트워킹 준비</block>
   <block id="4170442d537b0bcdcf26afecc0b46214" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="81434ae0997d25fd3bf3ebcd9de42f03" category="inline-link-macro-rx"></block></block>
-  <block id="6c6992d5903cf814577c44cbe3ed58b0" category="paragraph">NetApp 콘솔에 액세스하는 컴퓨터는 특정 엔드포인트에 연결되어 있어야 합니다.  네트워크에서 아웃바운드 액세스가 제한되는 경우 이러한 엔드포인트가 허용되는지 확인해야 합니다.</block>
   <block id="0f29bdee858adb6d973cf8db83b0a896" category="inline-link-macro">가입하고 조직을 만드세요</block>
   <block id="a31431c54e189487cfd625eb4abd12c5" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> <block ref="10b13e3a86d0fb043f42c593114c5f97" category="inline-link-macro-rx"></block></block>
   <block id="8859695a85afcf4d196795433a572988" category="inline-link">NetApp 콘솔</block>
-  <block id="a40400c6f5bf51aa4e7aaaedbf791535" category="paragraph">로 가다<block ref="193ae139051d487c450de046f6bd2645" category="inline-link-rx"></block> 그리고 가입하세요.  조직을 만들 수 있는 옵션이 제공되지만 회사에 이미 조직이 있는 경우 해당 단계를 건너뛰어야 합니다.</block>
   <block id="d1e788bf754c3b9d70eae673330792e2" category="inline-link-macro">콘솔 에이전트 없이 무엇을 할 수 있는지 알아보세요</block>
-  <block id="6e4c4444e6f5b58ee31bcd6f7fcef10d" category="paragraph">이제 로그인이 완료되었으며 Digital Advisor, Amazon FSx for ONTAP, Azure NetApp Files 등의 서비스를 사용하고 스토리지를 관리할 수 있습니다. <block ref="d15147d8429817c45cc619fa49c43b04" category="inline-link-macro-rx"></block> .</block>
-  <block id="48700fa46e521cfa608d334472b68ef1" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>콘솔 에이전트 만들기</block>
   <block id="8f012b04ed4896873993ff7252418ca4" category="paragraph">고급 스토리지 관리 기능과 일부 NetApp 데이터 서비스를 사용하려면 콘솔 에이전트를 설치해야 합니다.  콘솔 에이전트를 사용하면 콘솔에서 하이브리드 클라우드 환경 내의 리소스와 프로세스를 관리할 수 있습니다.</block>
   <block id="ce207d705a8165045c7d26c1fa5fe273" category="paragraph">클라우드 또는 온프레미스 네트워크에서 콘솔 에이전트를 만들 수 있습니다.</block>
   <block id="380e8dcf837dc4b4a9dfb71ed62ffe17" category="inline-link-macro">콘솔 에이전트가 필요한 경우와 작동 방식에 대해 자세히 알아보세요.</block>
@@ -4661,9 +4401,6 @@
   <block id="b0a30fdadf738e65e6490f50bac8c5b1" category="list-text"><block ref="b0a30fdadf738e65e6490f50bac8c5b1" category="inline-link-macro-rx"></block></block>
   <block id="01539f3bb82319392680d2729edcc784" category="inline-link-macro">온프레미스에서 콘솔 에이전트를 만드는 방법을 알아보세요.</block>
   <block id="bac5c4edb29e43518e1f2b0b721fb1d5" category="list-text"><block ref="bac5c4edb29e43518e1f2b0b721fb1d5" category="inline-link-macro-rx"></block></block>
-  <block id="546d7695c99c2937a5bfae3cd6cf8da5" category="paragraph">Google Cloud에서 NetApp Intelligent Data Services를 사용하여 스토리지와 데이터를 관리하려면 콘솔 에이전트가 Google Cloud에서 실행되어야 합니다.</block>
-  <block id="f21c11580c94835481d6c035b85f4b79" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> <block ref="60a7e52b5f1dace8fe7cd5fadf089cd0" category="inline-link-macro-rx"></block></block>
-  <block id="3a9162a1dd41f82eb4f6e7242b11328b" category="paragraph">클라우드 공급업체를 통해 NetApp Intelligent Services 에 가입하여 시간당 요금(PAYGO)을 지불하거나 연간 계약을 맺으세요.  NetApp Intelligent Services 에는 NetApp Backup and Recovery, Cloud Volumes ONTAP, NetApp Cloud Tiering, NetApp Ransomware Resilience 및 NetApp Disaster Recovery 포함됩니다.  NetApp Data Classification 추가 비용 없이 구독에 포함되어 있습니다.</block>
   <block id="9b7e373120000fa09050f54f6d8d4b33" category="summary">NetApp Console 콘솔 에이전트와 Cloud Volumes ONTAP 통해 IMDSv2를 지원합니다.  대부분의 경우 IMDSv2는 새 EC2 인스턴스에 자동으로 구성됩니다.  IMDSv1은 2024년 3월 이전에 활성화되었습니다.  보안 정책에 따라 EC2 인스턴스에서 IMDSv2를 수동으로 구성해야 할 수도 있습니다.</block>
   <block id="81d494db27371a915cc88068d037376c" category="paragraph">NetApp Console 콘솔 에이전트와 Cloud Volumes ONTAP (HA 배포를 위한 중재자 포함)을 통해 Amazon EC2 인스턴스 메타데이터 서비스 버전 2(IMDSv2)를 지원합니다.  대부분의 경우 IMDSv2는 새 EC2 인스턴스에 자동으로 구성됩니다.  IMDSv1은 2024년 3월 이전에 활성화되었습니다.  보안 정책에 따라 EC2 인스턴스에서 IMDSv2를 수동으로 구성해야 할 수도 있습니다.</block>
   <block id="054d5276b9fcc7da7d10dc6e4df18356" category="list-text">콘솔 에이전트 버전은 3.9.38 이상이어야 합니다.</block>
@@ -4703,33 +4440,12 @@
   <block id="0694adc8bc882f236f606e1c56eebe94" category="inline-link">Cloud Volumes ONTAP 인스턴스를 중지하고 시작합니다.</block>
   <block id="b7feb1419e39be60dd56e13eb4251594" category="list-text"><block ref="b7feb1419e39be60dd56e13eb4251594" category="inline-link-rx"></block></block>
   <block id="60d6844eb545641bb1448829af996932" category="paragraph">콘솔 에이전트 인스턴스와 Cloud Volumes ONTAP 인스턴스는 이제 IMDSv2를 사용하도록 구성되었습니다.</block>
-  <block id="90d396015a6c35f04f7379d52f402f98" category="summary">NetApp Console 웹 기반 콘솔에서 접근할 수 있습니다.  콘솔을 시작하려면 첫 번째 단계로 NetApp 지원 사이트 자격 증명을 사용하여 가입하거나 로그인하거나 NetApp Console 로그인을 만들어야 합니다.</block>
   <block id="5dbaefa65dffe1f0a37c10d0c33764b1" category="doc">NetApp Console 에 가입하거나 로그인하세요</block>
-  <block id="81d03bff849cba3ebe7f16ba385d8dfd" category="paragraph">처음으로 콘솔에 접속하면 다음 옵션 중 하나를 사용하여 가입하거나 로그인할 수 있습니다.</block>
-  <block id="98ad2e7b7380eae4ff340445d2b3c74d" category="list-text">NetApp Console 로그인</block>
-  <block id="7b417e75c5332347f70ca8294d7f6d4b" category="list-text">로그인을 생성하여 가입할 수 있습니다.  이 인증 방법을 사용하려면 이메일 주소와 비밀번호를 지정해야 합니다.  이메일 주소를 확인한 후 로그인하여 아직 조직에 속해 있지 않으면 조직을 만들 수 있습니다.</block>
-  <block id="4e509fcd83df29eba4ce6711d142163b" category="list-text">NetApp 지원 사이트(NSS) 자격 증명</block>
-  <block id="3ac9ee31c60fb27242863e9f71741e13" category="list-text">기존 NetApp 지원 사이트 자격 증명이 있는 경우 콘솔에 가입할 필요가 없습니다.  NSS 자격 증명을 사용하여 로그인하면 콘솔에서 조직이 없는 경우 조직을 만들라는 메시지가 표시됩니다.</block>
-  <block id="bf820fbd70335732dc19994d1d737cb1" category="paragraph">등록된 이메일 주소로 일회용 비밀번호(OTP)가 전송됩니다.  로그인을 시도할 때마다 새로운 OTP가 생성됩니다.</block>
-  <block id="9cb17ba10a86a6d673f250ed811a88c2" category="list-text">연합 연결</block>
-  <block id="a73f9c5c78b615ea1e1d6d51d344176b" category="list-text">회사에 이미 NetApp Console 인스턴스가 있는 경우 콘솔 관리자가 회사 디렉토리의 자격 증명(페더레이션 ID)을 사용하여 로그인하기 위한 단일 로그인을 설정했을 수 있습니다.</block>
-  <block id="efa2743e18bf17f898e2aa31a500ddeb" category="inline-link-macro">NetApp Console 사용하여 ID 페더레이션을 사용하는 방법을 알아보세요.</block>
-  <block id="524adadbcb7d43841a7c04102e8abfa7" category="paragraph"><block ref="bbbae0c405364730462617fcee2b6070" category="inline-link-macro-rx"></block> .</block>
   <block id="827522fc27d0b7a8a36e98a829e5c687" category="list-text">웹 브라우저를 열고 이동하세요<block ref="9fa63571706fcef6edc9d423212e6d10" category="inline-link-rx"></block></block>
-  <block id="631a9d1918b756ca1857359538227c2a" category="list-text">NetApp 지원 사이트 계정이 있거나 이미 ID 페더레이션을 설정한 경우, *로그인* 페이지에 계정과 연결된 이메일 주소를 직접 입력하세요.</block>
   <block id="f6400c3e909c93ba53f8281302a7ffef" category="paragraph">두 경우 모두, 초기 로그인의 일부로 콘솔에 가입하게 됩니다.</block>
   <block id="bf093decf90516c940874ca448e5647c" category="list-text">콘솔 로그인을 만들어 가입하려면 *가입*을 선택하세요.</block>
   <block id="dafbc60d299b7ecf7d1bf490a178f77f" category="list-text">*가입* 페이지에서 필요한 정보를 입력하고 *다음*을 선택하세요.</block>
-  <block id="9998984c95caccce61e49ca25de1c99f" category="paragraph">가입 양식에는 영어 문자만 허용됩니다.</block>
   <block id="422588021a93cfdaa26ce8d7d46dfeda" category="list-text">NetApp 에서 보낸 이메일이 받은 편지함에서 확인되었는지 확인하세요. 이메일 주소 확인 지침이 포함되어 있습니다.</block>
-  <block id="fb088777e64ef8bfb642b0dcae0ba8c8" category="paragraph">콘솔에 로그인하려면 이 단계를 거쳐야 합니다.</block>
-  <block id="a0e12b903763894b05053f1758f87c86" category="list-text">로그인 후 최종 사용자 라이선스 계약을 검토하고 약관에 동의하세요.</block>
-  <block id="8d783bf61327a04cc07eb0e4391615f6" category="paragraph">사용자 계정이 아직 콘솔 조직에 속하지 않은 경우 조직을 만들라는 메시지가 표시됩니다.</block>
-  <block id="99e4ceee92f6d4220b77ac2f6be52958" category="list-text">*환영* 페이지에서 콘솔 조직의 이름을 입력합니다.</block>
-  <block id="6d4977c9bbc73f941bbf441c6863ca40" category="inline-link-macro">IAM에 대해 알아보세요</block>
-  <block id="000c772fe260d0b8e749078c826912c1" category="paragraph">콘솔은 조직을 정의하며 콘솔 ID 및 액세스 관리(IAM)의 최상위 요소입니다. <block ref="1dc93dd72b8832a8813ecf4a23f06394" category="inline-link-macro-rx"></block> .</block>
-  <block id="b2b8934645fc8cde08a5e11b20c23996" category="inline-link-macro">기존 조직에 구성원을 추가하는 방법을 알아보세요</block>
-  <block id="eaebca7f118a1e86b062fb58c5beb139" category="paragraph">귀하의 회사에 이미 조직이 있고 귀하가 해당 조직에 가입하고 싶다면 콘솔을 닫고 조직 관리자에게 귀하를 해당 조직에 연결해 달라고 요청하세요.  추가된 후 로그인하면 콘솔 조직에 액세스할 수 있습니다. <block ref="59dea8bb85edd16986d40f5a52513b8b" category="inline-link-macro-rx"></block> .</block>
   <block id="16a6acfaa9478d613f4568fcc7f798b9" category="list-text">*시작하기*를 선택하세요.</block>
   <block id="003a29a0c94cdfca33812dab6ad6ae71" category="summary">클라우드 공급업체의 마켓플레이스에서 NetApp Intelligent Services 구독하면 시간당 요금이나 연간 계약으로 NetApp 데이터 서비스 비용을 지불할 수 있습니다.  NetApp 에서 라이선스를 구매한 경우 마켓플레이스 제공 서비스도 구독해야 합니다.  귀하의 라이센스 요금이 항상 먼저 청구되지만, 라이센스 용량을 초과하거나 라이센스 기간이 만료되면 시간당 요금이 청구됩니다.</block>
   <block id="9c127a433a6192892f397a5a7e6dcb5a" category="doc">NetApp Intelligent Services 구독(제한 모드)</block>
@@ -4781,7 +4497,6 @@
   <block id="e7e9f49f4584c68b9d97c578e73b7583" category="list-text">콘솔의 오른쪽 상단에서 도움말 아이콘을 선택하고 *지원*을 선택하세요.</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">지원 등록 페이지에서 계정 ID 일련 번호를 찾으세요.</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">지원이 첫 번째 옵션으로 나열된 도움말 메뉴의 스크린샷</block>
-  <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetApp 지원 등록 사이트</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">로 이동<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> *저는 등록된 NetApp 고객이 아닙니다*를 선택하세요.</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">필수 입력란(빨간색 별표가 있는 항목)을 작성해 주세요.</block>
@@ -4800,7 +4515,6 @@
   <block id="5bc1315a63455544e7a917a7cc968939" category="paragraph">이러한 NSS 자격 증명은 특정 콘솔 계정 ID와 연결됩니다.  콘솔 조직에 속한 사용자는 *지원 &gt; NSS 관리*에서 이러한 자격 증명에 액세스할 수 있습니다.</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">고객 수준 계정이 있는 경우 하나 이상의 NSS 계정을 추가할 수 있습니다.</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">파트너 또는 리셀러 계정이 있는 경우 하나 이상의 NSS 계정을 추가할 수 있지만 고객 수준 계정과 함께 추가할 수는 없습니다.</block>
-  <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">*NSS 관리 &gt; NSS 계정 추가*를 선택하세요.</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">로그인 페이지에서 NetApp 지원 사이트에 등록된 이메일 주소와 비밀번호를 입력하여 인증 과정을 진행합니다.</block>
   <block id="7687b0a57d5cb728d9fb892dfc814715" category="paragraph">이러한 작업을 통해 콘솔은 라이선스 다운로드, 소프트웨어 업그레이드 확인, 향후 지원 등록과 같은 작업에 NSS 계정을 사용할 수 있습니다.</block>
@@ -4808,8 +4522,6 @@
   <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">해당 계정이 파트너 수준 계정인 경우 NSS 계정은 하나만 있을 수 있습니다.  고객 수준 NSS 계정을 추가하려고 하는데 파트너 수준 계정이 이미 있는 경우 다음과 같은 오류 메시지가 표시됩니다.</block>
   <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">"이 계정에는 다른 유형의 NSS 사용자가 이미 있으므로 NSS 고객 유형이 허용되지 않습니다."</block>
   <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">기존 고객 수준 NSS 계정이 있고 파트너 수준 계정을 추가하려는 경우에도 마찬가지입니다.</block>
-  <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">이는 귀하의 이메일에 매핑되는 시스템 생성 ID입니다.  *NSS 관리* 페이지에서 이메일을 표시할 수 있습니다.<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 메뉴.</block>
-  <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">로그인 자격 증명 토큰을 새로 고쳐야 하는 경우 *자격 증명 업데이트* 옵션도 있습니다.<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 메뉴.</block>
   <block id="37e3ca694c2290cac15ddf033e79bf4d" category="summary">콘솔 에이전트의 문제를 해결하려면 NetApp 지원팀에 문의하세요. NetApp 지원팀에서는 시스템 ID, 에이전트 버전 또는 최신 AutoSupport 메시지를 요청할 수 있습니다.  NetApp 기술 자료를 확인하여 직접 문제를 해결할 수도 있습니다.</block>
   <block id="9752c145fd3c469b18b30d8f8dee3b0c" category="doc">콘솔 에이전트 문제 해결</block>
   <block id="b9196d8e9e32358d5fa547d13c254fb4" category="paragraph">콘솔 에이전트의 문제를 해결하려면 직접 문제를 확인하거나 NetApp 지원팀에 문의하여 시스템 ID, 에이전트 버전 또는 최신 AutoSupport 메시지를 요청할 수 있습니다.</block>
@@ -4922,13 +4634,11 @@
   <block id="8883652241e094c22f85122286bf7be5" category="doc">NetApp Console 사용자 설정 관리</block>
   <block id="ee070c48eba3a60ce6f46beb0f406d92" category="paragraph">비밀번호 변경, 다중 인증(MFA) 활성화, 콘솔 관리자 확인 등 콘솔 프로필을 수정할 수 있습니다.</block>
   <block id="3cb1f3e723c9b0e598cf1cb6a69a55e2" category="section-title">표시 이름 변경</block>
-  <block id="fc9e021feb5503a4290dbcee9e81e12d" category="paragraph">본인을 식별하고 다른 사용자에게 표시되는 콘솔 표시 이름을 변경할 수 있습니다. 표시 이름은 변경할 수 없는 사용자 이름이나 이메일 주소와 다릅니다.</block>
   <block id="d46bfef79ef4e5af07e7e7eecfff0603" category="list-text">콘솔의 오른쪽 상단에 있는 프로필 아이콘을 선택하면 사용자 설정 패널을 볼 수 있습니다.</block>
   <block id="befac70fd40711c428906b0a641dd516" category="list-text">이름 옆에 있는 *편집* 아이콘을 선택하세요.</block>
   <block id="a4f6cc91409a8e534a14d0b5e0cfef8f" category="list-text">*이름* 필드에 새로운 표시 이름을 입력합니다.</block>
   <block id="a7c8edfd028f355b86456c7117112269" category="section-title">다중 요소 인증 구성</block>
   <block id="ac61073d010cbc3a251f9d4e6c8eccd2" category="paragraph">보안을 강화하기 위해 두 번째 검증 방법을 요구하여 다중 인증 요소(MFA)를 구성합니다.</block>
-  <block id="65a2a7eb5174016a8062a56633e73251" category="paragraph">외부 ID 공급자 또는 NetApp 지원 사이트에서 Single Sign-On을 사용하는 사용자는 MFA를 활성화할 수 없습니다.  이 두 가지 중 하나라도 해당된다면 프로필 설정에서 MFA를 활성화하는 옵션이 표시되지 않습니다.</block>
   <block id="9632b6787f248249a00c5deddd6f8030" category="paragraph">사용자 계정이 API 액세스에 사용되는 경우 MFA를 활성화하지 마세요.  다중 요소 인증이 사용자 계정에 활성화되면 API 액세스가 중단됩니다.  모든 API 액세스에 서비스 계정을 사용하세요.</block>
   <block id="6d168c0cfcd90046f487062da3a74001" category="list-text">Google Authenticator나 Microsoft Authenticator와 같은 인증 앱을 이미 기기에 다운로드했어야 합니다.</block>
   <block id="7dd404768128571da27501ee0dc2ae48" category="list-text">MFA를 설정하려면 비밀번호가 필요합니다.</block>
@@ -4944,7 +4654,6 @@
   <block id="45c07fa99050f57de53fb4ff89fd7cab" category="list-text">*복구 코드 재생성*을 선택하세요.</block>
   <block id="2332588943c47002d7d4b6b185a7aa0c" category="list-text">생성된 복구 코드를 복사하여 안전한 곳에 저장하세요.</block>
   <block id="671e07801d48dec4b74d96f219be7477" category="section-title">MFA 구성을 삭제하세요</block>
-  <block id="bba7c74fb0cff30dc0c0e00b337f4a66" category="paragraph">로그인에 다중 요소 인증(MFA)을 사용하지 않으려면 MFA 구성을 삭제하세요.  이렇게 하면 로그인할 때 인증 앱에서 일회용 코드를 입력할 필요가 없습니다.</block>
   <block id="9e385c1342cdca08c1b237574c77e586" category="admonition">인증 앱이나 복구 코드에 액세스할 수 없는 경우 조직 관리자에게 문의하여 MFA 구성을 재설정해야 합니다.</block>
   <block id="0f024621e0673f1f4e657983682d6e72" category="list-text">*삭제*를 선택하세요.</block>
   <block id="8b473423c18a9814010c33fe5e039084" category="section-title">조직 관리자에게 문의하세요</block>
@@ -5086,67 +4795,33 @@
   <block id="55744ccea4ab827ad5f363c0ec39e8bf" category="sidebar">NetApp Console 설정 및 관리 문서</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">시작하기</block>
   <block id="bd684dd31e369444b29047e57d56ff19" category="sidebar">배포 모드에 대해 알아보세요</block>
-  <block id="7e99ea34b714387479c29a20b4a89752" category="sidebar">표준 모드로 시작하세요</block>
-  <block id="2e765525323590e2ff4d6c84d224de36" category="sidebar">제한 모드 시작하기</block>
-  <block id="f716edbe35ec39a9cae98bf3d24f38e3" category="sidebar">신원 및 액세스 설정</block>
-  <block id="7ddbb2eaa2fabd17fe28d7d03e8ad2df" category="sidebar">콘솔 ID 및 액세스 관리(IAM)에 대해 알아보세요</block>
-  <block id="f9979c483e6c4c3e0bb110084e2529e7" category="sidebar">폴더와 프로젝트로 리소스를 구성하세요</block>
-  <block id="9a95138b9cb83f59109eb15c038b1073" category="sidebar">멤버 및 서비스 계정 추가</block>
-  <block id="7211199f77a8a73dc960b8a15a019199" category="sidebar">역할을 사용하여 리소스에 대한 멤버 액세스를 제어합니다.</block>
   <block id="91e534d044a3d9c6a1c8575f89e73c9b" category="sidebar">콘솔 에이전트에 대해 알아보세요</block>
-  <block id="a620abb16506a8da5f6b8dcbc0073466" category="sidebar">AWS 권한 보기</block>
-  <block id="b7053c5f835c45d38cf071449c74fd56" category="sidebar">Azure 권한 보기</block>
-  <block id="7050d365baa220c42a688cbf36a7e997" category="sidebar">Google Cloud 권한 보기</block>
-  <block id="891c5b2cea54480f0e1abb74959457a6" category="sidebar">표준 AWS 지역에서 시작하세요</block>
-  <block id="e766f31fe70a68c11b8631144211d0f7" category="sidebar">AWS GovCloud 지역에서 시작하세요</block>
-  <block id="9722aa95875a94430d4569d2e8bd2382" category="sidebar">AWS Secret 또는 Top Secret Cloud에서 시작하세요</block>
-  <block id="0989b93807bc249a7accf2af8a9679dd" category="sidebar">콘솔 에이전트에 대한 IAM 정책 보기</block>
   <block id="8d855a86408ade086a4d47d808971acd" category="sidebar">자격 증명 및 구독 관리</block>
-  <block id="27c705176bc1f05cf50771b1f8fe182a" category="sidebar">표준 Azure 지역에서 시작하세요</block>
-  <block id="60563f8b2620e88ac71d1a98ee73e2e5" category="sidebar">Azure Government 지역에서 시작하세요</block>
-  <block id="31b63be41ae4657f9e340188aa268589" category="sidebar">Azure IL6에서 시작하기</block>
-  <block id="44c5d10bc881679d7e684cca5cf32bfa" category="sidebar">콘솔 에이전트의 사용자 정의 역할 보기</block>
-  <block id="6c3328ab0a2ccaa273efaec9a88e2751" category="sidebar">표준 Google Cloud 지역에서 시작하세요</block>
-  <block id="4a76bec126921ea884970bf74fa31ac3" category="sidebar">콘솔 에이전트의 서비스 계정 보기</block>
-  <block id="f0e69ccbb7ad96f546f7924206944bfa" category="sidebar">온프레미스</block>
-  <block id="b6f41daebcd302181af0a121289d6fbb" category="sidebar">표준 모드에서 콘솔 에이전트를 수동으로 설치하고 설정합니다.</block>
-  <block id="0d24e43f27f514852b6f35a6561be7d1" category="sidebar">VCenter에 콘솔 에이전트 설치 및 설정</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">블로그 및 커뮤니티</block>
   <block id="cc58d3a9b2264c4fd8cb1d3f61b90bdc" category="sidebar">NetApp Data Services</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
-  <block id="8bd88a6e146388c50931a9b4474ac68b" category="sidebar">NetApp Console 설정 및 관리</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">릴리스 노트</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">새로운 소식</block>
   <block id="482723983a4f2af954e36ff41e567451" category="sidebar">알려진 제한 사항</block>
   <block id="e4c53684ddd66ee4898db459d57514e8" category="sidebar">기본을 배우세요</block>
-  <block id="14a5258ed6e53fde9968f99c48b5072e" category="sidebar">NetApp Console 어시스턴트 시작하기</block>
   <block id="3bc0e23bd46bad08da1876b2cc4430a7" category="sidebar">NetApp Console 어시스턴트 사용</block>
   <block id="65ce4dce26160be29539699c6623e379" category="sidebar">시작하기 워크플로</block>
   <block id="1434a6bb482886cf18491c3161371a87" category="sidebar">NetApp Console 에 가입하세요</block>
-  <block id="f3aee30a3a487c746572616e3f53dc9d" category="sidebar">콘솔 에이전트 만들기</block>
   <block id="09b85e561b979d579e985e238b5e5d1c" category="sidebar">콘솔 에이전트 설치 옵션</block>
   <block id="b9c838fe095b8b207e2903c139e3b496" category="sidebar">NetApp Console 에서 콘솔 에이전트 만들기</block>
-  <block id="db286ac77f06147d01296f6d003b7e79" category="sidebar">마켓플레이스에서 콘솔 에이전트 만들기</block>
   <block id="143fa1019fce3ddf5117f0b1f4f14fae" category="sidebar">콘솔 에이전트를 수동으로 설치합니다.</block>
   <block id="ac04a782af57ff93f16c88e88212efb7" category="sidebar">온프레미스에 에이전트 설치</block>
   <block id="0cd6a787b0c3cf4c965fe4f471c14a79" category="sidebar">온프레미스에 에이전트를 수동으로 설치</block>
   <block id="999d0fc21e3f7ccb9869c3812a630168" category="sidebar">VCenter에 온프레미스 에이전트 설치</block>
   <block id="102e22f275df79c5a1dde1e8293216b7" category="sidebar">NetApp Intelligent Services 구독</block>
   <block id="d0a7edff5cd82c23f3d1c18e0779ccbc" category="sidebar">다음에 할 수 있는 일</block>
-  <block id="ea5a9c54da2f265f65e20d38f9fcccf9" category="sidebar">BlueXP 레거시 인터페이스(개인 모드) 시작하기</block>
-  <block id="a266db65e9da42d584a76b5e3f7f5fef" category="sidebar">BlueXP 레거시 인터페이스(개인 모드) 시작하기</block>
   <block id="7029abd7e78c892ffba05a2ede3d7c4d" category="sidebar">NetApp Console 사용</block>
   <block id="ece486ec258e6abf5b83feda49ff66e5" category="sidebar">NetApp Console 에 로그인하세요</block>
-  <block id="a65d39d18fe3e5aabe5c3f06617edc8e" category="sidebar">NetApp Console 관리</block>
   <block id="bcc69f55e471ef4f63ebea154056303c" category="sidebar">ID 및 액세스 관리에 대해 알아보세요</block>
-  <block id="6055633e93e75f195e1ce7a98f705965" category="sidebar">회원 및 서비스 계정 관리</block>
-  <block id="e824a4cdd52665a1b8f0bccc58724034" category="sidebar">리소스 계층 관리</block>
-  <block id="986ccbc66c0eca226016ab4ae6a65874" category="sidebar">조직, 프로젝트 및 콘솔 에이전트 간 전환</block>
   <block id="5c06fd7ff7155e85c2867088844a5bb8" category="sidebar">Google Cloud NetApp Volumes 역할</block>
   <block id="a11961cab6627eac643ea36ae57ce8df" category="sidebar">Keystone 역할</block>
   <block id="7654fe6ca44295ba5f844fc9798f0103" category="sidebar">스토리지 역할</block>
   <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="sidebar">데이터 서비스 역할</block>
-  <block id="4dd7bf281f080fe43c775a741f9f2cc1" category="sidebar">파트너 기관</block>
   <block id="d6cca643be1ccfaa32ccfdc068061f15" category="sidebar">조직 파트너십에 대해 알아보세요</block>
   <block id="d88a163f40de4d60f08d7006db6dbc69" category="sidebar">조직 파트너십을 만드세요</block>
   <block id="bd5a03f6c4ea6ff59c3bcf72b4208024" category="sidebar">파트너십 조직의 리소스 액세스 관리</block>
@@ -5160,26 +4835,20 @@
   <block id="d99778be9371fb280b62abdcd21887c2" category="sidebar">PingFederate로 페더레이션</block>
   <block id="d00255b25e6ac270c154c1b88351cb61" category="sidebar">연합 관리</block>
   <block id="b738cb995b90e7ef0f6b53e82271107a" category="sidebar">기존 페더레이션 연결을 가져옵니다.</block>
-  <block id="a2e2f8288038950766d9cd088e4d892d" category="sidebar">VM 및 OS 유지 관리</block>
   <block id="c8fa489b70f23c314b0b945db2384452" category="sidebar">VCenter에 설치된 에이전트 유지 관리</block>
   <block id="70328d3965555bdfe7c71386e9e25887" category="sidebar">웹 콘솔 액세스를 위한 CA 서명 인증서 설치</block>
   <block id="417a7f2f69f19fbcd309a4694944397e" category="sidebar">EC2 인스턴스에서 IMDSv2 사용 요구</block>
   <block id="e5c32965ed32649bcfd48bc8b138f3d2" category="sidebar">콘솔 에이전트를 제거하고 제거하세요</block>
   <block id="7c584a16cbf4210dc0a344179e274e09" category="sidebar">기본 구성</block>
   <block id="8f235a758f8b25f9b4ff4eddf53e6c5e" category="sidebar">NetApp Console 에서 ONTAP 권한 적용</block>
-  <block id="260bcd27c402b5ba9f5dcabbfc1e0ddd" category="sidebar">자격 증명 및 구독</block>
   <block id="cbaee96b9499da2c5c6d3b23090382c6" category="sidebar">자격 증명 및 권한에 대해 알아보세요</block>
   <block id="9d812302dfdd0fdbf4faa0fe53b9ed24" category="sidebar">프로젝트 및 권한에 대해 알아보세요</block>
-  <block id="cd3fa09be95f7fc90de7266dc3621de8" category="sidebar">NetApp Console 조직 또는 계정과 연결된 NSS 자격 증명 관리</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">참조</block>
-  <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="sidebar">권한</block>
   <block id="a4f605cd0aab29ee5fb50f28627cef5d" category="sidebar">권한 요약</block>
   <block id="abfd94e3956e611a257a32b0f396af25" category="sidebar">Google Cloud의 콘솔 에이전트 방화벽 규칙</block>
   <block id="e4c0002e4f9f19273bc004922899fb85" category="sidebar">콘솔 네트워크 액세스(레거시)</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">지식과 지원</block>
   <block id="253b718b7b0bb8f190e2ebe1c721295e" category="paragraph">랜섬웨어 복원력 역할은 사용자에게 NetApp Ransomware Resilience 에 대한 액세스 권한을 제공합니다. 랜섬웨어 복원력은 다음과 같은 역할을 지원합니다.</block>
-  <block id="e55d79a6c1774cf0f39d67ca04d67bc0" category="paragraph">액세스 역할을 사용하여 사용자가 수행해야 하는 특정 작업에 따라 스토리지 리소스에 대한 액세스 권한을 할당합니다. 예를 들어, 사용자가 랜섬웨어 복원력과 상호 작용해야 하는 경우, 해당 액세스 역할이 부여된 프로젝트에 대한 랜섬웨어 복원력에 대한 보기 또는 관리 권한이 포함된 액세스 역할이 부여되어야 합니다.</block>
-  <block id="e6bf2bfbd541e12c3cb2fca42df08ed3" category="paragraph">멤버는 동일한 프로젝트 내에서도, 그리고 서로 다른 프로젝트에서도 여러 역할을 맡을 수 있습니다. 예를 들어, 소규모 조직에서는 사용 가능한 모든 액세스 역할을 동일한 사용자에게 할당하는 반면, 대규모 조직에서는 사용자에게 더 전문적인 작업을 맡길 수 있습니다. 또는 조직의 랜섬웨어 복원력 관리자 역할을 한 사용자에게 할당할 수도 있습니다.  해당 예에서 사용자는 조직 내 모든 프로젝트에서 랜섬웨어 복원력 작업을 수행할 수 있습니다.</block>
   <block id="c36b12344113082dcf8a9786e36a3536" category="cell">랜섬웨어 복원력</block>
   <block id="16a7e3e925ade6eef4533f96172d423f" category="sidebar">랜섬웨어 복원력 역할</block>
   <block id="e40a74210464aa0305c3d66c083f2e23" category="paragraph">| \ https://mysupport.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보냅니다. | \ https://signin.b2c.netapp.com | NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp Console 에 새로운 NSS 자격 증명을 추가합니다. | \ https://support.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보내고 Cloud Volumes ONTAP 에 대한 소프트웨어 업데이트를 받습니다.</block>
@@ -5192,8 +4861,6 @@
   <block id="d530645223f70d357ab17787b555f381" category="list-text">*기존 구독 교체* 필드에서 한 조직의 기존 구독을 이 새로운 구독으로 자동으로 교체할지 여부를 선택합니다.</block>
   <block id="648c906efc1699c9d3ad4578bac84bd5" category="paragraph">콘솔은 조직의 모든 자격 증명에 대한 기존 구독을 이 새로운 구독으로 대체합니다. 자격 증명 세트가 구독과 연결되지 않은 경우 이 새 구독은 해당 자격 증명과 연결되지 않습니다.</block>
   <block id="6d98b6cff569df2b13894056f584ec94" category="inline-link-macro">에이전트가 권한을 사용하는 방식을 검토하세요.</block>
-  <block id="9bdb90e2cf9f7f97285de5520ab53a37" category="inline-image-macro">AWS 계정에 콘솔 에이전트를 배포하는 콘솔을 보여주는 개념적 이미지입니다. IAM 정책은 콘솔에 연결된 IAM 역할에 할당됩니다.</block>
-  <block id="6200ddd5978ec4a6ebc04f286e729487" category="paragraph"><block ref="6200ddd5978ec4a6ebc04f286e729487" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1aed0c96ab82a81ab5988e9702bb43da" category="paragraph">위 섹션에서 설명한 대로 콘솔을 사용하면 여러 가지 방법으로 AWS 자격 증명을 제공할 수 있습니다. 콘솔 에이전트와 연결된 IAM 역할, 신뢰할 수 있는 계정에서 IAM 역할을 맡는 방법, AWS 액세스 키를 제공하는 방법 등이 있습니다.</block>
   <block id="a47f802b14f43406913307d1775681b4" category="list-text">콘솔에서 콘솔 에이전트를 시작할 수 있는 권한이 있는 Google 계정을 사용하여 콘솔 에이전트를 배포해야 합니다.</block>
   <block id="2f452b0fc39f70459edce8976da308fa" category="list-text">콘솔 에이전트를 배포할 때 다음을 선택하라는 메시지가 표시됩니다.<block ref="98f22f2dda0728ebb39af9a8fe826c8e" category="inline-link-rx"></block> 에이전트의 경우 콘솔은 서비스 계정으로부터 Cloud Volumes ONTAP 시스템을 생성하고 관리하고, NetApp 백업 및 복구를 사용하여 백업을 관리하는 등의 권한을 얻습니다. 서비스 계정에 사용자 정의 역할을 연결하여 권한을 제공합니다.</block>
@@ -5252,10 +4919,6 @@
   <block id="b10c09311b2a36cdbb586dd7823222f1" category="paragraph">NetApp Console AWS에서 콘솔 에이전트를 시작하면 에이전트에 해당 AWS 계정 내의 리소스와 프로세스를 관리할 수 있는 권한을 제공하는 정책이 에이전트에 연결됩니다. 에이전트는 EC2, S3, CloudFormation, IAM, 키 관리 서비스(KMS) 등 여러 AWS 서비스에 대한 API 호출을 수행하기 위한 권한을 사용합니다.</block>
   <block id="a4a0e88b76170508470ee15848f6e7ba" category="cell">Cloud Volumes ONTAP 이 백엔드 스토리지로 사용하는 EBS 볼륨을 관리합니다.</block>
   <block id="ebbb47c5d02c18deadd05d0341ccdd00" category="paragraph">콘솔 에이전트에는 Google Cloud에서 작업을 수행하려면 권한이 필요합니다. 이러한 권한은 NetApp 에서 제공하는 사용자 정의 역할에 포함되어 있습니다. 에이전트가 이러한 권한을 어떻게 사용하는지 이해해야 합니다.</block>
-  <block id="dfeb199885257150591ae817b9f6fe44" category="paragraph">NetApp Console 기능과 서비스를 사용하려면 콘솔 에이전트가 클라우드 환경에서 작업을 수행할 수 있도록 권한을 제공해야 합니다. 이 페이지의 링크를 사용하면 목표에 따라 필요한 권한에 빠르게 액세스할 수 있습니다.</block>
-  <block id="28dc1d5c4a46ee6ae58c1c58beab7562" category="cell">콘솔에서 콘솔 에이전트를 생성하는 사용자는 AWS에 에이전트를 배포하기 위한 특정 권한이 필요합니다.</block>
-  <block id="f9336c7c27ce5def37b4c85f532f3e69" category="cell">콘솔이 콘솔 에이전트를 배포하면 AWS 계정의 리소스와 프로세스를 관리하는 데 필요한 권한을 제공하는 정책을 에이전트에 연결합니다.  AWS Marketplace에서 콘솔 에이전트를 배포하거나 콘솔 에이전트를 수동으로 설치하거나 다음을 수행하는 경우 정책을 직접 설정해야 합니다.<block ref="dd68e1e1425f1a2836915a8e7efa1f0a" category="inline-link-macro-rx"></block> . 이후 릴리스에서 새로운 권한이 추가되므로 정책이 최신 상태인지 확인해야 합니다.</block>
-  <block id="7d1553be39870d08636e98597a4b5934" category="cell">콘솔 에이전트의 서비스 계정에는 일상 업무에 대한 특정 권한이 있어야 합니다. 배포하는 동안 서비스 계정을 콘솔 에이전트와 연결해야 합니다. 이후 릴리스에서 새로운 권한이 추가되므로 정책이 최신 상태인지 확인해야 합니다.</block>
   <block id="80c404e08f5d5340903c30aa20ed5e6d" category="paragraph"><block ref="bc75056b5fa2888bb728b2036381638f" category="inline-link-macro-rx"></block>.</block>
   <block id="c1fecb1554425a64f3f9e6114b6f590b" category="admonition">콘솔에서 콘솔 에이전트를 배포한 경우 콘솔 에이전트를 배포한 계정에 대한 AWS 자격 증명이 자동으로 추가되었습니다. 이를 통해 리소스 관리에 필요한 권한이 있는지 확인할 수 있습니다.</block>
   <block id="eb6d1dd2b9253237853279d2ed49bd03" category="paragraph">IAM 역할을 사용하여 콘솔 에이전트를 배포한 소스 AWS 계정과 다른 AWS 계정 간에 신뢰 관계를 설정할 수 있습니다. 그런 다음 신뢰할 수 있는 계정의 IAM 역할에 대한 ARN을 콘솔에 제공합니다.</block>
@@ -5521,8 +5184,6 @@
   <block id="2f78cc1ceedbe872d890b3b087731dee" category="paragraph">| NetApp ONTAP 용 Amazon FSX:</block>
   <block id="fccc45024c0efe519c08e43bb1bd4c5f" category="list-text">api.workloads.netapp.com</block>
   <block id="5e57ad0482de1c13a4a285a6101f6c13" category="paragraph">웹 기반 콘솔은 이 엔드포인트에 연결하여 Workload Factory API와 상호 작용함으로써 ONTAP 기반 워크로드용 FSx를 관리하고 운영합니다.</block>
-  <block id="d273096b8b8c7966eb2a2fb6ca248366" category="paragraph">| \ https://www.googleapis.com/compute/v1/ \ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \// https://config.googleapis.com/v1/projects</block>
-  <block id="f8cd35bf6f398c2f8c485bfd95309caa" category="list-text">. 연결을 테스트하려면 *연결 테스트*를 선택하세요. IdP 서버의 로그인 페이지로 이동됩니다. IdP 자격 증명으로 로그인하세요.  로그인 후 콘솔로 돌아가서 연결을 활성화하세요.</block>
   <block id="61169bbb57ab5c82abb2ac47499153f3" category="list-text">콘솔에서 *다음*을 선택하여 요약 페이지를 검토하십시오.</block>
   <block id="95d9f0b87c61b5cd1f8c21678ced4a5c" category="list-text">알림을 설정하세요.</block>
   <block id="ec811988404f148d3a7f84f040f45531" category="paragraph">7일 또는 30일 중에서 선택하세요.  이 시스템은 만료 알림을 이메일로 발송하고 콘솔에 표시하며, 해당 알림은 슈퍼 관리자, 조직 관리자, 페더레이션 관리자 및 페더레이션 뷰어 역할을 가진 모든 사용자에게 제공됩니다.</block>
@@ -5616,7 +5277,6 @@
   <block id="ca931702830a76aaa24d5f451156d2b4" category="list-text">*재해 복구 뷰어*: 정보만 봅니다.</block>
   <block id="71aa2505b70e192a741f69ce63677f4b" category="cell">재해 복구 장애 조치 관리자</block>
   <block id="49f16ca5444f519e5203bb5067957eef" category="cell">재해 복구 애플리케이션 관리자</block>
-  <block id="49868b41c479810c405bc3509cdb1907" category="cell">사용자가 NetApp Data Classification 검사 결과를 볼 수 있습니다. 이 역할이 있는 사용자는 규정 준수 정보를 보고 액세스 권한이 있는 리소스에 대한 보고서를 생성할 수 있습니다. 이러한 사용자는 볼륨, 버킷 또는 데이터베이스 스키마의 스캐닝을 활성화하거나 비활성화할 수 없습니다. 분류에는 관리자 역할이 없습니다.</block>
   <block id="7fefc96661449151a3bee08edda3e255" category="paragraph">이러한 제한 사항은 NetApp Console 및 관리 설정(에이전트, 서비스형 소프트웨어(SaaS) 플랫폼 등)에만 적용됩니다.</block>
   <block id="332ea1ed79fb36acca4a28cb73bfb8c3" category="section-title">Google Cloud 사용자 계정 권한</block>
   <block id="83ad392c56898ad2bc9258551bd9dc50" category="paragraph">아래의 사용자 지정 역할은 Google Cloud 사용자에게 에이전트를 배포하는 데 필요한 권한을 부여합니다.  에이전트를 배포할 사용자에게 이 사용자 지정 역할을 적용하십시오.</block>
@@ -5727,31 +5387,16 @@
   <block id="34e82a1501cca5af4e190be9c03c0fbb" category="inline-link-macro">Google Cloud 문서: 사용자 지정 역할 편집</block>
   <block id="322a5219fa870735040f24cb43da8303" category="paragraph"><block ref="322a5219fa870735040f24cb43da8303" category="inline-link-macro-rx"></block></block>
   <block id="16d62d361fbd1153b9fe75b035aa7c51" category="paragraph">콘솔 에이전트의 기존 투명 프록시 서버는 다음 방법을 사용하여 업데이트할 수 있습니다.<block ref="091092579ca8cede1b760e7c5a90a003" prefix=" " category="inline-code"></block> 명령어를 사용하거나 투명 프록시 서버를 제거하려면 다음 방법을 사용하십시오.<block ref="ef5ebb9e0c08ee0463e7503ff1111f4c" prefix=" " category="inline-code"></block> 명령.  더 자세한 내용은 관련 문서를 참조하십시오.<block ref="1b2f5cd7e64b458e431e40fa20571324" category="inline-link-macro-rx"></block> .</block>
-  <block id="6c69cf52de815b4e3d26a89db4f26c8a" category="paragraph">조직을 만들면 단일 프로젝트가 포함됩니다. 프로젝트를 추가하여 리소스를 관리하고, 폴더를 추가하여 관련 프로젝트를 그룹화하세요.</block>
-  <block id="2bc87be9675bb8a069610f3430a1e3e8" category="paragraph">조직의 리소스 구조에서 최대 7단계의 폴더와 프로젝트를 생성할 수 있습니다.  조직 구조를 중첩적으로 구축하려면 폴더 안에 또 다른 폴더를 만드세요.</block>
   <block id="e403ae80ee5407293bf60157033759c8" category="list-text">폴더 또는 프로젝트 세부 정보를 입력하세요:</block>
-  <block id="e3a15113b550a2e5d2560f495223b05a" category="list-text">*이름 및 위치*: 폴더 또는 프로젝트의 이름을 입력하고 계층 구조에서 위치를 선택합니다. 폴더나 프로젝트를 조직 아래에 또는 다른 폴더 안에 배치하세요.</block>
-  <block id="d67cf2e8c3d97e0eed9561206ed3e9ca" category="paragraph">액세스 권한과 역할을 할당하려면 *멤버 추가*를 선택하세요.</block>
   <block id="70fdeef63f056c10a8cdcc5f3fbc8eb3" category="inline-xref">리소스를 제거하는 방법을 알아보세요</block>
   <block id="d66b571e57bc053e8b1ad8e43b91ee4e" category="paragraph">폴더나 프로젝트를 삭제하기 전에 해당 폴더에 리소스가 포함되어 있지 않은지 확인하십시오. <block ref="2ce0cd71e2b80657c61ce3337cd46c5f" category="inline-xref-macro-rx"></block>.</block>
   <block id="2634a609591cac73e3cee6d75b3a8299" category="section-title">폴더 또는 프로젝트와 관련된 리소스를 변경합니다.</block>
-  <block id="e1485c69a5051018e6f541a40ac64334" category="paragraph">리소스 접근을 제어하려면 멤버 접근 권한을 수정하세요.</block>
-  <block id="3aab6b4b2431f483b7e867e25c7dc17f" category="paragraph">구성원 액세스가 더 높은 계층 수준에서 상속되는 경우 더 낮은 수준에서 변경할 수 없습니다. 액세스 권한을 변경하려면 상위 계층 수준에서 멤버 권한을 업데이트합니다. 또는 키키<block ref="2e250d63a19626cb0aeed14260bd2f59" category="inline-link-macro-rx"></block>를 사용할 수 있습니다.</block>
-  <block id="dc56ef546dad0049c4fe42c718817af1" category="paragraph">조직에는 사용자 계정과 서비스 계정이라는 두 가지 유형의 구성원을 추가할 수 있습니다. 애플리케이션은 서비스 계정을 사용하여 API 작업을 자동으로 수행합니다.  사람들은 사용자 계정을 사용하여 로그인하고 리소스를 관리합니다.</block>
-  <block id="0a8fdeec95373b802409cb30efb505de" category="paragraph">귀하의 X.509 인증서. PEM, CRT 또는 CER 형식이어야 합니다.</block>
   <block id="81e59e8e4bf25fcadc8863ff39bcfc04" category="list-text">인증서 만료 알림을 설정하세요.  7일 또는 30일 중에서 선택하세요.  만료 알림은 슈퍼 관리자 또는 조직 관리자 역할을 가진 사용자에게 이메일로 전송되고 콘솔에 표시됩니다.</block>
-  <block id="1753b2507377ecd0602ed08944b9d1b2" category="paragraph">멤버를 제거하면 시스템에서 해당 멤버의 권한을 취소하지만 콘솔 및 NetApp 지원 사이트 계정은 유지합니다.</block>
-  <block id="a758e86398ed40898f56dc46bf8d3b3b" category="list-text">클라이언트 ID와 클라이언트 비밀번호를 다운로드하거나 복사하세요. + 콘솔에는 클라이언트 비밀 키가 한 번만 표시됩니다. 복사하거나 다운로드하여 안전하게 보관하세요.</block>
-  <block id="a3d754fa6f41840770949e7570cb4dc0" category="paragraph">사용자는 MFA를 제거한 후 로그인할 때 다시 설정해야 합니다. 사용자가 MFA 장치에 대한 액세스 권한을 일시적으로 잃은 경우 MFA를 설정할 때 저장한 복구 코드를 사용하여 로그인할 수 있습니다.</block>
   <block id="e41f7fb86a6b410ae7e503a4ccc83ef6" category="paragraph">귀하의 조직과 관련된 발견된 리소스와 발견되지 않은 리소스를 모두 볼 수 있습니다. 시스템은 스토리지 리소스를 찾고 사용자가 콘솔에 추가할 때까지 해당 리소스를 검색되지 않은 상태로 표시합니다.</block>
-  <block id="fc35c417bbb2c0ec9081298a05b3071b" category="admonition">리소스 페이지에서는 사용자가 Amazon FSx for NetApp ONTAP 리소스를 역할과 연결할 수 없으므로 해당 리소스가 제외됩니다.  해당 정보는 *시스템* 페이지 또는 워크로드에서 확인할 수 있습니다.</block>
   <block id="62ff23d019d29d30b64698ce14ebdc09" category="list-text">제공되는 옵션을 활용하여 필요한 자료를 찾아보세요.</block>
   <block id="aaff9ff22e8e6739bcdc8cc79cb3614b" category="inline-link-macro">관련 폴더 및 프로젝트에 대한 액세스 권한이 있는 구성원을 봅니다.</block>
   <block id="8b3be42a579e101783dbee0366282232" category="admonition">어떤 조직 구성원이 해당 리소스에 접근할 수 있는지 확인하려면,<block ref="d3f770deeda88cc3cea0d73a63cf7240" category="inline-link-macro-rx"></block> .</block>
   <block id="d23b81e3e519af34ae1d1368f055ab5c" category="admonition">검색된 리소스를 조직 전체에서 제거하려면 *시스템* 페이지로 이동하여 해당 시스템을 제거하십시오.</block>
-  <block id="876c2ced14b405974ba0e1bffce7d0d5" category="paragraph">*조직 관리자* 또는 *폴더 또는 프로젝트 관리자* 역할을 맡은 사용자는 다른 사용자에게 역할을 할당할 책임이 있습니다. 프로젝트 또는 폴더 기준으로 액세스 역할을 할당할 수 있습니다. 프로젝트 또는 폴더별로 접근 권한을 할당하세요.  예를 들어, 한 프로젝트에는 랜섬웨어 복원력 관리자 역할을, 다른 프로젝트에는 SnapCenter 관리자 역할을 사용자에게 할당할 수 있습니다.  폴더 내 모든 프로젝트에 대해 사용자에게 랜섬웨어 복원력 관리자 역할을 부여하려면 폴더 수준에서 역할을 할당하십시오.</block>
-  <block id="ed59bba19a8b1215a5da046694459de3" category="paragraph">보안을 강화하려면 IAM 전략에 따라 역할을 할당하십시오.  IAM 역할은 사용자의 접근 권한을 필요한 수준으로만 제한합니다.</block>
-  <block id="dff14b7229aae5e011982b724c9867d3" category="paragraph">조직에 구성원을 추가하면 해당 구성원에게 역할을 할당하라는 메시지가 표시됩니다. 현재 그들에게 어떤 역할이 부여되었는지 확인할 수 있습니다.</block>
   <block id="d47741191d2932672428925f5a647577" category="paragraph">멤버의 역할을 변경하여 접근 권한을 업데이트하세요.</block>
   <block id="c0597b9526c7ff0d7645fb305fbbb302" category="paragraph">Amazon FsX for NetApp ONTAP:</block>
   <block id="deb5ab06bb4820c3ddaf1096673112dd" category="paragraph">웹 기반 콘솔은 이 엔드포인트에 연결하여 Workload Factory API와 상호 작용함으로써 ONTAP 기반 워크로드용 FSx를 관리하고 운영합니다.</block>
@@ -5761,7 +5406,6 @@
   <block id="cb55016940e52c1c7b882becfa96703f" category="paragraph">필수 조건을 모두 충족한 후에는 Linux 호스트에 소프트웨어를 수동으로 설치하십시오.</block>
   <block id="3a25df27a9593be32d58d660128319d2" category="paragraph">콘솔 에이전트를 설치한 후에는 콘솔 에이전트가 AWS에서 데이터 및 스토리지 인프라를 관리할 수 있도록 설정한 AWS 권한을 제공해야 합니다.</block>
   <block id="5c585aa7c70930b73bdafb2cb9161f8a" category="paragraph">생성한 IAM 역할을 콘솔 에이전트 EC2 인스턴스에 연결합니다.</block>
-  <block id="ba496406ba5e67bd0a486e583b8cd337" category="paragraph">https://www.googleapis.com/compute/v1/ https://compute.googleapis.com/compute/v1 https://cloudresourcemanager.googleapis.com/v1/projects https://www.googleapis.com/compute/beta https://storage.googleapis.com/storage/v1 https://www.googleapis.com/storage/v1 https://iam.googleapis.com/v1 https://cloudkms.googleapis.com/v1 // https://config.googleapis.com/v1/projects</block>
   <block id="483f6f30ec7b7da81659462b08c18e8a" category="paragraph">다음 예제는 프로젝트 수준에서 "agentDeployment"라는 이름의 역할을 생성합니다.</block>
   <block id="606b4f54c298cd84f8c9d4d46c74820a" category="paragraph">gcloud iam roles create connectorDeployment --project=myproject --file=agent-deployment.yaml</block>
   <block id="a447c4cad2c58e7308d516639f777fff" category="section-title">3단계: 에이전트와 함께 사용할 Google Cloud 서비스 계정을 생성합니다.</block>
@@ -5810,4 +5454,454 @@
   <block id="f81364bddd76f5bb00fa7ea1afb1e8f3" category="paragraph">검색 및 복원 기능을 사용하면 에이전트는 다음과 같은 API 요청을 합니다. 2025년 2월 인덱싱 v2 출시 이전에 레거시 인덱싱 기능을 활성화한 경우에만 이러한 권한이 필요합니다.</block>
   <block id="6b3f95e18a1ba0f839260ac943cc5e73" category="paragraph">최소한의 권한과 최소한의 범위를 반영하는 사용자 지정 JSON 정책이 추가되었습니다.</block>
   <block id="0a466732427ffe0e3d3bf69fe76471c6" category="paragraph">최소 백업 및 복구 권한 목록에 다음 권한이 추가되었습니다.</block>
+  <block id="733b0d64c43170576328dd2ff626b2c6" category="paragraph">| \ https://www.googleapis.com/compute/v1/ \ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \ https://config.googleapis.com/v1/projects</block>
+  <block id="93e8ce3770c07ae531a9c736b37fd7a8" category="list-text">연결을 테스트하려면 *연결 테스트*를 선택하세요. IdP 서버의 로그인 페이지로 이동됩니다. IdP 자격 증명으로 로그인하세요. 로그인 후 콘솔로 돌아가서 연결을 활성화하세요.</block>
+  <block id="f67fcb7a54d85787358c91ce5f1b1794" category="admonition">제한 모드에서 콘솔을 사용하는 경우, URL을 시크릿 브라우저 창이나 별도의 브라우저에 복사하여 IdP에 로그인하십시오.</block>
+  <block id="80c0d1efa61513303c5a1dc623dc8c80" category="list-text">멤버의 역할을 해제하려면 다음을 선택하세요. <block ref="e7d3eb2c8040b3803a37719a0c0ad857" category="inline-image-macro-rx" type="image"></block> 역할 옆에 있는 버튼을 클릭하면 해당 멤버에게서 해당 역할을 제거할 수 있습니다. 삭제를 확인하라는 메시지가 표시됩니다.</block>
+  <block id="eb571b52feba51f06ec7af9444b7857f" category="list-text">*회원* 페이지에서 표에 있는 회원을 찾아 선택하세요. <block ref="875211da84a24f8a0b17392fa712292d" category="inline-image-macro-rx" type="image"></block> 그런 다음 *세부 정보 보기*를 선택하세요.</block>
+  <block id="79af92d05f2b214eab2c765e215beb6b" category="doc">콘솔 에이전트 4.3.0</block>
+  <block id="6f1b51eea64496510e6cf5a5a2d57d29" category="paragraph">4.3.0 버전은 표준 모드와 제한 모드를 모두 지원합니다.</block>
+  <block id="664a9e1da962d9131b0a035da50bbcc7" category="paragraph-title">콘솔 에이전트의 네트워크 연결을 검증할 수 있는 기능</block>
+  <block id="81cc16a2354d8ec80802e2e4ac22f15a" category="paragraph">이제 NetApp Console 에서 연결된 콘솔 에이전트의 네트워크 연결을 직접 확인할 수 있습니다. 이 기능은 콘솔 에이전트의 연결 상태를 확인하고 문제를 해결하는 데 도움이 됩니다.</block>
+  <block id="65ce32eae3a28c0b24f8cc33c345ab84" category="paragraph"><block ref="65ce32eae3a28c0b24f8cc33c345ab84" category="inline-link-macro-rx"></block></block>
+  <block id="8b71edf4fd7d99d72da1d37de5e154b7" category="paragraph-title">NetApp Console 제한 모드일 때 페더레이션 지원</block>
+  <block id="58bbe2cc0931c12594be1bafb70597fb" category="paragraph">이제 제한 모드로 설정된 NetApp Console 조직에 대해 페더레이션을 활성화할 수 있습니다. 이를 통해 사용자는 회사 자격 증명을 사용하여 콘솔에 로그인하는 동시에 제한 모드의 보안 이점을 유지할 수 있습니다.</block>
+  <block id="ac811c471ef716f9c8a3865d7f14caa3" category="paragraph-title">읽기 전용 모드</block>
+  <block id="8fc5022358a80320244b4f909c4293cc" category="paragraph">NetApp Console 조직을 읽기 전용 모드로 설정할 수 있습니다. 읽기 전용 모드에서는 사용자가 리소스와 설정을 볼 수는 있지만 변경할 수는 없습니다. 조직 관리자 또는 최고 관리자는 조직에 대해 읽기 전용 모드를 활성화할 수 있습니다. 읽기 전용 모드가 활성화된 경우, 관리자 권한을 가진 사용자는 필요에 따라 변경 작업을 수행하기 위해 수동으로 권한을 상승시켜야 합니다.</block>
+  <block id="c7c19a46289db74512cc747670442409" category="inline-link-macro">콘솔 조직에 대해 읽기 전용 모드를 활성화하는 방법을 알아보세요.</block>
+  <block id="701595799e137f6efaa9c9cd9be54125" category="paragraph"><block ref="701595799e137f6efaa9c9cd9be54125" category="inline-link-macro-rx"></block></block>
+  <block id="4380e2b873a072c906edb6d21b6eb823" category="inline-link-macro">조직이 읽기 전용 모드일 때 자신의 역할을 강화하는 방법을 알아보세요.</block>
+  <block id="b45238e19857e4059227131bbda630a6" category="paragraph"><block ref="b45238e19857e4059227131bbda630a6" category="inline-link-macro-rx"></block></block>
+  <block id="0c2fbb6854f3455435639851d8cd9997" category="inline-image-macro">AWS 계정에 콘솔 에이전트를 배포하는 콘솔을 보여주는 개념적 이미지입니다.</block>
+  <block id="a13b8f382ebf56f2b82af89db286c5a4" category="paragraph"><block ref="a13b8f382ebf56f2b82af89db286c5a4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4159a33176d30977a2d9b1b4ff27b420" category="inline-image-macro">두 개의 추가 계정을 보여주는 개념 이미지입니다. 각각은 IAM 정책을 가지고 있습니다. 하나는 IAM 사용자에게 연결되고 다른 하나는 IAM 역할에 연결됩니다.</block>
+  <block id="66f249e9d83e1feff3fbdd894b518eff" category="paragraph"><block ref="66f249e9d83e1feff3fbdd894b518eff" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="30417b3c810a323e60b9866f8e6c9350" category="inline-image-macro">이 개념 이미지는 사용자 지정 역할과 관리 ID를 통해 권한을 부여받는 최초 Azure 계정과 사용자 지정 역할 및 서비스 주체를 통해 권한을 부여받는 두 개의 추가 계정을 보여줍니다.</block>
+  <block id="3c3998b3724b770848f697973652cbed" category="paragraph"><block ref="3c3998b3724b770848f697973652cbed" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8a28d84712ec63fca5b3358a179fd161" category="summary">콘솔 에이전트를 사용하면 NetApp Console 인프라에 연결하고 AWS, Azure, Google Cloud 또는 온프레미스 환경 전반에 걸쳐 스토리지 솔루션을 안전하게 오케스트레이션할 뿐만 아니라 데이터 보호 서비스도 사용할 수 있습니다.</block>
+  <block id="aab5731bfa6cbaa9335ace3b6119b1ed" category="paragraph">콘솔 에이전트를 사용하면 NetApp Console 인프라에 연결하고 AWS, Azure, Google Cloud 또는 온프레미스 환경 전반에 걸쳐 스토리지 솔루션을 안전하게 오케스트레이션할 뿐만 아니라 데이터 보호 서비스도 사용할 수 있습니다.</block>
+  <block id="3230673163c008cdd02f112405efaaf9" category="paragraph">콘솔 에이전트를 사용하면 다음 작업을 수행할 수 있습니다.</block>
+  <block id="4d7b2f840c5d1940c932ef5b68407d63" category="list-text">NetApp Console 에서 Cloud Volumes ONTAP 프로비저닝, 스토리지 볼륨 설정, 데이터 분류 사용 등과 같은 스토리지 관리 작업을 오케스트레이션할 수 있습니다.</block>
+  <block id="63e5cc9026d02c060058ae369a9c3c72" category="list-text">구독 결제 통합을 위해 클라우드 공급업체의 IAM 역할을 사용하여 인증하세요.</block>
+  <block id="b5442d822ef2fdf45dde0be1d98a8164" category="list-text">고급 데이터 서비스(NetApp Backup and Recovery, NetApp Disaster Recovery, NetApp Ransomware Resilience 및 NetApp Cloud Tiering)를 활용하십시오.</block>
+  <block id="5588ef10eaf5928d5c2eef029dd121da" category="list-text">콘솔을 제한 모드로 사용하십시오.</block>
+  <block id="308c01eb8a0ce7aa29641087670683cc" category="paragraph">고급 오케스트레이션이나 데이터 보호 기능이 필요하지 않은 경우 에이전트를 배포하지 않고도 온프레미스 ONTAP 클러스터와 클라우드 네이티브 스토리지 서비스를 중앙에서 관리할 수 있습니다. 모니터링 및 데이터 이동성 도구도 사용할 수 있습니다.</block>
+  <block id="89d00b0e4cdc5ca22b542515e11cf7fb" category="paragraph">다음 표는 콘솔 에이전트를 사용하거나 사용하지 않고 사용할 수 있는 기능과 서비스를 보여줍니다.</block>
+  <block id="3ec96dde9691a6afd519c61179d8bedd" category="cell">중개인을 통해 이용 가능합니다.</block>
+  <block id="1490f23e97090196f0b8e4be2d8742a2" category="cell">중개인 없이 구매 가능</block>
+  <block id="8104d245049cf15410198b6913ed44d1" category="cell">*지원되는 스토리지 시스템*:</block>
+  <block id="fb97d1c8259ba6635407f1a41cf956eb" category="paragraph">예 (검색 및 관리 기능)</block>
+  <block id="fab18a3d0e482e8c690720ece0d59967" category="paragraph">예 (탐색 전용)</block>
+  <block id="821aade5bfe8143b04b0e3329145eb49" category="cell">구글 클라우드 스토리지 버킷</block>
+  <block id="38b3d6672c5cc9fcae4bb30e89781b0d" category="cell">온프레미스 ONTAP 클러스터(고급 관리 및 검색)</block>
+  <block id="bdec6a7498ca4d25566e3e23d2c62a76" category="paragraph">예 (고급 관리 및 발견)</block>
+  <block id="b60366a003b487aaa0f17f8db3163ecc" category="paragraph">아니요 (기본적인 탐색만 가능)</block>
+  <block id="a9ae3aa6d3b5385e5d21f5f7c9cbe066" category="cell">*이용 가능한 스토리지 관리 서비스*:</block>
+  <block id="3b00545dfd90abf1453721e441754d3d" category="cell">Digital Advisor (Active IQ)</block>
+  <block id="c3705e839d1a8df80ae158824bd08448" category="cell">홈페이지 대시보드 지표</block>
+  <block id="d3e800228af9a7ced9cadbe31f21cf71" category="paragraph">네^2^</block>
+  <block id="fec52cc0232a22ef4060c7b61d92c0a0" category="paragraph">아니요^1^</block>
+  <block id="3863a60fc30916ec3597541037025585" category="cell">*이용 가능한 데이터 서비스*:</block>
+  <block id="6444e1b68689d877ddc4f4121e08c0f6" category="paragraph">^1^ 콘솔 에이전트 없이도 라이프사이클 계획을 볼 수 있지만, 작업을 시작하려면 콘솔 에이전트가 필요합니다.</block>
+  <block id="69503e81cc92bb7b09446dacc350d84d" category="paragraph">^2^ 홈 페이지에 정확한 메트릭을 표시하려면 적절한 크기와 구성의 콘솔 에이전트가 필요합니다.</block>
+  <block id="932e0f0da3df907fbda805c12b12abe5" category="paragraph">콘솔에서 직접 콘솔 에이전트를 설치하거나, 클라우드 공급업체의 마켓플레이스를 이용하거나, 자신의 Linux 호스트나 VCenter 환경에 소프트웨어를 수동으로 설치할 수 있습니다.</block>
+  <block id="0d07862d67097acd517fe27c0de099d7" category="section-title">클라우드 공급자 권한</block>
+  <block id="3ba516db764b4c90d4973b3960d1d8d9" category="paragraph">클라우드에 에이전트를 설치하면 인터넷에 연결되어 있는 경우 콘솔 에이전트가 자동으로 업데이트됩니다.</block>
+  <block id="59b11244b7261ce8d669bb84f89d952d" category="summary">NetApp Console 모든 기능을 이용할 수 있는 SaaS 환경 또는 연결 제약이 있는 조직을 위한 자체 호스팅 옵션을 제공합니다.</block>
+  <block id="7d4e67c65d7806e0a44c126537175622" category="paragraph">NetApp Console 완전 관리형 SaaS 환경으로 사용하거나 자체 클라우드 환경에서 호스팅하는 솔루션으로 사용하는 두 가지 방식으로 사용할 수 있습니다. SaaS 옵션을 선택하면 console.netapp.com을 통해 콘솔에 액세스할 수 있으며, NetApp 모든 인프라, 인증 및 업데이트를 관리합니다. 웹 브라우저에서 모든 기능을 바로 이용할 수 있습니다. 자체 호스팅 옵션을 선택하면 AWS, Azure 또는 Google Cloud 환경에 콘솔 에이전트를 설치해야 합니다. 인터페이스는 로컬에서 실행되며, 에이전트는 인증 및 업데이트와 같은 필수 작업을 위해 NetApp 에 ​​대한 제한적인 외부 연결을 유지합니다.</block>
+  <block id="7639306c3c0ecef2fa65fc37fa553d1e" category="paragraph">조직의 인터넷 연결 상태가 표준이라면 SaaS 환경을 선택하세요. 가장 간편한 설정, 자동 업데이트, 그리고 모든 NetApp 스토리지 시스템, 데이터 서비스 및 고급 기능에 대한 완벽한 액세스를 누릴 수 있습니다. 콘솔에서 에이전트를 직접 추가할 수 있으며, NetApp 모든 유지 관리를 처리합니다.</block>
+  <block id="693597565a0abb445dd8c1378b547c8a" category="paragraph">정부 기관이나 규제 대상 산업과 같이 조직에서 엄격한 연결성, 보안 또는 규정 준수 제어가 필요한 경우 자체 호스팅 옵션을 선택하십시오. 더 많은 제어 권한과 네트워크 격리 기능을 확보할 수 있지만, 관리할 수 있는 NetApp 스토리지 시스템은 제한적이며 일부 기능은 사용할 수 없습니다. 콘솔 에이전트를 수동으로 설치하고 로컬 에이전트 인터페이스에서 콘솔에 직접 액세스할 수 있습니다. 클라우드 마켓플레이스를 통해 또는 수동으로 에이전트를 설치하면 에이전트는 NetApp 과만 외부 통신을 하며, 내부 인터넷 연결은 필요하지 않습니다.</block>
+  <block id="79b1b35ef8f164c3d04934de4b4e0249" category="inline-image-macro">공용 인터넷을 사용하는 표준 모드 아키텍처를 보여주는 개념 이미지로, SaaS 계층과 Auth0 인증 기능을 사용할 수 있습니다.</block>
+  <block id="4c448565e3fd072b37daa94fa673661d" category="paragraph"><block ref="4c448565e3fd072b37daa94fa673661d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e875d2f82c83bb0d211e843f8273306f" category="inline-image-macro">제한 모드의 개념적 이미지.</block>
+  <block id="8eee0eea4e2ae93e083fb1f6a03a412e" category="paragraph"><block ref="8eee0eea4e2ae93e083fb1f6a03a412e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9ea7157b38fa199a8532fa65cd92d096" category="summary">역할 기반 액세스 제어(RBAC)를 사용하여 NetApp Console 에 대한 사용자 액세스를 관리하고, 조직, 폴더 또는 프로젝트 수준에서 미리 정의된 역할을 할당할 수 있습니다. 각 역할은 사용자가 할당된 범위 내에서 수행할 수 있는 작업을 정의하는 특정 권한을 부여합니다.</block>
+  <block id="6369e7866450cfbd1595f3b5f17a45ce" category="doc">NetApp Console 역할 기반 액세스 제어(RBAC)에 대해 알아보세요.</block>
+  <block id="adb744c66714a9cd79eb46c484743e3a" category="paragraph">NetApp 최소 권한 원칙에 따라 콘솔 역할을 설계하므로 각 역할에는 해당 작업에 필요한 권한만 포함됩니다. 이러한 접근 방식은 각 구성원에게 필요한 권한만 허용함으로써 보안을 강화합니다.</block>
+  <block id="e8e5bdd9e757a841d4916678c54e0477" category="paragraph">리소스를 폴더와 프로젝트로 정리한 후에는 조직 구성원에게 특정 폴더 또는 프로젝트에 대한 역할을 할당하여 각자가 자신의 책임만 수행할 수 있도록 하세요.</block>
+  <block id="17b936d2e4829a5cf778b2c29100bb7a" category="paragraph">예를 들어, 특정 프로젝트 수준에 대해 구성원에게 랜섬웨어 복원력 관리자 역할을 할당하여 해당 프로젝트 내의 리소스에 대한 랜섬웨어 복원력 작업을 수행할 수 있도록 허용하되, 조직 전체에 대한 광범위한 액세스 권한은 부여하지 않을 수 있습니다. 이 사용자는 조직 내 여러 프로젝트에 대해 동일한 역할을 부여받을 수 있습니다.</block>
+  <block id="9b372111c3284b1c413c38133ce241b7" category="paragraph">사용자의 책임에 따라 동일한 범위 또는 서로 다른 범위에 대해 여러 역할을 할당할 수 있습니다. 예를 들어, 소규모 조직에서는 동일한 사용자가 조직 차원에서 랜섬웨어 복원력과 백업 및 복구 작업을 모두 관리할 수 있는 반면, 대규모 조직에서는 프로젝트 차원에서 각 역할에 서로 다른 사용자를 할당할 수 있습니다.</block>
+  <block id="0455998a9b4d48dfc90712f125c02594" category="section-title">콘솔 조직 구성원의 유형</block>
+  <block id="216d633ebb90f040a2915716b0e69fdf" category="paragraph">NetApp Console 조직에는 세 가지 유형의 구성원이 있습니다. * _사용자 계정_: 리소스를 관리하기 위해 NetApp Console 에 로그인하는 개별 사용자입니다. 사용자를 조직에 추가하려면 먼저 NetApp Console 에 가입해야 합니다. * _서비스 계정_: 애플리케이션 또는 서비스가 API를 통해 NetApp Console 과 상호 작용하는 데 사용하는 비인간 계정입니다. 콘솔 조직에 서비스 계정을 직접 추가할 수 있습니다. * _연합 그룹_: ID 공급자(IdP)에서 동기화된 그룹으로, 여러 사용자의 액세스 권한을 일괄적으로 관리할 수 있습니다. 연합 그룹 내의 각 사용자는 그룹에 부여된 리소스에 액세스하기 전에 NetApp Console 에 가입하고 액세스 역할을 통해 조직에 추가되어야 합니다.</block>
+  <block id="143a5c25b96e4e8867190c0d1f10dbb3" category="inline-link-macro">조직에 구성원을 추가하는 방법을 알아보세요.</block>
+  <block id="5bc06c288bf257ec517f854ffef3edce" category="paragraph"><block ref="5bc06c288bf257ec517f854ffef3edce" category="inline-link-macro-rx"></block></block>
+  <block id="429804783adfb78f99dde5b7f7743fa3" category="section-title">NetApp Console 의 사전 정의된 역할</block>
+  <block id="03fe474c549af244d2d9ae34c36418c0" category="paragraph">NetApp Console 조직 구성원에게 할당할 수 있는 사전 정의된 역할이 포함되어 있습니다. 각 역할에는 구성원이 할당된 범위(조직, 폴더 또는 프로젝트) 내에서 수행할 수 있는 작업을 지정하는 권한이 포함되어 있습니다.</block>
+  <block id="59f087e27ff6ff3f1db7f4c6f4bd7ed7" category="paragraph">NetApp Console 역할은 최소 권한 원칙을 사용하여 구성원이 작업에 필요한 권한만 갖도록 보장하며, 제공하는 액세스 유형에 따라 역할을 분류합니다.</block>
+  <block id="1614405d496cc003badc1066d7669711" category="list-text">플랫폼 역할: 콘솔 관리 권한 제공</block>
+  <block id="c186b521a1d693e26e360baada60a0fc" category="list-text">데이터 서비스 역할: 랜섬웨어 복원력 및 백업/복구와 같은 특정 데이터 서비스를 관리하기 위한 권한을 제공합니다.</block>
+  <block id="f815d8c404e332320043018b03d096c2" category="list-text">애플리케이션 역할: 스토리지 관리 및 콘솔 이벤트와 알림 감사에 대한 권한을 제공합니다.</block>
+  <block id="1cf40e697c787a7f4363d8aa57c9c982" category="paragraph">구성원의 책임에 따라 여러 역할을 할당할 수 있습니다. 예를 들어 특정 프로젝트에 대해 멤버에게 랜섬웨어 복원력 관리자 역할과 백업 및 복구 관리자 역할을 모두 할당할 수 있습니다.</block>
+  <block id="fe766b76d3c1afbbfa9812a4774a1108" category="inline-link-macro">NetApp Console 에서 사용 가능한 사전 정의된 역할에 대해 알아보세요.</block>
+  <block id="ca5fd8bb5d9faf476fbe2d765b802bdc" category="paragraph"><block ref="55b5ceff8fee7cfc075b04636ac3ba7f" category="inline-link-macro-rx"></block>.</block>
+  <block id="e6f301b2c67375931164ffab8594268a" category="summary">NetApp 콘솔의 ID 및 액세스 관리(IAM)를 사용하여 위치, 부서 또는 프로젝트와 같은 비즈니스 계층 구조에 따라 리소스 액세스를 구성하고 제어하십시오.</block>
+  <block id="8f0b3e866642f7b2bd73e95879da522a" category="paragraph">NetApp 콘솔의 ID 및 액세스 관리(IAM)를 사용하여 NetApp 리소스를 구성하고 위치, 부서 또는 프로젝트와 같은 비즈니스 구조에 따라 액세스를 제어하십시오.</block>
+  <block id="3ffaa4542bdc105235c2aa6d84398ba1" category="paragraph">리소스는 계층적으로 구성됩니다. 최상위에는 조직이 있고, 그 아래에 폴더(다른 폴더나 프로젝트를 포함할 수 있음)가 있으며, 그 아래에는 스토리지 시스템, 워크로드 및 에이전트를 포함하는 프로젝트가 있습니다.</block>
+  <block id="4802d1fc79ac23aaf44455daac9d6bb8" category="paragraph">조직, 폴더 또는 프로젝트 수준에서 구성원에게 역할 기반 접근 제어(RBAC) 권한을 할당하여 사용자가 리소스에 대한 적절한 접근 권한을 갖도록 합니다.</block>
+  <block id="6eccc51ae400d9583687f84b5fbdb257" category="admonition">NetApp Console 에서 IAM을 관리하려면 _슈퍼 관리자_, _조직 관리자_ 또는 _폴더 또는 프로젝트 관리자_ 역할이 있어야 합니다.</block>
+  <block id="e8c67cc0d7ca66d55340b50ff19e81d8" category="inline-image-macro">자원 관리의 구성 요소를 보여주는 개념도</block>
+  <block id="64e87e268d8a02cfb5d37a77e92402d6" category="paragraph"><block ref="0642d6783c4254d0630aae1c47f2e5b2" category="inline-image-macro-rx" type="image"></block>]</block>
+  <block id="6dc5e990649602e7e565307ea2b766cc" category="section-title">신원 및 접근 관리 구성 요소</block>
+  <block id="b9bd354ffbde2ab3520144428026e644" category="paragraph">NetApp Console 에서는 조직 구성 요소, 리소스 구성 요소 및 사용자 액세스 구성 요소라는 세 가지 주요 구성 요소를 사용하여 스토리지 리소스를 구성합니다.</block>
+  <block id="8031ad367c5f0eab4552c9249b900da5" category="section-title">조직 내 프로젝트 및 폴더</block>
+  <block id="b1e9822212430f6a045685b8ee19be13" category="paragraph">IAM 구조 내에서 조직, 프로젝트 및 폴더라는 세 가지 구성 요소를 사용합니다. 이러한 레벨 중 하나에서 사용자에게 역할을 할당하여 액세스 권한을 부여할 수 있습니다.</block>
+  <block id="6cded2372fd04c9dd52343a98f35146b" category="list-text">프로젝트는 스토리지 리소스에 대한 접근 권한을 제공하는 데 사용됩니다. 리소스에 접근하려면 먼저 해당 리소스가 프로젝트에 할당되어야 합니다. 하나의 프로젝트에 여러 리소스를 할당할 수 있으며, 여러 개의 프로젝트를 생성할 수도 있습니다. 그런 다음 사용자에게 프로젝트 권한을 할당하여 프로젝트 내 리소스에 대한 접근 권한을 부여합니다.</block>
+  <block id="8427feb21fa52ea7a726ef6e57657a30" category="paragraph">예를 들어, 필요에 따라 온프레미스 ONTAP 시스템을 단일 프로젝트 또는 조직 내 모든 프로젝트와 연결할 수 있습니다.</block>
+  <block id="34c4afb90e82099fac404c0f590e4c24" category="inline-link-macro">조직에 프로젝트를 추가하는 방법을 알아보세요.</block>
+  <block id="caee6d2f97679cf9374c79a1d6ae25b0" category="paragraph"><block ref="caee6d2f97679cf9374c79a1d6ae25b0" category="inline-link-macro-rx"></block></block>
+  <block id="dbbd0be2ab27e73b122e8161ad90c3da" category="list-text">관련 프로젝트를 위치, 사이트 또는 사업부별로 정리하려면 폴더로 그룹화하세요. 리소스를 폴더에 직접 연결할 수는 없지만, 폴더 수준에서 사용자에게 역할을 할당하면 해당 폴더에 있는 모든 프로젝트에 대한 액세스 권한을 부여할 수 있습니다.</block>
+  <block id="4141f49cc8cf63834c1efaa049d309e0" category="inline-link-macro">조직에 폴더를 추가하는 방법을 알아보세요.</block>
+  <block id="9b81d805be63395863d2a1721014a6bb" category="paragraph"><block ref="9b81d805be63395863d2a1721014a6bb" category="inline-link-macro-rx"></block></block>
+  <block id="b1b22dc4c5575b2e202a4925725a072a" category="paragraph">리소스에는 스토리지 시스템, Keystone 구독 및 콘솔 에이전트가 포함됩니다.</block>
+  <block id="de535fcbd4d214b2ab192b8311cd28bb" category="paragraph">+ 리소스에 접근하려면 먼저 해당 리소스를 프로젝트와 연결해야 합니다.</block>
+  <block id="41e1fd34ab20918035d6b06b198a4dd6" category="paragraph">예를 들어, Cloud Volumes ONTAP 시스템을 특정 프로젝트 또는 조직 내 모든 프로젝트와 연결할 수 있습니다. 리소스를 연결하는 방법은 조직의 요구 사항에 따라 다릅니다.</block>
+  <block id="ea7af68e4527f06be6522ac5e2825e2d" category="inline-link-macro">프로젝트에 리소스를 연결하는 방법을 알아보세요.</block>
+  <block id="54b06ad2f4c53f14ee1e9e9d7c2b1b2a" category="paragraph"><block ref="54b06ad2f4c53f14ee1e9e9d7c2b1b2a" category="inline-link-macro-rx"></block></block>
+  <block id="235f31305ad49210767c08b30ea8f944" category="list-text">스토리지 시스템 및 Keystone 구독</block>
+  <block id="e09e666756aaffdfff2449235d7d9d0d" category="list-text">스토리지 시스템은 NetApp Console 에서 관리하는 주요 리소스입니다. NetApp Console 온프레미스 및 클라우드 스토리지 시스템 모두의 관리를 지원합니다. 프로젝트에 스토리지 시스템을 추가해야만 다른 사용자가 접근할 수 있습니다.</block>
+  <block id="5c130a5ccad0215f526f58692320aa7a" category="paragraph">저장 시스템은 추가되는 프로젝트에 자동으로 연결되지만, *리소스* 페이지에서 다른 프로젝트나 폴더와도 연결할 수 있습니다.</block>
+  <block id="acf67f786e22a15c3ff04ae1f6c8ea12" category="paragraph">Keystone 구독은 NetApp Console 에서 사용자가 구독에 액세스할 수 있도록 프로젝트와 연결할 수 있는 리소스이기도 합니다.</block>
+  <block id="8e88fe5e613df95ef0fde3cf27c21a5b" category="list-text">조직 관리자는 스토리지 시스템을 관리하고 NetApp 데이터 서비스를 활성화하기 위해 콘솔 에이전트를 생성합니다. 에이전트는 처음에 생성된 프로젝트에 연결되지만, 관리자는 에이전트 페이지에서 다른 프로젝트나 폴더에 에이전트를 추가할 수 있습니다.</block>
+  <block id="628d9176cd0fff84e7a7642d6e347c77" category="paragraph">에이전트를 프로젝트와 연결하면 해당 프로젝트의 리소스를 관리할 수 있으며, 에이전트를 폴더와 연결하면 폴더 또는 프로젝트 관리자가 어떤 프로젝트에서 해당 에이전트를 사용할지 결정할 수 있습니다. 에이전트는 관리 기능을 제공하기 위해 특정 프로젝트와 연결되어야 합니다.</block>
+  <block id="803ae69b5603a03e7969373e143099c4" category="inline-link-macro">프로젝트에 에이전트를 연결하는 방법을 알아보세요.</block>
+  <block id="d2023a4ab828cd6c831b409006f97d93" category="paragraph"><block ref="d2023a4ab828cd6c831b409006f97d93" category="inline-link-macro-rx"></block></block>
+  <block id="3046a3cf2a88459ab80652e4ae68b22c" category="section-title">구성원 및 역할</block>
+  <block id="c16d2c57bf7fad0e40cde58d27c1339f" category="paragraph">NetApp Console 에 가입한 구성원을 조직에 추가해야 합니다. 추가한 후에는 역할을 할당하여 리소스에 대한 액세스 권한을 부여할 수 있습니다. 콘솔 내에서 수동으로 서비스 계정을 추가하거나 NetApp Console IAM API를 통해 생성 및 관리를 자동화할 수 있습니다.</block>
+  <block id="43b297cbb0e75204baf387be01022755" category="paragraph"><block ref="43b297cbb0e75204baf387be01022755" category="inline-link-macro-rx"></block></block>
+  <block id="f916d263ec3be157e30192a304e53728" category="paragraph">구성원에게 역할을 연결할 때, 해당 역할을 조직 전체, 특정 폴더 또는 특정 프로젝트에 대해 부여할 수 있습니다. 선택한 역할은 해당 계층 구조의 선택한 부분에 있는 리소스에 대한 권한을 구성원에게 부여합니다.</block>
+  <block id="ef07a2f4fd4017b8814a997f89b39300" category="paragraph">NetApp Console "최소 권한" 원칙을 준수하는 세분화된 역할을 제공합니다. 즉, 액세스 역할은 사용자가 필요한 기능에만 접근할 수 있도록 설계되었습니다.</block>
+  <block id="2a841c3875a3cfb6973b8cf8d764ccb7" category="paragraph">이는 사용자의 업무 범위가 확장됨에 따라 여러 역할을 부여받을 수 있음을 의미합니다.</block>
+  <block id="04049ea3946b8d071880d432ab8244f5" category="section-title">IAM 전략 사례</block>
+  <block id="0107f97fd7cbc1a3c8ceb62d7e5a6d61" category="section-title">소규모 조직 전략</block>
+  <block id="32443b220e6828d6f9f8016ad5c10432" category="paragraph">사용자 수가 50명 미만이고 스토리지 관리가 중앙 집중식으로 이루어지는 조직의 경우, 슈퍼 관리자 및 슈퍼 뷰어 역할을 사용하는 간소화된 접근 방식을 고려해 보세요.</block>
+  <block id="618d897449d220f2837f97a28a20e8e4" category="paragraph">**예시: ABC 회사 (5인 팀)**</block>
+  <block id="61cbbf5877d024341a0ef65454034d0d" category="list-text">**구조:** 3개의 프로젝트(운영, 개발, 백업)를 보유한 단일 조직</block>
+  <block id="727267ca2e62d67e09baf72ee7a6143c" category="list-text">**역할:**</block>
+  <block id="52d0e3e3e49b1c15ffc46987d4355baf" category="list-text">2명의 고위 멤버: 완전한 관리자 권한을 가진 *슈퍼 관리자* 역할</block>
+  <block id="b9ec60acb8ef1e7e6f9701eb09d805a3" category="list-text">팀 구성원 3명: 수정 권한 없이 모니터링만 가능한 *슈퍼 뷰어* 역할</block>
+  <block id="d9a58df0eace2d186eaded70baf838b6" category="list-text">**에이전트 전략:** 모든 프로젝트에 연결된 단일 에이전트를 사용하여 공유 리소스에 액세스합니다.</block>
+  <block id="55b47824d0005c8b8ab4de13ff882e64" category="list-text">**장점:** 관리 간소화, 역할 복잡성 감소, 광범위한 접근 권한이 필요한 팀에 적합</block>
+  <block id="f19b08303a80cfd1d9684c7ce9cb8320" category="section-title">다지역 기업 전략</block>
+  <block id="aba9938ebc9466429e9556389084ff33" category="paragraph">지역별 운영 및 전문 팀을 보유한 대규모 조직의 경우, 지리적 또는 사업부 경계를 나타내는 폴더를 사용하는 계층적 접근 방식을 구현하십시오.</block>
+  <block id="9b890ccf9a6e93916c8c59f0adbe368b" category="paragraph">**예시: XYZ 주식회사(다국적 기업)**</block>
+  <block id="c4e9a544c77f67f0daa16a823c5dad67" category="list-text">**구조:** 조직 &gt; 지역별 폴더(북미, 유럽, 아시아 태평양) &gt; 지역별 프로젝트 폴더</block>
+  <block id="cbb69d7099797b6abb26688a676ebafd" category="list-text">**플랫폼 역할:**</block>
+  <block id="22fadd1c560fece376d8a8bcd22a6686" category="list-text">1. 조직 관리: 글로벌 총괄 및 정책 관리</block>
+  <block id="d085387b24d7bd608526ad66a88849e2" category="list-text">3 *폴더 또는 프로젝트 관리자*: 지역별 관리 (지역당 1명)</block>
+  <block id="047117926ac026ef323e1bb551d7a3ba" category="list-text">1. *연합 관리*: 기업 ID 공급자 통합</block>
+  <block id="af6b385891fa191082f9b26a2d50fd71" category="list-text">**지역별 스토리지 역할:**</block>
+  <block id="7fca1fbbd1c1e4437e0285a8ce868797" category="list-text">9 *스토리지 관리자*: 지정된 지역의 스토리지 시스템을 검색하고 관리합니다.</block>
+  <block id="d824c09b7302996cb69c8ac47615d269" category="list-text">2. *스토리지 뷰어*: 여러 지역의 스토리지 리소스를 모니터링합니다.</block>
+  <block id="336a9df87a259bea2c48f91551120070" category="list-text">1. *시스템 상태 전문가*: 시스템 수정 없이 스토리지 상태를 관리합니다.</block>
+  <block id="d01b14a12072eaf2bdc4f1ab2189e695" category="list-text">**데이터 서비스 역할:**</block>
+  <block id="620ae10c7e5824918bbe23191568baec" category="list-text">*백업 및 복구 관리자*: 백업 책임 범위에 따라 프로젝트별로 책정됩니다.</block>
+  <block id="f4fb000411fab03ddf611da667916603" category="list-text">*랜섬웨어 복원력 관리자*: 프로젝트 전반에 걸친 보안 팀 모니터링</block>
+  <block id="8c56ec73753455408a4fdce92050c3a7" category="list-text">**에이전트 전략:** 해당 지역 프로젝트에 적합한 지역 에이전트를 배정합니다.</block>
+  <block id="c978064e6c0abe3ea339b837f893d9f4" category="list-text">**장점:** 역할 분리, 지역 자율성 및 현지 규정 준수를 통한 보안 강화</block>
+  <block id="1bca43386adb1b5dfd81efdcc80db730" category="section-title">학과별 전문화 전략</block>
+  <block id="0a63f0954c541e845e88af82c4db6d09" category="paragraph">특정 데이터 서비스 접근 권한이 필요한 전문 팀을 보유한 조직의 경우, 기능적 책임에 기반한 맞춤형 역할 할당을 활용하십시오.</block>
+  <block id="aa9752dc69ed187e2810e47002c52751" category="paragraph">**예시: TechCorp (중견 기술 기업)**</block>
+  <block id="04baa5867533308bc0cc91388e728ac5" category="list-text">**구조:** 조직 &gt; 부서 폴더(IT, 보안, 개발) &gt; 프로젝트별 리소스</block>
+  <block id="364d4b2b51f19e1d7f6d176b369d3c65" category="list-text">**전문적인 역할:**</block>
+  <block id="7b643f4babc14154b240069484f64b94" category="list-text">보안팀: *랜섬웨어 복원력 관리자* 및 *분류 보기 담당자* 역할</block>
+  <block id="5bdf90c7ab018c993a169377c8a512b0" category="list-text">백업 팀: 포괄적인 백업 작업을 위한 *백업 및 복구 최고 관리자*</block>
+  <block id="cdc9616ac940de001148c939588043e2" category="list-text">개발팀: 테스트 환경 관리를 위한 *저장소 관리자*</block>
+  <block id="19ac215f6aedb92a065e282a886afcf3" category="list-text">규정 준수 팀: 모니터링 및 지원 사례 관리를 담당할 *운영 지원 분석가*</block>
+  <block id="ec09e08f0dad9967f815ea4a6150e06c" category="list-text">**에이전트 전략:** 리소스 소유권을 기반으로 부서 프로젝트에 에이전트를 연결합니다.</block>
+  <block id="0ef5ca1d3a2b8ef1e24d12a2a867a4f6" category="list-text">**장점:** 맞춤형 접근 제어, 운영 효율성 향상, 전문 업무에 대한 명확한 책임 소재 규명</block>
+  <block id="12e01bb1a747f9efa932e4290df47651" category="section-title">NetApp Console 에서 IAM 관련 다음 단계</block>
+  <block id="317861835a558acc5da02a2d53e87e99" category="paragraph">이 솔루션은 서비스형 소프트웨어(SaaS) 플랫폼으로 제공되거나, 자체 클라우드에 설치하여 사용할 수 있는 셀프 호스팅 옵션으로 제공됩니다. 이 시스템은 스토리지 관리, 데이터 이동성, 데이터 보호, 데이터 분석 및 제어 기능을 제공합니다. 관리 기능은 웹 기반 콘솔과 API를 통해 제공됩니다.</block>
+  <block id="6f9220ecdca642b0359fd1d526b21090" category="inline-image-macro">콘솔 화면에 여러 시스템이 표시된 스크린샷입니다. 하나를 선택하면 NetApp 데이터 서비스를 활성화하거나 스토리지 관리를 위해 *시스템 입력*을 선택할 수 있는 기능이 표시됩니다.</block>
+  <block id="011d3401e6ecd731f72c9e3afe1df058" category="paragraph"><block ref="011d3401e6ecd731f72c9e3afe1df058" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="87d57ea72cafc3aa3be259970e754f81" category="section-title">SaaS와 주권 클라우드 배포 비교</block>
+  <block id="641ac543d6ed23ceda83d07e868515f8" category="paragraph">NetApp Console SaaS 제품에 가입하거나 자체 클라우드에 배포하여 사용을 시작할 수 있습니다. NetApp Console 독립형 클라우드에 배포하면 NetApp 조직의 보안 및 규정 준수 요구 사항을 충족하기 위해 아웃바운드 연결을 제한합니다. 콘솔을 주권 클라우드에 배포할 경우 모든 기능과 서비스를 사용할 수 있는 것은 아닙니다.</block>
+  <block id="2c6c43d54a7dd74a06c155d08d7db4eb" category="paragraph">NetApp 외부 연결이 필요 없는 사이트를 위해 BlueXP 계속해서 제공합니다. BlueXP 외부 연결 없이 네트워크에 설치할 수 있습니다. <block ref="f1018912945653d0f5d1d6c88d05acfe" category="inline-link-macro-rx"></block></block>
+  <block id="950a35d7aced985e8ee1b6240f65a908" category="doc">NetApp Console 보안 규정 준수</block>
+  <block id="eedfa09a5feb67c791cc20a479679c67" category="paragraph">NetApp Console 은 SOC 2 Type II 인증을 준수합니다.</block>
+  <block id="051ae024df3188ffe4e3ac43a493c874" category="inline-link-macro">NetApp의 SOC 2 인증에 대해 자세히 알아보세요.</block>
+  <block id="5c1f694e43aab1bf26b300260c3822c2" category="paragraph"><block ref="5c1f694e43aab1bf26b300260c3822c2" category="inline-link-macro-rx"></block></block>
+  <block id="a7cbfcc3f40f9b759d21b6e0bfb565ec" category="cell">사용자에게 할당된 프로젝트와 폴더에 대한 제한 없는 액세스를 허용합니다. 자신이 관리하는 폴더나 프로젝트에 멤버를 추가할 수 있고, 할당된 폴더나 프로젝트 내의 리소스에 대한 모든 작업을 수행하고 모든 데이터 서비스나 애플리케이션을 사용할 수 있습니다. 폴더 또는 프로젝트 관리자는 콘솔 에이전트를 생성할 수 없습니다.</block>
+  <block id="143bd02c953bba9b731282024d3a9f3d" category="cell">사용자가 NetApp Data Classification 검사 결과를 볼 수 있습니다. 이 역할이 있는 사용자는 규정 준수 정보를 보고 액세스 권한이 있는 리소스에 대한 보고서를 생성할 수 있습니다. 이러한 사용자는 볼륨, 버킷 또는 데이터베이스 스키마의 스캐닝을 활성화하거나 비활성화할 수 없습니다. 분류에는 관리자 역할이 없습니다.</block>
+  <block id="1282f90034162aa1eb616797e0379691" category="paragraph">콘솔 에이전트가 클라우드 환경에서 작업을 수행할 수 있도록 적절한 권한을 부여해야 합니다. 이 페이지의 링크를 사용하여 목표에 따라 필요한 권한에 빠르게 접근하세요.</block>
+  <block id="0429753823dd56c6321879ac91c61377" category="cell">콘솔에서 콘솔 에이전트를 배포하려면 AWS에 콘솔 에이전트를 배포하기 위해 사용자에게 특정 권한이 필요합니다.</block>
+  <block id="6a576eacbcc0768a7faf1facae7a80dd" category="cell">데이터 브로커를 배포하는 데 사용하는 AWS 사용자 계정에는 필요한 권한이 있어야 합니다.</block>
+  <block id="382a5f94b2fc27afca8b5059a38447fc" category="cell">NetApp Cloud Tiering AWS에 활성화할 때 액세스 키와 비밀 키를 입력해야 합니다. 이러한 자격 증명은 ONTAP 클러스터로 전달되어 ONTAP 데이터를 S3 버킷으로 계층화할 수 있도록 합니다.</block>
+  <block id="afde698940da385b9c6a6919318278ab" category="paragraph">향후 릴리스에서 새로운 권한이 추가될 경우 정책을 최신 상태로 유지하십시오.</block>
+  <block id="9c2492a427b389000c06bd6e5bc48096" category="cell">NetApp Backup and Recovery 사용하여 온프레미스 ONTAP 클러스터를 백업할 때 콘솔 에이전트가 "검색 및 복원" 기능을 사용할 수 있도록 권한을 추가해야 합니다.</block>
+  <block id="59f9914b438a2f55a9b7b527baf46fa7" category="cell">콘솔 에이전트의 서비스 계정은 일상적인 운영을 위해 특정 권한을 보유해야 합니다. 배포 중에 서비스 계정을 콘솔 에이전트와 연결해야 합니다. 향후 릴리스에서 새로운 권한이 추가될 경우 정책을 최신 상태로 유지하십시오.</block>
+  <block id="7d7ac3e1fbeac6b54cb98f1e6ba0c151" category="inline-image-macro">콘솔이 API 호출을 하기 전에 Microsoft Entra ID로부터 인증 및 권한 부여를 받는 과정을 보여주는 개념 이미지입니다. 콘솔 역할은 Active Directory에서 권한을 정의합니다. 이는 하나 이상의 Azure 구독 및 콘솔 애플리케이션을 나타내는 서비스 주체 개체와 연결됩니다.</block>
+  <block id="67c9df3365a25f9273ce9359a9970d73" category="paragraph"><block ref="67c9df3365a25f9273ce9359a9970d73" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b5b8631c77766cf76c4cdf595d85709d" category="paragraph">조직 관리자 역할을 가진 NetApp Console (SaaS)을 처음 사용하는 경우 콘솔 도우미를 사용하여 초기 설정 프로세스를 안내받을 수 있습니다. 이 도우미는 NetApp 지원 사이트(NSS) 계정 추가, 콘솔 에이전트 추가, 클러스터 추가, 라이선스 또는 구독 추가를 지원하여 데이터 관리를 더 쉽게 시작할 수 있도록 도와줍니다.</block>
+  <block id="f4fcdc3618d224e799137c32961b66fe" category="paragraph">기본적으로 NetApp Console 조직 관리자 역할을 가진 신규 사용자를 위해 홈 페이지에 콘솔 도우미를 표시합니다. 콘솔 에이전트를 생성하고 시스템을 추가하는 필수 작업을 완료할 때까지 해당 기능은 계속 사용할 수 있습니다.</block>
+  <block id="87ce348d036c128a34f78c5571668a05" category="paragraph">도우미를 사용하여 다음 작업을 완료하면 NetApp Console 환경을 위한 최소 설정이 완료됩니다.</block>
+  <block id="8c34b16f3206503a273a913d579a45b4" category="inline-link-macro">NSS 계정을 추가하는 방법을 알아보세요</block>
+  <block id="910e5ce0d2ce921cf2d92a32f17c63cc" category="paragraph"><block ref="020d26e4890f1052d0e4c1afcac4a7ce" category="inline-link-macro-rx"></block>.</block>
+  <block id="219da842ce0ea93dbe65e778848ee1ac" category="list-text">콘솔 에이전트를 배포하여 스토리지 환경에 연결하세요.</block>
+  <block id="8df7cf42ef8d2b87ead21a16f64ec2db" category="inline-link-macro">콘솔 에이전트를 온프레미스에 설치하는 방법을 알아보세요.</block>
+  <block id="d75cfb6f68d260019e101b846a291a95" category="paragraph"><block ref="d75cfb6f68d260019e101b846a291a95" category="inline-link-macro-rx"></block></block>
+  <block id="0041b0a20310bf9b86cf14cc7a911900" category="list-text">클러스터를 추가하거나 검색하여 스토리지 시스템을 관리하세요.</block>
+  <block id="8bde17b3755db15ba7eeeaebbd0ec6a6" category="inline-link-macro">라이선스 및 구독 추가 방법을 알아보세요.</block>
+  <block id="32cb091abc6285411d273895dd9a676a" category="paragraph"><block ref="1ddf5dd64a51001f039dd9f39712e537" category="inline-link-macro-rx"></block>.</block>
+  <block id="29ea98735edd89bd452d0ccd218efb00" category="list-text">데이터 서비스 정보를 검토하세요.</block>
+  <block id="5d775d2582c5b9e09c769a1d78f0287b" category="summary">콘솔 사용을 시작하려면 먼저 NetApp 지원 사이트 자격 증명을 사용하여 가입 또는 로그인하거나 NetApp Console 로그인을 생성해야 합니다. 회사에서 처음으로 가입하는 사용자라면 조직 관리자 권한으로 콘솔에서 새 조직을 생성해야 합니다. 회사에 이미 조직이 있는 경우, 가입하거나 로그인하여 해당 조직에 액세스할 수 있습니다.</block>
+  <block id="ee9164e87b6a48eb7267f96b5eea6927" category="doc">NetApp Console 조직에 대해 읽기 전용 모드를 활성화합니다.</block>
+  <block id="1502dd52f21974358fc9b631a9bd3ede" category="paragraph">보안상의 예방 조치로 NetApp Console 조직에 대해 읽기 전용 모드를 활성화할 수 있습니다. 읽기 전용 모드에서는 사용자가 리소스와 설정을 볼 수는 있지만 변경할 수는 없습니다.</block>
+  <block id="934bac81bd3943334449500387f09185" category="paragraph">읽기 전용 모드에서는 관리자 권한을 가진 사용자가 변경을 하려면 수동으로 권한을 높여야 하므로 변경 사항이 의도적인 것임을 보장합니다.</block>
+  <block id="53ccb7bd8c0be53a952139ebd4454132" category="paragraph-title">필수 접근 권한 역할</block>
+  <block id="4108d98bcfb2f72210c814c171f79e00" category="paragraph">최고 관리자 또는 조직 관리자.</block>
+  <block id="1bd38acf8c902626aedcc8c6b12762d7" category="section-title">콘솔 조직에 대해 읽기 전용 모드를 활성화합니다.</block>
+  <block id="5bf8daa3c0dc16befcbf126a2fbf7d3b" category="paragraph">콘솔 조직에 대한 변경을 제한하려면 읽기 전용 모드를 활성화하세요. 모든 사용자는 여전히 리소스를 볼 수 있습니다. 관리자 권한을 가진 사용자는 수동으로 권한을 높이지 않으면 콘솔에서 어떤 작업도 수행할 수 없습니다.</block>
+  <block id="67dc6731b52be466c87a71e328b38b1d" category="paragraph">읽기 전용 모드가 활성화되면 사용자는 조직이 읽기 전용 모드임을 알리는 배너를 보게 됩니다. 사용자는 자신의 역할을 높이기 위해 사용자 설정으로 이동해야 합니다.</block>
+  <block id="077396c12efaa57c1b81350a76f607c7" category="list-text">*조직* 탭에서 읽기 전용 모드로 설정하려는 조직의 *조직 설정 편집*을 선택합니다.</block>
+  <block id="d2a2a2d01dab51c4edcc72cdbf26dd9e" category="list-text">*읽기 전용 모드* 섹션에서 토글 스위치를 *켜짐* 위치로 이동하여 읽기 전용 모드를 활성화한 다음 *저장*을 선택합니다.</block>
+  <block id="830042deac7cf98a9d585826bf88f527" category="inline-image-macro">읽기 전용 모드 토글 스위치가 켜짐 위치에 있는 모습을 보여주는 스크린샷입니다.</block>
+  <block id="aaa2a8206d2beaf2ad4c110435335619" category="paragraph"><block ref="aaa2a8206d2beaf2ad4c110435335619" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0946433107c0141c86e12d9acfc94eb5" category="section-title">NetApp Console 에 최초 조직 관리자로 등록하세요.</block>
+  <block id="7d49e7e93048e2c08ada8c16c7b0851f" category="paragraph">회사에 NetApp Console 조직이 없는 경우 가입하여 조직을 생성하세요. 첫 번째 사용자는 관리자이며 계정과 권한을 관리합니다. 역할은 나중에 업데이트하고 관리자를 추가할 수 있습니다.</block>
+  <block id="dc346f53e29026800c3b9274294105f6" category="list-text">NetApp 지원 사이트 계정이 있는 경우, *로그인* 페이지에서 계정과 연결된 이메일 주소를 직접 입력하십시오.</block>
+  <block id="b1c0e39fde6fd83a65dd3bd95142165f" category="paragraph">콘솔은 초기 로그인 과정에서 NetApp 지원 사이트 자격 증명을 사용하여 사용자를 등록합니다.</block>
+  <block id="95f99a60f019f663b3b74472e57bd99b" category="admonition">회원가입 양식에는 영문자만 입력할 수 있습니다.</block>
+  <block id="745229ae5b2bced3482332829ac60c32" category="paragraph">가입을 완료하려면 이메일 주소를 인증하세요.</block>
+  <block id="9e8f3a5627d6a315be184e88407a8e4b" category="list-text">로그인 후 최종 사용자 라이선스 계약을 검토하고 동의하십시오.</block>
+  <block id="4c93133d0f71016860e62cd5febc8888" category="list-text">*환영* 페이지에서 조직을 생성하세요.</block>
+  <block id="d7398f410905989b0cfbd7c8949dea25" category="inline-link-macro">콘솔 지원 사용법에 대해 알아보세요.</block>
+  <block id="fa08bac88bef3e9d26d3b95077caef72" category="paragraph">+ 처음 관리자 권한을 획득한 경우, 안내에 따라 스토리지를 추가하고 콘솔 에이전트를 생성하는 등의 작업을 진행하세요. <block ref="bf1931d629ee75960c14ddd7c33b6738" category="inline-link-macro-rx"></block></block>
+  <block id="cce78dc6ebbec7385a01f2146d6d01c8" category="paragraph-title">다음 단계</block>
+  <block id="11fd5297be439890aa7909ed6b065791" category="inline-link-macro">NetApp Console 의 ID 및 액세스 관리에 대해 알아보세요.</block>
+  <block id="31d64e1aa309f3c1d129fe42fb15c550" category="paragraph">관리자로서 콘솔 지원 도구에 포함된 단계를 완료한 후에는 ID 및 액세스 전략을 계획하고, 조직에 사용자를 추가하고, 역할을 할당해야 합니다. <block ref="c76be609c50d4552e26c26422993deb2" category="inline-link-macro-rx"></block></block>
+  <block id="347778e3054043c713d65df7f9e10e01" category="section-title">이미 조직이 있는 경우 NetApp Console 에 가입하거나 로그인하세요.</block>
+  <block id="5acfd694e6aaca7505fcdbc950ee0e38" category="paragraph">귀사에 이미 NetApp Console 조직이 있는 경우, 가입하거나 로그인하여 액세스하십시오. 가입 또는 로그인 방법은 회사에서 ID 페더레이션을 사용하는지 또는 NetApp 지원 사이트 자격 증명을 보유하고 있는지에 따라 다릅니다. 그렇지 않다면 NetApp Console 로그인 계정을 생성하십시오.</block>
+  <block id="7db903b190082d22d5def424cfdf8da1" category="list-text">NetApp 지원 사이트 계정이 있거나 회사에서 단일 로그인(SSO)을 설정한 경우 *로그인* 페이지에서 연결된 이메일 주소 또는 SSO 자격 증명을 입력하십시오. 안내에 따라 로그인을 완료하세요.</block>
+  <block id="adbbbb6561b05ff5263526309e842926" category="inline-link-macro">조직 관리자에게 연락하는 방법을 알아보세요.</block>
+  <block id="209cbd371e4e73e308b346af700a9f6d" category="list-text">시스템에서 조직을 생성하라는 메시지가 표시되면 대화 상자를 닫고 콘솔 관리자에게 알려 콘솔 조직에 추가하고 액세스 권한을 부여받으십시오. <block ref="68ba448e5ed3d32508e199fa22eb43b6" category="inline-link-macro-rx"></block></block>
+  <block id="bd2f34410185922260ac4efdf54bca8b" category="paragraph">조직에 대한 액세스 권한이 부여되면 스토리지를 관리하고 할당된 데이터 서비스를 사용할 수 있습니다.</block>
+  <block id="f59f161390f1bb901c50b0444a10682d" category="paragraph">기존 페더레이션에 추가적인 인증된 도메인을 추가할 수도 있습니다. 이를 통해 페더레이션 연결에 여러 도메인을 사용할 수 있습니다.</block>
+  <block id="455eba9dac1d0bd193275dfd5a99f973" category="list-text">감사 페이지에서 페더레이션 활성화, 비활성화 및 업데이트와 같은 페더레이션 관리 이벤트를 확인할 수 있습니다. <block ref="2aa37a4e40a079c9408b3b80517b92fa" category="inline-link-macro-rx"></block></block>
+  <block id="95df6e616e319eb924bc933f31ac6775" category="paragraph">콘솔 에이전트를 특정 프로젝트와 연결하여 리소스 관리 및 데이터 서비스 액세스를 활성화하십시오. 콘솔 에이전트를 통해 검색된 리소스는 팀 액세스를 위해 해당 리소스와 에이전트가 동일한 프로젝트에 연결되어 있어야 합니다.</block>
+  <block id="4660db74d545b9594630c648aca44dd7" category="paragraph">최고 관리자 및 조직 관리자는 에이전트를 생성하고 모든 에이전트를 모든 프로젝트 또는 폴더와 연결할 수 있습니다. 폴더 또는 프로젝트 관리자는 자신이 권한을 가진 폴더 및 프로젝트에만 기존 에이전트를 연결할 수 있습니다. <block ref="c691e2b9b4224ed90bb4f1f11059b372" category="inline-link-macro-rx"></block>.</block>
+  <block id="9b569f5410f438350a839aa90af4545d" category="paragraph">조직의 ID 및 액세스를 관리하려면 *조직 관리자* 또는 *슈퍼 관리자* 권한이 필요합니다. *폴더 또는 프로젝트 관리자* 권한이 있으면 접근 권한이 있는 폴더와 프로젝트만 관리할 수 있습니다.</block>
+  <block id="fe333bbc506814f898618c6bcf114d81" category="paragraph">사용자가 NetApp Console 에 가입한 후에는 콘솔 조직에 해당 사용자를 명시적으로 추가해야 합니다. 조직에 서비스 계정을 추가하는 옵션도 있습니다.</block>
+  <block id="2ce957c89371cf8acad81ff68dd6e552" category="summary">비즈니스 구조에 맞게 폴더와 프로젝트를 추가하세요. 폴더와 프로젝트를 생성한 후에는 해당 폴더에 리소스를 연결하고 프로젝트에 대한 구성원의 액세스 권한을 관리할 수 있습니다.</block>
+  <block id="0b1953169659929f252b74b2fac140a4" category="doc">NetApp Console 조직에 폴더와 프로젝트를 추가하세요.</block>
+  <block id="f2b5e92952531dba522ce88cb4c16dae" category="inline-link-macro">NetApp Console 의 리소스 계층 구조에 대해 알아보세요.</block>
+  <block id="f49ccb97d62c81974bbda51cd8c77318" category="paragraph">콘솔은 새 조직을 생성할 때 자동으로 하나의 프로젝트를 생성합니다. 대부분의 조직은 하나 이상의 프로젝트를 필요로 하며, 자료를 정리하기 위한 폴더도 필요합니다. <block ref="3ff8a71797cdccee53e5a806a28529f8" category="inline-link-macro-rx"></block>.</block>
+  <block id="f55c1cf23850cb94b20fa20bba3f1258" category="section-title">폴더와 프로젝트를 사용하여 리소스를 정리하세요</block>
+  <block id="f5053c5bbeed6cc022a8eb13ef974310" category="paragraph">NetApp Console 에서 조직은 리소스를 구성하는 데 도움이 되는 폴더와 프로젝트로 구성됩니다. 폴더를 사용하면 관련 프로젝트를 그룹화할 수 있고, 프로젝트를 사용하면 리소스와 구성원 접근 권한을 관리할 수 있습니다.</block>
+  <block id="23a84683c545992067034aebc5f5800d" category="paragraph">폴더는 관련된 프로젝트를 정리하는 데 도움이 됩니다. 조직 구조의 다양한 계층을 나타내기 위해 중첩 폴더를 만들 수 있습니다. 예를 들어, 각 사업부별로 최상위 폴더를 만들고 그 안에 해당 사업부 내의 여러 팀별로 하위 폴더를 만들 수 있습니다. 그다음에는 폴더 안에 프로젝트를 생성합니다.</block>
+  <block id="0e1d4bb97fa3c0957a2102a7ad9a8a4a" category="paragraph">폴더를 사용하면 역할 상속을 통해 구성원 접근 권한을 더욱 효율적으로 관리할 수 있습니다. 폴더 수준에서 멤버에게 역할을 할당하면 해당 멤버는 모든 하위 프로젝트 및 폴더에 대한 권한을 상속받습니다.</block>
+  <block id="47645323d0dcf35be6cd9da50c005f91" category="admonition">폴더는 조직 관리를 위한 도구이며, 조직 관리자, 폴더 관리자, 프로젝트 관리자 또는 슈퍼 관리자 역할과 같은 IAM 권한이 없는 구성원에게는 표시되지 않습니다. 회원은 폴더가 아닌 프로젝트에 접근할 수 있습니다.</block>
+  <block id="b0a1fc59ed55ce94ec61843746c271e3" category="paragraph">조직 관리자는 폴더를 생성하여 관리 책임을 위임할 수 있습니다. 폴더를 생성한 후, 조직 관리자는 특정 폴더에 대해 구성원에게 폴더 관리자 또는 프로젝트 관리자 역할을 할당할 수 있습니다. 이러한 구성원들은 전체 조직에 대한 접근 권한 없이도 해당 폴더 내의 모든 프로젝트를 관리할 수 있습니다.</block>
+  <block id="7333669681c3bfc4b872d032356ff491" category="paragraph">폴더는 다른 폴더나 프로젝트를 하위 폴더로 포함할 수 있지만, 리소스를 직접적으로 연결할 수는 없습니다. 리소스는 프로젝트와 연관되어야 합니다.</block>
+  <block id="890ae0025d21eef160ace21fb3149039" category="inline-image-macro">폴더와 해당 폴더에 연결된 리소스를 보여주는 다이어그램입니다. 해당 폴더에는 프로젝트 A와 프로젝트 B, 이렇게 두 개의 프로젝트가 있습니다.</block>
+  <block id="d46a6083c02d984712a83d6c5b120fc1" category="paragraph"><block ref="d46a6083c02d984712a83d6c5b120fc1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7ab001a557500fdf3abf96f1dc5846d7" category="inline-image-macro">두 개의 프로젝트(프로젝트 A와 프로젝트 B)가 포함된 폴더를 보여주는 다이어그램입니다. 프로젝트 A와 연결된 리소스도 함께 제시되어 있습니다.</block>
+  <block id="680181c4f97261b5c9ed915395ba3b92" category="paragraph"><block ref="680181c4f97261b5c9ed915395ba3b92" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="46265e9714318d57269c7d6f993d7bf7" category="paragraph">구성원이 리소스를 관리할 수 있도록 리소스와 프로젝트를 연결하세요. 리소스는 관리 및 사용자 접근을 위해 프로젝트와 연결되어야 합니다.</block>
+  <block id="1dbed530db5c9d95fa8ec141aee2c8a3" category="paragraph">조직은 하나 또는 여러 개의 프로젝트를 가질 수 있습니다. 프로젝트는 조직 바로 아래에 있거나 폴더 안에 있을 수 있습니다. 프로젝트 내 리소스를 검색하는 데 에이전트를 사용하는 경우 해당 에이전트를 프로젝트와 연결해야 합니다.</block>
+  <block id="f68264db31f8e358d7b3d39779910149" category="paragraph">사용자는 *시스템* 페이지에서 할당된 프로젝트 간을 탐색하여 각 프로젝트와 관련된 리소스를 관리할 수 있습니다.</block>
+  <block id="81bcfbdb7e695e8691db23d1321b1e4d" category="paragraph">프로젝트를 추가하여 리소스를 관리하고, 폴더를 추가하여 관련 프로젝트를 그룹화하세요. 새 조직을 생성하면 콘솔에 프로젝트 하나가 포함됩니다.</block>
+  <block id="6ed61c190e4f415666551a70090ee558" category="paragraph">조직의 리소스 구조에서 최대 7단계의 폴더와 프로젝트를 생성할 수 있습니다. 필요에 따라 하위 폴더를 만들어 리소스를 정리하세요.</block>
+  <block id="5dc5f7f75b0dfdc61cd1b94110ae984b" category="list-text">*이름 및 위치*: 폴더 또는 프로젝트의 이름을 입력하고 위치를 선택하세요. 폴더나 프로젝트는 조직 아래에 또는 다른 폴더 안에 배치할 수 있습니다.</block>
+  <block id="254d2f12d648be132f229e56797f57ae" category="list-text">*리소스*: 이 폴더 또는 프로젝트와 연결할 리소스를 선택하세요. 콘솔에 스토리지 시스템을 아직 추가하지 않았다면 나중에 이 단계를 진행할 수 있습니다.</block>
+  <block id="cc91e3d4532f60de58ee3bbfc98a83ba" category="admonition">구성원은 해당 리소스가 프로젝트에 할당되기 전까지는 폴더 내의 리소스에 접근할 수 없습니다. 필요한 프로젝트를 만들 때까지 리소스를 임시로 보관하려면 폴더를 사용하세요. 이 기능을 통해 조직 관리자는 리소스 할당을 폴더 또는 프로젝트 관리자에게 위임할 수 있으며, 폴더 또는 프로젝트 관리자는 해당 폴더 내의 프로젝트에 리소스를 할당할 수 있습니다.</block>
+  <block id="1c5908c2545fe748beabd542eeadfa65" category="list-text">*접근 권한*: *멤버 추가*를 선택하여 접근 권한과 역할을 할당하세요. 프로젝트 또는 폴더에서 언제든지 구성원을 추가하거나 삭제할 수 있습니다.</block>
+  <block id="c1617a424b1b78f2e4996c706c7da25f" category="paragraph">필요에 따라 폴더 또는 프로젝트 이름을 변경하세요. 이름 변경은 관련 리소스나 회원 접근 권한에 영향을 미치지 않습니다.</block>
+  <block id="06a01cc7b48cebaa7b2745656e6b06c0" category="paragraph">팀 재편성이나 프로젝트 완료 후 더 이상 필요하지 않은 폴더와 프로젝트를 삭제하세요.</block>
+  <block id="87134724e257cb8840c1000071f4b625" category="paragraph">조직의 요구 사항이 변경됨에 따라 폴더 또는 프로젝트와 연결된 리소스를 변경할 수 있습니다.</block>
+  <block id="715079a082fcf8dc70bf1c45f87994a6" category="list-text">선택한 리소스를 기반으로 *프로젝트에 연결* 또는 *프로젝트에서 연결 해제*를 선택하십시오.</block>
+  <block id="48eddb9422f94db0ba1c8ab2d6959b69" category="paragraph">*조직* 페이지에서 폴더 또는 프로젝트와 관련된 구성원을 볼 수 있습니다.</block>
+  <block id="7ec95d8b18380f61f62a5c7444edbb4d" category="paragraph">리소스 접근을 제어하려면 멤버 접근 권한을 수정하세요. 폴더 수준에서 할당된 역할은 모든 하위 프로젝트 및 폴더에 상속된다는 점을 기억하십시오.</block>
+  <block id="6a070ab9c3d6306fbe1b5def78331465" category="paragraph">폴더 또는 조직 수준에서 상속된 구성원 액세스 권한은 하위 수준에서 변경할 수 없습니다. 상위 계층에서 구성원의 권한을 변경하여 접근 권한을 변경하세요. 또는 다음과 같은 방법도 있습니다. <block ref="2e250d63a19626cb0aeed14260bd2f59" category="inline-link-macro-rx"></block>.</block>
+  <block id="692fa8c1472b3f5b389ae8b229a03338" category="doc">NetApp Console 조직에 사용자 추가</block>
+  <block id="9367e759db9275009eaa691f3756abe9" category="paragraph">콘솔 내에서 액세스 역할에 따라 사용자에게 프로젝트 또는 폴더에 대한 액세스 권한을 부여할 수 있습니다. 액세스 역할은 구성원(사용자 또는 서비스 계정)이 리소스 계층 구조의 지정된 수준에서 특정 작업을 수행할 수 있도록 하는 권한 집합을 포함합니다.</block>
+  <block id="e1e51b7c8740497989d96d687d7ce641" category="paragraph">최고 관리자, 조직 관리자 또는 폴더/프로젝트 관리자(해당 폴더 및 프로젝트를 관리하는 경우에 한함). <block ref="358dd7829c43f386bdd1bc16bf83b432" category="inline-link-macro-rx"></block>.</block>
+  <block id="3cbafb79babb187563c0124e2520510c" category="section-title">NetApp Console 에서 액세스 권한이 부여되는 방식을 이해하십시오.</block>
+  <block id="6006dace312ced6616f59ef5355ec45d" category="paragraph">NetApp Console 역할 기반 액세스 제어(RBAC)를 사용하여 권한을 관리합니다. 사용자에게 개별적으로 또는 연합 그룹을 통해 역할을 할당합니다. 각 역할은 특정 리소스에 대해 허용되는 작업을 정의합니다.</block>
+  <block id="34b1f94b77b5bf3b37ba851f10060189" category="paragraph">NetApp Console 에서 액세스 권한을 부여할 때 다음 사항에 유의하십시오.</block>
+  <block id="68486ab3d656a167edf458a9cdc1ec37" category="list-text">모든 사용자는 리소스에 액세스하기 전에 먼저 NetApp Console 에 가입해야 합니다.</block>
+  <block id="2bd8e344bd7b38add589340263927733" category="list-text">콘솔에서 각 사용자가 리소스에 액세스하려면 해당 사용자에게 명시적으로 역할을 할당해야 합니다. 이는 역할이 할당된 연합 그룹의 구성원인 경우에도 마찬가지입니다.</block>
+  <block id="b499ec6fa9977b0ca77f6656a13829bb" category="list-text">콘솔에서 직접 서비스 계정을 추가하고 역할을 할당할 수 있습니다.</block>
+  <block id="9522a4fe29d3a6f0c0622f4995ff5efb" category="paragraph">NetApp Console 사용자 계정, 서비스 계정 및 페더레이션 그룹의 세 가지 유형의 멤버를 지원합니다.</block>
+  <block id="f885e9c9bd1a071e174b95a4756cc585" category="paragraph">연합 그룹에 속해 있더라도 사용자를 추가하고 역할을 할당하려면 먼저 NetApp Console 에 가입해야 합니다. 콘솔에서 직접 서비스 계정을 생성하세요.</block>
+  <block id="d94f6f6ba8ce7506a6b69386dcf7a22a" category="paragraph">모든 구성원은 리소스에 접근하기 위해 최소한 하나의 역할이 명시적으로 할당되어 있어야 합니다.</block>
+  <block id="329677cd626d4cfa5f740d7b30a4267d" category="paragraph">멤버를 추가할 때는 리소스 수준(조직, 폴더 또는 프로젝트)을 선택하고 필요한 권한이 있는 역할을 할당하세요.</block>
+  <block id="1dab057ddc4cf188939abb2ad8167642" category="section-title">사용자 추가</block>
+  <block id="c4f012a820a876441651b72de9950dd2" category="paragraph">사용자는 NetApp Console 에 가입하지만, 조직 관리자, 폴더 관리자 또는 프로젝트 관리자가 해당 사용자를 조직, 폴더 또는 프로젝트에 추가해야 리소스에 액세스할 수 있습니다.</block>
+  <block id="b4a0cb24fc1c2a28e5b0fd5fa8308158" category="paragraph-title">시작하기 전에:</block>
+  <block id="24d7e1e56b09c7376a4a094ec532aeab" category="inline-link-macro">NetApp Console 에 가입하세요.</block>
+  <block id="f9f0fc08a28165bf61fdcc6fc990b36c" category="paragraph">사용자는 이미 NetApp Console 에 가입되어 있어야 합니다. 아직 가입하지 않았다면, 가입 페이지로 안내해 주세요. <block ref="d4374b555d5da28aa40f87ee2182176f" category="inline-link-macro-rx"></block></block>
+  <block id="4b3c98ae86f08a374f95582b9064bd51" category="admonition">연합 그룹에 속한 사용자를 추가하는 경우, 해당 사용자가 이미 NetApp Console 에 가입되어 있고 콘솔에서 명시적으로 역할을 할당받았는지 확인하십시오. NetApp 조직 뷰어와 같은 최소 액세스 역할을 할당하는 것을 권장합니다.</block>
+  <block id="e4c7746ce65f01142bd97bb2d2b4e60c" category="list-text">*사용자 이메일*에는 사용자가 만든 로그인과 연결된 이메일 주소를 입력합니다.</block>
+  <block id="16f19f1862986e5cfa297bf88d518ae8" category="list-text">권한이 있는 폴더와 프로젝트만 선택할 수 있습니다.</block>
+  <block id="af90d2d7644f20dc2d8aec6e0f442367" category="list-text">조직이나 폴더를 선택하면 해당 구성원에게 모든 콘텐츠에 대한 접근 권한이 부여됩니다.</block>
+  <block id="a9b2b751db8d05c519eb79f9711b1fb5" category="list-text">더 많은 폴더, 프로젝트 또는 역할에 대한 액세스 권한을 부여하려면 *역할 추가*를 선택하고 폴더, 프로젝트 또는 역할 범주를 선택한 다음 역할을 선택하세요.</block>
+  <block id="c1210e1eadc2e6185343080e42569250" category="paragraph">콘솔은 사용자에게 이메일로 지침을 보냅니다.</block>
+  <block id="7d3bb6a341c5bcd69e576d8a2d0d4481" category="paragraph">서비스 계정을 사용하면 작업을 자동화하고 콘솔 API에 안전하게 연결할 수 있습니다. 간단한 설정을 위해서는 클라이언트 ID와 암호를 선택하고, 자동화 환경이나 클라우드 네이티브 환경에서 보안을 강화하려면 JWT(JSON Web Token)를 선택하십시오. 보안 요구 사항에 맞는 방법을 선택하십시오.</block>
+  <block id="cf93592d2eb75cefdaf9491c515627ff" category="paragraph">JWT 인증을 위해서는 공개 키 또는 인증서를 준비하십시오.</block>
+  <block id="6b46a99edf68965e5f08add7c63f7189" category="list-text">JWT 인증을 사용하려면 *개인 키 JWT 인증 사용*을 선택하고 공개 RSA 키 또는 인증서를 업로드하세요. 클라이언트 ID와 시크릿을 사용하는 경우 이 단계를 건너뛰세요.</block>
+  <block id="25054204158c0a8e9ec275453c365690" category="paragraph">귀하의 X.509 인증서. PEM, CRT 또는 CER 형식이어야 합니다.</block>
+  <block id="346b70a5bf4a6387b4ab083ced7c39f4" category="list-text">범주를 선택한 다음, 선택한 조직, 폴더 또는 프로젝트의 리소스에 대한 권한을 구성원에게 부여할 역할(Role)을 선택하십시오.</block>
+  <block id="b8d2f0ac411b3987f15812871943a838" category="list-text">JWT 인증을 사용하지 않기로 선택한 경우 클라이언트 ID와 클라이언트 비밀번호를 다운로드하거나 복사하세요.</block>
+  <block id="1065e278b83db0baa7239d1c2c89e558" category="paragraph">콘솔에는 클라이언트 비밀 키가 한 번만 표시됩니다. 안전하게 복사해 두세요. 나중에 분실하더라도 다시 만들 수 있습니다.</block>
+  <block id="6c07155a6c5b387b3649e57518b2acbf" category="list-text">JWT 인증을 선택한 경우 클라이언트 ID와 JWT 대상 그룹을 다운로드하거나 복사하십시오. 콘솔에는 이 정보가 한 번만 표시되며, 이후에는 다시 불러올 수 없습니다.</block>
+  <block id="1e5bd0e3b2f8efdd44ff92b7d355c374" category="section-title">조직에 연합 그룹을 추가하세요</block>
+  <block id="c4d8a0f38fcfd51b64b45642a963ccd2" category="paragraph">ID 공급자(IdP)에서 제공하는 연합 그룹을 조직에 추가할 수 있습니다. 연합 그룹의 구성원은 콘솔에서 그룹에 할당한 역할을 상속받습니다.</block>
+  <block id="1f87469083830ec60b59de86a65908a9" category="inline-link-macro">연합 설정 방법을 알아보세요.</block>
+  <block id="44c50d77ce337726b2c52859655871e2" category="paragraph">페더레이션 그룹을 추가하기 전에 다음 사항을 확인하십시오. * IdP와 콘솔 간에 페더레이션이 이미 설정되어 있어야 합니다. <block ref="562353f9c9a6ec120d22140ce361907b" category="inline-link-macro-rx"></block> * 해당 그룹은 이미 IdP에 존재해야 합니다. * IdP에서 그룹의 정확한 이름을 알고 있어야 합니다. * 해당 그룹에 속한 사용자는 NetApp Console 에 이미 가입되어 있어야 하며 콘솔에서 명시적으로 역할을 할당받아야 합니다.</block>
+  <block id="16a2c505069eacd418dca553f5b68d99" category="list-text">*회원 유형*에서 *연합 그룹*을 선택하십시오.</block>
+  <block id="00cfd65508d24955faa8b609b29efc15" category="list-text">해당 그룹이 소속된 연맹을 선택하세요.</block>
+  <block id="be1ae879869c7f401beda2410fc2ef42" category="list-text">*그룹 이름*에는 IdP에 등록된 그룹의 정확한 이름을 입력하세요.</block>
+  <block id="07de438994544ae30eaf7e2f193c409e" category="summary">NetApp Console 조직의 프로젝트 및 폴더에 사용자를 추가하여 리소스에 대한 사용자 액세스를 제어하십시오. 프로젝트 수준에서 사용자에게 액세스 권한을 부여하세요.</block>
+  <block id="e56038e31d347de9d8efed7b085f0ea0" category="doc">NetApp Console 에서 폴더 및 프로젝트에 리소스를 추가합니다.</block>
+  <block id="e05491de164847046e2b1bfc23dc2ad8" category="paragraph">리소스는 콘솔이 인식하는 엔티티로, 스토리지 리소스, 콘솔 에이전트 또는 백업 및 복구 워크로드 등이 있습니다.</block>
+  <block id="855302443127a4472e4eafba07d53be5" category="paragraph">콘솔의 *리소스* 페이지에서 리소스를 보고 관리할 수 있습니다.</block>
+  <block id="839048d357b4befdffffdf7daf5ab90a" category="section-title">콘솔 리소스 유형</block>
+  <block id="005ca739b8c68c884a42cd2b34782fd8" category="paragraph">NetApp Console 조직의 프로젝트에는 여러 유형의 리소스를 연결할 수 있습니다.</block>
+  <block id="19dbfcf1459f2bf9d1efc94a96c88d10" category="list-text">저장 리소스</block>
+  <block id="63798ea34197c7edbbb5794fb20b2d0e" category="list-text">스토리지 리소스는 조직에서 가장 일반적인 리소스 유형이며 온프레미스 스토리지 시스템과 클라우드 스토리지 시스템을 모두 포함합니다. 콘솔에 스토리지 시스템을 추가할 때 폴더 또는 프로젝트에 추가할 수 있습니다. 그때까지 콘솔은 해당 항목을 발견되지 않은 것으로 표시하고 *리소스* 페이지에 표시하지 않습니다.</block>
+  <block id="9c1341268d013754bd82bdf6ffbb0757" category="list-text">콘솔 에이전트를 사용하여 스토리지 시스템을 검색한 경우, 해당 에이전트를 동일한 폴더 또는 프로젝트에 추가하십시오. 이를 통해 사용자는 데이터 서비스 또는 콘솔 기본 스토리지 관리와 같은 에이전트 지원 기능을 수행할 수 있습니다. 콘솔의 *에이전트* 페이지에서 폴더 또는 프로젝트에 에이전트를 추가할 수 있습니다. <block ref="a6db5244ec8666b2e12c38c770923c31" category="inline-link-macro-rx"></block>.</block>
+  <block id="6e0ffc28497d27ad3c6bea6ff91952d8" category="list-text">Keystone 구독</block>
+  <block id="914389e5e60dfc20b254ad9e68c9222f" category="list-text">조직에 Keystone 구독이 있는 경우 *리소스* 페이지에서 확인할 수 있습니다. Keystone 구독을 폴더 또는 프로젝트와 연결하여 해당 폴더 또는 프로젝트에 대한 권한이 있는 구성원에게 액세스 권한을 부여할 수 있습니다.</block>
+  <block id="0ae3744d4aece1a5dd0a98ad7070fcda" category="admonition">콘솔에서는 사용자가 해당 리소스를 역할과 연결할 수 없기 때문에 리소스 페이지에서 Amazon FSx for NetApp ONTAP 리소스를 제외합니다. 이러한 리소스는 *시스템* 페이지 또는 워크로드에서 확인할 수 있습니다.</block>
+  <block id="213681c9dc8fd7427e93994d790da314" category="paragraph">리소스를 폴더 또는 프로젝트에 연결하면 해당 폴더 또는 프로젝트에 대한 권한이 있는 구성원만 해당 리소스를 사용할 수 있습니다.</block>
+  <block id="c04502b23fc006429135d64d911d5536" category="list-text">리소스를 폴더와 연결한 경우, 폴더 또는 프로젝트 관리자는 이제 리소스에 액세스하여 폴더 내의 프로젝트와 연결할 수 있습니다. <block ref="af70645a2ec4694e18976ffdc9418df7" category="inline-link-macro-rx"></block>.</block>
+  <block id="0c2e13a193f12ed8110274ba733eef72" category="paragraph">폴더 또는 프로젝트에서 리소스를 제거하려면 해당 리소스와의 연결을 제거하십시오. 이렇게 하면 구성원이 해당 폴더 또는 프로젝트의 리소스를 관리할 수 없게 됩니다.</block>
+  <block id="297f68b77c05f2a54dc7c6dd691dcb7c" category="list-text">폴더 또는 프로젝트에서 리소스를 제거하려면 다음을 선택하세요. <block ref="5aa3fbfa4a030d3d0fb7677a91fd2eba" category="inline-image-macro-rx" type="image"></block> 폴더 또는 프로젝트 옆에 있습니다.</block>
+  <block id="56eda737c9d7f16cfc7da39c3c418546" category="list-text">연결을 제거하려면 *삭제*를 선택하세요.</block>
+  <block id="a83100154d543563bb4d5b97c5e96942" category="doc">NetApp Console 에서 멤버 액세스를 관리하세요</block>
+  <block id="ba4d06d423cce106bf6535eb7db9492c" category="paragraph">콘솔 조직에서 구성원 액세스를 관리하세요. 권한을 설정하려면 역할을 할당하세요. 회원이 탈퇴하면 명단에서 삭제합니다.</block>
+  <block id="b41a805ec9017f0b704697df693123e6" category="paragraph">최고 관리자, 조직 관리자 또는 폴더/프로젝트 관리자(해당 폴더 및 프로젝트를 관리하는 경우에 한함). 링크:reference-iam-predefined-roles.html[접근 권한 역할에 대해 알아보세요].</block>
+  <block id="cc9490185617aa95d7b60301afe90ae1" category="paragraph">프로젝트 또는 폴더 단위로 액세스 역할을 할당할 수 있습니다. 예를 들어, 특정 두 프로젝트에 대해 사용자에게 역할을 할당하거나, 폴더 수준에서 역할을 할당하여 해당 폴더 내의 모든 프로젝트에 대해 사용자에게 랜섬웨어 복원력 관리자 역할을 부여할 수 있습니다.</block>
+  <block id="679b40124e84cc1083a162b4adbd7938" category="inline-link-macro">폴더와 프로젝트를 추가하는 방법을 알아보세요.</block>
+  <block id="cf91125d1c872bdab1636283bb432d86" category="admonition">사용자에게 접근 권한을 부여하기 전에 폴더와 프로젝트를 추가하세요. <block ref="7b716a1b87dcc74b5100e99c2831f686" category="inline-link-macro-rx"></block></block>
+  <block id="40fb7b24c380ce71145e537ff475c5e8" category="paragraph">NetApp Console 역할 기반 접근 제어(RBAC) 모델을 사용하여 사용자 권한을 관리합니다. 구성원에게 개별적으로 또는 연합 그룹을 통해 미리 정의된 역할을 할당할 수 있습니다. 서비스 계정 및 연합 그룹에 역할을 추가하고 할당할 수 있습니다. 각 역할은 구성원이 관련 리소스에서 수행할 수 있는 작업을 정의합니다.</block>
+  <block id="39377b079cc7298cede5e71697ef95a4" category="list-text">모든 사용자는 리소스에 대한 액세스 권한을 부여받기 전에 먼저 NetApp Console 에 가입해야 합니다.</block>
+  <block id="70d188d257e89b9d25c9b84daaaf414f" category="section-title">역할 상속 사용</block>
+  <block id="cf7afbf14de8bec1f53def1143f2ceac" category="paragraph">NetApp Console 에서 조직, 폴더 또는 프로젝트 수준에서 역할을 할당하면 선택한 범위 내의 모든 리소스가 해당 역할을 자동으로 상속받습니다. 예를 들어, 폴더 수준 역할은 해당 폴더에 포함된 모든 프로젝트에 적용되는 반면, 프로젝트 수준 역할은 해당 프로젝트 내의 모든 리소스에 적용됩니다.</block>
+  <block id="e60016344d77f4cfca08d380f83a5ec5" category="paragraph">현재 그들에게 어떤 역할이 부여되었는지 확인할 수 있습니다.</block>
+  <block id="312c9a6ca1ccba18340ba6f65daa444b" category="paragraph">특정 폴더 또는 프로젝트에 대한 접근 권한이 있는 구성원을 확인할 수 있습니다.</block>
+  <block id="644ed7e725ca7a7a2108f353f403ae81" category="section-title">멤버 접근 권한을 할당하거나 수정합니다.</block>
+  <block id="cc58a3864ec91bd4d491cafcb895e671" category="paragraph">사용자가 NetApp Console 에 가입하면 해당 사용자를 조직에 추가하고 리소스에 대한 액세스 권한을 부여하는 역할을 할당할 수 있습니다. <block ref="43b297cbb0e75204baf387be01022755" category="inline-link-macro-rx"></block></block>
+  <block id="729d1ca3c10203fc503fd9f53e1e1025" category="paragraph">필요에 따라 역할을 추가하거나 삭제하여 구성원의 접근 권한을 조정할 수 있습니다.</block>
+  <block id="385f92ada47188b8c301664b007e6ca3" category="paragraph">구성원은 동일한 프로젝트 내에서 또는 서로 다른 프로젝트에서 여러 역할을 맡을 수 있습니다. 예를 들어, 소규모 조직에서는 사용 가능한 모든 접근 권한을 동일한 사용자에게 할당할 수 있는 반면, 대규모 조직에서는 사용자가 보다 전문화된 작업을 수행하도록 할 수 있습니다. 또는 조직 차원에서 한 사용자에게 랜섬웨어 복원력 관리자 역할을 부여할 수도 있습니다. 이 예시에서 사용자는 조직 내 모든 프로젝트에 대해 랜섬웨어 복원력 작업을 수행할 수 있습니다.</block>
+  <block id="185fff519c8fc661f991bd10bba243ab" category="admonition">조직 관리자 역할을 부여받은 구성원은 다른 역할을 추가로 부여받을 수 없습니다. 그들은 이미 조직 전체에 대한 권한을 가지고 있습니다. 폴더 또는 프로젝트 관리자 역할을 가진 구성원은 해당 폴더 또는 프로젝트 내에서 이미 관리자 역할을 가진 다른 역할을 할당받을 수 없습니다. 이 두 역할 모두 할당된 범위 내의 모든 서비스에 대한 접근 권한을 제공합니다.</block>
+  <block id="ebeb67c2ab58cfe7b88d1a1bc054c1a8" category="list-text">*사용자*, *서비스 계정*, 또는 *연합 그룹* 탭 중 하나를 선택하세요.</block>
+  <block id="a62c20a6e8e006e17ebdbe37484ef3e8" category="paragraph">구성원이 조직을 떠나면 명단에서 제외하세요.</block>
+  <block id="b28aef4c16ab3aa23caf8777e9998b0c" category="paragraph">멤버를 제거하면 시스템에서 해당 멤버의 콘솔 권한은 취소되지만 콘솔 및 NetApp 지원 사이트 계정은 유지됩니다.</block>
+  <block id="737b12a5e844af7e5587e33feeb06499" category="list-title">연합 회원</block>
+  <block id="46bc8a32811e038789b16b3be4c304b0" category="list-text">페더레이션된 사용자는 IdP에서 제거되면 NetApp Console 에 대한 액세스 권한을 자동으로 잃게 됩니다. 하지만 멤버 목록을 최신 상태로 유지하려면 콘솔 조직에서 해당 사용자를 제거해야 합니다.</block>
+  <block id="2a331f65a945f71cf576d7408c911549" category="list-text">IdP에서 페더레이션 그룹에서 사용자를 제거하면 해당 그룹과 연결된 콘솔 액세스 권한을 잃게 됩니다. 하지만 콘솔에서 명시적으로 할당된 역할과 관련된 접근 권한은 여전히 유지됩니다.</block>
+  <block id="741fa1d97e274d87522c5274731ddbd6" category="paragraph">파트너 조직이 없는 경우 *파트너십* 탭이 표시되지 않습니다.</block>
+  <block id="a6e7e6949d9cfe21acbeb52c1329d758" category="doc">사용자 보안</block>
+  <block id="1ec1065d3e78d7c206f0ecaef991aaf0" category="paragraph">멤버 보안 설정을 관리하여 NetApp Console 조직에 대한 사용자 액세스를 보호하십시오. 사용자 암호를 재설정하고, 다단계 인증(MFA)을 관리하고, 서비스 계정 자격 증명을 다시 생성할 수 있습니다.</block>
+  <block id="fea697c6ae1d0da74f0ba44be3fc0d3f" category="section-title">사용자 비밀번호 재설정 (로컬 사용자만 해당)</block>
+  <block id="3330914a79300c6835bbe3bc86cf9c45" category="paragraph">조직 관리자는 로컬 사용자의 비밀번호를 재설정할 수 없습니다. 하지만 사용자에게 직접 비밀번호를 재설정하도록 안내할 수는 있습니다.</block>
+  <block id="16d33ec21eee9c061bc9a88909c5ec33" category="paragraph">콘솔 로그인 페이지에서 *비밀번호를 잊으셨습니까?*를 선택하여 비밀번호를 재설정하도록 사용자에게 안내합니다.</block>
+  <block id="bb06c441f91b01e38af765cd0f68f60f" category="admonition">이 옵션은 연합 조직의 사용자에게는 제공되지 않습니다.</block>
+  <block id="bc6678c9a9943f90ed06302f420dfb08" category="admonition">다중 요소 인증은 로컬 사용자에게만 제공됩니다. 페더레이션 사용자는 MFA를 활성화할 수 없습니다.</block>
+  <block id="e3727073d591ed506f7e87126b243caa" category="paragraph">사용자는 MFA를 제거한 후 로그인할 때 다시 설정해야 합니다. 사용자가 일시적으로 MFA 장치에 접근할 수 없게 된 경우, 저장된 복구 코드를 사용하여 로그인할 수 있습니다.</block>
+  <block id="3ba67e9f839feac6f7f1d7812b36e256" category="paragraph">서비스 자격 증명을 분실했거나 업데이트해야 하는 경우 새 자격 증명을 만들 수 있습니다.</block>
+  <block id="cbb983c8b2240366fdf2e6a4ca41bee0" category="paragraph">새 자격 증명을 생성하면 이전 자격 증명이 삭제됩니다. 기존 계정 정보는 사용할 수 없습니다.</block>
+  <block id="f67f980ba471dba7c5f95c824dd43bf6" category="list-text">클라이언트 ID와 클라이언트 비밀번호를 다운로드하거나 복사하세요.</block>
+  <block id="5e8ecdfa17ba50d83eb7b9028eeb4de9" category="paragraph">콘솔에는 클라이언트 비밀 키가 한 번만 표시됩니다. 파일을 복사하거나 다운로드하여 안전한 곳에 보관하십시오.</block>
+  <block id="e6c66c93554a031ae85ef2984add99c4" category="paragraph">https://www.googleapis.com/compute/v1/ https://compute.googleapis.com/compute/v1 https://cloudresourcemanager.googleapis.com/v1/projects https://www.googleapis.com/compute/beta https://storage.googleapis.com/storage/v1 https://www.googleapis.com/storage/v1 https://iam.googleapis.com/v1 https://cloudkms.googleapis.com/v1 https://config.googleapis.com/v1/projects</block>
+  <block id="8a3c52723df25b46d8e20662b73d35df" category="paragraph">콘솔 에이전트를 설치하기 전에 환경을 미리 준비해야 합니다. AWS 마켓플레이스, Azure 마켓플레이스에서 설치하거나 AWS, Azure 또는 Google Cloud에서 실행 중인 자체 Linux 호스트에 수동으로 설치할 수 있습니다.</block>
+  <block id="65a0e63ccea20a9f20e161d239f88202" category="open-title">수동 설치 (Google Cloud에서 사용해야 함)</block>
+  <block id="8cec294d7bbf367168b102d1aed4952e" category="paragraph">AWS, Azure 또는 Google Cloud에서 실행 중인 자체 Linux 호스트에 콘솔 에이전트를 수동으로 설치할 수 있습니다.</block>
+  <block id="f1a5483ce6e0c38d7737152319fdfc85" category="paragraph">또한 누가 조직에 구성원을 추가했는지 또는 프로젝트가 성공적으로 삭제되었는지 확인할 수 있습니다.</block>
+  <block id="d80a62f674e4a96f69c2ddfcceed1b7a" category="summary">NetApp Console (SaaS) 사용을 시작하려면 콘솔용 네트워크를 준비하고, 가입 및 계정 생성을 완료한 다음, NetApp 도우미를 사용하여 초기 기능을 설정하십시오.</block>
+  <block id="3162c8efd4cce0d602638a86276c10b1" category="doc">시작하기 워크플로(SaaS)</block>
+  <block id="e10c2ca7a3a40579fe4240028852ed47" category="paragraph">NetApp Console (SaaS)을 시작하려면 콘솔용 네트워크를 준비하고, 가입하여 계정을 생성한 다음, 콘솔 도우미를 사용하여 초기 기능을 설정하십시오.</block>
+  <block id="f9fd7cc1e76e4519cd46daa993179867" category="paragraph">NetApp 에서 서비스형 소프트웨어(SaaS) 제품으로 호스팅되는 웹 기반 콘솔에 접속할 수 있습니다. 콘솔을 사용하여 하이브리드 클라우드 스토리지 환경을 관리하고 NetApp 데이터 서비스를 이용할 수 있습니다.</block>
+  <block id="5a7e12e086f90e07ae42b4c3c6b5121a" category="paragraph">NetApp 콘솔에 접속하는 컴퓨터가 필요한 엔드포인트에 네트워크로 접속할 수 있는지 확인하십시오.</block>
+  <block id="d0f2d6c9731b54e920f1ea734e746767" category="inline-link-macro">NetApp 콘솔용 네트워킹을 준비하는 방법을 알아보세요.</block>
+  <block id="742f3a58c8d5c1f7cc5a4bb3ac391412" category="paragraph"><block ref="742f3a58c8d5c1f7cc5a4bb3ac391412" category="inline-link-macro-rx"></block></block>
+  <block id="1281b5e18d123835effb54466c6c0e1e" category="paragraph">가세요<block ref="193ae139051d487c450de046f6bd2645" category="inline-link-rx"></block> 그리고 가입하세요. 조직을 생성하라는 메시지가 표시되었는데 이미 회사에 조직이 있다고 생각되면 대화 상자를 닫고 조직 관리자에게 알리십시오. 회사에 조직 관리자가 없는 경우, 본인이 해당 역할을 맡을 수 있습니다. <block ref="3886fb7bb69eaac4d5ed416bad678dd5" category="inline-link-macro-rx"></block></block>
+  <block id="e958f6c4076ed5879c19626945716300" category="paragraph">이제 로그인이 완료되었으며 NetApp 도우미를 사용하여 콘솔 구성을 시작할 수 있습니다. 먼저 NetApp 지원 계정과 콘솔 에이전트를 연결하여 모든 기능을 활성화하십시오.</block>
+  <block id="6dc63c80f81838734d4c9f2cb014cd91" category="paragraph">NetApp 어시스턴트를 사용하지 않거나 콘솔 에이전트를 설치하지 않기로 선택한 경우 Digital Advisor, Amazon FSx for ONTAP, Azure NetApp Files 등과 같은 서비스를 사용하여 스토리지를 관리할 수 있습니다. <block ref="d15147d8429817c45cc619fa49c43b04" category="inline-link-macro-rx"></block>.</block>
+  <block id="c184293a5cc8371b882a8e3ab950451d" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> NetApp 지원 사이트(NSS) 계정을 연결하세요.</block>
+  <block id="1c13eb1d242262739dd57d2d470f7dc8" category="paragraph">NetApp 지원 사이트(NSS) 계정을 콘솔과 연결하면 라이선스 및 구독을 더욱 쉽게 관리할 수 있을 뿐 아니라 콘솔에서 직접 지원 리소스에 액세스할 수 있습니다.</block>
+  <block id="f370c692837fb71b9e6a06838b702556" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 콘솔 에이전트를 생성합니다</block>
+  <block id="d42aa5ad5df5384bcdd3dc85edb4fba7" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 콘솔에 스토리지 시스템 추가</block>
+  <block id="1372e6d7b3a42f31a712299457ee40d8" category="paragraph">NetApp Console 에서 스토리지 시스템을 추가하거나 검색하여 하이브리드 클라우드 스토리지 환경을 관리할 수 있습니다. NetApp 어시스턴트를 사용하여 첫 번째 스토리지 시스템을 추가하세요.</block>
+  <block id="538aab892dada422b64c6e5dd6222278" category="admonition">AWS, Microsoft Azure 또는 Google Cloud에 콘솔 에이전트를 설치하면 콘솔은 에이전트가 설치된 위치에 있는 Amazon S3 버킷, Azure Blob 스토리지 또는 Google Cloud Storage 버킷에 대한 정보를 자동으로 검색합니다. 이러한 시스템은 *시스템* 페이지에 자동으로 추가됩니다.</block>
+  <block id="d630b5e36d1d4a276c2faf76a5a9ccab" category="inline-link-macro">ONTAP 시스템을 찾는 방법을 알아보세요.</block>
+  <block id="552b3fa9a9920290123ede1f374236aa" category="list-text"><block ref="552b3fa9a9920290123ede1f374236aa" category="inline-link-macro-rx"></block></block>
+  <block id="e7b18ef41c55f7558e2e8eadd1e0d652" category="inline-link-macro">StorageGRID 시스템을 찾는 방법을 알아보세요.</block>
+  <block id="8ee8c2411f1d69e6027b0240bf4ad83f" category="list-text"><block ref="8ee8c2411f1d69e6027b0240bf4ad83f" category="inline-link-macro-rx"></block></block>
+  <block id="bd2a04f40dfa26475eeaeb5104213639" category="inline-link-macro">E-시리즈 시스템을 알아보는 방법을 알아보세요.</block>
+  <block id="20397d9bb3cf91b26829ed1f1050f846" category="list-text"><block ref="20397d9bb3cf91b26829ed1f1050f846" category="inline-link-macro-rx"></block></block>
+  <block id="0f1d83ed07623902c200d2b4489a8bc0" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> <block ref="60a7e52b5f1dace8fe7cd5fadf089cd0" category="inline-link-macro-rx"></block></block>
+  <block id="9c50bfc1c0c8af31868d53cf5d274ca4" category="paragraph">클라우드 공급업체를 통해 NetApp Intelligent Services 에 가입하여 시간당(PAYGO) 또는 연간 요금으로 청구하세요. 구독에는 NetApp Backup and Recovery, Cloud Volumes ONTAP, NetApp Cloud Tiering, NetApp Ransomware Resilience, NetApp Disaster Recovery 및 NetApp Data Classification 포함됩니다.</block>
+  <block id="b13696d6f982d12cdad42fb6cff86df3" category="paragraph">콘솔을 사용하려면 NetApp 지원 사이트 자격 증명으로 가입하거나 로그인하거나 NetApp Console 로그인을 생성하십시오. 회사에서 처음으로 가입하는 경우, 관리자 권한으로 새 조직을 생성하게 됩니다. 회사에 이미 조직이 있는 경우 기존 NetApp 지원 사이트 자격 증명 또는 회사 단일 로그인(SSO)을 사용하여 가입하거나 로그인하십시오.</block>
+  <block id="826401015c53957df701460dc5fefb05" category="paragraph">회사에 NetApp Console 조직이 없는 경우 가입하여 조직을 생성하세요. 첫 번째 사용자는 조직 관리자가 되어 사용자 계정 및 권한을 관리합니다. 역할은 나중에 업데이트하고 관리자를 추가할 수 있습니다.</block>
+  <block id="d5f547e805bd962044877e771a5c80c4" category="paragraph">+ 처음 사용자이거나 조직 관리자인 경우, 안내에 따라 스토리지 리소스를 추가하고 콘솔 에이전트를 생성하는 등의 작업을 수행할 수 있습니다. <block ref="85a3a682e34d7edd80cbda274368cd58" category="inline-link-macro-rx"></block></block>
+  <block id="b5b65d6b4a701c4b166972e9ae9ba772" category="paragraph">관리자로서 콘솔 지원 도구에 포함된 단계를 완료한 후에는 ID 및 액세스 전략을 계획하고, 조직에 사용자를 추가하고, 역할을 할당해야 합니다. <block ref="dbb46a6e4f0b0745461f707fd3a50e50" category="inline-link-macro-rx"></block></block>
+  <block id="c3a7847a904b35ec1f29b8f879b372cb" category="list-text">시스템에서 조직을 생성하라는 메시지가 표시되면 대화 상자를 닫고 콘솔 관리자에게 알려 콘솔 조직에 추가하고 액세스 권한을 부여받으십시오. <block ref="3886fb7bb69eaac4d5ed416bad678dd5" category="inline-link-macro-rx"></block></block>
+  <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7019a39846e9a2c7f7a80eaba91e4a41" category="paragraph"><block ref="7019a39846e9a2c7f7a80eaba91e4a41" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="de07e4843aeeb5e60c2065b6397c18c7" category="paragraph">콘솔에서 다른 사용자에게 자신을 식별하는 데 사용되는 표시 이름을 변경할 수 있습니다. 사용자 이름이나 이메일 주소는 변경할 수 없습니다.</block>
+  <block id="cd180248ccf35caecb564563a1c37c36" category="section-title">읽기 전용 모드에서 당신의 역할을 강화하세요</block>
+  <block id="f530a438c9744c7405c242128860c986" category="paragraph">경우에 따라 조직 관리자가 조직을 읽기 전용 모드로 설정할 수 있습니다. 관리자 권한이 있는 경우 변경을 하려면 권한을 높여야 합니다. 이는 변경 사항이 의도적이고 승인된 것임을 보장합니다.</block>
+  <block id="4e87c090abc7c70b838f8921102ad78a" category="paragraph">권한을 높이면 현재 세션이 만료될 때까지 콘솔에서 변경 작업을 수행할 수 있습니다.</block>
+  <block id="86e4cc6244dee378a725fe2f2f7607c3" category="paragraph">작업이 끝나면 콘솔에서 로그아웃하거나 슬라이더를 원래 위치로 되돌려 읽기 전용 모드로 돌아가십시오. 시스템은 세션이 만료되면 관리자 권한을 제거합니다.</block>
+  <block id="10a94d9e1a5f5e7339e3430bdc845dbf" category="list-text">읽기 전용 모드 상태로 설정하려면 슬라이더를 '높음' 위치로 이동한 후 변경 사항을 확인하십시오.</block>
+  <block id="4e24b3bf4baecbe5b4c0908b14a3e434" category="inline-image-macro">읽기 전용 모드 슬라이더가 '높음' 위치에 있는 것을 보여주는 스크린샷입니다.</block>
+  <block id="f2b29b75c17cd0382c92806057ed69bc" category="paragraph"><block ref="f2b29b75c17cd0382c92806057ed69bc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8c31c8785f7463414c8f14dda741b437" category="paragraph">외부 ID 공급자 또는 NetApp 지원 사이트를 통해 단일 로그인(SSO)을 사용하는 사용자는 다단계 인증(MFA)을 활성화할 수 없습니다. 이 두 가지 조건 중 하나라도 충족되면 프로필 설정에서 MFA를 활성화하는 옵션이 표시되지 않습니다.</block>
+  <block id="174ae0d84f7c9dd712d41abcfa50ec20" category="section-title">2026년 1월 13일</block>
+  <block id="7a53865977eaa5b4d126b4bb38ab3d60" category="sidebar">NetApp Console (SaaS) 시작하기</block>
+  <block id="d479c74127647ef19be1288e3c84ad58" category="sidebar">NetApp Console 지원(SaaS)을 사용하세요.</block>
+  <block id="a18e7b20a79ebd88fb9c7f1fc43e7133" category="sidebar">제한 모드로 NetApp Console 배포(소버린 클라우드 배포)</block>
+  <block id="528d4bb0b865d3d1472bb85fda901a37" category="sidebar">신원 및 접근 관리(IAM)를 구현합니다.</block>
+  <block id="33b619b2a0b648b8042ae175a232cd61" category="sidebar">IAM 전략을 계획하세요</block>
+  <block id="6fe6f7f944917c7ec0941e2231b3b4e0" category="sidebar">폴더와 프로젝트를 추가하세요</block>
+  <block id="410aa2d0b1a47fea911d8630517784ad" category="sidebar">액세스 역할이 어떻게 작동하는지 이해하세요</block>
+  <block id="35be827dcf9fc58b5de8b85d832b0897" category="sidebar">멤버, 서비스 계정 및 연합 그룹을 추가합니다.</block>
+  <block id="d1fc990d451ee0b17493a694896ba144" category="sidebar">콘솔 에이전트 배포</block>
+  <block id="4b1a627afcfffc4e38993003bd2a09d9" category="sidebar">온프레미스에 에이전트 배포</block>
+  <block id="af5ef39b449ad0a19e43922742596f8e" category="sidebar">AWS에 에이전트 배포</block>
+  <block id="c8e511ba0d866204ed44fbb080700872" category="sidebar">Azure에 에이전트 배포</block>
+  <block id="1d2ba7530c41754097734076da1435f0" category="sidebar">Google Cloud에 에이전트 배포</block>
+  <block id="2767cd2574c6a7fa44753eb88a0319e9" category="sidebar">콘솔 에이전트를 유지 관리합니다.</block>
+  <block id="4d177447c2808c8549544c3aa3b9f504" category="sidebar">보안 및 규정 준수</block>
+  <block id="f19aee9e6e2e5954d2de8e30cbe4751d" category="sidebar">ID 공급자와 연동하세요</block>
+  <block id="444cf9807eaf5ac0945edfce9108c729" category="sidebar">읽기 전용 모드를 활성화합니다.</block>
+  <block id="320b734c12631424ce316d6953d1dedc" category="sidebar">콘솔 활동을 모니터링하세요</block>
+  <block id="650a6b9660e523c1a925feddd83c0c4d" category="sidebar">제한 모드로 NetApp Console 배포(소버린 클라우드 배포)</block>
+  <block id="d71a2025aa5d19fc2c3bab8a7d5d1bc1" category="sidebar">SOC-2 규정 준수</block>
+  <block id="aa201c2db7dd29fb5926c96c4006fa2d" category="sidebar">콘솔 파트너십</block>
+  <block id="dc6f0f429a5f3d39f01ef6f9ecb8cc24" category="sidebar">SaaS 방식과 제한된 배포 모드 비교</block>
+  <block id="c595922d1b033b7101399b8ddff46d28" category="sidebar">NetApp 지원 계정</block>
+  <block id="0aa0b8f431cf64b7d8c4369a301c64dd" category="sidebar">NetApp Console (SaaS) 시작하기</block>
+  <block id="b295192b816510df999050431291a13e" category="sidebar">NetApp Console 시작하기(제한 모드)</block>
+  <block id="0f7804927cf75f0a017463717b53dd88" category="sidebar">NetApp Console 배포 제한에 대비하세요.</block>
+  <block id="e171a54350d0c0c8636e6db01c266344" category="sidebar">제한 모드로 NetApp Console 배포</block>
+  <block id="5eb43e1edd4f0757c83c6d6f6632ff94" category="sidebar">관리 및 모니터링</block>
+  <block id="e164f7a733b2fa9b64a65e86a09dd8a1" category="sidebar">NetApp 지원 계정 담당자</block>
+  <block id="809491e400d5e2dcbace5d5f1a7a33be" category="sidebar">NSS 자격 증명 관리</block>
+  <block id="4cdcdd6cc684e8847f57a8c461306706" category="sidebar">콘솔 에이전트 배포</block>
+  <block id="bbc07544cc7c462eb5a4289a5bcfc9f6" category="sidebar">AWS 마켓플레이스에서 콘솔 에이전트를 생성합니다.</block>
+  <block id="4a3560a731f667c1fdd695e7355a9a38" category="sidebar">Azure 마켓플레이스에서 콘솔 에이전트를 생성합니다.</block>
+  <block id="775bf3ee1192539276369c51ffb1e11a" category="sidebar">클라우드 공급자 자격 증명 관리</block>
+  <block id="a8e85a76d65daefc79e2cc1686473b8b" category="sidebar">콘솔 구성을 설정하세요</block>
+  <block id="74e6765601a5bb33738c62a4a5fa467e" category="sidebar">폴더와 프로젝트를 생성하세요</block>
+  <block id="c4801111063a815324ee7709172dc7b5" category="sidebar">리소스를 폴더 및 프로젝트와 연결합니다.</block>
+  <block id="4072a7a49b0e80c4b76d5a9700c613b0" category="sidebar">콘솔 조직에 사용자를 추가하세요</block>
+  <block id="e440951d5d777081f672ac89bef1a765" category="sidebar">사용자, 서비스 계정 및 연합 그룹을 추가합니다.</block>
+  <block id="a426b59be1babdc977781d33817717ea" category="sidebar">사용자 접근 권한 및 보안 관리</block>
+  <block id="bd479d755e7f2fb21ebeb4c75d60a5cc" category="sidebar">역할 기반 접근 제어(RBAC)를 이해하십시오.</block>
+  <block id="2221117251a2584b4321597c5eac423e" category="sidebar">사용자 액세스 관리</block>
+  <block id="43259fd79c21c8c404026181d57d44e4" category="sidebar">회원 보안 관리</block>
+  <block id="90d80e55b1b13ef48ef0cb5c0b7acf31" category="sidebar">신원 및 액세스 API</block>
+  <block id="48a692835317bf23f0c6c5786de2ed91" category="sidebar">ID 및 액세스 관리 API 참조</block>
+  <block id="bdf5cb4cf4c3cf24f8f5f686d12f900b" category="sidebar">연합 연결을 관리하세요</block>
+  <block id="4435cda4ad6a758c200d44762ebe3776" category="sidebar">조직에 대해 읽기 전용 모드를 활성화합니다.</block>
+  <block id="e7b017be83e84bb37606ed273d1aa537" category="sidebar">NetApp Console 의 SOC-2 규정 준수</block>
+  <block id="bcd0f336112d623ef709cad808ebf0b9" category="sidebar">조직 간 파트너십 관리</block>
+  <block id="043e92b3b8c615eff75d2bdf3d1fad93" category="sidebar">조직 파트너십 업무</block>
+  <block id="a0c24f631f6d719a131bcec194d1a9e1" category="sidebar">클라우드 공급자 에이전트 권한 및 네트워크 요구 사항</block>
+  <block id="4c61619ce49044f354b1f5cc38707fd2" category="sidebar">AWS 에이전트 권한 및 보안 규칙</block>
+  <block id="20ec4216ad7aef42619add3b96b89c33" category="sidebar">Azure 권한 및 필수 보안 규칙</block>
+  <block id="347863a199ea8f4c7e1e9540d041ca12" category="sidebar">Google 클라우드 권한 및 필수 방화벽 규칙</block>
 </blocks>

@@ -83,7 +83,7 @@ Azure에서 작업을 수행하려면 콘솔에 권한이 필요합니다.  Micr
 .이 작업에 관하여
 다음 이미지는 콘솔이 Azure에서 작업을 수행하기 위한 권한을 얻는 방법을 보여줍니다.  하나 이상의 Azure 구독에 연결된 서비스 주체 개체는 Microsoft Entra ID의 콘솔을 나타내며 필요한 권한을 허용하는 사용자 지정 역할에 할당됩니다.
 
-image:diagram_azure_authentication.png["API 호출을 하기 전에 콘솔이 Microsoft Entra ID로부터 인증 및 권한을 얻는 모습을 보여주는 개념적 이미지입니다.  Active Directory에서 콘솔 역할은 권한을 정의합니다.  이는 하나 이상의 Azure 구독과 Cloud Manger 애플리케이션을 나타내는 서비스 주체 개체에 연결됩니다."]
+image:diagram_azure_authentication.png["콘솔이 API 호출을 하기 전에 Microsoft Entra ID로부터 인증 및 권한 부여를 받는 과정을 보여주는 개념 이미지입니다. 콘솔 역할은 Active Directory에서 권한을 정의합니다. 이는 하나 이상의 Azure 구독 및 콘솔 애플리케이션을 나타내는 서비스 주체 개체와 연결됩니다."]
 
 .단계
 . <<Microsoft Entra 애플리케이션 만들기>> .
