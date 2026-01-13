@@ -1293,7 +1293,6 @@
   <block id="320a91e2547bc28be93b76779dc849b4" category="paragraph">선택하는 설치 옵션은 설치를 준비하는 방법에 영향을 미칩니다.  여기에는 Azure에서 리소스를 인증하고 관리하는 데 필요한 권한을 콘솔 에이전트에 제공하는 방법이 포함됩니다.</block>
   <block id="011286419a3e5b900c9f64647edebdf7" category="summary">Google Cloud에서 콘솔 에이전트를 만드는 방법에는 여러 가지가 있습니다.  가장 일반적인 방법은 NetApp Console 에서 직접 실행하는 것입니다.</block>
   <block id="89facd2099770d471c8de70fdb5d0651" category="doc">Google Cloud의 콘솔 에이전트 설치 옵션</block>
-  <block id="0e60cc3f489de1661d16a80c2219b147" category="paragraph">Google Cloud에서 콘솔 에이전트를 만드는 방법에는 여러 가지가 있습니다.  가장 일반적인 방법은 NetApp Console 에서 직접 실행하는 것입니다.  ---</block>
   <block id="1a208b984fe61bb9d1e4e6b026e30354" category="list-text"><block ref="84693cca73c9981e6b563eb4572174e7" category="inline-link-macro-rx"></block>(이것은 표준 옵션입니다)</block>
   <block id="efbe29648b3d8def21619f8bba35784f" category="paragraph">이 작업을 수행하면 선택한 VPC에서 Linux와 콘솔 에이전트 소프트웨어를 실행하는 VM 인스턴스가 시작됩니다.</block>
   <block id="f47b616e0890c8a8507745d52fc62533" category="inline-link-macro">Google Platform을 사용하여 콘솔 에이전트 만들기</block>
@@ -5904,4 +5903,9 @@
   <block id="4c61619ce49044f354b1f5cc38707fd2" category="sidebar">AWS 에이전트 권한 및 보안 규칙</block>
   <block id="20ec4216ad7aef42619add3b96b89c33" category="sidebar">Azure 권한 및 필수 보안 규칙</block>
   <block id="347863a199ea8f4c7e1e9540d041ca12" category="sidebar">Google 클라우드 권한 및 필수 방화벽 규칙</block>
+  <block id="772b95b1a689cd9ca0f7d8935114e25c" category="paragraph-title">Cloud Volumes ONTAP 에 대한 추가 Google Cloud 권한</block>
+  <block id="335ea2f40a7e49b48a24b0867a975d2b" category="paragraph">Google Cloud에서 Cloud Volumes ONTAP 관리를 지원하기 위해 콘솔 에이전트에 추가 권한이 필요합니다. 콘솔 에이전트에서 사용하는 서비스 계정에 다음 권한이 추가되었습니다. compute.forwardingRules.update</block>
+  <block id="b4c9682d1423fe286221a4951d5900b8" category="paragraph"><block ref="b4c9682d1423fe286221a4951d5900b8" category="inline-link-macro-rx"></block></block>
+  <block id="b18fad63d8ccb120bf7c88b5cde19431" category="cell">compute.forwardingRules.update</block>
+  <block id="d82499f632494fadd7c3cb95a45cdd03" category="cell">트래픽 관리를 위해 기존 포워딩 규칙을 업데이트합니다.</block>
 </blocks>

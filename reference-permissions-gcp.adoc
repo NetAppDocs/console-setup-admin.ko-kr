@@ -189,6 +189,7 @@ includedPermissions:
 - compute.firewalls.list
 - compute.forwardingRules.create
 - compute.forwardingRules.delete
+- compute.forwardingRules.update
 - compute.forwardingRules.get
 - compute.forwardingRules.setLabels
 - compute.globalOperations.get
@@ -401,6 +402,9 @@ includedPermissions:
 
 
 | compute.forwardingRules.get | 기존 전달 규칙에 대한 세부 정보를 검색합니다. | 아니요 | 예 | 아니요 
+
+
+| compute.forwardingRules.update | 트래픽 관리를 위해 기존 포워딩 규칙을 업데이트합니다. | 아니요 | 예 | 아니요 
 
 
 | compute.forwardingRules.setLabels | 조직에 대한 전달 규칙의 레이블을 설정하거나 업데이트합니다. | 아니요 | 예 | 아니요 
