@@ -5470,7 +5470,6 @@
   <block id="c7c19a46289db74512cc747670442409" category="inline-link-macro">콘솔 조직에 대해 읽기 전용 모드를 활성화하는 방법을 알아보세요.</block>
   <block id="701595799e137f6efaa9c9cd9be54125" category="paragraph"><block ref="701595799e137f6efaa9c9cd9be54125" category="inline-link-macro-rx"></block></block>
   <block id="4380e2b873a072c906edb6d21b6eb823" category="inline-link-macro">조직이 읽기 전용 모드일 때 자신의 역할을 강화하는 방법을 알아보세요.</block>
-  <block id="b45238e19857e4059227131bbda630a6" category="paragraph"><block ref="b45238e19857e4059227131bbda630a6" category="inline-link-macro-rx"></block></block>
   <block id="0c2fbb6854f3455435639851d8cd9997" category="inline-image-macro">AWS 계정에 콘솔 에이전트를 배포하는 콘솔을 보여주는 개념적 이미지입니다.</block>
   <block id="a13b8f382ebf56f2b82af89db286c5a4" category="paragraph"><block ref="a13b8f382ebf56f2b82af89db286c5a4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4159a33176d30977a2d9b1b4ff27b420" category="inline-image-macro">두 개의 추가 계정을 보여주는 개념 이미지입니다. 각각은 IAM 정책을 가지고 있습니다. 하나는 IAM 사용자에게 연결되고 다른 하나는 IAM 역할에 연결됩니다.</block>
@@ -5914,4 +5913,5 @@
   <block id="7226c299553546c713e6b5ab556098c8" category="paragraph">콘솔 에이전트는 NetApp 워크로드에 대해 다음 엔드포인트에 액세스할 수 있어야 합니다.</block>
   <block id="0eda8bbe61d2248f5418aba76b8dc5b1" category="paragraph">https://api.workloads.netapp.com</block>
   <block id="a2d795d1d62d99052325545b09f9236f" category="paragraph">웹 기반 콘솔은 이 엔드포인트에 연결하여 Workload Factory API와 상호 작용함으로써 ONTAP 기반 워크로드용 FSx를 관리하고 운영합니다.</block>
+  <block id="1f48aa3b8a17cda9bff69e07d29acd50" category="paragraph"><block ref="1f48aa3b8a17cda9bff69e07d29acd50" category="inline-link-macro-rx"></block></block>
 </blocks>

@@ -34,4 +34,4 @@ NetApp Console 조직을 읽기 전용 모드로 설정할 수 있습니다. 읽
 
 link:https://docs.netapp.com/us-en/console-setup-admin/task-enable-read-only-mode.html["콘솔 조직에 대해 읽기 전용 모드를 활성화하는 방법을 알아보세요."]
 
-link:https://docs.netapp.com/us-en/console-setup-admin/task-user-settings["조직이 읽기 전용 모드일 때 자신의 역할을 강화하는 방법을 알아보세요."]
+link:https://docs.netapp.com/us-en/console-setup-admin/task-user-settings.html["조직이 읽기 전용 모드일 때 자신의 역할을 강화하는 방법을 알아보세요."]
