@@ -90,3 +90,21 @@ NOTE: NetApp 4.0.0을 통해 콘솔 및 콘솔 에이전트에 필요한 네트�
 * link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/reference-networking-azure.html["Azure의 Cloud Volumes ONTAP 엔드포인트"]
 * link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/reference-networking-gcp.html#outbound-internet-access["Google Cloud의 Cloud Volumes ONTAP 엔드포인트"]
 
+
+
+
+=== 워크로드용 엔드포인트
+
+콘솔 에이전트는 NetApp 워크로드에 대해 다음 엔드포인트에 액세스할 수 있어야 합니다.
+
+[cols="2*"]
+|===
+| 엔드포인트 | 목적 
+
+
+ a| 
+https://api.workloads.netapp.com
+ a| 
+웹 기반 콘솔은 이 엔드포인트에 연결하여 Workload Factory API와 상호 작용함으로써 ONTAP 기반 워크로드용 FSx를 관리하고 운영합니다.
+
+|===
