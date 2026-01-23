@@ -11,9 +11,9 @@
 이 콘솔 에이전트 릴리스에는 보안 개선, 버그 수정 및 다음 기능이 포함되어 있습니다.
 
 .콘솔 에이전트의 네트워크 연결을 검증할 수 있는 기능
-이제 NetApp Console 에서 연결된 콘솔 에이전트의 네트워크 연결을 직접 확인할 수 있습니다. 이 기능은 콘솔 에이전트의 연결 상태를 확인하고 문제를 해결하는 데 도움이 됩니다.
+이제 NetApp Console에서 연결된 Console 에이전트의 네트워크 연결을 직접 검증할 수 있습니다. 이 기능은 연결을 확인하고 Console 에이전트의 문제를 해결하는 데 도움이 됩니다. 이는 Console 에이전트 유지 관리 콘솔 명령줄 인터페이스(CLI)에서 네트워크 진단을 실행하는 기존 기능에 추가된 것입니다.
 
-link:https://docs.netapp.com/us-en/console-setup-admin/task-troubleshoot-agent.html#verify-network-access["콘솔 에이전트에 대한 구성 검사를 실행하는 방법을 알아보세요."]
+link:https://docs.netapp.com/us-en/console-setup-admin/task-troubleshoot-agent.html#verify-network-access["NetApp Console에서 구성을 실행하는 방법을 알아보세요."]
 
 
 
