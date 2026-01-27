@@ -338,7 +338,6 @@
   <block id="067f3ef114756cdabe76467602ca9b2e" category="list-text">정부 클라우드 환경에 설치하는 경우 구성 검사를 비활성화하세요.<block ref="9b8bf974e42c4282e3da7fa6c59f1dce" category="inline-link-macro-rx"></block></block>
   <block id="325740f998865be7879e32048d406868" category="list-text">설치 스크립트를 실행합니다.</block>
   <block id="5f4022bf0d27f22f4c44ac2e617ae12d" category="paragraph">다음은 CA 서명 인증서로 명시적 프록시 서버를 구성하는 예입니다.</block>
-  <block id="0e4e2076c75603c2622d2ec78b60debe" category="paragraph"><block ref="595589ae3dfdb377f4f5b01e56137ac6" prefix="" category="inline-code"></block>다음 형식 중 하나를 사용하여 HTTP 또는 HTTPS 프록시 서버를 사용하도록 콘솔 에이전트를 구성합니다.</block>
   <block id="2ceb0e196c300f23618f8a9e66bf0553" category="list-text">\http://주소:포트</block>
   <block id="5c19a40334d46880274be75a5173b4c4" category="list-text">\http://사용자 이름:비밀번호@주소:포트</block>
   <block id="33dbf59ca7c7ba76bec757cd7f795ed4" category="list-text">\http://도메인 이름%92사용자 이름:비밀번호@주소:포트</block>
@@ -1987,7 +1986,6 @@
   <block id="bd604d27ce180b4c17807361e716806b" category="paragraph">네트워크에 이러한 범위 중 하나로 구성된 서브넷이 있는 경우 콘솔에서 연결 오류가 발생할 수 있습니다.  예를 들어, 콘솔에서 온프레미스 ONTAP 클러스터를 검색하는 데 실패할 수 있습니다.</block>
   <block id="3908aae7c317936ea6bb5e64e5b1e19b" category="inline-link-macro">에이전트 IP가 기존 네트워크와 충돌합니다.</block>
   <block id="e0f2ecf720846ace68fd17b91a2fe18b" category="paragraph">지식 기반 문서 참조<block ref="7fdfcc240d5e57de761ad01a7e9f5a42" category="inline-link-macro-rx"></block> 에이전트 인터페이스의 IP 주소를 변경하는 방법에 대한 지침입니다.</block>
-  <block id="1bc21092e961975ea4123f4414693f69" category="section-title">SSL 복호화가 지원되지 않습니다.</block>
   <block id="7bd92bd111bfbf23b12f73672eb0dd1c" category="inline-link-macro">인증 기관(CA)이 서명한 HTTPS 인증서를 설치합니다.</block>
   <block id="c3ce271d53cbf6a7afd137a37f4ee8d6" category="paragraph">보안을 강화하려면 다음 옵션을 선택하세요.<block ref="11df3d19916b70ba1d82d33e876689bc" category="inline-link-macro-rx"></block> .</block>
   <block id="e949623e23f093c132f86ba2771e8a2e" category="section-title">로컬 UI를 로드할 때 빈 페이지가 나타납니다.</block>
@@ -5005,7 +5003,6 @@
   <block id="caf28471250404467f130940e7fd6e28" category="cell">Google Cloud NetApp Volumes 사용자 역할이 있는 사용자는 Google Cloud NetApp Volumes 볼 수 있습니다.</block>
   <block id="ab925d8c9a6924f34df64e8e1fb1a38d" category="list-text">* Google Cloud NetApp Volumes 뷰어*: 콘솔에서 Google Cloud NetApp Volumes 확인합니다.</block>
   <block id="7d04a8adb8b138151b42f809761295c7" category="cell"><block ref="7d04a8adb8b138151b42f809761295c7" category="inline-link-macro-rx"></block></block>
-  <block id="a5e170ce8c9d104f0b20e67e54257be5" category="paragraph">네트워크에 인터넷 접속을 위한 프록시가 필요한 경우 프록시 정보를 추가해야 합니다. 설치 중에 명시적 프록시를 추가할 수 있습니다. --proxy 및 --cacert 매개변수는 선택 사항이므로 추가하라는 메시지가 표시되지 않습니다. 명시적 프록시 서버가 있는 경우 표시된 대로 매개변수를 입력해야 합니다.</block>
   <block id="247a6a0ee254b2ff09347b727ee46227" category="inline-link-macro">에이전트 유지 관리 콘솔에 대해 알아보세요</block>
   <block id="fbcd7669a7a0c8cc9053c7c78029654b" category="admonition">콘솔 에이전트를 수동으로 설치하는 경우 투명 프록시 서버에 대한 인증서를 설정할 수 없습니다. 투명 프록시 서버에 대한 인증서를 설정해야 하는 경우 설치 후 유지 관리 콘솔을 사용해야 합니다. 자세히 알아보세요<block ref="d3f69ee6935d5f5f8542f4da69ac2bb6" category="inline-link-macro-rx"></block> .</block>
   <block id="334ed7efb24267c8a9d5f60a214ee627" category="list-text">podman-compose 패키지 1.5.0을 설치합니다.</block>
@@ -5028,7 +5025,6 @@
   <block id="77504c6121663bb82697faa2adb426c0" category="list-text"><block ref="b7fb1cb20b803995e802d3588f424efa" prefix="" category="inline-code"></block></block>
   <block id="8c0ce03e205216a2506b72de21ab36d0" category="paragraph"><block ref="7068d488f38430eabf6c395a593e8e5a" prefix="" category="inline-code"></block></block>
   <block id="a7678a59b185360eec3ece4df3f90a18" category="paragraph"><block ref="a15b1a7954f2d926c5ee7f261a97b4d2" prefix="" category="inline-code"></block></block>
-  <block id="93fd98d5e6dc8e59c7d87e83e4b28b54" category="paragraph">콘솔은 SSL 복호화가 활성화된 방화벽 구성을 지원하지 않습니다. SSL 복호화가 활성화된 경우 콘솔에 오류 메시지가 나타나고 에이전트 인스턴스가 *연결 끊김*으로 표시됩니다.</block>
   <block id="5ef1446cf0ab868961d473d928c394d6" category="section-title">제3자 에이전트 및 확장 프로그램</block>
   <block id="08ea771e22fb933fc1428178b36eb902" category="paragraph">타사 에이전트나 VM 확장은 에이전트 VM에서 지원되지 않습니다.</block>
   <block id="c976a9d1d7322a1a795f641867000e2b" category="paragraph">프록시 서버를 사용하도록 콘솔 에이전트를 구성한 경우 프록시를 거치지 않고 클라우드 공급자 서비스로 API 호출을 직접 보내기 위해 콘솔 에이전트에서 직접 API 트래픽을 활성화할 수 있습니다. AWS, Azure 또는 Google Cloud에서 실행되는 에이전트는 이 옵션을 지원합니다.</block>
@@ -5916,4 +5912,13 @@
   <block id="ee856bddd35f8f0d8d6a5e0b5017b7dd" category="sidebar">Console 에이전트 이해하기</block>
   <block id="10895cced39195f7b9456b154a2c8530" category="sidebar">비공개 모드 시작하기</block>
   <block id="1b074cef0a39f307bf3f23d76207e4f6" category="sidebar">기본 에이전트 구성</block>
+  <block id="cf6adff661a596f01b211beffb99d879" category="paragraph">네트워크에서 인터넷 접속을 위해 프록시가 필요한 경우 프록시 정보를 추가해야 합니다. 설치 중에 명시적 프록시를 추가할 수 있습니다. <block ref="595589ae3dfdb377f4f5b01e56137ac6" prefix=" " category="inline-code"></block> 및 <block ref="a2bb8d2428da5c2a723c47bd3b78308d" prefix=" " category="inline-code"></block> 매개변수는 선택 사항이며 추가하라는 메시지가 표시되지 않습니다. 명시적 프록시 서버가 있는 경우 표시된 대로 매개변수를 입력해야 합니다.</block>
+  <block id="55ccbb5c67dea0ea25dc1703475c6f80" category="paragraph">+<block ref="595589ae3dfdb377f4f5b01e56137ac6" prefix=" " category="inline-code"></block> 다음 형식 중 하나를 사용하여 Console 에이전트가 HTTP 또는 HTTPS 프록시 서버를 사용하도록 구성합니다.</block>
+  <block id="f1c3efde333f7f855c03b55ae236bf19" category="paragraph">+ * \http://address:port * \http://user-name:password@address:port * \http://domain-name%92user-name:password@address:port * \https://address:port * \https://user-name:password@address:port * \https://domain-name%92user-name:password@address:port</block>
+  <block id="b968056bd5b82381c88e0c9d86ac33b7" category="paragraph">+ 다음 사항에 유의하십시오:</block>
+  <block id="40555c907279e68c131ed885fbd297f2" category="paragraph">+ ** 사용자는 로컬 사용자 또는 도메인 사용자일 수 있습니다. ** 도메인 사용자의 경우 위와 같이 \의 ASCII 코드를 사용해야 합니다. ** Console 에이전트는 @ 문자가 포함된 사용자 이름이나 암호를 지원하지 않습니다. ** 암호에 다음 특수 문자(&amp; 또는 !)가 포함된 경우 백슬래시를 앞에 붙여 해당 특수 문자를 이스케이프해야 합니다.</block>
+  <block id="2c21faf59a15a9c898da7576148c66a6" category="paragraph">+ 예를 들면:</block>
+  <block id="3f8f6b484a02379b30f40e52234f6023" category="paragraph">+ \http://bxpproxyuser:netapp1\!@address:3128</block>
+  <block id="b7dbcbc4cff4a1c8e5622a89842cfa05" category="section-title">SSL 복호화는 Cloud Volumes ONTAP에서만 지원됩니다</block>
+  <block id="8b497b868891e9ffde67fbc8a398c594" category="paragraph">투명 프록시 서버는 Cloud Volumes ONTAP에만 연결된 에이전트에 대해 지원됩니다. 다른 NetApp 데이터 서비스와 함께 사용되는 에이전트에는 투명 프록시를 사용할 수 없습니다. NetApp 데이터 서비스를 Cloud Volumes ONTAP와 함께 사용하는 경우 투명 프록시 서버를 사용할 수 있는 Cloud Volumes ONTAP 전용 에이전트를 생성하십시오.</block>
 </blocks>
