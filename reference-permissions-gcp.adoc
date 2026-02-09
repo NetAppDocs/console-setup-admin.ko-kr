@@ -191,6 +191,7 @@ includedPermissions:
 - compute.forwardingRules.delete
 - compute.forwardingRules.get
 - compute.forwardingRules.setLabels
+- compute.forwardingRules.update
 - compute.globalOperations.get
 - compute.healthChecks.create
 - compute.healthChecks.delete
@@ -406,6 +407,9 @@ includedPermissions:
 
 
 | compute.forwardingRules.setLabels | 조직에 대한 전달 규칙의 레이블을 설정하거나 업데이트합니다. | 아니요 | 예 | 아니요 
+
+
+| compute.forwardingRules.update | 트래픽 관리를 위해 기존 포워딩 규칙을 업데이트합니다. | 아니요 | 예 | 아니요 
 
 
 | compute.globalOperations.get | 작업 상태를 파악하려면 | 예 | 예 | 아니요 
@@ -790,6 +794,12 @@ includedPermissions:
 == 변경 로그
 
 추가되거나 삭제된 권한은 아래에 명시되어 있습니다.
+
+
+
+=== 2026년 2월 9일
+
+ `compute.forwardingRules.update` 권한은 Google Cloud의 Cloud Volumes ONTAP 배포에서 Infrastructure Manager를 지원하기 위해 추가되었습니다.
 
 
 

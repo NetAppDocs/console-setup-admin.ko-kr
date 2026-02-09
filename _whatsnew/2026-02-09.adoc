@@ -1,0 +1,22 @@
+= Console 에이전트 4.4.0
+:allow-uri-read: 
+
+
+
+
+=== Console 에이전트 4.4.0
+
+4.4.0 릴리스는 표준 모드와 제한된 모드를 모두 지원합니다.
+
+이번 NetApp Console 에이전트 릴리스에는 보안 개선 사항과 버그 수정 사항이 포함되어 있습니다.
+
+
+
+=== NetApp Console 관리
+
+이 릴리스에는 다음이 포함됩니다.
+
+.NetApp Backup and Recovery 워크로드(Oracle 및 Microsoft SQL Server)에 대한 역할 기반 액세스 지원
+NetApp Backup and Recovery 워크로드(Oracle 및 Microsoft SQL Server)를 프로젝트와 연결할 수 있습니다. 프로젝트에 할당되면 해당 프로젝트에 대한 NetApp Backup and Recovery 역할을 부여받은 사용자는 해당 워크로드를 사용할 수 있습니다. 현재 다른 워크로드에 대해서는 역할 기반 액세스가 지원되지 않습니다.
+
+link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-rbac-setup.html["Backup and Recovery 워크로드에 대한 역할 기반 액세스 설정에 대해 자세히 알아보세요."^]

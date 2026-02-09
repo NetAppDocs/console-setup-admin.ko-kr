@@ -247,8 +247,6 @@
   <block id="9e636409b20980fb5089c87705851b4d" category="list-text">클라우드 리소스 관리자 API</block>
   <block id="1101b09020ade12e90a562489e315c8d" category="list-text">컴퓨트 엔진 API</block>
   <block id="71660685d00034957db3f9a31c160978" category="list-text">ID 및 액세스 관리(IAM) API</block>
-  <block id="b86699cce9d5045d0f0bc82298a74e55" category="list-text">클라우드 키 관리 서비스(KMS) API</block>
-  <block id="69245535097faf15b4cd50ccdf260cb5" category="paragraph">(고객 관리 암호화 키(CMEK)와 함께 NetApp Backup and Recovery 사용하려는 경우에만 필요함)</block>
   <block id="96e9d2544a631c0e7dc2d1406389b951" category="paragraph">서비스 계정을 콘솔 에이전트 VM과 연결합니다.</block>
   <block id="f44a9773a2e7b335a94a01e88c993003" category="list-text">Google Cloud 포털로 이동하여 콘솔 에이전트 VM 인스턴스에 서비스 계정을 할당합니다.</block>
   <block id="81c722be01f6c1251ced26ff2ff9dd3f" category="inline-link">Google Cloud 문서: 인스턴스의 서비스 계정 및 액세스 범위 변경</block>
@@ -1206,14 +1204,12 @@
   <block id="3799cba2b024e60d963d2e86eaf51655" category="paragraph">Single Sign-On(페더레이션)은 사용자가 회사 자격 증명을 사용하여 NetApp Console 에 로그인할 수 있도록 하여 로그인 프로세스를 간소화하고 보안을 강화합니다.  ID 공급자(IdP) 또는 NetApp 지원 사이트를 통해 SSO(단일 로그인)를 활성화할 수 있습니다.</block>
   <block id="c4173993f088503294e79bbbe0bb63d6" category="paragraph-title">필수 역할</block>
   <block id="4610064cac3ad84114cc400649031071" category="paragraph">조직 관리자, 연합 관리자, 연합 뷰어.<block ref="8f129ac67aaaf533c741c49d131f7a5d" category="inline-link-macro-rx"></block></block>
-  <block id="517210395e603e1c3d5f72b67c9d0d8b" category="section-title">NetApp 지원 사이트를 통한 ID 페더레이션</block>
   <block id="89a60a6294b7338e14dd136c35959073" category="paragraph">NetApp 지원 사이트와 페더레이션하면 사용자는 동일한 자격 증명을 사용하여 콘솔, Active IQ Digital Advisor 및 기타 관련 앱에 로그인할 수 있습니다.</block>
   <block id="465e770e13636214d49910bb014b1053" category="admonition">NetApp 지원 사이트와 페더레이션하는 경우 기업 ID 관리 공급자와 페더레이션할 수 없습니다.  귀하의 조직에 가장 적합한 것을 선택하세요.</block>
   <block id="0a3bde973847d35b12a69e1debea9ca9" category="inline-link">NetApp 페더레이션 요청 양식</block>
   <block id="2364b4b1093b706141a365b97b678a4d" category="list-text">다운로드하고 완료하세요<block ref="82f36446881e14fa28b945cd41d2b383" category="inline-link-rx"></block> .</block>
   <block id="28ff396d9aacc41256de2a2d064386fd" category="list-text">양식에 명시된 이메일 주소로 양식을 제출해 주세요.</block>
   <block id="d712dedaa07f66d96d580961a7fed8f3" category="paragraph">NetApp 지원팀은 귀하의 요청을 검토하고 처리합니다.</block>
-  <block id="d6a05f20cad23a452bca7452f796d46c" category="section-title">ID 공급자와 페더레이션 연결을 설정하세요</block>
   <block id="7b223ab8cf744681107757b61b395c2f" category="paragraph">콘솔에 대한 SSO(Single Sign-On)를 활성화하려면 ID 공급자와 페더레이션 연결을 설정할 수 있습니다.  이 프로세스에는 NetApp 서비스 공급자로 신뢰하도록 ID 공급자를 구성한 다음 콘솔에서 연결을 만드는 작업이 포함됩니다.</block>
   <block id="21199c6ee115447074a02f720b934dab" category="inline-link-macro">연방을 가져오는 방법을 알아보세요.</block>
   <block id="041cf6bc84476cee962155554c00e44d" category="admonition">이전에 NetApp Cloud Central(콘솔의 외부 애플리케이션)을 사용하여 페더레이션을 구성한 경우, 콘솔 내에서 이를 관리하려면 페더레이션 페이지를 사용하여 페더레이션을 가져와야 합니다.<block ref="f94fc06031e07cb597f1d58d86de05fb" category="inline-link-macro-rx"></block></block>
@@ -1441,14 +1437,12 @@
   <block id="13348442cc6a27032d2b4aa28b75a5d3" category="cell">찾다</block>
   <block id="eda63b570db82e05c2fd7b5f0c3bb20f" category="cell">심사</block>
   <block id="6c781c37150950b9639b1a88927fa671" category="summary">NetApp Console 에서 조직 간 파트너십을 구축하면 조직 파트너가 조직 경계를 넘어 NetApp 리소스를 안전하게 관리하여 협업을 간소화하고 보안을 강화할 수 있습니다.</block>
-  <block id="48b10af85ea37189fccab5406ba059ed" category="doc">NetApp Console 의 파트너십</block>
   <block id="8f032c748fc26fa9d1200f8efa6a0d8c" category="paragraph-title">필수 역할</block>
   <block id="8dab33dda3f37e096d3ad18f7ab81434" category="paragraph">파트너십 관리자<block ref="8f129ac67aaaf533c741c49d131f7a5d" category="inline-link-macro-rx"></block></block>
   <block id="324861aee136989b2cba2eb117747e57" category="paragraph">파트너십을 통해 콘솔에서 역할 기반 관계를 사용하여 조직 전체에서 NetApp 리소스를 안전하게 관리할 수 있습니다.  시작 조직은 리소스에 대한 액세스 권한을 부여하고, 수락 조직은 액세스 권한이 부여될 사용자 또는 서비스 계정을 제공합니다.  파트너십은 셀프 서비스 워크플로를 통해 구축되며, 이를 통해 시작한 조직은 어떤 리소스를 공유할지, 어떤 역할을 할당할지, 필요에 따라 파트너 액세스를 온보딩, 관리 또는 취소할 수 있는 권한을 완벽하게 제어할 수 있습니다.</block>
   <block id="bd0fbd65df8bd548c584ca52608e419f" category="paragraph">고객은 복잡한 설정 없이도 MSP 또는 리셀러가 NetApp 환경을 관리하도록 권한을 부여할 수 있습니다.  고객은 파트너가 액세스할 수 있는 클러스터와 파트너가 맡고 있는 역할을 제어할 수 있으며, 보안과 규정 준수를 유지하기 위해 언제든지 액세스 권한을 취소할 수 있습니다.</block>
   <block id="defd5f35301947f3054b93e7318c1f2d" category="paragraph">파트너로서 귀하는 고객 환경 전반에 대한 중앙 집중화된 가시성과 제어력을 확보하게 됩니다.  정의된 경계 내에서 리소스를 관리하고, 데이터 서비스를 실행하고, 상태를 모니터링하기 위해 고객의 조직으로 쉽게 전환할 수 있으며, 이를 통해 사용자 정의 툴을 줄이고 각 고객의 정책에 맞춰 조정할 수 있습니다.</block>
   <block id="85fffa8f040ebb57cf579e93b9c39695" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>한 명 이상의 사용자에게 파트너십 관리자 역할을 할당합니다.</block>
-  <block id="34953e94d11f858dd747183567e19d40" category="paragraph">시작 조직과 수신 조직 모두에서 한 명 이상의 사용자에게 파트너십 관리자 역할을 할당하여 파트너십을 만들고 관리합니다. 파트너십을 관리하지 않고 보기만 하면 되는 사용자에게 파트너십 뷰어 역할을 할당할 수 있습니다.</block>
   <block id="9477ff40729a388541d0a190df83371a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>귀하의 조직 ID를 시작 조직과 공유하세요.</block>
   <block id="012e05f5b47ec3c1eaa86aec6a2a9373" category="paragraph">파트너십을 시작하려면 시작자는 대상 조직의 조직 ID를 알아야 합니다.  해당 조직에서만 이 조직 ID에 접근할 수 있습니다.  NetApp Console 외부에서 이메일이나 다른 방법을 통해 시작 조직과 직접 공유하세요.</block>
   <block id="2cf522f52d209f1cccd3f7a42da11247" category="paragraph">시작 조직이란 자원에 대한 접근 권한을 부여하는 조직입니다.</block>
@@ -5528,7 +5522,6 @@
   <block id="e6f301b2c67375931164ffab8594268a" category="summary">NetApp 콘솔의 ID 및 액세스 관리(IAM)를 사용하여 위치, 부서 또는 프로젝트와 같은 비즈니스 계층 구조에 따라 리소스 액세스를 구성하고 제어하십시오.</block>
   <block id="8f0b3e866642f7b2bd73e95879da522a" category="paragraph">NetApp 콘솔의 ID 및 액세스 관리(IAM)를 사용하여 NetApp 리소스를 구성하고 위치, 부서 또는 프로젝트와 같은 비즈니스 구조에 따라 액세스를 제어하십시오.</block>
   <block id="3ffaa4542bdc105235c2aa6d84398ba1" category="paragraph">리소스는 계층적으로 구성됩니다. 최상위에는 조직이 있고, 그 아래에 폴더(다른 폴더나 프로젝트를 포함할 수 있음)가 있으며, 그 아래에는 스토리지 시스템, 워크로드 및 에이전트를 포함하는 프로젝트가 있습니다.</block>
-  <block id="4802d1fc79ac23aaf44455daac9d6bb8" category="paragraph">조직, 폴더 또는 프로젝트 수준에서 구성원에게 역할 기반 접근 제어(RBAC) 권한을 할당하여 사용자가 리소스에 대한 적절한 접근 권한을 갖도록 합니다.</block>
   <block id="6eccc51ae400d9583687f84b5fbdb257" category="admonition">NetApp Console 에서 IAM을 관리하려면 _슈퍼 관리자_, _조직 관리자_ 또는 _폴더 또는 프로젝트 관리자_ 역할이 있어야 합니다.</block>
   <block id="e8c67cc0d7ca66d55340b50ff19e81d8" category="inline-image-macro">자원 관리의 구성 요소를 보여주는 개념도</block>
   <block id="64e87e268d8a02cfb5d37a77e92402d6" category="paragraph"><block ref="0642d6783c4254d0630aae1c47f2e5b2" category="inline-image-macro-rx" type="image"></block>]</block>
@@ -5543,14 +5536,11 @@
   <block id="dbbd0be2ab27e73b122e8161ad90c3da" category="list-text">관련 프로젝트를 위치, 사이트 또는 사업부별로 정리하려면 폴더로 그룹화하세요. 리소스를 폴더에 직접 연결할 수는 없지만, 폴더 수준에서 사용자에게 역할을 할당하면 해당 폴더에 있는 모든 프로젝트에 대한 액세스 권한을 부여할 수 있습니다.</block>
   <block id="4141f49cc8cf63834c1efaa049d309e0" category="inline-link-macro">조직에 폴더를 추가하는 방법을 알아보세요.</block>
   <block id="9b81d805be63395863d2a1721014a6bb" category="paragraph"><block ref="9b81d805be63395863d2a1721014a6bb" category="inline-link-macro-rx"></block></block>
-  <block id="b1b22dc4c5575b2e202a4925725a072a" category="paragraph">리소스에는 스토리지 시스템, Keystone 구독 및 콘솔 에이전트가 포함됩니다.</block>
   <block id="de535fcbd4d214b2ab192b8311cd28bb" category="paragraph">+ 리소스에 접근하려면 먼저 해당 리소스를 프로젝트와 연결해야 합니다.</block>
   <block id="41e1fd34ab20918035d6b06b198a4dd6" category="paragraph">예를 들어, Cloud Volumes ONTAP 시스템을 특정 프로젝트 또는 조직 내 모든 프로젝트와 연결할 수 있습니다. 리소스를 연결하는 방법은 조직의 요구 사항에 따라 다릅니다.</block>
   <block id="ea7af68e4527f06be6522ac5e2825e2d" category="inline-link-macro">프로젝트에 리소스를 연결하는 방법을 알아보세요.</block>
   <block id="54b06ad2f4c53f14ee1e9e9d7c2b1b2a" category="paragraph"><block ref="54b06ad2f4c53f14ee1e9e9d7c2b1b2a" category="inline-link-macro-rx"></block></block>
   <block id="235f31305ad49210767c08b30ea8f944" category="list-text">스토리지 시스템 및 Keystone 구독</block>
-  <block id="e09e666756aaffdfff2449235d7d9d0d" category="list-text">스토리지 시스템은 NetApp Console 에서 관리하는 주요 리소스입니다. NetApp Console 온프레미스 및 클라우드 스토리지 시스템 모두의 관리를 지원합니다. 프로젝트에 스토리지 시스템을 추가해야만 다른 사용자가 접근할 수 있습니다.</block>
-  <block id="5c130a5ccad0215f526f58692320aa7a" category="paragraph">저장 시스템은 추가되는 프로젝트에 자동으로 연결되지만, *리소스* 페이지에서 다른 프로젝트나 폴더와도 연결할 수 있습니다.</block>
   <block id="acf67f786e22a15c3ff04ae1f6c8ea12" category="paragraph">Keystone 구독은 NetApp Console 에서 사용자가 구독에 액세스할 수 있도록 프로젝트와 연결할 수 있는 리소스이기도 합니다.</block>
   <block id="8e88fe5e613df95ef0fde3cf27c21a5b" category="list-text">조직 관리자는 스토리지 시스템을 관리하고 NetApp 데이터 서비스를 활성화하기 위해 콘솔 에이전트를 생성합니다. 에이전트는 처음에 생성된 프로젝트에 연결되지만, 관리자는 에이전트 페이지에서 다른 프로젝트나 폴더에 에이전트를 추가할 수 있습니다.</block>
   <block id="628d9176cd0fff84e7a7642d6e347c77" category="paragraph">에이전트를 프로젝트와 연결하면 해당 프로젝트의 리소스를 관리할 수 있으며, 에이전트를 폴더와 연결하면 폴더 또는 프로젝트 관리자가 어떤 프로젝트에서 해당 에이전트를 사용할지 결정할 수 있습니다. 에이전트는 관리 기능을 제공하기 위해 특정 프로젝트와 연결되어야 합니다.</block>
@@ -5610,7 +5600,6 @@
   <block id="950a35d7aced985e8ee1b6240f65a908" category="doc">NetApp Console 보안 규정 준수</block>
   <block id="eedfa09a5feb67c791cc20a479679c67" category="paragraph">NetApp Console 은 SOC 2 Type II 인증을 준수합니다.</block>
   <block id="051ae024df3188ffe4e3ac43a493c874" category="inline-link-macro">NetApp의 SOC 2 인증에 대해 자세히 알아보세요.</block>
-  <block id="5c1f694e43aab1bf26b300260c3822c2" category="paragraph"><block ref="5c1f694e43aab1bf26b300260c3822c2" category="inline-link-macro-rx"></block></block>
   <block id="a7cbfcc3f40f9b759d21b6e0bfb565ec" category="cell">사용자에게 할당된 프로젝트와 폴더에 대한 제한 없는 액세스를 허용합니다. 자신이 관리하는 폴더나 프로젝트에 멤버를 추가할 수 있고, 할당된 폴더나 프로젝트 내의 리소스에 대한 모든 작업을 수행하고 모든 데이터 서비스나 애플리케이션을 사용할 수 있습니다. 폴더 또는 프로젝트 관리자는 콘솔 에이전트를 생성할 수 없습니다.</block>
   <block id="143bd02c953bba9b731282024d3a9f3d" category="cell">사용자가 NetApp Data Classification 검사 결과를 볼 수 있습니다. 이 역할이 있는 사용자는 규정 준수 정보를 보고 액세스 권한이 있는 리소스에 대한 보고서를 생성할 수 있습니다. 이러한 사용자는 볼륨, 버킷 또는 데이터베이스 스키마의 스캐닝을 활성화하거나 비활성화할 수 없습니다. 분류에는 관리자 역할이 없습니다.</block>
   <block id="1282f90034162aa1eb616797e0379691" category="paragraph">콘솔 에이전트가 클라우드 환경에서 작업을 수행할 수 있도록 적절한 권한을 부여해야 합니다. 이 페이지의 링크를 사용하여 목표에 따라 필요한 권한에 빠르게 접근하세요.</block>
@@ -5921,4 +5910,30 @@
   <block id="3f8f6b484a02379b30f40e52234f6023" category="paragraph">+ \http://bxpproxyuser:netapp1\!@address:3128</block>
   <block id="b7dbcbc4cff4a1c8e5622a89842cfa05" category="section-title">SSL 복호화는 Cloud Volumes ONTAP에서만 지원됩니다</block>
   <block id="8b497b868891e9ffde67fbc8a398c594" category="paragraph">투명 프록시 서버는 Cloud Volumes ONTAP에만 연결된 에이전트에 대해 지원됩니다. 다른 NetApp 데이터 서비스와 함께 사용되는 에이전트에는 투명 프록시를 사용할 수 없습니다. NetApp 데이터 서비스를 Cloud Volumes ONTAP와 함께 사용하는 경우 투명 프록시 서버를 사용할 수 있는 Cloud Volumes ONTAP 전용 에이전트를 생성하십시오.</block>
+  <block id="9b0564a9487057897c8645ec862ad856" category="list-text">Cloud Key Management Service(KMS) API(NetApp Backup and Recovery를 고객 관리 암호화 키(CMEK)와 함께 사용할 계획인 경우에만 필요)</block>
+  <block id="362cb79b6626c8ace583ce4914bc2e72" category="list-text">Cloud Quotas API(Infrastructure Manager를 사용하는 Cloud Volumes ONTAP 배포에 필요)</block>
+  <block id="1076db915b54c5214ad7cd6d4bac394d" category="doc">Console 에이전트 4.4.0</block>
+  <block id="19ddf31000061ed231618214ee45c8af" category="paragraph">4.4.0 릴리스는 표준 모드와 제한된 모드를 모두 지원합니다.</block>
+  <block id="9c62117ea7b157d383c8d20f426de6ce" category="paragraph">이번 NetApp Console 에이전트 릴리스에는 보안 개선 사항과 버그 수정 사항이 포함되어 있습니다.</block>
+  <block id="83d800fe01b0b9d8ce89e835fc6accad" category="paragraph-title">NetApp Backup and Recovery 워크로드(Oracle 및 Microsoft SQL Server)에 대한 역할 기반 액세스 지원</block>
+  <block id="06ee57c0bd0d81d8eb2d33f86f1d8a97" category="paragraph">NetApp Backup and Recovery 워크로드(Oracle 및 Microsoft SQL Server)를 프로젝트와 연결할 수 있습니다. 프로젝트에 할당되면 해당 프로젝트에 대한 NetApp Backup and Recovery 역할을 부여받은 사용자는 해당 워크로드를 사용할 수 있습니다. 현재 다른 워크로드에 대해서는 역할 기반 액세스가 지원되지 않습니다.</block>
+  <block id="55791ddd61c5fe5bce016bba04360146" category="inline-link-macro">Backup and Recovery 워크로드에 대한 역할 기반 액세스 설정에 대해 자세히 알아보세요.</block>
+  <block id="15346ab7cdfe10fa94df581d10043017" category="paragraph"><block ref="15346ab7cdfe10fa94df581d10043017" category="inline-link-macro-rx"></block></block>
+  <block id="02c628ba4f7790b56fb6aacb4a07a4f6" category="section-title">NetApp Support Site를 통한 Single Sign-On</block>
+  <block id="ee4c6f236464665c90e91a3f4c9b027f" category="section-title">ID 공급자를 사용한 Single Sign-On</block>
+  <block id="118079baff415c40b2ccc891079ba2e1" category="paragraph">조직, 폴더 또는 프로젝트 수준에서 액세스 역할을 할당하여 사용자가 리소스에 대한 올바른 액세스 권한을 갖도록 합니다.</block>
+  <block id="16c8cb56a7f9e98bee6f5799207b5d74" category="paragraph">_리소스_는 NetApp Console이 인식하고 프로젝트에 할당할 수 있는 엔티티입니다. _리소스_에는 스토리지 시스템, Keystone 구독, 일부 NetApp Backup and Recovery 워크로드 및 NetApp Console 에이전트가 포함됩니다.</block>
+  <block id="17fcc6a962ac37e30e3ac0efd8e7e1ab" category="list-text">스토리지 시스템은 NetApp Console에서 관리하는 주요 리소스입니다. NetApp Console은 온프레미스 및 클라우드 스토리지 시스템 모두의 관리를 지원합니다. 프로젝트에 할당된 사용자가 스토리지 시스템에 액세스할 수 있도록 프로젝트에 스토리지 시스템을 추가해야 합니다.</block>
+  <block id="87d2b5d50a3f94d38a8b567627e0fb58" category="list-text">스토리지 시스템</block>
+  <block id="c5a4c92d61a00aa93ed0e2e91cd396e5" category="list-text">스토리지 시스템은 추가되는 프로젝트에 자동으로 연결되지만, *리소스* 페이지에서 다른 프로젝트 또는 폴더와 연결할 수도 있습니다. FSx for NetApp ONTAP 스토리지 시스템은 프로젝트 또는 폴더와 연결할 수 없지만, *시스템* 페이지 또는 워크로드에서 확인할 수 있습니다.</block>
+  <block id="b21b013b17072459deed40157a28f04c" category="list-text">백업 및 복구 워크로드(Oracle 및 Microsoft SQL Server)</block>
+  <block id="74869869e1e77d7ff0af89938eb46965" category="list-text">일부 Backup and Recovery 워크로드도 리소스로 간주됩니다. 사용자에게 Backup and</block>
+  <block id="e1826278f73613e39c2eb5a5b9bc4593" category="doc">NetApp Console의 조직 파트너십</block>
+  <block id="566147af4c9016826e0b72e65115c15c" category="paragraph">파트너십을 생성하고 관리하려면 시작 조직과 수신 조직 모두에서 한 명 이상의 사용자에게 Partnership admin 역할을 할당하십시오. 파트너십을 보기만 하고 관리할 필요가 없는 사용자에게는 Partnership viewer 역할을 할당할 수 있습니다.</block>
+  <block id="fa65dbaec8413a6f5b464ae076206d91" category="paragraph"><block ref="fa65dbaec8413a6f5b464ae076206d91" category="inline-link-macro-rx"></block></block>
+  <block id="b18fad63d8ccb120bf7c88b5cde19431" category="cell">compute.forwardingRules.update</block>
+  <block id="d82499f632494fadd7c3cb95a45cdd03" category="cell">트래픽 관리를 위해 기존 포워딩 규칙을 업데이트합니다.</block>
+  <block id="c9d872b23d54864ab58551a55106a3db" category="section-title">2026년 2월 9일</block>
+  <block id="86adfecaaa4dc7c9c4b8f67dcfd84a27" category="paragraph"><block ref="b18fad63d8ccb120bf7c88b5cde19431" prefix=" " category="inline-code"></block> 권한은 Google Cloud의 Cloud Volumes ONTAP 배포에서 Infrastructure Manager를 지원하기 위해 추가되었습니다.</block>
+  <block id="dea86e9f14e9d4847c31a2b6d002bdbc" category="paragraph">includes::_whatsnew/2026-02-09.adoc[]</block>
 </blocks>

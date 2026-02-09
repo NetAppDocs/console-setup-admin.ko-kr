@@ -16,4 +16,4 @@ summary: 콘솔 내에서 각 사용자는 사용자와 설정에 대한 정보�
 [role="lead"]
 NetApp Console 은 SOC 2 Type II 인증을 준수합니다.
 
-link:https://www.netapp.com/responsibility/trust-center/compliance/soc-2/["NetApp의 SOC 2 인증에 대해 자세히 알아보세요."]
+link:https://www.netapp.com/responsibility/trust-center/compliance/soc-2/["NetApp의 SOC 2 인증에 대해 자세히 알아보세요."^]

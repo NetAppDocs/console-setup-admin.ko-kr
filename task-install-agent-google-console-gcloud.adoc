@@ -374,16 +374,14 @@ link:reference-permissions-gcp.html["에이전트 서비스 계정 정책"]
 .단계
 . 프로젝트에서 다음 Google Cloud API를 활성화하세요.
 +
-** 클라우드 인프라 관리자 API
 ** 클라우드 배포 관리자 V2 API
+** 클라우드 인프라 관리자 API
 ** 클라우드 로깅 API
 ** 클라우드 리소스 관리자 API
 ** 컴퓨트 엔진 API
 ** ID 및 액세스 관리(IAM) API
-** 클라우드 키 관리 서비스(KMS) API
-+
-(고객 관리 암호화 키(CMEK)와 함께 NetApp Backup and Recovery 사용하려는 경우에만 필요함)
-
+** Cloud Key Management Service(KMS) API(NetApp Backup and Recovery를 고객 관리 암호화 키(CMEK)와 함께 사용할 계획인 경우에만 필요)
+** Cloud Quotas API(Infrastructure Manager를 사용하는 Cloud Volumes ONTAP 배포에 필요)
 
 
 
