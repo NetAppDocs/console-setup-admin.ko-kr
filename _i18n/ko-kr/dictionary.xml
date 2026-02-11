@@ -5367,13 +5367,6 @@
   <block id="47d455f427b4674cc00157a8a2934409" category="paragraph">다음 권한이 이 정책에 추가되었습니다.</block>
   <block id="e97ae785ddbd746339946844f92175e6" category="inline-link">분류 문서</block>
   <block id="6847efe16c9bfc0feacaef65fc05b7b9" category="list-text"><block ref="6847efe16c9bfc0feacaef65fc05b7b9" category="inline-link-rx"></block></block>
-  <block id="9b894a36c4ebb01df8469fa98daba21f" category="summary">NetApp Google Cloud에 콘솔 에이전트를 배포할 때 사용되는 서비스 계정에 필요한 권한을 때때로 업데이트합니다.</block>
-  <block id="d6d6c33d995f278b372d3d2f7a10524d" category="doc">Google Cloud 배포에 대한 콘솔 에이전트 권한 관리</block>
-  <block id="daf1fbd23852baa7dc431ec2658722d9" category="inline-link-macro">필요한 Google 권한 목록을 확인하세요</block>
-  <block id="c35025e4c3afa1c5d645893259cbce25" category="paragraph"><block ref="df29c88404b44d3e8df12197653b40b2" category="inline-link-macro-rx"></block>.</block>
-  <block id="4860b54918e1580143a7c01984c21fe1" category="paragraph">Google Cloud 콘솔을 사용하여 서비스 계정에 할당된 IAM 역할을 새 권한 세트에 맞게 업데이트하세요.</block>
-  <block id="34e82a1501cca5af4e190be9c03c0fbb" category="inline-link-macro">Google Cloud 문서: 사용자 지정 역할 편집</block>
-  <block id="322a5219fa870735040f24cb43da8303" category="paragraph"><block ref="322a5219fa870735040f24cb43da8303" category="inline-link-macro-rx"></block></block>
   <block id="16d62d361fbd1153b9fe75b035aa7c51" category="paragraph">콘솔 에이전트의 기존 투명 프록시 서버는 다음 방법을 사용하여 업데이트할 수 있습니다.<block ref="091092579ca8cede1b760e7c5a90a003" prefix=" " category="inline-code"></block> 명령어를 사용하거나 투명 프록시 서버를 제거하려면 다음 방법을 사용하십시오.<block ref="ef5ebb9e0c08ee0463e7503ff1111f4c" prefix=" " category="inline-code"></block> 명령.  더 자세한 내용은 관련 문서를 참조하십시오.<block ref="1b2f5cd7e64b458e431e40fa20571324" category="inline-link-macro-rx"></block> .</block>
   <block id="e403ae80ee5407293bf60157033759c8" category="list-text">폴더 또는 프로젝트 세부 정보를 입력하세요:</block>
   <block id="70fdeef63f056c10a8cdcc5f3fbc8eb3" category="inline-xref">리소스를 제거하는 방법을 알아보세요</block>
@@ -5935,5 +5928,21 @@
   <block id="d82499f632494fadd7c3cb95a45cdd03" category="cell">트래픽 관리를 위해 기존 포워딩 규칙을 업데이트합니다.</block>
   <block id="c9d872b23d54864ab58551a55106a3db" category="section-title">2026년 2월 9일</block>
   <block id="86adfecaaa4dc7c9c4b8f67dcfd84a27" category="paragraph"><block ref="b18fad63d8ccb120bf7c88b5cde19431" prefix=" " category="inline-code"></block> 권한은 Google Cloud의 Cloud Volumes ONTAP 배포에서 Infrastructure Manager를 지원하기 위해 추가되었습니다.</block>
-  <block id="dea86e9f14e9d4847c31a2b6d002bdbc" category="paragraph">includes::_whatsnew/2026-02-09.adoc[]</block>
+  <block id="aca93a34ac0830ae93442a45a45230ca" category="summary">마켓플레이스 구독을 연결하고 구독 프로세스 문제를 해결하여 Console 에이전트 VM 인스턴스와 연결된 Google Cloud 자격 증명을 관리할 수 있습니다. 이 두 가지 작업을 모두 수행하면 마켓플레이스 구독을 사용하여 데이터 서비스 비용을 지불할 수 있습니다.</block>
+  <block id="a5902f6d28779078fd2033b21af7a5fe" category="doc">NetApp Console용 Google Cloud 자격 증명 및 구독 관리</block>
+  <block id="7fb6ce6ba61ee2f889266f6591c8bf62" category="paragraph">마켓플레이스 구독을 연결하고 구독 프로세스 문제를 해결하여 Console 에이전트 VM 인스턴스와 연결된 Google Cloud 자격 증명을 관리할 수 있습니다. 이 두 가지 작업을 통해 마켓플레이스 구독을 사용하여 데이터 서비스 비용을 지불할 수 있습니다.</block>
+  <block id="209e33f8aa50ade8c82e5bc82a8c023d" category="section-title">Google Cloud 자격 증명과 마켓플레이스 구독을 연결합니다</block>
+  <block id="eb7e6d1f8bb6ef3fd9a4c9dde493222f" category="paragraph">Google Cloud에 Console 에이전트를 배포하면 Console에서 Console 에이전트 VM 인스턴스와 연결된 기본 자격 증명 세트를 생성합니다. 언제든지 이러한 자격 증명과 연결된 Google Cloud Marketplace 구독을 변경할 수 있습니다. 이 구독을 통해 종량제 Cloud Volumes ONTAP 시스템을 생성하고 다른 데이터 서비스를 사용할 수 있습니다.</block>
+  <block id="55c766cf4228626844250621a71175de" category="section-title">마켓플레이스 구독 프로세스 문제 해결</block>
+  <block id="22799693f8d16282f927158e17952aae" category="paragraph">Google Cloud Marketplace를 통해 NetApp 데이터 서비스를 구독하는 과정에서 권한 설정이 잘못되었거나 Console로의 리디렉션을 실수로 따르지 않아 구독이 중단되는 경우가 있습니다. 이러한 문제가 발생하면 다음 단계를 따라 구독 프로세스를 완료하세요.</block>
+  <block id="5e8a9e85694a19d502ffc719ffe16636" category="inline-link">Google 클라우드 마켓플레이스의 NetApp 페이지</block>
+  <block id="d6e50a6d3ec0159b4980423911b0d4c3" category="list-text"><block ref="50dc0afbab90b927abe9802e2e044626" category="inline-link-rx"></block>로 이동하여 주문 상태를 확인하세요. 페이지에 *Manage on Provider*라고 표시되어 있으면 아래로 스크롤하여 *Manage Orders*를 선택하세요.</block>
+  <block id="1602e955f4d68623784fbd9b3e232de3" category="inline-image-macro">구독 후 마켓플레이스 페이지의 스크린샷입니다.</block>
+  <block id="138509c56fb0084f814c9be7b6c3f21d" category="paragraph"><block ref="138509c56fb0084f814c9be7b6c3f21d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e934500d9ced37392a4bfadda2e26daf" category="list-text">주문에 녹색 체크 표시가 나타나는데 이것이 예상치 못한 경우, 동일한 결제 계정을 사용하는 조직의 다른 사용자가 이미 구독 중일 수 있습니다. 이러한 상황이 예상치 못한 경우 또는 해당 구독에 대한 자세한 정보가 필요한 경우 NetApp 영업팀에 문의하십시오.</block>
+  <block id="bb7a877315ec49d95bef4521481a238d" category="inline-image-macro">승인된 권한의 스크린샷입니다.</block>
+  <block id="57c37d5700a1b0612b4ca2402852172a" category="paragraph"><block ref="57c37d5700a1b0612b4ca2402852172a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="342df35452bbec008148c714d47038f6" category="list-text">주문에 시계 아이콘과 *Pending* 상태가 표시되면 마켓플레이스 페이지로 돌아가서 *Manage on Provider*를 선택하여 위에 설명된 대로 프로세스를 완료하십시오.</block>
+  <block id="9547217bb6aa822040056cba67310321" category="inline-image-macro">보류 중인 마켓플레이스 권한의 스크린샷입니다.</block>
+  <block id="e6ec8d6dff39d45a9056311495699cef" category="paragraph"><block ref="e6ec8d6dff39d45a9056311495699cef" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
