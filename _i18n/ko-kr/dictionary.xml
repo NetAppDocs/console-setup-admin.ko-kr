@@ -5945,4 +5945,7 @@
   <block id="342df35452bbec008148c714d47038f6" category="list-text">주문에 시계 아이콘과 *Pending* 상태가 표시되면 마켓플레이스 페이지로 돌아가서 *Manage on Provider*를 선택하여 위에 설명된 대로 프로세스를 완료하십시오.</block>
   <block id="9547217bb6aa822040056cba67310321" category="inline-image-macro">보류 중인 마켓플레이스 권한의 스크린샷입니다.</block>
   <block id="e6ec8d6dff39d45a9056311495699cef" category="paragraph"><block ref="e6ec8d6dff39d45a9056311495699cef" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="718285f559bff92f1fc2fb988df3fabe" category="doc">Console 에이전트 4.4.1</block>
+  <block id="3ffe5c6490eae7ac4252c8efb9559119" category="paragraph-title">NetApp Console에서 NetApp Data Infrastructure Insights에 액세스</block>
+  <block id="0597e1be82ceeb01b40b4706c1dc68e1" category="paragraph">NetApp Console에서 NetApp Data Infrastructure Insights 무료 평가판을 이용할 수 있습니다. *Governance* &gt; *Data Infrastructure Insights*로 이동하여 등록하고 데이터 환경에 대한 인사이트 및 분석 정보를 확인해 보세요.</block>
 </blocks>

@@ -1,0 +1,26 @@
+= Console 에이전트 4.4.1
+:allow-uri-read: 
+
+
+
+
+=== Console 에이전트 4.4.1
+
+4.4.0 릴리스는 표준 모드와 제한된 모드를 모두 지원합니다.
+
+이번 NetApp Console 에이전트 릴리스에는 보안 개선 사항과 버그 수정 사항이 포함되어 있습니다.
+
+
+
+=== NetApp Console 관리
+
+이 릴리스에는 다음이 포함됩니다.
+
+
+
+=== NetApp Console 관리
+
+이 릴리스에는 다음이 포함됩니다.
+
+.NetApp Console에서 NetApp Data Infrastructure Insights에 액세스
+NetApp Console에서 NetApp Data Infrastructure Insights 무료 평가판을 이용할 수 있습니다. *Governance* > *Data Infrastructure Insights*로 이동하여 등록하고 데이터 환경에 대한 인사이트 및 분석 정보를 확인해 보세요.
