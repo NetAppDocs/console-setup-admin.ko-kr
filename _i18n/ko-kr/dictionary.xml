@@ -5948,4 +5948,7 @@
   <block id="718285f559bff92f1fc2fb988df3fabe" category="doc">Console 에이전트 4.4.1</block>
   <block id="3ffe5c6490eae7ac4252c8efb9559119" category="paragraph-title">NetApp Console에서 NetApp Data Infrastructure Insights에 액세스</block>
   <block id="0597e1be82ceeb01b40b4706c1dc68e1" category="paragraph">NetApp Console에서 NetApp Data Infrastructure Insights 무료 평가판을 이용할 수 있습니다. *Governance* &gt; *Data Infrastructure Insights*로 이동하여 등록하고 데이터 환경에 대한 인사이트 및 분석 정보를 확인해 보세요.</block>
+  <block id="1bad3fa525f7b2c60b554cc8a36a911c" category="list-text">cloudformation:ListStacks</block>
+  <block id="a09b37992441a5c2061c0ef135b80024" category="section-title">2026년 2월 24일</block>
+  <block id="51b31e1901c03d4b274f371dd730c779" category="paragraph">이제 데이터 분류에 다음 권한이 필요합니다.</block>
 </blocks>

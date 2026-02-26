@@ -906,6 +906,7 @@ s3:암호화 구성 가져오기
 * 클라우드포메이션:DeleteStack
 * 클라우드포메이션:DescribeStacks
 * 클라우드포메이션:스택이벤트 설명
+* cloudformation:ListStacks
 * iam:인스턴스 프로필에 역할 추가
 * ec2:AssociateIamInstanceProfile
 * ec2:DescribeIamInstanceProfileAssociations
@@ -1195,6 +1196,14 @@ NetApp Data Classification 사용할 때 에이전트는 S3 버킷을 스캔하�
 == 변경 로그
 
 권한이 추가되거나 제거되면 아래 섹션에 기록됩니다.
+
+
+
+=== 2026년 2월 24일
+
+이제 데이터 분류에 다음 권한이 필요합니다.
+
+cloudformation:ListStacks
 
 
 
