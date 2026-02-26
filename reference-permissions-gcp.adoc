@@ -140,6 +140,8 @@ includedPermissions:
 - cloudbuild.connections.list
 - cloudbuild.repositories.accessReadToken
 - cloudbuild.repositories.list
+- cloudbuild.workerpools.list
+- cloudbuild.workerpools.get
 - cloudquotas.quotas.get
 - cloudkms.cryptoKeys.getIamPolicy
 - cloudkms.cryptoKeys.setIamPolicy
@@ -640,6 +642,12 @@ includedPermissions:
 | 클라우드빌드.빌드.겟 | 예 | 아니요 | 아니요 
 
 
+| cloudbuild.workerpools.get | Infrastructure Manager를 사용하여 Cloud Volumes ONTAP 시스템의 프라이빗 모드 배포 및 변환 중에 워커 풀 정보에 액세스합니다. | 예 | 예 | 예 
+
+
+| cloudbuild.workerpools.list | Infrastructure Manager를 사용하여 Cloud Volumes ONTAP 시스템을 프라이빗 모드로 배포하는 동안 워커 풀 정보를 나열합니다. | 예 | 아니요 | 아니요 
+
+
 | 컴퓨팅.인스턴스.서비스 계정 설정 .6+| Cloud Volumes ONTAP 인스턴스에 서비스 계정을 설정하려면  이 서비스 계정은 Google Cloud Storage 버킷에 대한 데이터 계층화 권한을 제공합니다. | 예 | 예 | 아니요 
 
 
@@ -794,6 +802,12 @@ includedPermissions:
 == 변경 로그
 
 추가되거나 삭제된 권한은 아래에 명시되어 있습니다.
+
+
+
+=== 2026년 2월 26일
+
+ `cloudbuild.workerpools.get` 및  `cloudbuild.workerpools.list` 권한은 Google Cloud에서 Cloud Volumes ONTAP의 프라이빗 모드 배포 시 Infrastructure Manager를 지원하기 위해 추가되었습니다.
 
 
 

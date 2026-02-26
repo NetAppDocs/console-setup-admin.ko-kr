@@ -117,4 +117,5 @@ Marketplace를 사용하는 경우 콘솔 에이전트 VM과 시스템에서 할
 ** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["제한 모드에 대한 권한 설정"]
 
 
+* link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["프라이빗 모드에 대한 권한 설정"]
 

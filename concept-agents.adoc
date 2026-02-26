@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-agents.html 
-keywords: 'concept, connectors, learn about connectors, what are connectors, what is a connector, what"s a connector, days, 14 days, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery, agents, multiple agents, what is a Console agent' 
+keywords: 'concept, connectors, learn about connectors, what are connectors, what is a connector, what"s a connector, days, 14 days, when is an agent required, agent supported locations, restricted mode, private mode, dark site, permissions, multiple agents, disaster recovery, agents, multiple agents, what is a Console agent' 
 summary: 콘솔 에이전트를 사용하면 NetApp Console 인프라에 연결하고 AWS, Azure, Google Cloud 또는 온프레미스 환경 전반에 걸쳐 스토리지 솔루션을 안전하게 오케스트레이션할 뿐만 아니라 데이터 보호 서비스도 사용할 수 있습니다. 
 ---
 = NetApp Console 에이전트에 대해 알아보세요
@@ -21,10 +21,9 @@ summary: 콘솔 에이전트를 사용하면 NetApp Console 인프라에 연결�
 * NetApp Console 에서 Cloud Volumes ONTAP 프로비저닝, 스토리지 볼륨 설정, 데이터 분류 사용 등과 같은 스토리지 관리 작업을 오케스트레이션할 수 있습니다.
 * 구독 결제 통합을 위해 클라우드 공급업체의 IAM 역할을 사용하여 인증하세요.
 * 고급 데이터 서비스(NetApp Backup and Recovery, NetApp Disaster Recovery, NetApp Ransomware Resilience 및 NetApp Cloud Tiering)를 활용하십시오.
-* 콘솔을 제한 모드로 사용하십시오.
 
 
-고급 오케스트레이션이나 데이터 보호 기능이 필요하지 않은 경우 에이전트를 배포하지 않고도 온프레미스 ONTAP 클러스터와 클라우드 네이티브 스토리지 서비스를 중앙에서 관리할 수 있습니다. 모니터링 및 데이터 이동성 도구도 사용할 수 있습니다.
+고급 오케스트레이션이나 데이터 보호 서비스가 필요하지 않은 경우, 에이전트를 배포하지 않고도 온프레미스 ONTAP 클러스터와 클라우드 네이티브 스토리지 서비스를 중앙에서 관리할 수 있습니다. 일부 모니터링 및 데이터 이동 도구 또한 에이전트 없이 사용할 수 있습니다.
 
 다음 표는 콘솔 에이전트를 사용하거나 사용하지 않고 사용할 수 있는 기능과 서비스를 보여줍니다.
 
@@ -106,7 +105,7 @@ summary: 콘솔 에이전트를 사용하면 NetApp Console 인프라에 연결�
 
 
 
-3+| *이용 가능한 스토리지 관리 서비스*: 
+3+| *스토리지 관리 및 상태 서비스*: 
 
 
 | 알림  a| 
@@ -189,7 +188,7 @@ summary: 콘솔 에이전트를 사용하면 NetApp Console 인프라에 연결�
 
 
 
-| 데이터 분류  a| 
+| NetApp Data Classification  a| 
 예
  a| 
 아니요
@@ -265,14 +264,6 @@ Google Cloud에서 콘솔과 데이터 서비스를 사용하려면 Google Cloud
 == 클라우드 제공자와의 커뮤니케이션
 
 에이전트는 AWS, Azure, Google Cloud와의 모든 통신에 TLS 1.3을 사용합니다.
-
-
-
-== 제한 모드
-
-제한 모드에서 콘솔을 사용하려면 콘솔 에이전트를 설치하고 콘솔 에이전트에서 로컬로 실행되는 콘솔 인터페이스에 액세스해야 합니다.
-
-link:concept-modes.html["NetApp Console 배포 모드에 대해 알아보세요"] .
 
 
 

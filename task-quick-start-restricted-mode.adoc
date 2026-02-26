@@ -4,7 +4,7 @@ permalink: task-quick-start-restricted-mode.html
 keywords: quick start, restricted mode quick start, govcloud, government, aws gov, azure gov 
 summary: 환경을 준비하고 콘솔 에이전트를 배포하여 제한 모드에서 NetApp Console 을 시작하세요. 
 ---
-= 시작하기 워크플로(제한 모드)
+= 제한된 모드에서 NetApp Console 시작 워크플로
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -35,3 +35,103 @@ summary: 환경을 준비하고 콘솔 에이전트를 배포하여 제한 모�
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["삼"] link:task-subscribe-restricted-mode.html["NetApp Intelligent Services 구독(선택 사항)"]
 [role="quick-margin-para"]
 선택 사항: 클라우드 공급업체의 마켓플레이스에서 NetApp Intelligent Services 구독하여 시간당 요금(PAYGO) 또는 연간 계약을 통해 데이터 서비스 비용을 지불하세요.  NetApp Intelligent Services 에는 NetApp Backup and Recovery, Cloud Volumes ONTAP, NetApp Cloud Tiering, NetApp Ransomware Resilience 및 NetApp Disaster Recovery 포함됩니다.  NetApp Data Classification 추가 비용 없이 구독에 포함되어 있습니다.
+
+
+
+== 제한된 모드에서 NetApp Console에 지원되는 기능 및 서비스
+
+다음 표는 제한된 모드로 설치할 때 NetApp Console에서 사용할 수 있는 스토리지 관리 기능, 데이터 서비스 및 관리 기능을 나열합니다.
+
+[cols="3*"]
+|===
+| 제품 영역 | NetApp 서비스 또는 기능 | Console 에이전트 필요 
+
+
+.3+| *스토리지 시스템 관리* 이 표는 NetApp Console에서 관리할 수 있는 스토리지 시스템을 보여줍니다. NetApp Backup and Recovery의 백업 대상은 나열되어 있지 않습니다. | Azure NetApp Files | 아니요 
+
+
+| Cloud Volumes ONTAP | 예 
+
+
+| 온프레미스 ONTAP 클러스터 | 검색 및 관리에 필요합니다. Console 에이전트 없이 직접 검색을 사용할 수 있지만 관리 기능을 사용하려면 에이전트가 필요합니다. 
+
+
+.3+| *데이터 서비스* (제한된 모드는 표준 모드보다 지원하는 데이터 서비스가 적습니다)  a| 
+백업 및 복구
+
+* 제한된 모드를 사용하는 정부 지역 및 상업 지역에서 지원됩니다. 제한된 모드를 사용하는 주권 지역에서는 지원되지 않습니다.
+* 제한된 모드에서 NetApp Backup and Recovery는 ONTAP 볼륨 데이터의 백업 및 복원만 지원합니다. https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["ONTAP 데이터에 대해 지원되는 백업 대상 목록 보기"^]
+
+| 제한된 모드를 사용하는 정부 지역 및 상업 지역에서 지원됩니다. 제한된 모드를 사용하는 국가 주도 지역에서는 지원되지 않습니다. 제한된 모드에서 NetApp Backup and Recovery는 ONTAP 볼륨 데이터의 백업 및 복원만 지원합니다. https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["ONTAP 데이터에 대해 지원되는 백업 대상 목록 보기"^] 
+
+
+ a| 
+NetApp Data Classification
+
+* 제한 모드가 적용된 정부 지역에서 지원됩니다.  상업 지역이나 제한 모드가 적용된 주권 지역에서는 지원되지 않습니다.
+
+| 예 
+
+
+ a| 
+NetApp Replication
+
+* 제한 모드가 적용된 정부 지역에서 지원됩니다.  상업 지역이나 제한 모드가 적용된 주권 지역에서는 지원되지 않습니다.
+
+| 예*, (ONTAP 온프레미스에서 ONTAP 온프레미스로 복제하는 경우에는 필요하지 않습니다) 
+
+
+| *NetApp 지원 계약 기능* | None | 해당 없음 
+
+
+.12+| *관리 기능* | 심사 | 아니요 
+
+
+| 자동화 허브 | 아니요 
+
+
+| 연합 | 아니요 
+
+
+| ID 및 액세스 관리 | 아니요 
+
+
+ a| 
+Licenses and subscriptions 관리
+
+다음 사항에 유의하세요.
+
+* 마켓플레이스 구독(시간 및 연간 계약)
++
+** Cloud Volumes ONTAP 의 경우 용량 기반 라이선싱만 지원됩니다.
+** Azure에서는 정부 지역과의 연간 계약이 지원되지 않습니다.
+
+
+* 바이올
++
+Cloud Volumes ONTAP 의 경우 BYOL에서는 용량 기반 라이선싱과 노드 기반 라이선싱이 모두 지원됩니다.
+
+
+| 아니요 
+
+
+| 클라우드 공급자 자격 증명 관리 | 아니요 
+
+
+| 다중 요소 인증(로컬 사용자) | 아니요 
+
+
+| 알림 | 아니요 
+
+
+| NSS 계정 | 아니요 
+
+
+| 조직 파트너십 | 아니요 
+
+
+| 읽기 전용 모드 | 아니요 
+
+
+| 알림 | 아니요 
+|===

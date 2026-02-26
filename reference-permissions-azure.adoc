@@ -31,6 +31,7 @@ Azure Marketplace에서 에이전트를 배포하거나 Linux 호스트에 에�
 ** link:task-install-agent-azure-marketplace.html#step-3-set-up-permissions["Azure Marketplace 배포에 대한 권한 설정"]
 ** link:task-install-agent-on-prem.html#agent-permission-aws-azure["온프레미스 배포에 대한 권한 설정"]
 ** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["제한 모드에 대한 권한 설정"]
+** link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["프라이빗 모드에 대한 권한 설정"]
 
 
 

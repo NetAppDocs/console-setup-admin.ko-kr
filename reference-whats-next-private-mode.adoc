@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: reference-whats-next-private-mode.html 
+keywords: private mode, supported features for private mode 
+summary: 개인 모드에서 NetApp Console을 설정하고 실행한 후에는 개인 모드에서 지원되는 서비스를 사용할 수 있습니다. 
+---
+= 다음으로 할 수 있는 작업(비공개 모드)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+개인 모드에서 NetApp Console을 설정하고 실행한 후에는 개인 모드에서 지원되는 서비스를 사용할 수 있습니다.
+
+도움이 필요하면 다음 문서를 참조하십시오.
+
+* https://docs.netapp.com/us-en/storage-management-ontap-onprem/index.html["온프레미스 ONTAP 클러스터를 찾아보세요"^]
+* https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-compliance-dark-site.html["NetApp 분류 기능을 사용하여 온프레미스 ONTAP 볼륨 데이터를 스캔합니다"^]
+* https://docs.netapp.com/us-en/console-licenses-subscriptions/task-manage-on-prem-clusters.html["라이센스 사용량 모니터링"^]
+

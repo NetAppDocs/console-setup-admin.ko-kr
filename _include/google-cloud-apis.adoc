@@ -2,6 +2,7 @@
 :allow-uri-read: 
 
 
+* Cloud Build API(Infrastructure Manager를 사용하는 프라이빗 모드 Cloud Volumes ONTAP 배포에 필요)
 * 클라우드 배포 관리자 V2 API
 * 클라우드 인프라 관리자 API
 * 클라우드 로깅 API

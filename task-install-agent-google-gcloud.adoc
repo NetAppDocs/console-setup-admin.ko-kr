@@ -75,7 +75,7 @@ NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp Conso
 
 
  a| 
-\ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com
+\https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.netapp.com \https://cdn.auth0.com
  a| 
 NetApp Console 내에서 기능과 서비스를 제공합니다.
 
@@ -97,7 +97,7 @@ NetApp Console 내에서 기능과 서비스를 제공합니다.
 --
 
 
-NetApp 콘솔에서 연결된 엔드포인트:: SaaS 계층을 통해 제공되는 웹 기반 NetApp Console 사용하면 여러 엔드포인트에 연결하여 데이터 관리 작업을 완료할 수 있습니다.  여기에는 콘솔에서 콘솔 에이전트를 배포하기 위해 연결된 엔드포인트가 포함됩니다.
+NetApp 콘솔에서 연결된 엔드포인트:: 웹 기반 NetApp Console SaaS 애플리케이션을 사용하면 데이터 관리 작업을 완료하기 위해 여러 엔드포인트에 연결합니다. 여기에는 Console에서 Console 에이전트를 배포하기 위해 연결하는 엔드포인트도 포함됩니다.
 +
 --
 link:reference-networking-saas-console.html["NetApp 콘솔에서 연결된 엔드포인트 목록 보기"] .
@@ -377,6 +377,7 @@ link:reference-permissions-gcp.html["에이전트 서비스 계정 정책"]
 .단계
 . 프로젝트에서 다음 Google Cloud API를 활성화하세요.
 +
+** Cloud Build API(Infrastructure Manager를 사용하는 프라이빗 모드 Cloud Volumes ONTAP 배포에 필요)
 ** 클라우드 배포 관리자 V2 API
 ** 클라우드 인프라 관리자 API
 ** 클라우드 로깅 API

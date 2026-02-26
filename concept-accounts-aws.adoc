@@ -150,4 +150,5 @@ link:task-adding-aws-accounts.html#subscribe["AWS 구독을 연결하는 방법 
 ** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["제한 모드에 대한 권한 설정"]
 
 
+* link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["프라이빗 모드에 대한 권한 설정"]
 

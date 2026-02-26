@@ -47,7 +47,7 @@ NOTE: NetApp 4.0.0을 통해 콘솔 및 콘솔 에이전트에 필요한 네트�
 | \ https://support.netapp.com | 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보내고 Cloud Volumes ONTAP 에 대한 소프트웨어 업데이트를 받습니다. 
 
 
-| \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com | NetApp Console 내에서 기능과 서비스를 제공합니다. 
+| \https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.netapp.com \https://cdn.auth0.com | NetApp Console 내에서 기능과 서비스를 제공합니다. 
 
 
  a| 
