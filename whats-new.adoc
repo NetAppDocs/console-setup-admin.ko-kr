@@ -46,7 +46,7 @@ NetApp Console 4.4.0은 비공개 모드로 제공되는 NetApp Console의 첫 �
 | 콘솔 에이전트 | 4.4.0 |  https://docs.netapp.com/us-en/console-setup-admin/whats-new.html#2026-02-09.html["NetApp Console 페이지의 새로운 기능"^]로 이동하여 버전 4.4.0에 포함된 변경 사항을 참조하십시오. 
 
 
-| 백업 및 복구 | 5.0.2(2026년 2월 9일) |  https://docs.netapp.com/us-en/data-services-backup-recovery/whats-new.html["NetApp Backup and Recovery 페이지의 새로운 기능"^]로 이동합니다. 
+| 백업 및 복구 | 5.0.3 (2026년 3월 2일) |  https://docs.netapp.com/us-en/data-services-backup-recovery/whats-new.html["NetApp Backup and Recovery 페이지의 새로운 기능"^]로 이동합니다. 
 
 
 | 분류 | 1.5.1(2026년 2월 9일) |  https://docs.netapp.com/us-en/data-services-data-classification/whats-new.html["NetApp Classification 페이지의 새로운 기능"^]로 이동합니다. 

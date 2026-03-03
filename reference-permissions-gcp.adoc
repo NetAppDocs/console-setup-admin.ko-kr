@@ -328,7 +328,7 @@ includedPermissions:
 | config.deployments.deleteState | 아니요 | 아니요 | 예 
 
 
-| config.deployments.get | 아니요 | 예 | 아니요 
+| config.deployments.get | 아니요 | 예 | 예 
 
 
 | config.deployments.getLock | 아니요 | 예 | 아니요 
