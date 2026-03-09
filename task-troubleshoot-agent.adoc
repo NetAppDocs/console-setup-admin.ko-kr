@@ -122,7 +122,7 @@ podman ps -a
 
 
 
-== 네트워크 접속 확인
+== Console 에이전트에 대한 네트워크 및 포트 액세스를 확인합니다
 
 콘솔 에이전트에 필요한 네트워크 액세스 권한이 있는지 확인하세요.link:reference-networking-saas-console.html["필요한 네트워크 액세스 포인트에 대해 자세히 알아보세요."]
 
@@ -130,7 +130,7 @@ podman ps -a
 
 === 콘솔 에이전트에 대한 구성 검사를 실행합니다.
 
-콘솔 또는 에이전트 유지 관리 콘솔에서 콘솔 에이전트에 대한 구성 검사를 실행하여 연결 상태를 확인하십시오.
+Console 또는 Agent 유지 관리 콘솔에서 Console 에이전트에 대한 구성 검사를 실행하여 필요한 엔드포인트에 액세스할 수 있고 필요한 포트가 열려 있는지 확인하십시오.
 
 에이전트 유지 관리 콘솔을 사용하여 구성 검사를 실행할 수도 있습니다.link:reference-agent-maint-console-config-checker.html["config-checker validate 명령어 사용 방법에 대해 자세히 알아보세요."]
 

@@ -39,7 +39,7 @@ summary: 콘솔 에이전트 유지 관리 콘솔을 사용하여 콘솔 에이�
 `--services <comma-separated list of services to validate>`--*필수의*--
 
 [role="quick-margin-para"]
-검증할 서비스를 하나 이상 선택하세요.  유효한 서비스 이름은 다음과 같습니다.*`PLATFORM` 필수 콘솔 엔드포인트에 대한 네트워크 연결 상태를 검증합니다.
+검증할 서비스를 하나 이상 선택하십시오. 유효한 서비스 이름은 다음과 같습니다. *`PLATFORM` 필수 Console 엔드포인트에 대한 네트워크 연결과 Console 에이전트에 필요한 포트가 열려 있는지 검증합니다.
 
 `--validationTypes <comma-separated list validation types to run>`--*필수*-- 실행할 유효성 검사 유형을 하나 이상 선택하세요.  유효한 유효성 검사 유형은 다음과 같습니다. * `NETWORK` 필수 콘솔 엔드포인트에 대한 네트워크 연결 상태를 검증합니다.
 

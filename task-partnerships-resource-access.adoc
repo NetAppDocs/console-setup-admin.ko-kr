@@ -43,6 +43,8 @@ summary: 조직 내 폴더와 프로젝트에 대한 특정 역할을 할당하�
 * link:reference-iam-disaster-rec-roles.html["재해 복구 뷰어"]
 * link:reference-iam-storage-roles.html["운영 지원 분석가"]
 * link:reference-iam-predefined-roles.html["분류 뷰어"]
+* link:reference-iam-keystone-roles.html["Keystone 관리자"]
+* link:reference-iam-keystone-roles.html["Keystone 뷰어"]
 
 
 link:reference-iam-predefined-roles.html["미리 정의된 역할에 대해 자세히 알아보세요"]
