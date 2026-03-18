@@ -56,7 +56,6 @@ NetApp 페더레이션을 위해 다음과 같은 프로토콜과 ID 공급자�
 
 .프로토콜
 * link:task-federation-adfs.html["Active Directory 페더레이션 서비스(AD FS)"]
-* link:task-federation-entra-id.html["마이크로소프트 엔트라 ID"]
 * link:link:task-federation-saml.html["SAML(Security Assertion Markup Language) ID 공급자"]
 
 
