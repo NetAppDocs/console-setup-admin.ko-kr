@@ -1231,15 +1231,6 @@
   <block id="995b0a469f6f6243977462e753ae05da" category="paragraph">페더레이션 연결을 활성화하기 전에 테스트하세요. 콘솔의 페더레이션 페이지에서 테스트 옵션을 사용하여 테스트 사용자가 성공적으로 인증할 수 있는지 확인하세요. 테스트가 성공하면 연결을 활성화할 수 있습니다.</block>
   <block id="6350c75317bf3a6a382ca51f7f21d612" category="paragraph-title"><block ref="3fb1f11a25837416d87a2007da1d76e6" category="inline-image-macro-rx" type="image"></block>콘솔에서 연결을 활성화하세요</block>
   <block id="de1943b4a42a516fe3f0157be7b5952f" category="paragraph">연결을 활성화하면 사용자는 회사 자격 증명을 사용하여 콘솔에 로그인할 수 있습니다.</block>
-  <block id="7a15d5af6f3fb4b588190669535d4bbe" category="paragraph">시작하려면 해당 프로토콜이나 IdP에 대한 주제를 검토하세요.</block>
-  <block id="b5fa3a7b59c0dbf56027e973a978221b" category="inline-link-macro">AD FS를 사용하여 페더레이션 연결 설정</block>
-  <block id="e655d90f8f735e0e83a1465e53299a3c" category="list-text"><block ref="e655d90f8f735e0e83a1465e53299a3c" category="inline-link-macro-rx"></block></block>
-  <block id="010b9e75f2be10992c686afea2384784" category="inline-link-macro">Microsoft Entra ID를 사용하여 페더레이션 연결 설정</block>
-  <block id="c26b4a46fbd641691ec1909da444386d" category="list-text"><block ref="c26b4a46fbd641691ec1909da444386d" category="inline-link-macro-rx"></block></block>
-  <block id="d167ee77ecb410e3563f53c002b2587e" category="inline-link-macro">PingFederate를 사용하여 페더레이션 연결 설정</block>
-  <block id="b76c6c3c96f9fd2d4a4d8f47ff90bcb3" category="list-text"><block ref="b76c6c3c96f9fd2d4a4d8f47ff90bcb3" category="inline-link-macro-rx"></block></block>
-  <block id="3f2aa4bd073d2458603c46bc293f8ade" category="inline-link-macro">SAML ID 공급자와 페더레이션 연결 설정</block>
-  <block id="00aef0f14c29d451cdbf8446ce6b0b8e" category="list-text"><block ref="00aef0f14c29d451cdbf8446ce6b0b8e" category="inline-link-macro-rx"></block></block>
   <block id="728d17e7146dcd6218a24c46a1de8943" category="doc">NetApp Console ID 및 액세스 관리에 대해 알아보세요</block>
   <block id="e5c1519cd8d7472771e0a519c54ccae1" category="paragraph">_조직_은 콘솔 IAM 시스템의 최상위 수준이며 일반적으로 회사를 나타냅니다.  조직은 폴더, 프로젝트, 구성원, 역할 및 리소스로 구성됩니다.  에이전트는 조직 내의 특정 프로젝트와 연관되어 있습니다.</block>
   <block id="6c8d76b40d187de98318661a9cab7239" category="paragraph">_조직 관리자_는 리소스를 폴더와 연결할 수 있으므로 _폴더 또는 프로젝트 관리자_는 이를 폴더 내의 적절한 프로젝트에 연결할 수 있습니다.</block>
@@ -5491,7 +5482,6 @@
   <block id="3cbafb79babb187563c0124e2520510c" category="section-title">NetApp Console 에서 액세스 권한이 부여되는 방식을 이해하십시오.</block>
   <block id="6006dace312ced6616f59ef5355ec45d" category="paragraph">NetApp Console 역할 기반 액세스 제어(RBAC)를 사용하여 권한을 관리합니다. 사용자에게 개별적으로 또는 연합 그룹을 통해 역할을 할당합니다. 각 역할은 특정 리소스에 대해 허용되는 작업을 정의합니다.</block>
   <block id="34b1f94b77b5bf3b37ba851f10060189" category="paragraph">NetApp Console 에서 액세스 권한을 부여할 때 다음 사항에 유의하십시오.</block>
-  <block id="68486ab3d656a167edf458a9cdc1ec37" category="list-text">모든 사용자는 리소스에 액세스하기 전에 먼저 NetApp Console 에 가입해야 합니다.</block>
   <block id="2bd8e344bd7b38add589340263927733" category="list-text">콘솔에서 각 사용자가 리소스에 액세스하려면 해당 사용자에게 명시적으로 역할을 할당해야 합니다. 이는 역할이 할당된 연합 그룹의 구성원인 경우에도 마찬가지입니다.</block>
   <block id="b499ec6fa9977b0ca77f6656a13829bb" category="list-text">콘솔에서 직접 서비스 계정을 추가하고 역할을 할당할 수 있습니다.</block>
   <block id="9522a4fe29d3a6f0c0622f4995ff5efb" category="paragraph">NetApp Console 사용자 계정, 서비스 계정 및 페더레이션 그룹의 세 가지 유형의 멤버를 지원합니다.</block>
@@ -5677,7 +5667,6 @@
   <block id="74339c243d7e2c57c81d3b6eeb492598" category="paragraph">연합 그룹에 역할을 할당하기 전에 다음 사항을 확인하십시오.</block>
   <block id="99673e10ad28f12bcaf375fb16592097" category="list-text">IdP와 콘솔 간의 페더레이션을 설정하십시오. <block ref="562353f9c9a6ec120d22140ce361907b" category="inline-link-macro-rx"></block></block>
   <block id="2e2db2e64333e9c722068fbbc6cceb8e" category="list-text">해당 그룹은 이미 IdP에 존재해야 하며 콘솔에 대한 앱 액세스 권한이 할당되어 있어야 합니다.</block>
-  <block id="06d5b18e5be0feb68eea2f9f0a2102d0" category="list-text">해당 그룹에 속한 사용자는 NetApp Console 에 이미 가입되어 있어야 하며 콘솔에서 명시적으로 역할을 할당받아야 합니다. NetApp 조직 뷰어와 같은 최소 액세스 역할을 할당하는 것을 권장합니다.</block>
   <block id="881a7400da554e794b5b8e9d39c7db4a" category="section-title">워크로드용 엔드포인트</block>
   <block id="7226c299553546c713e6b5ab556098c8" category="paragraph">콘솔 에이전트는 NetApp 워크로드에 대해 다음 엔드포인트에 액세스할 수 있어야 합니다.</block>
   <block id="0eda8bbe61d2248f5418aba76b8dc5b1" category="paragraph">https://api.workloads.netapp.com</block>
@@ -6137,4 +6126,9 @@
   <block id="89c004a6a6a30c4e3297ce59ad9244fe" category="paragraph">검증할 서비스를 하나 이상 선택하십시오. 유효한 서비스 이름은 다음과 같습니다. <block ref="8b55a44b49368262df89fd0e17b1a181" prefix="*" category="inline-code"></block> 필수 Console 엔드포인트에 대한 네트워크 연결과 Console 에이전트에 필요한 포트가 열려 있는지 검증합니다.</block>
   <block id="81e25f5172548cbe6ade4ab58b86b791" category="section-title">Console 에이전트에 대한 네트워크 및 포트 액세스를 확인합니다</block>
   <block id="79809c4a6f04cdeb09f4ec1df49c2f33" category="paragraph">Console 또는 Agent 유지 관리 콘솔에서 Console 에이전트에 대한 구성 검사를 실행하여 필요한 엔드포인트에 액세스할 수 있고 필요한 포트가 열려 있는지 확인하십시오.</block>
+  <block id="01440d4fde4475cae0005dbb66b8f907" category="list-text"><block ref="01440d4fde4475cae0005dbb66b8f907" category="inline-link-macro-rx"></block></block>
+  <block id="83c2b9a6cf87b54eb30380def11da84d" category="list-text"><block ref="83c2b9a6cf87b54eb30380def11da84d" category="inline-link-macro-rx"></block></block>
+  <block id="b4a377b58913080baf7f33d3fbf72f1a" category="list-text"><block ref="b4a377b58913080baf7f33d3fbf72f1a" category="inline-link-macro-rx"></block></block>
+  <block id="1bbaa3de74e15060c4e8eab23f5e562e" category="list-text"><block ref="1bbaa3de74e15060c4e8eab23f5e562e" category="inline-link-macro-rx"></block></block>
+  <block id="fa05cdec48b95e7a466d56fb898a127b" category="admonition">콘솔에 페더레이션 그룹을 추가하고 역할을 할당하면, IdP(ID 공급자)에서 해당 그룹의 구성원이고 NetApp Console에 이미 가입하여 콘솔에서 명시적으로 역할을 할당받은 사용자만 리소스에 액세스할 수 있습니다. NetApp은 이러한 사용자에게 조직 뷰어와 같은 최소 액세스 역할을 할당하는 것을 권장합니다.</block>
 </blocks>
