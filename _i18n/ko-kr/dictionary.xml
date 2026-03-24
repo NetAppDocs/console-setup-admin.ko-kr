@@ -6132,4 +6132,5 @@
   <block id="1bbaa3de74e15060c4e8eab23f5e562e" category="list-text"><block ref="1bbaa3de74e15060c4e8eab23f5e562e" category="inline-link-macro-rx"></block></block>
   <block id="fa05cdec48b95e7a466d56fb898a127b" category="admonition">콘솔에 페더레이션 그룹을 추가하고 역할을 할당하면, IdP(ID 공급자)에서 해당 그룹의 구성원이고 NetApp Console에 이미 가입하여 콘솔에서 명시적으로 역할을 할당받은 사용자만 리소스에 액세스할 수 있습니다. NetApp은 이러한 사용자에게 조직 뷰어와 같은 최소 액세스 역할을 할당하는 것을 권장합니다.</block>
   <block id="e40a26e15c2c65355aa43c03560cc632" category="list-text">연합 그룹에 속해 있더라도 모든 사용자는 리소스에 액세스하기 전에 먼저 NetApp Console에 등록해야 합니다.</block>
+  <block id="34df2c4da19b4e31f0349125e9cabfc7" category="section-title">2026년 3월 10일</block>
 </blocks>
