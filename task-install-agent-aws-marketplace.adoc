@@ -4,7 +4,7 @@ permalink: task-install-agent-aws-marketplace.html
 keywords: install connector, aws connector installation, aws connector, install connector in aws, bluexp, aws marketplace, manual install, create connector 
 summary: AWS Marketplace에서 콘솔 에이전트를 만들려면 네트워킹을 설정하고, AWS 권한을 준비하고, 인스턴스 요구 사항을 검토한 다음 콘솔 에이전트를 만들어야 합니다. 
 ---
-= AWS Marketplace에서 콘솔 에이전트 만들기
+= AWS Marketplace에서 Console 에이전트 배포
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,9 @@ summary: AWS Marketplace에서 콘솔 에이전트를 만들려면 네트워킹�
 
 
 [role="lead"]
-AWS Marketplace에서 직접 AWS에서 콘솔 에이전트를 만들 수 있습니다.  AWS Marketplace에서 콘솔 에이전트를 만들려면 네트워킹을 설정하고, AWS 권한을 준비하고, 인스턴스 요구 사항을 검토한 다음 콘솔 에이전트를 만들어야 합니다.
+AWS Marketplace에서 직접 AWS에 Console 에이전트를 배포합니다. AWS Marketplace에서 Console 에이전트를 배포하려면 네트워킹을 설정하고, AWS 권한을 준비하고, 인스턴스 요구 사항을 검토한 다음 Console 에이전트를 배포해야 합니다.
+
+AWS에 에이전트를 배포하면 사용자가 선택한 VPC에서 Linux를 실행하는 EC2 인스턴스와 Console 에이전트 소프트웨어가 시작됩니다.
 
 .시작하기 전에
 * 당신은 ~을 가져야합니다link:concept-agents.html["콘솔 에이전트에 대한 이해"] .

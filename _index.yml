@@ -38,8 +38,8 @@ indexpage:
       url: task-iam-manage-members-permissions.html
   - title: 콘솔 에이전트 배포
     links:
-    - title: 콘솔 에이전트에 대해 알아보세요
-      url: concept-agents.html
+    - title: Console 에이전트 배포 방법을 선택하세요
+      url: "/concept-agent-install-options.html"
     - title: 온프레미스에 에이전트 배포
       url: "/task-install-agent-on-prem.html"
     - title: AWS에 에이전트 배포
@@ -49,7 +49,7 @@ indexpage:
     - title: Google Cloud에 에이전트 배포
       url: "/task-install-agent-google-console-gcloud.html"
     - title: 콘솔 에이전트를 유지 관리합니다.
-      url: task-maintain-agents.html
+      url: "/task-maintain-agents.html"
   - title: 보안 및 규정 준수
     links:
     - title: ID 공급자와 연동하세요

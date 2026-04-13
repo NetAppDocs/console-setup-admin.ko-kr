@@ -4,7 +4,7 @@ permalink: reference-agent-default-config.html
 keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux, connector configuration, connector installation folder, connector folder, connector log, ubuntu, agent, agent installation folder, agent configuration 
 summary: AWS, Azure, Google Cloud에서 인터넷 접속이 가능한 표준 배포에 대한 콘솔 에이전트 기본 구성과 온프레미스 환경에서 인터넷 접속이 불가능한 제한된 배포에 대한 콘솔 에이전트 기본 구성에 대해 알아보세요. 
 ---
-= 콘솔 에이전트의 기본 구성
+= NetApp Console의 콘솔 에이전트 기본 구성
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -97,10 +97,10 @@ AWS, Azure, Google Cloud에서 인터넷 접속이 가능한 표준 배포에 �
 
 === 콘솔 에이전트 서비스
 
-* 콘솔 에이전트 서비스의 이름은 occm입니다.
-* occm 서비스는 MySQL 서비스에 종속됩니다.
+* Console 에이전트 서비스의 이름은 `occm`입니다.
+*  `occm` 서비스는 MySQL 서비스에 의존합니다.
 +
-MySQL 서비스가 중단되면 occm 서비스도 중단됩니다.
+MySQL 서비스가 중단되면  `occm` 서비스도 중단됩니다.
 
 
 

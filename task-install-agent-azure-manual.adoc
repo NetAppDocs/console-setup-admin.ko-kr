@@ -16,6 +16,11 @@ summary: 자신의 Linux 호스트에 콘솔 에이전트를 수동으로 설치
 [role="lead"]
 자신의 Linux 호스트에 콘솔 에이전트를 수동으로 설치하려면 호스트 요구 사항을 검토하고, 네트워킹을 설정하고, Azure 권한을 준비하고, 콘솔 에이전트를 설치한 다음, 준비한 권한을 제공해야 합니다.
 
+Azure에 에이전트를 배포하면 사용자가 선택한 VNet에서 Linux와 Console 에이전트 소프트웨어가 실행되는 VM이 시작됩니다.
+
+
+NOTE: Console 에이전트를 관리하는 Cloud Volumes ONTAP 시스템과 동일한 Azure 지역에 배포하거나 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure 지역 쌍"^]에 배포하십시오. 이렇게 하면 Cloud Volumes ONTAP과 연결된 스토리지 계정 간에 Azure Private Link 연결이 사용됩니다.
+
 .시작하기 전에
 * 당신은 ~을 가져야합니다link:concept-agents.html["콘솔 에이전트에 대한 이해"] .
 * 검토해야 합니다link:reference-limitations.html["콘솔 에이전트 제한 사항"] .

@@ -30,7 +30,7 @@ sidebar:
         url: "/concept-modes.html"
       - title: NetApp 지원 계정
         url: "/task-adding-nss-accounts.html"
-      - title: Console 에이전트 이해하기
+      - title: 콘솔 에이전트에 대해 알아보세요
         url: "/concept-agents.html"
       - title: ID 및 액세스 관리
         url: "/concept-identity-and-access-management.html"
@@ -70,7 +70,7 @@ sidebar:
     entries:
     - title: NetApp Console 에 로그인하세요
       url: "/task-logging-in.html"
-    - title: 여러 콘솔 에이전트와 함께 작업
+    - title: 다른 Console 에이전트와 연결된 시스템 보기
       url: "/task-manage-multiple-agents.html"
     - title: NetApp Console 홈페이지에서 메트릭 보기
       url: "/task-dashboard.html"
@@ -90,48 +90,56 @@ sidebar:
         url: "/concept-agents.html"
       - title: 콘솔 에이전트 배포
         entries:
+        - title: Console 에이전트 배포 방법을 선택하세요
+          url: "/concept-agent-install-options.html"
         - title: AWS
           entries:
-          - title: 콘솔 에이전트 설치 옵션
-            url: "/concept-install-options-aws.html"
-          - title: NetApp Console 에서 콘솔 에이전트 만들기
+          - title: AWS용 Console 에이전트 설치 옵션
+            url: "/concept-install-aws.html"
+          - title: NetApp Console 에서 AWS에 콘솔 에이전트 만들기
             url: "/task-install-agent-aws-console.html"
-          - title: AWS 마켓플레이스에서 콘솔 에이전트를 생성합니다.
+          - title: AWS 마켓플레이스에서 AWS Console 에이전트를 생성합니다.
             url: "/task-install-agent-aws-marketplace.html"
-          - title: 콘솔 에이전트를 수동으로 설치합니다.
+          - title: AWS에 Console 에이전트를 수동으로 설치하기
             url: "/task-install-agent-aws-manual.html"
         - title: 하늘빛
           entries:
-          - title: 콘솔 에이전트 설치 옵션
-            url: "/concept-install-options-azure.html"
-          - title: NetApp Console 에서 콘솔 에이전트 만들기
+          - title: Azure용 Console 에이전트 설치 옵션
+            url: "/concept-install-azure.html"
+          - title: NetApp Console 에서 Azure에 콘솔 에이전트 만들기
             url: "/task-install-agent-azure-console.html"
-          - title: Azure 마켓플레이스에서 콘솔 에이전트를 생성합니다.
+          - title: Azure 마켓플레이스에서 Azure의 Console 에이전트를 생성합니다
             url: "/task-install-agent-azure-marketplace.html"
-          - title: 콘솔 에이전트를 수동으로 설치합니다.
+          - title: Azure에서 Console 에이전트 수동 설치
             url: "/task-install-agent-azure-manual.html"
         - title: 구글 클라우드
           entries:
-          - title: 콘솔 에이전트 설치 옵션
-            url: "/concept-install-options-google.html"
-          - title: NetApp Console 에서 콘솔 에이전트 만들기
+          - title: Google Cloud용 Console 에이전트 설치 옵션
+            url: "/concept-install-google.html"
+          - title: NetApp Console 에서 Google Cloud에 콘솔 에이전트 만들기
             url: "/task-install-agent-google-console-gcloud.html"
-          - title: Google Cloud에서 콘솔 에이전트 만들기
+          - title: Google Cloud에서 Google Cloud의 Console 에이전트 생성
             url: "/task-install-agent-google-gcloud.html"
-          - title: 콘솔 에이전트를 수동으로 설치합니다.
+          - title: Google Cloud에 Console 에이전트를 수동으로 설치하기
             url: "/task-install-agent-google-manual.html"
         - title: 온프레미스에 에이전트 설치
           entries:
-          - title: 온프레미스에 에이전트를 수동으로 설치
+          - title: 온프레미스에 콘솔 에이전트를 수동으로 설치합니다.
             url: "/task-install-agent-on-prem.html"
-          - title: VCenter에 온프레미스 에이전트 설치
+          - title: VCenter에 온프레미스 Console 에이전트를 설치합니다.
             url: "/task-install-agent-on-prem-ova.html"
           - title: 온프레미스 콘솔 에이전트용 포트
             url: "/reference-ports-on-prem.html"
       - title: 콘솔 에이전트를 유지 관리합니다.
         entries:
-        - title: VCenter에 설치된 에이전트 유지 관리
-          url: "/task-agent-vm-config.html"
+        - title: 수동으로 설치된 Console 에이전트 유지 관리
+          entries:
+          - title: VCenter에 설치된 에이전트 유지 관리
+            url: "/task-agent-vm-config.html"
+          - title: 수동으로 설치된 에이전트 유지 관리
+            url: "/task-maintain-agents.html"
+        - title: 에이전트 주소 지정 및 URI 업데이트
+          url: "/task-update-agent-addressing.html"
         - title: 웹 콘솔 액세스를 위한 CA 서명 인증서 설치
           url: "/task-installing-https-cert.html"
         - title: 프록시 서버를 사용하도록 콘솔 에이전트 구성
@@ -168,6 +176,8 @@ sidebar:
         url: "/concept-identity-and-access-management.html"
       - title: 신원 및 액세스 시작하기
         url: "/task-iam-get-started.html"
+      - title: ID 및 액세스 관리에 대한 자주 묻는 질문
+        url: "/faq-iam-netapp-console.html"
       - title: 콘솔 구성을 설정하세요
         entries:
         - title: 폴더와 프로젝트를 생성하세요

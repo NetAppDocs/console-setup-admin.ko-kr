@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-install-agent-on-prem.html 
-keywords: install connector, on prem connector installation, on prem connector, install connector on prem, manual install 
-summary: 온프레미스에 콘솔 에이전트를 설치한 다음 로그인하여 콘솔 조직에서 작동하도록 설정합니다. 
+keywords: deploy agent, on prem agent deployment, on prem agent, deploy connector on prem, manual deployment 
+summary: NetApp Console 에이전트를 온프레미스에 배포한 다음 로그인하여 NetApp Console 조직과 연동되도록 설정하십시오. 
 ---
-= 온프레미스에 콘솔 에이전트를 수동으로 설치합니다.
+= Console 에이전트를 온프레미스에 수동으로 배포합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,10 +14,10 @@ summary: 온프레미스에 콘솔 에이전트를 설치한 다음 로그인하
 
 
 [role="lead"]
-온프레미스에 콘솔 에이전트를 설치한 다음 로그인하여 콘솔 조직에서 작동하도록 설정합니다.
+NetApp Console 에이전트를 온프레미스에 배포한 다음 로그인하여 NetApp Console 조직과 연동되도록 설정하십시오.
 
 
-NOTE: VMWare 사용자인 경우 OVA를 사용하여 VCenter에 콘솔 에이전트를 설치할 수 있습니다.link:task-install-agent-on-prem-ova.html["VCenter에 에이전트를 설치하는 방법에 대해 자세히 알아보세요."]
+NOTE: VMWare 사용자라면 OVA를 사용하여 VCenter에 Console 에이전트를 배포할 수 있습니다.link:task-install-agent-on-prem-ova.html["vCenter에 에이전트를 배포하는 방법에 대해 자세히 알아보십시오."]
 
 설치하기 전에 호스트(VM 또는 Linux 호스트)가 요구 사항을 충족하는지 확인하고 콘솔 에이전트가 인터넷과 대상 네트워크에 아웃바운드 액세스할 수 있는지 확인해야 합니다.  NetApp 데이터 서비스나 Cloud Volumes ONTAP 과 같은 클라우드 스토리지 옵션을 사용할 계획이라면 콘솔에 추가할 클라우드 공급자에서 자격 증명을 만들어야 합니다. 이렇게 하면 콘솔 에이전트가 사용자를 대신하여 클라우드에서 작업을 수행할 수 있습니다.
 

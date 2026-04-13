@@ -4,7 +4,7 @@ permalink: reference-agent-maint-console-config-checker.html
 keywords: transparent proxy, connector certificate, agent maintenance console, proxy configuration, connector proxy. agent proxy 
 summary: 콘솔 에이전트 유지 관리 콘솔을 사용하여 콘솔 에이전트가 투명 프록시 서버를 사용하도록 구성할 수 있습니다. 
 ---
-= 유지 관리 콘솔을 사용한 에이전트 유효성 검사
+= NetApp Console의 유지 관리 콘솔을 사용한 콘솔 에이전트 유효성 검사
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -39,9 +39,19 @@ summary: 콘솔 에이전트 유지 관리 콘솔을 사용하여 콘솔 에이�
 `--services <comma-separated list of services to validate>`--*필수의*--
 
 [role="quick-margin-para"]
-검증할 서비스를 하나 이상 선택하십시오. 유효한 서비스 이름은 다음과 같습니다. *`PLATFORM` 필수 Console 엔드포인트에 대한 네트워크 연결과 Console 에이전트에 필요한 포트가 열려 있는지 검증합니다.
+검증할 서비스를 하나 이상 선택하십시오. 유효한 서비스 이름은 다음과 같습니다.
 
-`--validationTypes <comma-separated list validation types to run>`--*필수*-- 실행할 유효성 검사 유형을 하나 이상 선택하세요.  유효한 유효성 검사 유형은 다음과 같습니다. * `NETWORK` 필수 콘솔 엔드포인트에 대한 네트워크 연결 상태를 검증합니다.
+*`PLATFORM`이는 필요한 NetApp Console 엔드포인트에 대한 네트워크 연결 상태와 NetApp Console 에이전트에 필요한 포트가 열려 있는지 여부를 검증합니다.
+
+`--validationTypes <comma-separated list validation types to run>` --*REQUIRED*-- 실행할 유효성 검사 유형을 하나 이상 선택하세요. 유효한 유효성 검사 유형은 다음과 같습니다.
+
+* `NETWORK` 필수 NetApp Console 엔드포인트에 대한 네트워크 연결을 검증합니다.
+* `HARDWARE` 에이전트 호스트가 Console 에이전트의 최소 하드웨어 요구 사항을 충족하는지 확인합니다.
++
+
+NOTE: 설치 과정에서 NetApp은 에이전트 호스트에 전체 디스크 공간의 최소 80%가 사용 가능한지 확인합니다. 여기에는 `/opt`에 48GB와 `/var`에 32GB(총 80GB)가 포함됩니다. 설치 후에는 전체 디스크 공간의 최소 20%가 사용 가능한 상태로 유지되어야 하며, 여기에는 `/opt`에 12GB와 `/var`에 8GB(총 20GB)가 포함됩니다.
+
+
 
 `--proxy <url>`--*선택 과목*--
 
@@ -57,20 +67,22 @@ summary: 콘솔 에이전트 유지 관리 콘솔을 사용하여 콘솔 에이�
 
 === 설정 검사기 유효성 검사 예제
 
-.기본 유효성 검사:
+다음 예시에는 네트워크 연결, 필수 포트 및 하드웨어 요구 사항 검증은 물론 프록시 서버와 사용자 지정 인증서의 다양한 조합 사용 사례가 포함됩니다.
+
+.네트워크 연결 및 하드웨어 요구 사항에 대한 검증:
 [source, cli]
 ----
-./agent-maint-console config-checker validate --services PLATFORM --validationTypes NETWORK
+./agent-maint-console config-checker validate --services PLATFORM --validationTypes NETWORK,HARDWARE
 ----
 .에이전트에 프록시 서버가 사용되는 경우의 유효성 검사:
 [source, cli]
 ----
-./agent-maint-console config-checker validate --services PLATFORM --validationTypes NETWORK --proxy http://proxy.company.com:8080
+./agent-maint-console config-checker validate --services PLATFORM --validationTypes NETWORK,HARDWARE --proxy http://proxy.company.com:8080
 ----
 .에이전트에 인증서가 사용되는 유효성 검사:
 [source, cli]
 ----
-./agent-maint-console config-checker validate --services PLATFORM --validationTypes NETWORK --certs /path/to/cert1.pem,/path/to/cert2.pem
+./agent-maint-console config-checker validate --services PLATFORM --validationTypes NETWORK,HARDWARE --certs /path/to/cert1.pem,/path/to/cert2.pem
 ----
 
 

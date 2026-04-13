@@ -4,7 +4,7 @@ permalink: task-install-agent-azure-console.html
 keywords: install connector, azure connector installation, azure connector, install connector in azure, bluexp, create connector 
 summary: NetApp Console 에서 Azure에 콘솔 에이전트를 만들려면 네트워킹을 설정하고, Azure 권한을 준비한 다음 콘솔 에이전트를 만들어야 합니다. 
 ---
-= NetApp Console 에서 Azure에 콘솔 에이전트 만들기
+= NetApp Console에서 Azure에 Console 에이전트 배포
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,12 @@ summary: NetApp Console 에서 Azure에 콘솔 에이전트를 만들려면 네�
 
 
 [role="lead"]
-NetApp Console 에서 Azure에 콘솔 에이전트를 만들려면 네트워킹을 설정하고, Azure 권한을 준비한 다음 콘솔 에이전트를 만들어야 합니다.
+NetApp Console에서 Azure에 Console 에이전트를 배포하려면 네트워킹을 설정하고 Azure 권한을 준비한 다음 Console 에이전트를 배포해야 합니다.
+
+Azure에 에이전트를 배포하면 사용자가 선택한 VNet에서 Linux와 Console 에이전트 소프트웨어가 실행되는 VM이 시작됩니다.
+
+
+NOTE: Console 에이전트를 관리하는 Cloud Volumes ONTAP 시스템과 동일한 Azure 지역에 배포하거나 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure 지역 쌍"^]에 배포하십시오. 이렇게 하면 Cloud Volumes ONTAP과 연결된 스토리지 계정 간에 Azure Private Link 연결이 사용됩니다.
 
 .시작하기 전에
 * 당신은 ~을 가져야합니다link:concept-agents.html["콘솔 에이전트에 대한 이해"] .
@@ -501,7 +506,9 @@ link:reference-ports-azure.html["Azure에 대한 보안 그룹 규칙 보기"] .
 +
 []
 ====
-아직도 사용 중이라면link:reference-networking-saas-console-previous.html["이전 종료점"] 에이전트 업그레이드에 사용되면 유효성 검사가 오류로 인해 실패합니다.  이를 방지하려면 유효성 검사를 건너뛰려면 확인란의 선택을 취소하세요.
+** 아직도 사용 중이라면link:reference-networking-saas-console-previous.html["이전 종료점"] 에이전트 업그레이드에 사용되면 유효성 검사가 오류로 인해 실패합니다.  이를 방지하려면 유효성 검사를 건너뛰려면 확인란의 선택을 취소하세요.
+** 설치 과정에서 NetApp은 에이전트 호스트에 전체 디스크 공간의 최소 80%가 사용 가능한지 확인합니다. 여기에는 `/opt`에 48GB와 `/var`에 32GB(총 80GB)가 포함됩니다. 설치 후에는 전체 디스크 공간의 최소 20%가 사용 가능한 상태로 유지되어야 하며, 여기에는 `/opt`에 12GB와 `/var`에 8GB(총 20GB)가 포함됩니다.
+
 
 ====
 . *추가*를 선택하세요.

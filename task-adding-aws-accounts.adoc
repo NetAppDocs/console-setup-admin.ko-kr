@@ -250,7 +250,7 @@ AWS 자격 증명을 추가한 후에는 해당 자격 증명을 사용하여 AW
 
 
 .시작하기 전에
-구독을 구성하려면 먼저 콘솔 에이전트를 만들어야 합니다. link:concept-agents.html#agent-installation["콘솔 에이전트를 만드는 방법을 알아보세요"] .
+구독을 구성하기 전에 Console 에이전트를 생성해야 합니다. link:concept-agent-install-options.html["콘솔 에이전트를 만드는 방법을 알아보세요"].
 
 .단계
 . *관리 > 자격 증명*을 선택합니다.

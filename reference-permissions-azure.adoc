@@ -4,7 +4,7 @@ permalink: reference-permissions-azure.html
 keywords: permissions, azure, azure permissions, bluexp 
 summary: NetApp Console Azure에서 콘솔 에이전트를 시작하면 VM에 사용자 지정 역할을 연결하여 에이전트에 해당 Azure 구독 내의 리소스와 프로세스를 관리할 수 있는 권한을 부여합니다.  에이전트는 이러한 권한을 사용하여 여러 Azure 서비스에 대한 API 호출을 수행합니다. 
 ---
-= 콘솔 에이전트에 대한 Azure 권한
+= NetApp Console 에이전트에 대한 Azure 권한
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

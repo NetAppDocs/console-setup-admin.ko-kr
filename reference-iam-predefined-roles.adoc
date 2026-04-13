@@ -4,7 +4,7 @@ permalink: reference-iam-predefined-roles.html
 keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management, access roles, rbac, bluexp 
 summary: NetApp Console ID 및 액세스 관리에는 조직 구성원에게 할당할 수 있는 미리 정의된 역할이 포함되어 있습니다. 
 ---
-= NetApp Console 액세스 역할에 대해 알아보세요
+= NetApp Console 액세스 역할
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

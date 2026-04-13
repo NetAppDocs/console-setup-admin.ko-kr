@@ -1,0 +1,171 @@
+---
+sidebar: sidebar 
+permalink: concept-agent-install-options.html 
+keywords: install agent, deployment method, console install, marketplace install, manual install, ova install, vcenter install, installation options, 
+summary: NetApp Console, 클라우드 공급자의 마켓플레이스를 사용하거나 Linux 호스트에 소프트웨어를 수동으로 설치하여 Console 에이전트를 배포합니다. 배포 방법에 따라 호스트에 대한 제어 권한과 시작 속도가 결정됩니다. 
+---
+= Console 에이전트 배포 방법을 선택하세요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Console, 클라우드 공급자의 마켓플레이스를 사용하거나 Linux 호스트에 소프트웨어를 수동으로 설치하여 Console 에이전트를 배포할 수 있습니다. 배포 방법에 따라 호스트에 대한 제어 권한과 시작 속도가 결정됩니다.
+
+클라우드 배포의 경우 Amazon Web Services(AWS), Microsoft Azure 또는 Google Cloud에 에이전트를 배포할 수 있습니다.
+
+
+
+== NetApp Console에서 배포
+
+NetApp은 표준 모드를 사용할 경우 NetApp Console에서 배포하는 것을 권장합니다. NetApp Console은 네트워킹 및 권한 설정 과정을 안내한 후 클라우드 공급자에서 VM 또는 인스턴스를 자동으로 시작합니다. Console은 네트워킹 및 권한 설정 과정을 안내한 후 클라우드 공급자에서 VM 또는 인스턴스를 자동으로 시작합니다.
+
+다음과 같은 경우에 이 방법을 선택하십시오.
+
+* 아웃바운드 인터넷 액세스가 가능한 표준 클라우드 환경에 배포하고 있습니다.
+* 최소한의 수동 설정으로 실행 중인 에이전트로 가는 가장 빠른 경로를 원합니다.
+
+
+[cols="47,47"]
+|===
+| 장점 | 단점 
+
+
+ a| 
+* 안내형 설정 — Console은 단일 워크플로 내에서 VM 생성, 소프트웨어 설치 및 초기 등록을 처리합니다.
+* 올바른 VM 이미지와 구성을 자동으로 적용합니다
+* 클라우드 배포 방식 중 수동 작업 단계가 가장 적습니다.
+
+ a| 
+* 온프레미스, 제한된 모드 또는 에어갭 환경에서는 사용할 수 없습니다.
+
+
+|===
+link:task-install-agent-aws-console.html["NetApp Console에서 AWS에 Console 에이전트를 배포합니다."] link:task-install-agent-azure-console.html["NetApp Console에서 Azure에 NetApp Console 에이전트를 배포합니다."] link:task-install-agent-google-console-gcloud.html["NetApp Console에서 Google Cloud에 NetApp Console 에이전트를 배포하세요."]
+
+
+
+== 클라우드 공급자 마켓플레이스에서 배포
+
+AWS 마켓플레이스 또는 Azure 마켓플레이스에서 배포하면 NetApp Console이 아닌 마켓플레이스에서 직접 에이전트 설치가 시작됩니다.
+
+
+NOTE: 기존 마켓플레이스 목록 대신 Google Cloud 도구(gcloud CLI 또는 Google Cloud console)를 사용하여 Google Cloud에서 마켓플레이스와 유사한 옵션을 사용할 수 있습니다.
+
+다음과 같은 경우에 이 방법을 선택하십시오.
+
+* 귀사에서는 모든 클라우드 소프트웨어를 마켓플레이스를 통해 구매해야 합니다.
+* NetApp Console 대신 클라우드 공급업체의 인터페이스를 통해 배포를 시작하는 것을 선호합니다.
+
+
+[cols="47,47"]
+|===
+| 장점 | 단점 
+
+
+ a| 
+* 클라우드 공급자의 콘솔에서 이미 작업 중인 팀을 위한 친숙한 배포 인터페이스
+
+ a| 
+* 배포는 NetApp Console 외부에서 시작되므로 안내형 워크플로를 사용할 수 없습니다.
+
+
+|===
+link:task-install-agent-aws-marketplace.html["마켓플레이스에서 AWS에 Console 에이전트 배포"] link:task-install-agent-azure-marketplace.html["Azure 마켓플레이스에서 Console 에이전트 배포"] link:task-install-agent-google-gcloud.html["Google Cloud 도구를 사용하여 Google Cloud에 Console 에이전트를 배포합니다"]
+
+
+
+== 클라우드의 Linux 호스트에 수동으로 설치
+
+수동 설치를 사용하면 AWS, Azure, Google Cloud 또는 온프레미스에서 사용자가 제공하고 관리하는 Linux 호스트에 Console 에이전트 소프트웨어를 직접 설치할 수 있습니다.
+
+다음과 같은 경우에 이 방법을 선택하십시오.
+
+* 아웃바운드 인터넷 액세스 없이 제한된 모드 또는 프라이빗 모드 환경에 배포해야 합니다.
+* 귀사에서는 모든 소프트웨어를 사전 승인된 내부 관리 호스트에 설치해야 합니다.
+
+
+[cols="47,47"]
+|===
+| 장점 | 단점 
+
+
+ a| 
+* 아웃바운드 인터넷 액세스가 제한된 환경(제한된 모드 또는 프라이빗 모드)을 지원합니다
+* Console 에이전트가 인터넷에 접속할 수 있으면 업그레이드가 자동으로 처리됩니다.
+
+ a| 
+* 모든 배포 방법의 대부분의 단계. 호스트를 준비하고, Podman 또는 Docker를 설치하고, 네트워킹을 구성하고, 소프트웨어를 설치하고, 권한을 수동으로 제공해야 합니다
+* * 배포는 NetApp Console 외부에서 시작되므로 안내형 워크플로를 사용할 수 없습니다.
+
+
+|===
+link:task-install-agent-aws-manual.html["AWS에 Console 에이전트를 수동으로 설치하기"] link:task-install-agent-azure-manual.html["Azure에서 Console 에이전트 수동 설치"] link:task-install-agent-google-manual.html["Google Cloud에 Console 에이전트를 수동으로 설치하기"]
+
+
+
+== VCenter(OVA)를 사용하여 온프레미스에 수동으로 설치
+
+VMware VCenter를 사용하는 경우 OVA(Open Virtual Appliance) 파일을 가져와 Console 에이전트를 배포할 수 있습니다. OVA는 vSphere 클라이언트를 사용하여 배포하는 사전 구성된 VM 이미지로, Linux를 설치하거나 컨테이너 런타임을 구성할 필요가 없습니다.
+
+다음과 같은 경우에 이 방법을 선택하십시오.
+
+* VMware 환경에서 온프레미스로 배포하고 있습니다.
+* 유지 관리 및 Linux 설정이 덜 필요한 간편한 온프레미스 설치를 원합니다.
+
+
+
+NOTE: 온프레미스 Console 에이전트에서는 Google Cloud 리소스를 관리할 수 없습니다. Google Cloud 리소스를 관리하려면 Google Cloud에 에이전트를 설치하세요.
+
+[cols="47,47"]
+|===
+| 장점 | 단점 
+
+
+ a| 
+* Linux 또는 컨테이너 런타임 설정이 필요 없는 간편한 온프레미스 설치
+* 온프레미스 전용, 클라우드 배포에는 사용할 수 없습니다
+* 에이전트 유지 관리 작업을 위한 메뉴 방식의 유지 관리 콘솔이 포함되어 있습니다
+* VMware 관리자를 위한 익숙한 구축 워크플로
+* * 사전 구성된 VM 이미지는 실수를 방지하고 유지 관리를 더 쉽게 해줍니다.
+
+ a| 
+* VCenter가 필요하며, 베어 ESXi 호스트에 직접 설치할 수 없습니다.
+
+
+|===
+link:task-install-agent-on-prem-ova.html["VCenter를 사용하여 온프레미스에 배포"]
+
+
+
+== 온프레미스에 수동으로 설치(vCenter 없이)
+
+온프레미스 Linux 호스트에 Console 에이전트를 수동으로 설치할 수 있습니다. Linux 호스트와 컨테이너 런타임(Docker 또는 Podman)을 설정한 다음 Console 에이전트를 설치해야 합니다.
+
+다음과 같은 경우에 이 방법을 선택하십시오.
+
+* 온프레미스 환경을 구축 중이며 VMware vCenter 환경이 없습니다.
+* Linux 관리에 익숙하며 기본 호스트를 직접 관리하고자 합니다.
+* Console 에이전트가 업그레이드되는 시점을 제어하려고 합니다.
+
+
+[cols="47,47"]
+|===
+| 장점 | 단점 
+
+
+ a| 
+* VMware가 필요 없이 Linux와 호환되는 온프레미스 하드웨어 또는 VM 플랫폼에서 작동합니다
+* 아웃바운드 인터넷 액세스가 없는 프라이빗 모드(에어 갭) 배포를 지원합니다
+
+ a| 
+* Linux 사용법과 Docker 또는 Podman을 직접 설정하는 방법을 알아야 합니다.
+* 새 버전이 출시되면 Console 에이전트에 대한 업그레이드를 수동으로 적용하는 것은 사용자 책임입니다.
+
+
+|===
+link:task-install-agent-on-prem.html["온프레미스에 수동으로 설치"]

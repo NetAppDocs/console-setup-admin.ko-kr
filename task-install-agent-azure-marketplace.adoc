@@ -16,6 +16,11 @@ summary: Azure Marketplace에서 콘솔 에이전트를 만들려면 네트워�
 [role="lead"]
 Azure Marketplace에서 직접 Azure에서 콘솔 에이전트를 만들 수 있습니다.  Azure Marketplace에서 콘솔 에이전트를 만들려면 네트워킹을 설정하고, Azure 권한을 준비하고, 인스턴스 요구 사항을 검토한 다음 콘솔 에이전트를 만들어야 합니다.
 
+Azure에 에이전트를 배포하면 사용자가 선택한 VNet에서 Linux와 Console 에이전트 소프트웨어가 실행되는 VM이 시작됩니다.
+
+
+NOTE: Console 에이전트를 관리하는 Cloud Volumes ONTAP 시스템과 동일한 Azure 지역에 배포하거나 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure 지역 쌍"^]에 배포하십시오. 이렇게 하면 Cloud Volumes ONTAP과 연결된 스토리지 계정 간에 Azure Private Link 연결이 사용됩니다.
+
 .시작하기 전에
 * 당신은 ~을 가져야합니다link:concept-agents.html["콘솔 에이전트에 대한 이해"] .
 * 검토link:reference-limitations.html["콘솔 에이전트 제한 사항"] .

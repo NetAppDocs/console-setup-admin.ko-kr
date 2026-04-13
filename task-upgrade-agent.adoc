@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-upgrade-agent.html 
-keywords: upgrade, manual upgrade, agent upgrade, manual agent upgrade, upgrade agent manually, private mode upgrade, offline upgrade, upgrade private mode, connector upgrade, agent upgrade 
-summary: 'Console 에이전트는 아웃바운드 연결이 있을 때 자동으로 업그레이드됩니다. Console 에이전트에 아웃바운드 연결이 없는 경우 수동으로 업그레이드할 수 있습니다(예: 프라이빗 모드 사용).' 
+keywords: upgrade, manual upgrade, agent upgrade, manual agent upgrade, upgrade agent manually, private mode upgrade, offline upgrade, upgrade private mode, connector upgrade, agent upgrade, vcenter upgrade, OVA upgrade, ISO upgrade, vsphere upgrade 
+summary: Console 에이전트는 아웃바운드 연결이 있을 때 자동으로 업그레이드됩니다. Console 에이전트에 아웃바운드 연결이 없는 경우 수동으로 업그레이드할 수 있습니다. 에이전트가 vCenter에 배포된 경우 ISO를 사용하여 업그레이드할 수 있습니다. 
 ---
-= 콘솔 에이전트 업그레이드 관리
+= 콘솔 에이전트 업그레이드
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 'Console 에이전트는 아웃바운드 연결이 있을 때 자동으
 
 
 [role="lead"]
-Console 에이전트는 아웃바운드 연결이 있을 때 자동으로 업그레이드됩니다. Console 에이전트에 아웃바운드 연결이 없는 경우 수동으로 업그레이드할 수 있습니다(예: 프라이빗 모드 사용).
+Console 에이전트는 아웃바운드 연결이 있을 때 자동으로 업그레이드됩니다. Console 에이전트에 아웃바운드 연결이 없는 경우 수동으로 업그레이드할 수 있습니다. 에이전트가 OVA를 사용하여 vCenter에 배포된 경우 ISO를 VM에 마운트하여 새 버전으로 업그레이드할 수 있습니다.
 
 
 
@@ -44,4 +44,47 @@ sudo /path/NetApp-Console-Agent-Offline-<version>
 여기서 <버전>은 다운로드한 에이전트의 버전입니다.
 
 . 업그레이드가 완료되면 *관리 > 지원 > 에이전트*로 이동하여 에이전트 버전을 확인할 수 있습니다.
+
+
+
+
+== ISO를 사용하여 vCenter에 배포된 Console 에이전트 업그레이드
+
+Console 에이전트가 OVA를 사용하여 vCenter에 배포된 경우 ISO를 VM에 마운트하고 VM 유지 관리 콘솔에서 업그레이드를 실행하여 새 버전으로 업그레이드할 수 있습니다.
+
+시작하기 전에 롤백해야 할 경우를 대비하여 VM의 스냅샷을 생성하십시오.
+
+.단계
+.  https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 지원 사이트"^]에서 Console 에이전트 ISO를 다운로드합니다.
+. vCenter에서 액세스할 수 있는 데이터 저장소에 ISO를 업로드합니다.
+. vSphere 클라이언트에서 vCenter에 로그인하고 Console 에이전트를 호스팅하는 VM 인스턴스를 선택합니다.
+. VM에 ISO를 마운트합니다.
++
+.. VM을 마우스 오른쪽 버튼으로 클릭하고 *Edit Settings*를 선택합니다.
+.. CD/DVD 드라이브를 선택하고 *Datastore ISO File*을 선택하십시오.
+.. Console 에이전트 ISO를 찾아 선택합니다.
+.. *Connect*가 활성화되어 있는지 확인하십시오.
+.. *확인*을 선택합니다.
+
+
+. VM을 선택한 후 *Launch Web Console*을 선택합니다.
+. OVA를 배포할 때 지정한 사용자 이름 `maint`과 유지 관리 암호를 사용하여 유지 관리 콘솔에 로그인하십시오.
+.  `1`를 눌러 *시스템 구성* 메뉴를 여십시오.
+.  `3`를 입력하여 *Upgrade*를 선택하고 화면의 안내를 따릅니다.
++
+업그레이드를 통해 업데이트된 OS, Docker 런타임 및 Console 에이전트 서비스가 설치됩니다. 커널이 업데이트된 경우 VM이 자동으로 다시 시작됩니다.
+
+. 업그레이드가 완료되면 Console 에이전트가 올바르게 실행 중인지 확인하십시오.
++
+.. vSphere 클라이언트에서 VM이 켜져 있고 웹 콘솔에 액세스할 수 있는지 확인하십시오.
+.. NetApp Console에서 *Administration > Support > Agents*로 이동하여 에이전트 버전이 새 버전을 반영하는지 확인하십시오.
+
+
+. VM에서 ISO를 마운트 해제합니다.
++
+.. vSphere 클라이언트에서 VM을 마우스 오른쪽 버튼으로 클릭하고 *설정 편집*을 선택합니다.
+.. CD/DVD 드라이브를 선택하고 *Client Device*를 선택하거나 데이터 저장소 ISO 연결을 해제하십시오.
+.. *확인*을 선택합니다.
+
+
 

@@ -4,7 +4,7 @@ permalink: reference-permissions-gcp.html
 keywords: permissions, gcp, gcp permissions, bluexp, console agent 
 summary: 콘솔 에이전트에는 클라우드 공급자에서 작업을 수행하려면 권한이 필요합니다.  이러한 권한은 NetApp 에서 제공하는 정책에 포함되어 있습니다.  에이전트가 이러한 권한을 어떻게 사용하는지 이해해야 합니다. 
 ---
-= 콘솔 에이전트에 대한 Google Cloud 권한
+= NetApp Console 에이전트를 위한 Google Cloud 권한
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -183,6 +183,7 @@ includedPermissions:
 - compute.disks.get
 - compute.disks.list
 - compute.disks.setLabels
+- compute.disks.update
 - compute.disks.use
 - compute.firewalls.create
 - compute.firewalls.delete
@@ -364,7 +365,7 @@ includedPermissions:
 | config.revisions.get | 아니요 | 예 | 아니요 
 
 
-| 계산.디스크.생성 .7+| Cloud Volumes ONTAP 에 대한 디스크를 생성하고 관리합니다. | 예 | 예 | 아니요 
+| 계산.디스크.생성 .8+| Cloud Volumes ONTAP 시스템에서 디스크를 생성하고 관리합니다. | 예 | 예 | 아니요 
 
 
 | 컴퓨팅.디스크.스냅샷 생성 | 아니요 | 예 | 아니요 
@@ -380,6 +381,9 @@ includedPermissions:
 
 
 | 컴퓨팅.디스크.레이블 설정 | 예 | 예 | 아니요 
+
+
+| compute.disks.update | 아니요 | 예 | 아니요 
 
 
 | 컴퓨팅.디스크.사용 | 아니요 | 예 | 아니요 
@@ -800,6 +804,12 @@ includedPermissions:
 == 변경 로그
 
 추가되거나 삭제된 권한은 아래에 명시되어 있습니다.
+
+
+
+=== 2026년 4월 13일
+
+ `compute.disks.update` 권한은 Cloud Volumes ONTAP 시스템의 Hyperdisk Balanced 애그리게이트 또는 디스크에서 IOPS 및 처리량 매개변수를 업데이트하기 위해 추가되었습니다.
 
 
 

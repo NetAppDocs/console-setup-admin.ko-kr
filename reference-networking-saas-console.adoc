@@ -4,7 +4,7 @@ permalink: reference-networking-saas-console.html
 keywords: networking, urls, endpoints, web browser, console, network, set up networking, bluexp 
 summary: NetApp Console, NetApp Console 에이전트 및 NetApp 데이터 서비스에는 아웃바운드 인터넷 액세스와 필요한 엔드포인트에 연결할 수 있는 기능이 필요합니다. 
 ---
-= NetApp Console 대한 네트워크 액세스 준비
+= NetApp Console에 대한 네트워크 액세스
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
