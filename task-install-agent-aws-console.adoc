@@ -19,7 +19,7 @@ NetApp Console에서 AWS에 Console 에이전트를 직접 배포할 수 있습�
 AWS에 에이전트를 배포하면 사용자가 선택한 VPC에서 Linux를 실행하는 EC2 인스턴스와 Console 에이전트 소프트웨어가 시작됩니다.
 
 .시작하기 전에
-* link:concept-agents.html["콘솔 에이전트에 대해 알아보세요"].
+* link:concept-agent-install-options.html#agent-console-deploy["NetApp Console에서 배포해야 하는 시점을 알아보세요."].
 * 검토해야 합니다link:reference-limitations.html["콘솔 에이전트 제한 사항"] .
 
 

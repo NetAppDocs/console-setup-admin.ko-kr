@@ -19,7 +19,7 @@ AWS에서 실행되는 Linux 호스트에 Console 에이전트를 수동으로 �
 AWS에 에이전트를 배포하면 사용자가 선택한 VPC에서 Linux를 실행하는 EC2 인스턴스와 Console 에이전트 소프트웨어가 시작됩니다.
 
 .시작하기 전에
-* 당신은 ~을 가져야합니다link:concept-agents.html["콘솔 에이전트에 대한 이해"] .
+* link:concept-agent-install-options.html#agent-cloud-manual-deploy["AWS에서 수동으로 배포해야 하는 경우 알아보기"].
 * 검토해야 합니다link:reference-limitations.html["콘솔 에이전트 제한 사항"] .
 
 

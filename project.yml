@@ -66,6 +66,42 @@ sidebar:
         url: "/task-install-private-mode.html"
       - title: 다음에 할 수 있는 일
         url: "/reference-whats-next-private-mode.html"
+    - title: 콘솔 에이전트 배포
+      entries:
+      - title: Console 에이전트 배포 방법을 선택하세요
+        url: "/concept-agent-install-options.html"
+      - title: AWS
+        entries:
+        - title: NetApp Console 에서 AWS에 콘솔 에이전트 만들기
+          url: "/task-install-agent-aws-console.html"
+        - title: AWS 마켓플레이스에서 AWS Console 에이전트를 생성합니다.
+          url: "/task-install-agent-aws-marketplace.html"
+        - title: AWS에 Console 에이전트를 수동으로 설치하기
+          url: "/task-install-agent-aws-manual.html"
+      - title: 하늘빛
+        entries:
+        - title: NetApp Console 에서 Azure에 콘솔 에이전트 만들기
+          url: "/task-install-agent-azure-console.html"
+        - title: Azure 마켓플레이스에서 Azure의 Console 에이전트를 생성합니다
+          url: "/task-install-agent-azure-marketplace.html"
+        - title: Azure에서 Console 에이전트 수동 설치
+          url: "/task-install-agent-azure-manual.html"
+      - title: 구글 클라우드
+        entries:
+        - title: NetApp Console 에서 Google Cloud에 콘솔 에이전트 만들기
+          url: "/task-install-agent-google-console-gcloud.html"
+        - title: Google Cloud에서 Google Cloud의 Console 에이전트 생성
+          url: "/task-install-agent-google-gcloud.html"
+        - title: Google Cloud에 Console 에이전트를 수동으로 설치하기
+          url: "/task-install-agent-google-manual.html"
+      - title: 온프레미스에 에이전트 설치
+        entries:
+        - title: 온프레미스에 콘솔 에이전트를 수동으로 설치합니다.
+          url: "/task-install-agent-on-prem.html"
+        - title: VCenter에 온프레미스 Console 에이전트를 설치합니다.
+          url: "/task-install-agent-on-prem-ova.html"
+        - title: 온프레미스 콘솔 에이전트용 포트
+          url: "/reference-ports-on-prem.html"
   - title: NetApp Console 사용
     entries:
     - title: NetApp Console 에 로그인하세요
@@ -88,48 +124,6 @@ sidebar:
       entries:
       - title: 콘솔 에이전트에 대해 알아보세요
         url: "/concept-agents.html"
-      - title: 콘솔 에이전트 배포
-        entries:
-        - title: Console 에이전트 배포 방법을 선택하세요
-          url: "/concept-agent-install-options.html"
-        - title: AWS
-          entries:
-          - title: AWS용 Console 에이전트 설치 옵션
-            url: "/concept-install-aws.html"
-          - title: NetApp Console 에서 AWS에 콘솔 에이전트 만들기
-            url: "/task-install-agent-aws-console.html"
-          - title: AWS 마켓플레이스에서 AWS Console 에이전트를 생성합니다.
-            url: "/task-install-agent-aws-marketplace.html"
-          - title: AWS에 Console 에이전트를 수동으로 설치하기
-            url: "/task-install-agent-aws-manual.html"
-        - title: 하늘빛
-          entries:
-          - title: Azure용 Console 에이전트 설치 옵션
-            url: "/concept-install-azure.html"
-          - title: NetApp Console 에서 Azure에 콘솔 에이전트 만들기
-            url: "/task-install-agent-azure-console.html"
-          - title: Azure 마켓플레이스에서 Azure의 Console 에이전트를 생성합니다
-            url: "/task-install-agent-azure-marketplace.html"
-          - title: Azure에서 Console 에이전트 수동 설치
-            url: "/task-install-agent-azure-manual.html"
-        - title: 구글 클라우드
-          entries:
-          - title: Google Cloud용 Console 에이전트 설치 옵션
-            url: "/concept-install-google.html"
-          - title: NetApp Console 에서 Google Cloud에 콘솔 에이전트 만들기
-            url: "/task-install-agent-google-console-gcloud.html"
-          - title: Google Cloud에서 Google Cloud의 Console 에이전트 생성
-            url: "/task-install-agent-google-gcloud.html"
-          - title: Google Cloud에 Console 에이전트를 수동으로 설치하기
-            url: "/task-install-agent-google-manual.html"
-        - title: 온프레미스에 에이전트 설치
-          entries:
-          - title: 온프레미스에 콘솔 에이전트를 수동으로 설치합니다.
-            url: "/task-install-agent-on-prem.html"
-          - title: VCenter에 온프레미스 Console 에이전트를 설치합니다.
-            url: "/task-install-agent-on-prem-ova.html"
-          - title: 온프레미스 콘솔 에이전트용 포트
-            url: "/reference-ports-on-prem.html"
       - title: 콘솔 에이전트를 유지 관리합니다.
         entries:
         - title: 수동으로 설치된 Console 에이전트 유지 관리

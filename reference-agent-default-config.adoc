@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-agent-default-config.html 
-keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux, connector configuration, connector installation folder, connector folder, connector log, ubuntu, agent, agent installation folder, agent configuration 
+keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux, connector configuration, connector installation folder, connector folder, ubuntu, agent, agent installation folder, agent configuration 
 summary: AWS, Azure, Google Cloud에서 인터넷 접속이 가능한 표준 배포에 대한 콘솔 에이전트 기본 구성과 온프레미스 환경에서 인터넷 접속이 불가능한 제한된 배포에 대한 콘솔 에이전트 기본 구성에 대해 알아보세요. 
 ---
 = NetApp Console의 콘솔 에이전트 기본 구성

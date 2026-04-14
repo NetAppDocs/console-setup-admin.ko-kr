@@ -34,8 +34,21 @@ summary: 환경을 준비하고 콘솔 에이전트를 배포하여 제한 모�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["삼"] link:task-subscribe-restricted-mode.html["NetApp Intelligent Services 구독(선택 사항)"]
 [role="quick-margin-para"]
-선택 사항: 클라우드 공급업체의 마켓플레이스에서 NetApp Intelligent Services 구독하여 시간당 요금(PAYGO) 또는 연간 계약을 통해 데이터 서비스 비용을 지불하세요.  NetApp Intelligent Services 에는 NetApp Backup and Recovery, Cloud Volumes ONTAP, NetApp Cloud Tiering, NetApp Ransomware Resilience 및 NetApp Disaster Recovery 포함됩니다.  NetApp Data Classification 추가 비용 없이 구독에 포함되어 있습니다.
+선택 사항: 클라우드 공급업체의 마켓플레이스에서 NetApp Intelligent Services를 구독하여 시간당 요금(PAYGO) 또는 연간 계약으로 데이터 서비스 비용을 지불할 수 있습니다. NetApp Intelligent Services에는 NetApp Backup and Recovery, Cloud Volumes ONTAP, NetApp Ransomware Resilience 및 NetApp Disaster Recovery가 포함됩니다. NetApp Data Classification은 구독에 포함되어 추가 비용 없이 제공됩니다.
 
+[NOTE]
+====
+NetApp Cloud Tiering은 2026년 4월 26일부터 더 이상 구매하거나 라이선스를 갱신할 수 없습니다.
+
+기존 고객은 구독 또는 라이선스 계약이 만료될 때까지 NetApp Cloud Tiering을 계속 사용하고 지원을 받을 수 있습니다. 구독이 만료된 후에는 고객이 NetApp Cloud Tiering 기능이나 지원에 더 이상 액세스할 수 없습니다.
+
+NetApp에서는 고객이 NetApp 담당자와 협력하여 기존 계층화 라이센스를 ONTAP FabricPool 라이센스로 전환할 것을 권장합니다. 이 라이센스는 ONTAP에서 데이터 계층화 기능을 제공합니다. FabricPool을 사용하여 ONTAP에서 데이터 계층화를 설정하는 방법에 대한 자세한 내용은 link:https://docs.netapp.com/us-en/ontap/fabricpool/install-license-aws-azure-ibm-task.html["ONTAP 클러스터에 FabricPool 라이센스 설치"]을 참조하십시오.
+
+* link:https://go.digital.netapp.com/rs/683-HWH-936/images/Cloud-Tiering-EOA-Notice2.pdf?version=0&mkt_tok=NjgzLUhXSC05MzYAAAGgvTOT_9L2PauNXYE0fOs0RIz8KK2q5Jb6sg8Yv-97NNJ53ceAab9UAqpKOrAvByxsOWqhIQHNCHgFfM0q3TI["NetApp Cloud Tiering 사용 중단 안내"]
+* link:https://go.digital.netapp.com/rs/683-HWH-936/images/Cloud-Tiering-EOA-FAQ-v3.pdf?version=0&mkt_tok=NjgzLUhXSC05MzYAAAGgvTOT_rplJe_ZtlY4PQAQRQlewsDa0W4JR55muT0KCThR46zI7-uOhIYfVsxODDKFrnYYvy5uZzvhEKHOwBI["NetApp Cloud Tiering 공급 종료 FAQ"]
+
+
+====
 
 
 == 제한된 모드에서 NetApp Console에 지원되는 기능 및 서비스

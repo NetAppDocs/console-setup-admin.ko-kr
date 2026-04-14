@@ -1198,37 +1198,7 @@
   <block id="a97fa38afe9727184ada1ed0c4bf8cbf" category="list-text"><block ref="a97fa38afe9727184ada1ed0c4bf8cbf" category="inline-link-macro-rx"></block></block>
   <block id="d0be151a63fab72d6333774c4ad643bb" category="inline-link">NetApp Console IAM에 대한 API에 대해 알아보세요</block>
   <block id="d7726716920c51dac9e8d3b944fb1d9c" category="list-text"><block ref="d7726716920c51dac9e8d3b944fb1d9c" category="inline-link-rx"></block></block>
-  <block id="00755108fad233add4100be86dce2451" category="summary">AWS에서 콘솔 에이전트를 만드는 방법에는 여러 가지가 있습니다.  가장 일반적인 방법은 NetApp Console 에서 직접 실행하는 것입니다.</block>
-  <block id="7ff9f8e2467774df163161a38d2d5040" category="doc">AWS의 콘솔 에이전트 설치 옵션</block>
-  <block id="b5afc81c4f24b143224e304b939a3f6c" category="paragraph">다음과 같은 설치 옵션을 사용할 수 있습니다.</block>
-  <block id="b9dd01a6aae803f666e75d60b5cc37fe" category="inline-link-macro">콘솔에서 직접 콘솔 에이전트를 만듭니다.</block>
-  <block id="22ca43ce5c5a872fcead2b9795d43ce4" category="list-text"><block ref="4cac40a6f38a644ae4e3211385f3144e" category="inline-link-macro-rx"></block>(이것은 표준 옵션입니다)</block>
-  <block id="f27c252d931beb3466d3231006b71803" category="paragraph">이 작업을 수행하면 선택한 VPC에서 Linux와 콘솔 에이전트 소프트웨어를 실행하는 EC2 인스턴스가 시작됩니다.</block>
-  <block id="1515391ee07716093ddb994cd9906006" category="inline-link-macro">AWS Marketplace에서 콘솔 에이전트 만들기</block>
-  <block id="b0a755c889be10fff38496428b62e124" category="list-text"><block ref="b0a755c889be10fff38496428b62e124" category="inline-link-macro-rx"></block></block>
-  <block id="b839e2143764191ce8726714fcf0e54c" category="paragraph">이 작업을 수행하면 Linux와 콘솔 에이전트 소프트웨어가 실행되는 EC2 인스턴스가 시작되지만 배포는 콘솔이 아닌 AWS Marketplace에서 직접 시작됩니다.</block>
-  <block id="7ec389ef03b4378689ec8afd5b977499" category="inline-link-macro">자신의 Linux 호스트에 소프트웨어를 다운로드하고 수동으로 설치하세요.</block>
-  <block id="ce8b5514801557c28339a07e7885738d" category="list-text"><block ref="ce8b5514801557c28339a07e7885738d" category="inline-link-macro-rx"></block></block>
-  <block id="a189e78df125d3702fb17473d7a17faa" category="paragraph">선택하는 설치 옵션은 설치를 준비하는 방법에 영향을 미칩니다.  여기에는 AWS에서 리소스를 인증하고 관리하는 데 필요한 권한을 콘솔에 제공하는 방법이 포함됩니다.</block>
-  <block id="f67190f28c8f18c6676794f4acd943fc" category="summary">Azure에서 콘솔 에이전트를 만드는 방법에는 여러 가지가 있습니다.  가장 일반적인 방법은 NetApp Console 에서 직접 실행하는 것입니다.</block>
-  <block id="dcd94e7f09b8c058ae8084e8e5730bbb" category="doc">Azure의 콘솔 에이전트 설치 옵션</block>
-  <block id="f73d744dbe9e744eb8f73a3bab9f243e" category="inline-link-macro">NetApp Console 에서 직접 콘솔 에이전트를 만듭니다.</block>
-  <block id="4d116474327ab97148d8a69fd11379ea" category="list-text"><block ref="e0fdd18000ece681beed8a0793eff329" category="inline-link-macro-rx"></block>(이것은 표준 옵션입니다)</block>
-  <block id="079e5f76242a76ddceeb5ae46398071c" category="paragraph">이 작업을 수행하면 선택한 VNet에서 Linux와 콘솔 에이전트 소프트웨어를 실행하는 VM이 시작됩니다.</block>
   <block id="2dd5916ed68f963e9c5529d69a4de5fa" category="inline-link-macro">Azure Marketplace에서 콘솔 에이전트 만들기</block>
-  <block id="b54d9f5a24d2e6b2b731b2862685ce97" category="list-text"><block ref="b54d9f5a24d2e6b2b731b2862685ce97" category="inline-link-macro-rx"></block></block>
-  <block id="cea96889fec9e311da2265fdf2e92490" category="paragraph">이 작업을 수행하면 Linux와 콘솔 에이전트 소프트웨어가 실행되는 VM도 시작되지만 배포는 콘솔이 아닌 Azure Marketplace에서 직접 시작됩니다.</block>
-  <block id="9e0a66536136cc55db9b005faf3fa26e" category="list-text"><block ref="9e0a66536136cc55db9b005faf3fa26e" category="inline-link-macro-rx"></block></block>
-  <block id="320a91e2547bc28be93b76779dc849b4" category="paragraph">선택하는 설치 옵션은 설치를 준비하는 방법에 영향을 미칩니다.  여기에는 Azure에서 리소스를 인증하고 관리하는 데 필요한 권한을 콘솔 에이전트에 제공하는 방법이 포함됩니다.</block>
-  <block id="011286419a3e5b900c9f64647edebdf7" category="summary">Google Cloud에서 콘솔 에이전트를 만드는 방법에는 여러 가지가 있습니다.  가장 일반적인 방법은 NetApp Console 에서 직접 실행하는 것입니다.</block>
-  <block id="89facd2099770d471c8de70fdb5d0651" category="doc">Google Cloud의 콘솔 에이전트 설치 옵션</block>
-  <block id="1a208b984fe61bb9d1e4e6b026e30354" category="list-text"><block ref="84693cca73c9981e6b563eb4572174e7" category="inline-link-macro-rx"></block>(이것은 표준 옵션입니다)</block>
-  <block id="efbe29648b3d8def21619f8bba35784f" category="paragraph">이 작업을 수행하면 선택한 VPC에서 Linux와 콘솔 에이전트 소프트웨어를 실행하는 VM 인스턴스가 시작됩니다.</block>
-  <block id="f47b616e0890c8a8507745d52fc62533" category="inline-link-macro">Google Platform을 사용하여 콘솔 에이전트 만들기</block>
-  <block id="952e50ce3636bd2393f109405c59b8c0" category="list-text"><block ref="952e50ce3636bd2393f109405c59b8c0" category="inline-link-macro-rx"></block></block>
-  <block id="9f0f4ef7b4fff87cc68ce1185ff944ce" category="paragraph">이 작업을 수행하면 Linux와 콘솔 에이전트 소프트웨어가 실행되는 VM 인스턴스가 시작되지만 배포는 콘솔이 아닌 Google Cloud에서 직접 시작됩니다.</block>
-  <block id="0eef87956979cf6724fcf06a20f2e4eb" category="list-text"><block ref="0eef87956979cf6724fcf06a20f2e4eb" category="inline-link-macro-rx"></block></block>
-  <block id="6ca5ab84f54829f432e3fc9d65f06d1c" category="paragraph">선택하는 설치 옵션은 설치를 준비하는 방법에 영향을 미칩니다.  여기에는 Google Cloud에서 리소스를 인증하고 관리하는 데 필요한 권한을 콘솔에 제공하는 방법이 포함됩니다.</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="section-title">개요</block>
   <block id="579f2ccfa8f6ecb1be46c191e6f51980" category="paragraph">각 배포 모드는 아웃바운드 연결, 위치, 설치, 인증, 데이터 서비스 및 요금 청구 방법이 다릅니다.</block>
   <block id="93cba07454f06a4a960172bbd6e2a435" category="cell">예</block>
@@ -3300,8 +3270,6 @@
   <block id="798a2a9b64140e0f8f05fa5695aa1faf" category="list-text">다른 에이전트를 선택한 다음 *전환*을 선택하세요.</block>
   <block id="52b5b2b5dbfa5254101b42416d1a8773" category="paragraph"><block ref="58b4c1c7f9a637ac28d3e6f5fb5503dc" category="inline-link-macro-rx"></block> .</block>
   <block id="59451d5b1be51c2e522deb585360baaf" category="doc">NetApp Console 에서 AWS에 콘솔 에이전트 만들기</block>
-  <block id="29c7d79b8474c98bbf8600f925dfb317" category="inline-link-macro">콘솔 에이전트에 대한 이해</block>
-  <block id="5f551ddf859b1d7525a5d87169b1c520" category="list-text">당신은 ~을 가져야합니다<block ref="d16111ab8ba33a1610fbb17fe340b992" category="inline-link-macro-rx"></block> .</block>
   <block id="035f13f16b03eaaa0e6f9e50510bada8" category="list-text">검토해야 합니다<block ref="2c29232fcf7d2d4af34b1c675a642823" category="inline-link-macro-rx"></block> .</block>
   <block id="ece2bb18919ce5ae01a5179cefd722b3" category="section-title">1단계: AWS에 콘솔 에이전트를 배포하기 위한 네트워킹 설정</block>
   <block id="3622d53137f09c5a1f41ab1c1500f461" category="paragraph">콘솔 에이전트를 설치하려는 네트워크 위치가 다음 요구 사항을 지원하는지 확인하세요.  이러한 요구 사항을 통해 콘솔 에이전트는 하이브리드 클라우드의 리소스와 프로세스를 관리할 수 있습니다.</block>
@@ -4117,7 +4085,6 @@
   <block id="08a85e7ea19b20609018d63a75a9ab37" category="list-text">이전에 설정한 권한을 콘솔 에이전트에 제공합니다.</block>
   <block id="1d682899a424ef1c9395956d4422fd8a" category="inline-link-macro">NetApp Intelligent Services 구독(선택 사항)</block>
   <block id="e7dd7f23b1ff3326cdebf5cb759f7a6f" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> <block ref="60f282c89397f6d15a4ed422eccb831c" category="inline-link-macro-rx"></block></block>
-  <block id="d1d624aaa80d4b95ecda4ca00906004a" category="paragraph">선택 사항: 클라우드 공급업체의 마켓플레이스에서 NetApp Intelligent Services 구독하여 시간당 요금(PAYGO) 또는 연간 계약을 통해 데이터 서비스 비용을 지불하세요.  NetApp Intelligent Services 에는 NetApp Backup and Recovery, Cloud Volumes ONTAP, NetApp Cloud Tiering, NetApp Ransomware Resilience 및 NetApp Disaster Recovery 포함됩니다.  NetApp Data Classification 추가 비용 없이 구독에 포함되어 있습니다.</block>
   <block id="4a5cd58a00c166a3e1b93ea2c38ae5db" category="inline-link-macro">NetApp 콘솔을 사용하기 위한 네트워킹 준비</block>
   <block id="4170442d537b0bcdcf26afecc0b46214" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="81434ae0997d25fd3bf3ebcd9de42f03" category="inline-link-macro-rx"></block></block>
   <block id="0f29bdee858adb6d973cf8db83b0a896" category="inline-link-macro">가입하고 조직을 만드세요</block>
@@ -5164,10 +5131,7 @@
   <block id="b60366a003b487aaa0f17f8db3163ecc" category="paragraph">아니요 (기본적인 탐색만 가능)</block>
   <block id="3b00545dfd90abf1453721e441754d3d" category="cell">Digital Advisor (Active IQ)</block>
   <block id="c3705e839d1a8df80ae158824bd08448" category="cell">홈페이지 대시보드 지표</block>
-  <block id="d3e800228af9a7ced9cadbe31f21cf71" category="paragraph">네^2^</block>
-  <block id="fec52cc0232a22ef4060c7b61d92c0a0" category="paragraph">아니요^1^</block>
   <block id="3863a60fc30916ec3597541037025585" category="cell">*이용 가능한 데이터 서비스*:</block>
-  <block id="6444e1b68689d877ddc4f4121e08c0f6" category="paragraph">^1^ 콘솔 에이전트 없이도 라이프사이클 계획을 볼 수 있지만, 작업을 시작하려면 콘솔 에이전트가 필요합니다.</block>
   <block id="9ea7157b38fa199a8532fa65cd92d096" category="summary">역할 기반 액세스 제어(RBAC)를 사용하여 NetApp Console 에 대한 사용자 액세스를 관리하고, 조직, 폴더 또는 프로젝트 수준에서 미리 정의된 역할을 할당할 수 있습니다. 각 역할은 사용자가 할당된 범위 내에서 수행할 수 있는 작업을 정의하는 특정 권한을 부여합니다.</block>
   <block id="6369e7866450cfbd1595f3b5f17a45ce" category="doc">NetApp Console 역할 기반 액세스 제어(RBAC)에 대해 알아보세요.</block>
   <block id="adb744c66714a9cd79eb46c484743e3a" category="paragraph">NetApp 최소 권한 원칙에 따라 콘솔 역할을 설계하므로 각 역할에는 해당 작업에 필요한 권한만 포함됩니다. 이러한 접근 방식은 각 구성원에게 필요한 권한만 허용함으로써 보안을 강화합니다.</block>
@@ -5448,7 +5412,6 @@
   <block id="bd2a04f40dfa26475eeaeb5104213639" category="inline-link-macro">E-시리즈 시스템을 알아보는 방법을 알아보세요.</block>
   <block id="20397d9bb3cf91b26829ed1f1050f846" category="list-text"><block ref="20397d9bb3cf91b26829ed1f1050f846" category="inline-link-macro-rx"></block></block>
   <block id="0f1d83ed07623902c200d2b4489a8bc0" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> <block ref="60a7e52b5f1dace8fe7cd5fadf089cd0" category="inline-link-macro-rx"></block></block>
-  <block id="9c50bfc1c0c8af31868d53cf5d274ca4" category="paragraph">클라우드 공급업체를 통해 NetApp Intelligent Services 에 가입하여 시간당(PAYGO) 또는 연간 요금으로 청구하세요. 구독에는 NetApp Backup and Recovery, Cloud Volumes ONTAP, NetApp Cloud Tiering, NetApp Ransomware Resilience, NetApp Disaster Recovery 및 NetApp Data Classification 포함됩니다.</block>
   <block id="b13696d6f982d12cdad42fb6cff86df3" category="paragraph">콘솔을 사용하려면 NetApp 지원 사이트 자격 증명으로 가입하거나 로그인하거나 NetApp Console 로그인을 생성하십시오. 회사에서 처음으로 가입하는 경우, 관리자 권한으로 새 조직을 생성하게 됩니다. 회사에 이미 조직이 있는 경우 기존 NetApp 지원 사이트 자격 증명 또는 회사 단일 로그인(SSO)을 사용하여 가입하거나 로그인하십시오.</block>
   <block id="826401015c53957df701460dc5fefb05" category="paragraph">회사에 NetApp Console 조직이 없는 경우 가입하여 조직을 생성하세요. 첫 번째 사용자는 조직 관리자가 되어 사용자 계정 및 권한을 관리합니다. 역할은 나중에 업데이트하고 관리자를 추가할 수 있습니다.</block>
   <block id="d5f547e805bd962044877e771a5c80c4" category="paragraph">+ 처음 사용자이거나 조직 관리자인 경우, 안내에 따라 스토리지 리소스를 추가하고 콘솔 에이전트를 생성하는 등의 작업을 수행할 수 있습니다. <block ref="85a3a682e34d7edd80cbda274368cd58" category="inline-link-macro-rx"></block></block>
@@ -5819,7 +5782,6 @@
   <block id="bf2dd05fdc0bdbc8a0f1b7fb8c2afaa1" category="section-title">NetApp Console의 비용 및 규정 준수 관리 서비스</block>
   <block id="1a9b5932db1134b67b21b3c238ec27e7" category="paragraph">모든 시스템에서 계약 상태를 추적하여 비용 관리, 규정 준수 및 구매 결정을 개선하십시오.</block>
   <block id="58161bba30463b220b84e58cb97f5fd5" category="list-text">스크립트 기반 솔루션을 사용하여 NetApp 제품 및 서비스의 설정과 연결을 자동화함으로써 더욱 원활하고 일관된 운영을 실현하십시오.</block>
-  <block id="4832328d355560b55efa26c4c2c2d03c" category="list-text">온프레미스 ONTAP 스토리지를 클라우드로 확장하여 비용 최적화 및 데이터 라이프사이클 관리를 수행할 수 있습니다.</block>
   <block id="6db5d32b9455f53fb771511d47bb4646" category="list-text">데이터 개인정보 보호 규정을 준수할 수 있도록 애플리케이션 데이터와 클라우드 환경을 안전하게 보호하세요. 구독 시 무료로 제공됩니다.</block>
   <block id="26444e20535c400889cbd46fa71bcc4b" category="list-text">쓰기 가능한 캐시 볼륨을 생성하여 데이터 액세스 속도를 높이거나 액세스가 많은 볼륨의 트래픽을 오프로드하여 성능 및 비용 효율성을 높일 수 있습니다.</block>
   <block id="46152e594769d440fdd2271b8eef67cc" category="list-text">Amazon FSx for NetApp ONTAP을 사용하여 주요 워크로드를 설계, 설정 및 운영하여 특정 애플리케이션에 대한 성능과 비용을 최적화합니다.</block>
@@ -5957,9 +5919,7 @@
   <block id="6f8cdd1e2991c2d2f9a4580b6f79bf52" category="paragraph-title">ISO를 사용하여 vCenter에 배포된 Console 에이전트 업그레이드</block>
   <block id="307d2695a2fce9ab7e904c8ad0ec1904" category="inline-link-macro">vCenter에 배포된 Console 에이전트를 업그레이드하는 방법을 알아보세요</block>
   <block id="30c4a8a1d5fde5730fe4249081e4d06c" category="paragraph">OVA를 사용하여 vCenter에 Console 에이전트를 배포한 경우, 이제 ISO를 VM에 마운트하고 VM 유지 관리 콘솔에서 업그레이드를 실행하여 새 버전으로 업그레이드할 수 있습니다. <block ref="5494ba1785de42707e7a1fa6cefcddcd" category="inline-link-macro-rx"></block></block>
-  <block id="4d2638b05d3fa7aba4bb7424fa2b2a26" category="summary">NetApp Console, 클라우드 공급자의 마켓플레이스를 사용하거나 Linux 호스트에 소프트웨어를 수동으로 설치하여 Console 에이전트를 배포합니다. 배포 방법에 따라 호스트에 대한 제어 권한과 시작 속도가 결정됩니다.</block>
   <block id="9db458bccb025b8de9d4cfd46a4d1578" category="doc">Console 에이전트 배포 방법을 선택하세요</block>
-  <block id="bf9b093b5914185e68f2bf0b3c47073f" category="paragraph">NetApp Console, 클라우드 공급자의 마켓플레이스를 사용하거나 Linux 호스트에 소프트웨어를 수동으로 설치하여 Console 에이전트를 배포할 수 있습니다. 배포 방법에 따라 호스트에 대한 제어 권한과 시작 속도가 결정됩니다.</block>
   <block id="091643e3b21d7e830a310e57763b4775" category="paragraph">클라우드 배포의 경우 Amazon Web Services(AWS), Microsoft Azure 또는 Google Cloud에 에이전트를 배포할 수 있습니다.</block>
   <block id="775737d382907fd41e70093d7ab88b9f" category="section-title">NetApp Console에서 배포</block>
   <block id="d791eb5db248a6d2868b3d89245f5f00" category="paragraph">NetApp은 표준 모드를 사용할 경우 NetApp Console에서 배포하는 것을 권장합니다. NetApp Console은 네트워킹 및 권한 설정 과정을 안내한 후 클라우드 공급자에서 VM 또는 인스턴스를 자동으로 시작합니다. Console은 네트워킹 및 권한 설정 과정을 안내한 후 클라우드 공급자에서 VM 또는 인스턴스를 자동으로 시작합니다.</block>
@@ -6035,7 +5995,6 @@
   <block id="e25842751cafa99bcd27e28d53aa0a74" category="paragraph">다음 표는 Console 에이전트 사용 여부에 따라 사용 가능한 스토리지 시스템 및 서비스를 보여줍니다.</block>
   <block id="103dc98f6960434c2f9ff478ef8618f7" category="cell">*지원되는 스토리지 시스템*:</block>
   <block id="0ef90fde5440e5fbd859cb4d59f76f2c" category="cell">온프레미스 ONTAP 클러스터</block>
-  <block id="9b2d29fbe0d27c5340433f589b4ffedd" category="paragraph">^2^ 정확한 홈페이지 측정항목을 얻으려면 적절한 크기와 구성의 Console 에이전트가 필요합니다.</block>
   <block id="762c7a5905f9e2e1e066d46ccf563a52" category="paragraph">Google Cloud 리소스를 관리하려면 Google Cloud에 에이전트를 배포하세요. 온프레미스 에이전트는 Google Cloud 리소스를 관리할 수 없습니다.</block>
   <block id="6265d84f2de108c19a3c1b8a19a22d01" category="list-text">귀사 사업장에서(표준 또는 프라이빗 모드만 해당)</block>
   <block id="3f2acb165155b9f2c13851d0a96a3f63" category="inline-link-macro">배포 방법을 비교하여 환경에 맞는 방법을 선택하십시오</block>
@@ -6159,7 +6118,6 @@
   <block id="5ac9b947c65653cf6d02fe3c59e7fa2f" category="summary">NetApp Console에서 AWS에 Console 에이전트를 직접 배포할 수 있습니다. Console에서 AWS에 Console 에이전트를 배포하기 전에 네트워킹을 설정하고 AWS 권한을 준비해야 합니다.</block>
   <block id="dc06977a17baa1d2ac30423086ded05e" category="doc">NetApp Console에서 AWS에 Console 에이전트 배포</block>
   <block id="21bc24ad9112fe84642a352511c8c896" category="paragraph">AWS에 에이전트를 배포하면 사용자가 선택한 VPC에서 Linux를 실행하는 EC2 인스턴스와 Console 에이전트 소프트웨어가 시작됩니다.</block>
-  <block id="a7bfdf791cd40e0ecc1b8e7cef1ca6c1" category="list-text"><block ref="6863c249d676553f48927d7d95fd710e" category="inline-link-macro-rx"></block>.</block>
   <block id="13cc9918631bd12add35c3badfe98a74" category="doc">AWS에서 Console 에이전트를 수동으로 배포합니다</block>
   <block id="3f0527499a34df287448340f6ef53274" category="paragraph">AWS에서 실행되는 Linux 호스트에 Console 에이전트를 수동으로 배포할 수 있습니다. 자체 Linux 호스트에 Console 에이전트를 수동으로 배포하려면 호스트 요구 사항을 검토하고, 네트워크를 설정하고, AWS 권한을 준비하고, Console 에이전트를 배포한 다음, 준비한 권한을 부여해야 합니다.</block>
   <block id="ae156547be858d5da6a6ad874dab7c9e" category="doc">AWS Marketplace에서 Console 에이전트 배포</block>
@@ -6234,14 +6192,37 @@
   <block id="26ebb9e5362ebbe39939cfeec9b06e2e" category="list-text">vSphere 클라이언트에서 VM을 마우스 오른쪽 버튼으로 클릭하고 *설정 편집*을 선택합니다.</block>
   <block id="25f777f1eaa91fa773a6c639768fa5fc" category="list-text">CD/DVD 드라이브를 선택하고 *Client Device*를 선택하거나 데이터 저장소 ISO 연결을 해제하십시오.</block>
   <block id="e382e67da79695356dc1fa71918bf917" category="summary">NetApp Console 관리의 새로운 기능에 대해 알아보십시오.</block>
-  <block id="34fb7793c6dd21820fca4599855cc8d6" category="sidebar">AWS용 Console 에이전트 설치 옵션</block>
   <block id="dfaeded134f05cc3b6e8cfbb7dc74750" category="sidebar">AWS 마켓플레이스에서 AWS Console 에이전트를 생성합니다.</block>
-  <block id="da3632a79f01a64e10a52f3d8b2f20b3" category="sidebar">Azure용 Console 에이전트 설치 옵션</block>
   <block id="7b3521e08bd698da5e7f4e8dd23ffd28" category="sidebar">Azure 마켓플레이스에서 Azure의 Console 에이전트를 생성합니다</block>
-  <block id="aeb40985e24f14c0392276a5b302ec39" category="sidebar">Google Cloud용 Console 에이전트 설치 옵션</block>
   <block id="9263d00bd3085ab3f7fe9d54b53da0bb" category="sidebar">Google Cloud에서 Google Cloud의 Console 에이전트 생성</block>
   <block id="ef65981a653f842358b97ed65fdd873e" category="sidebar">VCenter에 온프레미스 Console 에이전트를 설치합니다.</block>
   <block id="0b1032eeff080ebafeabe1d451b25cbc" category="sidebar">수동으로 설치된 Console 에이전트 유지 관리</block>
   <block id="fed6fefc4794de432303a8decf8cfed9" category="sidebar">수동으로 설치된 에이전트 유지 관리</block>
   <block id="15cae31ad8279b2e766e14f72e9a7766" category="sidebar">ID 및 액세스 관리에 대한 자주 묻는 질문</block>
+  <block id="bde6bbfbb596382f506558c6bab1343b" category="paragraph">NetApp Cloud Tiering은 2026년 4월 26일부터 더 이상 구매하거나 라이선스를 갱신할 수 없습니다.</block>
+  <block id="bb94a9ffb3205557387f0b00f8e24dca" category="paragraph">기존 고객은 구독 또는 라이선스 계약이 만료될 때까지 NetApp Cloud Tiering을 계속 사용하고 지원을 받을 수 있습니다. 구독이 만료된 후에는 고객이 NetApp Cloud Tiering 기능이나 지원에 더 이상 액세스할 수 없습니다.</block>
+  <block id="f8a967869572457212675a5d470c728f" category="inline-link-macro">ONTAP 클러스터에 FabricPool 라이센스 설치</block>
+  <block id="f1a805b989e2fd716c6ed52db78b4c09" category="paragraph">NetApp에서는 고객이 NetApp 담당자와 협력하여 기존 계층화 라이센스를 ONTAP FabricPool 라이센스로 전환할 것을 권장합니다. 이 라이센스는 ONTAP에서 데이터 계층화 기능을 제공합니다. FabricPool을 사용하여 ONTAP에서 데이터 계층화를 설정하는 방법에 대한 자세한 내용은 <block ref="ecd46e7261f4b06a38f69686168fad8b" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="d5b1e29a38c69118ebb52ddd25078a82" category="inline-link-macro">NetApp Cloud Tiering 사용 중단 안내</block>
+  <block id="3c1b98a4347b1e75ca57e51e43e141b2" category="list-text"><block ref="bc9f3746ee1a6c6e91093bc2b9ff13fb" category="inline-link-macro-rx"></block></block>
+  <block id="65afa52dc402fa4f804d1fad742f5b32" category="inline-link-macro">NetApp Cloud Tiering 공급 종료 FAQ</block>
+  <block id="91140b6bf054d442adb9178830663a05" category="list-text"><block ref="317d9243bec15035f876da17dbcf900e" category="inline-link-macro-rx"></block></block>
+  <block id="d1618b2005bb616189c51872f4eeb7a1" category="summary">NetApp Console, 클라우드 공급자의 마켓플레이스를 사용하거나 Linux 호스트에 소프트웨어를 수동으로 설치하여 Console 에이전트를 배포할 수 있습니다. 배포 방법은 에이전트 호스트를 유지 관리하는 방법을 결정하며 사용 중인 NetApp Console 배포 모드에 따라 다릅니다.</block>
+  <block id="45fb0fdcc82849eb5d817c5636b5bdfe" category="paragraph">예. 정확한 홈페이지 측정항목을 얻으려면 적절한 크기와 구성의 NetApp Console 에이전트가 필요합니다.</block>
+  <block id="79f67f651f3a0b97533f98f67c3ae42a" category="paragraph">아니요. Console 에이전트 없이도 Lifecycle 계획을 볼 수는 있지만, 작업을 시작하려면 Console 에이전트가 필요합니다.</block>
+  <block id="e56f7590d3bf460e920c96d0e1a4d00c" category="paragraph">NetApp Cloud Tiering*</block>
+  <block id="d82435623d1717d1441dd242d0d2d5dd" category="inline-link-macro">NetApp Console에서 배포해야 하는 시점을 알아보세요.</block>
+  <block id="bb4de92fce42a43473c818b1a685f78e" category="list-text"><block ref="65345eed93b7b4d57b17176976feb61c" category="inline-link-macro-rx"></block>.</block>
+  <block id="4058bec8c05b7eec8e8da62db0d4c29c" category="inline-link-macro">AWS에서 수동으로 배포해야 하는 경우 알아보기</block>
+  <block id="bbba72d665c28a50ff890f9bf258bf44" category="list-text"><block ref="af0eeb37b47edb9c09804643bac40d9c" category="inline-link-macro-rx"></block>.</block>
+  <block id="90e4f94df0a9c5eb44bab6156156dfc9" category="inline-link-macro">AWS Marketplace에서 배포해야 하는 시점을 알아보세요</block>
+  <block id="16ed41e7d53f616b01345af5fa5bd8df" category="list-text"><block ref="2cd30ddcbcdf1f251e7b73909152be56" category="inline-link-macro-rx"></block>.</block>
+  <block id="66aa6cab05064212e5db559feb1dc39b" category="inline-link-macro">Azure에서 수동으로 배포해야 하는 시기를 알아보십시오</block>
+  <block id="68168baf0e09918601a7b016175f25dc" category="list-text"><block ref="51a3655f41ec4f97f4438747d212bacc" category="inline-link-macro-rx"></block>.</block>
+  <block id="d1ed08857033eae041161d0cf84b5e13" category="inline-link-macro">Azure Marketplace에서 배포해야 하는 시점을 알아보세요.</block>
+  <block id="da299adc373f6bb4f71527af1d4a5229" category="list-text"><block ref="549d9ddde85979492f18f1b01a816a1c" category="inline-link-macro-rx"></block>.</block>
+  <block id="ea8976e4bcb3a4dc4f9dbcce6a078f45" category="inline-link-macro">Google Cloud에서 수동으로 배포해야 하는 시기를 알아보십시오</block>
+  <block id="fdac344e6e2a4fe5d79f5e4669b070fe" category="list-text"><block ref="0c9621013a18e4c625fdd25673bfa917" category="inline-link-macro-rx"></block>.</block>
+  <block id="8f5eebf6075fe260d8a4c0281dc3bfe2" category="paragraph">선택 사항: 클라우드 공급업체의 마켓플레이스에서 NetApp Intelligent Services를 구독하여 시간당 요금(PAYGO) 또는 연간 계약으로 데이터 서비스 비용을 지불할 수 있습니다. NetApp Intelligent Services에는 NetApp Backup and Recovery, Cloud Volumes ONTAP, NetApp Ransomware Resilience 및 NetApp Disaster Recovery가 포함됩니다. NetApp Data Classification은 구독에 포함되어 추가 비용 없이 제공됩니다.</block>
+  <block id="6c842907a578805c3a54843de813b384" category="paragraph">클라우드 공급업체를 통해 시간당(PAYGO) 또는 연간 청구 방식으로 NetApp Intelligent Services에 가입하세요. 구독에는 NetApp Backup and Recovery, Cloud Volumes ONTAP, NetApp Ransomware Resilience, NetApp Disaster Recovery 및 NetApp Data Classification이 포함됩니다.</block>
 </blocks>
