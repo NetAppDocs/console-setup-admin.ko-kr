@@ -32,7 +32,9 @@ NetApp Support Site에서 제품 설치 프로그램을 다운로드한 다음 L
 .단계
 . Console 에이전트 소프트웨어는 다음에서 다운로드하십시오. https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 지원 사이트"^]
 +
-인터넷 액세스가 없는 프라이빗 네트워크의 경우 오프라인 설치 프로그램을 다운로드하십시오.
+** 개인 정보 보호 모드를 지원하는 버전을 선택하세요. 최신 지원 버전은 link:whats-new.html["릴리스 노트"]를 확인하세요.
+** 인터넷에 접속할 수 없는 네트워크용 오프라인 설치 프로그램을 다운로드하십시오.
+
 
 . 설치 프로그램을 Linux 호스트에 복사합니다.
 . 스크립트를 실행할 수 있는 권한을 할당합니다.

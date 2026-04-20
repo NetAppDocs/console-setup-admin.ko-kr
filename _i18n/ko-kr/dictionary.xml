@@ -5810,7 +5810,6 @@
   <block id="c73db6dd4dc3a461773070693cc406c6" category="paragraph"><block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block> 또는 <block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>에서 NetApp Console을 사용하려면 해당 환경에서 시작하기 위한 별도의 지침을 따라야 합니다.<block ref="7305ccb1d247c4e62b18170abee468ff" category="inline-link-rx"></block></block>
   <block id="1c88387d9be2a13f9b45fd276e63cf80" category="list-text">Console 에이전트를 설치하려면 루트 권한이 필요합니다.</block>
   <block id="afbfe533a489b7d4102d31feb17a881a" category="list-text">Console 에이전트 소프트웨어는 다음에서 다운로드하십시오.<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block></block>
-  <block id="a6c2003199e95310a83aa40a67058bd8" category="paragraph">인터넷 액세스가 없는 프라이빗 네트워크의 경우 오프라인 설치 프로그램을 다운로드하십시오.</block>
   <block id="70c6033ed76dffb5d74ff7bb0402f4fa" category="paragraph">콘솔 에이전트가 설치되었습니다. 이제 NetApp Console을 설정할 수 있습니다.</block>
   <block id="4d50d200e5ecb85ea8908049caf1caab" category="paragraph">NetApp Console에 처음 액세스하면 NetApp Console을 설정하라는 메시지가 표시됩니다.</block>
   <block id="d50d972bc008375c76a9eba41b5ce3e3" category="list-text">웹 브라우저를 열고 Console 에이전트를 설치한 Linux 호스트의 IP 주소를 입력하십시오.</block>
@@ -6225,4 +6224,7 @@
   <block id="fdac344e6e2a4fe5d79f5e4669b070fe" category="list-text"><block ref="0c9621013a18e4c625fdd25673bfa917" category="inline-link-macro-rx"></block>.</block>
   <block id="8f5eebf6075fe260d8a4c0281dc3bfe2" category="paragraph">선택 사항: 클라우드 공급업체의 마켓플레이스에서 NetApp Intelligent Services를 구독하여 시간당 요금(PAYGO) 또는 연간 계약으로 데이터 서비스 비용을 지불할 수 있습니다. NetApp Intelligent Services에는 NetApp Backup and Recovery, Cloud Volumes ONTAP, NetApp Ransomware Resilience 및 NetApp Disaster Recovery가 포함됩니다. NetApp Data Classification은 구독에 포함되어 추가 비용 없이 제공됩니다.</block>
   <block id="6c842907a578805c3a54843de813b384" category="paragraph">클라우드 공급업체를 통해 시간당(PAYGO) 또는 연간 청구 방식으로 NetApp Intelligent Services에 가입하세요. 구독에는 NetApp Backup and Recovery, Cloud Volumes ONTAP, NetApp Ransomware Resilience, NetApp Disaster Recovery 및 NetApp Data Classification이 포함됩니다.</block>
+  <block id="1a8d41e65cef4d345c50298a70f79734" category="inline-link-macro">릴리스 노트</block>
+  <block id="ce51f82ecbd933f0a6bf385915be19b8" category="list-text">개인 정보 보호 모드를 지원하는 버전을 선택하세요. 최신 지원 버전은 <block ref="2c36977bb4765b4c1724e0f48d254dff" category="inline-link-macro-rx"></block>를 확인하세요.</block>
+  <block id="bd7c58df65cf13e6d395217af09edfdb" category="list-text">인터넷에 접속할 수 없는 네트워크용 오프라인 설치 프로그램을 다운로드하십시오.</block>
 </blocks>
