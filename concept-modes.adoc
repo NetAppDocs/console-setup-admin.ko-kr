@@ -23,8 +23,6 @@ NetApp에서는 이러한 사용 사례를 _배포 모드_라고 부릅니다. �
 프라이빗 모드(사내 또는 클라우드에 설치):: 프라이빗 모드는 AWS Secret Cloud, AWS Top Secret Cloud, Azure IL6 또는 에어갭 환경과 같이 엄격한 보안 요구 사항이 있는 조직에 적합합니다. NetApp Console SaaS 애플리케이션이나 NetApp 클라우드 기반 API에 연결되지 않으므로 완벽한 제어 권한을 제공하고 외부 통신을 차단합니다. 지원되는 데이터 서비스에는 NetApp Backup and Recovery, NetApp Data Classification, NetApp Replication 및 Cloud Volumes ONTAP가 포함됩니다. 모든 스토리지 및 인증은 로컬에서 유지되므로 데이터가 사용자 환경 내에 안전하게 보관됩니다. 이 모드는 방위 산업체, 엄격한 데이터 상주 규칙이 있는 금융 기관 및 기밀 시스템을 사용하는 정부 기관에 적합합니다.
 
 
-사내에 설치할 경우 ONTAP 스토리지 시스템만 지원됩니다.
-
 
 NOTE: NetApp Console은 제한된 모드 및 프라이빗 모드에서 데이터 흐름을 제한하지만 환경이 규정을 준수하는지 확인해야 합니다.
 
