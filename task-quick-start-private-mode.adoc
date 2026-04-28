@@ -99,7 +99,7 @@ https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-manage
 | 아니요 
 
 
-| ID 및 액세스 관리 | 아니요 
+| ID 및 액세스 관리 | 예 
 
 
 | 클라우드 공급자 자격 증명 관리 | 아니요 
@@ -165,7 +165,7 @@ Licenses and subscriptions 관리
 | 아니요 
 
 
-| ID 및 액세스 관리 | 아니요 
+| ID 및 액세스 관리 | 예 
 
 
 | 클라우드 공급자 자격 증명 관리 | 아니요 

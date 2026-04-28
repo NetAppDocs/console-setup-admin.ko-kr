@@ -182,7 +182,7 @@ NetApp에서는 고객이 NetApp 담당자와 협력하여 기존 계층화 라�
 | 연합 | 아니요 
 
 
-| ID 및 액세스 관리 | 아니요 
+| ID 및 액세스 관리 | 예 
 
 
  a| 
@@ -321,7 +321,7 @@ NetApp Replication
 | 연합 | 아니요 
 
 
-| ID 및 액세스 관리 | 아니요 
+| ID 및 액세스 관리 | 예 
 
 
  a| 
@@ -474,7 +474,7 @@ https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-manage
 | 아니요 
 
 
-| ID 및 액세스 관리 | 아니요 
+| ID 및 액세스 관리 | 예 
 
 
 | 클라우드 공급자 자격 증명 관리 | 아니요 
