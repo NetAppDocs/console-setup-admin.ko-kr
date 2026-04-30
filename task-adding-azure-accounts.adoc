@@ -239,7 +239,7 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Azure Service Management API�
 . *Microsoft Entra ID* 서비스에서 *앱 등록*을 선택하고 애플리케이션을 선택합니다.
 . *애플리케이션(클라이언트) ID*와 *디렉토리(테넌트) ID*를 복사합니다.
 +
-image:screenshot_azure_app_ids.gif["Microsoft Entra IDy에서 애플리케이션의 애플리케이션(클라이언트) ID와 디렉토리(테넌트) ID를 보여주는 스크린샷입니다."]
+image:screenshot_azure_app_ids.gif["Microsoft Entra ID에서 애플리케이션의 애플리케이션(클라이언트) ID와 디렉터리(테넌트) ID를 보여주는 스크린샷입니다."]
 
 +
 콘솔에 Azure 계정을 추가하는 경우 애플리케이션(클라이언트) ID와 애플리케이션의 디렉터리(테넌트) ID를 제공해야 합니다.  콘솔은 ID를 사용하여 프로그래밍 방식으로 로그인합니다.
@@ -329,7 +329,7 @@ Marketplace 구독을 연결하고, 자격 증명을 편집하고, 삭제하여 
 +
 콘솔 에이전트와 연결된 자격 증명을 선택해야 합니다.  NetApp Console 과 연결된 자격 증명에는 마켓플레이스 구독을 연결할 수 없습니다.
 
-. 자격 증명을 기존 구독과 연결하려면 아래쪽 목록에서 구독을 선택하고 *구성*을 선택합니다.
+. 자격 증명을 기존 구독과 연결하려면 드롭다운 목록에서 구독을 선택하고 *Configure*를 선택합니다.
 . 자격 증명을 새 구독과 연결하려면 *구독 추가 > 계속*을 선택하고 Azure Marketplace의 단계를 따르세요.
 +
 .. 메시지가 표시되면 Azure 계정에 로그인하세요.

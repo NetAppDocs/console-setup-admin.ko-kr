@@ -17,8 +17,10 @@ Google Cloud 서비스 계정은 콘솔 에이전트에 Google Cloud의 리소�
 다음 예제는 프로젝트 수준에서 "agent"라는 이름의 역할을 생성합니다.
 
 +
-`gcloud iam roles create connector --project=myproject --file=agent.yaml`
-
+[source, shell]
+----
+gcloud iam roles create agent --project=myproject --file=agent.yaml
+----
 +
 https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloud 문서: 사용자 지정 역할 만들기 및 관리"^]
 
@@ -29,13 +31,13 @@ https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-
 .. IAM 및 관리 서비스에서 *서비스 계정 > 서비스 계정 만들기*를 선택합니다.
 .. 서비스 계정 세부 정보를 입력하고 *만들기 및 계속*을 선택하세요.
 .. 방금 만든 역할을 선택하세요.
-.. 나머지 단계를 완료하여 역할을 만듭니다.
+.. 나머지 단계를 완료하여 서비스 계정을 생성합니다.
 +
 https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Google Cloud 문서: 서비스 계정 만들기"^]
 
 
 
-. 콘솔 에이전트가 있는 프로젝트와 다른 프로젝트에 Cloud Volumes ONTAP 시스템을 배포하려는 경우 콘솔 에이전트의 서비스 계정에 해당 프로젝트에 대한 액세스 권한을 제공해야 합니다.
+. Console 에이전트가 있는 프로젝트 이외의 다른 프로젝트에 Cloud Volumes ONTAP 시스템을 배포할 계획이라면 Console 에이전트의 서비스 계정에 해당 프로젝트에 대한 액세스 권한을 부여해야 합니다.
 +
 예를 들어, 콘솔 에이전트가 프로젝트 1에 있고 프로젝트 2에 Cloud Volumes ONTAP 시스템을 만들고 싶다고 가정해 보겠습니다.  프로젝트 2에서 서비스 계정에 대한 액세스 권한을 부여해야 합니다.
 

@@ -120,7 +120,7 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Azure Service Management API�
 . *Microsoft Entra ID* 서비스에서 *앱 등록*을 선택하고 애플리케이션을 선택합니다.
 . *애플리케이션(클라이언트) ID*와 *디렉토리(테넌트) ID*를 복사합니다.
 +
-image:screenshot_azure_app_ids.gif["Microsoft Entra IDy에서 애플리케이션의 애플리케이션(클라이언트) ID와 디렉토리(테넌트) ID를 보여주는 스크린샷입니다."]
+image:screenshot_azure_app_ids.gif["Microsoft Entra ID에서 애플리케이션의 애플리케이션(클라이언트) ID와 디렉터리(테넌트) ID를 보여주는 스크린샷입니다."]
 
 +
 콘솔에 Azure 계정을 추가하는 경우 애플리케이션(클라이언트) ID와 애플리케이션의 디렉터리(테넌트) ID를 제공해야 합니다.  콘솔은 ID를 사용하여 프로그래밍 방식으로 로그인합니다.

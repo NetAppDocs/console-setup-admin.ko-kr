@@ -20,7 +20,7 @@ VNet 및 서브넷:: 콘솔 에이전트를 만들 때는 에이전트가 상주
 NetApp 콘솔에서 연결된 엔드포인트:: 웹 기반 NetApp Console SaaS 애플리케이션을 사용하면 데이터 관리 작업을 완료하기 위해 여러 엔드포인트에 연결합니다. 여기에는 Console에서 Console 에이전트를 배포하기 위해 연결하는 엔드포인트도 포함됩니다.
 +
 --
-link:reference-networking-saas-console.html["NetApp 콘솔에서 연결된 엔드포인트 목록 보기"] .
+link:reference-networking-saas-console.html["NetApp Console에서 연결된 엔드포인트 목록을 확인하십시오"].
 
 --
 
@@ -33,7 +33,7 @@ https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-enabli
 --
 
 
-포트:: Cloud Volumes ONTAP 에서 NetApp 지원팀으로 AutoSupport 메시지를 보내기 위한 프록시로 사용되거나 사용자가 시작하지 않는 한 콘솔 에이전트로 들어오는 트래픽이 없습니다.
+포트:: Console 에이전트로 들어오는 트래픽은 사용자가 직접 시작하거나 Cloud Volumes ONTAP에서 NetApp Support로 AutoSupport 메시지를 보내기 위한 프록시로 사용되는 경우를 제외하고는 없습니다.
 +
 --
 * HTTP(80) 및 HTTPS(443)는 로컬 UI에 대한 액세스를 제공하며 이는 드문 상황에서 사용됩니다.
@@ -70,5 +70,5 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 --
 
 
-NTP 활성화:: NetApp Data Classification 사용하여 회사 데이터 소스를 스캔하려는 경우 콘솔 에이전트와 NetApp Data Classification 시스템 모두에서 NTP(네트워크 시간 프로토콜) 서비스를 활성화하여 시스템 간의 시간을 동기화해야 합니다. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["NetApp 데이터 분류에 대해 자세히 알아보세요"^]
+NTP 활성화:: NetApp Data Classification을 사용하여 회사 데이터 소스를 스캔할 계획이라면 Console 에이전트와 NetApp Data Classification 시스템 모두에서 네트워크 시간 프로토콜(NTP) 서비스를 활성화하여 시스템 간 시간을 동기화해야 합니다 https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["NetApp Data Classification에 대해 자세히 알아보세요"^].
 

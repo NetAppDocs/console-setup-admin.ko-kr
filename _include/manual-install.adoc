@@ -8,7 +8,7 @@
 * 콘솔 에이전트를 설치하려면 루트 권한이 필요합니다.
 * 콘솔 에이전트에서 인터넷에 접속하는 데 프록시가 필요한 경우 프록시 서버에 대한 세부 정보입니다.
 +
-설치 후 프록시 서버를 구성할 수 있지만, 그렇게 하려면 콘솔 에이전트를 다시 시작해야 합니다.
+설치 후 프록시 서버를 구성할 수 있는 옵션이 있지만, 이렇게 하려면 Console 에이전트를 다시 시작해야 합니다.
 
 * 프록시 서버가 HTTPS를 사용하거나 프록시가 가로채기 프록시인 경우 CA 서명 인증서가 필요합니다.
 
@@ -34,7 +34,7 @@ unset https_proxy
 +
 ** NetApp Console: *에이전트 > 관리 > 에이전트 배포 > 온프레미스 > 수동 설치*로 이동합니다.
 +
-에이전트 설치 파일 다운로드 또는 파일 URL 다운로드를 선택하십시오.
+에이전트 설치 프로그램 파일을 다운로드하거나 파일에 대한 URL을 복사하도록 선택합니다.
 
 
 
@@ -43,7 +43,7 @@ unset https_proxy
 NOTE: 네트워크 또는 클라우드에서 사용하기 위한 "온라인" 에이전트 설치 프로그램을 다운로드하십시오. Console 에이전트용 별도의 "오프라인" 설치 프로그램을 사용할 수 있지만 프라이빗 모드 배포에서만 지원됩니다.
 
 +
-** NetApp 지원 사이트 (콘솔에 대한 액세스 권한이 없는 경우 필요) https://mysupport.netapp.com/site/products/all/details/netapp-console/downloads-tab["NetApp 지원 사이트"^] ,
+** NetApp Support Site(Console에 대한 액세스 권한이 없는 경우 필요) https://mysupport.netapp.com/site/products/all/details/netapp-console/downloads-tab["NetApp 지원 사이트"^].
 
 
 . 스크립트를 실행할 수 있는 권한을 할당합니다.
@@ -68,17 +68,17 @@ chmod +x NetApp_Console_Agent_Cloud_<version>
 
 
 
-NOTE: 투명 프록시를 구성하려면 설치 후에 구성하면 됩니다. link:reference-agent-maint-console-proxy.html["에이전트 유지 관리 콘솔에 대해 알아보세요"]
+NOTE: 투명 프록시를 구성하려면 에이전트를 설치한 후에 구성할 수 있습니다. link:reference-agent-maint-console-proxy.html["에이전트 유지 관리 콘솔에 대해 알아보세요"].
 
 +
 
-다음은 CA 서명 인증서로 명시적 프록시 서버를 구성하는 예입니다.
+다음은 CA 서명 인증서를 사용하여 명시적 프록시 서버를 구성하는 예입니다.
 
 +
 
 [source, cli]
 ----
-./NetApp_Console_Agent_Cloud_v4.0.0--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+./NetApp_Console_Agent_Cloud_v4.0.0 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 `--proxy` 다음 형식 중 하나를 사용하여 Console 에이전트가 HTTP 또는 HTTPS 프록시 서버를 사용하도록 구성합니다.

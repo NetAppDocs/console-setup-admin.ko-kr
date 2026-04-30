@@ -56,9 +56,9 @@ NOTE: ESXi 호스트에 직접 설치하는 대신 vCenter 환경에 에이전�
 웹 기반 NetApp Console 사용할 때 컴퓨터에서 연결된 엔드포인트::
 +
 --
-웹 브라우저에서 콘솔에 액세스하는 컴퓨터는 여러 엔드포인트에 접속할 수 있어야 합니다.  콘솔 에이전트를 설정하고 콘솔을 일상적으로 사용하려면 콘솔을 사용해야 합니다.
+웹 브라우저에서 NetApp Console에 액세스하는 컴퓨터는 여러 엔드포인트에 연결할 수 있어야 합니다.
 
-link:reference-networking-saas-console.html["NetApp 콘솔을 위한 네트워킹 준비"] .
+link:reference-networking-saas-console.html["NetApp Console용 네트워킹을 준비합니다"].
 
 --
 
@@ -196,7 +196,7 @@ Azure China 지역의 리소스를 관리합니다.
 --
 
 
-포트:: Cloud Volumes ONTAP 에서 NetApp 지원팀으로 AutoSupport 메시지를 보내기 위한 프록시로 사용되거나 사용자가 시작하지 않는 한 콘솔 에이전트로 들어오는 트래픽이 없습니다.
+포트:: Console 에이전트로 들어오는 트래픽은 사용자가 직접 시작하거나 Cloud Volumes ONTAP에서 NetApp Support로 AutoSupport 메시지를 보내기 위한 프록시로 사용되는 경우를 제외하고는 없습니다.
 +
 --
 * HTTP(80) 및 HTTPS(443)는 로컬 UI에 대한 액세스를 제공하며 이는 드문 상황에서 사용됩니다.
@@ -210,7 +210,7 @@ Cloud Volumes ONTAP 시스템에 AutoSupport 메시지를 보낼 아웃바운드
 --
 
 
-NTP 활성화:: NetApp Data Classification 사용하여 회사 데이터 소스를 스캔하려는 경우 콘솔 에이전트와 NetApp Data Classification 시스템 모두에서 NTP(네트워크 시간 프로토콜) 서비스를 활성화하여 시스템 간의 시간을 동기화해야 합니다. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["NetApp 데이터 분류에 대해 자세히 알아보세요"^]
+NTP 활성화:: NetApp Data Classification을 사용하여 회사 데이터 소스를 스캔할 계획이라면 Console 에이전트와 NetApp Data Classification 시스템 모두에서 네트워크 시간 프로토콜(NTP) 서비스를 활성화하여 시스템 간 시간을 동기화해야 합니다 https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["NetApp Data Classification에 대해 자세히 알아보세요"^].
 
 
 
@@ -384,7 +384,7 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Azure Service Management API�
 . *Microsoft Entra ID* 서비스에서 *앱 등록*을 선택하고 애플리케이션을 선택합니다.
 . *애플리케이션(클라이언트) ID*와 *디렉토리(테넌트) ID*를 복사합니다.
 +
-image:screenshot_azure_app_ids.gif["Microsoft Entra IDy에서 애플리케이션의 애플리케이션(클라이언트) ID와 디렉토리(테넌트) ID를 보여주는 스크린샷입니다."]
+image:screenshot_azure_app_ids.gif["Microsoft Entra ID에서 애플리케이션의 애플리케이션(클라이언트) ID와 디렉터리(테넌트) ID를 보여주는 스크린샷입니다."]
 
 +
 콘솔에 Azure 계정을 추가하는 경우 애플리케이션(클라이언트) ID와 애플리케이션의 디렉터리(테넌트) ID를 제공해야 합니다.  콘솔은 ID를 사용하여 프로그래밍 방식으로 로그인합니다.
@@ -492,7 +492,7 @@ NOTE: 배포에 실패하면 에이전트 호스트에서 검증 보고서와 �
 
 == NetApp Console 에 콘솔 에이전트 등록
 
-콘솔에 로그인하고 콘솔 에이전트를 조직과 연결합니다.  로그인 방법은 콘솔을 사용하는 모드에 따라 달라집니다.  표준 모드로 콘솔을 사용하는 경우 SaaS 웹사이트를 통해 로그인합니다.  제한 모드나 비공개 모드로 콘솔을 사용하는 경우 콘솔 에이전트 호스트에서 로컬로 로그인합니다.
+Console에 로그인하고 Console 에이전트를 조직과 연결하십시오. 로그인 방법은 Console 사용 모드에 따라 다릅니다. 표준 모드로 Console을 사용하는 경우 SaaS 웹 사이트를 통해 로그인합니다. 제한 모드 또는 비공개 모드로 Console을 사용하는 경우 Console 에이전트 호스트에서 로컬로 로그인합니다.
 
 .단계
 . 웹 브라우저를 열고 콘솔 에이전트 호스트 URL을 입력하세요.
@@ -531,7 +531,7 @@ AWS 자격 증명을 방금 만든 경우 사용할 수 있게 되는 데 몇 �
 . *조직 자격 증명*을 선택하세요.
 . *자격 증명 추가*를 선택하고 마법사의 단계를 따르세요.
 +
-.. *자격 증명 위치*: *Amazon Web Services > 에이전트를 선택하세요.
+.. *자격 증명 위치*: *Amazon Web Services > 에이전트*를 선택합니다.
 .. *자격 증명 정의*: AWS 액세스 키와 비밀 키를 입력합니다.
 .. *마켓플레이스 구독*: 지금 구독하거나 기존 구독을 선택하여 마켓플레이스 구독을 이러한 자격 증명과 연결합니다.
 .. *검토*: 새로운 자격 증명에 대한 세부 정보를 확인하고 *추가*를 선택합니다.
@@ -545,7 +545,7 @@ AWS 자격 증명을 방금 만든 경우 사용할 수 있게 되는 데 몇 �
 .하늘빛
 --
 .시작하기 전에
-Azure 자격 증명을 방금 만든 경우 사용 가능해지는 데 몇 분 정도 걸릴 수 있습니다.  콘솔 에이전트에 자격 증명을 추가하기 전에 몇 분 정도 기다리세요.
+방금 Azure 자격 증명을 생성한 경우 사용 가능해지기까지 몇 분 정도 걸릴 수 있습니다. Console 에이전트에 자격 증명을 추가하기 전에 몇 분 정도 기다려 주세요.
 
 .단계
 . *관리 > 자격 증명*을 선택합니다.

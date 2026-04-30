@@ -120,7 +120,7 @@ NetApp Console 내에서 기능과 서비스를 제공합니다.
 NetApp 콘솔에서 연결된 엔드포인트:: 웹 기반 NetApp Console SaaS 애플리케이션을 사용하면 데이터 관리 작업을 완료하기 위해 여러 엔드포인트에 연결합니다. 여기에는 Console에서 Console 에이전트를 배포하기 위해 연결하는 엔드포인트도 포함됩니다.
 +
 --
-link:reference-networking-saas-console.html["NetApp 콘솔에서 연결된 엔드포인트 목록 보기"] .
+link:reference-networking-saas-console.html["NetApp Console에서 연결된 엔드포인트 목록을 확인하십시오"].
 
 --
 
@@ -136,7 +136,7 @@ link:reference-networking-saas-console.html["NetApp 콘솔에서 연결된 엔�
 --
 
 
-포트:: Cloud Volumes ONTAP 에서 NetApp 지원팀으로 AutoSupport 메시지를 보내기 위한 프록시로 사용되거나 사용자가 시작하지 않는 한 콘솔 에이전트로 들어오는 트래픽이 없습니다.
+포트:: Console 에이전트로 들어오는 트래픽은 사용자가 직접 시작하거나 Cloud Volumes ONTAP에서 NetApp Support로 AutoSupport 메시지를 보내기 위한 프록시로 사용되는 경우를 제외하고는 없습니다.
 +
 --
 * HTTP(80) 및 HTTPS(443)는 로컬 UI에 대한 액세스를 제공하며 이는 드문 상황에서 사용됩니다.
@@ -150,7 +150,7 @@ Cloud Volumes ONTAP 시스템에 AutoSupport 메시지를 보낼 아웃바운드
 --
 
 
-NTP 활성화:: NetApp Data Classification 사용하여 회사 데이터 소스를 스캔하려는 경우 콘솔 에이전트와 NetApp Data Classification 시스템 모두에서 NTP(네트워크 시간 프로토콜) 서비스를 활성화하여 시스템 간의 시간을 동기화해야 합니다. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["NetApp 데이터 분류에 대해 자세히 알아보세요"^]
+NTP 활성화:: NetApp Data Classification을 사용하여 회사 데이터 소스를 스캔할 계획이라면 Console 에이전트와 NetApp Data Classification 시스템 모두에서 네트워크 시간 프로토콜(NTP) 서비스를 활성화하여 시스템 간 시간을 동기화해야 합니다 https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["NetApp Data Classification에 대해 자세히 알아보세요"^].
 +
 --
 콘솔 에이전트를 만든 후 이 네트워킹 요구 사항을 구현해야 합니다.
@@ -396,7 +396,7 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Azure Service Management API�
 . *Microsoft Entra ID* 서비스에서 *앱 등록*을 선택하고 애플리케이션을 선택합니다.
 . *애플리케이션(클라이언트) ID*와 *디렉토리(테넌트) ID*를 복사합니다.
 +
-image:screenshot_azure_app_ids.gif["Microsoft Entra IDy에서 애플리케이션의 애플리케이션(클라이언트) ID와 디렉토리(테넌트) ID를 보여주는 스크린샷입니다."]
+image:screenshot_azure_app_ids.gif["Microsoft Entra ID에서 애플리케이션의 애플리케이션(클라이언트) ID와 디렉터리(테넌트) ID를 보여주는 스크린샷입니다."]
 
 +
 콘솔에 Azure 계정을 추가하는 경우 애플리케이션(클라이언트) ID와 애플리케이션의 디렉터리(테넌트) ID를 제공해야 합니다.  콘솔은 ID를 사용하여 프로그래밍 방식으로 로그인합니다.
@@ -498,15 +498,15 @@ link:reference-ports-azure.html["Azure에 대한 보안 그룹 규칙 보기"] .
 
 
 
-. 선택 사항을 검토하여 설정이 올바른지 확인하세요.
+. 선택 사항을 검토하여 설정이 올바른지 확인하십시오.
 +
-.. *에이전트 구성 검증* 확인란은 배포 시 콘솔에서 네트워크 연결 요구 사항을 검증하도록 기본적으로 선택되어 있습니다.  콘솔에서 에이전트를 배포하지 못하면 문제 해결에 도움이 되는 보고서가 제공됩니다.  배포가 성공하면 보고서는 제공되지 않습니다.
+.. *에이전트 구성 검증* 확인란은 배포 시 NetApp Console에서 네트워크 연결 요구 사항을 검증하도록 기본적으로 선택되어 있습니다. NetApp Console에서 에이전트 배포에 실패하면 문제 해결에 도움이 되는 보고서를 제공합니다. 배포가 성공하면 보고서는 제공되지 않습니다.
 
 
 +
-[]
+[NOTE]
 ====
-** 아직도 사용 중이라면link:reference-networking-saas-console-previous.html["이전 종료점"] 에이전트 업그레이드에 사용되면 유효성 검사가 오류로 인해 실패합니다.  이를 방지하려면 유효성 검사를 건너뛰려면 확인란의 선택을 취소하세요.
+** link:reference-networking-saas-console-previous.html["이전 종료점"]에이전트 업그레이드에 사용되는 방식을 계속 사용하는 경우 유효성 검사가 오류와 함께 실패합니다. 이를 방지하려면 확인란을 선택 해제하여 유효성 검사를 건너뜁니다.
 ** 설치 과정에서 NetApp은 에이전트 호스트에 전체 디스크 공간의 최소 80%가 사용 가능한지 확인합니다. 여기에는 `/opt`에 48GB와 `/var`에 32GB(총 80GB)가 포함됩니다. 설치 후에는 전체 디스크 공간의 최소 20%가 사용 가능한 상태로 유지되어야 하며, 여기에는 `/opt`에 12GB와 `/var`에 8GB(총 20GB)가 포함됩니다.
 
 
