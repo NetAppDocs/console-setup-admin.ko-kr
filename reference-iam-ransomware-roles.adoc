@@ -16,13 +16,13 @@ summary: 랜섬웨어 복원력은 설정, 작업 및 보고서에 대한 액세
 [role="lead"]
 랜섬웨어 복원력 역할은 사용자에게 NetApp Ransomware Resilience 에 대한 액세스 권한을 제공합니다. 랜섬웨어 복원력은 다음과 같은 역할을 지원합니다.
 
-**기준 역할**
+*기본 역할*
 
 * 랜섬웨어 복원력 관리자 - 랜섬웨어 복원력 설정 구성, 암호화 경고 조사 및 대응
 * 랜섬웨어 복원력 뷰어 - 암호화 사고, 보고서 및 검색 설정 보기
 
 
-**사용자 행동 활동 역할**link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["의심스러운 사용자 활동 감지"^] 알림은 파일 활동 이벤트와 같은 데이터에 대한 가시성을 제공합니다. 이러한 알림에는 파일 이름과 사용자가 수행한 파일 작업(예: 읽기, 쓰기, 삭제, 이름 바꾸기)이 포함됩니다.  이 데이터의 가시성을 제한하기 위해 이러한 역할을 가진 사용자만 이러한 알림을 관리하거나 볼 수 있습니다.
+*사용자 행동 활동 역할* link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["의심스러운 사용자 활동 감지"^] 알림은 파일 활동 이벤트와 같은 데이터에 대한 가시성을 제공합니다. 이러한 알림에는 파일 이름과 사용자가 수행한 파일 작업(읽기, 쓰기, 삭제, 이름 변경 등)이 포함됩니다. 이 데이터의 가시성을 제한하기 위해 해당 역할을 가진 사용자만 이러한 알림을 관리하거나 볼 수 있습니다.
 
 * 랜섬웨어 복원력 사용자 행동 관리 - 의심스러운 사용자 활동 감지를 활성화하고, 의심스러운 사용자 활동 알림을 조사하고 대응합니다.
 * 랜섬웨어 복원력 사용자 동작 뷰어 - 의심스러운 사용자 활동 알림 보기
@@ -309,7 +309,7 @@ NOTE: 사용자 동작 역할은 독립된 역할이 아니며, 랜섬웨어 복
 
 의심스러운 사용자 동작 설정을 구성하고 알림에 대응하려면 사용자에게 랜섬웨어 복원력 사용자 동작 관리자 역할이 있어야 합니다. 의심스러운 사용자 동작 알림만 보려면 사용자에게 랜섬웨어 복원력 사용자 동작 뷰어 역할이 있어야 합니다.
 
-기존 Ransomware Resilience 관리자 또는 뷰어 권한이 있는 사용자에게는 사용자 동작 역할을 부여해야 합니다.link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["의심스러운 사용자 활동 설정 및 알림"^] .  예를 들어 랜섬웨어 복원력 관리자 역할이 있는 사용자는 사용자 활동 에이전트를 구성하고 사용자를 차단하거나 차단을 해제하기 위해 랜섬웨어 복원력 사용자 동작 관리자 역할을 받아야 합니다.  랜섬웨어 복원력 사용자 동작 관리자 역할은 랜섬웨어 복원력 뷰어에게 부여되어서는 안 됩니다.
+Ransomware Resilience 관리자 또는 뷰어 권한을 보유하고 있으며 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["의심스러운 사용자 활동 설정 및 알림"^]에 액세스해야 하는 사용자에게는 사용자 동작 역할이 부여되어야 합니다. 예를 들어, Ransomware Resilience 관리자 역할을 가진 사용자는 사용자 활동 에이전트를 구성하고 사용자를 차단 또는 차단 해제할 수 있도록 Ransomware Resilience 사용자 동작 관리자 역할을 부여받아야 합니다. Ransomware Resilience 뷰어에게는 Ransomware Resilience 사용자 동작 관리자 역할을 부여해서는 안 됩니다.
 
 
 NOTE: 의심스러운 사용자 활동 감지를 활성화하려면 콘솔 조직 관리자 역할이 있어야 합니다.

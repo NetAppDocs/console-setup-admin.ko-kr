@@ -100,7 +100,7 @@ link:task-install-agent-aws-marketplace.html["마켓플레이스에서 AWS에 Co
 
  a| 
 * 모든 배포 방법의 대부분의 단계. 호스트를 준비하고, Podman 또는 Docker를 설치하고, 네트워킹을 구성하고, 소프트웨어를 설치하고, 권한을 수동으로 제공해야 합니다
-* * 배포는 NetApp Console 외부에서 시작되므로 안내형 워크플로를 사용할 수 없습니다.
+* 배포는 NetApp Console 외부에서 시작되므로 안내형 워크플로를 사용할 수 없습니다.
 
 
 |===
@@ -108,9 +108,9 @@ link:task-install-agent-aws-manual.html["AWS에 Console 에이전트를 수동�
 
 
 
-== VCenter(OVA)를 사용하여 온프레미스에 수동으로 설치
+== vCenter(OVA)를 사용하여 온프레미스에 수동으로 설치합니다.
 
-VMware VCenter를 사용하는 경우 OVA(Open Virtual Appliance) 파일을 가져와 Console 에이전트를 배포할 수 있습니다. OVA는 vSphere 클라이언트를 사용하여 배포하는 사전 구성된 VM 이미지로, Linux를 설치하거나 컨테이너 런타임을 구성할 필요가 없습니다.
+VMware vCenter를 사용하는 경우 OVA(Open Virtual Appliance) 파일을 가져와 Console 에이전트를 배포할 수 있습니다. OVA는 vSphere 클라이언트를 사용하여 배포하는 사전 구성된 VM 이미지로, Linux를 설치하거나 컨테이너 런타임을 구성할 필요가 없습니다.
 
 다음과 같은 경우에 이 방법을 선택하십시오.
 
@@ -131,14 +131,14 @@ NOTE: 온프레미스 Console 에이전트에서는 Google Cloud 리소스를 �
 * 온프레미스 전용, 클라우드 배포에는 사용할 수 없습니다
 * 에이전트 유지 관리 작업을 위한 메뉴 방식의 유지 관리 콘솔이 포함되어 있습니다
 * VMware 관리자를 위한 익숙한 구축 워크플로
-* * 사전 구성된 VM 이미지는 실수를 방지하고 유지 관리를 더 쉽게 해줍니다.
+* 사전 구성된 VM 이미지는 오류를 방지하고 유지 관리를 더 쉽게 해줍니다.
 
  a| 
-* VCenter가 필요하며, 베어 ESXi 호스트에 직접 설치할 수 없습니다.
+* vCenter가 필요하며 베어 ESXi 호스트에 직접 설치할 수 없습니다
 
 
 |===
-link:task-install-agent-on-prem-ova.html["VCenter를 사용하여 온프레미스에 배포"]
+link:task-install-agent-on-prem-ova.html["vCenter를 사용하여 온프레미스에 배포"]
 
 
 

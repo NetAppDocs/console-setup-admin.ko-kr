@@ -30,7 +30,7 @@ NOTE: Console 에이전트를 관리하는 Cloud Volumes ONTAP 시스템과 동�
 
 == 1단계: 네트워킹 설정
 
-콘솔 에이전트를 설치하려는 네트워크 위치가 다음 요구 사항을 지원하는지 확인하세요. 이러한 요구 사항을 충족하면 콘솔 에이전트가 하이브리드 클라우드의 리소스를 관리할 수 있습니다.
+Console 에이전트를 설치할 네트워크 위치가 다음 요구 사항을 지원하는지 확인하십시오. 이러한 요구 사항을 통해 Console 에이전트가 하이브리드 클라우드의 리소스를 관리할 수 있습니다.
 
 Azure 지역:: Cloud Volumes ONTAP 사용하는 경우 콘솔 에이전트는 관리하는 Cloud Volumes ONTAP 시스템과 동일한 Azure 지역이나 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure 지역 쌍"^] Cloud Volumes ONTAP 시스템용.  이 요구 사항은 Cloud Volumes ONTAP 과 연결된 스토리지 계정 간에 Azure Private Link 연결이 사용되도록 보장합니다.
 +
@@ -417,7 +417,7 @@ VM을 구성할 때 다음 사항에 유의하세요.
 +
 link:reference-ports-azure.html["Azure에 대한 보안 그룹 규칙 보기"] .
 
-** ID*: *관리*에서 *시스템에서 할당한 관리 ID 사용*을 선택합니다.
+** *ID*: *관리*에서 *시스템에서 할당한 관리 ID 사용*을 선택합니다.
 +
 이 설정은 관리되는 ID를 통해 콘솔 에이전트 가상 머신이 자격 증명을 제공하지 않고도 Microsoft Entra ID로 자신을 식별할 수 있기 때문에 중요합니다. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Azure 리소스에 대한 관리 ID에 대해 자세히 알아보세요."^] .
 
@@ -449,7 +449,7 @@ https://_ipaddress_[]
 
 
 .결과
-이제 콘솔 에이전트를 설치하고 콘솔 조직에 맞게 설정했습니다.
+이제 Console 에이전트를 설치하고 Console 조직과 연결 설정을 완료했습니다.
 
 콘솔 에이전트를 만든 동일한 Azure 구독에 Azure Blob 저장소가 있는 경우 *시스템* 페이지에 Azure Blob 저장소 시스템이 자동으로 표시됩니다. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["콘솔에서 Azure Blob 저장소를 관리하는 방법을 알아보세요."^]
 

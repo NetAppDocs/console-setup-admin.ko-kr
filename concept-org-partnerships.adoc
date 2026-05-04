@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-org-partnerships.html 
-keywords: identity federation, single sign-on, SSO, identity provider, IdP, SAML, Microsoft Entra ID, AD FS, PingFederate, ACS URL, Entity ID, user access, security, productivity, compliance, authentication, business continuity, account management, user experience, access control, workflow automation, credential management, login process, organization admin, bluexp, BlueXP 
+keywords: organization partnerships, partner access, Partnership admin role, Partnership viewer role, organization ID, managed service provider, MSP collaboration, reseller access, cross-organization management, delegated administration 
 summary: NetApp Console 에서 조직 간 파트너십을 구축하면 조직 파트너가 조직 경계를 넘어 NetApp 리소스를 안전하게 관리하여 협업을 간소화하고 보안을 강화할 수 있습니다. 
 ---
 = NetApp Console의 조직 파트너십
@@ -26,7 +26,7 @@ NetApp Console 에서 조직 간 파트너십을 구축하면 파트너는 조�
 파트너로서 귀하는 고객 환경 전반에 대한 중앙 집중화된 가시성과 제어력을 확보하게 됩니다.  정의된 경계 내에서 리소스를 관리하고, 데이터 서비스를 실행하고, 상태를 모니터링하기 위해 고객의 조직으로 쉽게 전환할 수 있으며, 이를 통해 사용자 정의 툴을 줄이고 각 고객의 정책에 맞춰 조정할 수 있습니다.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["하나"]한 명 이상의 사용자에게 파트너십 관리자 역할을 할당합니다.
-파트너십을 생성하고 관리하려면 시작 조직과 수신 조직 모두에서 한 명 이상의 사용자에게 Partnership admin 역할을 할당하십시오. 파트너십을 보기만 하고 관리할 필요가 없는 사용자에게는 Partnership viewer 역할을 할당할 수 있습니다.
+파트너십을 생성하고 관리하려면 파트너십을 시작하는 조직과 받는 조직 모두에서 한 명 이상의 사용자에게 Partnership admin 역할을 부여해야 합니다. 파트너십을 관리할 필요 없이 보기만 필요한 사용자에게는 Partnership viewer 역할을 부여할 수 있습니다.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["둘"]귀하의 조직 ID를 시작 조직과 공유하세요.
 [role="quick-margin-para"]

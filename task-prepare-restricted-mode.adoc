@@ -625,7 +625,7 @@ IAM 사용자에 대한 권한과 액세스 키를 설정합니다.  콘솔 에�
 --
 필요한 권한이 있는 Azure 사용자 지정 역할을 만듭니다.  이 역할은 콘솔 에이전트 VM에 할당합니다.
 
-Azure Portal, Azure PowerShell, Azure CLI 또는 REST API를 사용하여 Azure 사용자 지정 역할을 만들 수 있습니다.  다음 단계에서는 Azure CLI를 사용하여 역할을 만드는 방법을 보여줍니다.  다른 방법을 사용하려면 다음을 참조하세요. https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure 설명서"^]
+Azure 포털, Azure PowerShell, Azure CLI 또는 REST API를 사용하여 Azure 사용자 지정 역할을 만들 수 있습니다. 다음 단계는 Azure CLI를 사용하여 역할을 만드는 방법을 보여줍니다. 다른 방법을 사용하려면 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure 설명서"^]을 참조하십시오.
 
 .단계
 . 자체 호스트에 소프트웨어를 수동으로 설치하려는 경우 VM에서 시스템이 할당한 관리 ID를 활성화하여 사용자 지정 역할을 통해 필요한 Azure 권한을 제공할 수 있습니다.

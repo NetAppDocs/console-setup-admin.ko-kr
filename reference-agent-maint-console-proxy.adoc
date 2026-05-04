@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-agent-maint-console-proxy.html 
-keywords: transparent proxy, connector certificate, agent maintenance console, proxy configuration, connector proxy. agent proxy 
+keywords: transparent proxy, connector certificate, agent maintenance console, proxy configuration, connector proxy, agent proxy 
 summary: 콘솔 에이전트 유지 관리 콘솔을 사용하여 콘솔 에이전트가 투명 프록시 서버를 사용하도록 구성할 수 있습니다. 
 ---
 = NetApp Console에서 Console 에이전트용 투명 프록시 명령
@@ -20,7 +20,7 @@ summary: 콘솔 에이전트 유지 관리 콘솔을 사용하여 콘솔 에이�
 
 == 에이전트 유지 관리 콘솔에 액세스하세요
 
-콘솔 에이전트 호스트에서 유지 관리 콘솔에 액세스할 수 있습니다.  다음 디렉토리로 이동하세요:
+Console 에이전트 호스트에서 유지 관리 콘솔에 액세스할 수 있습니다. 다음 디렉터리로 이동하십시오.
 
 [source, cli]
 ----
@@ -45,8 +45,6 @@ summary: 콘솔 에이전트 유지 관리 콘솔을 사용하여 콘솔 에이�
 
 
 === 프록시 가져오기 예시
-
-현재 투명 프록시 서버 구성을 보려면 다음 명령을 사용하십시오.
 
 [source, cli]
 ----
@@ -111,7 +109,7 @@ summary: 콘솔 에이전트 유지 관리 콘솔을 사용하여 콘솔 에이�
 
 === 프록시 제거 예시
 
-투명 프록시 서버를 제거하려면 다음 명령을 사용하세요.
+투명 프록시 서버를 제거하려면 다음 명령을 사용하십시오.
 
 [source, cli]
 ----

@@ -140,13 +140,13 @@ NetApp에서는 고객이 NetApp 담당자와 협력하여 기존 계층화 라�
 | NetApp 분류 | 예 
 
 
-| NetApp 복사 및 동기화 | 예 
+| NetApp Copy and Sync | 예 
 
 
 | NetApp Disaster Recovery | 예 
 
 
-| NetApp 랜섬웨어 보호 | 예 
+| NetApp Ransomware Resilience | 예 
 
 
 | NetApp Replication | 아니요 
@@ -188,7 +188,7 @@ NetApp에서는 고객이 NetApp 담당자와 협력하여 기존 계층화 라�
  a| 
 Licenses and subscriptions 관리
 
-* 마켓플레이스 구독과 BYOL은 표준 모드에서 지원됩니다. 그러나 지원되는 라이선스 옵션은 사용 중인 NetApp 데이터 서비스에 따라 달라집니다.  각 서비스에 대한 설명서를 검토하여 사용 가능한 라이선스 옵션에 대해 자세히 알아보세요.
+* 마켓플레이스 구독 및 BYOL(Bring Your Own License)은 표준 모드에서 지원되지만, 지원되는 라이선스 옵션은 사용 중인 NetApp 데이터 서비스에 따라 다릅니다. 사용 가능한 라이선스 옵션에 대한 자세한 내용은 각 서비스 설명서를 참조하십시오.
 
 | 아니요 
 
@@ -209,9 +209,6 @@ Licenses and subscriptions 관리
 
 
 | 읽기 전용 모드 | 아니요 
-
-
-| 알림 | 아니요 
 |===
 
 
@@ -306,7 +303,7 @@ NetApp Replication
 
 * 제한 모드가 적용된 정부 지역에서 지원됩니다.  상업 지역이나 제한 모드가 적용된 주권 지역에서는 지원되지 않습니다.
 
-| 예*, (ONTAP 온프레미스에서 ONTAP 온프레미스로 복제하는 경우에는 필요하지 않습니다) 
+| 예* (ONTAP 온프레미스에서 ONTAP 온프레미스로 복제하는 경우에는 필요하지 않습니다) 
 
 
 | *NetApp 지원 계약 기능* | None | 해당 없음 
@@ -359,9 +356,6 @@ Cloud Volumes ONTAP 의 경우 BYOL에서는 용량 기반 라이선싱과 노�
 
 
 | 읽기 전용 모드 | 예 
-
-
-| 알림 | 아니요 
 |===
 
 
@@ -624,7 +618,7 @@ NOTE: 표준 모드(NetApp Console SaaS 애플리케이션)는 모든 기능을 
 | StorageGRID | 아니요 | 아니요 
 
 
-| 작업량 공장 | 아니요 | 아니요 
+| 작업 부하 | 아니요 | 아니요 
 
 
 .8+| *데이터 서비스* | 백업 및 복구 | 예https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["ONTAP 볼륨 데이터에 대해 지원되는 백업 대상 목록 보기"^] | 예https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["ONTAP 볼륨 데이터에 대해 지원되는 백업 대상 목록 보기"^] 
@@ -633,13 +627,13 @@ NOTE: 표준 모드(NetApp Console SaaS 애플리케이션)는 모든 기능을 
 | NetApp 분류 | 예 | 예 
 
 
-| 복사 및 동기화 | 아니요 | 아니요 
+| NetApp Copy and Sync | 아니요 | 아니요 
 
 
 | NetApp Disaster Recovery | 아니요 | 아니요 
 
 
-| NetApp 랜섬웨어 보호 | 아니요 | 아니요 
+| NetApp Ransomware Resilience | 아니요 | 아니요 
 
 
 | NetApp Replication | 예 | 예 

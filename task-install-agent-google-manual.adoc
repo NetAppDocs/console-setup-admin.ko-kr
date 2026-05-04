@@ -19,7 +19,7 @@ Linux 호스트에 Console 에이전트를 수동으로 배포하려면 호스�
 Google Cloud에 에이전트를 배포하면 사용자가 선택한 VPC에서 Linux를 실행하는 VM 인스턴스와 Console 에이전트 소프트웨어가 시작됩니다.
 
 .시작하기 전에
-* link:concept-agent-install-options.html#agent-cloud-manual-deploy["Google Cloud에서 수동으로 배포해야 하는 시기를 알아보십시오"].
+* link:concept-agent-install-options.html#agent-cloud-manual-deploy["Google Cloud에서 수동으로 배포해야 하는 경우 알아보기"].
 * 검토해야 합니다link:reference-limitations.html["콘솔 에이전트 제한 사항"] .
 
 
@@ -154,14 +154,6 @@ Docker 엔진 23.0.6~28.0.0.
 지원되지 않음
 
 |===
-Google Cloud 머신 유형:: CPU 및 RAM 요구 사항을 충족하는 인스턴스 유형입니다. NetApp n2-standard-8을 권장합니다.
-+
---
-콘솔 에이전트는 OS가 있는 VM 인스턴스의 Google Cloud에서 지원됩니다. https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["보호된 VM 기능"^]
-
---
-
-
 
 
 == 2단계: Podman 또는 Docker Engine 설치

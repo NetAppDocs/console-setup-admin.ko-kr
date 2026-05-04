@@ -756,7 +756,7 @@ NetApp Data Classification 사용하여 Azure NetApp Files 데이터를 스캔�
 | 생성 중에 저장소 계정을 암호화합니다. | Microsoft.ManagedIdentity/userAssignedIdentities/할당/작업 | 예 | 예 | 아니요 
 
 
-.3+| Cloud Volumes ONTAP 에 대한 특정 영역을 지정하려면 유연한 오케스트레이션 모드에서 가상 머신 확장 세트를 사용하세요. | Microsoft.Compute/virtualMachineScaleSets/쓰기 | 예 | 아니요 | 아니요 
+.3+| 유연한 오케스트레이션 모드에서 Virtual Machine Scale Sets를 사용하여 Cloud Volumes ONTAP의 특정 영역을 지정합니다 | Microsoft.Compute/virtualMachineScaleSets/쓰기 | 예 | 아니요 | 아니요 
 
 
 | Microsoft.Compute/virtualMachineScaleSets/읽기 | 예 | 아니요 | 아니요 

@@ -20,9 +20,9 @@ NetApp Console 에서 직접 AWS 자격 증명과 마켓플레이스 구독을 �
 
 == 초기 AWS 자격 증명
 
-콘솔에서 콘솔 에이전트를 배포하는 경우 IAM 사용자의 IAM 역할 또는 액세스 키의 ARN을 제공해야 합니다. 인증 방법에는 AWS에 콘솔 에이전트를 배포할 수 있는 권한이 있어야 합니다.  필요한 권한은 다음에 나열되어 있습니다.link:task-install-agent-aws-console.html#aws-permissions-agent["AWS에 대한 에이전트 배포 정책"] .
+Console에서 Console 에이전트를 배포할 때는 IAM 역할의 ARN 또는 IAM 사용자의 액세스 키를 제공해야 합니다. 인증 방법에는 AWS에 Console 에이전트를 배포할 수 있는 권한이 있어야 합니다. 필요한 권한은 link:task-install-agent-aws-console.html#aws-permissions-agent["AWS에 대한 에이전트 배포 정책"]에 나열되어 있습니다.
 
-콘솔이 AWS에서 콘솔 에이전트를 시작하면 에이전트에 대한 IAM 역할과 프로필이 생성됩니다. 또한 AWS 계정 내에서 리소스와 프로세스를 관리할 수 있는 권한을 콘솔 에이전트에 제공하는 정책도 첨부합니다. link:reference-permissions-aws.html["에이전트가 권한을 사용하는 방식을 검토하세요."].
+Console이 AWS에서 Console 에이전트를 시작하면 에이전트용 IAM 역할과 프로필이 생성됩니다. 또한 Console 에이전트가 해당 AWS 계정 내의 리소스 및 프로세스를 관리할 수 있는 권한을 부여하는 정책도 연결됩니다. link:reference-permissions-aws.html["에이전트가 권한을 사용하는 방식을 검토하십시오"].
 
 image:diagram_permissions_initial_aws.png["AWS 계정에 콘솔 에이전트를 배포하는 콘솔을 보여주는 개념적 이미지입니다."]
 
@@ -131,7 +131,7 @@ link:task-adding-aws-accounts.html#subscribe["AWS 구독을 연결하는 방법 
 
 === 마켓플레이스 배포와 온프레미스 배포에서 자격 증명은 어떻게 작동합니까?
 
-위 섹션에서는 콘솔에서 콘솔 에이전트를 배포하는 데 권장되는 방법을 설명합니다. AWS Marketplace에서 AWS에 에이전트를 배포할 수도 있고, 자신의 Linux 호스트나 VCenter에 콘솔 에이전트 소프트웨어를 수동으로 설치할 수도 있습니다.
+위 섹션에서는 콘솔 에이전트를 배포하는 권장 방법인 콘솔을 통한 배포에 대해 설명합니다. AWS Marketplace에서 AWS 에이전트를 배포하거나, Linux 호스트 또는 vCenter에 콘솔 에이전트 소프트웨어를 수동으로 설치할 수도 있습니다.
 
 마켓플레이스를 사용하는 경우에도 동일한 방식으로 권한이 제공됩니다.  IAM 역할을 수동으로 생성하고 설정한 다음, 추가 계정에 대한 권한을 제공하기만 하면 됩니다.
 

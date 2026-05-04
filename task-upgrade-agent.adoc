@@ -20,7 +20,7 @@ Console 에이전트는 아웃바운드 연결이 있을 때 자동으로 업그
 
 == 콘솔 에이전트 업그레이드
 
-업그레이드 프로세스 중에는 콘솔 에이전트를 다시 시작해야 하므로 업그레이드 중에는 NetApp Console 사용할 수 없습니다.
+업그레이드 과정 중에 콘솔 에이전트를 다시 시작해야 하므로 업그레이드가 진행되는 동안 NetApp Console을 사용할 수 없습니다.
 
 .단계
 . 콘솔 에이전트 소프트웨어를 다운로드하세요. https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 지원 사이트"^] .

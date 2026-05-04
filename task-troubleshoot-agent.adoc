@@ -48,7 +48,7 @@ NetApp 에이전트 UI에 액세스할 수 없습니다.
 이 메시지는 에이전트의 IP 주소에 접근하려고 할 때 나타납니다.  에이전트가 올바른 네트워크 액세스 권한이 없거나 불안정한 경우 초기화에 실패할 수 있습니다.
  a| 
 * 콘솔 에이전트에 연결합니다.
-* 서비스 관리자 서비스를 확인하세요
+* 서비스 관리자 서비스가 활성화되어 있는지 확인하세요.
 * 에이전트가 필요한 네트워크 접근 권한을 가지고 있는지 확인하세요.link:reference-networking-saas-console.html["필수 네트워크 액세스 엔드포인트에 대해 자세히 알아보세요."]
 
 
@@ -57,7 +57,7 @@ NetApp 에이전트 UI에 액세스할 수 없습니다.
  a| 
 에이전트 설정을 로드할 수 없습니다.
  a| 
-에이전트 설정 페이지에 접근하려고 하면 콘솔에 이 메시지가 표시됩니다.
+NetApp Console은 에이전트 설정 페이지에 액세스하려고 할 때 이 메시지를 표시합니다.
  a| 
 * OCCM 컨테이너가 실행 중이고 제대로 작동하는지 확인하세요.
 * 문제가 지속되면 지원팀에 문의하세요.
@@ -78,18 +78,18 @@ NetApp 에이전트 UI에 액세스할 수 없습니다.
 
 == 콘솔 에이전트 상태 확인
 
-다음 명령 중 하나를 사용하여 콘솔 에이전트를 확인하세요.  모든 서비스의 상태는 _실행중_이어야 합니다.  그렇지 않은 경우 NetApp 지원팀에 문의하세요.
+다음 명령 중 하나를 사용하여 Console 에이전트를 확인하십시오. 모든 서비스의 상태가 _실행 중_이어야 합니다. 그렇지 않은 경우 NetApp 지원팀에 문의하십시오.
 
 [NOTE]
 ====
 콘솔 에이전트 진단에 액세스하는 방법에 대한 자세한 내용은 다음 항목을 참조하세요.
 
 * link:task-maintain-agents.html#connect-linux-host["콘솔 에이전트 상태 확인(Linux 호스트 배포용)"]
-* link:task-agent-vm-config.html#connect-vcenter-host["콘솔 에이전트 상태 확인(VCenter 배포용)"]
+* link:task-agent-vm-config.html#connect-vcenter-host["Console 에이전트 상태 확인(vCenter 배포의 경우)"]
 
 
 ====
-Docker(Ubuntu 및 VCenter 배포용)::
+Docker(Ubuntu 및 vCenter 배포용)::
 +
 --
 [source, cli]
@@ -126,11 +126,9 @@ podman ps -a
 
 Console 에이전트는 특정 네트워크 엔드포인트에 대한 액세스 권한이 필요하고, 여러 포트가 열려 있어야 하며, 하드웨어 요구 사항을 충족해야 합니다. Console 또는 에이전트 유지 관리 콘솔을 사용하여 Console 에이전트가 이러한 요구 사항을 충족하는지 확인할 수 있습니다.
 
-link:reference-networking-saas-console.html["필요한 네트워크 액세스 포인트에 대해 자세히 알아보세요."] 링크:
+link:reference-networking-saas-console.html["필요한 네트워크 액세스 포인트에 대해 자세히 알아보세요."]
 
 설치 과정에서 NetApp은 에이전트 호스트에 전체 디스크 공간의 최소 80%가 사용 가능한지 확인합니다. 여기에는 `/opt`에 48GB와 `/var`에 32GB(총 80GB)가 포함됩니다. 설치 후에는 전체 디스크 공간의 최소 20%가 사용 가능한 상태로 유지되어야 하며, 여기에는 `/opt`에 12GB와 `/var`에 8GB(총 20GB)가 포함됩니다.
-
-link:reference-networking-saas-console.html["필요한 네트워크 액세스 포인트에 대해 자세히 알아보세요."] 링크:
 
 에이전트 유지 관리 콘솔을 사용하여 유효성 검사를 실행할 수도 있습니다. link:reference-agent-maint-console-config-checker.html["config-checker validate 명령어 사용 방법에 대해 자세히 알아보세요."]
 
@@ -210,7 +208,7 @@ systemctl restart netapp-service-manager.service
 
 == NetApp 지원팀과 협력하세요
 
-콘솔 에이전트로 문제를 해결할 수 없는 경우 NetApp 지원팀에 문의해 보세요.  NetApp 지원팀에서는 콘솔 에이전트 ID를 요청할 수도 있고, 아직 콘솔 에이전트 로그가 없는 경우 해당 로그를 NetApp 지원팀으로 보내달라고 요청할 수도 있습니다.
+콘솔 에이전트 관련 문제를 해결하지 못한 경우 NetApp 지원팀에 문의하는 것이 좋습니다. NetApp 지원팀에서는 콘솔 에이전트 ID를 요청하거나, 필요한 경우 콘솔 에이전트 로그를 보내달라고 요청할 수 있습니다.
 
 
 
@@ -236,7 +234,7 @@ image:screenshot-system-id.png["지원 대시보드에 나타나는 시스템 ID
 
 === AutoSupport 메시지를 다운로드하거나 보내세요
 
-문제가 발생하는 경우 NetApp 문제 해결을 위해 NetApp 지원팀에 AutoSupport 메시지를 보내달라고 요청할 수 있습니다.
+문제가 발생한 경우, NetApp에서 문제 해결을 위해 AutoSupport 메시지를 NetApp Support로 보내달라고 요청할 수 있습니다.
 
 
 NOTE: NetApp Console 부하 분산으로 인해 AutoSupport 메시지를 보내는 데 최대 5시간이 걸립니다.  긴급한 연락이 필요한 경우, 파일을 다운로드하여 직접 보내주시기 바랍니다.
@@ -260,7 +258,7 @@ NOTE: NetApp Console 부하 분산으로 인해 AutoSupport 메시지를 보내�
 .단계
 . 다음 JSON을 본문으로 하여 /occm/config에 PUT 요청을 제출합니다.
 +
-[source]
+[source, json]
 ----
 {
   "maxDownloadSessions": 32

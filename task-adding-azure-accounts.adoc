@@ -297,7 +297,7 @@ Azure 계정에 필요한 권한을 제공한 후 해당 계정의 자격 증명
 
 
 .결과
-세부 정보 및 자격 증명 페이지에서 다른 자격 증명 세트로 전환할 수 있습니다. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html["콘솔에 시스템을 추가할 때"^]
+세부 정보 및 자격 증명 페이지에서 다른 자격 증명 세트로 전환할 수 있습니다 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html["콘솔에 시스템을 추가할 때"^].
 
 image:screenshot_accounts_switch_azure.gif["세부 정보 및 자격 증명 페이지에서 자격 증명 편집을 선택한 후 자격 증명을 선택하는 모습을 보여주는 스크린샷입니다."]
 

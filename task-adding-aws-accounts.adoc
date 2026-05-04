@@ -14,7 +14,7 @@ summary: NetApp Console AWS 계정의 클라우드 리소스를 배포하고 관
 
 
 [role="lead"]
-NetApp Console 에서 AWS 계정의 클라우드 리소스를 배포하고 관리할 수 있도록 AWS 자격 증명을 추가하고 관리합니다.  여러 AWS Marketplace 구독을 관리하는 경우 자격 증명 페이지에서 각 구독에 다른 AWS 자격 증명을 할당할 수 있습니다.
+NetApp Console에서 AWS 계정의 클라우드 리소스를 배포하고 관리할 수 있도록 AWS 자격 증명을 추가하고 관리하세요. 여러 AWS Marketplace 구독을 관리하는 경우 자격 증명 페이지에서 각 구독에 서로 다른 AWS 자격 증명을 할당할 수 있습니다.
 
 
 
@@ -99,7 +99,7 @@ IAM 역할을 사용하여 콘솔 에이전트를 배포한 소스 AWS 계정과
 
 ==== AWS 키를 제공하여 권한 부여
 
-IAM 사용자에 대한 AWS 키를 콘솔에 제공하려면 해당 사용자에게 필요한 권한을 부여해야 합니다.  콘솔 IAM 정책은 콘솔에서 사용할 수 있는 AWS 작업과 리소스를 정의합니다.
+IAM 사용자의 AWS 키를 Console에 제공하려면 해당 사용자에게 필요한 권한을 부여해야 합니다. Console IAM 정책은 Console에서 사용할 수 있는 AWS 작업 및 리소스를 정의합니다.
 
 온프레미스에 콘솔 에이전트가 설치된 경우 이 인증 방법을 사용해야 합니다.  IAM 역할을 사용할 수 없습니다.
 
@@ -189,7 +189,7 @@ NetApp Console SaaS(Software as a Service) 애플리케이션이 역할을 수�
 }
 ----
 +
-참조하다 link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies-cross-account-resource-access.html["AWS Identity and Access Management(IAM) 문서"^] IAM에서 계정 간 리소스 액세스에 대한 자세한 내용을 확인하세요.
+IAM에서 계정 간 리소스 액세스에 대한 자세한 내용은 link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies-cross-account-resource-access.html["AWS Identity and Access Management(IAM) 문서"^]을(를) 참조하십시오.
 
 ** 콘솔 에이전트를 만드는 데 필요한 권한을 포함하는 정책을 만듭니다.
 +
@@ -212,7 +212,7 @@ NetApp Console SaaS(Software as a Service) 애플리케이션이 역할을 수�
 IAM 역할에 필요한 권한을 제공한 후 콘솔에 역할 ARN을 추가합니다.
 
 .시작하기 전에
-IAM 역할을 방금 생성한 경우 사용할 수 있을 때까지 몇 분이 걸릴 수 있습니다.  콘솔에 자격 증명을 추가하기 전에 몇 분 정도 기다리세요.
+방금 IAM 역할을 생성했다면 사용 가능해지기까지 몇 분 정도 걸릴 수 있습니다. NetApp Console에 자격 증명을 추가하기 전에 몇 분 정도 기다려 주세요.
 
 .단계
 . *관리 > 자격 증명*을 선택합니다.
@@ -232,7 +232,7 @@ image:screenshot-settings-icon-organization.png["콘솔 오른쪽 상단에 있�
 
 == Amazon FSx for ONTAP 콘솔에 자격 증명 추가
 
-자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/storage-management-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Amazon FSx for ONTAP 에 대한 콘솔 설명서"^]
+자세한 내용은 https://docs.netapp.com/us-en/storage-management-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Amazon FSx for ONTAP용 콘솔 설명서"^]를 참조하십시오.
 
 
 
@@ -292,7 +292,7 @@ NetApp Console 로 리디렉션됩니다.
 
 == 기존 구독을 조직과 연결
 
-AWS Marketplace에서 구독하는 경우 프로세스의 마지막 단계는 구독을 조직과 연결하는 것입니다. 이 단계를 완료하지 않으면 귀하의 조직에서 구독을 사용할 수 없습니다.
+AWS Marketplace에서 구독을 신청할 때 마지막 단계는 구독을 조직과 연결하는 것입니다. 이 단계를 완료하지 않으면 조직에서 해당 구독을 사용할 수 없습니다.
 
 * link:concept-modes.html["콘솔 배포 모드에 대해 알아보세요"]
 * link:concept-identity-and-access-management.html["콘솔 ID 및 액세스 관리에 대해 알아보세요"]

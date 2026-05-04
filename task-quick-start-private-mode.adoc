@@ -14,7 +14,7 @@ summary: 프라이빗 모드는 일반적으로 인터넷 연결이 없는 온�
 
 
 [role="lead"]
-NetApp Console은 온프레미스 또는 보안 클라우드 환경에 설치할 수 있습니다. 프라이빗 모드는 일반적으로 인터넷 연결이 없는 온프레미스 환경과 보안 클라우드 지역에서 사용되며, 여기에는 https://aws.amazon.com/federal/secret-cloud/["AWS Secret Cloud"^], https://aws.amazon.com/federal/top-secret-cloud/["AWS Top Secret Cloud"^] 및 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]가 포함됩니다
+NetApp Console은 온프레미스 또는 보안 클라우드 환경에 설치할 수 있습니다. 프라이빗 모드는 일반적으로 인터넷 연결이 없는 온프레미스 환경과 https://aws.amazon.com/federal/secret-cloud/["AWS Secret Cloud"^], https://aws.amazon.com/federal/top-secret-cloud/["AWS Top Secret Cloud"^] 및 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]를 포함하는 보안 클라우드 지역에서 사용됩니다.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["하나"] link:task-prepare-private-mode.html["배치 준비"]
 [role="quick-margin-list"]

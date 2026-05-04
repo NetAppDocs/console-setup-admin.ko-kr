@@ -30,7 +30,7 @@ NetApp Console 조직의 프로젝트에는 여러 유형의 리소스를 연결
 +
 --
 
-NOTE: 조직 관리자 역할을 가진 사용자는 폴더에 리소스를 추가하여 해당 폴더의 폴더 또는 프로젝트 관리자에게 리소스를 프로젝트와 연결하는 작업을 위임할 수 있습니다. link:task-iam-manage-folders-projects.html#associate-resource-folder["리소스를 폴더와 연결하는 방법에 대해 알아보세요"].
+NOTE: 조직 관리자 역할을 가진 사용자는 폴더에 리소스를 추가하고 해당 리소스를 프로젝트와 연결하는 작업을 해당 폴더 또는 프로젝트 관리자에게 위임할 수 있습니다. link:task-iam-manage-folders-projects.html#associate-resource-folder["리소스를 폴더와 연결하는 방법에 대해 알아보세요"].
 
 --
 콘솔 에이전트:: Console 에이전트를 사용하여 스토리지 시스템을 검색한 경우 스토리지 시스템과 동일한 프로젝트에 에이전트를 추가합니다. 이렇게 하면 사용자가 데이터 서비스 또는 Console 기본 스토리지 관리와 같은 에이전트 지원 기능을 수행할 수 있습니다. Console의 *Agents* 페이지에서 프로젝트에 에이전트를 추가할 수 있습니다. link:task-iam-associate-agents.html["Console 에이전트를 프로젝트와 연결하는 방법을 알아보세요."].
@@ -86,7 +86,7 @@ NOTE: 콘솔에서는 사용자가 해당 리소스를 역할과 연결할 수 �
 .당신이 완료한 후
 콘솔 에이전트를 사용하여 리소스를 발견한 경우 콘솔 에이전트를 프로젝트와 연결하여 액세스 권한을 부여합니다.  그렇지 않으면 _조직 관리자_ 역할이 없는 구성원은 콘솔 에이전트와 관련 리소스에 액세스할 수 없습니다.
 
-link:task-iam-associate-connectors.html["콘솔 에이전트를 폴더 또는 프로젝트와 연결하는 방법을 알아보세요."].
+link:task-iam-associate-agents.html["콘솔 에이전트를 폴더 또는 프로젝트와 연결하는 방법을 알아보세요."] .
 
 
 

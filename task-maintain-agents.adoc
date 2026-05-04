@@ -62,7 +62,7 @@ link:reference-agent-default-config.html["에이전트의 기본 구성에 대�
 예를 들어, 콘솔은 에이전트 리소스(CPU, RAM 또는 디스크 공간)가 30분 연속으로 전체 용량의 90%를 초과하면 알려줍니다.  이후 리소스 사용량이 임계값 아래로 떨어지면 알림 센터에 알림이 해결됨(녹색)으로 표시됩니다.
 
 
-NOTE: 에이전트 VM 수정에 관한 질문이 있으면 NetApp 지원팀에 문의하세요.
+NOTE: 에이전트 VM 수정과 관련하여 궁금한 점이 있으면 NetApp 지원팀에 문의하십시오.
 
 link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#notification-center["자세히 알아보세요."^]
 

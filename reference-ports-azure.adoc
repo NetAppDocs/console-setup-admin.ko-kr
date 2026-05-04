@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-ports-azure.html 
 keywords: ports, security group, http, https, inbound, outbound 
-summary: 에이전트의 Azure 보안 그룹에는 인바운드 규칙과 아웃바운드 규칙이 모두 필요합니다.  NetApp Console 에서 콘솔 에이전트를 만들면 이 보안 그룹이 자동으로 생성됩니다. 다른 설치 옵션의 경우 이 보안 그룹을 수동으로 설정해야 합니다. 
+summary: 에이전트용 Azure 보안 그룹에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다. NetApp Console에서 Console 에이전트를 생성하면 이 보안 그룹이 자동으로 생성됩니다. 다른 설치 옵션의 경우 이 보안 그룹을 수동으로 설정해야 합니다. 
 ---
 = Azure의 콘솔 에이전트 보안 그룹 규칙
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 에이전트의 Azure 보안 그룹에는 인바운드 규칙과 아웃
 
 
 [role="lead"]
-에이전트의 Azure 보안 그룹에는 인바운드 규칙과 아웃바운드 규칙이 모두 필요합니다.  NetApp Console 에서 콘솔 에이전트를 만들면 이 보안 그룹이 자동으로 생성됩니다. 다른 설치 옵션의 경우 이 보안 그룹을 수동으로 설정해야 합니다.
+에이전트용 Azure 보안 그룹에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다. NetApp Console에서 Console 에이전트를 생성하면 이 보안 그룹이 자동으로 생성됩니다. 다른 설치 옵션의 경우 이 보안 그룹을 수동으로 설정해야 합니다.
 
 
 
@@ -82,5 +82,5 @@ NOTE: 소스 IP 주소는 에이전트 호스트입니다.
 | API 호출 | TCP | 8080 | 데이터 분류 | 배포 중 데이터 분류 인스턴스에 대한 프로브 
 
 
-| DNS | UDP | 53 | DNS | 콘솔에서 DNS를 확인하는 데 사용됩니다. 
+| DNS | UDP | 53 | DNS | Console에서 DNS 확인에 사용됩니다. 
 |===
