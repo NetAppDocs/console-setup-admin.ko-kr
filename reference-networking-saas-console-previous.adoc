@@ -82,6 +82,7 @@ NetApp 지원팀에 라이선스를 요청하고 문의하세요.
  a| 
 * \ https://bluexpinfraprod.eastus2.data.azurecr.io
 * \ https://bluexpinfraprod.azurecr.io
+* https://occmclientinfragov.azurecr.us.io (제한된 모드 환경인 경우)
 
 | 콘솔 에이전트 업그레이드를 위한 이미지를 얻으려면. 
 |===
