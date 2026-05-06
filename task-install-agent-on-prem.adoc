@@ -225,7 +225,7 @@ NetApp Console 내에서 기능과 서비스를 제공합니다.
 
 
  a| 
-\ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io
+https://bluexpinfraprod.eastus2.data.azurecr.io https://bluexpinfraprod.azurecr.io https://occmclientinfragov.azurecr.us (제한된 모드 배포에 필요)
  a| 
 콘솔 에이전트 업그레이드를 위한 이미지를 얻으려면.
 
@@ -738,15 +738,13 @@ unset https_proxy
 +
 ** NetApp Console: *에이전트 > 관리 > 에이전트 배포 > 온프레미스 > 수동 설치*로 이동합니다.
 +
-에이전트 설치 프로그램 파일을 다운로드하거나 파일에 대한 URL을 복사하도록 선택합니다.
+에이전트 설치 프로그램 파일 또는 파일에 대한 URL을 다운로드하도록 선택합니다.
 
-
-
+** https://mysupport.netapp.com/site/products/all/details/netapp-console/downloads-tab["NetApp 지원 사이트"^] (NetApp Console에 대한 액세스 권한이 아직 없는 경우 필요).
 +
 
 NOTE: 네트워크 또는 클라우드에서 사용하기 위한 "온라인" 에이전트 설치 프로그램을 다운로드하십시오. Console 에이전트용 별도의 "오프라인" 설치 프로그램을 사용할 수 있지만 프라이빗 모드 배포에서만 지원됩니다.
 
-+
 ** NetApp Support Site(Console에 대한 액세스 권한이 없는 경우 필요) https://mysupport.netapp.com/site/products/all/details/netapp-console/downloads-tab["NetApp 지원 사이트"^].
 
 
@@ -769,33 +767,46 @@ chmod +x NetApp_Console_Agent_Cloud_<version>
 +
 네트워크에서 인터넷 접속을 위해 프록시가 필요한 경우 프록시 정보를 추가해야 합니다. 설치 중에 명시적 프록시를 추가할 수 있습니다.  `--proxy` 및  `--cacert` 매개변수는 선택 사항이며 추가하라는 메시지가 표시되지 않습니다. 명시적 프록시 서버가 있는 경우 표시된 대로 매개변수를 입력해야 합니다.
 
-
-
-
-NOTE: 투명 프록시를 구성하려면 에이전트를 설치한 후에 구성할 수 있습니다. link:reference-agent-maint-console-proxy.html["에이전트 유지 관리 콘솔에 대해 알아보세요"].
-
 +
 
+NOTE: 투명 프록시를 구성하려면 설치를 완료한 후에 할 수 있습니다. link:reference-agent-maint-console-proxy.html["에이전트 유지 관리 콘솔에 대해 알아보세요"].
+
++
 다음은 CA 서명 인증서를 사용하여 명시적 프록시 서버를 구성하는 예입니다.
 
 +
-
 [source, cli]
 ----
+./NetApp_Console_Agent_Cloud_v4.0.0 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ./NetApp_Console_Agent_Cloud_v4.0.0 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 `--proxy` 다음 형식 중 하나를 사용하여 Console 에이전트가 HTTP 또는 HTTPS 프록시 서버를 사용하도록 구성합니다.
 
-+ * \http://address:port * \http://user-name:password@address:port * \http://domain-name%92user-name:password@address:port * \https://address:port * \https://user-name:password@address:port * \https://domain-name%92user-name:password@address:port
++
+** \http://주소:포트
+** \http://사용자 이름:비밀번호@주소:포트
+** \http://도메인 이름%92사용자 이름:비밀번호@주소:포트
+** \https://주소:포트
+** \https://사용자 이름:비밀번호@주소:포트
+** \https://도메인 이름%92사용자 이름:비밀번호@주소:포트
++
+다음 사항에 유의하세요.
 
-+ 다음 사항에 유의하십시오:
++
+*** 사용자는 로컬 사용자 또는 도메인 사용자일 수 있습니다.
+*** 도메인 사용자의 경우 위에 표시된 대로 \에 대한 ASCII 코드를 사용해야 합니다.
+*** Console 에이전트는 @ 문자가 포함된 사용자 이름이나 암호를 지원하지 않습니다.
+*** 비밀번호에 다음과 같은 특수 문자가 포함되어 있는 경우, 백슬래시를 앞에 붙여 해당 특수 문자를 이스케이프해야 합니다: & 또는 !
++
+예를 들어:
 
-+ ** 사용자는 로컬 사용자 또는 도메인 사용자일 수 있습니다. ** 도메인 사용자의 경우 위와 같이 \의 ASCII 코드를 사용해야 합니다. ** Console 에이전트는 @ 문자가 포함된 사용자 이름이나 암호를 지원하지 않습니다. ** 암호에 다음 특수 문자(& 또는 !)가 포함된 경우 백슬래시를 앞에 붙여 해당 특수 문자를 이스케이프해야 합니다.
++
+\http://bxpproxyuser:netapp1\!@주소:3128
 
-+ 예를 들면:
 
-+ \http://bxpproxyuser:netapp1\!@address:3128
+
+
 
 . Podman을 사용한 경우 aardvark-dns 포트를 조정해야 합니다.
 +

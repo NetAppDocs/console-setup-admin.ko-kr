@@ -51,7 +51,7 @@ NOTE: NetApp 4.0.0을 통해 콘솔 및 콘솔 에이전트에 필요한 네트�
 
 
  a| 
-\ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io
+https://bluexpinfraprod.eastus2.data.azurecr.io https://bluexpinfraprod.azurecr.io https://occmclientinfragov.azurecr.us (제한된 모드 배포에 필요)
  a| 
 콘솔 에이전트 업그레이드를 위한 이미지를 얻으려면.
 

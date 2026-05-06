@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: concept-verified-organization.html 
+keywords: verified organization, organization verification, cmat, crm id, business account, identity and access management, iam, organization governance 
+summary: 인증된 조직은 NetApp Console 조직을 NetApp 비즈니스 계정에 연결하여 시스템 전반에 걸쳐 ID 및 거버넌스의 일관성을 유지합니다. 
+---
+= NetApp Console에서 인증된 조직에 대해 알아보세요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+인증된 조직은 NetApp Console에서 조직을 NetApp 비즈니스 계정 ID(예: CMAT ID)에 연결합니다. 이를 통해 Console은 NetApp 시스템 전체에 걸쳐 일관된 조직 ID 및 거버넌스 모델을 적용할 수 있습니다.
+
+
+
+== 조직을 인증해야 하는 이유
+
+조직을 인증하면 다음과 같은 이점을 얻을 수 있습니다.
+
+* Console 조직을 NetApp 비즈니스 계정 ID와 일치시키십시오.
+* 관리, 보고 및 지원 워크플로의 일관성을 개선합니다.
+* 여러 NetApp 서비스를 사용하는 팀 간의 협업 시 모호성을 줄이십시오.
+* 신뢰할 수 있는 조직 ID에 의존하는 거버넌스 제어를 지원합니다.
+
+
+
+
+== 검증 후 변경 사항
+
+조직이 확인되면:
+
+* 해당 조직은 NetApp 비즈니스 계정 ID와 연결되어 있습니다.
+* NetApp Console은 해당 조직 ID를 비즈니스 수준 매핑에 대한 권위 있는 정보로 처리할 수 있습니다.
+* 일부 조직 프로필 변경 사항은 소스 시스템에서 관리되는 경우 NetApp Console에서 제한될 수 있습니다.
+
+
+
+
+== 확인하기 전에
+
+조직을 인증하기 전에 다음 사항을 확인하십시오.
+
+* 귀하는 소속 조직에 필요한 관리 역할을 맡고 있습니다.
+* 확인에 필요한 조직 세부 정보가 있습니다.
+* 비즈니스-계정 매핑에 대한 검증이 필요한 경우 NetApp 계정 팀과 협의하십시오.
+
+
+
+
+== 관련 정보
+
+* link:task-verify-organization.html["조직 확인"]
+* link:concept-identity-and-access-management.html["ID 및 액세스 관리에 대해 알아보세요"]
+* link:task-iam-rename-organization.html["조직 및 프로젝트 ID"]
+

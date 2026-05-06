@@ -16,6 +16,8 @@ summary: 이메일 도메인과 다른 도메인으로 페더레이션을 하려
 [role="lead"]
 이메일 도메인과 다른 도메인으로 페더레이션을 하려면 먼저 해당 도메인의 소유권을 확인해야 합니다. 페더레이션에는 인증된 도메인만 사용할 수 있습니다.
 
+이 도메인 검증 워크플로는 조직 검증 워크플로와는 다릅니다. link:task-verify-organization.html["조직을 인증하는 방법을 알아보십시오"].
+
 .필수 역할
 Federation 관리자 역할은 Federation을 생성하고 관리하는 데 필요합니다. Federation 뷰어는 Federation 페이지를 볼 수 있습니다. link:reference-iam-predefined-roles.html["액세스 역할에 대해 자세히 알아보세요."]
 

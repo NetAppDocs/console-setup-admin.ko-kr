@@ -93,12 +93,9 @@ NetApp 랜섬웨어 복원력이나 백업 및 복구를 사용하지 않는 한
 
 
 |===
-a| \ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io a| 콘솔 에이전트 업그레이드를 위한 이미지를 얻습니다.
+a| \https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io \https://occmclientinfragov.azurecr.us (제한된 모드 배포에 필요) a| Console 에이전트 업그레이드용 이미지를 얻으려면.
 
-* 방화벽의 현재 엔드포인트로 업데이트하면 기존 에이전트도 계속 작동합니다.
-
-
-a| https://occmclientinfragov.azurecr.us https://bluexpinfraprod.azurecr.io a| Console 에이전트 업그레이드용 이미지를 얻습니다.
+a| https://occmclientinfragov.azurecr.us a| Console 에이전트 업그레이드용 이미지를 얻습니다.
 
 ^1^ NetApp 방화벽에서 옵션 1 엔드포인트를 허용하는 것이 더 안전하므로 이를 권장하고 옵션 2 엔드포인트는 허용하지 않습니다.  이러한 종료점에 대해 다음 사항을 참고하세요.
 

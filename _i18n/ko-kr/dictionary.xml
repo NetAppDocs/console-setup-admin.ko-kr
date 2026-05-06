@@ -163,9 +163,7 @@
   <block id="2b7f6d951b3a705af72cb63a7d0788dd" category="paragraph">| \ https://management.chinacloudapi.cn \ https://login.chinacloudapi.cn \ https://blob.core.chinacloudapi.cn \ https://core.chinacloudapi.cn</block>
   <block id="6fc418bd4d8d26d716d678ffb2c516e9" category="paragraph">| Azure China 지역의 리소스를 관리합니다.</block>
   <block id="641d1f191c2b819061a8e9b6046fdbeb" category="paragraph">| Google Cloud에서 리소스를 관리합니다.</block>
-  <block id="4600c0d23dfe95b8db6f735a4b192742" category="paragraph">a| \ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io a| 콘솔 에이전트 업그레이드를 위한 이미지를 얻습니다.</block>
   <block id="4691a33bfa50c006ca907ff0f1c2ff22" category="inline-link-macro">엔드포인트 목록을 업데이트하는 방법을 알아보세요</block>
-  <block id="b44e4956810f4ddc108ea4c7e1339c8b" category="list-text">방화벽의 현재 엔드포인트로 업데이트하면 기존 에이전트도 계속 작동합니다.</block>
   <block id="27ef411618dcaaeae6016b6063099cd3" category="paragraph">^1^ NetApp 방화벽에서 옵션 1 엔드포인트를 허용하는 것이 더 안전하므로 이를 권장하고 옵션 2 엔드포인트는 허용하지 않습니다.  이러한 종료점에 대해 다음 사항을 참고하세요.</block>
   <block id="7d9fb0da2a7d9c9f4e35c19e20d063fa" category="paragraph">\ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io</block>
   <block id="e24963e40778134b357f4a5eac58e1f5" category="list-text">옵션 2</block>
@@ -180,29 +178,18 @@
   <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">목적</block>
   <block id="d03b3625d28d43168905850da108e917" category="cell">\ https://mysupport.netapp.com</block>
   <block id="9cc9c0e125bb6d31323499f95f0c430e" category="cell">\ https://signin.b2c.netapp.com</block>
-  <block id="9989a1605407297325e31ec5b9d20c1b" category="cell">(이 엔드포인트는 \ https://mysupport.netapp.com 의 CNAME URL입니다)</block>
   <block id="648b7f3d6699305c92d33129e6ea00fe" category="cell">\ https://cloudmanager.cloud.netapp.com/tenancy</block>
   <block id="aeed9abd051a5ff37a94ee8ea302bdd8" category="cell">\ https://stream.cloudmanager.cloud.netapp.com</block>
   <block id="49fa0b884bb05dfb3678aff69fc2a90f" category="cell">\ https://production-artifacts.cloudmanager.cloud.netapp.com</block>
-  <block id="947479331852b9cc69da9bbd894654d1" category="list-text">옵션 1(권장):</block>
   <block id="534d469c55031860cef85b868a9332d8" category="list-text">\ https://bluexpinfraprod.eastus2.data.azurecr.io</block>
   <block id="a86a33f4f6d9c203eb747987b6d104ca" category="list-text">\ https://bluexpinfraprod.azurecr.io</block>
-  <block id="eb499f7aadd76ba50d5925ea6552dcff" category="list-text">옵션 2:</block>
   <block id="f55e31da35f47937201bdbf54e964315" category="list-text">\https://*.blob.core.windows.net</block>
   <block id="9dcb0a1d3281e001a6085626a264be49" category="list-text">\ https://cloudmanagerinfraprod.azurecr.io</block>
-  <block id="f229192e27e1c177beb735ee19edb0e5" category="paragraph">이미지를 얻으려면 설치 프로그램이 두 엔드포인트 세트 중 하나에 액세스해야 합니다.  ^1^ 옵션 1에 나열된 엔드포인트는 보안성이 더 높기 때문에 권장됩니다.  옵션 1에 나열된 엔드포인트는 허용하고 옵션 2에 나열된 엔드포인트는 허용하지 않도록 방화벽을 설정하는 것이 좋습니다.  이러한 종료점에 대해 다음 사항을 참고하세요.</block>
-  <block id="4049213cb8cd68d3d11532c6f66c0ae4" category="list-text">콘솔 에이전트는 먼저 옵션 2에 나열된 엔드포인트에 접속합니다.  해당 엔드포인트에 접근할 수 없는 경우 콘솔 에이전트는 옵션 1에 나열된 엔드포인트에 자동으로 연결합니다.</block>
-  <block id="cf192a52b6f25a28eb967a03444e7da2" category="list-text">NetApp Backup and Recovery 또는 NetApp Ransomware Resilience 와 함께 콘솔 에이전트를 사용하는 경우 옵션 1의 엔드포인트는 지원되지 않습니다.  이 경우 옵션 1에 나열된 엔드포인트를 허용하지 않고, 옵션 2에 나열된 엔드포인트를 허용할 수 있습니다.</block>
   <block id="3af42b7f858ea75013b8facec6ca0048" category="list-text">Linux 호스트에 콘솔 에이전트를 수동으로 설치하는 경우, 콘솔 에이전트 설치 프로그램은 설치 과정 중에 여러 URL에 액세스해야 합니다.</block>
   <block id="9f116bfe192eb1d0b2c905df5d192487" category="cell">이 엔드포인트는 \ https://mysupport.netapp.com 의 CNAME URL입니다.</block>
   <block id="b2a31fe7605db4877c0f7d8023478b76" category="cell">*AWS 정부 지역* AWS 정부 지역에 콘솔 에이전트를 설치하는 경우 설치 프로그램은 다음 엔드포인트에도 액세스해야 합니다.</block>
   <block id="130e683d238653858967a73af6293939" category="cell">*Azure Government 지역* Azure Government 지역에 콘솔 에이전트를 설치하는 경우 설치 관리자는 다음 엔드포인트에도 액세스해야 합니다.</block>
   <block id="1f29f58c7cdabd46095c6ad242933991" category="paragraph">\ https://occmclientinfragov.azurecr.us</block>
-  <block id="5ba19e583c755396882d30a7b2586fd7" category="cell">*상업 지역 또는 주권 지역* 콘솔 에이전트를 상업 지역 또는 주권 지역에 설치하는 경우 두 가지 엔드포인트 세트 중에서 선택할 수 있습니다.</block>
-  <block id="12e72c401fe49717131f2676bb6a8099" category="paragraph">**옵션 1(권장):** * \ https://bluexpinfraprod.eastus2.data.azurecr.io * \ https://bluexpinfraprod.azurecr.io</block>
-  <block id="b31abacefc029dd7ae51036ddd3ad27a" category="paragraph">**옵션 2:** * \https://*.blob.core.windows.net * \ https://cloudmanagerinfraprod.azurecr.io</block>
-  <block id="f079ba6f508e4d8fffaecae1a59c5bf3" category="paragraph">옵션 1에 나열된 엔드포인트는 보안성이 더 높기 때문에 권장됩니다.  옵션 1에 나열된 엔드포인트는 허용하고 옵션 2에 나열된 엔드포인트는 허용하지 않도록 방화벽을 설정하는 것이 좋습니다.  이러한 종료점에 대해 다음 사항을 참고하세요.</block>
-  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
   <block id="35bd57a4dcfbd7a695f9beb7d01913c6" category="paragraph">호스트는 설치 중에 운영 체제 패키지를 업데이트하려고 할 수 있습니다.  호스트는 이러한 OS 패키지에 대해 다양한 미러링 사이트에 접속할 수 있습니다.</block>
   <block id="4d3e424d70b837e22ea9a110aa0a155d" category="list-text">*관리 &gt; ID 및 액세스*를 선택합니다.</block>
   <block id="398721ebe5d01d65e8258e9cb90c48d2" category="list-text">*연합*을 선택하면 *연합* 페이지를 볼 수 있습니다.</block>
@@ -3108,7 +3095,6 @@
   <block id="4edfdeb74f014e9408efa692c71a9d2e" category="admonition">사용자에게는 최소한 하나의 역할이 할당되어야 합니다.  사용자에게서 모든 역할을 제거할 수는 없습니다.  모든 역할을 제거해야 하는 경우 조직에서 해당 사용자를 삭제해야 합니다.</block>
   <block id="2be01e6baa22b9b0a4f0a2c054fe7289" category="summary">필요한 경우 NetApp Console 조직의 이름을 변경할 수 있습니다.</block>
   <block id="1920da3586c2e2872f88b02997c971c3" category="doc">조직 및 프로젝트 ID</block>
-  <block id="d1f35fea71ad4d3c53dfce45e3c8b312" category="paragraph">NetApp Console 조직에는 이름과 ID가 있습니다.  조직을 식별하는 데 도움이 되는 이름을 선택할 수 있습니다.  특정 통합을 위해 조직 ID를 검색해야 할 수도 있습니다.</block>
   <block id="902a8ce7390bb726da2910b3ec25aae6" category="section-title">조직 이름 변경</block>
   <block id="8bf336ab115156eac88db2970ab0e70d" category="list-text">*조직* 페이지에서 표의 첫 번째 행으로 이동하여 다음을 선택합니다.<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> 그런 다음 *조직 편집*을 선택하세요.</block>
   <block id="b9669849e9961b7f3f4dc1a2f6787c34" category="list-text">새로운 조직 이름을 입력하고 *적용*을 선택하세요.</block>
@@ -4850,7 +4836,6 @@
   <block id="5d3a908b240fe98ac0740455635b4cc0" category="list-text">문제가 계속 발생하면 고객 지원팀에 문의하십시오.</block>
   <block id="13ab9425db1c4ad9c7ca529999f6de24" category="list-text">에이전트가 필요한 엔드포인트에 대한 아웃바운드 액세스 권한을 가지고 있는지 확인하십시오.<block ref="c7fe41b97889c23a57defbbf2129845e" category="inline-link-macro-rx"></block></block>
   <block id="cb4e992a592d7b26e6c218cdde9ee1b5" category="inline-link-macro">config-checker validate 명령어 사용 방법에 대해 자세히 알아보세요.</block>
-  <block id="2c8b526b02d94d86279aebb87311c90d" category="admonition">*연결됨* 상태인 에이전트만 인증할 수 있습니다.</block>
   <block id="2256ce9e5331fffeb7ded438ec67c9bf" category="list-title">콘솔에서 시작하는 단계</block>
   <block id="80ed8e269497520c11a5f07aaac10ca9" category="list-text">확인하려는 콘솔 에이전트의 작업 메뉴를 선택하고 *유효성 검사*를 선택합니다.</block>
   <block id="5dfebfd3b68f37eb76c1cbde60947384" category="inline-image-macro">상담원의 작업 메뉴에 있는 유효성 검사 옵션을 보여주는 스크린샷입니다.</block>
@@ -5213,12 +5198,6 @@
   <block id="3cb937c3382e580784aa7486c365ec19" category="paragraph"><block ref="3cb937c3382e580784aa7486c365ec19" category="inline-link-macro-rx"></block></block>
   <block id="1b074cef0a39f307bf3f23d76207e4f6" category="sidebar">기본 에이전트 구성</block>
   <block id="cf6adff661a596f01b211beffb99d879" category="paragraph">네트워크에서 인터넷 접속을 위해 프록시가 필요한 경우 프록시 정보를 추가해야 합니다. 설치 중에 명시적 프록시를 추가할 수 있습니다. <block ref="595589ae3dfdb377f4f5b01e56137ac6" prefix=" " category="inline-code"></block> 및 <block ref="a2bb8d2428da5c2a723c47bd3b78308d" prefix=" " category="inline-code"></block> 매개변수는 선택 사항이며 추가하라는 메시지가 표시되지 않습니다. 명시적 프록시 서버가 있는 경우 표시된 대로 매개변수를 입력해야 합니다.</block>
-  <block id="55ccbb5c67dea0ea25dc1703475c6f80" category="paragraph">+<block ref="595589ae3dfdb377f4f5b01e56137ac6" prefix=" " category="inline-code"></block> 다음 형식 중 하나를 사용하여 Console 에이전트가 HTTP 또는 HTTPS 프록시 서버를 사용하도록 구성합니다.</block>
-  <block id="f1c3efde333f7f855c03b55ae236bf19" category="paragraph">+ * \http://address:port * \http://user-name:password@address:port * \http://domain-name%92user-name:password@address:port * \https://address:port * \https://user-name:password@address:port * \https://domain-name%92user-name:password@address:port</block>
-  <block id="b968056bd5b82381c88e0c9d86ac33b7" category="paragraph">+ 다음 사항에 유의하십시오:</block>
-  <block id="40555c907279e68c131ed885fbd297f2" category="paragraph">+ ** 사용자는 로컬 사용자 또는 도메인 사용자일 수 있습니다. ** 도메인 사용자의 경우 위와 같이 \의 ASCII 코드를 사용해야 합니다. ** Console 에이전트는 @ 문자가 포함된 사용자 이름이나 암호를 지원하지 않습니다. ** 암호에 다음 특수 문자(&amp; 또는 !)가 포함된 경우 백슬래시를 앞에 붙여 해당 특수 문자를 이스케이프해야 합니다.</block>
-  <block id="2c21faf59a15a9c898da7576148c66a6" category="paragraph">+ 예를 들면:</block>
-  <block id="3f8f6b484a02379b30f40e52234f6023" category="paragraph">+ \http://bxpproxyuser:netapp1\!@address:3128</block>
   <block id="b7dbcbc4cff4a1c8e5622a89842cfa05" category="section-title">SSL 복호화는 Cloud Volumes ONTAP에서만 지원됩니다</block>
   <block id="8b497b868891e9ffde67fbc8a398c594" category="paragraph">투명 프록시 서버는 Cloud Volumes ONTAP에만 연결된 에이전트에 대해 지원됩니다. 다른 NetApp 데이터 서비스와 함께 사용되는 에이전트에는 투명 프록시를 사용할 수 없습니다. NetApp 데이터 서비스를 Cloud Volumes ONTAP와 함께 사용하는 경우 투명 프록시 서버를 사용할 수 있는 Cloud Volumes ONTAP 전용 에이전트를 생성하십시오.</block>
   <block id="362cb79b6626c8ace583ce4914bc2e72" category="list-text">Cloud Quotas API(Infrastructure Manager를 사용하는 Cloud Volumes ONTAP 배포에 필요)</block>
@@ -5898,7 +5877,6 @@
   <block id="5ad41271522acbc853e7c4a84763f339" category="paragraph">| https://mysupport.netapp.com | 라이선스 정보를 얻고 AutoSupport 메시지를 NetApp 지원팀에 보내려면 | https://signin.b2c.netapp.com | NetApp Support Site(NSS) 자격 증명을 업데이트하거나 NetApp Console에 새 NSS 자격 증명을 추가하려면 | https://support.netapp.com | 라이선스 정보를 얻고 AutoSupport 메시지를 NetApp 지원팀에 보내는 것 외에도 Cloud Volumes ONTAP 소프트웨어 업데이트를 받으려면</block>
   <block id="7aed309254b98f77dbd3d77a03d50dfd" category="list-text">옵션 1 엔드포인트는 3.9.47 이상 버전에서 지원됩니다. 3.9.47 이전 버전은 하위 호환성을 지원하지 않습니다.</block>
   <block id="0077f7d38869cf9790e55cbfea881bf4" category="list-text">Console 에이전트는 먼저 옵션 2의 엔드포인트에 연결합니다. 해당 엔드포인트에 액세스할 수 없는 경우 자동으로 옵션 1의 엔드포인트에 연결합니다.</block>
-  <block id="fe419db71f7d4484d61cbf89fbff3ac3" category="paragraph">a| https://occmclientinfragov.azurecr.us https://bluexpinfraprod.azurecr.io a| Console 에이전트 업그레이드용 이미지를 얻습니다.</block>
   <block id="d29ad0dfb0326845a0e0541c9a73346f" category="paragraph">+ * Console 에이전트 3.9.47 릴리스부터 시스템은 옵션 1에 나열된 엔드포인트를 지원합니다. 이전 릴리스의 Console 에이전트는 하위 호환성을 지원하지 않습니다. * Console 에이전트는 먼저 옵션 2의 엔드포인트에 연결합니다. 해당 엔드포인트에 액세스할 수 없는 경우 자동으로 옵션 1의 엔드포인트에 연결합니다. * NetApp Backup and Recovery 또는 Ransomware Resilience와 함께 Console 에이전트를 사용하는 경우 시스템은 옵션 1 엔드포인트를 지원하지 않습니다. 옵션 2 엔드포인트를 허용하고 옵션 1을 허용하지 마십시오.</block>
   <block id="7c196962ef71a676aa44930111ed62ec" category="paragraph">NetApp Console의 ID 및 액세스 관리(IAM)를 사용하여 NetApp 리소스를 구성하고 위치, 부서 또는 프로젝트와 같은 비즈니스 구조에 따라 액세스를 제어하십시오.</block>
   <block id="236a948a43c96e218fc04221bf59fe7c" category="admonition">NetApp Console에서 IAM을 관리하려면 _Super admin_, _Organization admin_ 또는 _Folder or project admin_ 역할이 있어야 합니다.</block>
@@ -5980,7 +5958,6 @@
   <block id="3f58924667abe02b47c4307cb9e4e753" category="paragraph">웹 브라우저에서 NetApp Console에 액세스하는 컴퓨터는 여러 엔드포인트에 연결할 수 있어야 합니다.</block>
   <block id="b26bd0592d66bf1b967e5025cc7e96c3" category="inline-link-macro">NetApp Console용 네트워킹을 준비합니다</block>
   <block id="9ce61524b745e886629d67ddbb08ee3e" category="paragraph"><block ref="2dfc71fdb1a842a2b8ee7de31773f262" category="inline-link-macro-rx"></block>.</block>
-  <block id="e300d744e1b89447a4e57c3fbb6b3fa0" category="list-text">옵션 1에 나열된 엔드포인트는 Console 에이전트 3.9.47 릴리스부터 지원됩니다. 이전 버전의 Console 에이전트와는 하위 호환성이 없습니다.</block>
   <block id="59fa89c2d49dac7f3b6283af4e1b1dc3" category="paragraph">옵션 1에 나열된 엔드포인트는 보안성이 더 높으므로 권장됩니다. 방화벽에서 옵션 1에 나열된 엔드포인트는 허용하고 옵션 2에 나열된 엔드포인트는 차단하도록 설정하는 것이 좋습니다. 다음 사항에 유의하십시오. ** 옵션 1에 나열된 엔드포인트는 Console 에이전트 3.9.47 릴리스부터 지원됩니다. 이전 버전의 Console 에이전트와는 하위 호환성이 없습니다. ** Console 에이전트는 옵션 2에 나열된 엔드포인트에 먼저 연결합니다. 해당 엔드포인트에 액세스할 수 없는 경우 Console 에이전트는 자동으로 옵션 1에 나열된 엔드포인트에 연결합니다. ** NetApp Backup and Recovery 또는 NetApp Ransomware Resilience와 함께 Console 에이전트를 사용하는 경우 옵션 1의 엔드포인트는 지원되지 않습니다. 이 경우 옵션 1에 나열된 엔드포인트는 차단하고 옵션 2에 나열된 엔드포인트는 허용할 수 있습니다.</block>
   <block id="895fdfe24bf789e2a45f045a3443011e" category="list-text">페더레이션에 사용할 도메인을 식별합니다. 이메일 도메인 또는 소유한 다른 도메인을 사용할 수 있습니다. 이메일 도메인 이외의 도메인을 사용하려면 먼저 NetApp Console에서 도메인을 확인해야 합니다. 지침은 <block ref="a68d68e2e08ca1853c0f2263bccee217" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="45b2b872ee5cb2fa766d4ab5c4451342" category="paragraph">7일 또는 30일 중에서 선택하세요. 시스템은 만료 알림을 이메일로 발송하고 NetApp Console에 표시하며, 슈퍼 관리자, 조직 관리자, 페더레이션 관리자 및 페더레이션 뷰어 역할을 가진 모든 사용자에게 알림을 보냅니다.</block>
@@ -5991,10 +5968,7 @@
   <block id="9a5f3d4381ce332c8b92e567534cdb88" category="list-text"><block ref="127cc614fbbd5bfdd0ad1b9430ba08a2" prefix="" category="inline-code"></block> 및 <block ref="0a1e90fbac878c626fcbb9b711662537" prefix=" " category="inline-code"></block>는 방화벽 규칙을 배포에 전달하지 않고 Console에서 직접 생성하도록 선택한 경우에만 필요합니다. 이러한 권한은 Console 계정 .yaml 파일에 있습니다. 공유 VPC를 사용하여 HA 쌍을 배포하는 경우 이러한 권한은 VPC1, 2 및 3에 대한 방화벽 규칙을 생성하는 데 사용됩니다. 다른 모든 배포의 경우 이러한 권한은 VPC0에 대한 규칙을 생성하는 데에도 사용됩니다.</block>
   <block id="5586272ca2c6ac3a947d6cccf01cb688" category="list-text">Cloud Tiering의 경우 티어링 서비스 계정에는 프로젝트 수준뿐만 아니라 서비스 계정에 대한<block ref="661d15e88341890f914791eec787fafe" prefix=" " category="inline-code"></block> 역할이 있어야 합니다. 프로젝트 수준에서<block ref="661d15e88341890f914791eec787fafe" prefix=" " category="inline-code"></block>를 할당하면<block ref="b217a89ca684f0fb2ae2f7f82fe418d7" prefix=" " category="inline-code"></block>로 서비스 계정을 쿼리할 때 권한이 표시되지 않습니다.</block>
   <block id="f174003cd34dc666bc8120b29dba1f69" category="paragraph">설치 후 프록시 서버를 구성할 수 있는 옵션이 있지만, 이렇게 하려면 Console 에이전트를 다시 시작해야 합니다.</block>
-  <block id="885de3bc2ca310ecf49094adf9282e3e" category="list-text">NetApp Console: *에이전트 &gt; 관리 &gt; 에이전트 배포 &gt; 온프레미스 &gt; 수동 설치*로 이동합니다.</block>
-  <block id="5f2d178dade1e587f0c5b302a46d5d72" category="paragraph">에이전트 설치 프로그램 파일을 다운로드하거나 파일에 대한 URL을 복사하도록 선택합니다.</block>
   <block id="5c19c0b3e9745eb746921a1fc863ab91" category="list-text">NetApp Support Site(Console에 대한 액세스 권한이 없는 경우 필요)<block ref="384f9db5f56c00fd1d970f44502ee5ff" category="inline-link-rx"></block>.</block>
-  <block id="b637fd6d14e4a1c48316685c43af8a64" category="admonition">투명 프록시를 구성하려면 에이전트를 설치한 후에 구성할 수 있습니다. <block ref="42ec89ae005e4bc718304f7a7f9af7dd" category="inline-link-macro-rx"></block>.</block>
   <block id="0a9b0507398801ef01d10f518148ac6e" category="paragraph">다음은 CA 서명 인증서를 사용하여 명시적 프록시 서버를 구성하는 예입니다.</block>
   <block id="9afc01c988c194f02dd8ec3c4164bd92" category="list-text">웹 기반 NetApp Console SaaS 애플리케이션을 사용하면 데이터 관리 작업을 완료하기 위해 여러 엔드포인트에 연결합니다. 여기에는 Console에서 Console 에이전트를 배포하기 위해 연결하는 엔드포인트도 포함됩니다.</block>
   <block id="ffc31afe0a5232a754bf2085a6d1bf12" category="inline-link-macro">NetApp Console에서 연결된 엔드포인트 목록을 확인하십시오</block>
@@ -6191,8 +6165,65 @@
   <block id="530df3726781395191a4e890157aa779" category="list-text">https://occmclientinfragov.azurecr.us.io (제한된 모드 환경인 경우)</block>
   <block id="a3bf5c90fa71fd1dac8e77c19a0cae5c" category="inline-link-macro">호스트 요구 사항에 대해 자세히 알아보십시오.</block>
   <block id="ed637bdd25ff9b3d6cdb12d0b3117fd4" category="paragraph"><block ref="787bde807a1a57661aeb1e9aa8557b03" category="inline-link-macro-rx"></block> <block ref="2cf3600481d00e694d39bf1acae4604c" category="inline-link-macro-rx"></block></block>
-  <block id="51bc5a08850d61e055a088db3581d040" category="paragraph">\https://occmclientinfragov.azurecr.us \https://bluexpinfraprod.azurecr.io</block>
   <block id="db454f9269515bb4dec7a10f7a86bc01" category="list-text">Podman(Red Hat Enterprise Linux 배포용)</block>
   <block id="d92105d2e9772b92b6c636fbe0cfdf2c" category="inline-link-macro">제한된 모드에 필요한 네트워크 액세스 지점에 대해 자세히 알아보십시오.</block>
   <block id="befec105cd1e8a7f9d2e63f216085cb8" category="admonition">정부 클라우드 고객(제한된 모드)의 경우 NetApp Console은 제한된 모드 업그레이드 endpoint의 유효성을 검사하지 않습니다. 방화벽 규칙에서 해당 endpoint에 대한 액세스를 허용하는지 수동으로 확인해야 합니다.<block ref="df5e5876be260d9f3642c620299197c9" category="inline-link-macro-rx"></block></block>
+  <block id="99ca42bfc6bfad2df77c5ab4bf57cb70" category="paragraph">a| \https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io \https://occmclientinfragov.azurecr.us (제한된 모드 배포에 필요) a| Console 에이전트 업그레이드용 이미지를 얻으려면.</block>
+  <block id="f16ca1b460c0ee9da8dd26e4cae6606e" category="paragraph">a| https://occmclientinfragov.azurecr.us a| Console 에이전트 업그레이드용 이미지를 얻습니다.</block>
+  <block id="870fc4eea7b10cb55e0e6bea798136a1" category="cell">라이선스 및 NetApp 지원팀 문의용입니다. (이 엔드포인트는 https://mysupport.netapp.com에 대한 CNAME URL입니다)</block>
+  <block id="a2673a90bf397cfa57dd425d35f5c038" category="cell">*상용 지역 또는 주권 지역* 상용 지역 또는 주권 지역에 Console 에이전트를 설치하는 경우 설치 프로그램은 다음 엔드포인트에 대한 액세스가 필요합니다.</block>
+  <block id="38925d58699eec7d5d74bfebcba5d84f" category="list-text">NetApp Console: *에이전트 &gt; 관리 &gt; 에이전트 배포 &gt; 온프레미스 &gt; 수동 설치*로 이동합니다.</block>
+  <block id="06f42bb69fed27c52f7bae78f3878026" category="paragraph">에이전트 설치 프로그램 파일 또는 파일에 대한 URL을 다운로드하도록 선택합니다.</block>
+  <block id="60e7ba99c48e4a33bc9667d29215abf4" category="list-text"><block ref="cc1982049b8c474853940566dc79ded1" category="inline-link-rx"></block> (NetApp Console에 대한 액세스 권한이 아직 없는 경우 필요).</block>
+  <block id="ba56355010a4d2b7a9f84d9cd9154231" category="admonition">투명 프록시를 구성하려면 설치를 완료한 후에 할 수 있습니다. <block ref="42ec89ae005e4bc718304f7a7f9af7dd" category="inline-link-macro-rx"></block>.</block>
+  <block id="0e4e2076c75603c2622d2ec78b60debe" category="paragraph"><block ref="595589ae3dfdb377f4f5b01e56137ac6" prefix="" category="inline-code"></block> 다음 형식 중 하나를 사용하여 Console 에이전트가 HTTP 또는 HTTPS 프록시 서버를 사용하도록 구성합니다.</block>
+  <block id="63e61b342d17ed1b9128b82afdcaa55e" category="list-text">Console 에이전트는 @ 문자가 포함된 사용자 이름이나 암호를 지원하지 않습니다.</block>
+  <block id="c67fc0b337f1a4a940497d14b954a64b" category="inline-link-macro">NetApp Console에서 인증된 조직에 대해 알아보세요</block>
+  <block id="418740347c100d5f65ec6fdae40039ab" category="paragraph">또한 조직을 인증하여 NetApp 비즈니스 계정 ID와 연결함으로써 NetApp 시스템 전반에 걸쳐 일관된 거버넌스를 유지할 수 있습니다. <block ref="92388bda5755f2ce99ab8ec4678c3808" category="inline-link-macro-rx"></block>.</block>
+  <block id="a0868ee8ba25b4a31561be0443ebf933" category="summary">인증된 조직은 NetApp Console 조직을 NetApp 비즈니스 계정에 연결하여 시스템 전반에 걸쳐 ID 및 거버넌스의 일관성을 유지합니다.</block>
+  <block id="48cf25e26ffebb2bb495d369d230e558" category="paragraph">인증된 조직은 NetApp Console에서 조직을 NetApp 비즈니스 계정 ID(예: CMAT ID)에 연결합니다. 이를 통해 Console은 NetApp 시스템 전체에 걸쳐 일관된 조직 ID 및 거버넌스 모델을 적용할 수 있습니다.</block>
+  <block id="30a203cb96c50fefbc17611dc5c228ac" category="section-title">조직을 인증해야 하는 이유</block>
+  <block id="5895e55252be33d4a8c0a3f2fed70ae9" category="paragraph">조직을 인증하면 다음과 같은 이점을 얻을 수 있습니다.</block>
+  <block id="619827fbf7b134d07776d964ca418ef2" category="list-text">Console 조직을 NetApp 비즈니스 계정 ID와 일치시키십시오.</block>
+  <block id="ea4a402c177478c80f1fd6987232b900" category="list-text">관리, 보고 및 지원 워크플로의 일관성을 개선합니다.</block>
+  <block id="bbe78e0920e9bb47f8f85fdccf397e62" category="list-text">여러 NetApp 서비스를 사용하는 팀 간의 협업 시 모호성을 줄이십시오.</block>
+  <block id="f1883c3d9fd07e5c6274f9c0f795b6c5" category="list-text">신뢰할 수 있는 조직 ID에 의존하는 거버넌스 제어를 지원합니다.</block>
+  <block id="62a9515152e6d7ec6e3c394287acb594" category="section-title">검증 후 변경 사항</block>
+  <block id="7c11a53e44d8f76aeb151f87a95cd80b" category="paragraph">조직이 확인되면:</block>
+  <block id="cb56792a5e15f62a1f62723585cad786" category="list-text">해당 조직은 NetApp 비즈니스 계정 ID와 연결되어 있습니다.</block>
+  <block id="cab3888d6123cd3a318da7afcbce12bd" category="list-text">NetApp Console은 해당 조직 ID를 비즈니스 수준 매핑에 대한 권위 있는 정보로 처리할 수 있습니다.</block>
+  <block id="bdde811059b4457d759f661bfe34084d" category="list-text">일부 조직 프로필 변경 사항은 소스 시스템에서 관리되는 경우 NetApp Console에서 제한될 수 있습니다.</block>
+  <block id="192e00466c0b488c77c731b828ab5e1e" category="section-title">확인하기 전에</block>
+  <block id="31862d7570d9062614fe4d5b544b3059" category="paragraph">조직을 인증하기 전에 다음 사항을 확인하십시오.</block>
+  <block id="4eee70687da5ea2684317c0660041669" category="list-text">귀하는 소속 조직에 필요한 관리 역할을 맡고 있습니다.</block>
+  <block id="4a1b2fdd5fd46224c3cab8b448abdaf7" category="list-text">확인에 필요한 조직 세부 정보가 있습니다.</block>
+  <block id="073b3141ff007e2e7c9e7770dbb5c013" category="list-text">비즈니스-계정 매핑에 대한 검증이 필요한 경우 NetApp 계정 팀과 협의하십시오.</block>
+  <block id="ff79cbea9f2efa42d53fff27506cf26d" category="inline-link-macro">조직 확인</block>
+  <block id="cd61b05fa0ea90bca24f6c4068c70af2" category="list-text"><block ref="cd61b05fa0ea90bca24f6c4068c70af2" category="inline-link-macro-rx"></block></block>
+  <block id="a813b69ac531b0701ca879b788271f1d" category="list-text"><block ref="a813b69ac531b0701ca879b788271f1d" category="inline-link-macro-rx"></block></block>
+  <block id="0ad3148d437ad1c27c46470f823dd1b5" category="paragraph">https://bluexpinfraprod.eastus2.data.azurecr.io https://bluexpinfraprod.azurecr.io https://occmclientinfragov.azurecr.us (제한된 모드 배포에 필요)</block>
+  <block id="10c97f048a09dcded54f8b476a81ea96" category="inline-link-macro">조직을 인증하는 방법을 알아보십시오</block>
+  <block id="f56da6e3ae650bf113d86ed1707a0cd5" category="paragraph">이 도메인 검증 워크플로는 조직 검증 워크플로와는 다릅니다. <block ref="72ae1679f86197db823e7993d8e7864f" category="inline-link-macro-rx"></block>.</block>
+  <block id="35ea601a80ea7b092eea5094e5acf0bf" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 소속 기관을 인증하세요(선택 사항)</block>
+  <block id="1c5b44eb32f9d12f80011dc0daf0c723" category="paragraph">팀에서 조직 인증을 사용하는 경우 Console 조직을 NetApp 비즈니스 계정 ID와 연결하세요.</block>
+  <block id="f628652f1454cbcdff49a07bde8f26d6" category="paragraph"><block ref="72ae1679f86197db823e7993d8e7864f" category="inline-link-macro-rx"></block>.</block>
+  <block id="92388bda5755f2ce99ab8ec4678c3808" category="list-text"><block ref="92388bda5755f2ce99ab8ec4678c3808" category="inline-link-macro-rx"></block></block>
+  <block id="3d48cd486159d7ff770d2ac9604cb64a" category="paragraph">NetApp Console 조직에는 이름과 ID가 있습니다. 조직을 식별하는 데 도움이 되도록 이름을 지정할 수 있습니다. 또한 API 호출에 사용할 조직 ID를 알아야 할 수도 있습니다.</block>
+  <block id="155e00b589db80072de70532ce7a50ce" category="doc">NetApp Console 조직을 확인하십시오</block>
+  <block id="70f8e756c039de370c35c76171faf5fa" category="paragraph">Digital Advisor를 사용하는 경우 회사에 NetApp의 여러 비즈니스 계정이 있는 경우 Console 조직을 확인해야 합니다. Digital Advisor는 Console 조직과 관련이 없는 여러 NetApp 계정을 표시할 수 있습니다. Console 조직과 연결된 리소스만 표시되도록 하려면 Console 조직과 연결할 비즈니스 ID를 확인할 수 있습니다.</block>
+  <block id="7934ae571b929618df901b492ff84198" category="inline-link-macro">NSS 계정을 연결하는 방법을 알아보십시오</block>
+  <block id="c86741a1bc67570a8cd0cbb1e0a4b533" category="paragraph">조직을 인증하려면 조직 관리자 역할이 있어야 하며, 사용자는 NetApp 지원 사이트(NSS) 계정과 연결되어 있어야 합니다. <block ref="6d5ad2096c24e0befb1e89a3a2137e15" category="inline-link-macro-rx"></block>.</block>
+  <block id="8035b26370273d0ee0090f65ae1d3a71" category="admonition">귀사에 비즈니스 계정이 하나만 있고 사용자가 NetApp 지원 사이트 계정과 연결되어 있는 경우, 조직 인증이 자동으로 수행됩니다.</block>
+  <block id="7a1bd24cabea42f3fe04b753aec5d8ba" category="list-text">사용자가 둘 이상의 조직에 액세스할 수 있는 경우 Organization 드롭다운 메뉴에서 확인할 조직을 선택합니다.</block>
+  <block id="01b73db22fadaa534984d5a80ed20a2e" category="list-text">*관리 &gt; ID 및 액세스*에서</block>
+  <block id="10296e23827c1a60c2f8d75482c4a075" category="summary">NetApp Console 조직을 NetApp 비즈니스 계정 ID와 연결하려면 조직을 인증하십시오.</block>
+  <block id="80333c8b0e0d35357d14ab44c8c5f4f9" category="doc">NetApp Console에서 조직을 확인하세요</block>
+  <block id="43c3b1d18eaf47add23da2905752381b" category="paragraph">조직 인증을 통해 Console 조직을 NetApp 비즈니스 계정 ID와 연결할 수 있습니다. 이를 통해 Digital Advisor 및 AIQ 권장 사항과 같은 기능을 사용할 수 있습니다.</block>
+  <block id="0a2f38a239e81a08f5b837f81513a9bc" category="paragraph">조직 관리자 또는 슈퍼 관리자.<block ref="8f129ac67aaaf533c741c49d131f7a5d" category="inline-link-macro-rx"></block></block>
+  <block id="45c6d1bd46ddc19876bfc91687471ea2" category="paragraph">귀사가 NetApp에 둘 이상의 비즈니스 계정을 보유하고 있는 경우 조직을 인증하고 올바른 비즈니스 계정과 연결해야 합니다. 귀사가 NetApp에 비즈니스 계정이 하나만 있는 경우 조직은 자동으로 인증되어 해당 비즈니스 계정에 연결됩니다.</block>
+  <block id="c6a431b7786ec48067cfa83374b99c0a" category="paragraph">Console 조직이 비즈니스 계정과 연결되어 있으면 Digital Advisor에는 해당 계정과 연결된 리소스만 표시됩니다. 비즈니스 계정이 여러 개인 경우 Console 조직과 연결할 계정을 하나 선택해야 합니다. 연결을 변경해야 하는 경우 조직을 다시 확인하고 다른 비즈니스 계정을 선택할 수 있습니다.</block>
+  <block id="8d6d948cdc13e069b613284450d2961f" category="list-text">*조직* 페이지에서 페이지 제목 옆에 있는 *확인*을 선택합니다.</block>
+  <block id="36cb56591d62e53ed37d02c1e0cf2a57" category="inline-image-macro">페이지 제목 옆에 확인 버튼이 표시된 조직 페이지의 스크린샷입니다.</block>
+  <block id="0bddf0553f7265d90da078ccd7865d6a" category="paragraph"><block ref="0bddf0553f7265d90da078ccd7865d6a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="812c2b994db82152161eb7a216b75550" category="list-text">*비즈니스 계정 연결* 대화 상자에서 조직과 연결할 비즈니스 계정을 선택합니다.</block>
 </blocks>
