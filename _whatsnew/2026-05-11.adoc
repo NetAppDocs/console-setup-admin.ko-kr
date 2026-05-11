@@ -1,0 +1,20 @@
+= Console 에이전트 4.7.0
+:allow-uri-read: 
+
+
+
+
+=== Console 에이전트 4.7.0
+
+4.7.0 릴리스는 표준 모드와 제한된 모드를 모두 지원합니다.
+
+이번 NetApp Console 에이전트 릴리스에는 보안 개선 사항과 버그 수정 사항이 포함되어 있습니다.
+
+
+
+=== NetApp Console 관리
+
+이번 릴리스에는 다음과 같은 새로운 기능이 포함되어 있습니다.
+
+.Console 조직을 확인하세요
+기본적으로 Digital Advisor는 콘솔 조직뿐만 아니라 회사와 연결된 모든 NetApp 계정을 표시합니다. Digital Advisor에 표시되는 내용을 특정 계정으로 제한하려면 콘솔 조직에서 사용할 비즈니스 계정을 확인하십시오.link:https://docs.netapp.com/us-en/console-setup-admin/task-iam-organization-verify.html["Console 조직을 확인하는 방법을 알아보십시오"^]
