@@ -214,6 +214,8 @@ sidebar:
           entries:
           - title: 백업 및 복구 역할
             url: "/reference-iam-backup-rec-roles.html"
+          - title: Data Classification 역할
+            url: "/reference-iam-data-classification.html"
           - title: 재해 복구 역할
             url: "/reference-iam-disaster-rec-roles.html"
           - title: 랜섬웨어 복원력 역할
