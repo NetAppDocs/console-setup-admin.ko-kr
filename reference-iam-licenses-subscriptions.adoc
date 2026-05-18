@@ -1,0 +1,50 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-licenses-subscriptions.html 
+keywords: licenses, subscriptions, digital wallet, operational governance, access delegation, rbac, IAM roles 
+summary: NetApp Licenses and Subscriptions 역할을 사용하면 NetApp Console에서 라이선스 및 구독 관리에 필요한 작업을 수행할 수 있도록 사용자에게 다양한 역할을 할당할 수 있습니다. 
+---
+= NetApp Console의 Licenses and subscriptions 역할
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Console에서 Licenses and subscriptions를 관리하려면 사용자에게 적절한 권한이 있는지 확인해야 합니다. Licenses and subscriptions 관리는 Console에서 서비스를 효과적으로 배포하고 지속적으로 운영하는 데 필수적입니다. 역할 할당 방식은 비즈니스 및 스토리지 관리 관행에 따라 달라집니다.
+
+Licenses and subscriptions에서는 다음과 같은 역할이 사용됩니다.
+
+* *Licenses and subscriptions 관리자*
+* *라이센스 및 구독 뷰어*
+
+
+[cols="40,30,30"]
+|===
+| 기능 | Licenses and subscriptions 관리자 | Licenses and subscriptions 뷰어 
+
+
+| 라이센스 추가 | 예 | 아니요 
+
+
+| 라이선스 보기 | 예 | 예 
+
+
+| 라이센스 업데이트 | 예 | 아니요 
+
+
+| 구독 추가 | 예 | 아니요 
+
+
+| 구독 수정 | 예 | 아니요 
+
+
+| 구독 보기 | 예 | 예 
+
+
+| 구독 제거 | 예 | 아니요 
+
+
+| 라이센스 삭제 | 예 | 아니요 
+|===

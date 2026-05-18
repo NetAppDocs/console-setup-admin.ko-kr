@@ -204,6 +204,8 @@ sidebar:
           entries:
           - title: Google Cloud NetApp Volumes 역할
             url: "/reference-iam-gcnv-roles.html"
+          - title: 라이선스 및 구독 역할
+            url: "/reference-iam-licenses-subscriptions.html"
           - title: Keystone 역할
             url: "/reference-iam-keystone-roles.html"
           - title: 운영 지원 분석가

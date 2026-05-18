@@ -73,6 +73,12 @@ NetApp Console 의 IAM(ID 및 액세스 관리)은 리소스 계층의 다양한
 | link:reference-iam-keystone-roles.html["Keystone 뷰어"] | Keystone 뷰어 역할이 있는 사용자는 서비스 요청을 생성할 수 없습니다.  사용자가 액세스하는 Keystone 테넌트 내에서 소비량, 자산 및 관리 정보를 모니터링하고 볼 수 있습니다. 
 
 
+| link:reference-iam-licenses-subscriptions.html["라이센스 및 서브스크립션 관리자"] | 라이선스 및 구독 관리자 역할을 가진 사용자는 NetApp Console 및 관련 데이터 서비스에 대한 직접 라이선스와 마켓플레이스 구독을 생성, 업데이트 및 삭제할 수 있습니다. 
+
+
+| link:reference-iam-licenses-subscriptions.html["라이선스 및 구독 뷰어"] | 라이선스 및 구독 뷰어 역할을 가진 사용자는 NetApp Console 및 관련 데이터 서비스에 대한 직접 라이선스와 마켓플레이스 구독을 볼 수 있습니다. 
+
+
 | ONTAP Mediator 설정 역할 | ONTAP Mediator 설정 역할이 있는 서비스 계정은 서비스 요청을 생성할 수 있습니다.  이 역할은 서비스 계정에서 인스턴스를 구성하는 데 필요합니다.link:https://docs.netapp.com/us-en/ontap/mediator/mediator-overview-concept.html["ONTAP 클라우드 중재자"^] . 
 
 
