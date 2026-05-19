@@ -243,7 +243,7 @@ API 엔드포인트:: API 호출은 다음 엔드포인트에 대해 수행됩�
 
 로 가다 https://console.netapp.com["NetApp Console"^] 그리고 가입하세요.
 
-+ link:task-quick-start-standard-mode.html["표준 모드를 시작하는 방법을 알아보세요"].
+link:task-quick-start-standard-mode.html["표준 모드를 시작하는 방법을 알아보세요"].
 
 
 
@@ -255,7 +255,7 @@ API 엔드포인트:: API 호출은 다음 엔드포인트에 대해 수행됩�
 
 사용하려는 데이터 서비스 및 기능에 따라 Console 조직 관리자는 하이브리드 클라우드 환경 내에서 데이터를 관리하기 위해 추가 Console 에이전트를 생성합니다.
 
-<<제한 모드,NetApp Console API에 대한 아웃바운드 연결에 대해 자세히 알아보십시오>>.
+link:task-install-restricted-mode.html["NetApp Console API에 대한 아웃바운드 연결에 대해 자세히 알아보십시오"].
 
 다음 이미지는 제한 모드 배포의 예입니다.
 

@@ -1539,7 +1539,6 @@
   <block id="1aff819a8dc16b341c309ebd6cc37f98" category="list-text">Google Cloud NetApp Volumes 뷰어</block>
   <block id="1b8af7dd682b66a57a953c80c4b1a22c" category="summary">NetApp Console ID 및 액세스 관리에는 조직 구성원에게 할당할 수 있는 미리 정의된 역할이 포함되어 있습니다.</block>
   <block id="5ed613d5969e54b01e0691f040afb027" category="doc">NetApp Console 액세스 역할에 대해 알아보세요</block>
-  <block id="1fd5cc749e7150dcdba3870e8dddd968" category="paragraph">NetApp Console 의 IAM(ID 및 액세스 관리)은 리소스 계층의 다양한 수준에서 조직 구성원에게 할당할 수 있는 미리 정의된 역할을 제공합니다.  이러한 역할을 할당하기 전에 각 역할에 포함된 권한을 이해해야 합니다.  역할은 플랫폼, 애플리케이션, 데이터 서비스라는 범주로 나뉩니다.</block>
   <block id="cb9e27422b343274f9974efbc9c3dbc1" category="section-title">플랫폼 역할</block>
   <block id="17dd3fc9247e5f8def4f8dd38ae667ff" category="paragraph">플랫폼 역할은 역할 할당 및 사용자 관리를 포함한 NetApp Console 관리 권한을 부여합니다.  콘솔에는 여러 가지 플랫폼 역할이 있습니다.</block>
   <block id="3aba2887bff41f744b43940b1b82080a" category="cell">플랫폼 역할</block>
@@ -1569,8 +1568,6 @@
   <block id="5cc5248d8f5f2a5831a23c2c1c7ba338" category="cell">ONTAP Mediator 설정 역할</block>
   <block id="b3aa67ea8b077eb2b67ff9a0651b5426" category="inline-link-macro">ONTAP 클라우드 중재자</block>
   <block id="04799ba9193d1752205122631a125181" category="cell">ONTAP Mediator 설정 역할이 있는 서비스 계정은 서비스 요청을 생성할 수 있습니다.  이 역할은 서비스 계정에서 인스턴스를 구성하는 데 필요합니다.<block ref="a95914b5fa4d5193b1ebdf5a17356faa" category="inline-link-macro-rx"></block> .</block>
-  <block id="0321c70517c9c78cf799c7075b2ab9de" category="inline-link-macro">운영 지원 분석가</block>
-  <block id="406a1f2f1940a9f2563b8c2e2ba639da" category="cell"><block ref="406a1f2f1940a9f2563b8c2e2ba639da" category="inline-link-macro-rx"></block></block>
   <block id="f6b9aba95e329090662ec51c688d6d77" category="cell">알림 및 모니터링 도구에 대한 액세스를 제공하고 지원 사례를 입력 및 관리하는 기능을 제공합니다.</block>
   <block id="1a137246f35bc1bb21510edbe9caad21" category="cell"><block ref="1a137246f35bc1bb21510edbe9caad21" category="inline-link-macro-rx"></block></block>
   <block id="00887a306e7c01c69b56fa9f82030618" category="cell">스토리지 상태 및 거버넌스 기능을 관리하고, 스토리지 리소스를 검색하고, 기존 시스템을 수정 및 삭제합니다.</block>
@@ -5350,13 +5347,11 @@
   <block id="af6715a71d6494b4d95a731d8f2326c0" category="list-text">NetApp에서 에이전트 소프트웨어를 매달 자동으로 업그레이드합니다.</block>
   <block id="4d5d1212bd0be52b0f06612ab0868e2b" category="list-text">퍼블릭 인터넷을 통해 사용할 수 있는 Console SaaS 애플리케이션에서 사용자 인터페이스에 액세스합니다.</block>
   <block id="5981099db8f6a5f0ede8f01d1c46b020" category="list-text">NetApp Console은 auth0 또는 NetApp Support Site(NSS) 로그인을 통한 인증을 제공합니다. ID 페더레이션도 사용 가능합니다.</block>
-  <block id="f7edecd71600ffc14fed18b4fac58cb4" category="paragraph">+ <block ref="d7d87d0a148c81603b40370c84cf5979" category="inline-link-macro-rx"></block>.</block>
   <block id="18ce407df84b9b3b6a37f37949068013" category="section-title">NetApp Console 제한된 모드(사용자 고유의 퍼블릭 클라우드에 설치됨)</block>
   <block id="1bab4d9f19f78d9293b2c57776f8b486" category="paragraph">클라우드(정부, 국가 또는 상업 지역)에 콘솔 에이전트를 설치하면 NetApp 콘솔 API 엔드포인트(SaaS 애플리케이션에서 호스팅됨)에 대한 외부 연결이 제한됩니다.</block>
   <block id="8aba565c1287faf0e1ca4932525d434a" category="paragraph">사용자는 SaaS 애플리케이션이 아닌 Console 에이전트가 제공하는 로컬 UI에 액세스합니다.</block>
   <block id="6db08dac0b67e028e51d8ac5e5a62432" category="paragraph">사용하려는 데이터 서비스 및 기능에 따라 Console 조직 관리자는 하이브리드 클라우드 환경 내에서 데이터를 관리하기 위해 추가 Console 에이전트를 생성합니다.</block>
   <block id="074dab9c82d3474cf642c9f99e7d5a26" category="inline-xref">NetApp Console API에 대한 아웃바운드 연결에 대해 자세히 알아보십시오</block>
-  <block id="014c03d6e48ef20c47b3fd17154a6d54" category="paragraph"><block ref="a77e3fdf9a749a1e7ea79c8e4fb20767" category="inline-xref-macro-rx"></block>.</block>
   <block id="56899b78a8e10c53c1560d7de57c34e8" category="inline-image-macro">이 개념도는 SaaS 애플리케이션과 auth0 인증이 가능한 퍼블릭 인터넷, 웹 기반 콘솔에 대한 액세스를 제공하는 에이전트가 실행되는 클라우드의 가상 네트워크, 그리고 온프레미스 데이터 센터의 Cloud Volumes ONTAP 및 AFF 클러스터를 관리하는 환경을 보여줍니다.</block>
   <block id="785d30430f94fe799a20dd723658310c" category="paragraph"><block ref="785d30430f94fe799a20dd723658310c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d2a6f3b571c873d3d99d18749793c049" category="section-title">제한된 모드에서 NetApp Console에 지원되는 기능 및 서비스</block>
@@ -6277,4 +6272,42 @@
   <block id="72917a7c676383ff6b788b1412017021" category="cell"><block ref="72917a7c676383ff6b788b1412017021" category="inline-link-macro-rx"></block></block>
   <block id="e2b838aa3390b536f83cc6ce3e1a2748" category="cell">라이선스 및 구독 뷰어 역할을 가진 사용자는 NetApp Console 및 관련 데이터 서비스에 대한 직접 라이선스와 마켓플레이스 구독을 볼 수 있습니다.</block>
   <block id="5ec2925c394689c97be1228f67a49b85" category="sidebar">라이선스 및 구독 역할</block>
+  <block id="52599219f6b08bb2ce3fc85743943c5e" category="paragraph"><block ref="d7d87d0a148c81603b40370c84cf5979" category="inline-link-macro-rx"></block>.</block>
+  <block id="2550db9aaa48d21b3c6e2051eb610223" category="paragraph"><block ref="7c12d9abb1f60d196a4cd5e699bed565" category="inline-link-macro-rx"></block>.</block>
+  <block id="ef4c9807306cc53f9292ed7a239eeaa7" category="paragraph">NetApp Console의 ID 및 액세스 관리(IAM)는 조직 구성원에게 리소스 계층 구조의 여러 수준에 걸쳐 할당할 수 있는 사전 정의된 역할을 제공합니다. 이러한 역할을 할당하기 전에 각 역할에 포함된 권한을 이해해야 합니다. 역할은 플랫폼, 애플리케이션 및 데이터 서비스의 세 가지 범주로 나뉩니다. 또한 API를 사용하여 역할 할당을 관리하는 고객을 위해 각 역할의 API 이름도 표에 포함되어 있습니다.</block>
+  <block id="81be82a027b82e849a37f5d6236fd170" category="paragraph">*API 이름은 API에서 사용되는 역할 식별자입니다. 표시된 값(대소문자 및 밑줄 포함)을 정확히 복사하십시오.</block>
+  <block id="17f15167b5660a249617ea94aa6d9d22" category="cell">API 이름*</block>
+  <block id="bf0d50e0ceb480c4356aa15afd8f46f2" category="cell">ORGANIZATION_ADMIN</block>
+  <block id="c57c74449515f098b0771d80be257585" category="cell">FOLDER_OR_PROJECT_ADMIN</block>
+  <block id="fd810da79c458f535206eb152d85f49a" category="cell">FEDERATION_ADMIN</block>
+  <block id="18f551f3ef804a123c4afd52f4b81cf2" category="cell">FEDERATION_VIEWER</block>
+  <block id="1009830b82a14f129f4e4fe247bfd3a9" category="cell">PARTNERSHIP_ADMIN</block>
+  <block id="41178155e278fcb0872000619462de8c" category="cell">PARTNERSHIP_VIEWER</block>
+  <block id="fb10f0238035c2b31076223dc45beea0" category="cell">SUPER_ADMIN</block>
+  <block id="6fab4e3d2b56faa8eb39ac7b6a1197c8" category="cell">SUPER_VIEWER</block>
+  <block id="7f46ae3923acb3e1c9a053c547677f98" category="cell">GCNV_ADMIN</block>
+  <block id="18bd19ad68d219d2a11aa468a1cc89fa" category="cell">GCNV_VIEWER</block>
+  <block id="70e312b7130aab755fc1b7285f3ce9a0" category="cell">KEYSTONE_ADMIN</block>
+  <block id="f566c3f80b38166af64295a26184a32f" category="cell">KEYSTONE_VIEWER</block>
+  <block id="6f80e1ba07524b620f9ac3ab70a9f846" category="cell">ONTAP_MEDIATOR_SETUP</block>
+  <block id="f4090d772571520ccc8fd7caa2042019" category="cell"><block ref="f4090d772571520ccc8fd7caa2042019" category="inline-link-macro-rx"></block></block>
+  <block id="3b846a37d0c85419e50ecd7c10c0ddba" category="cell">운영 지원 분석가</block>
+  <block id="a06d75f2be53002fd7ecebe794bad111" category="cell">STORAGE_ADMIN</block>
+  <block id="fe37126842449c75ba0d4df263b08491" category="cell">스토리지 뷰어</block>
+  <block id="407be222835100079630428a5af78b74" category="cell">시스템 상태 전문가</block>
+  <block id="629e62d45e24564a18d793b49363d3a9" category="cell">백업_슈퍼_관리자</block>
+  <block id="5d54ab26b22a109b2881e9549f4378ef" category="cell">BACKUP_ADMIN</block>
+  <block id="034df2d2ba1de0d80e8c260c4530197f" category="cell">RESTORE_ADMIN</block>
+  <block id="b68963c2b53fa2c7991241f6f3e240e4" category="cell">CLONE_ADMIN</block>
+  <block id="da2d82be703db381b6dcd6391c0cc02b" category="cell">백업 뷰어</block>
+  <block id="ac686ff21b4074cf049db71604cb97af" category="cell">재해 복구 관리자</block>
+  <block id="c76b372cec1939f6fb6d752bed882919" category="cell">재해 복구 장애 조치 관리자</block>
+  <block id="f1a38d3c8e34eeaf097c7789d2d074a9" category="cell">DISASTER_RECOVERY_APPLICATION_ADMIN</block>
+  <block id="dd1ad3d92ec6d3df74d3fceee4ebb1bd" category="cell">재해 복구 뷰어</block>
+  <block id="d3a63d7bea99ba9fb20d05753b51a65d" category="cell">분류 뷰어</block>
+  <block id="ebeadd2261cd842bc1fd55bdb9d73b1f" category="cell">랜섬웨어_보호_관리자</block>
+  <block id="5712b685a85dbcca1d3a2c5b2e15bc46" category="cell">랜섬웨어_보호_뷰어</block>
+  <block id="3726f34b9bf1c6c6d98054942b244313" category="cell">랜섬웨어 복원력 사용자 행동 관리자</block>
+  <block id="91a470b0f7bf1c1702a23ad6d9d4159d" category="cell">랜섬웨어 복원력 사용자 행동 뷰어</block>
+  <block id="a67d722a1a98561bf88726ffcf6ecda7" category="cell">SNAPCENTER_ADMIN</block>
 </blocks>
