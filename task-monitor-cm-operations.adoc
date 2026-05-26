@@ -142,7 +142,7 @@ image:screenshot_notification_filters.png["알림 센터에서 사용할 수 있
 
 [NOTE]
 ====
-* 콘솔은 에이전트, 라이선스 및 구독, NetApp Copy and Sync, NetApp Backup and Recovery 대한 이메일 알림을 보냅니다.
+* 콘솔은 에이전트, 라이선스 및 구독, NetApp Copy and Sync, NetApp Backup and Recovery 및 NetApp Ransomware Resilience에 대한 이메일 알림을 보냅니다.
 * 인터넷 접속이 불가능한 사이트에 콘솔 에이전트가 설치된 경우 이메일 알림을 보내는 기능은 지원되지 않습니다.
 
 
