@@ -125,16 +125,19 @@ NetApp에서는 고객이 NetApp 담당자와 협력하여 기존 계층화 라�
 | 구글 클라우드 스토리지 | 예 
 
 
+| Keystone 구독 액세스 | 예 
+
+
 | 온프레미스 ONTAP 클러스터 | 검색 및 관리에 필요합니다. Console 에이전트 없이 직접 검색을 사용할 수 있지만 관리 기능을 사용하려면 에이전트가 필요합니다. 
 
 
 | StorageGRID | 예 
 
 
-| 작업 부하 | 아니요 
+| 작업 부하 | 아니요 .8+| *데이터 서비스* 
 
 
-.8+| *데이터 서비스* | NetApp Backup and Recovery | 예 
+| NetApp Backup and Recovery | 예 
 
 
 | NetApp 분류 | 예 
@@ -155,10 +158,10 @@ NetApp에서는 고객이 NetApp 담당자와 협력하여 기존 계층화 라�
 | NetApp Cloud Tiering | 예 
 
 
-| NetApp Volume Caching | 예 
+| NetApp Volume Caching | 예 .5+| *NetApp 지원 계약 기능* 
 
 
-.5+| *NetApp 지원 계약 기능* | 디지털 어드바이저 | 예 
+| 디지털 어드바이저 | 예 
 
 
 | 경제적 효율성 | 예 
@@ -170,10 +173,10 @@ NetApp에서는 고객이 NetApp 담당자와 협력하여 기존 계층화 라�
 | 소프트웨어 업데이트 | 아니요 
 
 
-| 지속 가능성 | 예 
+| 지속 가능성 | 예 .12+| *관리 기능* 
 
 
-.12+| *관리 기능* | 심사 | 아니요 
+| 심사 | 아니요 
 
 
 | 자동화 허브 | 아니요 

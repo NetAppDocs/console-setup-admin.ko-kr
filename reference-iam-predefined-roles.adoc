@@ -22,35 +22,36 @@ NetApp Console의 ID 및 액세스 관리(IAM)는 조직 구성원에게 리소�
 
 플랫폼 역할은 역할 할당 및 사용자 관리를 포함한 NetApp Console 관리 권한을 부여합니다.  콘솔에는 여러 가지 플랫폼 역할이 있습니다.
 
-*API 이름은 API에서 사용되는 역할 식별자입니다. 표시된 값(대소문자 및 밑줄 포함)을 정확히 복사하십시오.
-
-[cols="1,2,3"]
+[cols="1,1,1,2"]
 |===
-| 플랫폼 역할 | API 이름* | 책임 
+| 플랫폼 역할 | API 이름* *API 이름은 API에서 사용되는 역할 식별자입니다. 표시된 값(대소문자 및 밑줄 포함)을 정확히 복사하십시오. | 모드 가용성 | 책임 
 
 
-| link:reference-iam-platform-roles.html#organization-admin-roles["조직 관리자"] | ORGANIZATION_ADMIN | 조직 내 모든 프로젝트와 폴더에 대한 무제한 액세스 권한을 사용자에게 부여합니다. 모든 프로젝트 또는 폴더에 멤버를 추가할 수 있으며, 명시적인 역할이 연결되지 않은 모든 작업과 데이터 서비스를 수행할 수 있습니다. 이 역할을 가진 사용자는 적절한 자격 증명이 있는 경우 폴더와 프로젝트를 생성하고, 역할을 할당하고, 사용자를 추가하고, 시스템을 관리하여 조직을 관리합니다. Console 에이전트를 생성할 수 있는 유일한 액세스 역할입니다. 
+| link:reference-iam-platform-roles.html#organization-admin-roles["조직 관리자"] | ORGANIZATION_ADMIN | 일반, 제한, 비공개 | 조직 내 모든 프로젝트와 폴더에 무제한으로 접근할 수 있으며, 모든 프로젝트 또는 폴더에 구성원을 추가하고, 명시적으로 연결된 역할이 없는 모든 작업을 수행하고 모든 데이터 서비스를 사용할 수 있습니다. 이 역할을 가진 사용자는 폴더와 프로젝트를 생성하고, 역할을 할당하고, 사용자를 추가하며, 적절한 자격 증명이 있는 경우 시스템을 관리하여 조직을 관리합니다. Console 에이전트를 생성할 수 있는 유일한 액세스 역할입니다. 
 
 
-| link:reference-iam-platform-roles.html#organization-admin-roles["폴더 또는 프로젝트 관리자"] | FOLDER_OR_PROJECT_ADMIN | 사용자에게 할당된 프로젝트와 폴더에 대한 제한 없는 액세스를 허용합니다. 자신이 관리하는 폴더나 프로젝트에 멤버를 추가할 수 있고, 할당된 폴더나 프로젝트 내의 리소스에 대한 모든 작업을 수행하고 모든 데이터 서비스나 애플리케이션을 사용할 수 있습니다. 폴더 또는 프로젝트 관리자는 콘솔 에이전트를 생성할 수 없습니다. 
+| link:reference-iam-platform-roles.html#organization-admin-roles["폴더 또는 프로젝트 관리자"] | FOLDER_OR_PROJECT_ADMIN | 일반, 제한, 비공개 | 사용자에게 할당된 프로젝트와 폴더에 대한 제한 없는 액세스를 허용합니다. 자신이 관리하는 폴더나 프로젝트에 멤버를 추가할 수 있고, 할당된 폴더나 프로젝트 내의 리소스에 대한 모든 작업을 수행하고 모든 데이터 서비스나 애플리케이션을 사용할 수 있습니다. 폴더 또는 프로젝트 관리자는 콘솔 에이전트를 생성할 수 없습니다. 
 
 
-| link:reference-iam-platform-roles.html#federation-roles["연방 관리자"] | FEDERATION_ADMIN | 사용자가 콘솔을 사용하여 페더레이션을 만들고 관리할 수 있으며, 이를 통해 SSO(Single Sign-On)가 가능합니다. 
+| link:reference-iam-platform-roles.html#federation-roles["연방 관리자"] | FEDERATION_ADMIN | 표준, 제한됨 | 사용자가 콘솔을 사용하여 페더레이션을 만들고 관리할 수 있으며, 이를 통해 SSO(Single Sign-On)가 가능합니다. 
 
 
-| link:reference-iam-platform-roles.html#federation-roles["연방 뷰어"] | FEDERATION_VIEWER | 사용자가 콘솔을 사용하여 기존 페더레이션을 볼 수 있도록 합니다.  연합을 생성하거나 관리할 수 없습니다. 
+| link:reference-iam-platform-roles.html#federation-roles["연방 뷰어"] | FEDERATION_VIEWER | 표준, 제한됨 | 사용자가 콘솔을 사용하여 기존 페더레이션을 볼 수 있도록 합니다.  연합을 생성하거나 관리할 수 없습니다. 
 
 
-| link:reference-iam-platform-roles.html#partnership-roles["파트너십 관리자"] | PARTNERSHIP_ADMIN | 사용자가 파트너십을 만들고 관리할 수 있습니다. 
+| link:reference-iam-platform-roles.html#partnership-roles["파트너십 관리자"] | PARTNERSHIP_ADMIN | 표준, 제한됨 | 사용자가 파트너십을 만들고 관리할 수 있습니다. 
 
 
-| link:reference-iam-platform-roles.html#partnership-roles["파트너십 뷰어"] | PARTNERSHIP_VIEWER | 사용자가 기존 파트너십을 볼 수 있도록 합니다.  파트너십을 생성하거나 관리할 수 없습니다. 
+| link:reference-iam-platform-roles.html#partnership-roles["파트너십 뷰어"] | PARTNERSHIP_VIEWER | 표준, 제한됨 | 사용자가 기존 파트너십을 볼 수 있도록 합니다.  파트너십을 생성하거나 관리할 수 없습니다. 
 
 
-| link:reference-iam-platform-roles.html#super-admin-roles["슈퍼 관리자"] | SUPER_ADMIN | 사용자에게 관리자 역할의 하위 집합을 제공합니다.  이 역할은 여러 사용자에게 콘솔 책임을 분산할 필요가 없는 소규모 조직을 위해 설계되었습니다. 
+| link:reference-iam-platform-roles.html#super-admin-roles["슈퍼 관리자"] | SUPER_ADMIN | 일반, 제한, 비공개 | 사용자에게 관리자 역할의 하위 집합을 제공합니다.  이 역할은 여러 사용자에게 콘솔 책임을 분산할 필요가 없는 소규모 조직을 위해 설계되었습니다. 
 
 
-| link:reference-iam-platform-roles.html#super-admin-roles["슈퍼 뷰어"] | SUPER_VIEWER | 사용자에게 뷰어 역할의 하위 집합을 제공합니다. 이 역할은 Console 책임을 여러 사용자에게 분산할 필요가 없는 소규모 조직을 위해 설계되었습니다. 
+| link:reference-iam-platform-roles.html#super-admin-roles["슈퍼 뷰어"] | SUPER_VIEWER | 일반, 제한, 비공개 | 사용자에게 일부 뷰어 역할을 부여합니다. 이 역할은 Console 관리 책임을 여러 사용자에게 분산할 필요가 없는 소규모 조직을 위해 설계되었습니다. 
+
+
+| 조직 뷰어 |  | 일반, 제한, 비공개 | 사용자에게 지정된 계층 수준 범위 내에 있는 조직 수준 정보 및 리소스에 대한 읽기 전용 가시성을 제공합니다. 
 |===
 
 
@@ -58,42 +59,36 @@ NetApp Console의 ID 및 액세스 관리(IAM)는 조직 구성원에게 리소�
 
 다음은 애플리케이션 카테고리의 역할 목록입니다.  각 역할은 지정된 범위 내에서 특정 권한을 부여합니다.  필요한 애플리케이션이나 플랫폼 역할이 없는 사용자는 해당 애플리케이션에 액세스할 수 없습니다.
 
-[cols="1,2,3"]
+[cols="1,1,1,2"]
 |===
-| 신청 역할 | API 이름* | 책임 
+| 신청 역할 | API 이름* | 모드 가용성 | 책임 
 
 
-| link:reference-iam-gcnv-roles.html["Google Cloud NetApp Volumes 관리자"] | GCNV_ADMIN | Google Cloud NetApp Volumes 역할이 있는 사용자는 Google Cloud NetApp Volumes 검색하고 관리할 수 있습니다. 
+| link:reference-iam-gcnv-roles.html["Google Cloud NetApp Volumes 관리자"] | GCNV_ADMIN | 표준 | Google Cloud NetApp Volumes 역할이 있는 사용자는 Google Cloud NetApp Volumes 검색하고 관리할 수 있습니다. 
 
 
-| link:reference-iam-gcnv-roles.html["Google Cloud NetApp Volumes 뷰어"] | GCNV_VIEWER | Google Cloud NetApp Volumes 사용자 역할이 있는 사용자는 Google Cloud NetApp Volumes 볼 수 있습니다. 
+| link:reference-iam-gcnv-roles.html["Google Cloud NetApp Volumes 뷰어"] | GCNV_VIEWER | 표준 | Google Cloud NetApp Volumes 사용자 역할이 있는 사용자는 Google Cloud NetApp Volumes 볼 수 있습니다. 
 
 
-| link:reference-iam-keystone-roles.html["Keystone 관리자"] | KEYSTONE_ADMIN | Keystone 관리자 역할이 있는 사용자는 서비스 요청을 생성할 수 있습니다.  사용자가 액세스하는 Keystone 테넌트 내에서 사용량, 리소스 및 관리자 세부 정보를 모니터링하고 볼 수 있습니다. 
+| link:reference-iam-keystone-roles.html["Keystone 관리자"] | KEYSTONE_ADMIN | 표준 | Keystone 관리자 역할이 있는 사용자는 서비스 요청을 생성할 수 있습니다.  사용자가 액세스하는 Keystone 테넌트 내에서 사용량, 리소스 및 관리자 세부 정보를 모니터링하고 볼 수 있습니다. 
 
 
-| link:reference-iam-keystone-roles.html["Keystone 뷰어"] | KEYSTONE_VIEWER | Keystone 뷰어 역할이 있는 사용자는 서비스 요청을 생성할 수 없습니다.  사용자가 액세스하는 Keystone 테넌트 내에서 소비량, 자산 및 관리 정보를 모니터링하고 볼 수 있습니다. 
+| link:reference-iam-keystone-roles.html["Keystone 뷰어"] | KEYSTONE_VIEWER | 표준 | Keystone 뷰어 역할이 있는 사용자는 서비스 요청을 생성할 수 없습니다.  사용자가 액세스하는 Keystone 테넌트 내에서 소비량, 자산 및 관리 정보를 모니터링하고 볼 수 있습니다. 
 
 
-| link:reference-iam-licenses-subscriptions.html["라이센스 및 서브스크립션 관리자"] |  | 라이선스 및 구독 관리자 역할을 가진 사용자는 NetApp Console 및 관련 데이터 서비스에 대한 직접 라이선스와 마켓플레이스 구독을 생성, 업데이트 및 삭제할 수 있습니다. 
+| ONTAP Mediator 설정 역할 | ONTAP_MEDIATOR_SETUP | 표준 | ONTAP Mediator 설정 역할이 있는 서비스 계정은 서비스 요청을 생성할 수 있습니다.  이 역할은 서비스 계정에서 인스턴스를 구성하는 데 필요합니다.link:https://docs.netapp.com/us-en/ontap/mediator/mediator-overview-concept.html["ONTAP 클라우드 중재자"^] . 
 
 
-| link:reference-iam-licenses-subscriptions.html["라이선스 및 구독 뷰어"] |  | 라이선스 및 구독 뷰어 역할을 가진 사용자는 NetApp Console 및 관련 데이터 서비스에 대한 직접 라이선스와 마켓플레이스 구독을 볼 수 있습니다. 
+| link:reference-iam-analyst-roles.html["운영 지원 분석가"] | 운영 지원 분석가 | 일반, 제한, 비공개 | 알림 및 모니터링 도구에 대한 액세스를 제공하고 지원 사례를 입력 및 관리하는 기능을 제공합니다. 
 
 
-| ONTAP Mediator 설정 역할 | ONTAP_MEDIATOR_SETUP | ONTAP Mediator 설정 역할이 있는 서비스 계정은 서비스 요청을 생성할 수 있습니다.  이 역할은 서비스 계정에서 인스턴스를 구성하는 데 필요합니다.link:https://docs.netapp.com/us-en/ontap/mediator/mediator-overview-concept.html["ONTAP 클라우드 중재자"^] . 
+| link:reference-iam-storage-roles.html["스토리지 관리자"] | STORAGE_ADMIN | 표준, 제한됨 | 스토리지 상태 및 거버넌스 기능을 관리하고, 스토리지 리소스를 검색하고, 기존 시스템을 수정 및 삭제합니다. 
 
 
-| link:reference-iam-analyst-roles.html["운영 지원 분석가"] | 운영 지원 분석가 | 알림 및 모니터링 도구에 대한 액세스를 제공하고 지원 사례를 입력 및 관리하는 기능을 제공합니다. 
+| link:reference-iam-storage-roles.html["스토리지 뷰어"] | 스토리지 뷰어 | 표준, 제한됨 | 저장소 상태 및 거버넌스 기능을 확인하고, 이전에 검색된 저장소 리소스를 확인합니다.  기존 스토리지 시스템을 검색, 수정 또는 삭제할 수 없습니다. 
 
 
-| link:reference-iam-storage-roles.html["스토리지 관리자"] | STORAGE_ADMIN | 스토리지 상태 및 거버넌스 기능을 관리하고, 스토리지 리소스를 검색하고, 기존 시스템을 수정 및 삭제합니다. 
-
-
-| link:reference-iam-storage-roles.html["스토리지 뷰어"] | 스토리지 뷰어 | 저장소 상태 및 거버넌스 기능을 확인하고, 이전에 검색된 저장소 리소스를 확인합니다.  기존 스토리지 시스템을 검색, 수정 또는 삭제할 수 없습니다. 
-
-
-| link:reference-iam-storage-roles.html["시스템 건강 전문가"] | 시스템 상태 전문가 | 저장소 및 상태, 거버넌스 기능을 관리합니다. 저장소 관리자의 모든 권한은 기존 시스템을 수정하거나 삭제할 수 없습니다. 
+| link:reference-iam-storage-roles.html["시스템 건강 전문가"] | 시스템 상태 전문가 | 표준, 제한됨 | 저장소 및 상태, 거버넌스 기능을 관리합니다. 저장소 관리자의 모든 권한은 기존 시스템을 수정하거나 삭제할 수 없습니다. 
 |===
 
 
@@ -101,57 +96,54 @@ NetApp Console의 ID 및 액세스 관리(IAM)는 조직 구성원에게 리소�
 
 다음은 데이터 서비스 범주의 역할 목록입니다.  각 역할은 지정된 범위 내에서 특정 권한을 부여합니다.  필요한 데이터 서비스 역할이나 플랫폼 역할이 없는 사용자는 데이터 서비스에 액세스할 수 없습니다.
 
-[cols="1,2,3"]
+[cols="1,1,1,2"]
 |===
-| 데이터 서비스 역할 | API 이름* | 책임 
+| 데이터 서비스 역할 | API 이름* | 모드 가용성 | 책임 
 
 
-| link:reference-iam-backup-rec-roles.html["백업 및 복구 슈퍼 관리자"] | 백업_슈퍼_관리자 | NetApp Backup and Recovery 에서 모든 작업을 수행합니다. 
+| link:reference-iam-backup-rec-roles.html["백업 및 복구 슈퍼 관리자"] | 백업_슈퍼_관리자 | 일반, 제한, 비공개 | NetApp Backup and Recovery 에서 모든 작업을 수행합니다. 
 
 
-| link:reference-iam-backup-rec-roles.html["백업 및 복구 관리자"] | BACKUP_ADMIN | 로컬 스냅샷에 백업을 수행하고, 보조 저장소에 복제하고, 개체 저장소에 백업합니다. 
+| link:reference-iam-backup-rec-roles.html["백업 및 복구 관리자"] | BACKUP_ADMIN | 일반, 제한, 비공개 | 로컬 스냅샷에 백업을 수행하고, 보조 저장소에 복제하고, 개체 저장소에 백업합니다. 
 
 
-| link:reference-iam-backup-rec-roles.html["백업 및 복구 복원 관리자"] | RESTORE_ADMIN | NetApp Backup and Recovery에서 워크로드를 복원합니다. 
+| link:reference-iam-backup-rec-roles.html["백업 및 복구 복원 관리자"] | RESTORE_ADMIN | 일반, 제한, 비공개 | 백업 및 복구에서 워크로드를 복원합니다. 
 
 
-| link:reference-iam-backup-rec-roles.html["백업 및 복구 클론 관리자"] | CLONE_ADMIN | NetApp Backup and Recovery에서 애플리케이션과 데이터를 복제합니다. 
+| link:reference-iam-backup-rec-roles.html["백업 및 복구 클론 관리자"] | CLONE_ADMIN | 일반, 제한, 비공개 | Backup and Recovery에서 애플리케이션과 데이터를 복제합니다. 
 
 
-| link:reference-iam-backup-rec-roles.html["백업 및 복구 뷰어"] | 백업 뷰어 | 백업 및 복구 정보를 확인합니다. 
+| link:reference-iam-backup-rec-roles.html["백업 및 복구 뷰어"] | 백업 뷰어 | 일반, 제한, 비공개 | 백업 및 복구 정보를 확인합니다. 
 
 
-| link:reference-iam-disaster-rec-roles.html["재해 복구 관리자"] | 재해 복구 관리자 | NetApp Disaster Recovery 서비스에서 모든 작업을 수행합니다. 
+| link:reference-iam-disaster-rec-roles.html["재해 복구 관리자"] | 재해 복구 관리자 | 표준 | NetApp Disaster Recovery 서비스에서 모든 작업을 수행합니다. 
 
 
-| link:reference-iam-disaster-rec-roles.html["재해 복구 장애 조치 관리자"] | 재해 복구 장애 조치 관리자 | 장애 조치 및 마이그레이션을 수행합니다. 
+| link:reference-iam-disaster-rec-roles.html["재해 복구 장애 조치 관리자"] | 재해 복구 장애 조치 관리자 | 표준 | 장애 조치 및 마이그레이션을 수행합니다. 
 
 
-| link:reference-iam-disaster-rec-roles.html["재해 복구 애플리케이션 관리자"] | DISASTER_RECOVERY_APPLICATION_ADMIN | 복제 계획을 만들고, 복제 계획을 변경하고, 테스트 장애 조치를 시작합니다. 
+| link:reference-iam-disaster-rec-roles.html["재해 복구 애플리케이션 관리자"] | DISASTER_RECOVERY_APPLICATION_ADMIN | 표준 | 복제 계획을 만들고, 복제 계획을 변경하고, 테스트 장애 조치를 시작합니다. 
 
 
-| link:reference-iam-disaster-rec-roles.html["재해 복구 뷰어"] | 재해 복구 뷰어 | 정보만 보기. 
+| link:reference-iam-disaster-rec-roles.html["재해 복구 뷰어"] | 재해 복구 뷰어 | 표준 | 정보만 보기. 
 
 
-| link:reference-iam-data-classification.html["규정 준수 관리자"] |  | NetApp Data Classification을 설치하고 NetApp Data Classification에서 조직 수준 권한을 연결하는 데 필요합니다. 
+| 분류 뷰어 | 분류 뷰어 | 일반, 제한, 비공개 | 사용자가 NetApp Data Classification 스캔 결과를 볼 수 있습니다. 이 역할을 가진 사용자는 액세스 권한이 있는 리소스에 대한 규정 준수 정보를 확인하고 보고서를 생성할 수 있습니다. 이러한 사용자는 볼륨, 버킷 또는 데이터베이스 스키마의 스캔을 활성화하거나 비활성화할 수 없습니다. Data Classification에는 관리자 역할이 없습니다. 
 
 
-| link:reference-iam-data-classification.html["분류 뷰어"] | 분류 뷰어 | 사용자가 NetApp Data Classification 스캔 결과를 볼 수 있습니다. 이 역할을 가진 사용자는 액세스 권한이 있는 리소스에 대한 규정 준수 정보를 확인하고 보고서를 생성할 수 있습니다. 이러한 사용자는 볼륨, 버킷 또는 데이터베이스 스키마의 스캔을 활성화하거나 비활성화할 수 없습니다. 
+| link:reference-iam-ransomware-roles.html["랜섬웨어 복원력 관리자"] | 랜섬웨어_보호_관리자 | 표준 | NetApp Ransomware Resilience 의 보호, 알림, 복구, 설정 및 보고서 탭에서 작업을 관리합니다. 
 
 
-| link:reference-iam-ransomware-roles.html["랜섬웨어 복원력 관리자"] | 랜섬웨어_보호_관리자 | NetApp Ransomware Resilience 의 보호, 알림, 복구, 설정 및 보고서 탭에서 작업을 관리합니다. 
+| link:reference-iam-ransomware-roles.html["랜섬웨어 복원력 뷰어"] | 랜섬웨어_보호_뷰어 | 표준 | Ransomware Resilience에서 작업 부하 데이터를 보고, 알림 데이터를 보고, 복구 데이터를 다운로드하고, 보고서를 다운로드하세요. 
 
 
-| link:reference-iam-ransomware-roles.html["랜섬웨어 복원력 뷰어"] | 랜섬웨어_보호_뷰어 | Ransomware Resilience에서 작업 부하 데이터를 보고, 알림 데이터를 보고, 복구 데이터를 다운로드하고, 보고서를 다운로드하세요. 
+| link:reference-iam-ransomware-roles.html["랜섬웨어 복원력 사용자 행동 관리자"] | 랜섬웨어 복원력 사용자 행동 관리자 | 표준 | Ransomware Resilience에서 의심스러운 사용자 동작 탐지, 알림 및 모니터링을 구성, 관리하고 확인하세요. 
 
 
-| link:reference-iam-ransomware-roles.html["랜섬웨어 복원력 사용자 행동 관리자"] | 랜섬웨어 복원력 사용자 행동 관리자 | Ransomware Resilience에서 의심스러운 사용자 동작 탐지, 알림 및 모니터링을 구성, 관리하고 확인하세요. 
+| link:reference-iam-ransomware-roles.html["랜섬웨어 복원력 사용자 동작 뷰어"] | 랜섬웨어 복원력 사용자 행동 뷰어 | 표준 | 랜섬웨어 복원력에서 의심스러운 사용자 행동 알림과 통찰력을 확인하세요. 
 
 
-| link:reference-iam-ransomware-roles.html["랜섬웨어 복원력 사용자 동작 뷰어"] | 랜섬웨어 복원력 사용자 행동 뷰어 | 랜섬웨어 복원력에서 의심스러운 사용자 행동 알림과 통찰력을 확인하세요. 
-
-
-| SnapCenter 관리자 | SNAPCENTER_ADMIN | NetApp Backup and Recovery 사용하여 온프레미스 ONTAP 클러스터의 스냅샷을 애플리케이션에 백업하는 기능을 제공합니다.  이 역할이 있는 멤버는 다음 작업을 완료할 수 있습니다. * 백업 및 복구 > 애플리케이션에서 모든 작업을 완료합니다. * 권한이 있는 프로젝트 및 폴더의 모든 시스템을 관리합니다. * 모든 NetApp Console 서비스를 사용합니다. SnapCenter 에는 뷰어 역할이 없습니다. 
+| SnapCenter 관리자 | SNAPCENTER_ADMIN | 표준, 프라이빗 | NetApp Backup and Recovery 사용하여 온프레미스 ONTAP 클러스터의 스냅샷을 애플리케이션에 백업하는 기능을 제공합니다.  이 역할이 있는 멤버는 다음 작업을 완료할 수 있습니다. * 백업 및 복구 > 애플리케이션에서 모든 작업을 완료합니다. * 권한이 있는 프로젝트 및 폴더의 모든 시스템을 관리합니다. * 모든 NetApp Console 서비스를 사용합니다. SnapCenter 에는 뷰어 역할이 없습니다. 
 |===
 
 
