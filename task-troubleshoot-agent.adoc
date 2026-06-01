@@ -170,9 +170,12 @@ image:screenshot-agent-validate.png["상담원의 작업 메뉴에 있는 유효
 
 === 수동 설치에 대한 구성 확인 비활성화
 
+
+
+=== 수동 설치에 대한 구성 확인 비활성화
+
 설치 중에 아웃바운드 연결을 확인하는 구성 검사를 비활성화해야 할 때가 있을 수 있습니다. 예를 들어, 정부 클라우드 환경에 에이전트를 수동으로 설치할 때는 구성 검사를 비활성화해야 합니다. 그렇지 않으면 설치가 실패합니다.
 
-.단계
 _com/opt/application/netapp/service-manager-2/config.json_ 파일에서 _skipConfigCheck_ 플래그를 설정하여 구성 확인을 비활성화합니다. 기본적으로 이 플래그는 false로 설정되고 구성 검사는 에이전트에 대한 아웃바운드 액세스를 확인합니다. 검사를 비활성화하려면 이 플래그를 true로 설정합니다. 이 단계를 완료하기 전에 JSON 구문에 익숙해지십시오.
 
 구성 확인을 다시 활성화하려면 다음 단계를 사용하고 _skipConfigCheck_ 플래그를 false로 설정합니다.
@@ -181,8 +184,7 @@ _com/opt/application/netapp/service-manager-2/config.json_ 파일에서 _skipCon
 . 루트 또는 sudo 권한으로 콘솔 에이전트 호스트에 액세스합니다.
 . 변경 사항을 되돌릴 수 있도록 _/opt/application/netapp/service-manager-2/config.json_ 파일의 백업 사본을 만드세요.
 . 다음 명령을 실행하여 서비스 관리자 2 서비스를 중지합니다.
-
-
++
 [source, cli]
 ----
 systemctl stop netapp-service-manager.service
