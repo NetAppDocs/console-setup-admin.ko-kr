@@ -4,5 +4,5 @@
 
 .시작하기 전에
 * 관리자 권한이 있는 IdP 계정이 필요합니다.  IdP 관리자와 협력하여 단계를 완료하세요.
-* 페더레이션에 사용할 도메인을 식별합니다. 이메일 도메인 또는 소유한 다른 도메인을 사용할 수 있습니다. 이메일 도메인 이외의 도메인을 사용하려면 먼저 NetApp Console에서 도메인을 확인해야 합니다. 지침은 link:task-federation-verify-domain.html["NetApp Console 에서 도메인을 확인하세요"]을 참조하십시오.
+* 페더레이션에 사용할 도메인을 식별합니다. 이메일 도메인 또는 소유한 다른 도메인을 사용할 수 있습니다. 이메일 도메인 이외의 도메인을 사용하려면 먼저 NetApp Console에서 도메인을 확인해야 합니다. 지침은 link:./task-federation-verify-domain.html["NetApp Console 에서 도메인을 확인하세요"]을 참조하십시오.
 

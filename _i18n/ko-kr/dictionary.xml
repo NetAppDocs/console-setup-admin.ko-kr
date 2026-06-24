@@ -334,7 +334,6 @@
   <block id="6b3c54310d91533691ce16baaa9837f0" category="list-text">에이전트 가상 머신에 연결된 호스트에서 웹 브라우저를 열고 다음 URL을 입력합니다.</block>
   <block id="3293e21593be380370a4f8e9a0276cf0" category="list-text">로그인 후 에이전트를 설정하세요.</block>
   <block id="d3ba93ec4220d1e4a340375deaf3e56f" category="list-text">에이전트와 연결할 콘솔 조직을 지정합니다.</block>
-  <block id="a9dfefd15be7ad32808b46019adfc86c" category="paragraph">이 단계에서는 표준 모드에서 콘솔을 사용하는 방법을 설명하므로 제한 모드를 비활성화해야 합니다.  보안 환경이 있고 콘솔 백엔드 서비스에서 이 계정의 연결을 끊으려는 경우에만 제한 모드를 활성화해야 합니다.  그렇다면,<block ref="8e08e3d2c03bbf8727fd164a23b99107" category="inline-link-macro-rx"></block> .</block>
   <block id="9cf68904e16d6d689d242f4868ec6c3f" category="list-text">전담 호스트</block>
   <block id="a041f8c4c0a670570730d7d087d863ba" category="list-text">해당 에이전트는 다른 애플리케이션과 공유되는 호스트에서는 지원되지 않습니다. 호스트는 전담 호스트여야 합니다.</block>
   <block id="acb3a31b8e79039416f86dfe140a002a" category="list-text">VPC 및 서브넷</block>
@@ -6160,7 +6159,6 @@
   <block id="43dc49af1a8157f71040baeb30324e66" category="inline-link-macro">Console 조직을 확인하는 방법을 알아보십시오</block>
   <block id="d1bdb7b91f1071f7a7fbbe9cc229a6cd" category="paragraph">기본적으로 Digital Advisor는 콘솔 조직뿐만 아니라 회사와 연결된 모든 NetApp 계정을 표시합니다. Digital Advisor에 표시되는 내용을 특정 계정으로 제한하려면 콘솔 조직에서 사용할 비즈니스 계정을 확인하십시오.<block ref="804fccc7ef3790a6c6eaa859500c3cdb" category="inline-link-macro-rx"></block></block>
   <block id="397ee69a18e46b4765d0f43baecebbd0" category="summary">기본적으로 Digital Advisor는 콘솔 조직뿐만 아니라 회사와 연결된 모든 NetApp 계정을 표시합니다. Digital Advisor에 표시되는 내용을 특정 계정으로 제한하려면 콘솔 조직에서 사용할 비즈니스 계정을 확인하십시오.</block>
-  <block id="f64284915c2f23896843250a06524f58" category="paragraph">조직을 인증하려면 조직 관리자 역할이 있어야 합니다. 또한 사용자는 NetApp 지원 사이트(NSS) 계정과 연결되어 있어야 합니다. <block ref="6d5ad2096c24e0befb1e89a3a2137e15" category="inline-link-macro-rx"></block>.</block>
   <block id="c8979336fc54afd4915c72626c1abdc0" category="admonition">회사에 비즈니스 계정이 하나만 있고 사용자가 NetApp Support Site 계정과 연결되어 있는 경우 Console에서 자동으로 조직을 확인합니다.</block>
   <block id="6a22a47669484a4fac663dfd1d8c5cc1" category="list-text">페이지 제목 옆에서 *Verify*를 선택하세요.</block>
   <block id="71e0d11af7cdf3d188d279b78ad7e4e4" category="inline-image-macro">확인 버튼이 강조 표시된 조직 페이지의 스크린샷입니다.</block>
@@ -6266,4 +6264,7 @@
   <block id="81ba052a80f6ca03940e96b958459737" category="paragraph">더 이상 필요하지 않은 권한을 제거하기 위해 Connector에 대한 AWS 및 Azure 정책을 업데이트했습니다. 해당 권한은 BlueXP 엣지 캐싱과 Azure 및 AWS의 Kubernetes 클러스터 검색 및 관리와 관련된 것이었습니다.</block>
   <block id="8b8a789c0e7d6b190da84177b5130948" category="paragraph">이러한 권한은 Cloud Volumes ONTAP에서 가상 머신 확장 집합을 지원하는 데 필요합니다. 기존 커넥터를 사용하고 이 새로운 기능을 사용하려면 Azure 자격 증명과 연결된 사용자 지정 정책에 이러한 권한을 추가해야 합니다.</block>
   <block id="e68cc6c646a8fcaf6b506961e2280d76" category="paragraph">RHEL 7 또는 CentOS 7에서 실행 중인 기존 에이전트가 있는 경우 NetApp은 해당 운영 체제를 RHEL 8 또는 9로 업그레이드하거나 변환하는 것을 지원하지 않습니다. 지원되는 운영 체제에 새 에이전트를 생성해야 합니다. 전환을 진행하려면 다음의 주요 단계를 따르십시오.</block>
+  <block id="8463984f3743dad5519ea83a4212420e" category="list-text">페더레이션에 사용할 도메인을 식별합니다. 이메일 도메인 또는 소유한 다른 도메인을 사용할 수 있습니다. 이메일 도메인 이외의 도메인을 사용하려면 먼저 NetApp Console에서 도메인을 확인해야 합니다. 지침은 <block ref="f906f28217a34b35861fd69657ab52aa" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="0d87cc65e1228aa5387b06020c227945" category="paragraph">이 단계에서는 콘솔을 표준 모드에서 사용하는 방법을 설명하므로 제한된 모드는 비활성화 상태로 유지해야 합니다. 보안 환경이 조성되어 있고 이 계정을 콘솔 백엔드 서비스에서 연결 해제하려는 경우에만 제한된 모드를 활성화해야 합니다. 그 경우에는 <block ref="c0aad04133307e9daa144c5fbbd6274a" category="inline-link-macro-rx"></block>.</block>
+  <block id="783781dfce7d40d62cedb10d8445eca9" category="paragraph">조직을 인증하려면 조직 관리자 역할이 있어야 합니다. 또한 사용자는 NetApp 지원 사이트(NSS) 계정과 연결되어 있어야 합니다. <block ref="e27e8a258f84be720108170f748a0bb6" category="inline-link-macro-rx"></block>.</block>
 </blocks>
