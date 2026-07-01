@@ -100,4 +100,11 @@ https://api.workloads.netapp.com
  a| 
 웹 기반 콘솔은 이 엔드포인트에 연결하여 Workload Factory API와 상호 작용함으로써 ONTAP 기반 워크로드용 FSx를 관리하고 운영합니다.
 
+
+
+ a| 
+\https://ws.workloads.bluexp.netapp.com
+ a| 
+Workload Factory 백엔드에서 ONTAP 작업을 위해 콘솔 에이전트를 폴링하는 데 사용됩니다.
+
 |===
