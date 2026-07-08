@@ -6269,4 +6269,8 @@
   <block id="783781dfce7d40d62cedb10d8445eca9" category="paragraph">조직을 인증하려면 조직 관리자 역할이 있어야 합니다. 또한 사용자는 NetApp 지원 사이트(NSS) 계정과 연결되어 있어야 합니다. <block ref="e27e8a258f84be720108170f748a0bb6" category="inline-link-macro-rx"></block>.</block>
   <block id="9f45fe3cd2af64a1afc3f4b7f81bdae6" category="paragraph">\https://ws.workloads.bluexp.netapp.com</block>
   <block id="5590527a85098bd1da6679e4d795adb2" category="paragraph">Workload Factory 백엔드에서 ONTAP 작업을 위해 콘솔 에이전트를 폴링하는 데 사용됩니다.</block>
+  <block id="cc77cf98baa64437ba1852257c81c7a1" category="doc">Console 에이전트 4.8.0</block>
+  <block id="c352b7fbc4bc73fdf6c2e56c32996413" category="paragraph">4.8.0 릴리스는 표준 모드와 제한된 모드를 모두 지원합니다.</block>
+  <block id="179021adb01b0c7bf08f12ed1f7e4cea" category="paragraph">이번 릴리스에는 보안 개선 사항과 버그 수정 사항이 포함되어 있습니다.</block>
+  <block id="36864a323861d58f15ec5fb9c0a62095" category="section-title">2026년 6월 8일</block>
 </blocks>
