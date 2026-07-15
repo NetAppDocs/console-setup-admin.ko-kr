@@ -20,6 +20,7 @@ summary: 제한 모드에서 NetApp Console 사용할 때 사용자가 웹 기�
 
 
 
+[[install-an-https-certificate]]
 == HTTPS 인증서 설치
 
 콘솔 에이전트에서 실행되는 웹 기반 콘솔에 대한 보안 액세스를 위해 CA에서 서명한 인증서를 설치합니다.
@@ -82,6 +83,7 @@ image:screenshot_https_cert.gif["스크린샷: 서명된 인증서를 설치한 
 
 
 
+[[renew-the-console-https-certificate]]
 == 콘솔 HTTPS 인증서 갱신
 
 보안 액세스를 보장하려면 에이전트의 HTTPS 인증서가 만료되기 전에 갱신해야 합니다.  인증서가 만료되기 전에 갱신하지 않으면 사용자가 HTTPS를 사용하여 웹 콘솔에 액세스할 때 경고가 나타납니다.

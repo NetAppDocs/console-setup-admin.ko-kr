@@ -4,6 +4,7 @@
 
 
 
+[[connector-3-9-53]]
 === 커넥터 3.9.53
 
 이번 BlueXP 커넥터 릴리스에는 보안 개선 사항과 버그 수정 사항이 포함되어 있습니다.
@@ -12,18 +13,21 @@
 
 
 
+[[disk-space-usage-alerts]]
 === 디스크 공간 사용 알림
 
 알림 센터에는 이제 커넥터의 디스크 공간 사용에 대한 알림이 포함되었습니다.link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-maintain-connectors.html#monitor-disk-space["자세히 알아보세요."^]
 
 
 
+[[audit-improvements]]
 === 감사 개선
 
 이제 타임라인에 사용자의 로그인 및 로그아웃 이벤트가 포함됩니다.  로그인 활동을 확인하면 감사 및 보안 모니터링에 도움이 될 수 있습니다.  조직 관리자 역할이 있는 API 사용자는 다음을 포함하여 로그인한 사용자의 이메일 주소를 볼 수 있습니다. `includeUserData=true`` 매개변수는 다음과 같습니다. `/audit/<account_id>?includeUserData=true` .
 
 
 
+[[keystone-subscription-management-available-in-bluexp]]
 === BlueXP 에서 Keystone 구독 관리 사용 가능
 
 BlueXP 에서 NetApp Keystone 구독을 관리할 수 있습니다.
@@ -32,6 +36,7 @@ link:https://docs.netapp.com/us-en/keystone-staas/index.html["BlueXP 에서 Keys
 
 
 
+[[bluexp-identity-and-access-management-iam]]
 === BlueXP ID 및 액세스 관리(IAM)
 
 
@@ -44,6 +49,7 @@ link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#ta
 
 
 
+[[workloads]]
 === 작업 부하
 
 이제 BlueXP 의 자격 증명 페이지에서 Amazon FSx for NetApp ONTAP 자격 증명을 보고 삭제할 수 있습니다.

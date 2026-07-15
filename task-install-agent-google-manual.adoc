@@ -25,6 +25,7 @@ Google Cloud에 에이전트를 배포하면 사용자가 선택한 VPC에서 Li
 
 
 
+[[step-1-review-host-requirements]]
 == 1단계: 호스트 요구 사항 검토
 
 콘솔 에이전트 소프트웨어는 특정 운영 체제 요구 사항, RAM 요구 사항, 포트 요구 사항 등을 충족하는 호스트에서 실행되어야 합니다.
@@ -156,6 +157,8 @@ Docker 엔진 23.0.6~28.0.0.
 |===
 
 
+[[step-2-install-podman-or-docker-engine]]
+[[podman-configuration]]
 == 2단계: Podman 또는 Docker Engine 설치
 
 운영 체제에 따라 에이전트를 설치하기 전에 Podman 또는 Docker Engine이 필요합니다.
@@ -341,6 +344,7 @@ sudo systemctl enable docker && sudo systemctl start docker
 ====
 
 
+[[step-3-set-up-networking]]
 == 3단계: 네트워킹 설정
 
 하이브리드 클라우드 환경 내에서 콘솔 에이전트가 리소스와 프로세스를 관리할 수 있도록 네트워킹을 설정합니다.  예를 들어, 대상 네트워크에 연결이 가능한지, 아웃바운드 인터넷 접속이 가능한지 확인해야 합니다.
@@ -445,6 +449,8 @@ NTP 활성화:: NetApp Data Classification을 사용하여 회사 데이터 소�
 
 
 
+[[step-4-set-up-permissions-for-the-console-agent]]
+[[agent-permissions-google]]
 == 4단계: 콘솔 에이전트에 대한 권한 설정
 
 Google Cloud 서비스 계정은 콘솔 에이전트에 Google Cloud의 리소스를 관리하는 데 필요한 권한을 제공하는 데 필요합니다.  콘솔 에이전트를 만들 때 이 서비스 계정을 콘솔 에이전트 VM과 연결해야 합니다.
@@ -504,6 +510,7 @@ https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_
 
 
 
+[[step-5-set-up-shared-vpc-permissions]]
 == 5단계: 공유 VPC 권한 설정
 
 공유 VPC를 사용하여 서비스 프로젝트에 리소스를 배포하는 경우 권한을 준비해야 합니다.
@@ -556,6 +563,7 @@ link:reference-permissions-gcp.html["에이전트 서비스 계정 정책"]
 ====
 
 
+[[step-6-enable-google-cloud-apis]]
 == 6단계: Google Cloud API 활성화
 
 Google Cloud에 콘솔 에이전트를 배포하려면 먼저 몇 가지 Google Cloud API를 사용 설정해야 합니다.
@@ -580,6 +588,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloud �
 
 
 
+[[step-7-install-the-console-agent]]
 == 7단계: 콘솔 에이전트 설치
 
 필수 구성 요소를 모두 완료한 후에는 Linux 호스트에 소프트웨어를 수동으로 설치할 수 있습니다.
@@ -746,6 +755,7 @@ NOTE: 설치에 실패하면 로그와 보고서를 보고 문제 해결에 도�
 
 
 
+[[step-8-provide-permissions-to-console-agent]]
 == 8단계: 콘솔 에이전트에 권한 제공
 
 이전에 설정한 Google Cloud 권한을 콘솔 에이전트에 제공해야 합니다.  권한을 제공하면 콘솔 에이전트가 Google Cloud에서 데이터 및 스토리지 인프라를 관리할 수 있습니다.

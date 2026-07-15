@@ -29,6 +29,8 @@ XYZ Corporation 콘솔의 *조직 관리자*는 각 지역에 대한 초기 조�
 
 
 
+[[organization-administration-roles]]
+[[organization-admin-roles]]
 == 조직 관리 역할
 
 [cols="2,1,1"]
@@ -79,6 +81,7 @@ XYZ Corporation 콘솔의 *조직 관리자*는 각 지역에 대한 초기 조�
 |===
 
 
+[[federation-roles]]
 == 연방 역할
 
 [cols="2,1,1"]
@@ -105,6 +108,7 @@ XYZ Corporation 콘솔의 *조직 관리자*는 각 지역에 대한 초기 조�
 |===
 
 
+[[partnership-roles]]
 == 파트너십 역할
 
 [cols="2,1,1"]
@@ -125,6 +129,8 @@ XYZ Corporation 콘솔의 *조직 관리자*는 각 지역에 대한 초기 조�
 |===
 
 
+[[super-admin-and-viewer-roles]]
+[[super-admin-roles]]
 == 슈퍼 관리자 및 뷰어 역할
 
 *슈퍼 관리자* 역할은 콘솔 기능, 저장소 및 데이터 서비스를 관리할 수 있는 전체 액세스 권한을 제공합니다.  이 역할은 행정과 거버넌스를 감독하는 사람에게 적합합니다.  이와 대조적으로, *슈퍼 뷰어* 역할은 읽기 전용 액세스를 제공하므로 변경하지 않고도 가시성이 필요한 감사자나 이해 관계자에게 이상적입니다.

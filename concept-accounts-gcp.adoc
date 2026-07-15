@@ -18,6 +18,7 @@ NetApp Console Google Cloud 자격 증명을 사용하여 사용자를 대신하
 
 
 
+[[project-and-permissions-for-netapp-console]]
 == NetApp Console 에 대한 프로젝트 및 권한
 
 Google Cloud 프로젝트의 리소스를 관리하기 위해 콘솔을 사용하려면 먼저 콘솔 에이전트를 배포해야 합니다.  에이전트는 귀하의 사내 또는 다른 클라우드 공급자에서 실행될 수 없습니다.
@@ -41,6 +42,7 @@ image:diagram_permissions_gcp.png["Cloud Volumes ONTAP 배포하기 위해 Googl
 
 
 
+[[credentials-and-marketplace-subscriptions]]
 == 자격 증명 및 마켓플레이스 구독
 
 Google Cloud에 콘솔 에이전트를 배포하면 콘솔은 콘솔 에이전트가 있는 프로젝트의 Google Cloud 서비스 계정에 대한 기본 자격 증명 세트를 만듭니다.  이러한 자격 증명은 Cloud Volumes ONTAP 및 NetApp 데이터 서비스 비용을 지불할 수 있도록 Google Cloud Marketplace 구독과 연결되어야 합니다.
@@ -56,6 +58,7 @@ Google Cloud 자격 증명 및 마켓플레이스 구독에 대해 다음 사항
 
 
 
+[[project-for-cloud-volumes-ontap]]
 == Cloud Volumes ONTAP 프로젝트
 
 Cloud Volumes ONTAP 콘솔 에이전트와 동일한 프로젝트에 있을 수도 있고, 다른 프로젝트에 있을 수도 있습니다.  다른 프로젝트에 Cloud Volumes ONTAP 배포하려면 먼저 해당 프로젝트에 콘솔 에이전트 서비스 계정과 역할을 추가해야 합니다.

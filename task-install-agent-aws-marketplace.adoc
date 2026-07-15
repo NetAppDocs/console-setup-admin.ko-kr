@@ -25,6 +25,7 @@ AWS에 에이전트를 배포하면 사용자가 선택한 VPC에서 Linux를 �
 
 
 
+[[step-1-set-up-networking]]
 == 1단계: 네트워킹 설정
 
 하이브리드 클라우드 리소스를 관리하려면 콘솔 에이전트의 네트워크 위치가 다음 요구 사항을 충족하는지 확인하세요.
@@ -145,6 +146,7 @@ NTP 활성화:: NetApp Data Classification을 사용하여 회사 데이터 소�
 
 
 
+[[step-2-set-up-aws-permissions]]
 == 2단계: AWS 권한 설정
 
 마켓플레이스 배포를 준비하려면 AWS에서 IAM 정책을 만들고 이를 IAM 역할에 연결합니다.  AWS Marketplace에서 콘솔 에이전트를 생성하면 해당 IAM 역할을 선택하라는 메시지가 표시됩니다.
@@ -176,6 +178,7 @@ NTP 활성화:: NetApp Data Classification을 사용하여 회사 데이터 소�
 
 
 
+[[step-3-review-instance-requirements]]
 == 3단계: 인스턴스 요구 사항 검토
 
 콘솔 에이전트를 생성할 때 다음 요구 사항을 충족하는 EC2 인스턴스 유형을 선택해야 합니다.
@@ -187,6 +190,7 @@ AWS EC2 인스턴스 유형:: CPU 및 RAM 요구 사항을 충족하는 인스�
 
 
 
+[[step-4-create-the-console-agent]]
 == 4단계: 콘솔 에이전트 만들기
 
 AWS Marketplace에서 직접 콘솔 에이전트를 만듭니다.

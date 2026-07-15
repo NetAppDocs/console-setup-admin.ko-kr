@@ -29,12 +29,14 @@ image:diagram-iam-resource-hierarchy.png["자원 관리의 구성 요소를 보�
 
 
 
+[[identity-and-access-management-components]]
 == 신원 및 접근 관리 구성 요소
 
 NetApp Console IAM은 세 가지 유형의 구성 요소로 구성됩니다. 계층 구조를 정의하는 조직 구성 요소, 해당 계층 구조 내에 할당된 리소스, 그리고 누가 무엇에 액세스할 수 있는지를 제어하는 멤버 및 역할입니다.
 
 
 
+[[netapp-console-organizational-components]]
 === NetApp Console 조직 구성 요소
 
 조직 구성 요소(조직, 폴더 및 프로젝트)는 리소스를 그룹화하고 액세스를 위임하는 방법을 결정하는 계층 구조를 형성합니다.
@@ -56,6 +58,7 @@ NOTE: 조직 관리자 역할을 가진 사용자는 폴더에 리소스를 추�
 
 
 
+[[resources]]
 === 리소스
 
 _리소스_는 NetApp Console이 인식하고 프로젝트에 할당할 수 있는 엔티티입니다. _리소스_에는 스토리지 시스템, Keystone 구독, 일부 NetApp Backup and Recovery 워크로드 및 NetApp Console 에이전트가 포함됩니다.
@@ -87,6 +90,7 @@ link:task-iam-associate-agents.html["프로젝트에 에이전트를 연결하�
 
 
 
+[[members-and-roles]]
 === 구성원 및 역할
 
 멤버는 조직 내 사용자 및 서비스 계정입니다. 역할은 사용자가 수행할 수 있는 작업과 조직, 폴더 또는 프로젝트와 같은 계층 구조의 어느 수준에서 수행할 수 있는지를 정의합니다.
@@ -115,12 +119,14 @@ link:reference-iam-predefined-roles.html["액세스 역할에 대해 알아보�
 
 
 
+[[iam-strategy-examples]]
 == IAM 전략 사례
 
 적절한 IAM 구조는 조직의 규모와 팀 구성 방식에 따라 달라집니다. 다음 예시는 다양한 조직에서 IAM 계층 구조를 활용하여 액세스를 효과적으로 관리하는 방법을 보여줍니다.
 
 
 
+[[small-organization-strategy]]
 === 소규모 조직 전략
 
 사용자 수가 50명 미만이고 스토리지 관리가 중앙 집중식으로 이루어지는 조직의 경우, 슈퍼 관리자 및 슈퍼 뷰어 역할을 사용하는 간소화된 접근 방식을 고려해 보세요.
@@ -140,6 +146,7 @@ link:reference-iam-predefined-roles.html["액세스 역할에 대해 알아보�
 
 
 
+[[multi-regional-enterprise-strategy]]
 === 다지역 기업 전략
 
 지역별 운영 및 전문 팀을 보유한 대규모 조직의 경우, 지리적 또는 사업부 경계를 나타내는 폴더를 사용하는 계층적 접근 방식을 구현하십시오.
@@ -173,6 +180,7 @@ link:reference-iam-predefined-roles.html["액세스 역할에 대해 알아보�
 
 
 
+[[departmental-specialization-strategy]]
 === 학과별 전문화 전략
 
 특정 데이터 서비스 접근 권한이 필요한 전문 팀을 보유한 조직의 경우, 기능적 책임에 기반한 맞춤형 역할 할당을 활용하십시오.
@@ -194,6 +202,7 @@ link:reference-iam-predefined-roles.html["액세스 역할에 대해 알아보�
 
 
 
+[[next-steps-with-iam-in-netapp-console]]
 == NetApp Console 에서 IAM 관련 다음 단계
 
 * link:task-iam-get-started.html["NetApp Console 에서 IAM 시작하기"]

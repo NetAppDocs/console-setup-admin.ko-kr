@@ -25,6 +25,8 @@ AWS에 에이전트를 배포하면 사용자가 선택한 VPC에서 Linux를 �
 
 
 
+[[step-1-set-up-networking-for-deploying-a-console-agent-in-aws]]
+[[networking-aws-agent]]
 == 1단계: AWS에 콘솔 에이전트를 배포하기 위한 네트워킹 설정
 
 콘솔 에이전트를 설치하려는 네트워크 위치가 다음 요구 사항을 지원하는지 확인하세요.  이러한 요구 사항을 통해 콘솔 에이전트는 하이브리드 클라우드의 리소스와 프로세스를 관리할 수 있습니다.
@@ -153,6 +155,8 @@ NTP 활성화:: NetApp Data Classification을 사용하여 회사 데이터 소�
 
 
 
+[[step-2-set-up-aws-permissions-for-the-console-agent]]
+[[aws-permissions-agent]]
 == 2단계: 콘솔 에이전트에 대한 AWS 권한 설정
 
 VPC에 콘솔 에이전트를 배포하려면 먼저 콘솔이 AWS에서 인증을 받아야 합니다. 다음 인증 방법 중 하나를 선택할 수 있습니다.
@@ -282,6 +286,7 @@ VPC에 콘솔 에이전트를 배포하려면 먼저 콘솔이 AWS에서 인증�
 
 
 
+[[step-3-create-the-console-agent]]
 == 3단계: 콘솔 에이전트 만들기
 
 Console 웹 기반 콘솔에서 Console 에이전트를 직접 생성하세요.

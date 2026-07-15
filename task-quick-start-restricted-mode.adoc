@@ -51,6 +51,7 @@ NetApp에서는 고객이 NetApp 담당자와 협력하여 기존 계층화 라�
 ====
 
 
+[[supported-features-and-services-for-netapp-console-in-restricted-mode]]
 == 제한된 모드에서 NetApp Console에 지원되는 기능 및 서비스
 
 다음 표는 제한된 모드로 설치할 때 NetApp Console에서 사용할 수 있는 스토리지 관리 기능, 데이터 서비스 및 관리 기능을 나열합니다.

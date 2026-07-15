@@ -21,12 +21,14 @@ NOTE: vCenter 도구와 함께 Console 에이전트를 배포하면 VM 웹 콘�
 
 
 
+[[prepare-to-install-the-console-agent]]
 == 콘솔 에이전트 설치를 준비하세요
 
 설치하기 전에 VM 호스트가 요구 사항을 충족하는지, 콘솔 에이전트가 인터넷과 대상 네트워크에 액세스할 수 있는지 확인하세요.  NetApp 데이터 서비스 또는 Cloud Volumes ONTAP 사용하려면 콘솔 에이전트가 사용자를 대신하여 작업을 수행할 수 있도록 클라우드 공급자 자격 증명을 생성하세요.
 
 
 
+[[review-console-agent-host-requirements]]
 === 콘솔 에이전트 호스트 요구 사항 검토
 
 콘솔 에이전트를 설치하기 전에 호스트 머신이 설치 요구 사항을 충족하는지 확인하세요.
@@ -43,6 +45,8 @@ NOTE: ESXi 호스트에 직접 설치하는 대신 vCenter 환경에 에이전�
 
 
 
+[[set-up-network-access-for-the-console-agent]]
+[[network-access-agent]]
 === 콘솔 에이전트에 대한 네트워크 액세스 설정
 
 네트워크 관리자와 협력하여 콘솔 에이전트가 필요한 엔드포인트에 대한 아웃바운드 액세스 권한과 대상 네트워크에 대한 연결을 가지고 있는지 확인하세요.
@@ -208,6 +212,8 @@ NTP 활성화:: NetApp Data Classification을 사용하여 회사 데이터 소�
 
 
 
+[[create-console-agent-cloud-permissions-for-aws-or-azure]]
+[[agent-permission-aws-azure]]
 === AWS 또는 Azure에 대한 콘솔 에이전트 클라우드 권한 만들기
 
 온프레미스 콘솔 에이전트와 함께 AWS 또는 Azure에서 NetApp 데이터 서비스를 사용하려면 클라우드 공급자에서 권한을 설정해야 합니다. 그래야 콘솔 에이전트를 설치한 후 자격 증명을 추가할 수 있습니다.
@@ -400,12 +406,14 @@ image:screenshot_azure_client_secret.gif["Microsoft Entra 서비스 주체에 �
 ====
 
 
+[[install-a-console-agent-in-your-vcenter-environment]]
 == vCenter 환경에 Console 에이전트를 설치하세요
 
 NetApp은 vCenter 환경에 Console 에이전트를 설치하는 것을 지원합니다. OVA 파일에는 VMware 환경에 배포할 수 있는 사전 구성된 VM 이미지가 포함되어 있습니다. 파일 다운로드 또는 URL 배포는 NetApp Console에서 직접 이용할 수 있습니다. 이 파일에는 Console 에이전트 소프트웨어와 자체 서명된 인증서가 포함되어 있습니다.
 
 
 
+[[download-the-ova-or-copy-the-url]]
 === OVA를 다운로드하거나 URL을 복사하세요
 
 OVA를 다운로드하거나 NetApp Console 에서 OVA URL을 직접 복사하세요.
@@ -418,6 +426,7 @@ OVA를 다운로드하거나 NetApp Console 에서 OVA URL을 직접 복사하�
 
 
 
+[[deploy-the-agent-in-your-vcenter-environment]]
 === vCenter 환경에 에이전트를 배포하십시오
 
 vCenter 환경에 로그인하여 에이전트를 배포하십시오.
@@ -483,6 +492,7 @@ NOTE: 배포에 실패하면 에이전트 호스트에서 검증 보고서와 �
 
 
 
+[[register-the-console-agent-with-netapp-console]]
 == NetApp Console 에 콘솔 에이전트 등록
 
 Console에 로그인하고 Console 에이전트를 조직과 연결하십시오. 로그인 방법은 Console 사용 모드에 따라 다릅니다. 표준 모드로 Console을 사용하는 경우 SaaS 웹 사이트를 통해 로그인합니다. 제한 모드 또는 비공개 모드로 Console을 사용하는 경우 Console 에이전트 호스트에서 로컬로 로그인합니다.
@@ -508,6 +518,7 @@ Console에 로그인하고 Console 에이전트를 조직과 연결하십시오.
 
 
 
+[[add-cloud-provider-credentials-to-the-console]]
 == 콘솔에 클라우드 공급자 자격 증명 추가
 
 콘솔 에이전트를 설치하고 설정한 후 클라우드 자격 증명을 추가하여 콘솔 에이전트가 AWS 또는 Azure에서 작업을 수행하는 데 필요한 권한을 갖도록 합니다.

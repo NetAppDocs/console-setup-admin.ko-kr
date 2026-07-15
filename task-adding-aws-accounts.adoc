@@ -18,6 +18,7 @@ NetApp Console에서 AWS 계정의 클라우드 리소스를 배포하고 관리
 
 
 
+[[overview]]
 == 개요
 
 AWS 자격 증명을 기존 콘솔 에이전트에 추가하거나 콘솔에 직접 추가할 수 있습니다.
@@ -38,6 +39,7 @@ FSx for ONTAP 생성하고 관리하려면 콘솔에 새로운 AWS 자격 증명
 
 
 
+[[how-to-rotate-credentials]]
 == 자격 증명을 회전하는 방법
 
 NetApp Console 사용하면 에이전트 인스턴스와 연결된 IAM 역할, 신뢰할 수 있는 계정에서 IAM 역할을 맡는 방법, AWS 액세스 키를 제공하는 방법 등 여러 가지 방법으로 AWS 자격 증명을 제공할 수 있습니다. link:concept-accounts-aws.html["AWS 자격 증명 및 권한에 대해 자세히 알아보세요"] .
@@ -48,6 +50,8 @@ NetApp Console 사용하면 에이전트 인스턴스와 연결된 IAM 역할, �
 
 
 
+[[add-additional-credentials-to-a-console-agent]]
+[[add-credentials-agent-aws]]
 == 콘솔 에이전트에 추가 자격 증명 추가
 
 퍼블릭 클라우드 환경 내에서 리소스와 프로세스를 관리하는 데 필요한 권한을 갖도록 콘솔 에이전트에 추가 AWS 자격 증명을 추가합니다.  다른 계정의 IAM 역할에 대한 ARN을 제공하거나 AWS 액세스 키를 제공할 수 있습니다.
@@ -56,6 +60,7 @@ link:concept-accounts-aws.html["NetApp Console AWS 자격 증명 및 권한을 �
 
 
 
+[[grant-permissions]]
 === 권한 부여
 
 콘솔 에이전트에 AWS 자격 증명을 추가하기 전에 권한을 부여하세요.  권한을 통해 콘솔 에이전트는 해당 AWS 계정 내의 리소스와 프로세스를 관리할 수 있습니다.  신뢰할 수 있는 계정이나 AWS 키의 역할 ARN을 사용하여 권한을 제공할 수 있습니다.
@@ -118,6 +123,7 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AW
 
 
 
+[[add-the-credentials-to-an-existing-agent]]
 === 기존 에이전트에 자격 증명 추가
 
 AWS 계정에 필요한 권한을 제공한 후 해당 계정의 자격 증명을 기존 에이전트에 추가할 수 있습니다.  이를 통해 동일한 에이전트를 사용하여 해당 계정에서 Cloud Volumes ONTAP 시스템을 시작할 수 있습니다.
@@ -148,12 +154,15 @@ image:screenshot_accounts_switch_aws.png["세부 정보 및 자격 증명 페이
 
 
 
+[[add-credentials-to-the-console-for-creating-a-console-agent]]
+[[add-aws-credentials-agent-creation]]
 == 콘솔 에이전트를 생성하기 위해 콘솔에 자격 증명을 추가합니다.
 
 콘솔 에이전트를 만드는 데 필요한 권한을 부여하는 IAM 역할의 ARN을 제공하여 AWS 자격 증명을 추가합니다.  새로운 에이전트를 생성할 때 이러한 자격 증명을 선택할 수 있습니다.
 
 
 
+[[set-up-the-iam-role]]
 === IAM 역할 설정
 
 NetApp Console SaaS(Software as a Service) 애플리케이션이 역할을 수임할 수 있도록 IAM 역할을 설정합니다.
@@ -207,6 +216,7 @@ IAM에서 계정 간 리소스 액세스에 대한 자세한 내용은 link:http
 
 
 
+[[add-the-credentials]]
 === 자격 증명을 추가하세요
 
 IAM 역할에 필요한 권한을 제공한 후 콘솔에 역할 ARN을 추가합니다.
@@ -230,12 +240,15 @@ image:screenshot-settings-icon-organization.png["콘솔 오른쪽 상단에 있�
 
 
 
+[[add-credentials-to-the-console-for-amazon-fsx-for-ontap]]
 == Amazon FSx for ONTAP 콘솔에 자격 증명 추가
 
 자세한 내용은 https://docs.netapp.com/us-en/storage-management-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Amazon FSx for ONTAP용 콘솔 설명서"^]를 참조하십시오.
 
 
 
+[[configure-an-aws-subscription]]
+[[subscribe]]
 == AWS 구독 구성
 
 AWS 자격 증명을 추가한 후에는 해당 자격 증명을 사용하여 AWS Marketplace 구독을 구성할 수 있습니다. 구독을 통해 NetApp 데이터 서비스와 Cloud Volumes ONTAP 에 대한 비용을 시간당 요금(PAYGO) 또는 연간 계약으로 지불할 수 있습니다.
@@ -290,6 +303,7 @@ NetApp Console 로 리디렉션됩니다.
 
 
 
+[[associate-an-existing-subscription-with-your-organization]]
 == 기존 구독을 조직과 연결
 
 AWS Marketplace에서 구독을 신청할 때 마지막 단계는 구독을 조직과 연결하는 것입니다. 이 단계를 완료하지 않으면 조직에서 해당 구독을 사용할 수 없습니다.
@@ -368,6 +382,7 @@ image:screenshot-credentials-with-subscription.png["AWS 자격 증명을 보여�
 
 
 
+[[edit-credentials]]
 == 자격 증명 편집
 
 계정 유형(AWS 키 또는 역할 가정)을 변경하거나, 이름을 편집하거나, 자격 증명 자체(키 또는 역할 ARN)를 업데이트하여 AWS 자격 증명을 편집합니다.
@@ -383,6 +398,7 @@ NOTE: 콘솔 에이전트 인스턴스 또는 Amazon FSx for ONTAP 인스턴스�
 
 
 
+[[delete-credentials]]
 == 자격 증명 삭제
 
 더 이상 자격 증명이 필요하지 않으면 삭제할 수 있습니다.  시스템과 연결되지 않은 자격 증명만 삭제할 수 있습니다.

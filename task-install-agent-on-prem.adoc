@@ -23,12 +23,15 @@ NOTE: VMware 사용자라면 OVA를 사용하여 vCenter에 Console 에이전트
 
 
 
+[[prepare-to-install-the-console-agent]]
 == 콘솔 에이전트 설치를 준비하세요
 
 콘솔 에이전트를 설치하기 전에 설치 요구 사항을 충족하는 호스트 머신이 있는지 확인해야 합니다.  또한 네트워크 관리자와 협력하여 콘솔 에이전트가 필요한 엔드포인트에 대한 아웃바운드 액세스 권한과 대상 네트워크에 대한 연결 권한을 가지고 있는지 확인해야 합니다.
 
 
 
+[[review-console-agent-host-requirements]]
+[[os-req-agent]]
 === 콘솔 에이전트 호스트 요구 사항 검토
 
 운영 체제, RAM 및 포트 요구 사항을 충족하는 x86 호스트에서 Console 에이전트를 실행합니다. Console 에이전트를 설치하기 전에 호스트가 이러한 요구 사항을 충족하는지 확인하십시오.
@@ -154,6 +157,8 @@ Docker 엔진 23.0.6~28.0.0.
 |===
 
 
+[[set-up-network-access-for-the-console-agent]]
+[[network-access-agent]]
 === 콘솔 에이전트에 대한 네트워크 액세스 설정
 
 콘솔 에이전트가 리소스를 관리할 수 있도록 네트워크 액세스를 설정합니다.  대상 네트워크에 연결하고 특정 엔드포인트에 대한 아웃바운드 인터넷 액세스가 필요합니다.
@@ -319,6 +324,8 @@ NTP 활성화:: NetApp Data Classification을 사용하여 회사 데이터 소�
 
 
 
+[[create-console-agent-cloud-permissions-for-aws-or-azure]]
+[[agent-permission-aws-azure]]
 === AWS 또는 Azure에 대한 콘솔 에이전트 클라우드 권한 만들기
 
 온프레미스 콘솔 에이전트를 사용하여 AWS 또는 Azure에서 NetApp 데이터 서비스를 사용하려면 클라우드 공급자에서 권한을 설정한 다음 콘솔 에이전트를 설치한 후 자격 증명을 추가해야 합니다.
@@ -511,12 +518,15 @@ image:screenshot_azure_client_secret.gif["Microsoft Entra 서비스 주체에 �
 ====
 
 
+[[manually-install-a-console-agent]]
 == 콘솔 에이전트를 수동으로 설치합니다.
 
 Console 에이전트를 수동으로 설치할 때는 요구 사항을 충족하도록 시스템 환경을 준비해야 합니다. Linux 시스템이 필요하며, 사용하는 Linux 운영 체제에 따라 Podman 또는 Docker를 설치해야 합니다.
 
 
 
+[[install-podman-or-docker-engine]]
+[[podman-configuration]]
 === Podman 또는 Docker Engine 설치
 
 운영 체제에 따라 에이전트를 설치하기 전에 Podman 또는 Docker Engine이 필요합니다.
@@ -702,6 +712,7 @@ sudo systemctl enable docker && sudo systemctl start docker
 ====
 
 
+[[install-the-console-agent-manually]]
 === 콘솔 에이전트를 수동으로 설치합니다.
 
 기존 온프레미스 Linux 호스트에 콘솔 에이전트 소프트웨어를 다운로드하여 설치합니다.
@@ -840,6 +851,8 @@ NetApp Console 내에서 콘솔 에이전트를 등록해야 합니다.
 
 
 
+[[register-the-console-agent-with-netapp-console]]
+[[register-agent]]
 == NetApp Console 에 콘솔 에이전트 등록
 
 Console에 로그인하고 Console 에이전트를 조직과 연결하세요. 로그인 방법은 Console 사용 모드에 따라 다릅니다. 표준 모드로 Console을 사용하는 경우 SaaS 웹사이트를 통해 로그인합니다. 제한된 모드 또는 비공개 모드로 Console을 사용하는 경우 Console 에이전트 호스트에서 로컬로 로그인합니다.
@@ -865,6 +878,7 @@ Console에 로그인하고 Console 에이전트를 조직과 연결하세요. �
 
 
 
+[[provide-cloud-provider-credentials-to-netapp-console]]
 == NetApp Console 에 클라우드 공급자 자격 증명 제공
 
 콘솔 에이전트를 설치하고 설정한 후 클라우드 자격 증명을 추가하여 콘솔 에이전트가 AWS 또는 Azure에서 작업을 수행하는 데 필요한 권한을 갖도록 합니다.

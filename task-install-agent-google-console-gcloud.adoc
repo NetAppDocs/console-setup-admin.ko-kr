@@ -25,6 +25,8 @@ Google Cloud에 에이전트를 배포하면 사용자가 선택한 VPC에서 Li
 
 
 
+[[step-1-set-up-networking]]
+[[networking-gcp-agent]]
 == 1단계: 네트워킹 설정
 
 콘솔 에이전트가 대상 네트워크에 연결하고 아웃바운드 인터넷에 접속하여 리소스를 관리할 수 있도록 네트워킹을 설정합니다.
@@ -135,6 +137,8 @@ NTP 활성화:: NetApp Data Classification을 사용하여 회사 데이터 소�
 
 
 
+[[step-2-set-up-permissions-to-create-the-console-agent]]
+[[agent-permissions-google]]
 == 2단계: 콘솔 에이전트를 생성하기 위한 권한 설정
 
 콘솔에서 콘솔 에이전트를 배포하려면 먼저 콘솔 에이전트 VM을 배포하는 Google 플랫폼 사용자의 권한을 설정해야 합니다.
@@ -255,6 +259,8 @@ https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single
 
 
 
+[[step-3-create-a-google-cloud-service-account-to-use-with-the-agent]]
+[[console-permissions-google]]
 == 3단계: 에이전트와 함께 사용할 Google Cloud 서비스 계정을 생성합니다.
 
 Google Cloud 서비스 계정은 콘솔 에이전트에 Google Cloud의 리소스를 관리하는 데 필요한 권한을 제공하는 데 필요합니다.  콘솔 에이전트를 만들 때 이 서비스 계정을 콘솔 에이전트 VM과 연결해야 합니다.
@@ -314,6 +320,7 @@ https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_
 
 
 
+[[step-4-set-up-shared-vpc-permissions]]
 == 4단계: 공유 VPC 권한 설정
 
 공유 VPC를 사용하여 서비스 프로젝트에 리소스를 배포하는 경우 권한을 준비해야 합니다.
@@ -366,6 +373,7 @@ link:reference-permissions-gcp.html["에이전트 서비스 계정 정책"]
 ====
 
 
+[[step-5-enable-google-cloud-apis]]
 == 5단계: Google Cloud API 활성화
 
 콘솔 에이전트와 Cloud Volumes ONTAP 배포하기 전에 여러 Google Cloud API를 활성화해야 합니다.
@@ -390,6 +398,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloud �
 
 
 
+[[step-6-create-the-console-agent]]
 == 6단계: 콘솔 에이전트 만들기
 
 콘솔에서 직접 콘솔 에이전트를 만듭니다.

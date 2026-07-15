@@ -20,6 +20,8 @@ NetApp Console, 클라우드 공급자의 마켓플레이스를 사용하거나 
 
 
 
+[[deploy-from-the-netapp-console]]
+[[agent-console-deploy]]
 == NetApp Console에서 배포
 
 NetApp은 표준 모드를 사용할 경우 NetApp Console에서 배포하는 것을 권장합니다. NetApp Console은 네트워킹 및 권한 설정 과정을 안내한 후 클라우드 공급자에서 VM 또는 인스턴스를 자동으로 시작합니다. Console은 네트워킹 및 권한 설정 과정을 안내한 후 클라우드 공급자에서 VM 또는 인스턴스를 자동으로 시작합니다.
@@ -49,6 +51,8 @@ link:task-install-agent-aws-console.html["NetApp Console에서 AWS에 Console �
 
 
 
+[[deploy-from-a-cloud-provider-marketplace]]
+[[agent-marketplace-deploy]]
 == 클라우드 공급자 마켓플레이스에서 배포
 
 AWS 마켓플레이스 또는 Azure 마켓플레이스에서 배포하면 NetApp Console이 아닌 마켓플레이스에서 직접 에이전트 설치가 시작됩니다.
@@ -79,6 +83,8 @@ link:task-install-agent-aws-marketplace.html["마켓플레이스에서 AWS에 Co
 
 
 
+[[manually-install-on-a-linux-host-in-the-cloud]]
+[[agent-cloud-manual-deploy]]
 == 클라우드의 Linux 호스트에 수동으로 설치
 
 수동 설치를 사용하면 AWS, Azure, Google Cloud 또는 온프레미스에서 사용자가 제공하고 관리하는 Linux 호스트에 Console 에이전트 소프트웨어를 직접 설치할 수 있습니다.
@@ -108,6 +114,8 @@ link:task-install-agent-aws-manual.html["AWS에 Console 에이전트를 수동�
 
 
 
+[[manually-install-on-premises-using-vcenter-ova]]
+[[agent-ova-on-prem-deploy]]
 == vCenter(OVA)를 사용하여 온프레미스에 수동으로 설치합니다.
 
 VMware vCenter를 사용하는 경우 OVA(Open Virtual Appliance) 파일을 가져와 Console 에이전트를 배포할 수 있습니다. OVA는 vSphere 클라이언트를 사용하여 배포하는 사전 구성된 VM 이미지로, Linux를 설치하거나 컨테이너 런타임을 구성할 필요가 없습니다.
@@ -142,6 +150,8 @@ link:task-install-agent-on-prem-ova.html["vCenter를 사용하여 온프레미�
 
 
 
+[[manually-install-on-premises-without-vcenter]]
+[[agent-manual-on-prem-deploy]]
 == 온프레미스에 수동으로 설치(vCenter 없이)
 
 온프레미스 Linux 호스트에 Console 에이전트를 수동으로 설치할 수 있습니다. Linux 호스트와 컨테이너 런타임(Docker 또는 Podman)을 설정한 다음 Console 에이전트를 설치해야 합니다.

@@ -24,6 +24,7 @@ Cloud Volumes ONTAP 시스템에 아웃바운드 인터넷 액세스가 불가�
 
 
 
+[[supported-configurations]]
 == 지원되는 구성
 
 * Cloud Volumes ONTAP 시스템을 서비스하는 에이전트의 경우 투명 프록시 서버가 지원됩니다.  Cloud Volumes ONTAP 과 함께 NetApp 데이터 서비스를 사용하는 경우 투명 프록시 서버를 사용할 수 있는 Cloud Volumes ONTAP 용 전용 에이전트를 만듭니다.
@@ -37,6 +38,7 @@ IMPORTANT: 프록시를 구성한 후에는 프록시 유형을 변경할 수 �
 
 
 
+[[enable-an-explicit-proxy-on-a-console-agent]]
 == 콘솔 에이전트에서 명시적 프록시 활성화
 
 콘솔 에이전트가 프록시 서버를 사용하도록 구성하면 해당 에이전트와 해당 에이전트가 관리하는 Cloud Volumes ONTAP 시스템(HA 중재자 포함)은 모두 프록시 서버를 사용합니다.
@@ -71,6 +73,8 @@ IMPORTANT: 프록시를 구성한 후에는 프록시 유형을 변경할 수 �
 
 
 
+[[enable-a-transparent-proxy-for-a-console-agent]]
+[[transparent-proxy]]
 == 콘솔 에이전트에 투명 프록시 활성화
 
 Cloud Volumes ONTAP 만이 콘솔 에이전트에서 투명 프록시 사용을 지원합니다.  Cloud Volumes ONTAP 외에 NetApp 데이터 서비스를 사용하는 경우 데이터 서비스나 Cloud Volumes ONTAP 에 사용할 별도의 에이전트를 만들어야 합니다.
@@ -110,6 +114,7 @@ Cloud Volumes ONTAP 만이 콘솔 에이전트에서 투명 프록시 사용을 
 
 
 
+[[modify-the-transparent-proxy-for-the-console-agent]]
 === 콘솔 에이전트에 대한 투명 프록시 수정
 
 콘솔 에이전트의 기존 투명 프록시 서버는 다음 방법을 사용하여 업데이트할 수 있습니다. `proxy update` 명령어를 사용하거나 투명 프록시 서버를 제거하려면 다음 방법을 사용하십시오. `proxy remove` 명령.  더 자세한 내용은 관련 문서를 참조하십시오.link:reference-agent-maint-console-proxy.html["에이전트 유지 관리 콘솔"] .
@@ -119,12 +124,14 @@ IMPORTANT: 프록시를 구성한 후에는 프록시 유형을 변경할 수 �
 
 
 
+[[update-the-console-agent-proxy-if-it-loses-access-to-the-internet]]
 == 인터넷에 액세스할 수 없게 되면 콘솔 에이전트 프록시를 업데이트합니다.
 
 네트워크의 프록시 구성이 변경되면 에이전트가 인터넷에 액세스할 수 없게 될 수 있습니다.  예를 들어, 누군가가 프록시 서버의 비밀번호를 변경하거나 인증서를 업데이트하는 경우입니다.  이 경우 콘솔 에이전트 호스트에서 직접 UI에 액세스하여 설정을 업데이트해야 합니다.  콘솔 에이전트 호스트에 대한 네트워크 액세스가 가능하고 콘솔에 로그인할 수 있는지 확인하세요.
 
 
 
+[[enable-direct-api-traffic]]
 == 직접 API 트래픽 활성화
 
 콘솔 에이전트가 프록시 서버를 사용하도록 구성한 경우 콘솔 에이전트에서 직접 API 트래픽을 활성화하여 프록시를 거치지 않고 클라우드 공급자 서비스로 직접 API 호출을 보낼 수 있습니다. AWS, Azure 또는 Google Cloud에서 실행되는 에이전트는 이 옵션을 지원합니다.

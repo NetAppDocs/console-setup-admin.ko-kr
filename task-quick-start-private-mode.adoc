@@ -32,12 +32,14 @@ NetApp Console은 온프레미스 또는 보안 클라우드 환경에 설치할
 
 
 
+[[supported-features-and-services-for-netapp-console-in-private-mode]]
 == 비공개 모드에서 NetApp Console에 지원되는 기능 및 서비스
 
 다음 표는 NetApp Console을 프라이빗 모드로 설치했을 때 사용할 수 있는 스토리지 관리 기능, 데이터 서비스 및 관리 기능을 나열합니다. NetApp Console을 클라우드에 설치하는 경우와 온프레미스에 설치하는 경우 기능이 다를 수 있습니다.
 
 
 
+[[private-mode-installed-in-the-cloud]]
 === 클라우드에 설치된 프라이빗 모드
 
 [cols="3*"]
@@ -112,6 +114,7 @@ https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-manage
 |===
 
 
+[[private-mode-installed-on-premises]]
 === 온프레미스에 설치된 프라이빗 모드
 
 [cols="3*"]

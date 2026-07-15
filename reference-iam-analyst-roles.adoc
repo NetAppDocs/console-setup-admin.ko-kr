@@ -18,6 +18,7 @@ summary: 운영 지원 분석가 역할을 사용자에게 할당하면 해당 �
 
 
 
+[[operational-support-analyst]]
 == 운영 지원 분석가
 
 [cols="1,2"]

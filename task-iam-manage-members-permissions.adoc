@@ -21,6 +21,7 @@ Console 내에서 액세스 역할에 따라 사용자에게 프로젝트 또는
 
 
 
+[[understand-how-access-is-granted-in-netapp-console]]
 == NetApp Console 에서 액세스 권한이 부여되는 방식을 이해하십시오.
 
 NetApp Console은 역할 기반 액세스 제어(RBAC)를 사용하여 권한을 관리합니다. 사용자에게 개별적으로 또는 연합 그룹을 통해 역할을 할당할 수 있습니다. 각 역할은 특정 리소스에 대해 허용되는 작업을 정의합니다.
@@ -35,6 +36,8 @@ NetApp Console 에서 액세스 권한을 부여할 때 다음 사항에 유의�
 
 
 
+[[add-members-to-your-organization]]
+[[add-members]]
 == 조직에 구성원 추가
 
 NetApp Console 사용자 계정, 서비스 계정 및 페더레이션 그룹의 세 가지 유형의 멤버를 지원합니다.
@@ -47,6 +50,7 @@ NetApp Console 사용자 계정, 서비스 계정 및 페더레이션 그룹의 
 
 
 
+[[add-a-user]]
 === 사용자 추가
 
 사용자는 NetApp Console 에 가입하지만, 조직 관리자, 폴더 관리자 또는 프로젝트 관리자가 해당 사용자를 조직, 폴더 또는 프로젝트에 추가해야 리소스에 액세스할 수 있습니다.
@@ -86,6 +90,8 @@ NOTE: 연합 그룹에 속한 사용자를 추가하는 경우, 해당 사용자
 
 
 
+[[add-a-service-account]]
+[[service-account]]
 === 서비스 계정 추가
 
 서비스 계정을 사용하면 작업을 자동화하고 콘솔 API에 안전하게 연결할 수 있습니다. 간단한 설정을 위해서는 클라이언트 ID와 암호를 선택하고, 자동화 환경이나 클라우드 네이티브 환경에서 보안을 강화하려면 JWT(JSON Web Token)를 선택하십시오. 보안 요구 사항에 맞는 방법을 선택하십시오.
@@ -132,6 +138,7 @@ link:reference-iam-predefined-roles.html["액세스 역할에 대해 알아보�
 
 
 
+[[add-a-federated-group-to-your-organization]]
 == 조직에 연합 그룹을 추가하세요
 
 ID 공급자(IdP)에서 페더레이션 그룹을 조직에 추가하고 하나 이상의 역할을 할당할 수 있습니다. 연합 그룹의 구성원은 콘솔에서 그룹에 할당한 역할을 상속받습니다.
@@ -171,6 +178,7 @@ IMPORTANT: 콘솔에 페더레이션 그룹을 추가하고 역할을 할당하�
 
 
 
+[[related-information]]
 == 관련 정보
 
 * link:concept-identity-and-access-management.html["NetApp Console 에서 ID 및 액세스 관리에 대해 알아보세요"]

@@ -27,6 +27,8 @@ NOTE: 이 항목에서는 NetApp Console 표준 모드 3.9.55 이하 버전에 �
 
 
 
+[[update-your-endpoint-list-to-the-revised-list-for-4-0-0-and-higher]]
+[[update-endpoint-list]]
 == 4.0.0 이상에 대한 개정된 목록으로 엔드포인트 목록을 업데이트하세요.
 
 버전 4.0.0부터 콘솔 에이전트에 필요한 엔드포인트 수가 줄었습니다.  4.0.0 이전의 기존 배포는 계속 지원됩니다.  4.0.0 이상으로 업그레이드한 후, 편리한 시기에 허용 목록에서 이전 엔드포인트를 제거할 수 있습니다.
@@ -106,6 +108,7 @@ systemctl status netapp-service-manager.service
 
 
 
+[[endpoints-for-netapp-console-and-console-agents-for-3-9-55-and-below]]
 == 3.9.55 이하 NetApp Console 및 콘솔 에이전트의 엔드포인트
 
 이러한 엔드포인트는 콘솔 에이전트 3.9.55 이하에 사용됩니다.
@@ -152,6 +155,7 @@ NetApp 랜섬웨어 복원력이나 백업 및 복구를 사용하지 않는 한
 |===
 
 
+[[cloud-provider-endpoints-contacted-by-the-console-agent]]
 == 콘솔 에이전트가 연락한 클라우드 공급자 엔드포인트
 
 콘솔 에이전트가 클라우드 공급자에 배포된 경우 추가 엔드포인트에 액세스할 수 있어야 합니다.
@@ -167,12 +171,14 @@ NetApp 랜섬웨어 복원력이나 백업 및 복구를 사용하지 않는 한
 
 
 
+[[data-services-endpoints-contacted-by-the-console-agent]]
 == 콘솔 에이전트가 접속한 데이터 서비스 엔드포인트
 
 콘솔 에이전트는 일부 NetApp 데이터 서비스와 Cloud Volumes ONTAP 지원하기 위해 추가적인 아웃바운드 인터넷 액세스가 필요합니다.
 
 
 
+[[endpoints-for-cloud-volumes-ontap]]
 === Cloud Volumes ONTAP 의 엔드포인트
 
 * link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/reference-networking-aws.html#outbound-internet-access-for-cloud-volumes-ontap-nodes["AWS의 Cloud Volumes ONTAP 엔드포인트"]

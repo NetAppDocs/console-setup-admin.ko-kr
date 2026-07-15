@@ -26,6 +26,7 @@ NetApp은 각 역할에 필요한 작업 권한만 포함하도록 최소 권한
 
 
 
+[[types-of-console-organization-members]]
 == 콘솔 조직 구성원의 유형
 
 NetApp Console 조직에는 세 가지 유형의 구성원이 있습니다.
@@ -39,6 +40,7 @@ link:task-iam-manage-members-permissions.html#add-members["조직에 구성원�
 
 
 
+[[predefined-roles-in-netapp-console]]
 == NetApp Console 의 사전 정의된 역할
 
 NetApp Console 조직 구성원에게 할당할 수 있는 사전 정의된 역할이 포함되어 있습니다. 각 역할에는 구성원이 할당된 범위(조직, 폴더 또는 프로젝트) 내에서 수행할 수 있는 작업을 지정하는 권한이 포함되어 있습니다.

@@ -4,6 +4,7 @@
 
 
 
+[[connector-3-9-54]]
 === 커넥터 3.9.54
 
 BlueXP 커넥터의 이번 릴리스에는 보안 개선, 버그 수정 및 다음과 같은 새로운 기능이 포함되어 있습니다.
@@ -17,6 +18,7 @@ BlueXP 커넥터의 이번 릴리스에는 보안 개선, 버그 수정 및 다�
 
 
 
+[[bluexp-identity-and-access-management-iam]]
 === BlueXP ID 및 액세스 관리(IAM)
 
 BlueXP 의 ID 및 액세스 관리 기능은 이제 다음과 같은 기능을 제공합니다.

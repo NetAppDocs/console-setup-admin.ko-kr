@@ -20,12 +20,14 @@ NetApp Console은 새 조직을 생성할 때 자동으로 프로젝트를 하�
 
 
 
+[[using-folders-and-projects-to-organize-resources]]
 == 폴더와 프로젝트를 사용하여 리소스를 정리하세요
 
 NetApp Console 에서 조직은 리소스를 구성하는 데 도움이 되는 폴더와 프로젝트로 구성됩니다. 폴더를 사용하면 관련 프로젝트를 그룹화할 수 있고, 프로젝트를 사용하면 리소스와 구성원 접근 권한을 관리할 수 있습니다.
 
 
 
+[[folders]]
 === 폴더
 
 폴더는 관련된 프로젝트를 정리하는 데 도움이 됩니다. 조직 구조의 다양한 계층을 나타내기 위해 중첩 폴더를 만들 수 있습니다. 예를 들어, 각 사업부별로 최상위 폴더를 만들고 그 안에 해당 사업부 내의 여러 팀별로 하위 폴더를 만들 수 있습니다. 그다음에는 폴더 안에 프로젝트를 생성합니다.
@@ -64,6 +66,7 @@ image:diagram-iam-resource-association-folder-3.png["두 개의 프로젝트(프
 ====
 
 
+[[projects]]
 === 프로젝트
 
 구성원이 리소스를 관리할 수 있도록 리소스와 프로젝트를 연결하세요. 리소스는 관리 및 사용자 접근을 위해 프로젝트와 연결되어야 합니다.
@@ -74,6 +77,7 @@ image:diagram-iam-resource-association-folder-3.png["두 개의 프로젝트(프
 
 
 
+[[add-a-folder-or-project]]
 == 폴더 또는 프로젝트 추가
 
 프로젝트를 추가하여 리소스를 관리하고, 폴더를 추가하여 관련 프로젝트를 그룹화하세요. 새 조직을 생성하면 콘솔에 프로젝트 하나가 포함됩니다.
@@ -107,6 +111,7 @@ link:reference-iam-predefined-roles.html["액세스 역할에 대해 알아보�
 
 
 
+[[rename-a-folder-or-project]]
 == 폴더 또는 프로젝트 이름 바꾸기
 
 필요에 따라 폴더 또는 프로젝트 이름을 변경하세요. 이름 변경은 관련 리소스나 회원 접근 권한에 영향을 미치지 않습니다.
@@ -118,6 +123,7 @@ link:reference-iam-predefined-roles.html["액세스 역할에 대해 알아보�
 
 
 
+[[delete-a-folder-or-project]]
 == 폴더 또는 프로젝트 삭제
 
 팀 재편성이나 프로젝트 완료 후 더 이상 필요하지 않은 폴더와 프로젝트를 삭제하세요.
@@ -131,6 +137,8 @@ link:reference-iam-predefined-roles.html["액세스 역할에 대해 알아보�
 
 
 
+[[view-the-resources-associated-with-a-folder-or-project]]
+[[view-associated-resources-members]]
 == 폴더 또는 프로젝트와 관련된 리소스 보기
 
 폴더나 프로젝트와 연관된 리소스와 멤버를 확인하세요.
@@ -152,6 +160,8 @@ image:screenshot-iam-allocated-resources.png["프로젝트에 연결하거나 �
 
 
 
+[[change-the-resources-associated-with-a-folder-or-project]]
+[[modify-resources]]
 == 폴더 또는 프로젝트와 관련된 리소스를 변경합니다.
 
 조직의 요구 사항이 변경됨에 따라 폴더 또는 프로젝트와 연결된 리소스를 변경할 수 있습니다.
@@ -172,6 +182,7 @@ image:screenshot-iam-associate-resources.png["현재 연결되어 있지 않은 
 
 
 
+[[view-members-associated-with-a-folder-or-project]]
 == 폴더 또는 프로젝트와 연관된 멤버 보기
 
 *조직* 페이지에서 폴더 또는 프로젝트와 관련된 구성원을 볼 수 있습니다.
@@ -190,6 +201,8 @@ image:screenshot-iam-member-access.png["프로젝트에 액세스할 수 있는 
 
 
 
+[[modify-member-access-to-a-folder-or-project]]
+[[modify-members]]
 == 폴더 또는 프로젝트에 대한 멤버 액세스 수정
 
 리소스 접근을 제어하려면 멤버 접근 권한을 수정하세요. 폴더 수준에서 할당된 역할은 모든 하위 프로젝트 및 폴더에 상속된다는 점을 기억하십시오.
@@ -211,6 +224,7 @@ image:screenshot-iam-member-access.png["프로젝트에 액세스할 수 있는 
 
 
 
+[[related-information]]
 == 관련 정보
 
 * link:concept-identity-and-access-management.html["NetApp Console 에서 ID 및 액세스에 대해 알아보세요"]

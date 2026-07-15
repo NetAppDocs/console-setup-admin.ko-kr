@@ -29,6 +29,7 @@ VM 웹 콘솔을 사용하여 다음 유지 관리 작업을 수행합니다.
 
 
 
+[[access-the-vm-maintenance-console]]
 == VM 유지 관리 콘솔에 액세스
 
 vSphere 클라이언트를 통해 유지 관리 콘솔에 액세스할 수 있습니다.
@@ -42,6 +43,7 @@ vSphere 클라이언트를 통해 유지 관리 콘솔에 액세스할 수 있�
 
 
 
+[[change-the-maint-user-password]]
 === 메인트 사용자 비밀번호 변경
 
 비밀번호를 변경할 수 있습니다. `maint` 사용자.
@@ -57,6 +59,7 @@ vSphere 클라이언트를 통해 유지 관리 콘솔에 액세스할 수 있�
 
 
 
+[[increase-the-cpu-or-ram-of-the-vm-instance]]
 === VM 인스턴스의 CPU 또는 RAM을 늘리세요
 
 콘솔 에이전트를 호스팅하는 VM 인스턴스의 CPU 또는 RAM을 늘릴 수 있습니다.
@@ -87,6 +90,7 @@ vCenter 또는 ESXi 호스트에서 VM 인스턴스 설정을 편집한 다음 �
 
 
 
+[[view-network-settings-for-the-agent-vm]]
 === 에이전트 VM에 대한 네트워크 설정 보기
 
 vSphere 클라이언트에서 에이전트 VM의 네트워크 설정을 확인하여 네트워크 문제를 확인하거나 해결할 수 있습니다. 다음 네트워크 설정은 보기만 가능하며 업데이트할 수 없습니다: IP 주소 및 DNS 세부 정보.
@@ -102,6 +106,7 @@ vSphere 클라이언트에서 에이전트 VM의 네트워크 설정을 확인�
 
 
 
+[[update-the-static-routes-for-the-agent-vm]]
 === 에이전트 VM에 대한 정적 경로를 업데이트합니다.
 
 필요에 따라 에이전트 VM에 대한 정적 경로를 추가, 업데이트 또는 제거합니다.
@@ -120,6 +125,7 @@ vSphere 클라이언트에서 에이전트 VM의 네트워크 설정을 확인�
 
 
 
+[[update-domain-search-settings-for-the-agent-vm]]
 === 에이전트 VM에 대한 도메인 검색 설정 업데이트
 
 에이전트 VM에 대한 검색 도메인 설정을 업데이트할 수 있습니다.
@@ -138,6 +144,8 @@ vSphere 클라이언트에서 에이전트 VM의 네트워크 설정을 확인�
 
 
 
+[[access-the-agent-diagnostic-tools]]
+[[connect-vcenter-host]]
 === 에이전트 진단 도구에 액세스하세요
 
 콘솔 에이전트의 문제를 해결하기 위해 진단 도구에 액세스합니다.  NetApp 지원팀에서 문제를 해결할 때 이를 요청할 수 있습니다.
@@ -153,6 +161,7 @@ vSphere 클라이언트에서 에이전트 VM의 네트워크 설정을 확인�
 
 
 
+[[access-the-agent-diagnostic-tools-remotely]]
 === 원격으로 에이전트 진단 도구에 액세스하세요
 
 Putty와 같은 도구를 사용하면 원격으로 진단 도구에 액세스할 수 있습니다.  일회용 비밀번호를 할당하여 에이전트 VM에 대한 SSH 액세스를 활성화합니다.

@@ -20,6 +20,7 @@ NetApp 지원 사이트 계정을 콘솔 조직과 연결하여 스토리지 관
 
 
 
+[[overview]]
 == 개요
 
 다음 작업을 활성화하려면 NetApp 지원 사이트 자격 증명을 특정 콘솔 계정 일련 번호와 연결해야 합니다.
@@ -39,6 +40,7 @@ NetApp 지원 사이트 계정을 콘솔 조직과 연결하여 스토리지 관
 
 
 
+[[add-an-nss-account]]
 == NSS 계정 추가
 
 콘솔 내의 지원 대시보드에서 콘솔에서 사용할 NetApp 지원 사이트 계정을 추가하고 관리할 수 있습니다.
@@ -82,6 +84,7 @@ NOTE: NetApp 지원 및 라이선싱에 특화된 인증 서비스를 위한 ID 
 
 
 
+[[update-nss-credentials]]
 == NSS 자격 증명 업데이트
 
 보안상의 이유로 NSS 자격 증명은 90일마다 업데이트해야 합니다.  NSS 자격 증명이 만료되면 콘솔 알림 센터에서 알림을 받게 됩니다. link:task-monitor-cm-operations.html#notification-center["알림 센터에 대해 알아보세요"^] .
@@ -107,6 +110,8 @@ NetApp 지원 및 라이선싱과 관련된 인증 서비스를 위한 ID 공급
 
 
 
+[[attach-a-system-to-a-different-nss-account]]
+[[attach-system-nss-account]]
 == 다른 NSS 계정에 시스템 연결
 
 조직에 NetApp 지원 사이트 계정이 여러 개 있는 경우 Cloud Volumes ONTAP 시스템과 연결된 계정을 변경할 수 있습니다.
@@ -131,6 +136,7 @@ image:screenshot-nss-change-account.png["NetApp 지원 사이트 계정과 연�
 
 
 
+[[display-the-email-address-for-an-nss-account]]
 == NSS 계정의 이메일 주소 표시
 
 보안상의 이유로 NSS 계정과 연결된 이메일 주소는 기본적으로 표시되지 않습니다.  NSS 계정의 이메일 주소와 관련 사용자 이름을 볼 수 있습니다.
@@ -146,6 +152,7 @@ TIP: NSS 관리 페이지로 이동하면 콘솔이 표의 각 계정에 대한 
 
 
 
+[[remove-an-nss-account]]
 == NSS 계정 제거
 
 더 이상 콘솔에서 사용하지 않을 NSS 계정을 삭제하세요.

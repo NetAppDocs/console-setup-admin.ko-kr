@@ -22,6 +22,7 @@ NetApp Data Classification은 두 가지 역할을 지원합니다.
 
 
 
+[[compliance-admin]]
 == 규정 준수 관리자
 
 규정 준수 관리자 역할은 조직 수준에서만 NetApp Data Classification 리소스에 대한 액세스를 관리하는 데 사용됩니다. 조직 관리자보다 낮은 권한을 가진 사용자는 NetApp Data Classification을 설치하려면 규정 준수 관리자 역할을 보유해야 합니다.
@@ -34,12 +35,14 @@ NOTE: 규정 준수 관리자는 NetApp Data Classification 버전 1.54에 추�
 
 
 
+[[classification-viewer]]
 == 분류 뷰어
 
 Classification viewer는 NetApp Data Classification의 스캔 결과에는 액세스해야 하지만 구성 리소스에는 액세스할 필요가 없는 사용자를 위해 설계되었습니다. Classification viewer 역할을 가진 사용자는 매핑 및 전체 스캔 결과를 확인하여 스토리지 절약 영역 또는 잠재적인 데이터 위험을 평가할 수 있습니다. Classification viewer 역할을 가진 사용자는 액세스 권한이 있는 리소스에 대한 보고서를 생성할 수도 있습니다. 이러한 사용자는 볼륨, 버킷 또는 데이터베이스 스키마의 스캔을 활성화하거나 비활성화할 수 없습니다.
 
 
 
+[[more-information]]
 == 추가 정보
 
 * link:https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["NetApp Data Classification에 대해 알아보세요"^]

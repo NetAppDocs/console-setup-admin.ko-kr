@@ -176,12 +176,14 @@ Azure Marketplace에서 에이전트를 배포하거나 Linux 호스트에 에�
 ----
 
 
+[[how-azure-permissions-are-used]]
 == Azure 권한이 사용되는 방식
 
 다음 섹션에서는 각 NetApp 스토리지 시스템과 데이터 서비스에 대한 권한이 어떻게 사용되는지 설명합니다.  회사 정책에 따라 필요한 경우에만 권한이 부여되는 경우 이 정보가 유용할 수 있습니다.
 
 
 
+[[azure-netapp-files]]
 === Azure NetApp Files
 
 NetApp Data Classification 사용하여 Azure NetApp Files 데이터를 스캔할 때 에이전트는 다음과 같은 API 요청을 합니다.
@@ -195,6 +197,7 @@ NetApp Data Classification 사용하여 Azure NetApp Files 데이터를 스캔�
 
 
 
+[[netapp-backup-and-recovery]]
 === NetApp Backup and Recovery
 
 다음 섹션에서는 NetApp Backup and Recovery 에서 권한이 사용되는 방식을 설명합니다.
@@ -299,6 +302,7 @@ NetApp Data Classification 사용하여 Azure NetApp Files 데이터를 스캔�
 
 
 
+[[netapp-data-classification]]
 === NetApp Data Classification
 
 데이터 분류를 사용하면 에이전트는 다음과 같은 API 요청을 합니다.
@@ -444,6 +448,7 @@ NetApp Data Classification 사용하여 Azure NetApp Files 데이터를 스캔�
 |===
 
 
+[[cloud-volumes-ontap]]
 === Cloud Volumes ONTAP
 
 에이전트는 Azure에서 Cloud Volumes ONTAP 배포하고 관리하기 위해 다음과 같은 API 요청을 합니다.
@@ -766,6 +771,7 @@ NetApp Data Classification 사용하여 Azure NetApp Files 데이터를 스캔�
 |===
 
 
+[[tiering]]
 === 티어링
 
 NetApp Cloud Tiering 설정하면 에이전트는 다음 API 요청을 합니다.
@@ -798,12 +804,14 @@ NetApp에서는 고객이 NetApp 담당자와 협력하여 기존 계층화 라�
 ====
 
 
+[[change-log]]
 == 변경 로그
 
 권한이 추가되거나 제거되면 아래 섹션에 기록됩니다.
 
 
 
+[[11-november-2025]]
 === 2025년 11월 11일
 
 최소한의 권한과 최소한의 범위를 반영하는 사용자 지정 JSON 정책이 추가되었습니다.
@@ -845,6 +853,7 @@ NetApp에서는 고객이 NetApp 담당자와 협력하여 기존 계층화 라�
 
 
 
+[[9-september-2024]]
 === 2024년 9월 9일
 
 콘솔이 더 이상 Kubernetes 클러스터의 검색 및 관리를 지원하지 않으므로 다음 권한이 JSON 정책에서 제거되었습니다.
@@ -855,6 +864,7 @@ NetApp에서는 고객이 NetApp 담당자와 협력하여 기존 계층화 라�
 
 
 
+[[22-august-2024]]
 === 2024년 8월 22일
 
 다음 권한은 Virtual Machine Scale Sets에 대한 Cloud Volumes ONTAP 지원에 필요하므로 JSON 정책에 추가되었습니다.
@@ -866,6 +876,7 @@ NetApp에서는 고객이 NetApp 담당자와 협력하여 기존 계층화 라�
 
 
 
+[[5-december-2023]]
 === 2023년 12월 5일
 
 NetApp Backup and Recovery 에서 볼륨 데이터를 Azure Blob 스토리지에 백업할 때 다음 권한은 더 이상 필요하지 않습니다.
@@ -881,6 +892,7 @@ NetApp Backup and Recovery 에서 볼륨 데이터를 Azure Blob 스토리지에
 
 
 
+[[12-may-2023]]
 === 2023년 5월 12일
 
 다음 권한은 Cloud Volumes ONTAP 관리에 필요하므로 JSON 정책에 추가되었습니다.
@@ -897,6 +909,7 @@ NetApp Backup and Recovery 에서 볼륨 데이터를 Azure Blob 스토리지에
 
 
 
+[[23-march-2023]]
 === 2023년 3월 23일
 
 데이터 분류에는 "Microsoft.Storage/storageAccounts/delete" 권한이 더 이상 필요하지 않습니다.
@@ -905,6 +918,7 @@ NetApp Backup and Recovery 에서 볼륨 데이터를 Azure Blob 스토리지에
 
 
 
+[[5-january-2023]]
 === 2023년 1월 5일
 
 JSON 정책에 다음 권한이 추가되었습니다.

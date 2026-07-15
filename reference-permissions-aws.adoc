@@ -18,6 +18,7 @@ NetApp Console AWS에서 콘솔 에이전트를 시작하면 에이전트에 해
 
 
 
+[[iam-policies]]
 == IAM 정책
 
 아래에서 제공되는 IAM 정책은 콘솔 에이전트가 AWS 지역에 따라 퍼블릭 클라우드 환경 내의 리소스와 프로세스를 관리하는 데 필요한 권한을 제공합니다.
@@ -745,12 +746,14 @@ NetApp Console AWS에서 콘솔 에이전트를 시작하면 에이전트에 해
 ====
 
 
+[[how-the-aws-permissions-are-used]]
 == AWS 권한은 어떻게 사용되나요?
 
 다음 섹션에서는 각 NetApp Console 관리 또는 데이터 서비스에 대한 권한이 어떻게 사용되는지 설명합니다.  회사 정책에 따라 필요한 경우에만 권한이 부여되는 경우 이 정보가 유용할 수 있습니다.
 
 
 
+[[amazon-fsx-for-ontap]]
 === ONTAP 용 Amazon FSx
 
 콘솔 에이전트는 Amazon FSx for ONTAP 파일 시스템을 관리하기 위해 다음과 같은 API 요청을 합니다.
@@ -785,6 +788,7 @@ NetApp Console AWS에서 콘솔 에이전트를 시작하면 에이전트에 해
 
 
 
+[[amazon-s3-bucket-discovery]]
 === Amazon S3 버킷 검색
 
 콘솔 에이전트는 Amazon S3 버킷을 검색하기 위해 다음 API 요청을 합니다.
@@ -793,6 +797,7 @@ s3:암호화 구성 가져오기
 
 
 
+[[netapp-backup-and-recovery]]
 === NetApp Backup and Recovery
 
 에이전트는 Amazon S3에서 백업을 관리하기 위해 다음과 같은 API 요청을 합니다.
@@ -886,6 +891,7 @@ s3:암호화 구성 가져오기
 
 
 
+[[netapp-data-classification]]
 === NetApp Data Classification
 
 에이전트는 NetApp Data Classification 배포하기 위해 다음 API 요청을 합니다.
@@ -939,6 +945,7 @@ NetApp Data Classification 사용할 때 에이전트는 S3 버킷을 스캔하�
 
 
 
+[[cloud-volumes-ontap]]
 === Cloud Volumes ONTAP
 
 에이전트는 AWS에서 Cloud Volumes ONTAP 배포하고 관리하기 위해 다음과 같은 API 요청을 합니다.
@@ -1198,12 +1205,14 @@ NetApp Data Classification 사용할 때 에이전트는 S3 버킷을 스캔하�
 |===
 
 
+[[change-log]]
 == 변경 로그
 
 권한이 추가되거나 제거되면 아래 섹션에 기록됩니다.
 
 
 
+[[24-february-2026]]
 === 2026년 2월 24일
 
 이제 데이터 분류에 다음 권한이 필요합니다.
@@ -1212,6 +1221,7 @@ cloudformation:ListStacks
 
 
 
+[[11-november-2025]]
 === 2025년 11월 11일
 
 레거시 인덱싱을 사용하지 않는 한 NetApp Backup and Recovery 에는 다음 권한이 더 이상 필요하지 않습니다. 이 페이지의 정책에서 다음 권한이 제거되었습니다.
@@ -1229,6 +1239,7 @@ cloudformation:ListStacks
 
 
 
+[[9-september-2024]]
 === 2024년 9월 9일
 
 NetApp Console 더 이상 NetApp 에지 캐싱 및 Kubernetes 클러스터의 검색과 관리를 지원하지 않기 때문에 표준 지역에 대한 정책 #2에서 권한이 제거되었습니다.
@@ -1280,6 +1291,7 @@ NetApp Console 더 이상 NetApp 에지 캐싱 및 Kubernetes 클러스터의 �
 ====
 
 
+[[9-may-2024]]
 === 2024년 5월 9일
 
 이제 Cloud Volumes ONTAP 에 다음 권한이 필요합니다.
@@ -1288,6 +1300,7 @@ ec2:가용성 구역 설명
 
 
 
+[[6-june-2023]]
 === 2023년 6월 6일
 
 이제 Cloud Volumes ONTAP 에 다음 권한이 필요합니다.
@@ -1296,6 +1309,7 @@ kms:GenerateDataKeyWithoutPlaintext
 
 
 
+[[14-february-2023]]
 === 2023년 2월 14일
 
 NetApp Cloud Tiering 에는 이제 다음 권한이 필요합니다.

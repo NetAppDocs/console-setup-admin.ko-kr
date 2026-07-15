@@ -42,6 +42,7 @@ summary: 콘솔이 수행하는 작업 상태를 모니터링하여 해결해야
 |===
 
 
+[[audit-user-activity-from-the-audit-page]]
 == 감사 페이지에서 사용자 활동을 감사하세요
 
 감사 페이지를 사용하여 누가 작업을 수행했는지 또는 작업의 상태를 식별합니다.
@@ -60,6 +61,7 @@ summary: 콘솔이 수행하는 작업 상태를 모니터링하여 해결해야
 
 
 
+[[download-audit-logs-from-the-audit-page]]
 === 감사 페이지에서 감사 로그를 다운로드하세요
 
 감사 페이지에서 감사 로그를 CSV 파일로 다운로드할 수 있습니다.  이를 통해 조직 내에서 사용자가 수행하는 작업을 기록할 수 있습니다.  CSV 파일에는 감사 페이지에 표시된 열이나 필터에 관계없이 다운로드한 CSV 파일의 모든 열이 포함됩니다.
@@ -70,6 +72,8 @@ summary: 콘솔이 수행하는 작업 상태를 모니터링하여 해결해야
 
 
 
+[[monitor-activities-using-the-notification-center]]
+[[notification-center]]
 == 알림 센터를 사용하여 활동 모니터링
 
 알림은 콘솔 작업을 추적하여 성공 여부를 확인합니다.  이를 통해 현재 로그인 세션 동안 시작한 많은 콘솔 작업의 상태를 볼 수 있습니다.  모든 콘솔 서비스가 알림 센터에 정보를 보고하는 것은 아닙니다.
@@ -80,6 +84,7 @@ summary: 콘솔이 수행하는 작업 상태를 모니터링하여 해결해야
 
 
 
+[[comparing-the-notification-center-with-alerts]]
 === 알림 센터와 경고 비교
 
 알림 센터를 사용하면 시작한 작업의 상태를 보고 특정 유형의 시스템 활동에 대한 알림을 설정할 수 있습니다.  알림을 통해 ONTAP 스토리지 환경에서 용량, 가용성, 성능, 보호 및 보안과 관련된 문제나 잠재적 위험을 확인할 수 있습니다.
@@ -88,6 +93,7 @@ https://docs.netapp.com/us-en/console-alerts/index.html["NetApp Console 알림�
 
 
 
+[[notification-types]]
 === 알림 유형
 
 콘솔은 알림을 다음 범주로 분류합니다.
@@ -116,6 +122,7 @@ https://docs.netapp.com/us-en/console-alerts/index.html["NetApp Console 알림�
 |===
 
 
+[[filter-notifications]]
 === 알림 필터링
 
 기본적으로 모든 활성 알림은 알림 센터에서 볼 수 있습니다.  중요한 알림만 표시되도록 알림을 필터링할 수 있습니다.  "서비스" 및 "알림 유형"별로 필터링할 수 있습니다.
@@ -126,6 +133,7 @@ image:screenshot_notification_filters.png["알림 센터에서 사용할 수 있
 
 
 
+[[dismiss-notifications]]
 === 알림 해제
 
 더 이상 알림을 볼 필요가 없다면 페이지에서 알림을 제거할 수 있습니다.  알림을 개별적으로 또는 한꺼번에 해제할 수 있습니다.
@@ -136,6 +144,7 @@ image:screenshot_notification_filters.png["알림 센터에서 사용할 수 있
 
 
 
+[[set-email-notification-settings]]
 === 이메일 알림 설정
 
 로그인하지 않아도 중요한 시스템 활동에 대한 알림을 받을 수 있도록 특정 유형의 알림을 이메일로 보낼 수 있습니다. 조직이나 계정에 속한 모든 사용자 또는 특정 유형의 시스템 활동을 알아야 하는 다른 수신자에게 이메일을 보낼 수 있습니다.
@@ -169,6 +178,7 @@ image:screenshot_notification_filters.png["알림 센터에서 사용할 수 있
 
 
 
+[[add-additional-email-recipients]]
 === 추가 이메일 수신자 추가
 
 _조직 사용자_ 페이지에 나타나는 사용자는 조직이나 계정의 사용자 중에서 자동으로 채워집니다.  콘솔에 액세스할 수 없지만 특정 유형의 경고 및 알림에 대한 알림을 받아야 하는 다른 사람이나 그룹의 이메일 주소를 _추가 수신자_ 페이지에 추가할 수 있습니다.

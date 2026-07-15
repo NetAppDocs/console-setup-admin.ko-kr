@@ -18,6 +18,7 @@ NetApp Console 제한된 아웃바운드 연결로 사용할 수 있도록 콘�
 
 
 
+[[step-1-install-the-console-agent]]
 == 1단계: 콘솔 에이전트 설치
 
 클라우드 공급업체의 마켓플레이스에서 콘솔 에이전트를 설치하거나 Linux 호스트에 수동으로 설치합니다.
@@ -354,6 +355,7 @@ NetApp Console 설정합니다.
 ====
 
 
+[[step-2-set-up-netapp-console]]
 == 2단계: NetApp Console 설정
 
 처음으로 콘솔에 액세스하면 콘솔 에이전트의 조직을 선택하라는 메시지가 표시되고 제한 모드를 활성화해야 합니다.
@@ -391,6 +393,7 @@ NetApp Console 설정합니다.
 
 
 
+[[step-3-provide-permissions-to-the-console-agent]]
 == 3단계: 콘솔 에이전트에 권한 제공
 
 Azure Marketplace에서 또는 수동으로 콘솔 에이전트를 설치한 경우 이전에 설정한 권한을 부여해야 합니다.

@@ -4,6 +4,7 @@
 
 
 
+[[console-agent-4-2-0]]
 === 콘솔 에이전트 4.2.0
 
 4.2.0 버전은 표준 모드와 제한 모드를 모두 지원합니다.
@@ -27,6 +28,7 @@ NetApp 이제 Google Cloud Deployment Manager 대신 Google Cloud Infrastructure
 
 
 
+[[netapp-console-administration]]
 === NetApp Console 관리
 
 이 릴리스에는 다음이 포함됩니다.

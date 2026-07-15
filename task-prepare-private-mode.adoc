@@ -21,6 +21,7 @@ NOTE:  https://aws.amazon.com/federal/secret-cloud/["AWS Secret Cloud"^] 또는 
 
 
 
+[[step-1-understand-how-private-mode-works]]
 == 1단계: 개인 정보 보호 모드의 작동 방식을 이해합니다
 
 프라이빗 모드에서는 온프레미스 또는 클라우드에 콘솔 에이전트를 설치한 다음 NetApp Console을 사용하여 스토리지 시스템(ONTAP 온프레미스 및 Cloud Volumes ONTAP)을 관리합니다. NetApp Console API 엔드포인트 또는 NetApp Console SaaS 애플리케이션에 대한 연결은 제공되지 않으므로 콘솔 에이전트에서 제공하는 로컬 UI를 통해 Console에 액세스합니다.
@@ -29,6 +30,7 @@ link:concept-modes.html["프라이빗 모드 작동 방식 알아보기"].
 
 
 
+[[step-2-review-installation-options]]
 == 2단계: 설치 옵션 검토
 
 프라이빗 모드에서는 온프레미스 또는 클라우드에 Console 에이전트를 설치할 수 있으며, 이를 위해서는 사용자의 Linux 호스트에 에이전트를 수동으로 설치해야 합니다.
@@ -37,6 +39,7 @@ link:concept-modes.html["프라이빗 모드 작동 방식 알아보기"].
 
 
 
+[[step-3-review-host-requirements]]
 == 3단계: 호스트 요구 사항 검토
 
 NetApp Console 에이전트를 실행하려면 호스트가 특정 운영 체제 요구 사항, RAM 요구 사항, 포트 요구 사항 등을 충족해야 합니다.
@@ -134,6 +137,8 @@ Console 에이전트는 `/var` Docker 또는 Podman이 이 디렉터리 내에 �
 
 
 
+[[step-4-install-podman-or-docker-engine]]
+[[podman-configuration]]
 == 4단계: Podman 또는 Docker Engine 설치
 
 Console 에이전트를 실행하려면 Podman 또는 Docker Engine을 설치하여 호스트를 준비해야 합니다.
@@ -321,6 +326,7 @@ sudo systemctl enable docker && sudo systemctl start docker
 ====
 
 
+[[step-5-prepare-networking]]
 == 5단계: 네트워킹 준비
 
 Console 에이전트가 퍼블릭 클라우드의 리소스를 관리할 수 있도록 네트워킹을 설정합니다. Console 에이전트용 가상 네트워크 및 서브넷을 설정하는 것 외에도 다음 요구 사항을 충족해야 합니다.
@@ -426,6 +432,7 @@ NTP 활성화:: NetApp Data Classification을 사용하여 회사 데이터 소�
 
 
 
+[[step-6-prepare-cloud-permissions]]
 == 6단계: 클라우드 권한 준비
 
 콘솔 에이전트를 클라우드에 설치하고 Cloud Volumes ONTAP 시스템을 생성하려는 경우 NetApp Console에는 클라우드 공급자 권한이 필요합니다. 클라우드 공급자에서 권한을 설정한 다음 콘솔 에이전트 인스턴스를 설치한 후 해당 권한을 콘솔 에이전트 인스턴스와 연결해야 합니다.
@@ -732,6 +739,7 @@ https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_
 ====
 
 
+[[step-7-enable-google-cloud-apis]]
 == 7단계: Google Cloud API 활성화
 
 Google Cloud에 Cloud Volumes ONTAP을 배포하려면 몇 가지 API를 활성화해야 합니다.

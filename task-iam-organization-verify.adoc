@@ -18,6 +18,7 @@ summary: 기본적으로 Digital Advisor는 콘솔 조직뿐만 아니라 회사
 
 
 
+[[before-you-begin]]
 == 시작하기 전에
 
 조직을 인증하려면 조직 관리자 역할이 있어야 합니다. 또한 사용자는 NetApp 지원 사이트(NSS) 계정과 연결되어 있어야 합니다. link:task-adding-nss-accounts.html["NSS 계정을 연결하는 방법을 알아보십시오"].
@@ -27,6 +28,7 @@ NOTE: 회사에 비즈니스 계정이 하나만 있고 사용자가 NetApp Supp
 
 
 
+[[verify-your-organization]]
 == 조직 확인
 
 .단계

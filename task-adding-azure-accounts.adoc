@@ -18,6 +18,7 @@ NetApp Console Azure 구독에서 클라우드 리소스를 배포하고 관리�
 
 
 
+[[overview]]
 == 개요
 
 콘솔에서 추가 Azure 구독과 자격 증명을 추가하는 방법에는 두 가지가 있습니다.
@@ -28,6 +29,7 @@ NetApp Console Azure 구독에서 클라우드 리소스를 배포하고 관리�
 
 
 
+[[associate-additional-azure-subscriptions-with-a-managed-identity]]
 == 추가 Azure 구독을 관리 ID와 연결
 
 콘솔을 사용하면 Cloud Volumes ONTAP 을 배포할 Azure 자격 증명과 Azure 구독을 선택할 수 있습니다.  관리 ID 프로필에 대해 다른 Azure 구독을 선택하려면 다음을 수행해야 합니다. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["관리되는 ID"^] 해당 구독을 통해.
@@ -65,6 +67,8 @@ image:screenshot_accounts_switch_azure_subscription.gif["Microsoft Azure 공급�
 
 
 
+[[add-additional-azure-credentials-to-netapp-console]]
+[[add-credentials-azure]]
 == NetApp Console 에 추가 Azure 자격 증명 추가
 
 콘솔에서 콘솔 에이전트를 배포하면 콘솔은 필요한 권한이 있는 가상 머신에서 시스템이 할당한 관리 ID를 활성화합니다.  Cloud Volumes ONTAP 에 대한 새 시스템을 만들 때 콘솔은 기본적으로 이러한 Azure 자격 증명을 선택합니다.
@@ -76,6 +80,7 @@ _다른_ Azure 자격 증명을 사용하여 Cloud Volumes ONTAP 배포하려면
 
 
 
+[[grant-azure-permissions-using-a-service-principal]]
 === 서비스 주체를 사용하여 Azure 권한 부여
 
 Azure에서 작업을 수행하려면 콘솔에 권한이 필요합니다.  Microsoft Entra ID에서 서비스 주체를 만들고 설정하고 콘솔에 필요한 Azure 자격 증명을 얻어 Azure 계정에 필요한 권한을 부여할 수 있습니다.
@@ -231,6 +236,7 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Azure Service Management API�
 
 
 
+[[ids]]
 ==== 애플리케이션 ID와 디렉토리 ID를 가져옵니다.
 
 콘솔에 Azure 계정을 추가하는 경우 애플리케이션(클라이언트) ID와 애플리케이션의 디렉터리(테넌트) ID를 제공해야 합니다.  콘솔은 ID를 사용하여 프로그래밍 방식으로 로그인합니다.
@@ -269,6 +275,7 @@ image:screenshot_azure_client_secret.gif["Microsoft Entra 서비스 주체에 �
 
 
 
+[[add-the-credentials-to-the-console]]
 === 콘솔에 자격 증명 추가
 
 Azure 계정에 필요한 권한을 제공한 후 해당 계정의 자격 증명을 콘솔에 추가할 수 있습니다.  이 단계를 완료하면 다양한 Azure 자격 증명을 사용하여 Cloud Volumes ONTAP 시작할 수 있습니다.
@@ -303,12 +310,15 @@ image:screenshot_accounts_switch_azure.gif["세부 정보 및 자격 증명 페�
 
 
 
+[[manage-existing-credentials]]
 == 기존 자격 증명 관리
 
 Marketplace 구독을 연결하고, 자격 증명을 편집하고, 삭제하여 콘솔에 이미 추가한 Azure 자격 증명을 관리합니다.
 
 
 
+[[associate-an-azure-marketplace-subscription-to-credentials]]
+[[subscribe]]
 === Azure Marketplace 구독을 자격 증명에 연결
 
 콘솔에 Azure 자격 증명을 추가한 후에는 Azure Marketplace 구독을 해당 자격 증명에 연결할 수 있습니다.  구독을 사용하면 사용량에 따라 요금을 지불하는 Cloud Volumes ONTAP 시스템을 만들고 NetApp 데이터 서비스에 액세스할 수 있습니다.
@@ -358,6 +368,7 @@ NetApp Console 로 리디렉션됩니다.
 
 
 
+[[edit-credentials]]
 === 자격 증명 편집
 
 콘솔에서 Azure 자격 증명을 편집합니다.  예를 들어, 서비스 주체 애플리케이션에 대한 새 비밀이 생성된 경우 클라이언트 비밀을 업데이트할 수 있습니다.
@@ -371,6 +382,7 @@ NetApp Console 로 리디렉션됩니다.
 
 
 
+[[delete-credentials]]
 === 자격 증명 삭제
 
 더 이상 자격 증명이 필요하지 않으면 삭제할 수 있습니다.  시스템과 연결되지 않은 자격 증명만 삭제할 수 있습니다.

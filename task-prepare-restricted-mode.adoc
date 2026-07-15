@@ -18,6 +18,7 @@ summary: 제한 모드에서 NetApp Console 배포하기 전에 환경을 준비
 
 
 
+[[step-1-understand-how-restricted-mode-works]]
 == 1단계: 제한 모드 작동 방식 이해
 
 시작하기 전에 NetApp Console 제한 모드에서 어떻게 작동하는지 이해하세요.
@@ -30,6 +31,7 @@ link:concept-modes.html["제한 모드의 작동 방식 알아보기"] .
 
 
 
+[[step-2-review-installation-options]]
 == 2단계: 설치 옵션 검토
 
 제한 모드에서는 클라우드에만 콘솔 에이전트를 설치할 수 있습니다.  다음과 같은 설치 옵션을 사용할 수 있습니다.
@@ -41,6 +43,7 @@ link:concept-modes.html["제한 모드의 작동 방식 알아보기"] .
 
 
 
+[[step-3-review-host-requirements]]
 == 3단계: 호스트 요구 사항 검토
 
 콘솔 에이전트를 실행하려면 호스트가 특정 OS, RAM 및 포트 요구 사항을 충족해야 합니다.
@@ -173,6 +176,8 @@ Docker 엔진 23.0.6~28.0.0.
 |===
 
 
+[[step-4-install-podman-or-docker-engine]]
+[[podman-configuration]]
 == 4단계: Podman 또는 Docker Engine 설치
 
 콘솔 에이전트를 수동으로 설치하려면 Podman이나 Docker Engine을 설치하여 호스트를 준비하세요.
@@ -360,6 +365,7 @@ sudo systemctl enable docker && sudo systemctl start docker
 ====
 
 
+[[step-5-prepare-network-access]]
 == 5단계: 네트워크 액세스 준비
 
 콘솔 에이전트가 퍼블릭 클라우드의 리소스를 관리할 수 있도록 네트워크 액세스를 설정합니다.  콘솔 에이전트에 대한 가상 네트워크와 서브넷을 갖추는 것 외에도 다음 요구 사항이 충족되는지 확인해야 합니다.
@@ -546,6 +552,7 @@ NTP 활성화:: NetApp Data Classification을 사용하여 회사 데이터 소�
 
 
 
+[[step-6-prepare-cloud-permissions]]
 == 6단계: 클라우드 권한 준비
 
 콘솔 에이전트는 가상 네트워크에 Cloud Volumes ONTAP 배포하고 NetApp 데이터 서비스를 사용하려면 클라우드 공급자의 권한이 필요합니다.  클라우드 공급자에서 권한을 설정한 다음 해당 권한을 콘솔 에이전트와 연결해야 합니다.
@@ -853,6 +860,7 @@ https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_
 ====
 
 
+[[step-7-enable-google-cloud-apis]]
 == 7단계: Google Cloud API 활성화
 
 Google Cloud에 Cloud Volumes ONTAP 배포하려면 여러 API가 필요합니다.

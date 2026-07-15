@@ -18,6 +18,7 @@ Console 에이전트를 수동으로 설치하는 경우, 에이전트 호스트
 
 
 
+[[apply-operating-system-updates-to-the-agent-host]]
 == 에이전트 호스트에 운영 체제 업데이트를 적용합니다
 
 에이전트 호스트 서비스를 중단하지 않고 OS 보안 패치를 적용합니다.
@@ -41,6 +42,7 @@ sudo apt upgrade
 ----
 
 
+[[vm-or-instance-type]]
 == VM 또는 인스턴스 유형
 
 콘솔에서 콘솔 에이전트를 생성하면 기본 구성으로 클라우드 공급자에 VM 인스턴스가 배포됩니다.  에이전트를 만든 후에는 CPU나 RAM이 적은 더 작은 VM 인스턴스로 전환하지 마세요.
@@ -55,6 +57,8 @@ link:reference-agent-default-config.html["에이전트의 기본 구성에 대�
 
 
 
+[[monitor-the-agent]]
+[[monitor-disk-space]]
 == 에이전트를 모니터링하세요
 
 콘솔은 디스크 공간, RAM, CPU 문제 등 에이전트 VM에 문제가 있을 때 알려줍니다.  콘솔 내 알림 센터에서 이러한 알림을 모니터링하거나 이메일 알림을 구성하세요.  디스크 공간, 메모리 또는 CPU 사용량이 가끔씩 증가하는 것은 정상적인 현상이지만, 자주 발생하는 경우 해결을 위한 조치를 취해야 합니다.
@@ -81,6 +85,7 @@ link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operation
 |===
 
 
+[[stopping-and-starting-the-agent-vm]]
 == 에이전트 VM 중지 및 시작
 
 필요한 경우 클라우드 공급자의 콘솔이나 표준 온프레미스 절차를 사용하여 에이전트 VM을 중지하고 시작합니다.
@@ -89,6 +94,8 @@ link:concept-agents.html#agents-must-be-operational-at-all-times["콘솔 에이�
 
 
 
+[[connect-to-the-linux-vm]]
+[[connect-linux-host]]
 == Linux VM에 연결
 
 에이전트가 실행되는 Linux VM에 연결해야 하는 경우 클라우드 공급자의 연결 옵션을 사용하세요.

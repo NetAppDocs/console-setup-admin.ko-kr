@@ -18,6 +18,7 @@ summary: 콘솔 사용을 시작하려면 먼저 NetApp 지원 사이트 자격 
 
 
 
+[[sign-up-for-netapp-console-as-the-initial-organization-administrator]]
 == NetApp Console 에 최초 조직 관리자로 등록하세요.
 
 회사에 NetApp Console 조직이 없는 경우 가입하여 조직을 생성하세요. 첫 번째 사용자는 조직 관리자가 되어 사용자 계정 및 권한을 관리합니다. 역할은 나중에 업데이트하고 관리자를 추가할 수 있습니다.
@@ -53,6 +54,7 @@ NOTE: 회원가입 양식에는 영문자만 입력할 수 있습니다.
 
 
 
+[[sign-up-or-login-to-netapp-console-when-an-organization-already-exists]]
 == 이미 조직이 있는 경우 NetApp Console 에 가입하거나 로그인하세요.
 
 귀사에 이미 NetApp Console 조직이 있는 경우, 가입하거나 로그인하여 액세스하십시오. 가입 또는 로그인 방법은 회사에서 ID 페더레이션을 사용하는지 또는 NetApp 지원 사이트 자격 증명을 보유하고 있는지에 따라 다릅니다. 그렇지 않다면 NetApp Console 로그인 계정을 생성하십시오.

@@ -18,12 +18,14 @@ summary: NetApp Console 기능과 서비스를 사용하려면 콘솔이 클라�
 
 
 
+[[aws-permissions]]
 == AWS 권한
 
 NetApp Console 콘솔 에이전트와 개별 서비스에 대한 AWS 권한이 필요합니다.
 
 
 
+[[console-agents]]
 === 콘솔 에이전트
 
 [cols="20,60,20"]
@@ -35,6 +37,7 @@ NetApp Console 콘솔 에이전트와 개별 서비스에 대한 AWS 권한이 �
 |===
 
 
+[[netapp-backup-and-recovery]]
 === NetApp Backup and Recovery
 
 [cols="20,60,20"]
@@ -46,6 +49,7 @@ NetApp Console 콘솔 에이전트와 개별 서비스에 대한 AWS 권한이 �
 |===
 
 
+[[cloud-volumes-ontap]]
 === Cloud Volumes ONTAP
 
 [cols="20,60,20"]
@@ -57,6 +61,7 @@ NetApp Console 콘솔 에이전트와 개별 서비스에 대한 AWS 권한이 �
 |===
 
 
+[[netapp-copy-and-sync]]
 === NetApp Copy and Sync
 
 [cols="20,60,20"]
@@ -74,6 +79,7 @@ NetApp Console 콘솔 에이전트와 개별 서비스에 대한 AWS 권한이 �
 |===
 
 
+[[fsx-for-ontap]]
 === ONTAP 용 FSx
 
 [cols="20,60,20"]
@@ -85,6 +91,7 @@ NetApp Console 콘솔 에이전트와 개별 서비스에 대한 AWS 권한이 �
 |===
 
 
+[[netapp-cloud-tiering]]
 === NetApp Cloud Tiering
 
 [NOTE]
@@ -109,12 +116,14 @@ NetApp에서는 고객이 NetApp 담당자와 협력하여 기존 계층화 라�
 |===
 
 
+[[azure-permissions]]
 == Azure 권한
 
 콘솔에는 콘솔 에이전트와 개별 서비스에 대한 Azure 권한이 필요합니다.
 
 
 
+[[console-agent]]
 === 콘솔 에이전트
 
 [cols="20,60,20"]
@@ -137,6 +146,7 @@ link:reference-permissions-azure.html["콘솔 에이전트에 대한 Azure 권�
 |===
 
 
+[[netapp-backup-and-recovery]]
 === NetApp Backup and Recovery
 
 [cols="20,60,20"]
@@ -160,6 +170,7 @@ NetApp Backup and Recovery 사용하여 Cloud Volumes ONTAP 백업하는 경우 
 |===
 
 
+[[netapp-copy-and-sync]]
 === NetApp Copy and Sync
 
 [cols="20,60,20"]
@@ -171,12 +182,14 @@ NetApp Backup and Recovery 사용하여 Cloud Volumes ONTAP 백업하는 경우 
 |===
 
 
+[[google-cloud-permissions]]
 == Google Cloud 권한
 
 콘솔에는 콘솔 에이전트와 개별 서비스에 대한 Google Cloud 권한이 필요합니다.
 
 
 
+[[console-agents]]
 === 콘솔 에이전트
 
 [cols="20,60,20"]
@@ -191,6 +204,7 @@ NetApp Backup and Recovery 사용하여 Cloud Volumes ONTAP 백업하는 경우 
 |===
 
 
+[[netapp-backup-and-recovery]]
 === NetApp Backup and Recovery
 
 [cols="20,60,20"]
@@ -215,6 +229,7 @@ NetApp Backup and Recovery 사용하여 Cloud Volumes ONTAP 백업하는 경우 
 |===
 
 
+[[netapp-copy-and-sync]]
 === NetApp Copy and Sync
 
 [cols="20,60,20"]
@@ -229,12 +244,14 @@ NetApp Backup and Recovery 사용하여 Cloud Volumes ONTAP 백업하는 경우 
 |===
 
 
+[[storagegrid-permissions]]
 == StorageGRID 권한
 
 콘솔에는 두 가지 서비스에 대한 StorageGRID 권한이 필요합니다.
 
 
 
+[[netapp-backup-and-recovery]]
 === NetApp Backup and Recovery
 
 [cols="20,60,20"]
@@ -246,6 +263,7 @@ NetApp Backup and Recovery 사용하여 Cloud Volumes ONTAP 백업하는 경우 
 |===
 
 
+[[netapp-cloud-tiering]]
 === NetApp Cloud Tiering
 
 [NOTE]

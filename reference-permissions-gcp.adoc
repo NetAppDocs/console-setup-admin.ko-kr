@@ -18,6 +18,7 @@ summary: 콘솔 에이전트에는 클라우드 공급자에서 작업을 수행
 
 
 
+[[google-cloud-user-account-permissions]]
 == Google Cloud 사용자 계정 권한
 
 아래의 사용자 지정 역할은 Google Cloud 사용자에게 에이전트를 배포하는 데 필요한 권한을 부여합니다.  에이전트를 배포할 사용자에게 이 사용자 지정 역할을 적용하십시오.
@@ -115,6 +116,7 @@ includedPermissions:
 ====
 
 
+[[service-account-permissions]]
 == 서비스 계정 권한
 
 아래의 사용자 지정 역할은 콘솔 에이전트에 연결된 Google Cloud 서비스 계정에 Google Cloud 네트워크의 리소스 및 프로세스를 관리하는 데 필요한 권한을 부여합니다.
@@ -302,12 +304,14 @@ includedPermissions:
 ====
 
 
+[[how-google-cloud-permissions-are-used]]
 == Google Cloud 권한 사용 방법
 
 콘솔 에이전트는 사용자 지정 역할의 권한을 사용하여 Google Cloud 네트워크에서 Cloud Volumes ONTAP 리소스와 NetApp 데이터 서비스 프로세스를 관리합니다.  다음 섹션에서는 에이전트가 이러한 권한을 사용하는 방법을 설명합니다.
 
 
 
+[[permissions-used-for-cloud-volumes-ontap]]
 === Cloud Volumes ONTAP 에 사용되는 권한
 
 콘솔 에이전트는 사용자 지정 역할의 권한을 사용하여 Google Cloud 네트워크에서 Cloud Volumes ONTAP 리소스 및 프로세스를 관리합니다.  다음 섹션에서는 에이전트가 이러한 권한을 사용하는 방법을 설명합니다.
@@ -748,6 +752,7 @@ includedPermissions:
 ====
 
 
+[[permissions-used-for-netapp-backup-and-recovery]]
 === NetApp Backup and Recovery 에 사용되는 권한
 
 콘솔 에이전트는 사용자 지정 역할의 권한을 사용하여 Google Cloud 네트워크에서 NetApp Backup and Recovery 리소스와 프로세스를 관리합니다.  다음 섹션에서는 에이전트가 이러한 권한을 사용하는 방법을 설명합니다.
@@ -777,6 +782,7 @@ includedPermissions:
 ====
 
 
+[[permissions-used-for-netapp-data-classification]]
 === NetApp Data Classification 에 사용되는 권한
 
 콘솔 에이전트는 사용자 지정 역할의 권한을 사용하여 Google Cloud 네트워크에서 NetApp Data Classification 리소스 및 프로세스를 관리합니다.  다음 섹션에서는 에이전트가 이러한 권한을 사용하는 방법을 설명합니다.
@@ -801,30 +807,36 @@ includedPermissions:
 ====
 
 
+[[change-log]]
+[[gcp-permissions-change-log]]
 == 변경 로그
 
 추가되거나 삭제된 권한은 아래에 명시되어 있습니다.
 
 
 
+[[13-april-2026]]
 === 2026년 4월 13일
 
  `compute.disks.update` 권한은 Cloud Volumes ONTAP 시스템의 Hyperdisk Balanced 애그리게이트 또는 디스크에서 IOPS 및 처리량 매개변수를 업데이트하기 위해 추가되었습니다.
 
 
 
+[[26-february-2026]]
 === 2026년 2월 26일
 
  `cloudbuild.workerpools.get` 및  `cloudbuild.workerpools.list` 권한은 Google Cloud에서 Cloud Volumes ONTAP의 프라이빗 모드 배포 시 Infrastructure Manager를 지원하기 위해 추가되었습니다.
 
 
 
+[[09-february-2026]]
 === 2026년 2월 9일
 
  `compute.forwardingRules.update` 권한은 Google Cloud의 Cloud Volumes ONTAP 배포에서 Infrastructure Manager를 지원하기 위해 추가되었습니다.
 
 
 
+[[08-december-2025]]
 === 2025년 12월 8일
 
 NetApp Google Cloud에서 콘솔 에이전트를 배포하고 실행하기 위해 Google Cloud Deployment Manager에서 Google Cloud Infrastructure Manager(IM)로 전환하고 있습니다.  이러한 변경 사항을 지원하기 위해 다음과 같은 권한이 추가되었습니다.
@@ -916,12 +928,14 @@ Cloud Volumes ONTAP 의 일상적인 운영에 사용되는 서비스 계정에 
 
 
 
+[[26-november-2025]]
 === 2025년 11월 26일
 
 사용에 대한 명확성을 높이기 위해 권한이 업데이트되었지만, 권한이 추가되거나 제거되지는 않았습니다. 각 권한이 배포, 일상 작업 또는 삭제에 사용되는지 여부를 나타내는 세 개의 열이 추가되었습니다. 이 외에도 몇 가지 권한은 NetApp Data Classification 및 NetApp Backup and Recovery 에 대한 사용 여부에 따라 분리됩니다.
 
 
 
+[[06-february-2023]]
 === 2023년 2월 6일
 
 이 정책에 다음 권한이 추가되었습니다.
@@ -933,6 +947,7 @@ Cloud Volumes ONTAP 의 일상적인 운영에 사용되는 서비스 계정에 
 
 
 
+[[27-january-2023]]
 === 2023년 1월 27일
 
 다음 권한이 이 정책에 추가되었습니다.

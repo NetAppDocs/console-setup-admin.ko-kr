@@ -6273,4 +6273,88 @@
   <block id="c352b7fbc4bc73fdf6c2e56c32996413" category="paragraph">4.8.0 릴리스는 표준 모드와 제한된 모드를 모두 지원합니다.</block>
   <block id="179021adb01b0c7bf08f12ed1f7e4cea" category="paragraph">이번 릴리스에는 보안 개선 사항과 버그 수정 사항이 포함되어 있습니다.</block>
   <block id="36864a323861d58f15ec5fb9c0a62095" category="section-title">2026년 6월 8일</block>
+  <block id="b52a1b50313551938bf7b6520c957f67" category="doc">Console 에이전트 4.9.0</block>
+  <block id="8643cb7b1a266632b3ce870a592c9aed" category="paragraph">4.9.0 릴리스는 표준 모드와 제한된 모드를 모두 지원합니다.</block>
+  <block id="148954cf851ed4aa263eb6cd90ea3000" category="paragraph-title">Cloud Volumes ONTAP에 대한 역할 기반 액세스 제어 지원</block>
+  <block id="bfc35791f70b3b115636ea79999bc1e3" category="paragraph">콘솔은 Cloud Volumes ONTAP에 대한 역할 기반 액세스 제어를 지원합니다.</block>
+  <block id="a849f909985995e89c42154f270a1245" category="inline-link-macro">Cloud Volumes ONTAP의 역할 기반 액세스 제어에 대해 자세히 알아보십시오</block>
+  <block id="ea256e0ef091d570fc3443bfdb29b124" category="paragraph"><block ref="8c5db5921f383526df21d84d3b1bfd83" category="inline-link-macro-rx"></block>.</block>
+  <block id="e0bcb2ebdbad366327cfe5a2bb3842af" category="summary">콘솔에서 사용자에게 Cloud Volumes ONTAP에 대한 액세스 권한을 부여하려면 다음 역할을 할당할 수 있습니다. Cloud Volumes ONTAP 역할을 사용하면 조직 내에서 사용자가 수행해야 하는 작업에 맞는 역할을 유연하게 할당할 수 있습니다.</block>
+  <block id="38231d7ab948e14954505c434dbc3406" category="doc">NetApp Console의 Cloud Volumes ONTAP 액세스 역할</block>
+  <block id="cf1bb4e2b95630bcd705b5ed0583a3f6" category="paragraph">콘솔에서 사용자에게 Cloud Volumes ONTAP에 대한 액세스 권한을 부여하려면 다음 역할을 할당할 수 있습니다. Cloud Volumes ONTAP 역할을 사용하면 조직 내에서 사용자가 수행해야 하는 특정 작업에 맞는 역할을 유연하게 할당할 수 있습니다. 역할 할당 방식은 비즈니스 및 스토리지 관리 방식에 따라 달라집니다.</block>
+  <block id="0ef7f8c52a11ca17c940eb122edda23d" category="paragraph">Cloud Volumes ONTAP는 다음과 같은 역할을 사용합니다.</block>
+  <block id="ccb8cf6de876397f5af5fd2969199a4c" category="list-text">*Cloud Volumes ONTAP admin*: 모든 Cloud Volumes ONTAP 작업에 대한 전체 액세스 권한을 제공합니다.</block>
+  <block id="f89da74408fedae3ccfafd61cfb7bbd0" category="list-text">*Cloud Volumes ONTAP operator*: 볼륨, 애그리게이트, 스냅샷 및 복제본 추가, 일부 구성 수정, Cloud Volumes ONTAP 버전 업그레이드를 포함하여 Cloud Volumes ONTAP 시스템 검색 및 관리와 같은 중요한 스토리지 작업을 수행합니다.</block>
+  <block id="0d01873a225e72f3074f310aae6b4cd1" category="list-text">*Cloud Volumes ONTAP 뷰어*: Cloud Volumes ONTAP 정보에 대한 읽기 전용 액세스를 제공합니다. 이 역할은 능동적인 작업을 수행할 수 없습니다. 구성 정보가 포함된 일부 탭과 화면은 뷰어에게 표시되지 않을 수 있습니다.</block>
+  <block id="e612ed3cf7a0977aec6f993000cc46f1" category="section-title">역할 변경이 적용되는 방식</block>
+  <block id="283d45b1cce5ad68028d1e4ccf0bbb68" category="paragraph">Cloud Volumes ONTAP는 각 역할 할당에 대한 로컬 캐시를 사용하여 역할 기반 액세스 제어(RBAC)를 적용합니다. 캐시는 매시간 자동으로 새로 고쳐집니다. 역할이 새로 할당되거나 변경된 경우 변경 사항이 적용되는 데 최대 1시간이 소요될 수 있습니다. 새로 고침이 완료되면 콘솔에서 해당 역할에 허용된 워크플로를 사용할 수 있습니다.</block>
+  <block id="99f9bec3d41eefb18e9b6540df4c9630" category="admonition">콘솔 에이전트를 처음 배포하거나 기존 콘솔 에이전트를 Console 4.9.0 이상 버전으로 업그레이드할 때 콘솔은 조직의 기존 사용자에게 Cloud Volumes ONTAP 역할을 할당하는 일회성 시딩 프로세스를 실행합니다. 이 프로세스는 완료하는 데 최대 30분이 소요될 수 있습니다.</block>
+  <block id="fee3007030dccd80255a7211926472b7" category="section-title">Cloud Volumes ONTAP 역할 권한</block>
+  <block id="04133a29798abb95ff37ba8c50cf2155" category="cell">Cloud Volumes ONTAP 뷰어</block>
+  <block id="eddfc9398b9966908680fb984db5a4af" category="cell">Cloud Volumes ONTAP 오퍼레이터</block>
+  <block id="f8ce0c164ea8a4e0ddd34253df0f4d02" category="cell">Cloud Volumes ONTAP 관리자</block>
+  <block id="70c96718d28204569b4d506719f1b08c" category="paragraph">*Systems 페이지*:</block>
+  <block id="68508a9dfe7d188ddfacdf20bf897e7f" category="paragraph">시스템을 입력합니다</block>
+  <block id="6b3c1595afc04f7a21a3249b677c0c9b" category="paragraph">볼륨 보기</block>
+  <block id="bf4d918de9d256d487afb992811ca965" category="paragraph">시스템 검색</block>
+  <block id="3cbb7699679cf8ac6bb42f2d93fd4d72" category="paragraph">볼륨 추가</block>
+  <block id="ef86e727369acd14c1154ae70c7818c2" category="paragraph">*복제* 기능을 사용하십시오(FSx for ONTAP 또는 온프레미스 시스템에는 적용되지 않습니다).</block>
+  <block id="ebfc655a9ee5a72608591f3c5fc9a2c5" category="paragraph">*복제* 를 위해 드래그 앤 드롭 사용(Cloud Volumes ONTAP 을 소스 또는 대상으로 사용)</block>
+  <block id="770e6e1d37ec8e564116ac215a622e66" category="paragraph">시스템 추가</block>
+  <block id="34d606f181de5f7ebc55948eff861656" category="paragraph">*최적화된 비용 및 성능* 액세스</block>
+  <block id="a319340d2793ad3feb216caae04b1972" category="paragraph">System Manager를 엽니다</block>
+  <block id="78428d7e57376db0e62744220d91520f" category="paragraph">Cloud Volumes ONTAP 켜기</block>
+  <block id="ae52ff2fa45ec695a0eb4dddc56142e2" category="paragraph">시스템 제거</block>
+  <block id="77c36d637ce6be24a47b2084784aaa2c" category="paragraph">*Agents 페이지*:</block>
+  <block id="c15cd722e8101855682f654bf1796e4f" category="paragraph">Cloud Volumes ONTAP 설정 보기</block>
+  <block id="afe14dca9719a7fe52b49677da4d8814" category="paragraph">Cloud Volumes ONTAP 설정 편집</block>
+  <block id="dc586dfa749e8f2723104b54cbd24e88" category="paragraph">*개요 탭*:</block>
+  <block id="5288a56300efd1e1c3e2751aa731a390" category="paragraph">애그리게이트 추가</block>
+  <block id="39ca4d74366a4f92b22ffc56ae7560da" category="paragraph">*지금 업그레이드* 사용</block>
+  <block id="905cb7c01c2c938fc7dfb74be192c7fe" category="paragraph">ONTAP 버전 업데이트</block>
+  <block id="6e30995a6a4455f38520c4967a6891dc" category="paragraph">연필 메뉴에서 *CIFS 설정*을 편집합니다.</block>
+  <block id="50384ef287bf4f3284ec6c4fdcbb197d" category="paragraph">켜기/끄기 버튼 사용</block>
+  <block id="cc940bf2667209e4d71ddc12d8f2e5ed" category="paragraph">암호 설정</block>
+  <block id="89d30dd0d2abc48eac8a8820c224f0cb" category="paragraph">작업 공간에서 시스템을 제거합니다</block>
+  <block id="611740b36c016d17e48d1933b790fbcd" category="paragraph">시스템을 삭제합니다</block>
+  <block id="dd1f6e9949dfffc643a8da7aace730ca" category="paragraph">오른쪽 창의 연필 아이콘을 사용하여 다음을 편집합니다.</block>
+  <block id="e9b2a4ceea8a7547d6acff51725a45d5" category="list-text">*시스템 태그*</block>
+  <block id="7b59bf185ead08ea8d76e9e065d0c541" category="list-text">*예정된 점검 시간*</block>
+  <block id="57a30152ed2185b0f66d4deefe98895f" category="list-text">*스토리지 클래스*</block>
+  <block id="49d174862d061ffc45b535cfe19aa675" category="list-text">*인스턴스 유형*</block>
+  <block id="351998bce1715b24f1ec7084565d4a3e" category="list-text">*충전 방식*</block>
+  <block id="84d510d425e276dc06d673c0b4026179" category="list-text">*쓰기 속도*</block>
+  <block id="47cf4ae2e1f94cc06b1198ad70feadf4" category="list-text">*랜섬웨어 방지*</block>
+  <block id="8c93fb65447e8e41a5b80cede16835fb" category="list-text">*지원 등록*</block>
+  <block id="78000761f276b3432ac1a0954ead15d0" category="list-text">*WORM*</block>
+  <block id="57361aebcdd7b8f5bd95eef8f458ca7d" category="paragraph">*볼륨 탭*:</block>
+  <block id="d50044469c0bf9ab38eff9cf7243fb25" category="paragraph">볼륨 복제</block>
+  <block id="5b5eeee4d1e6b7007829d66c8b144064" category="paragraph">스냅샷 복사본 생성</block>
+  <block id="9e32a435d22aa5cbc195e861b5fe629f" category="paragraph">볼륨 설정 편집</block>
+  <block id="8e9a64bda9d21f945b6489df2e7946e1" category="paragraph">볼륨 삭제</block>
+  <block id="ff1652826450f50c76cdfdda64d94e2f" category="paragraph">스냅샷 복사본에서 복원</block>
+  <block id="98ac35c4695c65fda5915fe55d337301" category="paragraph">디스크 유형 변경</block>
+  <block id="9f4aa892debf403a854859b0ca9c9ff6" category="paragraph">티어링 정책 변경</block>
+  <block id="fdb328de5591e0e1226752360851ec3c" category="paragraph">*Aggregates 탭*:</block>
+  <block id="261c95ed5d454ef55df25657c605d472" category="paragraph">용량 증대</block>
+  <block id="8ce62ed0fdfe7abb736c3597956922c2" category="paragraph">애그리게이트를 삭제합니다</block>
+  <block id="08cce486a8251110d0aa4356efa31acd" category="paragraph">*복제 페이지* (Cloud Volumes ONTAP를 원본 또는 대상으로 사용하는 경우):</block>
+  <block id="444c64ac4c351f349e58d8d514287ab4" category="paragraph">복제 중단</block>
+  <block id="892027dedcdbb237fc210b3a00cf2ae5" category="paragraph">복제 재동기화</block>
+  <block id="78c8c117652a47404403fff983b2f82f" category="paragraph">역방향 재동기화 복제</block>
+  <block id="51f4afdf17b1f2127b36e48896363c41" category="paragraph">일정 편집</block>
+  <block id="487bfcf1a1cc5511a69fc77de0b7b697" category="paragraph">최대 전송 속도 편집</block>
+  <block id="d93259d25822e675cbf5c2324eca93de" category="paragraph">복제 업데이트</block>
+  <block id="62ef027c0c691039af4f8f02b7fbb023" category="paragraph">복제 삭제</block>
+  <block id="b56d101e2f90a7d1325719cb29a94d92" category="cell"><block ref="b56d101e2f90a7d1325719cb29a94d92" category="inline-link-macro-rx"></block></block>
+  <block id="2c4d9923a9d5b3c3a767052959fd8136" category="cell">CVO_ADMIN</block>
+  <block id="88158c4b6ccecd89ab78e336e14d21e2" category="cell">Cloud Volumes ONTAP 작업에 대한 전체 액세스 권한을 제공합니다.</block>
+  <block id="e3a725b478c365e353fb71da352b5528" category="cell"><block ref="e3a725b478c365e353fb71da352b5528" category="inline-link-macro-rx"></block></block>
+  <block id="c56cd6f914d687294a94bb04b6ac445f" category="cell">CVO_OPERATOR</block>
+  <block id="354977cef76cb978943529851a22368a" category="cell">볼륨 추가, 복제 구성 및 스토리지 관리와 같은 일상적인 관리 작업을 지원합니다.</block>
+  <block id="78672301082003054933c3ae90d2a937" category="cell"><block ref="78672301082003054933c3ae90d2a937" category="inline-link-macro-rx"></block></block>
+  <block id="a705354c1854b9d3509c237079d3020f" category="cell">CVO_VIEWER</block>
+  <block id="6f9b7785bb9c36940a328cc9b5ee0194" category="cell">Cloud Volumes ONTAP 정보에 대한 읽기 전용 액세스 권한을 제공합니다. 이 역할은 능동적인 작업을 수행할 수 없습니다.</block>
+  <block id="593b7503b2bb0ab3939f80c599e28d01" category="section-title">2026년 7월 15일</block>
+  <block id="82ee751249da8a12693a499bea6987f2" category="sidebar">Cloud Volumes ONTAP 역할</block>
 </blocks>

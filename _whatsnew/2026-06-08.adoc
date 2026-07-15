@@ -4,6 +4,7 @@
 
 
 
+[[console-agent-4-8-0]]
 === Console 에이전트 4.8.0
 
 4.8.0 릴리스는 표준 모드와 제한된 모드를 모두 지원합니다.
@@ -12,6 +13,7 @@
 
 
 
+[[netapp-console-administration]]
 === NetApp Console 관리
 
 이번 릴리스에는 보안 개선 사항과 버그 수정 사항이 포함되어 있습니다.

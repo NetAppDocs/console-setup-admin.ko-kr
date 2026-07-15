@@ -18,6 +18,7 @@ Console 에이전트는 아웃바운드 연결이 있을 때 자동으로 업그
 
 
 
+[[upgrade-the-console-agent]]
 == 콘솔 에이전트 업그레이드
 
 업그레이드 과정 중에 콘솔 에이전트를 다시 시작해야 하므로 업그레이드가 진행되는 동안 NetApp Console을 사용할 수 없습니다.
@@ -48,6 +49,7 @@ sudo /path/NetApp-Console-Agent-Offline-<version>
 
 
 
+[[upgrade-a-vcenter-deployed-console-agent-using-an-iso]]
 == ISO를 사용하여 vCenter에 배포된 Console 에이전트 업그레이드
 
 Console 에이전트가 OVA를 사용하여 vCenter에 배포된 경우 ISO를 VM에 마운트하고 VM 유지 관리 콘솔에서 업그레이드를 실행하여 새 버전으로 업그레이드할 수 있습니다.
