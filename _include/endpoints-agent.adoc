@@ -51,7 +51,7 @@
 
 | https://mysupport.netapp.com | 라이선스 정보를 얻고 AutoSupport 메시지를 NetApp 지원팀에 보내려면 | https://signin.b2c.netapp.com | NetApp Support Site(NSS) 자격 증명을 업데이트하거나 NetApp Console에 새 NSS 자격 증명을 추가하려면 | https://support.netapp.com | 라이선스 정보를 얻고 AutoSupport 메시지를 NetApp 지원팀에 보내는 것 외에도 Cloud Volumes ONTAP 소프트웨어 업데이트를 받으려면
 
-| https://api.bluexp.netapp.com https://netapp-cloud-account.auth0.com https://netapp-cloud-account.us.auth0.com https://console.netapp.com https://components.console.netapp.com https://cdn.auth0.com | NetApp Console 내에서 기능 및 서비스를 제공합니다.
+| \https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.bluexp.netapp.com \https://cdn.auth0.com | NetApp Console 내에서 기능 및 서비스를 제공합니다.
 
 [cols="2*"]
 |===
@@ -135,7 +135,7 @@ NetApp 지원팀에 라이선스를 요청하고 문의하세요.
 * \ https://netapp-cloud-account.auth0.com
 * \ https://netapp-cloud-account.us.auth0.com
 * \ https://console.netapp.com
-* \https://components.console.netapp.com
+* \https://components.console.bluexp.netapp.com
 * \ https://cdn.auth0.com
 
  a| 

@@ -382,7 +382,7 @@ NOTE: 버전 4.0.0 이전의 콘솔 에이전트는 다른 엔드포인트를 �
 | 엔드포인트 | 목적 
 
 
-| \https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.netapp.com \https://cdn.auth0.com | NetApp Console 내에서 기능과 서비스를 제공합니다. 
+| \https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.bluexp.netapp.com \https://cdn.auth0.com | NetApp Console 내에서 기능과 서비스를 제공합니다. 
 
 
 | \ https://cdn.auth0.com \ https://services.cloud.netapp.com | 웹 브라우저는 NetApp Console 통해 중앙화된 사용자 인증을 위해 이러한 엔드포인트에 연결합니다. 
@@ -490,7 +490,7 @@ NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp Conso
 
 
  a| 
-\https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.netapp.com \https://cdn.auth0.com
+\https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.bluexp.netapp.com \https://cdn.auth0.com
  a| 
 NetApp Console 내에서 기능과 서비스를 제공합니다.
 

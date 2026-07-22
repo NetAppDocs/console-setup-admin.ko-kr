@@ -5223,9 +5223,7 @@
   <block id="81584a5aa440695d6dd39594311c7b2d" category="list-text"><block ref="81584a5aa440695d6dd39594311c7b2d" category="inline-link-rx"></block></block>
   <block id="c19e034a7ae60fb90287c5050a076d5a" category="inline-link">Licenses and subscriptions 문서</block>
   <block id="3dc73d95873fb59ed12df54318d70e6a" category="list-text"><block ref="3dc73d95873fb59ed12df54318d70e6a" category="inline-link-rx"></block></block>
-  <block id="a68eedcba6dbed6fbce0d0156a08917b" category="paragraph">| https://api.bluexp.netapp.com https://netapp-cloud-account.auth0.com https://netapp-cloud-account.us.auth0.com https://console.netapp.com https://components.console.netapp.com https://cdn.auth0.com | NetApp Console 내에서 기능 및 서비스를 제공합니다.</block>
   <block id="a143379fbf8aa8c70a83e2cc997686c2" category="list-text">\https://*.console.netapp.com</block>
-  <block id="d27d491b9a6f2946384b1068e83e3176" category="list-text">\https://components.console.netapp.com</block>
   <block id="d83123cbb0ef00805b8ecdc02f91f2f6" category="list-text">Cloud Build API(Infrastructure Manager를 사용하는 프라이빗 모드 Cloud Volumes ONTAP 배포에 필요)</block>
   <block id="b103df8373177b93ba350f7123e02ddb" category="admonition">네트워크 또는 클라우드에서 사용하기 위한 "온라인" 에이전트 설치 프로그램을 다운로드하십시오. Console 에이전트용 별도의 "오프라인" 설치 프로그램을 사용할 수 있지만 프라이빗 모드 배포에서만 지원됩니다.</block>
   <block id="e2a0e249f352de2ea956157df300d5c0" category="paragraph">4.4.1 릴리스는 표준 모드와 제한된 모드를 모두 지원합니다.</block>
@@ -5447,7 +5445,6 @@
   <block id="46152e594769d440fdd2271b8eef67cc" category="list-text">Amazon FSx for NetApp ONTAP을 사용하여 주요 워크로드를 설계, 설정 및 운영하여 특정 애플리케이션에 대한 성능과 비용을 최적화합니다.</block>
   <block id="a84b7ef1efa1290691ba2982da6b70e2" category="section-title">NetApp Console 비용</block>
   <block id="c61697a1a0ac5f10a9f125c5e79f83a1" category="paragraph">NetApp은 Console에 대해 비용을 청구하지 않습니다. Console 에이전트를 배포하거나 클라우드에서 제한된 모드를 사용할 때 비용이 발생합니다. 일부 NetApp 데이터 서비스에도 관련 비용이 발생합니다.<block ref="737ad53c0691d6484be24092d035e183" category="inline-link-rx"></block></block>
-  <block id="2bfcaebb03e23620a28efcaf5c485bb5" category="cell">\https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.netapp.com \https://cdn.auth0.com</block>
   <block id="b366c1901726ed94faabaca293b342ab" category="cell">cloudbuild.workerpools.get</block>
   <block id="7b28e5df245493d70a91ad50a3ca876a" category="cell">Infrastructure Manager를 사용하여 Cloud Volumes ONTAP 시스템의 프라이빗 모드 배포 및 변환 중에 워커 풀 정보에 액세스합니다.</block>
   <block id="a5bb5562c6a74b17ab2426705833048f" category="cell">cloudbuild.workerpools.list</block>
@@ -6357,4 +6354,8 @@
   <block id="6f9b7785bb9c36940a328cc9b5ee0194" category="cell">Cloud Volumes ONTAP 정보에 대한 읽기 전용 액세스 권한을 제공합니다. 이 역할은 능동적인 작업을 수행할 수 없습니다.</block>
   <block id="593b7503b2bb0ab3939f80c599e28d01" category="section-title">2026년 7월 15일</block>
   <block id="82ee751249da8a12693a499bea6987f2" category="sidebar">Cloud Volumes ONTAP 역할</block>
+  <block id="c642b24062280a73e940087788371986" category="paragraph">| \https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.bluexp.netapp.com \https://cdn.auth0.com | NetApp Console 내에서 기능 및 서비스를 제공합니다.</block>
+  <block id="9ebf544c1d9c2833a9338e1e70ee31de" category="list-text">\https://components.console.bluexp.netapp.com</block>
+  <block id="e4f459430f502d8d3158a4b206057282" category="paragraph">NetApp Console 4.9.0 관리에는 다음과 같은 새로운 기능이 포함되어 있습니다.</block>
+  <block id="1daedeccee3ce9bebdac02815a88e596" category="cell">\https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.bluexp.netapp.com \https://cdn.auth0.com</block>
 </blocks>

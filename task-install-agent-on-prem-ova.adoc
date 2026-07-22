@@ -111,7 +111,7 @@ NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp Conso
 
 
  a| 
-\https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.netapp.com \https://cdn.auth0.com
+\https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.bluexp.netapp.com \https://cdn.auth0.com
  a| 
 NetApp Console 내에서 기능과 서비스를 제공합니다.
 

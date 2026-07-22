@@ -69,7 +69,7 @@ NetApp 지원팀에 라이선스를 요청하고 문의하세요.
 * \ https://netapp-cloud-account.auth0.com
 * \ https://netapp-cloud-account.us.auth0.com
 * \ https://console.netapp.com
-* \https://components.console.netapp.com
+* \https://components.console.bluexp.netapp.com
 * \ https://cdn.auth0.com
 
  a| 
