@@ -44,6 +44,8 @@ sidebar:
         url: "/task-sign-up-saas.html"
       - title: NetApp Console 어시스턴트 사용
         url: "/task-console-assistant.html"
+      - title: NetApp Intelligent Services 구독
+        url: "/task-subscribe-standard-mode.html"
     - title: NetApp Console 시작하기(제한 모드)
       entries:
       - title: 제한된 모드 시작 워크플로
