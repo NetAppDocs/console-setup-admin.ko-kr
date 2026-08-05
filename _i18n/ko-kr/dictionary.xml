@@ -1089,7 +1089,6 @@
   <block id="c4173993f088503294e79bbbe0bb63d6" category="paragraph-title">필수 역할</block>
   <block id="4610064cac3ad84114cc400649031071" category="paragraph">조직 관리자, 연합 관리자, 연합 뷰어.<block ref="8f129ac67aaaf533c741c49d131f7a5d" category="inline-link-macro-rx"></block></block>
   <block id="89a60a6294b7338e14dd136c35959073" category="paragraph">NetApp 지원 사이트와 페더레이션하면 사용자는 동일한 자격 증명을 사용하여 콘솔, Active IQ Digital Advisor 및 기타 관련 앱에 로그인할 수 있습니다.</block>
-  <block id="465e770e13636214d49910bb014b1053" category="admonition">NetApp 지원 사이트와 페더레이션하는 경우 기업 ID 관리 공급자와 페더레이션할 수 없습니다.  귀하의 조직에 가장 적합한 것을 선택하세요.</block>
   <block id="0a3bde973847d35b12a69e1debea9ca9" category="inline-link">NetApp 페더레이션 요청 양식</block>
   <block id="2364b4b1093b706141a365b97b678a4d" category="list-text">다운로드하고 완료하세요<block ref="82f36446881e14fa28b945cd41d2b383" category="inline-link-rx"></block> .</block>
   <block id="28ff396d9aacc41256de2a2d064386fd" category="list-text">양식에 명시된 이메일 주소로 양식을 제출해 주세요.</block>
@@ -6358,4 +6357,5 @@
   <block id="9ebf544c1d9c2833a9338e1e70ee31de" category="list-text">\https://components.console.bluexp.netapp.com</block>
   <block id="e4f459430f502d8d3158a4b206057282" category="paragraph">NetApp Console 4.9.0 관리에는 다음과 같은 새로운 기능이 포함되어 있습니다.</block>
   <block id="1daedeccee3ce9bebdac02815a88e596" category="cell">\https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.bluexp.netapp.com \https://cdn.auth0.com</block>
+  <block id="7f862a4b8fc22b0af5dda5c9ababa346" category="cell">iam:TagRole</block>
 </blocks>

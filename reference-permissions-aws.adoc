@@ -124,6 +124,7 @@ NetApp Console AWS에서 콘솔 에이전트를 시작하면 에이전트에 해
         "iam:DeleteInstanceProfile",
         "iam:GetRolePolicy",
         "iam:GetRole",
+        "iam:TagRole",
         "sts:DecodeAuthorizationMessage",
         "sts:AssumeRole",
         "s3:GetBucketTagging",
@@ -362,6 +363,7 @@ NetApp Console AWS에서 콘솔 에이전트를 시작하면 에이전트에 해
         "iam:CreateRole",
         "iam:DeleteRole",
         "iam:PutRolePolicy",
+        "iam:TagRole",
         "iam:CreateInstanceProfile",
         "iam:DeleteRolePolicy",
         "iam:AddRoleToInstanceProfile",
@@ -558,6 +560,7 @@ NetApp Console AWS에서 콘솔 에이전트를 시작하면 에이전트에 해
         "iam:CreateRole",
         "iam:DeleteRole",
         "iam:PutRolePolicy",
+        "iam:TagRole",
         "iam:CreateInstanceProfile",
         "iam:DeleteRolePolicy",
         "iam:AddRoleToInstanceProfile",
@@ -678,6 +681,7 @@ NetApp Console AWS에서 콘솔 에이전트를 시작하면 에이전트에 해
         "iam:CreateRole",
         "iam:DeleteRole",
         "iam:PutRolePolicy",
+        "iam:TagRole",
         "iam:CreateInstanceProfile",
         "iam:DeleteRolePolicy",
         "iam:AddRoleToInstanceProfile",
@@ -955,7 +959,7 @@ NetApp Data Classification 사용할 때 에이전트는 S3 버킷을 스캔하�
 | 목적 | 행동 | 배포에 사용되나요? | 일상 업무에 사용되나요? | 삭제에 사용되나요? 
 
 
-.13+| Cloud Volumes ONTAP 인스턴스에 대한 IAM 역할 및 인스턴스 프로필을 생성하고 관리합니다. | iam:ListInstanceProfiles | 예 | 예 | 아니요 
+.14+| Cloud Volumes ONTAP 인스턴스에 대한 IAM 역할 및 인스턴스 프로필을 생성하고 관리합니다. | iam:ListInstanceProfiles | 예 | 예 | 아니요 
 
 
 | iam:역할 생성 | 예 | 아니요 | 아니요 
@@ -965,6 +969,9 @@ NetApp Data Classification 사용할 때 에이전트는 S3 버킷을 스캔하�
 
 
 | iam:역할 정책 넣기 | 예 | 아니요 | 아니요 
+
+
+| iam:TagRole | 예 | 아니요 | 아니요 
 
 
 | iam:인스턴스 프로필 생성 | 예 | 아니요 | 아니요 
