@@ -6358,4 +6358,6 @@
   <block id="e4f459430f502d8d3158a4b206057282" category="paragraph">NetApp Console 4.9.0 관리에는 다음과 같은 새로운 기능이 포함되어 있습니다.</block>
   <block id="1daedeccee3ce9bebdac02815a88e596" category="cell">\https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.bluexp.netapp.com \https://cdn.auth0.com</block>
   <block id="7f862a4b8fc22b0af5dda5c9ababa346" category="cell">iam:TagRole</block>
+  <block id="ac63bb5663971c98e9ad66f59e257a30" category="summary">NetApp Console은 콘솔 에이전트를 사용하여 클라우드 및 온프레미스 스토리지 시스템을 관리하는 SaaS 애플리케이션입니다. NetApp Console 로컬 배포는 정책 시행, 드리프트 수정 및 완벽한 데이터 주권을 제공하는 엔터프라이즈 규모의 ONTAP 플릿 관리를 위한 자체 호스팅 방식의 에이전트리스 가상 머신입니다.</block>
+  <block id="e9136b652dc2f76f18a9d738127bb6a3" category="doc">NetApp Console과 NetApp Console 로컬 배포 비교</block>
 </blocks>

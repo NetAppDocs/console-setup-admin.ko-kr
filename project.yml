@@ -20,6 +20,8 @@ sidebar:
       url: "/whats-new.html"
     - title: 알려진 제한 사항
       url: "/reference-limitations.html"
+    - title: NetApp Console과 NetApp Console 로컬 배포 비교
+      url: "/console-differences.html"
   - title: 시작하기
     entries:
     - title: 기본을 배우세요

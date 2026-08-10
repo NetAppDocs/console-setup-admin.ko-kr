@@ -1,0 +1,15 @@
+---
+sidebar: sidebar 
+permalink: console-differences.html 
+keywords: netapp console, netapp console local deployment, comparison, saas, self-hosted, deployment modes, on-premises, cloud, storage management, data sovereignty, agentless, ONTAP fleet management, policy enforcement, storage class policies, data residency, vCenter, fleet management, workload analyzer, identity federation, autonomous, active directory, bring-your-own-license, local 
+summary: NetApp Console은 콘솔 에이전트를 사용하여 클라우드 및 온프레미스 스토리지 시스템을 관리하는 SaaS 애플리케이션입니다. NetApp Console 로컬 배포는 정책 시행, 드리프트 수정 및 완벽한 데이터 주권을 제공하는 엔터프라이즈 규모의 ONTAP 플릿 관리를 위한 자체 호스팅 방식의 에이전트리스 가상 머신입니다. 
+---
+= NetApp Console과 NetApp Console 로컬 배포 비교
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+

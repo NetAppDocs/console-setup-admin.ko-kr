@@ -18,6 +18,8 @@ indexpage:
       url: concept-identity-and-access-management.html
     - title: 배포 모드에 대해 알아보세요
       url: concept-modes.html
+    - title: NetApp Console과 NetApp Console 로컬 배포 비교
+      url: console-differences.html
   - title: 시작하기
     links:
     - title: NetApp Console (SaaS) 시작하기

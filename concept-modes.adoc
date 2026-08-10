@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-modes.html 
-keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret, private 
+keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret, private, gove 
 summary: NetApp Console은 SaaS 애플리케이션을 통해 사용하거나 클라우드 또는 온프레미스 환경 등 자체 환경에 직접 설치하여 사용할 수 있습니다. 
 ---
 = NetApp Console 배포 모드에 대해 알아보세요
