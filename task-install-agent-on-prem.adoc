@@ -4,7 +4,7 @@ permalink: task-install-agent-on-prem.html
 keywords: deploy agent, on prem agent deployment, on prem agent, deploy connector on prem, manual deployment 
 summary: NetApp Console 에이전트를 온프레미스에 배포한 다음 로그인하여 NetApp Console 조직과 연동되도록 설정하십시오. 
 ---
-= 온프레미스에 콘솔 에이전트를 수동으로 설치합니다.
+= 온프레미스에 NetApp Console 에이전트를 수동으로 설치합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

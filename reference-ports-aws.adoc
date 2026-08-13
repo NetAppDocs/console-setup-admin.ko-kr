@@ -4,7 +4,7 @@ permalink: reference-ports-aws.html
 keywords: ports, security group, http, https, inbound, outbound 
 summary: 콘솔 에이전트의 AWS 보안 그룹에는 인바운드 규칙과 아웃바운드 규칙이 모두 필요합니다.  NetApp 콘솔에서 콘솔 에이전트를 생성하면 NetApp Console 자동으로 이 보안 그룹을 생성합니다.  다른 모든 설치 옵션의 경우 이 보안 그룹을 설정해야 합니다. 
 ---
-= AWS의 콘솔 에이전트 보안 그룹 규칙
+= NetApp Console 에이전트 보안 그룹 규칙(AWS)
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

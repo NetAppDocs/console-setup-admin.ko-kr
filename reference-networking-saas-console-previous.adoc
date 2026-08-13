@@ -4,7 +4,7 @@ permalink: reference-networking-saas-console-previous.html
 keywords: networking, urls, endpoints, web browser, console, network, set up networking, netapp console 
 summary: 콘솔과 설치한 모든 에이전트가 제대로 작동하려면 올바른 네트워크 액세스 권한이 있는지 확인해야 합니다. 
 ---
-= NetApp Console 3.9.55 및 이전 버전의 네트워크 액세스
+= 이전 버전의 NetApp Console에 대한 네트워크 액세스
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

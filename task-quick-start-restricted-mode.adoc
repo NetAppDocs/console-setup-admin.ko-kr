@@ -4,7 +4,7 @@ permalink: task-quick-start-restricted-mode.html
 keywords: quick start, restricted mode quick start, govcloud, government, aws gov, azure gov 
 summary: 환경을 준비하고 콘솔 에이전트를 배포하여 제한 모드에서 NetApp Console 을 시작하세요. 
 ---
-= 제한된 모드에서 NetApp Console 시작 워크플로
+= 제한된 모드의 NetApp Console 빠른 시작
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

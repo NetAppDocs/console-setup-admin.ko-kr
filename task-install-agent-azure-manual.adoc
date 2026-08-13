@@ -4,7 +4,7 @@ permalink: task-install-agent-azure-manual.html
 keywords: install connector, azure connector installation, azure connector, install connector in azure, manual install 
 summary: 자신의 Linux 호스트에 콘솔 에이전트를 수동으로 설치하려면 호스트 요구 사항을 검토하고, 네트워킹을 설정하고, Azure 권한을 준비하고, 콘솔 에이전트를 설치한 다음, 준비한 권한을 제공해야 합니다. 
 ---
-= Azure에 콘솔 에이전트를 수동으로 설치합니다.
+= Azure에 NetApp Console 에이전트를 수동으로 설치합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

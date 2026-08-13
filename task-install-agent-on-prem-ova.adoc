@@ -4,7 +4,7 @@ permalink: task-install-agent-on-prem-ova.html
 keywords: install agent, on prem agent installation, on prem connector, vmware, OVA, manual install 
 summary: VMware 사용자라면 OVA를 사용하여 vCenter에 Console 에이전트를 설치할 수 있습니다. OVA 다운로드 또는 URL은 NetApp Console을 통해 사용할 수 있습니다. 
 ---
-= vCenter를 사용하여 온프레미스에 Console 에이전트 설치
+= vCenter를 사용하여 온프레미스에 NetApp Console 에이전트를 설치합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

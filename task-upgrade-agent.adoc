@@ -4,7 +4,7 @@ permalink: task-upgrade-agent.html
 keywords: upgrade, manual upgrade, agent upgrade, manual agent upgrade, upgrade agent manually, private mode upgrade, offline upgrade, upgrade private mode, connector upgrade, agent upgrade, vcenter upgrade, OVA upgrade, ISO upgrade, vsphere upgrade 
 summary: Console 에이전트는 아웃바운드 연결이 있을 때 자동으로 업그레이드됩니다. Console 에이전트에 아웃바운드 연결이 없는 경우 수동으로 업그레이드할 수 있습니다. 에이전트가 vCenter에 배포된 경우 ISO를 사용하여 업그레이드할 수 있습니다. 
 ---
-= 콘솔 에이전트 업그레이드
+= NetApp Console 에이전트를 업그레이드합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

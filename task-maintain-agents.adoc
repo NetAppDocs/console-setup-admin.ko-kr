@@ -4,7 +4,7 @@ permalink: task-maintain-agents.html
 keywords: agent operating system, agent maintenance, vm maintenance, os updates, operating system updates, stop agent, restart agent, notifications, agent health, agent disk space, agent cpu usage, agent ram usage, agent vm, connector, connector health 
 summary: 에이전트 호스트에서 운영 체제를 유지 관리하는 것은 사용자의 책임입니다.  예를 들어, 회사의 운영 체제 배포 표준 절차에 따라 콘솔 에이전트 호스트의 운영 체제에 보안 업데이트를 적용해야 합니다. 
 ---
-= 수동으로 설치된 Console 에이전트용 VM을 유지 관리합니다
+= 수동으로 설치된 NetApp Console 에이전트용 VM 유지 관리
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

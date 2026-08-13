@@ -4,7 +4,7 @@ permalink: task-update-agent-addressing.html
 keywords: agent ip address, agent uri, change ip address, edit uri, agent network, agent addressing 
 summary: 네트워크 구성이 변경될 경우 클라우드 공급자에서 에이전트의 IP 주소를 업데이트하고 Console에 등록된 URI를 업데이트해야 할 수 있습니다. 
 ---
-= 에이전트 주소 지정 및 URI 업데이트
+= NetApp Console 에이전트 주소 지정 및 URI 업데이트
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

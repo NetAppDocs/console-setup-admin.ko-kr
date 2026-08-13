@@ -4,7 +4,7 @@ permalink: task-install-restricted-mode.html
 keywords: government region, gov, govcloud, connector, sovereign cloud 
 summary: NetApp Console 제한된 아웃바운드 연결로 사용할 수 있도록 콘솔 에이전트를 제한 모드로 배포합니다.  시작하려면 콘솔 에이전트를 설치하고, 콘솔 에이전트에서 실행되는 사용자 인터페이스에 액세스하여 콘솔을 설정한 다음, 이전에 설정한 클라우드 권한을 제공하세요. 
 ---
-= 제한 모드로 콘솔 에이전트 배포
+= NetApp Console 에이전트를 제한된 모드로 배포합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

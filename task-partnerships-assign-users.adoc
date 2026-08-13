@@ -4,7 +4,7 @@ permalink: task-partnerships-assign-users.html
 keywords: switch organizations, switch projects, projects, organizations, change, switch, change organizations, change projects, iam, identity and access management, switch connectors 
 summary: 파트너 조직에 사용자를 추가하여 파트너십에 사용자를 추가할 수 있습니다.  사용자를 추가한 후, 파트너 조직은 해당 조직 내 특정 리소스에 대한 역할을 사용자에게 할당해야 합니다. 
 ---
-= 파트너십 조직의 회원 관리
+= NetApp Console에서 파트너십 구성원 관리
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

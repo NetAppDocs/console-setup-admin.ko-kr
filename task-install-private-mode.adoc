@@ -4,7 +4,7 @@ permalink: task-install-private-mode.html
 keywords: install dark site, deploy dark site, install private mode, deploy private mode, install agent dark site, agent dark site, dark site, private mode, no internet 
 summary: NetApp Console을 프라이빗 모드로 배포하여 아웃바운드 연결 없이 사용할 수 있습니다. 시작하려면 Console 에이전트를 설치하고, Console 에이전트에서 실행되는 사용자 인터페이스에 액세스하여 NetApp Console을 설정한 다음, 이전에 설정한 클라우드 권한을 제공하십시오. 
 ---
-= Console 에이전트를 비공개 모드로 배포합니다
+= NetApp Console 에이전트를 프라이빗 모드로 배포합니다.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

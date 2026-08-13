@@ -4,7 +4,7 @@ permalink: concept-agent-install-options.html
 keywords: install agent, deployment method, console install, marketplace install, manual install, ova install, vcenter install, installation options, 
 summary: NetApp Console, 클라우드 공급자의 마켓플레이스를 사용하거나 Linux 호스트에 소프트웨어를 수동으로 설치하여 Console 에이전트를 배포할 수 있습니다. 배포 방법은 에이전트 호스트를 유지 관리하는 방법을 결정하며 사용 중인 NetApp Console 배포 모드에 따라 다릅니다. 
 ---
-= Console 에이전트 배포 방법을 선택하세요
+= NetApp Console 에이전트 배포 방법에 대해 알아보세요
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

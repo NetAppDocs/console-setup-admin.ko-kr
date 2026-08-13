@@ -1044,7 +1044,6 @@
   <block id="f4426e4062930abb33465fb5b79b35dc" category="inline-link-macro">Azure Marketplace 배포에 대한 권한 설정</block>
   <block id="98faa0bd253708350eda28057b888356" category="list-text"><block ref="98faa0bd253708350eda28057b888356" category="inline-link-macro-rx"></block></block>
   <block id="480c97395bf73b1326ca0221bb84f0ab" category="summary">NetApp Console Google Cloud 자격 증명을 사용하여 사용자를 대신하여 작업을 수행하는 방법과 해당 자격 증명이 마켓플레이스 구독과 연결되는 방식을 알아보세요.  이러한 세부 정보를 이해하면 하나 이상의 Google Cloud 프로젝트에 대한 자격 증명을 관리하는 데 도움이 될 수 있습니다.  예를 들어, 콘솔 에이전트 VM과 연결된 서비스 계정에 대해 알아보고 싶을 수 있습니다.</block>
-  <block id="1fd4a2295cad602ba9d73683db88e799" category="doc">Google Cloud 프로젝트 및 권한에 대해 알아보세요</block>
   <block id="7c592b218a390e7d1c8bdbae8fbc794a" category="section-title">NetApp Console 에 대한 프로젝트 및 권한</block>
   <block id="077f81b3516261855bf075d3615cf476" category="paragraph">Google Cloud 프로젝트의 리소스를 관리하기 위해 콘솔을 사용하려면 먼저 콘솔 에이전트를 배포해야 합니다.  에이전트는 귀하의 사내 또는 다른 클라우드 공급자에서 실행될 수 없습니다.</block>
   <block id="376a095d3a95abfb749fc8cc50f95d32" category="paragraph">콘솔에서 직접 콘솔 에이전트를 배포하려면 두 가지 권한 세트가 있어야 합니다.</block>
@@ -1084,7 +1083,6 @@
   <block id="1668ca1bd914c1d847f23b491319ac91" category="list-text">마이크로소프트 애저</block>
   <block id="09e422c729719f602773531e14c7fdcb" category="inline-link-macro">NetApp Console 배포 모드에 대해 알아보세요</block>
   <block id="84d8c031ecac07457c33d38260f22d91" category="summary">ID 페더레이션을 통해 NetApp Console 에서 단일 로그인이 가능하므로 사용자는 회사 ID의 자격 증명을 사용하여 로그인할 수 있습니다.  시작하려면 설정 과정을 검토하세요.</block>
-  <block id="85e8937e28c11ae3f77c65c98e77836f" category="doc">NetApp Console 사용하여 ID 페더레이션을 사용하여 단일 로그인을 활성화합니다.</block>
   <block id="3799cba2b024e60d963d2e86eaf51655" category="paragraph">Single Sign-On(페더레이션)은 사용자가 회사 자격 증명을 사용하여 NetApp Console 에 로그인할 수 있도록 하여 로그인 프로세스를 간소화하고 보안을 강화합니다.  ID 공급자(IdP) 또는 NetApp 지원 사이트를 통해 SSO(단일 로그인)를 활성화할 수 있습니다.</block>
   <block id="c4173993f088503294e79bbbe0bb63d6" category="paragraph-title">필수 역할</block>
   <block id="4610064cac3ad84114cc400649031071" category="paragraph">조직 관리자, 연합 관리자, 연합 뷰어.<block ref="8f129ac67aaaf533c741c49d131f7a5d" category="inline-link-macro-rx"></block></block>
@@ -1133,7 +1131,6 @@
   <block id="a97fa38afe9727184ada1ed0c4bf8cbf" category="list-text"><block ref="a97fa38afe9727184ada1ed0c4bf8cbf" category="inline-link-macro-rx"></block></block>
   <block id="d0be151a63fab72d6333774c4ad643bb" category="inline-link">NetApp Console IAM에 대한 API에 대해 알아보세요</block>
   <block id="d7726716920c51dac9e8d3b944fb1d9c" category="list-text"><block ref="d7726716920c51dac9e8d3b944fb1d9c" category="inline-link-rx"></block></block>
-  <block id="2dd5916ed68f963e9c5529d69a4de5fa" category="inline-link-macro">Azure Marketplace에서 콘솔 에이전트 만들기</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="section-title">개요</block>
   <block id="579f2ccfa8f6ecb1be46c191e6f51980" category="paragraph">각 배포 모드는 아웃바운드 연결, 위치, 설치, 인증, 데이터 서비스 및 요금 청구 방법이 다릅니다.</block>
   <block id="93cba07454f06a4a960172bbd6e2a435" category="cell">예</block>
@@ -1324,8 +1321,6 @@
   <block id="0f50cd1079cb24de2b4571c09546a2e1" category="list-text">RHEL 8 또는 9 호스트를 설정합니다.</block>
   <block id="8c9215e1b963f63a463d468347c9cc12" category="list-text">_새로운_ 에이전트를 설치합니다.</block>
   <block id="b8bb8aa40b62692dd726a6effbbb7c2a" category="list-text">이전 에이전트가 관리하던 시스템을 검색하도록 에이전트를 구성합니다.</block>
-  <block id="49b6ed50435718c0a1e9c1c394702ab8" category="inline-link">Azure에 콘솔 에이전트를 수동으로 설치합니다.</block>
-  <block id="6df5369b59a40f64ce1869a0d4d405ea" category="inline-link">제한 모드에서 배포 준비</block>
   <block id="cdb83aacf48e960662fcf2d6745e5b60" category="paragraph">새 콘솔 에이전트를 배포한 후 시스템을 다시 검색하려면 다음 페이지를 참조하세요.</block>
   <block id="6c0fb6078ec778ca2319e375a19e994b" category="inline-link">기존 Cloud Volumes ONTAP 시스템 추가</block>
   <block id="2015c83409a6e7dfc23533375c5ae10e" category="list-text"><block ref="2015c83409a6e7dfc23533375c5ae10e" category="inline-link-rx"></block></block>
@@ -2750,7 +2745,6 @@
   <block id="bef219d35a4468480b0ce759221cdceb" category="inline-link">NetApp Backup and Recovery 설명서</block>
   <block id="bfb708a7900e1a2a8e29ed4f45dba55a" category="list-text">*보기*를 선택하여 NetApp Backup and Recovery 보드로 이동합니다. 자세한 내용은 다음을 참조하세요.<block ref="301caaf79db1fedee96dc10f2b708970" category="inline-link-rx"></block> .</block>
   <block id="ef115e8ed0d2118ec4e8fc147ad0a789" category="summary">NetApp Console 에 대한 SSO(Single Sign-On)를 활성화하려면 Active Directory Federation Services(AD FS)와 페더레이션합니다.  이를 통해 사용자는 회사 자격 증명을 사용하여 로그인할 수 있습니다.</block>
-  <block id="03ce0a75253f028c7b59d2e045c61730" category="doc">NetApp Console Active Directory Federation Services(AD FS)와 페더레이션</block>
   <block id="df279c297fab55d5f1c2bb16edd8b9c8" category="paragraph">NetApp Console NetApp Console 과 Active Directory Federation Services(AD FS)를 페더레이션합니다.  이를 통해 사용자는 회사 자격 증명을 사용하여 콘솔에 로그인할 수 있습니다.</block>
   <block id="7697b2ab15ca139caf17dcfd778734aa" category="admonition">회사 IdP 또는 NetApp 지원 사이트와 연합할 수 있습니다.  NetApp 둘 중 하나만 선택하는 것을 권장하지만, 둘 다 선택하는 것은 권장하지 않습니다.</block>
   <block id="0ceb64d3b73da84590b905906ce76e4b" category="paragraph">NetApp 서비스 공급자가 시작하는(SP 가 시작하는) SSO만 지원합니다.  먼저, NetApp Console 서비스 공급자로 신뢰하도록 ID 공급자를 구성합니다.  그런 다음 ID 공급자의 구성을 사용하여 콘솔에서 연결을 만듭니다.</block>
@@ -2845,7 +2839,6 @@
   <block id="000363e005ffe3ed85bd5a9afcd86fe5" category="list-text">SAML 서버의 *로그인 URL*을 입력하세요.</block>
   <block id="0b1478ffaa7b17ef2974ea6fa7e943fc" category="list-text">SAML 공급자 서버에서 다운로드한 X.509 인증서를 업로드합니다.</block>
   <block id="4c45e77f7b0ce71e19ecb19d6d1452ef" category="list-text">선택적으로 SAML 서버의 *로그아웃 URL*을 입력하세요.</block>
-  <block id="33c125c7f86d4e57eda2158c5fc47107" category="doc">페더레이션 연결에 대한 이메일 도메인을 확인하세요.</block>
   <block id="601af67b0c46251e3baef68bebb8dac6" category="paragraph">도메인을 확인하려면 도메인의 DNS 설정에 TXT 레코드를 추가해야 합니다.  이 레코드는 사용자가 도메인을 소유하고 있음을 증명하는 데 사용되며 NetApp Console 페더레이션을 위해 도메인을 신뢰할 수 있도록 합니다.  이 단계를 완료하려면 IT 또는 네트워크 관리자와 협력해야 할 수도 있습니다.</block>
   <block id="8765b22079c54d8e9c1fc15493061acf" category="list-text">*도메인 소유권 확인*을 선택하세요.</block>
   <block id="c25e56883d4bdfca8faf4c90b860e03c" category="list-text">검증하려는 도메인을 입력하고 *계속*을 선택하세요.</block>
@@ -3105,7 +3098,6 @@
   <block id="c306ee8c9a73ec380cad93ec32b64af3" category="inline-link-macro">ID 및 액세스 관리에 대해 알아보세요</block>
   <block id="374de56592e527dd57d0a643704cfd56" category="list-text"><block ref="374de56592e527dd57d0a643704cfd56" category="inline-link-macro-rx"></block></block>
   <block id="f5c5f2c4e09a3be34c769b9a476a5774" category="summary">여러 콘솔 조직에 속해 있거나 조직 내 여러 프로젝트나 에이전트에 액세스할 수 있는 권한이 있을 수 있습니다.  필요한 경우 조직, 프로젝트 및 콘솔 에이전트 간에 쉽게 전환하여 해당 조직, 프로젝트 또는 에이전트와 연결된 리소스에 액세스할 수 있습니다.</block>
-  <block id="563e9d605dde4e125a815a2688ed1349" category="doc">콘솔 조직, 프로젝트 및 에이전트 간 전환</block>
   <block id="99b40e7c0a7b505819ce6f7bdb86dc3a" category="inline-link">새로운 조직을 만드는 방법을 알아보세요</block>
   <block id="4e24f9490df0b4af6b4e7bceaa6097a1" category="admonition">다른 조직에서 가입을 권유하거나 직접 조직을 만든 경우 여러 조직에 속하게 될 수 있습니다.  API를 사용하여 추가 조직을 만들 수 있습니다.<block ref="54dc9fecd403ebe4164f0404ec85af49" category="inline-link-rx"></block></block>
   <block id="f2fd478a05acdd29af1bbc7530937c70" category="section-title">조직 간 전환</block>
@@ -3494,7 +3486,6 @@
   <block id="945a1013347d84bac0a2f13069240dcf" category="section-title">NetApp Console 에 클라우드 공급자 자격 증명 제공</block>
   <block id="6f7b4a56a4b8f79564d165736a5096b0" category="paragraph">이제 콘솔 에이전트는 Azure에서 사용자를 대신하여 작업을 수행하는 데 필요한 권한을 갖게 되었습니다.  이제 다음으로 이동할 수 있습니다.<block ref="9fa63571706fcef6edc9d423212e6d10" category="inline-link-rx"></block> 콘솔 에이전트를 사용하려면.</block>
   <block id="c04c3f6d982e47513e123d1910d6ae44" category="summary">NetApp Console 제한된 아웃바운드 연결로 사용할 수 있도록 콘솔 에이전트를 제한 모드로 배포합니다.  시작하려면 콘솔 에이전트를 설치하고, 콘솔 에이전트에서 실행되는 사용자 인터페이스에 액세스하여 콘솔을 설정한 다음, 이전에 설정한 클라우드 권한을 제공하세요.</block>
-  <block id="303476906522e5d486b216ab83eaeedd" category="doc">제한 모드로 콘솔 에이전트 배포</block>
   <block id="de90cba5dde27120301771defb68e4cf" category="section-title">1단계: 콘솔 에이전트 설치</block>
   <block id="b0c7ebf873e1c5dbc2ac5f8581849a8f" category="paragraph">클라우드 공급업체의 마켓플레이스에서 콘솔 에이전트를 설치하거나 Linux 호스트에 수동으로 설치합니다.</block>
   <block id="5cadd29a69b0be5bc8b482cfc2e89adb" category="open-title">AWS 커머셜 마켓플레이스</block>
@@ -3559,7 +3550,6 @@
   <block id="201a0e8a9a7e1b007b99b4e4c24c017d" category="open-title">Azure 서비스 주체</block>
   <block id="3612e0e7a44ec38da1e226c618526f91" category="open-title">Google Cloud 서비스 계정</block>
   <block id="a87080733aad453c529e801cc597efff" category="summary">제한 모드에서 NetApp Console 사용할 때 사용자가 웹 기반 콘솔에 액세스할 수 있도록 CA 서명 인증서를 설치합니다.</block>
-  <block id="76b215b1722d5e63e6379d518b352edf" category="doc">웹 기반 콘솔 액세스를 위한 CA 서명 인증서 설치</block>
   <block id="556126dcddabe484c3c96e299b816797" category="paragraph">회사에 필요한 경우 인증 기관(CA)에서 서명한 인증서를 설치할 수 있습니다. 이는 자체 서명 인증서보다 더 강력한 보안 기능을 제공합니다.  인증서를 설치한 후, 사용자가 웹 기반 콘솔에 액세스할 때 콘솔은 CA 서명 인증서를 사용합니다.</block>
   <block id="c49ff7d7009f9d4727b2b25afa496418" category="section-title">HTTPS 인증서 설치</block>
   <block id="9bcd9cfa6027fc6f3b81733b086a6895" category="paragraph">콘솔 에이전트에서 실행되는 웹 기반 콘솔에 대한 보안 액세스를 위해 CA에서 서명한 인증서를 설치합니다.</block>
@@ -3744,7 +3734,6 @@
   <block id="5e56842d0cfbf695522e945a01570eba" category="paragraph"><block ref="5e56842d0cfbf695522e945a01570eba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b927ec68e94ddd9ff004ca54d69e94fa" category="list-text">이름, 이메일 주소를 입력하고, 수신자가 받을 알림 유형을 선택한 후 *새 수신자 추가*를 선택합니다.</block>
   <block id="b9344ef100a1e97ec28eecfcb56cd218" category="summary">관리자는 NetApp Console 구성하여 사용자에게 ONTAP 자격 증명을 입력하라는 메시지를 표시할 수 있습니다.</block>
-  <block id="29f68982771966bddc72b7dbd3b2f3d3" category="doc">ONTAP Advanced View(ONTAP System Manager)에 대한 ONTAP 권한 적용</block>
   <block id="e307b6972a9cf99c3bba532457962378" category="paragraph">기본적으로 콘솔 에이전트 자격 증명을 통해 사용자는 고급 보기(ONTAP 시스템 관리자)에 액세스할 수 있습니다.  대신 사용자에게 ONTAP 자격 증명을 입력하라는 메시지를 표시할 수 있습니다.  이를 통해 사용자 Cloud Volumes ONTAP 과 온프레미스 ONTAP 클러스터 모두에서 ONTAP 클러스터를 사용할 때 사용자의 ONTAP 권한이 적용됩니다.</block>
   <block id="b54cdbc045124058723635c19f005757" category="admonition">콘솔 에이전트 설정을 편집하려면 조직 관리자 역할이 있어야 합니다.</block>
   <block id="79200641e6b3df738c3bda6a52fd51c1" category="list-text">*자격 증명 강제 적용* 옵션을 확장합니다.</block>
@@ -3790,7 +3779,6 @@
   <block id="99c3e344f722dbf678cb3601f36deb14" category="paragraph">파트너십 관리.<block ref="8f129ac67aaaf533c741c49d131f7a5d" category="inline-link-macro-rx"></block></block>
   <block id="c4949ad54642393ff8344ba3f6da6464" category="list-text">비활성화하려는 시작된 파트너십으로 이동하여 선택하십시오.<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> 그런 다음 *비활성화*를 선택하세요.</block>
   <block id="3348041ee2a90208493612a853334377" category="summary">조직 내 폴더와 프로젝트에 대한 특정 역할을 할당하여 파트너십 사용자에게 액세스 권한을 부여할 수 있습니다.</block>
-  <block id="68c15daf4d80dc90b1515f522d8636c3" category="doc">파트너십 사용자에게 리소스 액세스 제공</block>
   <block id="2cd5a9993ca615ce23cf513d45b15404" category="inline-link-macro">파트너십에 멤버를 추가하는 방법을 알아보세요.</block>
   <block id="4e6fd6febc63e73f33b1e12bb15eab7a" category="paragraph">파트너 조직은 조직의 리소스에 대한 역할을 할당하기 전에 먼저 파트너십에 구성원을 추가해야 합니다.<block ref="af42bf104f841b0c4c7b71f12b6693d9" category="inline-link-macro-rx"></block></block>
   <block id="575c38cd2c5990295bb75895f260de3b" category="section-title">파트너십 사용자의 역할 이해</block>
@@ -3812,7 +3800,6 @@
   <block id="cc6d53ade5033c714686efe2af67ddb4" category="section-title">파트너 사용자의 역할 변경 또는 제거</block>
   <block id="ccfd182116bd6f5ace157605044761a6" category="paragraph">파트너 조직의 구성원에게 할당한 역할을 변경하거나 제거할 수 있습니다.</block>
   <block id="2f8da3599342d03781c72c8335767fac" category="summary">파트너 조직에서 역할을 맡게 되면 해당 조직으로 전환하여 수행 권한이 있는 작업을 수행할 수 있습니다.</block>
-  <block id="9ea5245dac08790e720ee1ae8af1a1d0" category="doc">파트너 조직에서 일하다</block>
   <block id="edb0cfdfffd82f86f6584b60a8fd064b" category="inline-link-macro">조직 및 프로젝트 전환에 대해 자세히 알아보세요.</block>
   <block id="675b0f70d6df5486c85561212eda9044" category="paragraph">조직 메뉴를 사용하면 자신의 조직과 액세스 권한이 있는 파트너 조직 간에 전환할 수 있습니다.<block ref="21d2fc8d574c57ca1518f48a1f4e15fc" category="inline-link-macro-rx"></block></block>
   <block id="05b4cd19be99dcfde493798bb42dc7a5" category="paragraph">파트너 조직에서 공유된 리소스를 확인하고, 할당된 역할에 따라 작업을 수행할 수 있습니다.  파트너십 관리자와 협력하여 액세스해야 하는 리소스에 대한 적절한 역할을 맡고 있는지 확인하세요.</block>
@@ -3942,7 +3929,6 @@
   <block id="422588021a93cfdaa26ce8d7d46dfeda" category="list-text">NetApp 에서 보낸 이메일이 받은 편지함에서 확인되었는지 확인하세요. 이메일 주소 확인 지침이 포함되어 있습니다.</block>
   <block id="16a6acfaa9478d613f4568fcc7f798b9" category="list-text">*시작하기*를 선택하세요.</block>
   <block id="003a29a0c94cdfca33812dab6ad6ae71" category="summary">클라우드 공급업체의 마켓플레이스에서 NetApp Intelligent Services 구독하면 시간당 요금이나 연간 계약으로 NetApp 데이터 서비스 비용을 지불할 수 있습니다.  NetApp 에서 라이선스를 구매한 경우 마켓플레이스 제공 서비스도 구독해야 합니다.  귀하의 라이센스 요금이 항상 먼저 청구되지만, 라이센스 용량을 초과하거나 라이센스 기간이 만료되면 시간당 요금이 청구됩니다.</block>
-  <block id="9c127a433a6192892f397a5a7e6dcb5a" category="doc">NetApp Intelligent Services 구독(제한 모드)</block>
   <block id="01d7bfce3883bfe219db559f4111d0eb" category="paragraph">마켓플레이스 구독을 통해 제한 모드로 다음 데이터 서비스에 대한 요금을 청구할 수 있습니다.</block>
   <block id="53408e4899de894c1e6bc5c8f7add2d4" category="paragraph">NetApp Data Classification 구독을 통해 활성화되지만 분류 사용에는 비용이 청구되지 않습니다.</block>
   <block id="53043f0a6d597ccfe179296cc8ded9c0" category="inline-link">Cloud Volumes ONTAP 대한 BYOL 용량 기반 라이선스 관리</block>
@@ -3956,7 +3942,6 @@
   <block id="27194bd802f46de78e530dc59824e89c" category="inline-link">Google Cloud 자격 증명 및 구독 관리</block>
   <block id="75972953c10b83c7556004bbdcab6786" category="list-text"><block ref="75972953c10b83c7556004bbdcab6786" category="inline-link-rx"></block></block>
   <block id="b037533a0c1bd52a8d9de28034d4b20d" category="summary">클라우드 공급업체의 마켓플레이스에서 NetApp 데이터 서비스를 구독하여 시간당 요금이나 연간 계약을 통해 데이터 서비스 비용을 지불하세요.  NetApp 에서 라이선스를 구매한 경우 마켓플레이스 제공 서비스도 구독해야 합니다.  귀하의 라이센스 요금이 항상 먼저 청구되지만, 라이센스 용량을 초과하거나 라이센스 기간이 만료되면 시간당 요금이 청구됩니다.</block>
-  <block id="8e43404d530acd19487776c0f28649ea" category="doc">NetApp Intelligent Services (표준 모드) 구독</block>
   <block id="42dacd60cd3485508aefb9e0fa6699f9" category="paragraph">마켓플레이스 구독을 통해 다음 NetApp 데이터 서비스에 대한 요금을 청구할 수 있습니다.</block>
   <block id="6269943bbab503c57445a47b04897eaa" category="summary">NetApp 기술 지원에 지원 사례를 개설하려면 먼저 NetApp Console 에 NetApp 지원 사이트 계정을 추가한 다음 지원을 위해 등록해야 합니다.</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">지원 등록</block>
@@ -4079,7 +4064,6 @@
   <block id="784d74ec26e151955a4c9657042f8469" category="section-title">NetApp 지식 기반에서 도움 받기</block>
   <block id="d22ff119563c0ee5fe8dab4228074cee" category="inline-link">NetApp 지원팀에서 생성한 문제 해결 정보 보기</block>
   <block id="50442864bbf7126b7b62b75cde676ded" category="paragraph"><block ref="bb2a765d0923866ecd647a5c8b0cc5e9" category="inline-link-rx"></block> .</block>
-  <block id="afb829361695f0d21025a9396659859f" category="doc">콘솔 에이전트 제거 및 제거</block>
   <block id="bfc66ba3b81dc2d9cc21215e84660492" category="paragraph">표준 모드나 제한 모드(즉, 에이전트 호스트에 아웃바운드 연결이 있는 경우)를 사용하는 경우 아래 단계에 따라 에이전트를 제거해야 합니다.</block>
   <block id="0f698c82e2e9c5cd1c4ae5eca5c6d189" category="list-text">에이전트의 Linux VM에 연결합니다.</block>
   <block id="6a5be3e06b444aea04beccda3bc9e1d6" category="list-text">Linux 호스트에서 제거 스크립트를 실행합니다.</block>
@@ -4130,7 +4114,6 @@
   <block id="16068479a2701e2f4cc03e6c5d4a2304" category="section-title">다크 모드(다크 테마) 구성</block>
   <block id="028c8274cfa01e62e5591b427f85e126" category="paragraph">콘솔을 다크 모드로 표시하도록 설정할 수 있습니다.</block>
   <block id="a99608db4d85374403174f1119cac088" category="list-text">*어두운 테마* 슬라이더를 움직여 활성화하세요.</block>
-  <block id="490414e0366b091220802d406e52c076" category="doc">새로운 소식</block>
   <block id="3243765239f2c6f00af00297914a69d4" category="paragraph">NetApp Console 관리 기능의 새로운 기능에 대해 알아보세요: ID 및 액세스 관리(IAM), 콘솔 에이전트, 클라우드 공급자 자격 증명 등</block>
   <block id="b9d888f58b09c4007db0247286e392b5" category="section-title">2025년 8월 11일</block>
   <block id="328e39c031d3f6a77403904d6dda2377" category="section-title">2025년 7월 31일</block>
@@ -4858,7 +4841,6 @@
   <block id="c3705e839d1a8df80ae158824bd08448" category="cell">홈페이지 대시보드 지표</block>
   <block id="3863a60fc30916ec3597541037025585" category="cell">*이용 가능한 데이터 서비스*:</block>
   <block id="9ea7157b38fa199a8532fa65cd92d096" category="summary">역할 기반 액세스 제어(RBAC)를 사용하여 NetApp Console 에 대한 사용자 액세스를 관리하고, 조직, 폴더 또는 프로젝트 수준에서 미리 정의된 역할을 할당할 수 있습니다. 각 역할은 사용자가 할당된 범위 내에서 수행할 수 있는 작업을 정의하는 특정 권한을 부여합니다.</block>
-  <block id="6369e7866450cfbd1595f3b5f17a45ce" category="doc">NetApp Console 역할 기반 액세스 제어(RBAC)에 대해 알아보세요.</block>
   <block id="17b936d2e4829a5cf778b2c29100bb7a" category="paragraph">예를 들어, 특정 프로젝트 수준에 대해 구성원에게 랜섬웨어 복원력 관리자 역할을 할당하여 해당 프로젝트 내의 리소스에 대한 랜섬웨어 복원력 작업을 수행할 수 있도록 허용하되, 조직 전체에 대한 광범위한 액세스 권한은 부여하지 않을 수 있습니다. 이 사용자는 조직 내 여러 프로젝트에 대해 동일한 역할을 부여받을 수 있습니다.</block>
   <block id="9b372111c3284b1c413c38133ce241b7" category="paragraph">사용자의 책임에 따라 동일한 범위 또는 서로 다른 범위에 대해 여러 역할을 할당할 수 있습니다. 예를 들어, 소규모 조직에서는 동일한 사용자가 조직 차원에서 랜섬웨어 복원력과 백업 및 복구 작업을 모두 관리할 수 있는 반면, 대규모 조직에서는 프로젝트 차원에서 각 역할에 서로 다른 사용자를 할당할 수 있습니다.</block>
   <block id="0455998a9b4d48dfc90712f125c02594" category="section-title">콘솔 조직 구성원의 유형</block>
@@ -5057,7 +5039,6 @@
   <block id="46bc8a32811e038789b16b3be4c304b0" category="list-text">페더레이션된 사용자는 IdP에서 제거되면 NetApp Console 에 대한 액세스 권한을 자동으로 잃게 됩니다. 하지만 멤버 목록을 최신 상태로 유지하려면 콘솔 조직에서 해당 사용자를 제거해야 합니다.</block>
   <block id="2a331f65a945f71cf576d7408c911549" category="list-text">IdP에서 페더레이션 그룹에서 사용자를 제거하면 해당 그룹과 연결된 콘솔 액세스 권한을 잃게 됩니다. 하지만 콘솔에서 명시적으로 할당된 역할과 관련된 접근 권한은 여전히 유지됩니다.</block>
   <block id="741fa1d97e274d87522c5274731ddbd6" category="paragraph">파트너 조직이 없는 경우 *파트너십* 탭이 표시되지 않습니다.</block>
-  <block id="a6e7e6949d9cfe21acbeb52c1329d758" category="doc">사용자 보안</block>
   <block id="1ec1065d3e78d7c206f0ecaef991aaf0" category="paragraph">멤버 보안 설정을 관리하여 NetApp Console 조직에 대한 사용자 액세스를 보호하십시오. 사용자 암호를 재설정하고, 다단계 인증(MFA)을 관리하고, 서비스 계정 자격 증명을 다시 생성할 수 있습니다.</block>
   <block id="fea697c6ae1d0da74f0ba44be3fc0d3f" category="section-title">사용자 비밀번호 재설정 (로컬 사용자만 해당)</block>
   <block id="3330914a79300c6835bbe3bc86cf9c45" category="paragraph">조직 관리자는 로컬 사용자의 비밀번호를 재설정할 수 없습니다. 하지만 사용자에게 직접 비밀번호를 재설정하도록 안내할 수는 있습니다.</block>
@@ -5400,7 +5381,6 @@
   <block id="b04b058acf83e4616c9312ab2b951050" category="paragraph">일부 서비스는 제한적으로 지원될 수 있습니다. 제한된 모드 및 프라이빗 모드에서 이러한 서비스가 지원되는 방식에 대한 자세한 내용은 위의 섹션을 참조하십시오.</block>
   <block id="68a27766c88e7a46b8cf75f317897c53" category="cell">스토리지 및 데이터 서비스에 대한 대시보드 지표</block>
   <block id="caa439279d19ace285e22f87f479e876" category="summary">NetApp Console은 모든 클라우드 및 온프레미스 시스템 전반에 걸쳐 데이터를 관리하고 보호하는 데 도움을 줍니다. 데이터를 안전하게 유지하고 원활하게 작동하도록 하는 도구가 포함되어 있습니다.</block>
-  <block id="166d58641d71e8f7701618924f6e0230" category="doc">통합 스토리지 관리를 위한 NetApp Console</block>
   <block id="aa14ca2be3c293532f200bf7d16ab2fa" category="paragraph">Console을 서비스형 소프트웨어(SaaS) 애플리케이션으로 사용하거나 클라우드 또는 온프레미스 환경(제한된 모드 또는 프라이빗 모드)에 설치할 수 있습니다. 각 모드는 서로 다른 기능 세트와 보안 요구 사항을 지원합니다.</block>
   <block id="45449898e6eb917b44e1e32f0b89ba76" category="paragraph">Console은 사용자가 환경에 배포하는 Console 에이전트와 함께 작동하여 온프레미스 및 클라우드 환경 전반에서 리소스를 관리하고 프로세스를 오케스트레이션합니다.</block>
   <block id="272b65faa175970c4d03415b57d4f80f" category="section-title">NetApp Console에 액세스하는 방법을 선택하세요</block>
@@ -5460,7 +5440,6 @@
   <block id="2b4ee5a3ed1d0d51275a5e7bbd3c9ecf" category="paragraph">NetApp Console SaaS(Software as a Service) 애플리케이션이 역할을 수임할 수 있도록 IAM 역할을 설정합니다.</block>
   <block id="3a18e641c4904b34adaf167885cce158" category="admonition">NetApp Console이 비공개 모드일 때는 읽기 전용 모드를 사용할 수 없습니다. <block ref="dfc550bfde7e455e24c09c75b6f9a3cd" category="inline-link-macro-rx"></block>.</block>
   <block id="e6de9ba283a3b88438bc9364ca14a865" category="summary">NetApp Console을 프라이빗 모드로 배포하여 아웃바운드 연결 없이 사용할 수 있습니다. 시작하려면 Console 에이전트를 설치하고, Console 에이전트에서 실행되는 사용자 인터페이스에 액세스하여 NetApp Console을 설정한 다음, 이전에 설정한 클라우드 권한을 제공하십시오.</block>
-  <block id="ed49d41012410c35755a665e704c51a3" category="doc">Console 에이전트를 비공개 모드로 배포합니다</block>
   <block id="b3d73a3e909120ba0dfb51cbe2327967" category="paragraph">NetApp Support Site에서 제품 설치 프로그램을 다운로드한 다음 Linux 호스트에 Console을 수동으로 설치하십시오.</block>
   <block id="c73db6dd4dc3a461773070693cc406c6" category="paragraph"><block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block> 또는 <block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>에서 NetApp Console을 사용하려면 해당 환경에서 시작하기 위한 별도의 지침을 따라야 합니다.<block ref="7305ccb1d247c4e62b18170abee468ff" category="inline-link-rx"></block></block>
   <block id="1c88387d9be2a13f9b45fd276e63cf80" category="list-text">Console 에이전트를 설치하려면 루트 권한이 필요합니다.</block>
@@ -5490,7 +5469,6 @@
   <block id="ab4fc3f68e8f23b6d532eb446e1e0a46" category="list-text">로그인에 사용된 인증 방법에 따라 자격 증명을 입력하라는 메시지가 표시됩니다.</block>
   <block id="3bcc313e589d80f58afe7da826230bf9" category="list-text">관리자가 조직에 대해 ID 페더레이션을 설정한 경우 페더레이션 연결</block>
   <block id="b4256d874b9eb9321ae2b4a02d8b30c0" category="summary">프라이빗 모드로 NetApp Console을 배포하기 전에 환경을 준비하십시오. 호스트 요구 사항을 검토하고, 네트워킹을 준비하고, 권한을 설정하는 등의 작업이 필요합니다.</block>
-  <block id="5f1067df496bfafd5eb793369b955e41" category="doc">프라이빗 모드 배포 준비</block>
   <block id="984490bee63453d441c7b37cdc6c3db7" category="admonition"><block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block> 또는 <block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>에서 NetApp Console을 사용하려면 해당 환경에 맞는 구체적인 지침을 따르십시오.<block ref="4d25824b3e9e7473eac5e4c3e5c39cc3" category="inline-link-rx"></block></block>
   <block id="7670b3e7fd0d9b5404a8ab86daf87444" category="section-title">1단계: 개인 정보 보호 모드의 작동 방식을 이해합니다</block>
   <block id="0c154543ae4407489c65103d2af0bf29" category="paragraph">프라이빗 모드에서는 온프레미스 또는 클라우드에 콘솔 에이전트를 설치한 다음 NetApp Console을 사용하여 스토리지 시스템(ONTAP 온프레미스 및 Cloud Volumes ONTAP)을 관리합니다. NetApp Console API 엔드포인트 또는 NetApp Console SaaS 애플리케이션에 대한 연결은 제공되지 않으므로 콘솔 에이전트에서 제공하는 로컬 UI를 통해 Console에 액세스합니다.</block>
@@ -5520,7 +5498,6 @@
   <block id="fb743a256e003636e11c6a09e6f9f45c" category="paragraph">Google Cloud에 Cloud Volumes ONTAP을 배포하려면 몇 가지 API를 활성화해야 합니다.</block>
   <block id="c5b5e04334ad1c3a88fc36eb4c450924" category="paragraph">설치된 NetApp Console 에이전트에서 로컬로 사용할 수 있는 브라우저 기반 인터페이스를 사용하십시오. SaaS 애플리케이션을 통해 제공되는 웹 기반 콘솔에서는 NetApp Console에 액세스할 수 없습니다.</block>
   <block id="482b4f20ae8169fa9067887ee7c6f373" category="summary">프라이빗 모드는 일반적으로 인터넷 연결이 없는 온프레미스 환경과 AWS Secret Cloud, AWS Top Secret Cloud 및 Azure IL6을 포함한 보안 클라우드 지역에서 사용됩니다.</block>
-  <block id="97159ba233bb02feaff6b3c2be05c879" category="doc">비공개 모드에서 NetApp Console 시작하기 워크플로</block>
   <block id="86324dc19986cf024d27996fe0699e06" category="list-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="0be36da6d7a1ea4d94468b72475c7e35" category="inline-link-macro-rx"></block></block>
   <block id="8cb1247d6f1cd796c983b5b1cfbbd285" category="list-text">대상 네트워크에 대한 액세스를 제공하는 네트워킹을 설정합니다.</block>
   <block id="8b08d043834b2ce6cdd1276030f09b82" category="list-text">클라우드 배포의 경우 소프트웨어를 설치한 후 Console 에이전트와 해당 권한을 연결할 수 있도록 클라우드 공급자에서 권한을 설정하십시오.</block>
@@ -5528,8 +5505,6 @@
   <block id="43290dee15998094cd0591ca540849fc" category="list-text">사용자의 Linux 호스트에 Console 에이전트를 설치하십시오.</block>
   <block id="a5d18b4d32134c035ee19835845fb372" category="list-text">웹 브라우저를 열고 Linux 호스트의 IP 주소를 입력하여 NetApp Console을 설정합니다.</block>
   <block id="f5320dd227fd2915c76475559e91c231" category="list-text">클라우드 배포의 경우, 이전에 설정한 권한을 NetApp Console에 제공하십시오.</block>
-  <block id="48c1fdc6148c4c5d5073b6e7a5d44800" category="doc">제한된 모드에서 NetApp Console 시작 워크플로</block>
-  <block id="91edb8869565e8b84d0bb89e65038d3a" category="doc">NetApp Console(SaaS 애플리케이션) 시작 워크플로</block>
   <block id="f98e75fe997bc0f9c22b78c53cbde10d" category="section-title">아웃바운드 연결이 있는 경우 에이전트를 제거합니다</block>
   <block id="8df5c96bcf4a5bf3cdde9f1422196766" category="section-title">아웃바운드 연결이 없을 때 에이전트를 제거합니다</block>
   <block id="37ad32ae84be5d4772583f6e7502b281" category="paragraph">에이전트에 아웃바운드 연결이 없는 경우(예: 프라이빗 모드) 호스트에서 에이전트 소프트웨어를 수동으로 제거해야 합니다.</block>
@@ -5716,7 +5691,6 @@
   <block id="80f48611c1bef55d72d46a64fc380278" category="listing-title">네트워크 연결 및 하드웨어 요구 사항에 대한 검증:</block>
   <block id="de69e8633d4ddcf1beb6e9af84080384" category="doc">NetApp Console에서 Console 에이전트용 투명 프록시 명령</block>
   <block id="39442b581cc52635af9cf2e5d2fe3673" category="doc">NetApp Console에서 운영 지원 분석가 액세스 역할</block>
-  <block id="dce3cf2abadb3552176d2f6b8851afa8" category="doc">NetApp Console 3.9.55 및 이전 버전의 네트워크 액세스</block>
   <block id="242449bfa8c5aeec893a23b37cc87d38" category="doc">NetApp Console에 대한 네트워크 액세스</block>
   <block id="4d819fcab6255dc911eb706563c786c6" category="doc">NetApp Console 에이전트에 대한 AWS 권한</block>
   <block id="191d01a2e791f9226fdfc683126f30ab" category="doc">NetApp Console 에이전트에 대한 Azure 권한</block>
@@ -5739,9 +5713,7 @@
   <block id="5ac9b947c65653cf6d02fe3c59e7fa2f" category="summary">NetApp Console에서 AWS에 Console 에이전트를 직접 배포할 수 있습니다. Console에서 AWS에 Console 에이전트를 배포하기 전에 네트워킹을 설정하고 AWS 권한을 준비해야 합니다.</block>
   <block id="dc06977a17baa1d2ac30423086ded05e" category="doc">NetApp Console에서 AWS에 Console 에이전트 배포</block>
   <block id="21bc24ad9112fe84642a352511c8c896" category="paragraph">AWS에 에이전트를 배포하면 사용자가 선택한 VPC에서 Linux를 실행하는 EC2 인스턴스와 Console 에이전트 소프트웨어가 시작됩니다.</block>
-  <block id="13cc9918631bd12add35c3badfe98a74" category="doc">AWS에서 Console 에이전트를 수동으로 배포합니다</block>
   <block id="3f0527499a34df287448340f6ef53274" category="paragraph">AWS에서 실행되는 Linux 호스트에 Console 에이전트를 수동으로 배포할 수 있습니다. 자체 Linux 호스트에 Console 에이전트를 수동으로 배포하려면 호스트 요구 사항을 검토하고, 네트워크를 설정하고, AWS 권한을 준비하고, Console 에이전트를 배포한 다음, 준비한 권한을 부여해야 합니다.</block>
-  <block id="ae156547be858d5da6a6ad874dab7c9e" category="doc">AWS Marketplace에서 Console 에이전트 배포</block>
   <block id="1117dd42210c4bae3fbd14a0d5fbfb90" category="paragraph">AWS Marketplace에서 직접 AWS에 Console 에이전트를 배포합니다. AWS Marketplace에서 Console 에이전트를 배포하려면 네트워킹을 설정하고, AWS 권한을 준비하고, 인스턴스 요구 사항을 검토한 다음 Console 에이전트를 배포해야 합니다.</block>
   <block id="8803623e8c34d1e3b06ab16ac0799483" category="doc">NetApp Console에서 Azure에 Console 에이전트 배포</block>
   <block id="34032c9a096e8efc23a3a259c8c09ac9" category="paragraph">NetApp Console에서 Azure에 Console 에이전트를 배포하려면 네트워킹을 설정하고 Azure 권한을 준비한 다음 Console 에이전트를 배포해야 합니다.</block>
@@ -5750,13 +5722,10 @@
   <block id="e9e3d2e696d0041aedbee33492e5bb65" category="doc">NetApp Console에서 Google Cloud에 Console 에이전트 배포</block>
   <block id="76755ec08e48ddd18aa09eb792dccf25" category="paragraph">Console에서 Google Cloud에 Console 에이전트를 배포할 수 있습니다. 네트워킹을 설정하고, Google Cloud 권한을 준비하고, Google Cloud API를 활성화한 다음 Console 에이전트를 배포해야 합니다.</block>
   <block id="921f27265f15374a9fe7782b3f1e4497" category="paragraph">Google Cloud에 에이전트를 배포하면 사용자가 선택한 VPC에서 Linux를 실행하는 VM 인스턴스와 Console 에이전트 소프트웨어가 시작됩니다.</block>
-  <block id="1956f48ec510aa9e9aaa1693a61d862a" category="doc">Google Cloud에서 Console 에이전트 배포</block>
   <block id="269f4bb9794c23a34082aab4e7846b08" category="paragraph">Google Cloud를 사용하여 Google Cloud에 Console 에이전트를 배포하려면 네트워킹을 설정하고, Google Cloud 권한을 준비하고, Google Cloud API를 활성화한 다음 Console 에이전트를 배포해야 합니다.</block>
-  <block id="f03765e7c67cd3e0afdcbb02e2df97ae" category="doc">Google Cloud에서 Console 에이전트를 수동으로 배포합니다</block>
   <block id="4cf3aefb03cce74960230022eaa4e100" category="paragraph">Linux 호스트에 Console 에이전트를 수동으로 배포하려면 호스트 요구 사항을 검토하고, 네트워크를 설정하고, Google Cloud 권한을 준비하고, Google Cloud API를 사용 설정하고, Console을 설치한 다음, 준비한 권한을 부여해야 합니다.</block>
   <block id="c55edff269043bf525a954a4154ec0a3" category="list-text">환경에 필요한 경우 자체 서명된 인증서를 신뢰할 수 있는 인증서에 업로드하십시오. 설치 후 이 인증서를 교체합니다.</block>
   <block id="e8e9fe3b3946d0efef2689d6b175ac89" category="summary">NetApp Console 에이전트를 온프레미스에 배포한 다음 로그인하여 NetApp Console 조직과 연동되도록 설정하십시오.</block>
-  <block id="6bdefeb27ef2009862c6af73ba4aa4f9" category="doc">수동으로 설치된 Console 에이전트용 VM을 유지 관리합니다</block>
   <block id="9845a65d039380c03d0798dc8b86888f" category="paragraph">Console 에이전트를 수동으로 설치하는 경우, 에이전트 호스트의 운영 체제 유지 관리는 고객(사용자)의 책임입니다. 예를 들어, 고객은 회사 표준 운영 체제 배포 절차에 따라 에이전트 호스트의 운영 체제에 보안 업데이트를 적용해야 합니다.</block>
   <block id="55775d5f288008be574f12b89a4bfa2f" category="section-title">에이전트 호스트에 운영 체제 업데이트를 적용합니다</block>
   <block id="3ce4474c24a93038aca82b41eaebbafa" category="paragraph">지원되는 구성과의 호환성을 유지하려면 정기적인 OS 패치 중에 Docker 또는 Podman이 업그레이드되지 않도록 해야 합니다. 이를 위해 업데이트 중에 Docker 또는 Podman을 일시적으로 제외하거나 패키지 관리자가 Docker 또는 Podman 업데이트를 건너뛰도록 영구적으로 구성할 수 있습니다.</block>
@@ -5889,7 +5858,6 @@
   <block id="fb1591c260dca92b4b768bb1b983b2f0" category="list-text">*방화벽 정책*: 새 방화벽 정책을 생성할지, 아니면 필요한 인바운드 및 아웃바운드 규칙을 허용하는 기존 방화벽 정책을 선택할지 선택합니다.</block>
   <block id="e4c07f2bba651b4e0cbb7e5ba8fefde5" category="paragraph">Console 에이전트를 생성한 Google Cloud 계정에 Google Cloud Storage 버킷이 있는 경우 Google Cloud Storage 시스템이 *시스템* 페이지에 자동으로 나타납니다<block ref="aefa7bc54c105a94a586917b309a8039" category="inline-link-rx"></block>.</block>
   <block id="c6757fa1172212bd89b40c339b1bf042" category="summary">VMware 사용자라면 OVA를 사용하여 vCenter에 Console 에이전트를 설치할 수 있습니다. OVA 다운로드 또는 URL은 NetApp Console을 통해 사용할 수 있습니다.</block>
-  <block id="ad8b6fe2e7c4886f2851470625537eee" category="doc">vCenter를 사용하여 온프레미스에 Console 에이전트 설치</block>
   <block id="6b3d86b99e2472a8ac2d2fee0825f8f7" category="paragraph">VMware 사용자라면 OVA를 사용하여 vCenter에 Console 에이전트를 배포할 수 있습니다. OVA 다운로드 또는 URL은 NetApp Console을 통해 이용할 수 있습니다.</block>
   <block id="dd610cd3b2866d7fae9848317b06c03a" category="admonition">vCenter 도구와 함께 Console 에이전트를 배포하면 VM 웹 콘솔을 사용하여 유지 관리 작업을 수행할 수 있습니다. <block ref="21e15fc43bbac3ef120d8f996828c28e" category="inline-link-macro-rx"></block></block>
   <block id="c12234e7a9633d15fc94f2e9e5a62020" category="admonition">온프레미스에 Console 에이전트를 설치한 상태에서는 Google Cloud의 리소스를 관리할 수 없습니다. Google Cloud 리소스를 관리하려면 Google Cloud에 에이전트를 설치하세요.</block>
@@ -6017,7 +5985,6 @@
   <block id="fffef7d3f6ea2dc8c70c1977d7df72cf" category="list-text">*관리 &gt; 지원*을 선택합니다.</block>
   <block id="bdbe420ae669ff58f6ddfc76e934fcce" category="paragraph">이 옵션을 사용하면 다시 로그인하라는 메시지가 표시됩니다. 이 계정의 토큰은 90일 후에 만료됩니다. 이를 알리는 알림이 게시됩니다.</block>
   <block id="1a653af9db5aa75c21774ad3e0c682b2" category="summary">콘솔 에이전트를 배포한 후 기존 vCenter 또는 ESXi 호스트를 변경할 수 있습니다. 예를 들어 콘솔 에이전트를 호스팅하는 VM 인스턴스의 CPU 또는 RAM을 늘릴 수 있습니다.</block>
-  <block id="0f90bce2ae7648cda1c8f5dc64f9eb4b" category="doc">Console 에이전트용 vCenter 또는 ESXi 호스트 유지 관리</block>
   <block id="5701e28a09f3583ad12c519e7828b4a9" category="paragraph">vSphere 클라이언트를 통해 유지 관리 콘솔에 액세스할 수 있습니다.</block>
   <block id="a2cfceffec1eb22eea65cb9fce81f24f" category="list-text">vSphere 클라이언트를 열고 vCenter에 로그인합니다.</block>
   <block id="a81bffe28407c93287bf3f9f760bbd9f" category="paragraph">vCenter 또는 ESXi 호스트에서 VM 인스턴스 설정을 편집한 다음 유지 관리 콘솔을 사용하여 변경 사항을 적용하십시오.</block>
@@ -6360,4 +6327,118 @@
   <block id="7f862a4b8fc22b0af5dda5c9ababa346" category="cell">iam:TagRole</block>
   <block id="ac63bb5663971c98e9ad66f59e257a30" category="summary">NetApp Console은 콘솔 에이전트를 사용하여 클라우드 및 온프레미스 스토리지 시스템을 관리하는 SaaS 애플리케이션입니다. NetApp Console 로컬 배포는 정책 시행, 드리프트 수정 및 완벽한 데이터 주권을 제공하는 엔터프라이즈 규모의 ONTAP 플릿 관리를 위한 자체 호스팅 방식의 에이전트리스 가상 머신입니다.</block>
   <block id="e9136b652dc2f76f18a9d738127bb6a3" category="doc">NetApp Console과 NetApp Console 로컬 배포 비교</block>
+  <block id="b56346a21533cb3c02f75ab5cc7c59a8" category="doc">Console 에이전트 4.10.0</block>
+  <block id="e25811fd33a54b98aaedd7e6a9ea664b" category="paragraph">4.10.0 릴리스는 표준 모드와 제한된 모드를 모두 지원합니다.</block>
+  <block id="657b18a162285732ef5f46d679b05663" category="section-title">클라우드 미디에이터의 응답성과 안정성이 향상되었습니다.</block>
+  <block id="d04e4287a3b42a9890f48390e8193dc1" category="paragraph">이제 서비스는 클러스터 상태 업데이트를 더욱 효율적으로 처리하여 간헐적인 시간 초과 및 다운타임을 줄이고 SMaS 관계에 대한 자동 계획 외 장애 조치 중재 기능을 강화합니다.</block>
+  <block id="8e185da70c606c7dcf3a854773e5a5fd" category="paragraph">NetApp Console 4.10.0 관리에는 보안 및 버그 수정 사항이 포함되어 있습니다.</block>
+  <block id="8007d72f5958d5f16c1840c38742f735" category="doc">NetApp Console에서 Google Cloud 프로젝트 및 권한에 대해 알아보세요.</block>
+  <block id="16c66023c031db06fc97aed45a9cef44" category="doc">NetApp Console 에이전트 배포 방법에 대해 알아보세요</block>
+  <block id="0e28c7401e87a8a34b310094e185c429" category="doc">NetApp Console의 ID 페더레이션에 대해 알아보십시오.</block>
+  <block id="5d0a67c3c2ae237a4d67f9b0402e9f6e" category="doc">NetApp Console 역할 기반 액세스 제어에 대해 알아보기</block>
+  <block id="2afbfda002e90132791f5167feed883f" category="doc">NetApp Console과 NetApp Console 로컬 배포의 차이점</block>
+  <block id="8e3ec462216d5097444b77ca00f80473" category="admonition">클라우드 및 온프레미스 환경을 관리하고 NetApp에서 플랫폼 인프라를 관리하도록 하려면 NetApp Console을 선택하십시오. 대규모 온프레미스 ONTAP 환경을 관리하고 완벽한 데이터 주권 및 정책 기반 스토리지 관리가 필요한 경우 NetApp Console 로컬 배포를 선택하십시오.</block>
+  <block id="d7500dc8af696cd476663bebb9d0fcb4" category="paragraph">NetApp은 NetApp Console을 SaaS 애플리케이션으로 호스팅하고 유지 관리합니다. 가입 후 즉시 스토리지 관리를 시작할 수 있습니다. 스토리지 시스템 관리를 위해 클라우드 또는 온프레미스 환경에 경량 Console 에이전트를 배포합니다. 에이전트는 NetApp Console 플랫폼에 아웃바운드로 연결되며, NetApp은 플랫폼 인증, 업그레이드 및 가용성을 자동으로 처리합니다.</block>
+  <block id="773ad4889739d9b22df6b5f152501006" category="paragraph">NetApp Console은 제한된 모드(아웃바운드 연결이 제한된 자체 퍼블릭 클라우드에 설치)와 프라이빗 모드(온프레미스 또는 클라우드에 설치하고 NetApp Console 플랫폼에 연결할 수 없는 모드, 에어갭 환경 포함)도 지원합니다.</block>
+  <block id="5ceffe99385ecce35b5a538a16ca57cb" category="paragraph"><block ref="dc7c11e9da585b9fa1e35ca44da95ccc" category="inline-link-rx"></block>.</block>
+  <block id="6bc8e262d6c87c1cc67ba2e2ef69c080" category="paragraph">NetApp Console은 Amazon FSx for ONTAP, Cloud Volumes ONTAP, Amazon S3, Google Cloud Storage, E-Series, StorageGRID, 온프레미스 ONTAP 클러스터 등의 클라우드 스토리지를 포함하여 가장 광범위한 스토리지 시스템을 지원합니다. NetApp Backup and Recovery, NetApp Disaster Recovery, NetApp Ransomware Resilience, NetApp Copy and Sync, NetApp Data Classification 등을 포함한 전체 NetApp 데이터 서비스 제품군에 대한 액세스를 제공합니다. NetApp Console은 Digital Advisor, Lifecycle Planning, Sustainability 대시보드 등의 지원 계약 기능도 제공합니다.</block>
+  <block id="abd3ebf1d0176fca066a577a665824f3" category="paragraph">NetApp Console은 가장 많은 기능을 원하고, 운영 유지 관리에 드는 노력을 줄이며, 유연한 라이선스를 원하는 하이브리드 클라우드 환경을 관리하는 조직에 가장 적합합니다.</block>
+  <block id="78c9351d6bfa969cec1e259c5314fb98" category="inline-link">NetApp Console에 대해 알아보십시오^.</block>
+  <block id="a005dfa7e9da2ab070c9b2a2cc506605" category="paragraph"><block ref="a005dfa7e9da2ab070c9b2a2cc506605" category="inline-link-rx"></block></block>
+  <block id="fae210aa9f9d8906ee39264d97001f11" category="section-title">NetApp Console 로컬 배포</block>
+  <block id="fcc4637d90c046c4a4ef32a9afdaa6fc" category="paragraph">NetApp Console 로컬 배포를 사용하면 관리 트래픽이 환경 외부로 나가지 않고 NetApp Console 제어 플레인을 온프레미스 인프라 내에서 완전히 실행할 수 있습니다. 가상 어플라이언스 이미지를 사용하여 콘솔을 가상 머신으로 배포하고 vCenter 환경의 다른 가상 머신처럼 관리할 수 있습니다. 콘솔 에이전트는 필요하지 않습니다. 가상 머신은 ONTAP 클러스터와 직접 통신합니다.</block>
+  <block id="5fb781e175de9970e2718bb94cc3d721" category="paragraph">NetApp 콘솔 프라이빗 모드는 에어갭 및 온프레미스 배포도 지원하지만, 콘솔 로컬 배포는 엔터프라이즈 규모의 ONTAP 플릿 관리를 위해 특별히 설계되었습니다. 이 모드는 다른 NetApp 콘솔 배포 모드에서는 사용할 수 없는 기능을 추가합니다.</block>
+  <block id="0d7759ae1f20023b009816231b4ec556" category="list-text">스토리지 클래스 정책</block>
+  <block id="704be31d8e2a42e0c7ff6b6f16b73c3e" category="list-text">스토리지 표준을 성능, 용량 및 계층화 요구 사항을 묶어 재사용 가능한 템플릿으로 한 번만 정의합니다. 모든 프로비저닝은 승인된 클래스를 사용하며, Console 로컬 배포는 워크로드를 지속적으로 모니터링하여 규정 준수 여부를 확인하고 편차를 식별합니다.</block>
+  <block id="6d84cd31d161fe86d10b8600c9e49fd4" category="list-text">Fleet 관리</block>
+  <block id="7385a9be1dc0677e5961772473ab82cd" category="list-text">클러스터를 비즈니스 구조를 반영하는 폴더와 플릿으로 구성한 다음, 조직, 폴더 또는 플릿 범위에서 관리 권한을 위임하십시오.</block>
+  <block id="26f4e34d0f8df693380313a828150255" category="list-text">Workload Analyzer</block>
+  <block id="48fa264a7a3c3c0d64a82ae09d190200" category="list-text">지연 시간, 처리량, 초당 입출력 작업 수 및 시간 경과에 따른 구성 변경 사항 간의 상관 관계를 분석하여 워크로드에 영향을 미치기 전에 성능 문제를 찾아냅니다.</block>
+  <block id="f54523e7e9970026552c0beada420de7" category="list-text">대규모 언어 모델 통합</block>
+  <block id="dbebae0d47896a2bb083de1589f27131" category="list-text">자연어를 사용하여 스토리지를 프로비저닝하고, 경고를 조사하고, 스토리지 환경에 대한 상황별 답변을 얻으려면 자체 대규모 언어 모델에 연결하십시오.</block>
+  <block id="8375d985c183af61065e987103e69be9" category="list-text">안내형 및 자동화된 문제 해결</block>
+  <block id="2d9389b28f495b8afdcdf8f214f11df3" category="list-text">워크로드가 스토리지 클래스를 벗어나거나 경고가 발생하면 Console 로컬 배포를 통해 Fix-It 권장 사항을 제공합니다. 안내에 따라 단계별로 문제를 해결하거나 원클릭 자동 복구 기능을 사용하여 수동 작업 없이 규정 준수를 복원할 수 있습니다.</block>
+  <block id="73c797fde7608d30c65279e6ca248835" category="list-text">이메일 및 웹훅을 통한 알림 전송</block>
+  <block id="69c0257b1ba8a3ba7687d4f7a9883d7f" category="list-text">스토리지 조건 변경 시 관련 팀에 알림이 전달되도록 이메일 및 웹훅 알림 채널을 구성합니다. 웹훅은 기존 모니터링 및 인시던트 관리 툴과 통합됩니다.</block>
+  <block id="00c24ecc0e9a6f1c6a5202f40e8c96c1" category="paragraph">콘솔 로컬 배포는 온프레미스 ONTAP 클러스터 및 NetApp Backup and Recovery를 지원합니다. 또한 연합 인증을 위해 Active Directory와 통합되며 로컬 사용자를 위한 다중 요소 인증을 지원합니다.</block>
+  <block id="be6ca74d1ea996c7c4fe59d3f22d39a4" category="paragraph">콘솔 로컬 배포는 정책 기반 프로비저닝, 자동화된 규정 준수 검사 및 완벽한 데이터 주권이 필요한 대규모 온프레미스 ONTAP 환경을 보유한 조직에 가장 적합합니다.</block>
+  <block id="70b86d6aa7fb00fd1d760b33b8607159" category="inline-link-macro">NetApp Console 로컬 배포에 대해 알아보십시오^.</block>
+  <block id="f64bf1d04df251b82d06554b478f9ae4" category="paragraph"><block ref="f64bf1d04df251b82d06554b478f9ae4" category="inline-link-macro-rx"></block></block>
+  <block id="0161e3d40bdbea6ca6998c8c60165b33" category="section-title">기능 비교</block>
+  <block id="bfd15aa26ba0ced782240c4a8b7e517e" category="section-title">스토리지 관리</block>
+  <block id="21021ea0e52be8e9c599f4dff41e5be0" category="cell">기능</block>
+  <block id="23dad8eedc041cc12dbd56726f7f5a94" category="cell">예 (콘솔 에이전트 필요)</block>
+  <block id="f92b8f818d9b311ddfe493bf8fd9d4d1" category="cell">예 (콘솔 가상 머신과의 직접 통신)</block>
+  <block id="5a33f8c167d1b84a718d0a9ab656e684" category="cell">클라우드 스토리지 시스템(Amazon FSx for ONTAP, Cloud Volumes ONTAP, Amazon S3 등)</block>
+  <block id="5caa8b77e08ebd3908f7b342222cc4f7" category="cell">E-Series 및 StorageGRID</block>
+  <block id="b003a63279cc18b6fb1177d6fe5ae8b8" category="cell">Digital Advisor, 수명 주기 계획, 지속 가능성</block>
+  <block id="f2f74222833c136454ac1c309093ce22" category="cell">스토리지 클래스 정책 및 규정 준수 모니터링</block>
+  <block id="99a7a1aa741fd89b57934cd02731f4af" category="cell">플릿 관리(폴더 및 플릿)</block>
+  <block id="d7ae72f8784c3d332b0fa036311ef934" category="cell">AI 지원 운영을 위한 대규모 언어 모델 통합</block>
+  <block id="c72a03504491ce72b87c21f210031a3e" category="section-title">콘솔 설정 및 보안</block>
+  <block id="a0e3089d312c100208595d685b4104d2" category="cell">배포 모델</block>
+  <block id="9e2f8f0cf1d9ef87b70b0927b7aa6315" category="cell">Software as a service, NetApp에서 호스팅(다양한 배포 모드 제공)</block>
+  <block id="e94cfdb1bcf6790d1866d9d05ab27a2c" category="cell">자체 인프라에서 호스팅되는 가상 머신</block>
+  <block id="85ed230bbcc941c129c9222b688edfe4" category="cell">소프트웨어 업그레이드</block>
+  <block id="18989411927d889b19d609bcc0020172" category="cell">자동, NetApp 관리</block>
+  <block id="e1ba155a9f2e8c3be94020eef32a0301" category="cell">수동</block>
+  <block id="860d51de2751d60b75aa2bf4908d091f" category="cell">NetApp 콘솔 애플리케이션(인터넷 또는 가상 머신 액세스)</block>
+  <block id="04628071892bff31fcda3d0180ce0e14" category="cell">콘솔 가상 머신(로컬, 인터넷 연결 필요 없음)</block>
+  <block id="a492925ae64557e89b32f29da418b5eb" category="cell">데이터 주권</block>
+  <block id="8128bb2b2b16d567cc51992879a88b83" category="cell">관리 트래픽은 NetApp Console 플랫폼으로 전송됩니다.</block>
+  <block id="9a85d1c8f123f061c5e7f2ebb079e094" category="cell">데이터나 관리 트래픽이 사용자 환경 외부로 유출되지 않습니다.</block>
+  <block id="9c5d46a76492e92eb9d02ae973277f0b" category="cell">Active Directory 통합</block>
+  <block id="f45362733fe1dd1af3c58ae64471d466" category="cell">감사 로깅</block>
+  <block id="0b9c6eef4e3d3a222eb04e910d252339" category="cell">라이센싱</block>
+  <block id="5d888c34f4251b9bdd3ba8412b69ff87" category="cell">마켓플레이스 구독 및 자체 라이선스 사용</block>
+  <block id="c7eca4d9dd171fc4b4a21c3425a47aa6" category="cell">Bring-your-own-license</block>
+  <block id="699a6eee179cea80f5013d1166d0f30a" category="doc">이전 버전의 NetApp Console에 대한 네트워크 액세스</block>
+  <block id="ae48d1523d35962052b85097b64ff409" category="doc">NetApp Console 에이전트 보안 그룹 규칙(AWS)</block>
+  <block id="6f395c5b2de11fd2469a348184719409" category="doc">NetApp Console 에이전트 보안 그룹 규칙(Azure)</block>
+  <block id="c534d05a2204d355dd98c75ca4fa0ef0" category="doc">NetApp Console 에이전트 방화벽 규칙(Google Cloud)</block>
+  <block id="ef7c9287a88e41770bcf8e2f71bf4a62" category="doc">NetApp Console의 온프레미스 Console 에이전트용 포트</block>
+  <block id="b8a84f07d25586ae344b5d2fea360ceb" category="doc">NetApp Console 에이전트용 vCenter 또는 ESXi 호스트 유지 관리</block>
+  <block id="342c0cadebe48cf993f95cc497f1ee67" category="doc">NetApp Console 에이전트가 프록시 서버를 사용하도록 구성합니다</block>
+  <block id="538f73bc4b16880a92f834fffd5eee47" category="doc">NetApp Console을 Active Directory Federation Services와 연동</block>
+  <block id="0e9b2bbb493d88a60e9b5623cd2d24b4" category="doc">NetApp Console을 SAML ID 공급자와 연동</block>
+  <block id="7c7e37a60fdebfbcd688955b45cc315e" category="doc">NetApp Console에서 페더레이션을 위한 이메일 도메인을 확인하십시오.</block>
+  <block id="a7929bdeb057d0040937eace4fc80b03" category="doc">NetApp Console 관련 도움말 보기</block>
+  <block id="eb6f589cc532511de3d491784eac9074" category="doc">NetApp Console 에이전트를 다른 폴더 및 프로젝트와 연결합니다.</block>
+  <block id="ce28311053eab652f7cba323b87be0a8" category="doc">NetApp Console에서 IAM 활동 모니터링 또는 감사</block>
+  <block id="ed0b449f46c28022aa1e596cb60930ae" category="doc">NetApp Console 조직에 구성원 추가</block>
+  <block id="84f6282c0313bada67ece6dc68d0f5fd" category="doc">NetApp Console 조직의 이름을 변경하고 ID를 가져옵니다</block>
+  <block id="2627c336d69cf7d192f27dbf9318645f" category="doc">NetApp Console 조직, 프로젝트 및 에이전트 간 전환</block>
+  <block id="5309258d747a9845e04a5a666f7e0bb8" category="doc">NetApp Console에서 사용자 보안 관리</block>
+  <block id="fbec7d32f2a1eaf9c2331cfbeb40b4f8" category="doc">NetApp Console을 위해 AWS에서 Console 에이전트를 수동으로 배포합니다.</block>
+  <block id="09f8a40b3c8ade5b73c631a145579e8d" category="doc">AWS 마켓플레이스에서 NetApp Console 에이전트 배포</block>
+  <block id="af8de380cb8547e69aa14de996858185" category="doc">Azure에 NetApp Console 에이전트를 수동으로 설치합니다</block>
+  <block id="d0ebd468c3f09a8b92c11ff75d7ad157" category="doc">Azure Marketplace에서 NetApp Console 에이전트 생성</block>
+  <block id="db0d4894b0f672f5846a0dd831c3acef" category="doc">Google Cloud에서 NetApp Console 에이전트를 배포합니다</block>
+  <block id="d8c7869374338e02642160e98a2d8417" category="doc">Google Cloud에 NetApp Console 에이전트를 수동으로 배포합니다</block>
+  <block id="5382ae577d3f63349dafa3576dfdb3ac" category="doc">vCenter를 사용하여 온프레미스에 NetApp Console 에이전트를 설치합니다</block>
+  <block id="abca119af0a13b3133fa5afd29df6537" category="doc">온프레미스에 NetApp Console 에이전트를 수동으로 설치합니다</block>
+  <block id="fb0147398e4c8a5b077a1394aed4389e" category="doc">NetApp Console 에이전트를 프라이빗 모드로 배포합니다.</block>
+  <block id="24aa86604f7c13368f329291e2176320" category="doc">NetApp Console 에이전트를 제한된 모드로 배포합니다</block>
+  <block id="9f055563896ad1d86b1aff07fa15e9db" category="doc">NetApp Console 액세스를 위해 CA 서명 인증서를 설치합니다</block>
+  <block id="732e996d6e02c3ebc791dbde9abe1e56" category="doc">수동으로 설치된 NetApp Console 에이전트용 VM 유지 관리</block>
+  <block id="9e85e0ca90299f57faff64486b07b169" category="doc">다양한 NetApp Console 에이전트와 연결된 시스템 보기</block>
+  <block id="df3c94950882fe8269c8bd3124102787" category="doc">NetApp Console의 ONTAP System Manager에 대한 ONTAP 권한 적용</block>
+  <block id="8fbfb7191006f1ff54bec4699202f25d" category="doc">NetApp Console에서 파트너십 구성원 관리</block>
+  <block id="2419efcdd1cfbd36c947ead316bdb610" category="doc">NetApp Console에서 파트너십 사용자에게 리소스 액세스 권한을 부여합니다.</block>
+  <block id="88e7470f978d59065e8250e526936a9d" category="doc">NetApp Console에서 파트너 조직과 함께 작업하기</block>
+  <block id="47334a862ae2aa74700504caf1fe7ec6" category="doc">NetApp Console 프라이빗 모드에서 배포 준비</block>
+  <block id="d8e9a7ffa6642a6f5e41c6f41381033a" category="doc">NetApp Console 제한된 모드에서 배포 준비</block>
+  <block id="7382bba8f6132f40ca2d21fbbe55deed" category="doc">비공개 모드에서 NetApp Console 빠른 시작</block>
+  <block id="4fd3dab039a9a697aa45cdf9e4151fa8" category="doc">제한된 모드의 NetApp Console 빠른 시작</block>
+  <block id="d71f3be9ecdf6109c0abd62c58d4602a" category="doc">표준 모드의 NetApp Console 빠른 시작</block>
+  <block id="b34b04cba573bd7f4b8706b27ab86ed4" category="doc">NetApp Console에서 Amazon EC2 인스턴스에 IMDSv2 사용 요구</block>
+  <block id="be55b27ac8e6a53f4b7611cb418cfbfe" category="doc">NetApp Console 제한된 모드에서 NetApp Intelligent Services 구독</block>
+  <block id="5826831579ea4f43a0cb70045cf5f97b" category="doc">표준 모드에서 NetApp Console 데이터 서비스 구독</block>
+  <block id="75aeae08e5ba1582cd3ad59827edc6ca" category="doc">NetApp Console 지원을 위해 등록하십시오.</block>
+  <block id="2639be1d095a58dd96a72a823ff1b61b" category="doc">NetApp Console 에이전트 문제 해결</block>
+  <block id="b5587e31ef788714566665f7aabf20e7" category="doc">NetApp Console 에이전트 제거 및 삭제</block>
+  <block id="6813bdd4cf22657750bba36b7a1c84f8" category="doc">NetApp Console 에이전트 주소 지정 및 URI 업데이트</block>
+  <block id="1ffdd70508b45fa8740a4e5db3fed667" category="doc">NetApp Console 에이전트를 업그레이드합니다</block>
+  <block id="88119fcc4c91e2769610d7732f2d8876" category="doc">NetApp Console의 새로운 기능</block>
+  <block id="01b8b50c6af6a26d04385207f4b3c02e" category="section-title">2026년 8월 13일</block>
 </blocks>

@@ -4,7 +4,7 @@ permalink: task-agent-vm-config.html
 keywords: agent VM, vcenter, esxi, increase cpu, increase ram, vm maintenance, agent maintenance, agent operating system, agent host 
 summary: 콘솔 에이전트를 배포한 후 기존 vCenter 또는 ESXi 호스트를 변경할 수 있습니다. 예를 들어 콘솔 에이전트를 호스팅하는 VM 인스턴스의 CPU 또는 RAM을 늘릴 수 있습니다. 
 ---
-= Console 에이전트용 vCenter 또는 ESXi 호스트 유지 관리
+= NetApp Console 에이전트용 vCenter 또는 ESXi 호스트 유지 관리
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

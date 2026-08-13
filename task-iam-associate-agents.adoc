@@ -4,7 +4,7 @@ permalink: task-iam-associate-agents.html
 keywords: agent, associate agent, folder, project, associate folder with connector, associate project with connector, associate connector with project, associate connector with resource, connector, associate connector, 
 summary: 조직의 구성원이 다른 프로젝트에서 콘솔 에이전트를 사용해야 하는 경우 해당 콘솔 에이전트를 해당 프로젝트와 연결해야 합니다. 
 ---
-= 콘솔 에이전트를 다른 폴더 및 프로젝트와 연결합니다.
+= NetApp Console 에이전트를 다른 폴더 및 프로젝트와 연결합니다.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

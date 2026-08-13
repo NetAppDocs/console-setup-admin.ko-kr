@@ -4,7 +4,7 @@ permalink: task-prepare-private-mode.html
 keywords: private mode requirements, requirements, install options, private mode networking, dark site, private mode permissions, permissions for private mode, networking for private mode 
 summary: 프라이빗 모드로 NetApp Console을 배포하기 전에 환경을 준비하십시오. 호스트 요구 사항을 검토하고, 네트워킹을 준비하고, 권한을 설정하는 등의 작업이 필요합니다. 
 ---
-= 프라이빗 모드 배포 준비
+= NetApp Console 프라이빗 모드에서 배포 준비
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

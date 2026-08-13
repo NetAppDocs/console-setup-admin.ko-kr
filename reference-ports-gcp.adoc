@@ -4,7 +4,7 @@ permalink: reference-ports-gcp.html
 keywords: ports, firewall rules, http, https, inbound, outbound, connector, agent 
 summary: 에이전트용 Google Cloud 방화벽 규칙에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다. NetApp Console에서 Console 에이전트를 생성하면 이 보안 그룹이 자동으로 생성됩니다. 다른 설치 옵션의 경우 이 보안 그룹을 수동으로 설정해야 합니다. 
 ---
-= Google Cloud의 콘솔 에이전트 방화벽 규칙
+= NetApp Console 에이전트 방화벽 규칙(Google Cloud)
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

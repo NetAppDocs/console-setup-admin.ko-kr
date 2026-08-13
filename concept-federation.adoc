@@ -4,7 +4,7 @@ permalink: concept-federation.html
 keywords: identity federation, single sign-on, SSO, identity provider, IdP, SAML, Microsoft Entra ID, AD FS, PingFederate, ACS URL, Entity ID, user access, security, productivity, compliance, authentication, business continuity, account management, user experience, access control, workflow automation, credential management, login process, organization admin, bluexp, NetApp Console 
 summary: ID 페더레이션을 통해 NetApp Console 에서 단일 로그인이 가능하므로 사용자는 회사 ID의 자격 증명을 사용하여 로그인할 수 있습니다.  시작하려면 설정 과정을 검토하세요. 
 ---
-= NetApp Console 사용하여 ID 페더레이션을 사용하여 단일 로그인을 활성화합니다.
+= NetApp Console의 ID 페더레이션에 대해 알아보십시오.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
