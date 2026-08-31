@@ -54,14 +54,14 @@ indexpage:
       url: "/task-maintain-agents.html"
   - title: 보안 및 규정 준수
     links:
+    - title: 보안 NetApp Console
+      url: task-secure-netapp-console.html
     - title: ID 공급자와 연동하세요
       url: "/concept-federation.html"
     - title: 읽기 전용 모드를 활성화합니다.
       url: task-enable-read-only-mode.html
     - title: 콘솔 활동을 모니터링하세요
       url: "/task-monitor-cm-operations.html"
-    - title: 제한 모드로 NetApp Console 배포(소버린 클라우드 배포)
-      url: "/task-quick-start-restricted-mode.html"
     - title: SOC-2 규정 준수
       url: https://www.netapp.com/company/trust-center/compliance/soc-2/
   - title: 콘솔 파트너십

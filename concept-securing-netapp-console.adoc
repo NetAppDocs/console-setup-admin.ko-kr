@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: concept-securing-netapp-console.html 
+keywords: security, hardening, netapp console, console agent, identity and access management, iam, rbac, federation, mfa 
+summary: NetApp Console 배포, 사용자 액세스, Console 에이전트 및 스토리지 관리 작업을 안전하게 보호하는 방법을 알아보십시오. 
+---
+= NetApp Console 보안
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Console 액세스를 제한하고, Console 에이전트를 보호하고, 무단 또는 의도치 않은 변경 사항에 대한 활동을 모니터링하여 스토리지 작업을 보호하십시오.
+
+보안은 공동의 책임입니다. NetApp은 Console 서비스를 보호하는 반면, 사용자는 적절한 배포 모드를 선택하고, 사용자 및 서비스 계정 액세스를 제어하고, Console 에이전트를 배포하는 환경을 보호하고, 조직 내 활동을 모니터링할 책임이 있습니다.
+
+
+
+[[choose-the-appropriate-deployment-mode]]
+== 적절한 배포 모드를 선택하십시오
+
+연결성, 격리 수준 및 운영 요구 사항에 따라 배포 모드를 선택하십시오.
+
+* 표준 모드는 클라우드 기반 SaaS 애플리케이션을 사용합니다.
+* 제한된 모드는 NetApp API에 대한 아웃바운드 연결이 제한된 퍼블릭 클라우드 환경에 Console을 설치합니다.
+* 프라이빗 모드는 콘솔을 사내 또는 NetApp에 대한 아웃바운드 연결이 없는 에어갭 환경에 설치합니다.
+
+
+각 모드마다 기능 사용 가능 여부와 보안 요구 사항이 다릅니다. link:concept-modes.html["NetApp Console 배포 모드에 대해 알아보세요"].
+
+
+
+[[control-identity-and-access]]
+== 신원 및 액세스 제어
+
+ID 및 액세스 관리(IAM)를 사용하여 사용자와 서비스 계정에 작업 수행에 필요한 액세스 권한만 부여하십시오.
+
+* 프로젝트별로, 그리고 필요에 따라 비즈니스 또는 운영 범위를 반영하는 폴더별로 리소스를 정리하십시오.
+* 필요한 액세스를 제공하는 조직 계층 구조의 최하위 수준에서 사전 정의된 역할을 할당합니다.
+* 조직 구성원, 서비스 계정 및 해당 역할을 정기적으로 검토하십시오. 더 이상 필요하지 않은 액세스 권한은 제거하십시오.
+* 조직의 요구 사항을 충족하는 경우 단일 로그인(SSO)에 ID 페더레이션을 사용하십시오. 페더레이션은 비공개 모드에서는 사용할 수 없습니다.
+* 로컬 사용자에게 다단계 인증(MFA)을 요구하고 서비스 계정 자격 증명을 비밀 정보로 보호하십시오. 서비스 계정 자격 증명을 분실하거나 교체해야 할 경우 다시 생성하십시오.
+
+
+link:concept-identity-and-access-management.html["NetApp Console의 IAM에 대해 알아보기"].
+
+
+
+[[secure-console-agents]]
+== Secure Console 에이전트
+
+콘솔 에이전트는 콘솔과 스토리지 시스템 및 클라우드 또는 온프레미스 환경을 연결합니다. 에이전트가 콘솔과의 통신을 시작하며, 콘솔은 에이전트와의 연결을 시작하지 않습니다.
+
+각 에이전트에 다음 제어 기능을 적용하십시오.
+
+* 조직의 호스트, 네트워크 및 액세스 제어 요구 사항을 충족하는 환경에 에이전트를 배포하십시오.
+* 필수적인 외부 네트워크 연결과 클라우드 권한만 허용하십시오. 배포 전에 공급자별 권한 및 포트 요구 사항을 검토하십시오.
+* 아웃바운드 트래픽이 프록시 서버를 통과해야 하는 경우 지원되는 프록시 구성을 사용하십시오.
+* 사용자가 HTTPS를 통해 에이전트 웹 콘솔에 액세스할 때 CA에서 서명한 인증서를 설치하십시오.
+* 에이전트 소프트웨어를 최신 상태로 유지하십시오. 비공개 모드 에이전트는 수동으로 업그레이드해야 합니다.
+* AWS에서 Console 에이전트를 호스팅하는 EC2 인스턴스에 IMDSv2를 요구하는 것을 고려하십시오.
+
+
+link:concept-agents.html["콘솔 에이전트에 대해 알아보세요"].
+
+
+
+[[reduce-unintended-changes]]
+== 의도치 않은 변경 사항 줄이기
+
+조직 관리자는 조직에 읽기 전용 모드를 활성화할 수 있습니다. 읽기 전용 모드는 사용자가 상승된 권한을 요청하기 전까지 스토리지 시스템을 변경하거나 데이터 서비스를 사용하는 것을 방지하는 데 도움이 됩니다.
+
+link:task-enable-read-only-mode.html["읽기 전용 모드를 활성화하는 방법을 알아보십시오."].
+
+
+
+[[monitor-and-review-activity]]
+== 활동 모니터링 및 검토
+
+콘솔에서 운영 타임라인을 사용하여 스토리지 관리 및 사용자 활동을 검토하십시오. 조직의 보안 프로세스의 일환으로 멤버 액세스, 역할 할당, 서비스 계정 자격 증명, 에이전트 상태 및 최근 운영 내역을 정기적으로 검토하십시오.
+
+link:task-monitor-cm-operations.html["콘솔 작업 모니터링 방법을 알아보세요"].
+
+
+
+[[related-security-topics]]
+== 관련 보안 주제
+
+* link:task-iam-user-security.html["사용자 보안 관리"], MFA 및 서비스 계정 자격 증명이 포함됩니다.
+* link:concept-iam-rbac.html["역할 기반 접근 제어(RBAC)를 이해하십시오."].
+* link:concept-federation.html["ID 페더레이션에 대해 알아보세요"].
+* link:reference-networking-saas-console.html["SaaS 애플리케이션의 네트워크 액세스 요구 사항을 검토하십시오."].
+* link:reference-permissions.html["클라우드 제공업체의 권한 및 네트워크 요구 사항을 검토하십시오."].
+* link:reference-compliance.html["NetApp Console의 보안 규정 준수에 대해 알아보세요."].
+

@@ -1,0 +1,106 @@
+---
+sidebar: sidebar 
+permalink: task-secure-netapp-console.html 
+keywords: security, hardening, netapp console, console agent, identity and access management, iam, rbac, federation, mfa, read-only mode, ontap system manager 
+summary: NetApp Console, IAM, ID 페더레이션, 읽기 전용 모드, 서비스 계정, 콘솔 에이전트 및 ONTAP System Manager 액세스를 보호하려면 권장 단계를 따르십시오. 
+---
+= 보안 NetApp Console
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Console 액세스를 제한하고, Console 에이전트를 보호하고, 무단 또는 의도치 않은 변경 사항에 대한 활동을 모니터링하여 스토리지 작업을 보호하십시오.
+
+조직의 보안 기준선을 설정하려면 다음 단계를 따르십시오. 아래에 나열된 보안 제어를 적용하기 전에 배포 모드에 맞는 설정 워크플로를 따르십시오. link:concept-modes.html["NetApp Console 배포 모드에 대해 알아보세요"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["하나"] NetApp Console 배포 모드를 선택하고 초기 설정을 완료하십시오.
+[role="quick-margin-para"]
+조직을 생성하고 첫 번째 조직 관리자를 설정하십시오. 배포 환경에 맞는 설정 워크플로를 완료하십시오.
+
+[role="quick-margin-list"]
+* link:task-quick-start-standard-mode.html["표준 모드에서 NetApp Console 시작하기"]
+* link:task-quick-start-restricted-mode.html["제한된 모드에서 NetApp Console 시작하기"]
+* link:task-quick-start-private-mode.html["비공개 모드에서 NetApp Console 시작하기"]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["둘"] Secure Console 에이전트 권한, 네트워크 액세스 및 호스트
+[role="quick-margin-para"]
+각 콘솔 에이전트의 클라우드 권한 및 네트워크 액세스를 필요한 최소한의 범위로 제한하십시오. 웹 콘솔 트래픽을 보호하고 콘솔 에이전트 소프트웨어를 유지 관리하십시오.
+
+[role="quick-margin-list"]
+* link:reference-permissions.html["클라우드 제공업체의 권한 및 네트워크 요구 사항을 검토하십시오."]
+* link:reference-networking-saas-console.html["네트워크 액세스 요구 사항 검토"]
+* link:task-installing-https-cert.html["CA 서명 인증서 설치"]
+* link:task-configuring-proxy.html["프록시 서버 구성"]
+* link:task-upgrade-agent.html["콘솔 에이전트 업그레이드"]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["삼"] NetApp Console IAM 계층 구조를 구성합니다
+[role="quick-margin-para"]
+팀의 업무 방식에 맞춰 조직 계층 구조를 설정합니다. 스토리지 시스템, 데이터 서비스 및 Console 에이전트를 해당 시스템을 관리하는 프로젝트에 할당합니다.
+
+[role="quick-margin-list"]
+* link:task-iam-manage-folders-projects.html["폴더와 프로젝트를 생성합니다."]
+* link:task-iam-manage-resources.html["프로젝트에 리소스를 연결합니다."]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["네"] NetApp Console ID 페더레이션 및 페더레이션 그룹 구성
+[role="quick-margin-para"]
+NetApp Console을 회사 ID 공급자(IdP)에 연결하여 사용자가 회사 자격 증명으로 로그인하고 IdP에서 인증 정책을 적용할 수 있도록 하십시오. NetApp Console은 AD FS, Microsoft Entra ID, PingFederate 및 일반 SAML ID 공급자를 지원합니다.
+
+[role="quick-margin-para"]
+콘솔 조직에 페더레이션 사용자 및 그룹을 추가하고 콘솔 역할을 할당합니다. 페더레이션은 콘솔 멤버십 또는 역할 할당을 대체하지 않습니다. link:task-iam-manage-members-permissions.html#add-members["연합 그룹을 추가하는 방법을 알아보십시오."].
+
+[role="quick-margin-list"]
+* link:task-federation-verify-domain.html["도메인을 확인하세요"]
+* link:task-federation-adfs.html["AD FS와 페더레이션"]
+* link:task-federation-entra-id.html["Microsoft Entra ID와 페더레이션"]
+* link:task-federation-ping.html["PingFederate로 페더레이션"]
+* link:task-federation-saml.html["SAML ID 공급자와 페더레이션"]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["다섯"] NetApp Console 멤버를 추가하고 최소 권한 역할을 할당합니다
+[role="quick-margin-para"]
+각 사용자, 서비스 계정 및 연합 그룹에 해당 책임에 필요한 액세스 권한만 부여하십시오. 업무를 지원하는 가장 세부적인 조직, 폴더 또는 프로젝트 범위에서 역할을 할당하십시오. 로컬 사용자에게 다단계 인증을 활성화하십시오.
+
+[role="quick-margin-list"]
+* link:task-iam-manage-members-permissions.html["콘솔 조직에 멤버 추가"]
+* link:concept-iam-rbac.html["역할 기반 액세스 제어에 대해 알아보십시오"]
+* link:reference-iam-predefined-roles.html["미리 정의된 역할을 검토합니다"]
+* link:task-iam-user-security.html["회원 보안 관리"]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["육"] 서비스 계정으로 NetApp Console 자동화 보호
+[role="quick-margin-para"]
+자동화 계정과 담당자 계정을 분리하여 관리하십시오. 각 서비스 계정에는 필요한 최소한의 역할과 범위만 부여하십시오. 자격 증명은 안전하게 보관하고 분실 또는 변경 시 다시 생성하십시오.
+
+link:task-iam-manage-members-permissions.html#service-account["서비스 계정을 추가하는 방법을 알아보십시오."]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["일곱"] NetApp Console 조직의 읽기 전용 모드 활성화
+[role="quick-margin-para"]
+관리자는 변경 작업을 수행하기 전에 역할을 높여야 합니다. 이 제어 기능을 통해 스토리지 시스템 및 데이터 서비스에 대한 의도치 않은 변경을 줄일 수 있습니다.
+
+link:task-enable-read-only-mode.html["읽기 전용 모드를 활성화하는 방법을 알아보십시오."]
+
+
+NOTE: NetApp Console이 비공개 모드일 때는 읽기 전용 모드를 사용할 수 없습니다.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-8.png["여덟"] ONTAP System Manager에 대한 ONTAP 권한 적용
+[role="quick-margin-para"]
+운영 중인 ONTAP 시스템을 관리하는 활성 콘솔 에이전트에서 *자격 증명 강제 적용*을 활성화하십시오. 사용자는 ONTAP System Manager를 열 때 ONTAP 클러스터 자격 증명을 제공하고, ONTAP은 해당 사용자의 권한을 적용합니다.
+
+link:task-ontap-access-agent.html["ONTAP System Manager에 대한 ONTAP 권한을 적용하는 방법을 알아보세요."]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-9.png["아홉"] NetApp Console 감사 활동 및 보안 제어 검토
+[role="quick-margin-para"]
+구성원, 그룹 매핑, 역할, 자격 증명, 에이전트 및 최근 작업에 대한 정기적인 검토 프로세스를 수립하십시오. 더 이상 필요하지 않은 액세스 권한을 제거하고 예상치 못한 활동을 조사하십시오.
+
+[role="quick-margin-list"]
+* link:task-iam-audit-actions-timeline.html["콘솔 작업을 감사하는 방법을 알아보십시오"]
+* link:task-monitor-cm-operations.html["콘솔 작업 모니터링 방법을 알아보세요"]
+

@@ -236,6 +236,8 @@ sidebar:
           url: https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html
     - title: 보안 및 규정 준수
       entries:
+      - title: 보안 NetApp Console
+        url: "/task-secure-netapp-console.html"
       - title: ID 페더레이션
         entries:
         - title: ID 페더레이션에 대해 알아보세요
