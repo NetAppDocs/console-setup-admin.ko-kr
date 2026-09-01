@@ -12,7 +12,7 @@ summary: NetApp Data Classification은 자산에 대한 읽기 및 쓰기 액세
 
 
 [role="lead"]
-NetApp Data Classification은 ID 및 액세스 관리 역할을 지원하여 조직 내에서 사용자가 수행해야 하는 작업에 맞는 역할을 유연하게 할당할 수 있습니다. 역할 할당 방식은 비즈니스 및 스토리지 관리 관행에 따라 달라집니다.
+NetApp Data Classification는 ID 및 액세스 관리(IAM) 역할을 지원하므로 사용자가 수행해야 하는 작업에 따라 액세스 권한을 맞춤 설정할 수 있습니다. 역할 할당 방법은 비즈니스 및 스토리지 관리 관행에 따라 달라집니다.
 
 NetApp Data Classification은 두 가지 역할을 지원합니다.
 
@@ -38,7 +38,7 @@ NOTE: 규정 준수 관리자는 NetApp Data Classification 버전 1.54에 추�
 [[classification-viewer]]
 == 분류 뷰어
 
-Classification viewer는 NetApp Data Classification의 스캔 결과에는 액세스해야 하지만 구성 리소스에는 액세스할 필요가 없는 사용자를 위해 설계되었습니다. Classification viewer 역할을 가진 사용자는 매핑 및 전체 스캔 결과를 확인하여 스토리지 절약 영역 또는 잠재적인 데이터 위험을 평가할 수 있습니다. Classification viewer 역할을 가진 사용자는 액세스 권한이 있는 리소스에 대한 보고서를 생성할 수도 있습니다. 이러한 사용자는 볼륨, 버킷 또는 데이터베이스 스키마의 스캔을 활성화하거나 비활성화할 수 없습니다.
+분류 뷰어는 Data Classification의 스캔 결과에는 액세스해야 하지만 구성 리소스에는 액세스할 필요가 없는 사용자를 위해 설계되었습니다. 분류 뷰어 역할을 가진 사용자는 매핑 및 전체 스캔 결과를 확인하여 스토리지 절약 영역 또는 잠재적인 데이터 위험을 평가할 수 있습니다. 분류 뷰어 역할을 가진 사용자는 액세스 권한이 있는 리소스에 대한 보고서를 생성할 수도 있습니다. 이러한 사용자는 볼륨, 버킷 또는 데이터베이스 스키마의 스캔을 활성화하거나 비활성화할 수 없습니다.
 
 
 

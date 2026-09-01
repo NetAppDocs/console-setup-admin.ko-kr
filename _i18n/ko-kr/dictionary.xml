@@ -6130,13 +6130,10 @@
   <block id="9b70df306d1f1719fd9d70e02911394c" category="section-title">2026년 5월 11일</block>
   <block id="de30fd3780cc78f3815357af7be9582f" category="summary">NetApp Data Classification은 자산에 대한 읽기 및 쓰기 액세스를 관리하기 위한 두 가지 역할을 지원합니다.</block>
   <block id="cfc16ea75f5fe37fc225466703a3e96a" category="doc">NetApp Console의 NetApp Data Classification 역할</block>
-  <block id="c7142c29e40d2d08c7f6837910052a0d" category="paragraph">NetApp Data Classification은 ID 및 액세스 관리 역할을 지원하여 조직 내에서 사용자가 수행해야 하는 작업에 맞는 역할을 유연하게 할당할 수 있습니다. 역할 할당 방식은 비즈니스 및 스토리지 관리 관행에 따라 달라집니다.</block>
   <block id="cf045f1c49e0697a2bf307b157804096" category="paragraph">NetApp Data Classification은 두 가지 역할을 지원합니다.</block>
   <block id="cdbb30b6fb90f85be1fbc19b17c2c986" category="list-text">규정 준수 관리자</block>
-  <block id="5308b341304a681aa5133cab92637fa3" category="paragraph">규정 준수 관리자 역할은 조직 수준에서만 NetApp Data Classification 리소스에 대한 액세스를 관리하는 데 사용됩니다. 조직 관리자보다 낮은 권한을 가진 사용자는 NetApp Data Classification을 설치하려면 규정 준수 관리자 역할을 보유해야 합니다.</block>
   <block id="649d32860b6e76fc8dac7eb5040880b7" category="admonition">규정 준수 관리자 역할은 독립적인 역할이 아닙니다. 규정 준수 관리자 역할을 가진 사용자는 최소한 하나 이상의 <block ref="336c7f0741b180c58df89adadda6c36f" category="inline-link-macro-rx"></block>와 연결되어 있어야 합니다.</block>
   <block id="afb0c02ddaf124b42741f1794d2a3702" category="admonition">규정 준수 관리자는 NetApp Data Classification 버전 1.54에 추가되었습니다. 이 릴리스 이전에 NetApp Data Classification을 배포했고 조직 관리자보다 액세스 권한이 낮은 플랫폼 역할을 보유하고 있는 경우, 규정 준수 관리자 역할이 사용자 계정에 자동으로 연결되었습니다.</block>
-  <block id="f0f2ac698359c5e4834475e633063b01" category="paragraph">Classification viewer는 NetApp Data Classification의 스캔 결과에는 액세스해야 하지만 구성 리소스에는 액세스할 필요가 없는 사용자를 위해 설계되었습니다. Classification viewer 역할을 가진 사용자는 매핑 및 전체 스캔 결과를 확인하여 스토리지 절약 영역 또는 잠재적인 데이터 위험을 평가할 수 있습니다. Classification viewer 역할을 가진 사용자는 액세스 권한이 있는 리소스에 대한 보고서를 생성할 수도 있습니다. 이러한 사용자는 볼륨, 버킷 또는 데이터베이스 스키마의 스캔을 활성화하거나 비활성화할 수 없습니다.</block>
   <block id="ab066b3292d8ab61ef3b5c77169cdd19" category="section-title">추가 정보</block>
   <block id="4964a8f5f86e15358c2fc765883fe9b2" category="inline-link-macro">NetApp Data Classification에 대해 알아보세요</block>
   <block id="5ced687e00d6efd9bda8689abae14e58" category="list-text"><block ref="5ced687e00d6efd9bda8689abae14e58" category="inline-link-macro-rx"></block></block>
@@ -6554,4 +6551,8 @@
   <block id="03e21ac1acdd1f03c79cf52cd9cf7e75" category="inline-link-macro">콘솔 작업을 감사하는 방법을 알아보십시오</block>
   <block id="e64d42268f0853ee74265280546a395b" category="list-text"><block ref="e64d42268f0853ee74265280546a395b" category="inline-link-macro-rx"></block></block>
   <block id="19f12f26a8f3bcda1c7b8ec8dd09d6b1" category="list-text"><block ref="19f12f26a8f3bcda1c7b8ec8dd09d6b1" category="inline-link-macro-rx"></block></block>
+  <block id="dda2ee73790928470888c5a51f1131a0" category="paragraph">NetApp Data Classification는 ID 및 액세스 관리(IAM) 역할을 지원하므로 사용자가 수행해야 하는 작업에 따라 액세스 권한을 맞춤 설정할 수 있습니다. 역할 할당 방법은 비즈니스 및 스토리지 관리 관행에 따라 달라집니다.</block>
+  <block id="733d9ddc09fa607fb9b3bbef86e35834" category="paragraph">규정 준수 관리자 역할은 조직 수준에서만 NetApp Data Classification 리소스에 대한 액세스를 관리하는 데 사용됩니다. 조직 관리자보다 낮은 권한을 가진 사용자는 NetApp Data Classification을 설치하려면 규정 준수 관리자 역할을 보유해야 합니다.</block>
+  <block id="59ac75cc0e747987fa0f0c6397dcfd96" category="paragraph">분류 뷰어는 Data Classification의 스캔 결과에는 액세스해야 하지만 구성 리소스에는 액세스할 필요가 없는 사용자를 위해 설계되었습니다. 분류 뷰어 역할을 가진 사용자는 매핑 및 전체 스캔 결과를 확인하여 스토리지 절약 영역 또는 잠재적인 데이터 위험을 평가할 수 있습니다. 분류 뷰어 역할을 가진 사용자는 액세스 권한이 있는 리소스에 대한 보고서를 생성할 수도 있습니다. 이러한 사용자는 볼륨, 버킷 또는 데이터베이스 스키마의 스캔을 활성화하거나 비활성화할 수 없습니다.</block>
+  <block id="47a46671c1a0773fed715c3799195b7f" category="cell"><block ref="47a46671c1a0773fed715c3799195b7f" category="inline-link-macro-rx"></block></block>
 </blocks>

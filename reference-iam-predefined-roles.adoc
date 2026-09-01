@@ -140,7 +140,7 @@ NetApp Console의 ID 및 액세스 관리(IAM)는 조직 구성원에게 리소�
 | link:reference-iam-disaster-rec-roles.html["재해 복구 뷰어"] | 재해 복구 뷰어 | 표준 | 정보만 보기. 
 
 
-| 분류 뷰어 | 분류 뷰어 | 일반, 제한, 비공개 | 사용자가 NetApp Data Classification 스캔 결과를 볼 수 있습니다. 이 역할을 가진 사용자는 액세스 권한이 있는 리소스에 대한 규정 준수 정보를 확인하고 보고서를 생성할 수 있습니다. 이러한 사용자는 볼륨, 버킷 또는 데이터베이스 스키마의 스캔을 활성화하거나 비활성화할 수 없습니다. Data Classification에는 관리자 역할이 없습니다. 
+| link:reference-iam-data-classification.html["분류 뷰어"] | 분류 뷰어 | 일반, 제한, 비공개 | 사용자가 NetApp Data Classification 스캔 결과를 볼 수 있습니다. 이 역할을 가진 사용자는 액세스 권한이 있는 리소스에 대한 규정 준수 정보를 확인하고 보고서를 생성할 수 있습니다. 이러한 사용자는 볼륨, 버킷 또는 데이터베이스 스키마의 스캔을 활성화하거나 비활성화할 수 없습니다. Data Classification에는 관리자 역할이 없습니다. 
 
 
 | link:reference-iam-ransomware-roles.html["랜섬웨어 복원력 관리자"] | 랜섬웨어_보호_관리자 | 표준 | NetApp Ransomware Resilience 의 보호, 알림, 복구, 설정 및 보고서 탭에서 작업을 관리합니다. 
