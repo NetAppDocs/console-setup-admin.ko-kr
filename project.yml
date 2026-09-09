@@ -36,7 +36,7 @@ sidebar:
         url: "/concept-agents.html"
       - title: ID 및 액세스 관리
         url: "/concept-identity-and-access-management.html"
-    - title: NetApp Console(SaaS) 시작하기
+    - title: NetApp Console 시작하기(표준 모드)
       entries:
       - title: 시작하기 워크플로
         url: "/task-quick-start-standard-mode.html"
@@ -221,7 +221,11 @@ sidebar:
           - title: 백업 및 복구 역할
             url: "/reference-iam-backup-rec-roles.html"
           - title: Cloud Volumes ONTAP 역할
-            url: "/reference-iam-cvo-roles.html"
+            entries:
+            - title: Cloud Volumes ONTAP 역할
+              url: "/reference-iam-cvo-roles.html"
+            - title: Cloud Volumes ONTAP에 대한 역할 기반 액세스 설정
+              url: "/task-cvo-rbac-setup.html"
           - title: Data Classification 역할
             url: "/reference-iam-data-classification.html"
           - title: 재해 복구 역할
@@ -236,8 +240,6 @@ sidebar:
           url: https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html
     - title: 보안 및 규정 준수
       entries:
-      - title: 보안 NetApp Console
-        url: "/task-secure-netapp-console.html"
       - title: ID 페더레이션
         entries:
         - title: ID 페더레이션에 대해 알아보세요

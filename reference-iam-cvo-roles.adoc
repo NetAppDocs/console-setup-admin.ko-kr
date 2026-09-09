@@ -14,26 +14,71 @@ summary: 콘솔에서 사용자에게 Cloud Volumes ONTAP에 대한 액세스 �
 
 
 [role="lead"]
-콘솔에서 사용자에게 Cloud Volumes ONTAP에 대한 액세스 권한을 부여하려면 다음 역할을 할당할 수 있습니다. Cloud Volumes ONTAP 역할을 사용하면 조직 내에서 사용자가 수행해야 하는 특정 작업에 맞는 역할을 유연하게 할당할 수 있습니다. 역할 할당 방식은 비즈니스 및 스토리지 관리 방식에 따라 달라집니다.
-
-Cloud Volumes ONTAP는 다음과 같은 역할을 사용합니다.
+사용자에게 NetApp Console 내의 Cloud Volumes ONTAP에 대한 액세스 권한을 부여하려면 다음 역할을 할당할 수 있습니다.
 
 * *Cloud Volumes ONTAP admin*: 모든 Cloud Volumes ONTAP 작업에 대한 전체 액세스 권한을 제공합니다.
-* *Cloud Volumes ONTAP operator*: 볼륨, 애그리게이트, 스냅샷 및 복제본 추가, 일부 구성 수정, Cloud Volumes ONTAP 버전 업그레이드를 포함하여 Cloud Volumes ONTAP 시스템 검색 및 관리와 같은 중요한 스토리지 작업을 수행합니다.
+* *Cloud Volumes ONTAP 운영자*: 볼륨, 애그리게이트, 스냅샷 및 복제본 추가, 일부 구성 수정, Cloud Volumes ONTAP 버전 업그레이드 등 Cloud Volumes ONTAP 시스템 검색 및 관리를 포함한 중요한 스토리지 작업을 수행합니다.
 * *Cloud Volumes ONTAP 뷰어*: Cloud Volumes ONTAP 정보에 대한 읽기 전용 액세스를 제공합니다. 이 역할은 능동적인 작업을 수행할 수 없습니다. 구성 정보가 포함된 일부 탭과 화면은 뷰어에게 표시되지 않을 수 있습니다.
 
 
-모든 NetApp Console 액세스 역할에 대한 자세한 내용은 link:reference-iam-predefined-roles.html["액세스 역할"]을 참조하십시오.
+link:reference-iam-predefined-roles.html["액세스 역할에 대해 알아보세요"] .
+
+Cloud Volumes ONTAP 시스템이 포함된 조직, 폴더 또는 프로젝트 수준에서 Cloud Volumes ONTAP 역할을 할당하십시오. 플랫폼 역할을 사용하면 사용자는 NetApp Console 리소스를 관리할 수 있고, Cloud Volumes ONTAP 역할을 사용하면 사용자는 Cloud Volumes ONTAP 시스템을 관리할 수 있습니다. 역할 할당 계획에 대한 지침은 link:task-cvo-rbac-setup.html#plan-cloud-volumes-ontap-role-assignments["Cloud Volumes ONTAP에 대한 역할 기반 액세스 설정"]을 참조하십시오.
+
+
+
+[[role-migrations-for-existing-users]]
+== 기존 사용자의 역할 마이그레이션
+
+콘솔 에이전트를 버전 4.9.0 이상으로 업그레이드하면 콘솔은 기존 사용자의 플랫폼 역할에 따라 추가적인 Cloud Volumes ONTAP 역할을 할당합니다.
+
+
+NOTE: 기존 콘솔 에이전트를 Console 4.9.0 이상으로 업그레이드하면 콘솔에서 조직의 기존 사용자에게 Cloud Volumes ONTAP 역할을 할당하는 일회성 시딩 프로세스가 실행됩니다. 이 프로세스는 완료하는 데 최대 30분이 소요될 수 있습니다. 시딩된 역할을 검토하고 조정하려면 link:task-cvo-rbac-setup.html#review-roles-after-upgrading-the-console-agent["콘솔 에이전트 업그레이드 후 역할 검토"]을 참조하십시오.
+
+다음 매핑은 일회성 마이그레이션 프로세스에만 적용됩니다.
+
+[cols="50,50"]
+|===
+| 기존 플랫폼 역할 | 시드 작업 중에 할당된 Cloud Volumes ONTAP 역할 
+
+
+| 슈퍼 관리자 | Cloud Volumes ONTAP 관리자 
+
+
+| 조직 관리자 | Cloud Volumes ONTAP 관리자 
+
+
+| 연방 관리자 | Cloud Volumes ONTAP 관리자 
+
+
+| 폴더 또는 프로젝트 관리자 | Cloud Volumes ONTAP 관리자 
+
+
+| 슈퍼 뷰어 | Cloud Volumes ONTAP 뷰어 
+
+
+| 조직 뷰어 | Cloud Volumes ONTAP 뷰어 
+
+
+| 연방 뷰어 | Cloud Volumes ONTAP 뷰어 
+
+
+| 폴더 또는 프로젝트 뷰어 | Cloud Volumes ONTAP 뷰어 
+
+
+| 기타 플랫폼 역할 | Cloud Volumes ONTAP 뷰어 
+|===
+콘솔은 기존 플랫폼 역할과 동일한 계층 수준에서 Cloud Volumes ONTAP 역할을 할당합니다. 이러한 매핑은 새 역할 할당에는 적용되지 않습니다. 시드된 역할을 검토하고 조정하려면 link:task-cvo-rbac-setup.html#review-roles-after-upgrading-the-console-agent["콘솔 에이전트 업그레이드 후 역할 검토"]을 참조하십시오.
+
+
+NOTE: 알려진 문제로 인해 *조직 뷰어* 및 *Cloud Volumes ONTAP 뷰어* 역할 조합이 조직 범위에서 작동하지 않습니다. 임시 해결 방법으로 *조직 관리자* 또는 *폴더 또는 프로젝트 관리자* 역할을 사용하십시오.
 
 
 
 [[how-role-changes-take-effect]]
 == 역할 변경이 적용되는 방식
 
-Cloud Volumes ONTAP는 각 역할 할당에 대한 로컬 캐시를 사용하여 역할 기반 액세스 제어(RBAC)를 적용합니다. 캐시는 매시간 자동으로 새로 고쳐집니다. 역할이 새로 할당되거나 변경된 경우 변경 사항이 적용되는 데 최대 1시간이 소요될 수 있습니다. 새로 고침이 완료되면 콘솔에서 해당 역할에 허용된 워크플로를 사용할 수 있습니다.
-
-
-NOTE: 콘솔 에이전트를 처음 배포하거나 기존 콘솔 에이전트를 Console 4.9.0 이상 버전으로 업그레이드할 때 콘솔은 조직의 기존 사용자에게 Cloud Volumes ONTAP 역할을 할당하는 일회성 시딩 프로세스를 실행합니다. 이 프로세스는 완료하는 데 최대 30분이 소요될 수 있습니다.
+새로운 역할 할당 또는 업데이트된 역할 할당이 적용되는 데 최대 1시간이 소요될 수 있습니다. Cloud Volumes ONTAP는 매시간 역할 할당을 새로 고칩니다.
 
 
 
@@ -44,7 +89,7 @@ NOTE: 콘솔 에이전트를 처음 배포하거나 기존 콘솔 에이전트�
 
 [cols="40a,20a,20a,20a"]
 |===
-| 특징과 동작 | Cloud Volumes ONTAP 뷰어 | Cloud Volumes ONTAP 오퍼레이터 | Cloud Volumes ONTAP 관리자 
+| 특징과 동작 | Cloud Volumes ONTAP 관리자 | Cloud Volumes ONTAP 오퍼레이터 | Cloud Volumes ONTAP 뷰어 
 
 
  a| 
@@ -77,99 +122,99 @@ NOTE: 콘솔 에이전트를 처음 배포하거나 기존 콘솔 에이전트�
  a| 
 시스템 검색
  a| 
+예
+ a| 
+예
+ a| 
 아니요
- a| 
-예
- a| 
-예
 
 
 
  a| 
 볼륨 추가
  a| 
+예
+ a| 
+예
+ a| 
 아니요
- a| 
-예
- a| 
-예
 
 
 
  a| 
 *복제* 기능을 사용하십시오(FSx for ONTAP 또는 온프레미스 시스템에는 적용되지 않습니다).
  a| 
+예
+ a| 
+예
+ a| 
 아니요
- a| 
-예
- a| 
-예
 
 
 
  a| 
 *복제* 를 위해 드래그 앤 드롭 사용(Cloud Volumes ONTAP 을 소스 또는 대상으로 사용)
  a| 
+예
+ a| 
+예
+ a| 
 아니요
- a| 
-예
- a| 
-예
 
 
 
  a| 
 시스템 추가
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
  a| 
 *최적화된 비용 및 성능* 액세스
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
  a| 
 System Manager를 엽니다
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
  a| 
 Cloud Volumes ONTAP 켜기
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
  a| 
 시스템 제거
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
@@ -192,11 +237,11 @@ Cloud Volumes ONTAP 설정 보기
  a| 
 Cloud Volumes ONTAP 설정 편집
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
@@ -208,110 +253,110 @@ Cloud Volumes ONTAP 설정 편집
  a| 
 볼륨 추가
  a| 
+예
+ a| 
+예
+ a| 
 아니요
- a| 
-예
- a| 
-예
 
 
 
  a| 
 애그리게이트 추가
  a| 
+예
+ a| 
+예
+ a| 
 아니요
- a| 
-예
- a| 
-예
 
 
 
  a| 
 *지금 업그레이드* 사용
  a| 
+예
+ a| 
+예
+ a| 
 아니요
- a| 
-예
- a| 
-예
 
 
 
  a| 
 ONTAP 버전 업데이트
  a| 
+예
+ a| 
+예
+ a| 
 아니요
- a| 
-예
- a| 
-예
 
 
 
  a| 
 연필 메뉴에서 *CIFS 설정*을 편집합니다.
  a| 
+예
+ a| 
+예
+ a| 
 아니요
- a| 
-예
- a| 
-예
 
 
 
  a| 
 System Manager를 엽니다
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
  a| 
 켜기/끄기 버튼 사용
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
  a| 
 암호 설정
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
  a| 
 작업 공간에서 시스템을 제거합니다
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
  a| 
 시스템을 삭제합니다
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
@@ -329,11 +374,11 @@ System Manager를 엽니다
 * *WORM*
 
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
@@ -345,88 +390,88 @@ System Manager를 엽니다
  a| 
 볼륨 추가
  a| 
+예
+ a| 
+예
+ a| 
 아니요
- a| 
-예
- a| 
-예
 
 
 
  a| 
 볼륨 복제
  a| 
+예
+ a| 
+예
+ a| 
 아니요
- a| 
-예
- a| 
-예
 
 
 
  a| 
 스냅샷 복사본 생성
  a| 
+예
+ a| 
+예
+ a| 
 아니요
- a| 
-예
- a| 
-예
 
 
 
  a| 
 볼륨 설정 편집
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
  a| 
 볼륨 삭제
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
  a| 
 스냅샷 복사본에서 복원
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
  a| 
 디스크 유형 변경
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
  a| 
 티어링 정책 변경
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
@@ -438,44 +483,44 @@ System Manager를 엽니다
  a| 
 애그리게이트 추가
  a| 
+예
+ a| 
+예
+ a| 
 아니요
- a| 
-예
- a| 
-예
 
 
 
  a| 
 볼륨 추가
  a| 
+예
+ a| 
+예
+ a| 
 아니요
- a| 
-예
- a| 
-예
 
 
 
  a| 
 용량 증대
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
  a| 
 애그리게이트를 삭제합니다
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
@@ -487,76 +532,76 @@ System Manager를 엽니다
  a| 
 복제 중단
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
  a| 
 복제 재동기화
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
  a| 
 역방향 재동기화 복제
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
  a| 
 일정 편집
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
  a| 
 최대 전송 속도 편집
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
  a| 
 복제 업데이트
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 
 
  a| 
 복제 삭제
  a| 
-아니요
- a| 
-아니요
- a| 
 예
+ a| 
+아니요
+ a| 
+아니요
 
 |===

@@ -1,0 +1,106 @@
+---
+sidebar: sidebar 
+permalink: task-cvo-rbac-setup.html 
+keywords: cloud volumes ontap, role-based access, iam, identity and access management, permissions, roles, users, subscribers 
+summary: 프로젝트를 구성하고, Console 멤버를 추가하고, Cloud Volumes ONTAP 역할을 할당하여 Cloud Volumes ONTAP에 대한 역할 기반 액세스를 설정하십시오. 
+---
+= NetApp Console에서 Cloud Volumes ONTAP에 대한 역할 기반 액세스 설정
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+기존 Console 사용자가 필요한 액세스 권한을 유지하고 신규 구독자가 적절한 권한을 가진 사용자를 추가할 수 있도록 Cloud Volumes ONTAP에 대한 액세스 권한을 설정하십시오.
+
+다음 섹션 중 하나를 사용하십시오.
+
+* *새로운 NetApp Console 및 Cloud Volumes ONTAP*: 신규 사용자 및 Cloud Volumes ONTAP 시스템에 대한 역할 기반 액세스를 설정합니다.
+* *역할을 지원하는 콘솔 에이전트 버전으로 업그레이드*: 기존 사용자에게 자동으로 할당된 역할을 검토하고 필요에 따라 조정하십시오.
+
+
+
+
+[[set-up-access-for-users-after-initial-configuration-of-cloud-volumes-ontap]]
+== Cloud Volumes ONTAP 초기 구성 후 사용자 액세스 설정
+
+신규 구독자는 콘솔 조직을 생성하는 것으로 시작합니다. 첫 번째 구독자에게는 조직 관리자 역할이 부여됩니다. link:concept-identity-and-access-management.html["ID 및 액세스 관리에 대해 알아보세요"].
+
+
+
+[[plan-cloud-volumes-ontap-role-assignments]]
+=== Cloud Volumes ONTAP 역할 할당 계획
+
+Cloud Volumes ONTAP 시스템이 포함된 조직, 폴더 또는 프로젝트 수준에서 Cloud Volumes ONTAP 역할을 할당하십시오. 플랫폼 역할을 통해 사용자는 조직, 폴더, 프로젝트, 멤버 및 리소스 액세스 등 NetApp Console 리소스를 관리할 수 있습니다. Cloud Volumes ONTAP 역할을 통해 사용자는 Cloud Volumes ONTAP 시스템을 관리할 수 있습니다.
+
+각 사용자에게 필요한 역할만 할당하십시오. 사용자가 콘솔 리소스를 관리하고 Cloud Volumes ONTAP 시스템을 관리하는 경우 플랫폼 역할과 Cloud Volumes ONTAP 역할을 모두 할당하십시오. 플랫폼 역할은 Cloud Volumes ONTAP 작업에 대한 Cloud Volumes ONTAP 역할을 대체하지 않습니다.
+
+* 예를 들어, 프로젝트에 대한 액세스를 관리하고 해당 프로젝트의 Cloud Volumes ONTAP 시스템을 관리하는 사용자에게 *폴더 또는 프로젝트 관리자* 및 *Cloud Volumes ONTAP 관리자* 역할을 할당하십시오.
+* 조직 전체의 콘솔 에이전트 설정 및 Cloud Volumes ONTAP 시스템을 관리하는 사용자에게 *Organization admin* 및 *Cloud Volumes ONTAP operator* 역할을 할당합니다.
+* 사용자가 Console 리소스를 관리할 필요가 없는 경우, Cloud Volumes ONTAP 시스템 관리에 필요한 액세스 수준에 맞는 Cloud Volumes ONTAP 역할만 할당하십시오.
+
+
+
+
+==== 사용자가 Console 리소스도 관리해야 하는 경우 권장되는 역할 할당
+
+Cloud Volumes ONTAP에 대해서만 NetApp Console을 사용하는 조직에서 사용자가 Console 리소스를 관리하고 Cloud Volumes ONTAP 시스템을 관리해야 하는 경우 이러한 역할 할당을 사용하십시오.
+
+[cols="20,30,30,20"]
+|===
+| 범위 | 플랫폼 역할 | Cloud Volumes ONTAP 역할 | 추천 
+
+
+| 조직 | 조직 관리자 | Cloud Volumes ONTAP 오퍼레이터 | 사용자가 콘솔 리소스(콘솔 에이전트 설정 포함)를 관리하고 Cloud Volumes ONTAP 시스템을 관리해야 하는 경우 
+
+
+| 폴더 또는 프로젝트 | 폴더 또는 프로젝트 관리자 | Cloud Volumes ONTAP 관리자 | 사용자가 특정 폴더 또는 프로젝트의 Console 리소스를 관리하고 Cloud Volumes ONTAP 시스템을 관리해야 하는 경우 
+
+
+| 폴더 또는 프로젝트 | 폴더 또는 프로젝트 관리자 | Cloud Volumes ONTAP 오퍼레이터 | 사용자가 특정 폴더 또는 프로젝트의 콘솔 리소스를 관리하고 Cloud Volumes ONTAP 시스템을 관리해야 하는 경우 
+
+
+| 폴더 또는 프로젝트 | 폴더 또는 프로젝트 관리자 | Cloud Volumes ONTAP 뷰어 | 사용자가 특정 폴더 또는 프로젝트의 콘솔 리소스를 관리해야 하고 Cloud Volumes ONTAP 시스템에 대한 읽기 전용 액세스만 필요한 경우 
+|===
+
+NOTE: 알려진 문제로 인해 *조직 뷰어* 및 *Cloud Volumes ONTAP 뷰어* 역할 조합이 조직 범위에서 작동하지 않습니다. 임시 해결 방법으로 *조직 관리자* 또는 *폴더 또는 프로젝트 관리자* 역할을 사용하십시오.
+
+.단계
+. NetApp Console에 가입하고 조직을 생성하세요.
+. 기본 프로젝트를 사용하거나 Cloud Volumes ONTAP 시스템을 구성하려는 방식에 맞춰 폴더와 프로젝트를 생성합니다.
+. Cloud Volumes ONTAP 구독을 구성하거나 연결합니다.
+. 조직에 사용자, 서비스 계정 또는 연합 그룹을 추가합니다. link:task-iam-manage-members-permissions.html["NetApp Console 조직에 구성원을 추가하는 방법을 알아보십시오."].
+. Cloud Volumes ONTAP 시스템을 관리할 조직, 폴더 또는 프로젝트 수준에서 사용자에게 Cloud Volumes ONTAP 역할을 할당하십시오. 구성원이 Console 리소스를 관리하고 다른 사용자에게 액세스 권한을 할당해야 하는 경우 적절한 플랫폼 역할을 할당하십시오.
+. Cloud Volumes ONTAP 시스템을 관리할 프로젝트에 추가하거나 검색합니다. 자세히 알아보기 https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP"^].
+. 시스템 또는 콘솔 에이전트를 다른 프로젝트에서 사용할 수 있어야 하는 경우 해당 리소스를 해당 프로젝트와 연결하십시오. link:task-iam-manage-resources.html["리소스를 폴더 및 프로젝트와 연결하는 방법을 알아보십시오."].
+
+
+
+
+[[review-roles-after-upgrading-the-console-agent]]
+== 콘솔 에이전트 업그레이드 후 역할 검토
+
+콘솔 에이전트를 버전 4.9.0 이상으로 업그레이드하면 콘솔은 기존 사용자의 플랫폼 역할을 기반으로 Cloud Volumes ONTAP 역할을 자동으로 할당합니다. 시딩이라고 하는 이 일회성 할당을 통해 관리자가 각 역할을 수동으로 할당할 필요 없이 사용자가 적절한 Cloud Volumes ONTAP 액세스 권한을 유지할 수 있습니다. 시딩은 사용자의 기존 플랫폼 역할에 따라 Cloud Volumes ONTAP 관리자 또는 뷰어 역할을 할당합니다. 이 매핑은 마이그레이션 중에만 적용되며, 새 할당의 경우 플랫폼 역할이 명시적인 Cloud Volumes ONTAP 역할을 대체하지 않습니다. 시딩된 역할을 검토하여 사용자가 필요한 액세스 권한만 유지하는지 확인하십시오.
+
+.단계
+. 각 Cloud Volumes ONTAP 시스템이 포함된 조직, 폴더 또는 프로젝트를 식별하십시오.
+. 각 사용자에게 할당된 Cloud Volumes ONTAP 역할을 검토하고 해당 역할이 시스템이 포함된 조직, 폴더 또는 프로젝트 수준에서 할당되었는지 확인하십시오. 예상되는 기본 역할에 대한 자세한 내용은 link:reference-iam-cvo-roles.html#seeding-mappings-for-existing-users["기존 사용자를 위한 시드 매핑"]을 참조하십시오.
+. 시드된 역할이 사용자의 책임과 일치하지 않는 경우 Cloud Volumes ONTAP 역할을 할당하거나 변경하십시오. 시드 프로세스는 사용자의 기존 플랫폼 역할을 기반으로 Cloud Volumes ONTAP 관리자 또는 뷰어 역할을 할당합니다. 사용자에게 운영자 수준 권한이 필요한 경우 시드 후 Cloud Volumes ONTAP 운영자 역할을 명시적으로 할당하십시오.
+. 새로운 역할 할당 또는 업데이트된 역할 할당이 적용되는 데 최대 1시간이 소요될 수 있습니다. Cloud Volumes ONTAP는 매시간 역할 할당을 새로 고칩니다.
+. 사용자가 Cloud Volumes ONTAP 시스템에 액세스하도록 하고 사용 가능한 작업이 할당된 역할과 일치하는지 확인하십시오.
+
+
+사용자가 시스템에 액세스할 수 없는 경우, 해당 사용자에게 조직, 폴더 또는 프로젝트 수준에서 Cloud Volumes ONTAP 역할이 있는지 확인하십시오.
+
+
+
+[[related-information]]
+== 관련 정보
+
+* link:reference-iam-cvo-roles.html["Cloud Volumes ONTAP 액세스 역할"]
+* link:concept-iam-rbac.html["NetApp Console 역할 기반 액세스 제어에 대해 알아보기"]
+* link:task-iam-manage-roles.html["NetApp Console 에서 멤버 액세스를 관리하세요"]
+
