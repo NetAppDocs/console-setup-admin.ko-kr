@@ -83,11 +83,11 @@ NOTE: 알려진 문제로 인해 *조직 뷰어* 및 *Cloud Volumes ONTAP 뷰어
 [[review-roles-after-upgrading-the-console-agent]]
 == 콘솔 에이전트 업그레이드 후 역할 검토
 
-콘솔 에이전트를 버전 4.9.0 이상으로 업그레이드하면 콘솔은 기존 사용자의 플랫폼 역할을 기반으로 Cloud Volumes ONTAP 역할을 자동으로 할당합니다. 시딩이라고 하는 이 일회성 할당을 통해 관리자가 각 역할을 수동으로 할당할 필요 없이 사용자가 적절한 Cloud Volumes ONTAP 액세스 권한을 유지할 수 있습니다. 시딩은 사용자의 기존 플랫폼 역할에 따라 Cloud Volumes ONTAP 관리자 또는 뷰어 역할을 할당합니다. 이 매핑은 마이그레이션 중에만 적용되며, 새 할당의 경우 플랫폼 역할이 명시적인 Cloud Volumes ONTAP 역할을 대체하지 않습니다. 시딩된 역할을 검토하여 사용자가 필요한 액세스 권한만 유지하는지 확인하십시오.
+콘솔 에이전트를 버전 4.9.0 이상으로 업그레이드하면 콘솔은 기존 사용자의 플랫폼 역할을 기반으로 Cloud Volumes ONTAP 역할을 자동으로 할당합니다. 이 일회성 할당을 통해 관리자가 각 역할을 수동으로 할당할 필요 없이 사용자가 적절한 Cloud Volumes ONTAP 액세스 권한을 유지할 수 있습니다. 사용자는 기존 플랫폼 역할에 따라 Cloud Volumes ONTAP 역할을 자동으로 할당받습니다. 이 매핑은 마이그레이션 중에만 적용되며, 새 할당의 경우 플랫폼 역할이 명시적인 Cloud Volumes ONTAP 역할을 대체하지 않습니다. 새 역할을 검토하여 사용자가 필요한 액세스 권한만 유지하는지 확인하십시오.
 
 .단계
 . 각 Cloud Volumes ONTAP 시스템이 포함된 조직, 폴더 또는 프로젝트를 식별하십시오.
-. 각 사용자에게 할당된 Cloud Volumes ONTAP 역할을 검토하고 해당 역할이 시스템이 포함된 조직, 폴더 또는 프로젝트 수준에서 할당되었는지 확인하십시오. 예상되는 기본 역할에 대한 자세한 내용은 link:reference-iam-cvo-roles.html#seeding-mappings-for-existing-users["기존 사용자를 위한 시드 매핑"]을 참조하십시오.
+. 각 사용자에게 할당된 Cloud Volumes ONTAP 역할을 검토하고 해당 역할이 시스템이 포함된 조직, 폴더 또는 프로젝트 수준에서 할당되었는지 확인하십시오. link:reference-iam-cvo-roles.html#seeding-mappings-for-existing-users["Cloud Volumes ONTAP 업그레이드 후 자동으로 할당되는 Cloud Volumes ONTAP 역할에 대해 알아보세요."].
 . 시드된 역할이 사용자의 책임과 일치하지 않는 경우 Cloud Volumes ONTAP 역할을 할당하거나 변경하십시오. 시드 프로세스는 사용자의 기존 플랫폼 역할을 기반으로 Cloud Volumes ONTAP 관리자 또는 뷰어 역할을 할당합니다. 사용자에게 운영자 수준 권한이 필요한 경우 시드 후 Cloud Volumes ONTAP 운영자 역할을 명시적으로 할당하십시오.
 . 새로운 역할 할당 또는 업데이트된 역할 할당이 적용되는 데 최대 1시간이 소요될 수 있습니다. Cloud Volumes ONTAP는 매시간 역할 할당을 새로 고칩니다.
 . 사용자가 Cloud Volumes ONTAP 시스템에 액세스하도록 하고 사용 가능한 작업이 할당된 역할과 일치하는지 확인하십시오.

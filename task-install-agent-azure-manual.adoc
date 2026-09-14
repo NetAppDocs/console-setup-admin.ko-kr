@@ -307,6 +307,7 @@ podman info | grep networkBackend
 
 
 
+. 이 에이전트를 Cloud Volumes ONTAP 시스템과 연결하는 경우 성능 향상을 위해 에이전트와 연결된 스레드 수를 늘리는 것을 고려하십시오. link:https://kb.netapp.com/Cloud/ncds/nds/cvods/cvods_kbs/CVO_going_to_failed_state_frequently_in_NetApp_Console["에이전트의 컨테이너 스레드 제한 증가에 대해 알아보세요"^].
 
 
 --

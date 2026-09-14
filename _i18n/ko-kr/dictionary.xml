@@ -6556,10 +6556,8 @@
   <block id="477c09cb5610382ea6fb7978147584f0" category="section-title">기존 사용자의 역할 마이그레이션</block>
   <block id="2144a74d9bd9b04e77b26ea6f662072b" category="paragraph">콘솔 에이전트를 버전 4.9.0 이상으로 업그레이드하면 콘솔은 기존 사용자의 플랫폼 역할에 따라 추가적인 Cloud Volumes ONTAP 역할을 할당합니다.</block>
   <block id="8f07835784615aa819dfff43f4ab0f2e" category="inline-link-macro">콘솔 에이전트 업그레이드 후 역할 검토</block>
-  <block id="4935d39c33b785da4c7add3d08807c1b" category="admonition">기존 콘솔 에이전트를 Console 4.9.0 이상으로 업그레이드하면 콘솔에서 조직의 기존 사용자에게 Cloud Volumes ONTAP 역할을 할당하는 일회성 시딩 프로세스가 실행됩니다. 이 프로세스는 완료하는 데 최대 30분이 소요될 수 있습니다. 시딩된 역할을 검토하고 조정하려면 <block ref="9c6eb0f6ef6d33dd56540127f1739544" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="cc4d5362d4db1743065e85867391e3f7" category="paragraph">다음 매핑은 일회성 마이그레이션 프로세스에만 적용됩니다.</block>
   <block id="9426ecd2d551af7bd95369b07facce3c" category="cell">기존 플랫폼 역할</block>
-  <block id="996d0510bc51c1b8c7ecf1631282579f" category="cell">시드 작업 중에 할당된 Cloud Volumes ONTAP 역할</block>
   <block id="b04e504847ef6b67f0727b490728c90b" category="cell">폴더 또는 프로젝트 뷰어</block>
   <block id="a5177570255a467a81cc5b270323bf23" category="cell">기타 플랫폼 역할</block>
   <block id="bdb1e832e4cad8743cbdc77c5df5a31f" category="paragraph">콘솔은 기존 플랫폼 역할과 동일한 계층 수준에서 Cloud Volumes ONTAP 역할을 할당합니다. 이러한 매핑은 새 역할 할당에는 적용되지 않습니다. 시드된 역할을 검토하고 조정하려면 <block ref="9c6eb0f6ef6d33dd56540127f1739544" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
@@ -6597,10 +6595,7 @@
   <block id="2386e129e4fecc93195657ea4dc87101" category="list-text">Cloud Volumes ONTAP 시스템을 관리할 프로젝트에 추가하거나 검색합니다. 자세히 알아보기<block ref="b68463f6d3bf4cfc966dc5504bb09dac" category="inline-link-rx"></block>.</block>
   <block id="1b6d320c6cc19b18ed20adf7b7cc1588" category="inline-link-macro">리소스를 폴더 및 프로젝트와 연결하는 방법을 알아보십시오.</block>
   <block id="28ced76b7b3a01b510c263591f1042c0" category="list-text">시스템 또는 콘솔 에이전트를 다른 프로젝트에서 사용할 수 있어야 하는 경우 해당 리소스를 해당 프로젝트와 연결하십시오. <block ref="3a0f5c999f52d199bd3e8bda7f8df4b1" category="inline-link-macro-rx"></block>.</block>
-  <block id="1ae34a1a97c96fb501df108f0ccaaa50" category="paragraph">콘솔 에이전트를 버전 4.9.0 이상으로 업그레이드하면 콘솔은 기존 사용자의 플랫폼 역할을 기반으로 Cloud Volumes ONTAP 역할을 자동으로 할당합니다. 시딩이라고 하는 이 일회성 할당을 통해 관리자가 각 역할을 수동으로 할당할 필요 없이 사용자가 적절한 Cloud Volumes ONTAP 액세스 권한을 유지할 수 있습니다. 시딩은 사용자의 기존 플랫폼 역할에 따라 Cloud Volumes ONTAP 관리자 또는 뷰어 역할을 할당합니다. 이 매핑은 마이그레이션 중에만 적용되며, 새 할당의 경우 플랫폼 역할이 명시적인 Cloud Volumes ONTAP 역할을 대체하지 않습니다. 시딩된 역할을 검토하여 사용자가 필요한 액세스 권한만 유지하는지 확인하십시오.</block>
   <block id="87a572687e882fc98097f9c9f4575d8d" category="list-text">각 Cloud Volumes ONTAP 시스템이 포함된 조직, 폴더 또는 프로젝트를 식별하십시오.</block>
-  <block id="9e3d1d8d81f1830befbef42ebbb854bf" category="inline-link-macro">기존 사용자를 위한 시드 매핑</block>
-  <block id="124f3b8b4925d1f284c981a3d0766bbc" category="list-text">각 사용자에게 할당된 Cloud Volumes ONTAP 역할을 검토하고 해당 역할이 시스템이 포함된 조직, 폴더 또는 프로젝트 수준에서 할당되었는지 확인하십시오. 예상되는 기본 역할에 대한 자세한 내용은 <block ref="45c304ee1ade93cf85129ebc868db872" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="7bd571056c71556ed1cf73ce3020ca53" category="list-text">시드된 역할이 사용자의 책임과 일치하지 않는 경우 Cloud Volumes ONTAP 역할을 할당하거나 변경하십시오. 시드 프로세스는 사용자의 기존 플랫폼 역할을 기반으로 Cloud Volumes ONTAP 관리자 또는 뷰어 역할을 할당합니다. 사용자에게 운영자 수준 권한이 필요한 경우 시드 후 Cloud Volumes ONTAP 운영자 역할을 명시적으로 할당하십시오.</block>
   <block id="5774c29530ef3d00986577fe09901f16" category="list-text">사용자가 Cloud Volumes ONTAP 시스템에 액세스하도록 하고 사용 가능한 작업이 할당된 역할과 일치하는지 확인하십시오.</block>
   <block id="a065f8eda24e666f32ca8b894d69f8fd" category="paragraph">사용자가 시스템에 액세스할 수 없는 경우, 해당 사용자에게 조직, 폴더 또는 프로젝트 수준에서 Cloud Volumes ONTAP 역할이 있는지 확인하십시오.</block>
@@ -6609,4 +6604,11 @@
   <block id="7f9913169b42b8f5d52af4ca9c8717f1" category="list-text"><block ref="7f9913169b42b8f5d52af4ca9c8717f1" category="inline-link-macro-rx"></block></block>
   <block id="0482ab4442a9ba22f7c194297a8cb1f2" category="list-text"><block ref="0482ab4442a9ba22f7c194297a8cb1f2" category="inline-link-macro-rx"></block></block>
   <block id="0b4dbf2063bf2cee842f6213a668ca13" category="sidebar">NetApp Console 시작하기(표준 모드)</block>
+  <block id="54383aac445d39de2e8c245040d07b5f" category="inline-link-macro">에이전트의 컨테이너 스레드 제한 증가에 대해 알아보세요</block>
+  <block id="d2c88e74d3861db30d07ea7d5b32f8b4" category="list-text">이 에이전트를 Cloud Volumes ONTAP 시스템과 연결하는 경우 성능 향상을 위해 에이전트와 연결된 스레드 수를 늘리는 것을 고려하십시오. <block ref="19d35f1710aa989f7c51ec017381d272" category="inline-link-macro-rx"></block>.</block>
+  <block id="3f5270815134250876b4de79ab285ee2" category="admonition">기존 콘솔 에이전트를 Console 4.9.0 이상 버전으로 업그레이드하면 콘솔에서 조직의 기존 사용자에게 Cloud Volumes ONTAP 역할을 할당하는 일회성 마이그레이션 프로세스가 실행됩니다. 이 프로세스는 완료하는 데 최대 30분이 소요될 수 있습니다. 마이그레이션 중에 할당된 역할을 검토하고 조정하려면 <block ref="9c6eb0f6ef6d33dd56540127f1739544" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="43caa104b2be33274574693f687b3b8a" category="cell">업그레이드 중에 할당된 Cloud Volumes ONTAP 역할</block>
+  <block id="867f6306ad030ade00b2b5d1be06a297" category="paragraph">콘솔 에이전트를 버전 4.9.0 이상으로 업그레이드하면 콘솔은 기존 사용자의 플랫폼 역할을 기반으로 Cloud Volumes ONTAP 역할을 자동으로 할당합니다. 이 일회성 할당을 통해 관리자가 각 역할을 수동으로 할당할 필요 없이 사용자가 적절한 Cloud Volumes ONTAP 액세스 권한을 유지할 수 있습니다. 사용자는 기존 플랫폼 역할에 따라 Cloud Volumes ONTAP 역할을 자동으로 할당받습니다. 이 매핑은 마이그레이션 중에만 적용되며, 새 할당의 경우 플랫폼 역할이 명시적인 Cloud Volumes ONTAP 역할을 대체하지 않습니다. 새 역할을 검토하여 사용자가 필요한 액세스 권한만 유지하는지 확인하십시오.</block>
+  <block id="acbaf21f08d26739d3a0e3645fd4f7c1" category="inline-link-macro">Cloud Volumes ONTAP 업그레이드 후 자동으로 할당되는 Cloud Volumes ONTAP 역할에 대해 알아보세요.</block>
+  <block id="a7f237db4808db8f7d7e3569c4c90eba" category="list-text">각 사용자에게 할당된 Cloud Volumes ONTAP 역할을 검토하고 해당 역할이 시스템이 포함된 조직, 폴더 또는 프로젝트 수준에서 할당되었는지 확인하십시오. <block ref="943ee494db9e9617f80c85c45c5ec678" category="inline-link-macro-rx"></block>.</block>
 </blocks>

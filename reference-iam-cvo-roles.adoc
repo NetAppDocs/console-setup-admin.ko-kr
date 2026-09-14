@@ -28,18 +28,19 @@ Cloud Volumes ONTAP 시스템이 포함된 조직, 폴더 또는 프로젝트 �
 
 
 [[role-migrations-for-existing-users]]
+[[seeding-mappings-for-existing-users]]
 == 기존 사용자의 역할 마이그레이션
 
 콘솔 에이전트를 버전 4.9.0 이상으로 업그레이드하면 콘솔은 기존 사용자의 플랫폼 역할에 따라 추가적인 Cloud Volumes ONTAP 역할을 할당합니다.
 
 
-NOTE: 기존 콘솔 에이전트를 Console 4.9.0 이상으로 업그레이드하면 콘솔에서 조직의 기존 사용자에게 Cloud Volumes ONTAP 역할을 할당하는 일회성 시딩 프로세스가 실행됩니다. 이 프로세스는 완료하는 데 최대 30분이 소요될 수 있습니다. 시딩된 역할을 검토하고 조정하려면 link:task-cvo-rbac-setup.html#review-roles-after-upgrading-the-console-agent["콘솔 에이전트 업그레이드 후 역할 검토"]을 참조하십시오.
+NOTE: 기존 콘솔 에이전트를 Console 4.9.0 이상 버전으로 업그레이드하면 콘솔에서 조직의 기존 사용자에게 Cloud Volumes ONTAP 역할을 할당하는 일회성 마이그레이션 프로세스가 실행됩니다. 이 프로세스는 완료하는 데 최대 30분이 소요될 수 있습니다. 마이그레이션 중에 할당된 역할을 검토하고 조정하려면 link:task-cvo-rbac-setup.html#review-roles-after-upgrading-the-console-agent["콘솔 에이전트 업그레이드 후 역할 검토"]을 참조하십시오.
 
 다음 매핑은 일회성 마이그레이션 프로세스에만 적용됩니다.
 
 [cols="50,50"]
 |===
-| 기존 플랫폼 역할 | 시드 작업 중에 할당된 Cloud Volumes ONTAP 역할 
+| 기존 플랫폼 역할 | 업그레이드 중에 할당된 Cloud Volumes ONTAP 역할 
 
 
 | 슈퍼 관리자 | Cloud Volumes ONTAP 관리자 
