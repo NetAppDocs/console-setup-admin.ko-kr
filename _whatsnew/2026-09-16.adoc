@@ -1,0 +1,23 @@
+= Console 에이전트 4.11.0
+:allow-uri-read: 
+
+
+
+
+[[console-agent-4-11-0]]
+=== Console 에이전트 4.11.0
+
+4.11.0 릴리스는 표준 모드와 제한된 모드를 모두 지원합니다.
+
+이번 NetApp Console 에이전트 릴리스에는 보안 개선 사항과 버그 수정 사항이 포함되어 있습니다.
+
+
+
+[[netapp-console-administration]]
+=== NetApp Console 관리
+
+
+
+==== AWS Marketplace의 Cloud Volumes ONTAP 구독자를 위한 간소화된 에이전트 배포 흐름
+
+새로운 link:https://us-east-1.console.aws.amazon.com/marketplace/search/listing/prodview-yi43o6oz7bf32?sr=0-2&ref_=ucaf&applicationId=AWS-Marketplace-Console["AWS Marketplace의 독립형 Cloud Volumes ONTAP 구독"] 구독자라면 NetApp Console에서 에이전트 배포가 간소화되었습니다. AWS 역할, 정책 및 자격 증명을 더 적은 단계로 구성하고, 단일 페이지에서 기본값을 자동으로 사용하며, 설정 과정을 더 빠르게 완료할 수 있습니다.

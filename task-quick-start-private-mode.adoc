@@ -92,9 +92,6 @@ NetApp 분류
 Licenses and subscriptions 관리
 
 * 프라이빗 모드에서는 BYOL만 지원됩니다.
-+
-Cloud Volumes ONTAP BYOL의 경우 노드 기반 라이센스만 지원됩니다. 용량 기반 라이센스는 지원되지 않습니다. 아웃바운드 인터넷 연결을 사용할 수 없으므로 NetApp Console에서 Cloud Volumes ONTAP 라이센스 파일을 수동으로 업로드해야 합니다.
-
 
 
 https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["라이센스를 추가하는 방법을 알아보십시오"^]
