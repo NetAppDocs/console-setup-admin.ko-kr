@@ -6619,7 +6619,6 @@
   <block id="a22ba5cede201b398675ddfd63c9864d" category="paragraph">4.10.0 릴리스에는 다음과 같은 NetApp Console 구성 요소 및 서비스에 대한 업데이트가 포함되어 있습니다.</block>
   <block id="c1b9fde9363d4906a9e67eb0862e9fc7" category="cell">4.10.0</block>
   <block id="5ff195749703fc07b830e8ce460f4513" category="cell"><block ref="9d354d50c04a9174ec71f0d3d8410a23" category="inline-link-rx"></block>로 이동하여 버전 4.10.0에 포함된 변경 사항을 참조하십시오.</block>
-  <block id="c87dd127a9f46f1b24fd3cf0f74c6588" category="cell">5.6.2 (2026년 8월 17일)</block>
   <block id="669d8c7c23d7c1df9de525a93369bb8f" category="cell">1.546.0 (2026년 8월 10일)</block>
   <block id="99eb4ee0a56c7fb9d9fef77053e43af4" category="paragraph">애플리케이션용 NetApp Backup and Recovery를 사용하여 온프레미스 ONTAP 클러스터의 스냅샷을 백업할 수 있는 기능을 제공합니다. 이 역할을 가진 사용자는 다음 작업을 수행할 수 있습니다.</block>
   <block id="f44c611b4162cee5fdf2ee447ed48192" category="list-text">백업 및 복구 &gt; 애플리케이션에서 작업을 완료합니다.</block>
@@ -6628,4 +6627,5 @@
   <block id="4d2ba7b1416b46d72e4a391ee901ec54" category="paragraph">SnapCenter 에는 뷰어 역할이 없습니다.</block>
   <block id="1e464951e7ffdbf5ba8f20ee5038f44f" category="section-title">2026년 9월 17일</block>
   <block id="9d26347bf9049c082d482aa87b79d702" category="section-title">2026년 9월 16일</block>
+  <block id="9bb8a5cf038a4165b497e11d9718970b" category="cell">5.6.2 (2026년 8월 31일)</block>
 </blocks>
