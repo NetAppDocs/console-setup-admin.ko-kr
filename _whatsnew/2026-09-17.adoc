@@ -24,3 +24,9 @@
 
 | NetApp Data Classification | 1.546.0 (2026년 8월 10일) |  https://docs.netapp.com/us-en/data-services-data-classification/whats-new.html["NetApp Classification 페이지의 새로운 기능"^]로 이동합니다. 
 |===
+
+
+[[private-mode-4-10-0-supports-red-hat-enterprise-linux-rhel-9-6]]
+=== 프라이빗 모드 4.10.0은 Red Hat Enterprise Linux(RHEL) 9.6을 지원합니다.
+
+이제 Red Hat Enterprise Linux(RHEL) 9.6에서 개인 정보 보호 모드를 설치하고 실행할 수 있어 사용자는 향상된 보안 및 성능을 위한 최신 지원 운영 체제를 이용할 수 있습니다.link:https://docs.netapp.com/us-en/console-setup-admin/task-prepare-private-mode.html#step-3-review-host-requirements["개인 모드의 호스트 요구 사항에 대해 알아보십시오."^]
