@@ -130,24 +130,24 @@ sidebar:
         url: "/concept-agents.html"
       - title: 콘솔 에이전트를 유지 관리합니다.
         entries:
-        - title: 수동으로 설치된 Console 에이전트 유지 관리
-          entries:
-          - title: VCenter에 설치된 에이전트 유지 관리
-            url: "/task-agent-vm-config.html"
-          - title: 수동으로 설치된 에이전트 유지 관리
-            url: "/task-maintain-agents.html"
+        - title: vCenter에 설치된 에이전트를 유지 관리합니다.
+          url: "/task-agent-vm-config.html"
+        - title: NetApp Console 에이전트 VM 유지 관리
+          url: "/task-maintain-agents.html"
+      - title: Secure Console 에이전트
+        entries:
         - title: 에이전트 주소 지정 및 URI 업데이트
           url: "/task-update-agent-addressing.html"
         - title: 웹 콘솔 액세스를 위한 CA 서명 인증서 설치
           url: "/task-installing-https-cert.html"
         - title: 프록시 서버를 사용하도록 콘솔 에이전트 구성
           url: "/task-configuring-proxy.html"
-        - title: 콘솔 에이전트 문제 해결
-          url: "/task-troubleshoot-agent.html"
-        - title: 콘솔 에이전트 업그레이드
-          url: "/task-upgrade-agent.html"
-        - title: 콘솔 에이전트를 제거하고 제거하세요
-          url: "/task-uninstall-agent.html"
+      - title: 콘솔 에이전트 문제 해결
+        url: "/task-troubleshoot-agent.html"
+      - title: 콘솔 에이전트 업그레이드
+        url: "/task-upgrade-agent.html"
+      - title: 콘솔 에이전트를 제거하고 제거하세요
+        url: "/task-uninstall-agent.html"
       - title: 클라우드 공급자 자격 증명 관리
         entries:
         - title: AWS

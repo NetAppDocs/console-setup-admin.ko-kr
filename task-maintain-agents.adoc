@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-maintain-agents.html 
 keywords: agent operating system, agent maintenance, vm maintenance, os updates, operating system updates, stop agent, restart agent, notifications, agent health, agent disk space, agent cpu usage, agent ram usage, agent vm, connector, connector health 
-summary: 에이전트 호스트에서 운영 체제를 유지 관리하는 것은 사용자의 책임입니다.  예를 들어, 회사의 운영 체제 배포 표준 절차에 따라 콘솔 에이전트 호스트의 운영 체제에 보안 업데이트를 적용해야 합니다. 
+summary: 수동으로 설치한 에이전트에 대한 OS 보안 업데이트, 권장 CPU 및 RAM 크기 조정, 리소스 상태 알림, VM 시작 및 중지 절차 등 NetApp Console 에이전트 VM을 유지 관리하는 방법에 대해 알아보십시오. 
 ---
-= 수동으로 설치된 NetApp Console 에이전트용 VM 유지 관리
+= NetApp Console 에이전트 VM 유지 관리
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,12 +14,19 @@ summary: 에이전트 호스트에서 운영 체제를 유지 관리하는 것�
 
 
 [role="lead"]
+수동으로 설치된 에이전트에 운영 체제 보안 업데이트를 적용하고, CPU, RAM 및 디스크 공간 경고에 대응하며, 필요에 따라 VM 크기를 조정하거나 중지 및 시작하여 NetApp Console 에이전트 VM을 유지 관리합니다.
+
 Console 에이전트를 수동으로 설치하는 경우, 에이전트 호스트의 운영 체제 유지 관리는 고객(사용자)의 책임입니다. 예를 들어, 고객은 회사 표준 운영 체제 배포 절차에 따라 에이전트 호스트의 운영 체제에 보안 업데이트를 적용해야 합니다.
 
+에이전트 VM의 리소스가 부족하거나 성능 문제가 발생하는 경우, VM 리소스를 업그레이드하는 적절한 조치를 취해야 합니다.
 
 
-[[apply-operating-system-updates-to-the-agent-host]]
-== 에이전트 호스트에 운영 체제 업데이트를 적용합니다
+NOTE: vCenter에 에이전트를 설치한 경우, 콘솔 유지 관리 툴을 사용하여 VM 인스턴스의 크기를 조정하십시오. link:task-agent-vm-config.html["vCenter에서 에이전트 VM을 유지 관리하는 방법을 알아보십시오."^].
+
+
+
+[[apply-operating-system-updates-to-the-manually-installed-agent-hosts]]
+== 수동으로 설치된 에이전트 호스트에 운영 체제 업데이트를 적용합니다
 
 에이전트 호스트 서비스를 중단하지 않고 OS 보안 패치를 적용합니다.
 
@@ -42,19 +49,33 @@ sudo apt upgrade
 ----
 
 
-[[vm-or-instance-type]]
-== VM 또는 인스턴스 유형
+[[resizing-the-vm-or-instance-type]]
+== VM 또는 인스턴스 유형의 크기 조정
 
 콘솔에서 콘솔 에이전트를 생성하면 기본 구성으로 클라우드 공급자에 VM 인스턴스가 배포됩니다.  에이전트를 만든 후에는 CPU나 RAM이 적은 더 작은 VM 인스턴스로 전환하지 마세요.
 
-다음 표는 CPU 및 RAM 요구 사항을 나열합니다.
+에이전트 VM의 용량이 부족하다는 알림을 받으면 최적의 성능을 보장하기 위해 CPU 또는 RAM 용량이 더 큰 VM 인스턴스로 업그레이드하는 것을 고려하십시오.
 
-CPU:: 8개 코어 또는 8개 vCPU
-숫양:: 32GB
 
+NOTE: VCenter에 에이전트를 설치한 경우 Console 유지 관리 툴을 사용하여 VM 인스턴스의 크기를 조정하십시오. link:task-agent-vm-config.html["VCenter에서 에이전트 VM의 크기를 조정하는 방법을 알아보세요"^].
 
 link:reference-agent-default-config.html["에이전트의 기본 구성에 대해 알아보세요"] .
 
+에이전트 VM의 CPU 또는 RAM을 늘려야 하는 경우 클라우드 공급자 또는 온프레미스 가상화 플랫폼에서 제공하는 지침에 따라 VM 인스턴스의 크기를 조정하십시오. NetApp은 최적의 성능을 보장하기 위해 현재 CPU 및 RAM 할당량을 두 배로 늘리는 것을 권장합니다. 다음 표는 권장 크기 조정 단계를 보여주며, 각 단계는 이전 단계의 CPU 및 RAM을 두 배로 늘립니다.
+
+[cols="1,1,1"]
+|===
+| 계층 | CPU (코어 또는 vCPU) | 숫양 
+
+
+| 최소 | 8 | 32GB 
+
+
+| 중간 | 16 | 64 GB 
+
+
+| 대형 | 32 | 128 GB 
+|===
 
 
 [[monitor-the-agent]]
@@ -78,10 +99,30 @@ link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operation
 | 디스크 공간이 너무 많습니다 | link:https://kb.netapp.com/Cloud/BlueXP/Cloud_Manager/How_to_resolve_disk_space_issues_on_BlueXP_connector_VM["NetApp 기술 자료 문서를 검토하세요"^] . 
 
 
-| CPU 사용량이 너무 높습니다 | 설치한 위치에 따라 클라우드 공급자나 온프레미스에서 에이전트 VM의 CPU 크기를 늘리세요.  또는 추가 에이전트를 만들고 작업 부하를 여러 에이전트에 분산합니다.  RAM 사용률은 환경, ONTAP 작업 부하, Cloud Volumes ONTAP 시스템 수, 사용 중인 데이터 서비스에 따라 달라질 수 있습니다. 
+ a| 
+CPU 사용량이 너무 높습니다
+ a| 
+설치한 위치에 따라 클라우드 공급자나 온프레미스에서 에이전트 VM의 CPU 크기를 늘리세요.  또는 추가 에이전트를 만들고 작업 부하를 여러 에이전트에 분산합니다.  RAM 사용률은 환경, ONTAP 작업 부하, Cloud Volumes ONTAP 시스템 수, 사용 중인 데이터 서비스에 따라 달라질 수 있습니다.
+
+* link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/change-instance-type-of-ebs-backed-instance.html["AWS에서 에이전트 VM의 크기를 늘리는 방법을 알아보세요"^].
+* link:https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/resize-vm?tabs=portal["Azure에서 에이전트 VM의 크기를 늘리는 방법을 알아보세요"^].
+* link:https://docs.cloud.google.com/compute/docs/instances/changing-machine-type-of-stopped-instance["Google Cloud에서 에이전트 VM의 크기를 늘리는 방법을 알아보세요"^].
+* link:task-agent-vm-config.html#increase-the-cpu-or-ram-of-the-vm-instance["VCenter에서 실행되는 온프레미스 에이전트의 크기를 늘리는 방법을 알아보십시오"].
 
 
-| RAM 사용량이 너무 높습니다 | 설치한 위치에 따라 클라우드 공급자나 온프레미스에서 에이전트 VM의 RAM을 늘리세요.  또는 추가 에이전트를 만들고 작업 부하를 여러 에이전트에 분산합니다.  RAM 사용률은 환경, ONTAP 작업 부하, Cloud Volumes ONTAP 시스템 수, 사용 중인 데이터 서비스에 따라 달라질 수 있습니다. 
+
+
+ a| 
+RAM 사용량이 너무 높습니다
+ a| 
+설치한 위치에 따라 클라우드 공급자나 온프레미스에서 에이전트 VM의 RAM을 늘리세요.  또는 추가 에이전트를 만들고 작업 부하를 여러 에이전트에 분산합니다.  RAM 사용률은 환경, ONTAP 작업 부하, Cloud Volumes ONTAP 시스템 수, 사용 중인 데이터 서비스에 따라 달라질 수 있습니다.
+
+* link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/change-instance-type-of-ebs-backed-instance.html["AWS에서 에이전트 VM의 크기를 늘리는 방법을 알아보세요"^].
+* link:https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/resize-vm?tabs=portal["Azure에서 에이전트 VM의 크기를 늘리는 방법을 알아보세요"^].
+* link:https://docs.cloud.google.com/compute/docs/instances/changing-machine-type-of-stopped-instance["Google Cloud에서 에이전트 VM의 크기를 늘리는 방법을 알아보세요"^].
+* link:task-agent-vm-config.html#increase-the-cpu-or-ram-of-the-vm-instance["VCenter에서 실행되는 온프레미스 에이전트의 크기를 늘리는 방법을 알아보십시오"].
+
+
 |===
 
 
