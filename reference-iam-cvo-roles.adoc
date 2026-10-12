@@ -16,6 +16,9 @@ summary: 콘솔에서 사용자에게 Cloud Volumes ONTAP에 대한 액세스 �
 [role="lead"]
 사용자에게 NetApp Console 내의 Cloud Volumes ONTAP에 대한 액세스 권한을 부여하려면 다음 역할을 할당할 수 있습니다.
 
+
+NOTE: 콘솔 에이전트 버전 4.9.0 이상을 실행 중인 경우 Cloud Volumes ONTAP에 대한 액세스 역할을 사용할 수 있습니다.
+
 * *Cloud Volumes ONTAP admin*: 모든 Cloud Volumes ONTAP 작업에 대한 전체 액세스 권한을 제공합니다.
 * *Cloud Volumes ONTAP 운영자*: 볼륨, 애그리게이트, 스냅샷 및 복제본 추가, 일부 구성 수정, Cloud Volumes ONTAP 버전 업그레이드 등 Cloud Volumes ONTAP 시스템 검색 및 관리를 포함한 중요한 스토리지 작업을 수행합니다.
 * *Cloud Volumes ONTAP 뷰어*: Cloud Volumes ONTAP 정보에 대한 읽기 전용 액세스를 제공합니다. 이 역할은 능동적인 작업을 수행할 수 없습니다. 구성 정보가 포함된 일부 탭과 화면은 뷰어에게 표시되지 않을 수 있습니다.
@@ -27,9 +30,9 @@ Cloud Volumes ONTAP 시스템이 포함된 조직, 폴더 또는 프로젝트 �
 
 
 
-[[role-migrations-for-existing-users]]
+[[role-migrations-for-existing-users-after-upgrading-to-console-agent-version-4-9-0-or-later]]
 [[seeding-mappings-for-existing-users]]
-== 기존 사용자의 역할 마이그레이션
+== Console agent 버전 4.9.0 이상으로 업그레이드한 후 기존 사용자의 역할 마이그레이션
 
 콘솔 에이전트를 버전 4.9.0 이상으로 업그레이드하면 콘솔은 기존 사용자의 플랫폼 역할에 따라 추가적인 Cloud Volumes ONTAP 역할을 할당합니다.
 

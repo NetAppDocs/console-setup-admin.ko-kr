@@ -16,6 +16,9 @@ summary: 프로젝트를 구성하고, Console 멤버를 추가하고, Cloud Vol
 [role="lead"]
 기존 Console 사용자가 필요한 액세스 권한을 유지하고 신규 구독자가 적절한 권한을 가진 사용자를 추가할 수 있도록 Cloud Volumes ONTAP에 대한 액세스 권한을 설정하십시오.
 
+
+NOTE: 콘솔 에이전트 버전 4.9.0 이상을 실행 중인 경우 Cloud Volumes ONTAP에 대한 액세스 역할을 사용할 수 있습니다.
+
 다음 섹션 중 하나를 사용하십시오.
 
 * *새로운 NetApp Console 및 Cloud Volumes ONTAP*: 신규 사용자 및 Cloud Volumes ONTAP 시스템에 대한 역할 기반 액세스를 설정합니다.
