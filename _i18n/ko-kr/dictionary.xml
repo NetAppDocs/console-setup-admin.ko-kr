@@ -404,7 +404,6 @@
   <block id="0930e6e62078c5446e99045f0a678607" category="paragraph">Docker 엔진 23.0.6~28.0.0.</block>
   <block id="8f06b143b878ae3919ba41cd38ea7380" category="list-text">콘솔 에이전트는 개인 모드에서 콘솔을 사용할 때 다음 운영 체제에서 지원됩니다.  에이전트를 설치하기 전에 컨테이너 오케스트레이션 도구가 필요합니다.</block>
   <block id="1a3d8802d280d4ec910f54042cd62998" category="cell">셀리눅스</block>
-  <block id="a3336db0e9f7b6341a12794c144076b6" category="paragraph">Docker 엔진 23.0.6~26.0.0</block>
   <block id="5556c95763913c6cfa8f61d9cab4f4f2" category="paragraph">26.0.0은 _new_ agent 3.9.44 이상 설치에서 지원됩니다.</block>
   <block id="afaf0577b469adb0296b4fcfa6f2af91" category="list-text">콘솔 에이전트는 이러한 운영 체제의 영어 버전에서 지원됩니다.</block>
   <block id="31acdb1c0f97e43347645b47a1cb7ad5" category="list-text">RHEL의 경우 호스트를 Red Hat Subscription Management에 등록해야 합니다.  등록되지 않은 경우 호스트는 에이전트 설치 중에 필요한 타사 소프트웨어를 업데이트하기 위해 저장소에 액세스할 수 없습니다.</block>
@@ -1277,7 +1276,6 @@
   <block id="87047facc49847cec237f6d055d56b31" category="section-title">인터넷 접속이 가능한 기본 구성</block>
   <block id="ee67bef980f9156a14c8bfbb2de4f437" category="paragraph">다음 구성 세부 정보는 NetApp Console, 클라우드 공급업체의 마켓플레이스에서 콘솔 에이전트를 배포한 경우 또는 인터넷 액세스가 가능한 온프레미스 Linux 호스트에 콘솔 에이전트를 수동으로 설치한 경우에 적용됩니다.</block>
   <block id="33ff271280dc3e0c2c15bf39aeefdeb9" category="list-text">EC2 인스턴스 유형은 t3.2xlarge입니다.</block>
-  <block id="7c42c6e2f8295dada12f50f825327ddf" category="list-text">이미지의 운영 체제는 Ubuntu 22.04 LTS입니다.</block>
   <block id="953e61420be6157aa122dfd3475d4070" category="paragraph">운영 체제에는 GUI가 포함되어 있지 않습니다.  시스템에 접근하려면 터미널을 사용해야 합니다.</block>
   <block id="688aea6136f160e02c8d5bbec6894343" category="list-text">설치에는 컨테이너 오케스트레이션 도구인 Docker Engine이 포함되어 있습니다.</block>
   <block id="8061654f55b31a1347dadde5417b3bbe" category="list-text">EC2 Linux 인스턴스의 사용자 이름은 ubuntu입니다(2023년 5월 이전에 생성된 에이전트의 경우 사용자 이름은 ec2-user입니다).</block>
@@ -6192,7 +6190,6 @@
   <block id="31c8c9293a24d211fe8df6780c3b5864" category="list-text">사용자 또는 서비스 계정에 역할을 할당할 때 지원되는 역할 중에서 선택할 수 있습니다.</block>
   <block id="b4c25e4423bb6dcb1445deb7b10e93fb" category="paragraph">드롭다운 목록에는 지원되는 역할만 표시됩니다. <block ref="358dd7829c43f386bdd1bc16bf83b432" category="inline-link-macro-rx"></block>.</block>
   <block id="7ea105aee574037d5e6af21567c8c3dc" category="paragraph">콘솔을 비공개 모드로 실행하고 버전 4.0.0 이상이어야 합니다.</block>
-  <block id="5d818424eacea237d3f2053aafd60fbe" category="paragraph">4.0.0 이상</block>
   <block id="b39dc14a008a29a5ead42173a9e0c598" category="doc">프라이빗 모드 릴리스(4.7.0)</block>
   <block id="2c0d034db2b48e2c24de792e5f537a36" category="paragraph">4.7.0 릴리스에는 다음과 같은 NetApp Console 구성 요소 및 서비스에 대한 업데이트가 포함되어 있습니다.</block>
   <block id="d794a9cd24f47c508609ee13d758511f" category="cell">4.7.0</block>
@@ -6664,4 +6661,6 @@
   <block id="83ea5433d56d3644fb56d0b6b799c35e" category="sidebar">vCenter에 설치된 에이전트를 유지 관리합니다.</block>
   <block id="5d9476182acf1146ab60b631fc72ec99" category="admonition">콘솔 에이전트 버전 4.9.0 이상을 실행 중인 경우 Cloud Volumes ONTAP에 대한 액세스 역할을 사용할 수 있습니다.</block>
   <block id="7be2d306061e806c6a2cf1ac2026ea93" category="section-title">Console agent 버전 4.9.0 이상으로 업그레이드한 후 기존 사용자의 역할 마이그레이션</block>
+  <block id="ecfb18572af1acc83bcc04e648fd570d" category="paragraph">프라이빗 모드의 NetApp Console을 사용하는 4.0.0 이상</block>
+  <block id="044ded006ef73f38b5aa769474d4c58d" category="list-text">이미지의 운영 체제는 Ubuntu 24.04 LTS입니다.</block>
 </blocks>
