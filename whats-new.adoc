@@ -18,6 +18,13 @@ NetApp Console 관리 기능의 새로운 기능에 대해 알아보세요: ID �
 
 
 
+[[15-october-2026]]
+== 2026년 10월 15일
+
+<stdin> - include::_whatsnew/2026-10-13.adoc[]에서 해결되지 않은 지시문
+
+
+
 [[17-september-2026]]
 == 2026년 9월 17일
 

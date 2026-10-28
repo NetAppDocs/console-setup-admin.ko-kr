@@ -19,7 +19,7 @@ NetApp Console은 SaaS 애플리케이션을 통해 사용하거나 클라우드
 NetApp에서는 이러한 사용 사례를 _배포 모드_라고 부릅니다. 각 모드는 비즈니스 및 보안 요구 사항에 따라 다양한 연결성, 기능 및 서비스를 제공합니다.
 
 표준 모드(SaaS):: NetApp Console SaaS(서비스형 소프트웨어) 애플리케이션은 모든 NetApp 데이터 서비스, 자동 업데이트, ID 페더레이션 및 NetApp Support Site 로그인과 같은 유연한 인증 옵션에 대한 액세스를 제공합니다. 이 모드는 마켓플레이스 구독 및 BYOL 라이선스를 지원합니다. 이 모드는 대부분의 사용자 및 조직, 특히 NetApp Console에서 사용 가능한 최대한의 기능과 서비스를 원하는 사용자 및 조직에 이상적입니다.
-제한된 모드(사용자 소유의 퍼블릭 클라우드에 설치):: 제한된 모드는 정부 기관이나 규제 대상 기업과 같이 강화된 보안과 제한된 연결이 필요한 조직을 위한 모드입니다. 사용자는 자체 퍼블릭 클라우드(정부, 국가 또는 상업용 지역)에 NetApp Console을 설치하고, NetApp Console API 엔드포인트(SaaS 애플리케이션에서 호스팅됨)에 대한 외부 연결이 제한됩니다. 제한된 모드는 Cloud Volumes ONTAP, Azure NetApp Files, NetApp Backup and Recovery(정부 및 상업용 지역의 경우), 데이터 분류를 포함한 주요 데이터 서비스와 자동 소프트웨어 업그레이드 및 ID 페더레이션에 대한 액세스를 제공합니다.
+제한된 모드(사용자 소유의 퍼블릭 클라우드에 설치):: 제한 모드는 정부 기관 및 규제 대상 기업 등 강화된 보안과 제한된 연결이 필요한 조직을 위한 기능입니다. 사용자는 자체 퍼블릭 클라우드(정부, 주권 또는 상업 지역)에 NetApp Console을 설치하며, 이는 NetApp Console API 엔드포인트(SaaS 애플리케이션에서 호스팅됨)에 대한 아웃바운드 연결이 제한됩니다. 제한 모드는 자동 소프트웨어 업그레이드 및 ID 페더레이션과 함께 AI Data Engine, Cloud Volumes ONTAP, Azure NetApp Files, NetApp Backup and Recovery(정부 및 상업 지역), 데이터 분류 등 주요 데이터 서비스에 대한 액세스를 제공합니다.
 프라이빗 모드(사내 또는 클라우드에 설치):: 프라이빗 모드는 AWS Secret Cloud, AWS Top Secret Cloud, Azure IL6 또는 에어갭 환경과 같이 엄격한 보안 요구 사항이 있는 조직에 적합합니다. NetApp Console SaaS 애플리케이션이나 NetApp 클라우드 기반 API에 연결되지 않으므로 완벽한 제어 권한을 제공하고 외부 통신을 차단합니다. 지원되는 데이터 서비스에는 NetApp Backup and Recovery, NetApp Data Classification, NetApp Replication 및 Cloud Volumes ONTAP가 포함됩니다. 모든 스토리지 및 인증은 로컬에서 유지되므로 데이터가 사용자 환경 내에 안전하게 보관됩니다. 이 모드는 방위 산업체, 엄격한 데이터 상주 규칙이 있는 금융 기관 및 기밀 시스템을 사용하는 정부 기관에 적합합니다.
 
 
@@ -139,7 +139,10 @@ NetApp에서는 고객이 NetApp 담당자와 협력하여 기존 계층화 라�
 | 작업 부하 | 아니요 
 
 
-.8+| *데이터 서비스* | NetApp Backup and Recovery | 예 
+.9+| *데이터 서비스* | NetApp AI Data Engine | 예 
+
+
+| NetApp Backup and Recovery | 예 
 
 
 | NetApp 분류 | 예 
@@ -290,7 +293,10 @@ image:diagram-restricted-mode.png["이 개념도는 SaaS 애플리케이션과 a
 | 온프레미스 ONTAP 클러스터 | 검색 및 관리에 필요합니다. Console 에이전트 없이 직접 검색을 사용할 수 있지만 관리 기능을 사용하려면 에이전트가 필요합니다. 
 
 
-.3+| *데이터 서비스* (제한된 모드는 표준 모드보다 지원하는 데이터 서비스가 적습니다)  a| 
+.4+| *데이터 서비스* (제한된 모드는 표준 모드보다 지원하는 데이터 서비스가 적습니다) | AI Data Engine | 예 
+
+
+ a| 
 백업 및 복구
 
 * 제한된 모드를 사용하는 정부 지역 및 상업 지역에서 지원됩니다. 제한된 모드를 사용하는 주권 지역에서는 지원되지 않습니다.
@@ -638,7 +644,10 @@ NOTE: 표준 모드(NetApp Console SaaS 애플리케이션)는 모든 기능을 
 | 작업 부하 | 아니요 | 아니요 
 
 
-.8+| *데이터 서비스* | 백업 및 복구 | 예https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["ONTAP 볼륨 데이터에 대해 지원되는 백업 대상 목록 보기"^] | 예https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["ONTAP 볼륨 데이터에 대해 지원되는 백업 대상 목록 보기"^] 
+.9+| *데이터 서비스* | AI Data Engine | 예 | 아니요 
+
+
+| 백업 및 복구 | 예https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["ONTAP 볼륨 데이터에 대해 지원되는 백업 대상 목록 보기"^] | 예https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["ONTAP 볼륨 데이터에 대해 지원되는 백업 대상 목록 보기"^] 
 
 
 | NetApp 분류 | 예 | 예 

@@ -54,7 +54,7 @@ Workload Analyzer:: 지연 시간, 처리량, 초당 입출력 작업 수 및 �
 
 콘솔 로컬 배포는 정책 기반 프로비저닝, 자동화된 규정 준수 검사 및 완벽한 데이터 주권이 필요한 대규모 온프레미스 ONTAP 환경을 보유한 조직에 가장 적합합니다.
 
-link:https://docs.netapp.com/us-en/console-local/concept-netapp-console-local.html["NetApp Console 로컬 배포에 대해 알아보십시오^."]
+link:https://docs.netapp.com/us-en/console-local/concept-netapp-console-local.html["NetApp Console 로컬 배포에 대해 알아보십시오."^]
 
 
 

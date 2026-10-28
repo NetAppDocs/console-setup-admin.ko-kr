@@ -2596,7 +2596,6 @@
   <block id="3a71443a0764cf544fb5e2055be2d744" category="list-text">*HTTP 프록시 구성*을 선택하세요.</block>
   <block id="945758c578fdff6bf19c6fade212dcaf" category="list-text">구성 유형 필드에서 *명시적 프록시*를 선택합니다.</block>
   <block id="dabc8d2c79f6529ca393b4b3d4f75805" category="list-text">*프록시 사용*을 선택하세요.</block>
-  <block id="25e8eb6a683e97e04e337e061a18205c" category="list-text">구문을 사용하여 서버를 지정하세요<block ref="f8f3e404ad5e32f60f55bb48e6395ae6" category="inline-link-rx"></block> 또는<block ref="9ab29a9097f3907435367cc314192885" category="inline-link-rx"></block></block>
   <block id="2fc62556a3d8d2f1a8b9dc5e4e4ba9ca" category="list-text">서버에 기본 인증이 필요한 경우 사용자 이름과 비밀번호를 지정하세요.</block>
   <block id="80bba58d673fb4fcbcf926f928bf80c7" category="list-text">도메인 사용자의 경우 \에 대한 ASCII 코드를 다음과 같이 입력해야 합니다. domain-name%92user-name</block>
   <block id="5596775e1e7017bff2ae389af56efd57" category="paragraph">예: netapp%92proxy</block>
@@ -5242,7 +5241,6 @@
   <block id="039fece4b91879f57d8ce3e60cd91b72" category="list-text">표준 모드(SaaS)</block>
   <block id="4404088bcdbc148a12d9d54feaceaaa6" category="list-text">NetApp Console SaaS(서비스형 소프트웨어) 애플리케이션은 모든 NetApp 데이터 서비스, 자동 업데이트, ID 페더레이션 및 NetApp Support Site 로그인과 같은 유연한 인증 옵션에 대한 액세스를 제공합니다. 이 모드는 마켓플레이스 구독 및 BYOL 라이선스를 지원합니다. 이 모드는 대부분의 사용자 및 조직, 특히 NetApp Console에서 사용 가능한 최대한의 기능과 서비스를 원하는 사용자 및 조직에 이상적입니다.</block>
   <block id="cbe7773bd2fa95a5751a5e831a6e8519" category="list-text">제한된 모드(사용자 소유의 퍼블릭 클라우드에 설치)</block>
-  <block id="9b623b58bde4f03efa6364d08c8279df" category="list-text">제한된 모드는 정부 기관이나 규제 대상 기업과 같이 강화된 보안과 제한된 연결이 필요한 조직을 위한 모드입니다. 사용자는 자체 퍼블릭 클라우드(정부, 국가 또는 상업용 지역)에 NetApp Console을 설치하고, NetApp Console API 엔드포인트(SaaS 애플리케이션에서 호스팅됨)에 대한 외부 연결이 제한됩니다. 제한된 모드는 Cloud Volumes ONTAP, Azure NetApp Files, NetApp Backup and Recovery(정부 및 상업용 지역의 경우), 데이터 분류를 포함한 주요 데이터 서비스와 자동 소프트웨어 업그레이드 및 ID 페더레이션에 대한 액세스를 제공합니다.</block>
   <block id="58c169b907a09c154e92b586b03720ce" category="list-text">프라이빗 모드(사내 또는 클라우드에 설치)</block>
   <block id="e728600836da4c211714325b06aff5ce" category="list-text">프라이빗 모드는 AWS Secret Cloud, AWS Top Secret Cloud, Azure IL6 또는 에어갭 환경과 같이 엄격한 보안 요구 사항이 있는 조직에 적합합니다. NetApp Console SaaS 애플리케이션이나 NetApp 클라우드 기반 API에 연결되지 않으므로 완벽한 제어 권한을 제공하고 외부 통신을 차단합니다. 지원되는 데이터 서비스에는 NetApp Backup and Recovery, NetApp Data Classification, NetApp Replication 및 Cloud Volumes ONTAP가 포함됩니다. 모든 스토리지 및 인증은 로컬에서 유지되므로 데이터가 사용자 환경 내에 안전하게 보관됩니다. 이 모드는 방위 산업체, 엄격한 데이터 상주 규칙이 있는 금융 기관 및 기밀 시스템을 사용하는 정부 기관에 적합합니다.</block>
   <block id="8f674ddec71fa3256a062bcac7a92856" category="admonition">NetApp Console은 제한된 모드 및 프라이빗 모드에서 데이터 흐름을 제한하지만 환경이 규정을 준수하는지 확인해야 합니다.</block>
@@ -6331,8 +6329,6 @@
   <block id="69c0257b1ba8a3ba7687d4f7a9883d7f" category="list-text">스토리지 조건 변경 시 관련 팀에 알림이 전달되도록 이메일 및 웹훅 알림 채널을 구성합니다. 웹훅은 기존 모니터링 및 인시던트 관리 툴과 통합됩니다.</block>
   <block id="00c24ecc0e9a6f1c6a5202f40e8c96c1" category="paragraph">콘솔 로컬 배포는 온프레미스 ONTAP 클러스터 및 NetApp Backup and Recovery를 지원합니다. 또한 연합 인증을 위해 Active Directory와 통합되며 로컬 사용자를 위한 다중 요소 인증을 지원합니다.</block>
   <block id="be6ca74d1ea996c7c4fe59d3f22d39a4" category="paragraph">콘솔 로컬 배포는 정책 기반 프로비저닝, 자동화된 규정 준수 검사 및 완벽한 데이터 주권이 필요한 대규모 온프레미스 ONTAP 환경을 보유한 조직에 가장 적합합니다.</block>
-  <block id="70b86d6aa7fb00fd1d760b33b8607159" category="inline-link-macro">NetApp Console 로컬 배포에 대해 알아보십시오^.</block>
-  <block id="f64bf1d04df251b82d06554b478f9ae4" category="paragraph"><block ref="f64bf1d04df251b82d06554b478f9ae4" category="inline-link-macro-rx"></block></block>
   <block id="0161e3d40bdbea6ca6998c8c60165b33" category="section-title">기능 비교</block>
   <block id="bfd15aa26ba0ced782240c4a8b7e517e" category="section-title">스토리지 관리</block>
   <block id="21021ea0e52be8e9c599f4dff41e5be0" category="cell">기능</block>
@@ -6663,4 +6659,15 @@
   <block id="7be2d306061e806c6a2cf1ac2026ea93" category="section-title">Console agent 버전 4.9.0 이상으로 업그레이드한 후 기존 사용자의 역할 마이그레이션</block>
   <block id="ecfb18572af1acc83bcc04e648fd570d" category="paragraph">프라이빗 모드의 NetApp Console을 사용하는 4.0.0 이상</block>
   <block id="044ded006ef73f38b5aa769474d4c58d" category="list-text">이미지의 운영 체제는 Ubuntu 24.04 LTS입니다.</block>
+  <block id="08853958e0db62fd50058fd45b355d7a" category="doc">Console 에이전트 4.12.0</block>
+  <block id="67b83a9547aaccf9123cbc81823aeda8" category="paragraph">4.12.0 릴리스는 표준 모드와 제한된 모드를 모두 지원합니다.</block>
+  <block id="f3826fe13aaaec9b1aee814413e5cc00" category="paragraph">이번 릴리스에는 보안 개선 사항과 버그 수정 사항이 포함되어 있습니다.</block>
+  <block id="be15bb9dacde4dbbac6fa94a41f457d4" category="list-text">제한 모드는 정부 기관 및 규제 대상 기업 등 강화된 보안과 제한된 연결이 필요한 조직을 위한 기능입니다. 사용자는 자체 퍼블릭 클라우드(정부, 주권 또는 상업 지역)에 NetApp Console을 설치하며, 이는 NetApp Console API 엔드포인트(SaaS 애플리케이션에서 호스팅됨)에 대한 아웃바운드 연결이 제한됩니다. 제한 모드는 자동 소프트웨어 업그레이드 및 ID 페더레이션과 함께 AI Data Engine, Cloud Volumes ONTAP, Azure NetApp Files, NetApp Backup and Recovery(정부 및 상업 지역), 데이터 분류 등 주요 데이터 서비스에 대한 액세스를 제공합니다.</block>
+  <block id="2f05d6cddb39e99b401c758387957ed6" category="cell">NetApp AI Data Engine</block>
+  <block id="424a10335c5c90e5b96111de1934acec" category="cell">AI Data Engine</block>
+  <block id="52ae244e9f2a39b24f6e7062c06f1548" category="inline-link-macro">NetApp Console 로컬 배포에 대해 알아보십시오.</block>
+  <block id="a8f4a115cb2472a4344e18b6a59c28a7" category="paragraph"><block ref="a8f4a115cb2472a4344e18b6a59c28a7" category="inline-link-macro-rx"></block></block>
+  <block id="ab6e085a179dd5f550dee0092d1b6d67" category="list-text">\http://&lt;address&gt;:&lt;port&gt; 또는 \https://&lt;address&gt;:&lt;port&gt; 구문을 사용하여 서버를 지정하십시오.</block>
+  <block id="f633c86b0317ff4aa3fa992245e2b77a" category="section-title">2026년 10월 15일</block>
+  <block id="972fa0a7afa32e373a27dd0fbf1e8d19" category="paragraph">&lt;stdin&gt; - include::_whatsnew/2026-10-13.adoc[]에서 해결되지 않은 지시문</block>
 </blocks>
