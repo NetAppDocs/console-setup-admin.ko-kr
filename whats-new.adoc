@@ -21,7 +21,21 @@ NetApp Console 관리 기능의 새로운 기능에 대해 알아보세요: ID �
 [[15-october-2026]]
 == 2026년 10월 15일
 
-<stdin> - include::_whatsnew/2026-10-13.adoc[]에서 해결되지 않은 지시문
+
+
+[[console-agent-4-12-0]]
+=== Console 에이전트 4.12.0
+
+4.12.0 릴리스는 표준 모드와 제한된 모드를 모두 지원합니다.
+
+이번 NetApp Console 에이전트 릴리스에는 보안 개선 사항과 버그 수정 사항이 포함되어 있습니다.
+
+
+
+[[netapp-console-administration]]
+=== NetApp Console 관리
+
+이번 릴리스에는 보안 개선 사항과 버그 수정 사항이 포함되어 있습니다.
 
 
 

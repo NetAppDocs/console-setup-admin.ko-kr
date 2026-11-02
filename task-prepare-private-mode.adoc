@@ -393,28 +393,49 @@ Amazon FSx for NetApp ONTAP:
 
 
  a| 
-\ https://management.azure.com \ https://login.microsoftonline.com \ https://blob.core.windows.net \ https://core.windows.net
+* \https://management.azure.com
+* \https://login.microsoftonline.com
+* \https://blob.core.windows.net
+* \https://core.windows.net
+
  a| 
 Azure 공용 지역의 리소스를 관리합니다.
 
 
 
  a| 
-\https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud
+* \https://management.azure.microsoft.scloud
+* \https://login.microsoftonline.microsoft.scloud
+* \https://blob.core.microsoft.scloud
+* \https://core.microsoft.scloud
+
  a| 
 Azure IL6 지역의 리소스를 관리합니다.
 
 
 
  a| 
-\ https://management.chinacloudapi.cn \ https://login.chinacloudapi.cn \ https://blob.core.chinacloudapi.cn \ https://core.chinacloudapi.cn
+* \https://management.chinacloudapi.cn
+* \https://login.chinacloudapi.cn
+* \https://blob.core.chinacloudapi.cn
+* \https://core.chinacloudapi.cn
+
  a| 
 Azure China 지역의 리소스를 관리합니다.
 
 
 
  a| 
-https://www.googleapis.com/compute/v1/ https://compute.googleapis.com/compute/v1 https://cloudresourcemanager.googleapis.com/v1/projects https://www.googleapis.com/compute/beta https://storage.googleapis.com/storage/v1 https://www.googleapis.com/storage/v1 https://iam.googleapis.com/v1 https://cloudkms.googleapis.com/v1 https://config.googleapis.com/v1/projects
+* \https://www.googleapis.com/compute/v1/
+* \https://compute.googleapis.com/compute/v1
+* \https://cloudresourcemanager.googleapis.com/v1/projects
+* \https://www.googleapis.com/compute/beta
+* \https://storage.googleapis.com/storage/v1
+* \https://www.googleapis.com/storage/v1
+* \https://iam.googleapis.com/v1
+* \https://cloudkms.googleapis.com/v1
+* \https://config.googleapis.com/v1/projects
+
  a| 
 Google Cloud에서 리소스를 관리합니다.
 

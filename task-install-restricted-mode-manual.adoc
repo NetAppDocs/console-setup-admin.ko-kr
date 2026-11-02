@@ -1,0 +1,721 @@
+---
+sidebar: sidebar 
+permalink: task-install-restricted-mode-manual.html 
+keywords: restricted mode, manual install, AWS, Azure, Google Cloud, Linux host, Console agent 
+summary: AWS, Azure 또는 Google Cloud의 전용 Linux 호스트에 콘솔 에이전트를 제한된 모드로 수동 설치한 다음 콘솔을 구성하고 클라우드 권한을 할당합니다. 
+---
+= 제한된 모드에서 NetApp Console 에이전트 수동 배포
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+제한된 아웃바운드 연결로 NetApp 콘솔을 사용하려면 제한된 모드에서 콘솔 에이전트를 수동으로 배포해야 합니다.
+
+마켓플레이스 구독을 사용하지 않거나 Google Cloud를 배포하는 경우 콘솔 에이전트를 수동으로 설치해야 합니다.
+
+
+
+[[step-1-prepare-cloud-permissions]]
+== 1단계: 클라우드 권한 준비
+
+콘솔 에이전트를 설치하기 전에 리소스 관리에 필요한 클라우드 공급자 권한을 준비하십시오.
+
+link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["클라우드 권한을 준비하는 방법을 알아보세요"] .
+
+
+
+[[step-2-enable-google-cloud-apis-google-cloud-only]]
+[[restricted-mode-google-cloud-apis]]
+== 2단계: Google Cloud API를 활성화합니다(Google Cloud에서만 해당)
+
+Google Cloud에 콘솔 에이전트를 설치하는 경우 설치 전에 프로젝트에서 필요한 API를 사용 설정해야 합니다. 이러한 API는 특정 Cloud Volumes ONTAP 기능을 사용하는 데 필요합니다.
+
+.단계
+. https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloud 프로젝트에서 API를 사용 설정하세요"^]
++
+** Cloud Build API(Infrastructure Manager를 사용하는 프라이빗 모드 Cloud Volumes ONTAP 배포에 필요)
+** 클라우드 배포 관리자 V2 API
+** 클라우드 인프라 관리자 API
+** 클라우드 로깅 API
+** 클라우드 리소스 관리자 API
+** 컴퓨트 엔진 API
+** ID 및 액세스 관리(IAM) API
+** 클라우드 키 관리 서비스(KMS) API(NetApp Backup and Recovery를 고객 관리 암호화 키(CMEK)와 함께 사용하려는 경우에만 필요)
+** Cloud Quotas API(Infrastructure Manager를 사용하는 Cloud Volumes ONTAP 배포에 필요)
+
+
+
+
+
+
+[[step-3-prepare-network-access]]
+== 3단계: 네트워크 액세스 준비
+
+콘솔 에이전트를 설치하는 클라우드 공급자에 필요한 아웃바운드 엔드포인트를 허용하십시오.
+
+
+
+[[cloud-provider-endpoints]]
+=== 클라우드 제공업체 엔드포인트
+
+
+
+==== AWS 환경
+
+이러한 AWS 서비스 엔드포인트가 FSx for ONTAP을 포함한 AWS 리소스를 관리하도록 허용합니다.
+
+[cols="2a,1a"]
+|===
+| 엔드포인트 | 목적 
+
+
+ a| 
+AWS 서비스(amazonaws.com):
+
+* 클라우드포메이션
+* 탄력적 컴퓨팅 클라우드(EC2)
+* ID 및 액세스 관리(IAM)
+* 키 관리 서비스(KMS)
+* 보안 토큰 서비스(STS)
+* 간편 보관 서비스(S3)
+
+ a| 
+AWS 리소스를 관리합니다.  엔드포인트는 AWS 지역에 따라 달라집니다. https://docs.aws.amazon.com/general/latest/gr/rande.html["자세한 내용은 AWS 설명서를 참조하세요."^]
+
+
+
+ a| 
+Amazon FSx for NetApp ONTAP:
+
+* api.workloads.netapp.com
+
+ a| 
+웹 기반 콘솔은 이 엔드포인트에 연결하여 Workload Factory API와 상호 작용함으로써 ONTAP 기반 워크로드용 FSx를 관리하고 운영합니다.
+
+|===
+
+
+==== Azure 환경
+
+Azure 지역(퍼블릭, 정부 또는 중국)에 해당하는 엔드포인트를 허용하십시오.
+
+[cols="2a,1a"]
+|===
+| 엔드포인트 | 목적 
+
+
+ a| 
+* \https://management.azure.com
+* \https://login.microsoftonline.com
+* \https://blob.core.windows.net
+* \https://core.windows.net
+
+ a| 
+Azure 공용 지역의 리소스를 관리합니다.
+
+
+
+ a| 
+* \https://management.usgovcloudapi.net
+* \https://login.microsoftonline.us
+* \https://*.blob.core.usgovcloudapi.net
+* \https://core.usgovcloudapi.net
+
+ a| 
+Azure Government 지역의 리소스를 관리합니다.
+
+
+
+ a| 
+* \https://management.chinacloudapi.cn
+* \https://login.chinacloudapi.cn
+* \https://blob.core.chinacloudapi.cn
+* \https://core.chinacloudapi.cn
+
+ a| 
+Azure China 지역의 리소스를 관리합니다.
+
+|===
+
+
+==== Google Cloud 환경
+
+프로젝트의 리소스를 관리할 수 있도록 이러한 Google Cloud API 엔드포인트를 허용하십시오.
+
+[cols="2a,1a"]
+|===
+| 엔드포인트 | 목적 
+
+
+ a| 
+* \https://www.googleapis.com/compute/v1/
+* \https://compute.googleapis.com/compute/v1
+* \https://cloudresourcemanager.googleapis.com/v1/projects
+* \https://www.googleapis.com/compute/beta
+* \https://storage.googleapis.com/storage/v1
+* \https://www.googleapis.com/storage/v1
+* \https://iam.googleapis.com/v1
+* \https://cloudkms.googleapis.com/v1
+* \https://config.googleapis.com/v1/projects
+
+ a| 
+Google Cloud에서 리소스를 관리합니다.
+
+|===
+
+
+[[netapp-console-endpoints]]
+=== NetApp Console 엔드포인트
+
+NetApp 지원, 콘솔 기능 및 콘솔 에이전트 배포 및 업그레이드를 위한 공유 엔드포인트를 허용하십시오.
+
+[cols="2a,1a"]
+|===
+| 엔드포인트 | 목적 
+
+
+ a| 
+* \ https://mysupport.netapp.com
+
+ a| 
+라이선스 정보를 얻고 AutoSupport 메시지를 NetApp 지원팀에 보내려면 다음을 수행하십시오.
+
+
+
+ a| 
+* \ https://signin.b2c.netapp.com
+
+ a| 
+NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp Console 에 새로운 NSS 자격 증명을 추가합니다.
+
+
+
+ a| 
+* \ https://support.netapp.com
+
+ a| 
+라이선스 정보를 얻고 AutoSupport 메시지를 NetApp Support로 전송하며 Cloud Volumes ONTAP의 소프트웨어 업데이트를 받기 위해서입니다.
+
+
+
+ a| 
+* \ https://api.bluexp.netapp.com
+* \ https://netapp-cloud-account.auth0.com
+* \ https://netapp-cloud-account.us.auth0.com
+* \ https://console.netapp.com
+* \https://components.console.bluexp.netapp.com
+* \ https://cdn.auth0.com
+
+ a| 
+NetApp Console 내에서 기능과 서비스를 제공합니다.
+
+
+
+ a| 
+정부 관할 지역이 아닌 경우 다음 엔드포인트를 사용하십시오:
+
+* \ https://bluexpinfraprod.eastus2.data.azurecr.io
+* \ https://bluexpinfraprod.azurecr.io
+
+
+정부 지역의 경우 다음 엔드포인트를 대신 사용하십시오:
+
+* \ https://occmclientinfragov.azurecr.us
+
+ a| 
+콘솔 에이전트 배포 및 업그레이드를 위한 이미지를 얻기 위함입니다.
+
+|===
+브라우저 액세스 및 기타 네트워킹 요구 사항은 link:task-prepare-restricted-mode.html#step-5-prepare-network-access["제한된 모드에 대한 네트워크 액세스 준비"]을(를) 참조하십시오.
+
+
+
+[[step-4-install-podman-or-docker-engine]]
+[[podman-configuration]]
+== 4단계: Podman 또는 Docker Engine 설치
+
+운영 체제에 따라 에이전트를 설치하기 전에 Podman 또는 Docker Engine이 필요합니다.
+
+* Red Hat Enterprise Linux 8 및 9에는 Podman이 필요합니다.
++
+<<podman-versions,지원되는 Podman 버전 보기>> .
+
+* Ubuntu에는 Docker 엔진이 필요합니다.
++
+<<podman-versions,지원되는 Docker Engine 버전 보기>> .
+
+
+
+.단계
+[role="tabbed-block"]
+====
+.포드만
+--
+Podman을 설치하고 구성하려면 다음 단계를 따르세요.
+
+* podman.socket 서비스를 활성화하고 시작합니다.
+* python3 설치
+* podman-compose 패키지 설치(Red Hat 버전에 따라 다름)
+* PATH 환경 변수에 podman-compose를 추가합니다.
+* Red Hat Enterprise Linux를 사용하는 경우 Podman 버전이 CNI 대신 Netavark Aardvark DNS를 사용하는지 확인하십시오.
+
+
+
+NOTE: DNS 포트 충돌을 피하기 위해 에이전트를 설치한 후 aardvark-dns 포트(기본값: 53)를 조정하세요.  지침에 따라 포트를 구성하세요.
+
+.단계
+. 호스트에 podman-docker 패키지가 설치되어 있다면 제거합니다.
++
+[source, cli]
+----
+dnf remove podman-docker
+rm /var/run/docker.sock
+----
+. Podman을 설치하세요.
++
+공식 Red Hat Enterprise Linux 저장소에서 Podman을 다운로드할 수 있습니다.
+
++
+.. Red Hat Enterprise Linux 9.6의 경우:
++
+[source, cli]
+----
+sudo dnf install podman-5:<version>
+----
++
+여기서 <버전>은 설치하려는 Podman의 지원되는 버전입니다. <<podman-versions,지원되는 Podman 버전 보기>> .
+
+.. Red Hat Enterprise Linux 9.1~9.4 버전의 경우:
++
+[source, cli]
+----
+sudo dnf install podman-4:<version>
+----
++
+여기서 <버전>은 설치하려는 Podman의 지원되는 버전입니다. <<podman-versions,지원되는 Podman 버전 보기>> .
+
+.. Red Hat Enterprise Linux 8의 경우:
++
+[source, cli]
+----
+sudo dnf install podman-4:<version>
+----
++
+여기서 <버전>은 설치하려는 Podman의 지원되는 버전입니다. <<podman-versions,지원되는 Podman 버전 보기>> .
+
+
+
+. podman.socket 서비스를 활성화하고 시작합니다.
++
+[source, cli]
+----
+sudo systemctl enable --now podman.socket
+----
+. python3를 설치합니다.
++
+[source, cli]
+----
+sudo dnf install python3
+----
+. 시스템에 EPEL 저장소 패키지가 아직 없으면 설치하세요.
++
+이 단계는 podman-compose가 EPEL(Enterprise Linux용 추가 패키지) 저장소에서 사용 가능하기 때문에 필요합니다.
+
+. Red Hat Enterprise 9를 사용하는 경우:
++
+.. EPEL 저장소 패키지를 설치하세요.
+
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+----
++
+.. podman-compose 패키지 1.5.0을 설치합니다.
++
+[source, cli]
+----
+sudo dnf install podman-compose-1.5.0
+----
+
+
+. Red Hat Enterprise Linux 8을 사용하는 경우:
++
+.. EPEL 저장소 패키지를 설치하세요.
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+----
+.. podman-compose 패키지 1.0.6을 설치합니다.
++
+[source, cli]
+----
+sudo dnf install podman-compose-1.0.6
+----
++
+
+NOTE: 를 사용하여 `dnf install` 명령은 PATH 환경 변수에 podman-compose를 추가하는 요구 사항을 충족합니다.  설치 명령은 이미 포함되어 있는 /usr/bin에 podman-compose를 추가합니다. `secure_path` 호스트의 옵션.
+
+.. Red Hat Enterprise Linux 8을 사용하는 경우 Podman 버전이 CNI 대신 Aardvark DNS와 함께 NetAvark를 사용하는지 확인하세요.
++
+... 다음 명령을 실행하여 networkBackend가 CNI로 설정되어 있는지 확인하세요.
++
+[source, cli]
+----
+podman info | grep networkBackend
+----
+... networkBackend가 설정된 경우 `CNI` , 당신은 그것을 변경해야 합니다 `netavark` .
+... 설치하다 `netavark` 그리고 `aardvark-dns` 다음 명령을 사용합니다.
++
+[source, cli]
+----
+dnf install aardvark-dns netavark
+----
+... 열기 `/etc/containers/containers.conf` 파일을 열고 network_backend 옵션을 "cni" 대신 "netavark"를 사용하도록 수정합니다.
++
+만약에 `/etc/containers/containers.conf` 존재하지 않습니다. 구성을 변경하세요. `/usr/share/containers/containers.conf` .
+
+... Podman을 다시 시작하세요.
++
+[source, cli]
+----
+systemctl restart podman
+----
+... 다음 명령을 사용하여 networkBackend가 이제 "netavark"로 변경되었는지 확인하세요.
++
+[source, cli]
+----
+podman info | grep networkBackend
+----
+
+
+
+
+. 이 에이전트를 Cloud Volumes ONTAP 시스템과 연결하는 경우 성능 향상을 위해 에이전트와 연결된 스레드 수를 늘리는 것을 고려하십시오. link:https://kb.netapp.com/Cloud/ncds/nds/cvods/cvods_kbs/CVO_going_to_failed_state_frequently_in_NetApp_Console["에이전트의 컨테이너 스레드 제한 증가에 대해 알아보세요"^].
+
+
+--
+.도커 엔진
+--
+Docker Engine을 설치하려면 Docker 설명서를 따르세요.
+
+.단계
+. https://docs.docker.com/engine/install/["Docker에서 설치 지침 보기"^]
++
+지원되는 Docker Engine 버전을 설치하려면 다음 단계를 따르세요. 콘솔에서 지원되지 않으므로 최신 버전을 설치하지 마세요.
+
+. Docker가 활성화되어 실행 중인지 확인하세요.
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+
+
+--
+====
+
+
+[[step-5-manually-install-the-netapp-console-restricted-mode-in-your-cloud-environment-must-use-for-google-cloud]]
+== 5단계: 클라우드 환경에 NetApp Console 제한된 모드를 수동으로 설치합니다(Google Cloud의 경우 필수)
+
+AWS, Azure 또는 Google Cloud에서 실행 중인 자체 Linux 호스트에 콘솔 에이전트를 수동으로 설치할 수 있습니다.
+
+.시작하기 전에
+다음 사항이 있어야 합니다.
+
+* 콘솔 에이전트를 설치하려면 루트 권한이 필요합니다.
+* 콘솔 에이전트에서 인터넷에 접속하는 데 프록시가 필요한 경우 프록시 서버에 대한 세부 정보입니다.
++
+설치 후 프록시 서버를 구성할 수 있는 옵션이 있지만, 이렇게 하려면 Console 에이전트를 다시 시작해야 합니다.
+
+* 프록시 서버가 HTTPS를 사용하거나 프록시가 가로채기 프록시인 경우 CA 서명 인증서가 필요합니다.
+
+
+
+NOTE: 콘솔 에이전트를 수동으로 설치하는 경우 투명 프록시 서버에 대한 인증서를 설정할 수 없습니다. 투명 프록시 서버에 대한 인증서를 설정해야 하는 경우 설치 후 유지 관리 콘솔을 사용해야 합니다. 자세히 알아보세요link:reference-agent-maint-console-proxy.html["에이전트 유지 관리 콘솔"] .
+
+* 설치 중에 아웃바운드 연결을 확인하는 구성 검사를 비활성화해야 합니다.  이 검사를 비활성화하지 않으면 수동 설치가 실패합니다.link:task-troubleshoot-agent.html["수동 설치에 대한 구성 검사를 비활성화하는 방법을 알아보세요."]
+
+
+.이 작업에 관하여
+설치 후, 새로운 버전이 나오면 콘솔 에이전트가 자동으로 업데이트됩니다.
+
+.단계
+. 호스트에 _http_proxy_ 또는 _https_proxy_ 시스템 변수가 설정되어 있으면 제거합니다.
++
+[source, cli]
+----
+unset http_proxy
+unset https_proxy
+----
++
+이러한 시스템 변수를 제거하지 않으면 설치가 실패합니다.
+
+. 콘솔 에이전트 소프트웨어를 다운로드한 다음 Linux 호스트에 복사하십시오.  NetApp Console 또는 NetApp 지원 사이트에서 다운로드할 수 있습니다.
++
+** NetApp Console: *에이전트 > 관리 > 에이전트 배포 > 온프레미스 > 수동 설치*로 이동합니다.
++
+에이전트 설치 프로그램 파일 또는 파일에 대한 URL을 다운로드하도록 선택합니다.
+
+** https://mysupport.netapp.com/site/products/all/details/netapp-console/downloads-tab["NetApp 지원 사이트"^] (NetApp Console에 대한 액세스 권한이 아직 없는 경우 필요).
++
+
+NOTE: 네트워크 또는 클라우드에서 사용하기 위한 "온라인" 에이전트 설치 프로그램을 다운로드하십시오. Console 에이전트용 별도의 "오프라인" 설치 프로그램을 사용할 수 있지만 프라이빗 모드 배포에서만 지원됩니다.
+
+** NetApp Support Site(Console에 대한 액세스 권한이 없는 경우 필요) https://mysupport.netapp.com/site/products/all/details/netapp-console/downloads-tab["NetApp 지원 사이트"^].
+
+
+. 스크립트를 실행할 수 있는 권한을 할당합니다.
++
+[source, cli]
+----
+chmod +x NetApp_Console_Agent_Cloud_<version>
+----
++
+여기서 <버전>은 다운로드한 콘솔 에이전트의 버전입니다.
+
+. 정부 클라우드 환경에 설치하는 경우 구성 검사를 비활성화하세요.link:task-troubleshoot-agent.html#disable-config-check["수동 설치에 대한 구성 검사를 비활성화하는 방법을 알아보세요."]
+. 설치 스크립트를 실행합니다.
++
+[source, cli]
+----
+./NetApp_Console_Agent_Cloud_<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+----
++
+네트워크에서 인터넷 접속을 위해 프록시가 필요한 경우 프록시 정보를 추가해야 합니다. 설치 중에 명시적 프록시를 추가할 수 있습니다.  `--proxy` 및  `--cacert` 매개변수는 선택 사항이며 추가하라는 메시지가 표시되지 않습니다. 명시적 프록시 서버가 있는 경우 표시된 대로 매개변수를 입력해야 합니다.
+
++
+
+NOTE: 투명 프록시를 구성하려면 설치를 완료한 후에 할 수 있습니다. link:reference-agent-maint-console-proxy.html["에이전트 유지 관리 콘솔에 대해 알아보세요"].
+
++
+다음은 CA 서명 인증서를 사용하여 명시적 프록시 서버를 구성하는 예입니다.
+
++
+[source, cli]
+----
+./NetApp_Console_Agent_Cloud_v4.0.0 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+./NetApp_Console_Agent_Cloud_v4.0.0 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+----
++
+`--proxy` 다음 형식 중 하나를 사용하여 Console 에이전트가 HTTP 또는 HTTPS 프록시 서버를 사용하도록 구성합니다.
+
++
+** \http://주소:포트
+** \http://사용자 이름:비밀번호@주소:포트
+** \http://도메인 이름%92사용자 이름:비밀번호@주소:포트
+** \https://주소:포트
+** \https://사용자 이름:비밀번호@주소:포트
+** \https://도메인 이름%92사용자 이름:비밀번호@주소:포트
++
+다음 사항에 유의하세요.
+
++
+*** 사용자는 로컬 사용자 또는 도메인 사용자일 수 있습니다.
+*** 도메인 사용자의 경우 위에 표시된 대로 \에 대한 ASCII 코드를 사용해야 합니다.
+*** Console 에이전트는 @ 문자가 포함된 사용자 이름이나 암호를 지원하지 않습니다.
+*** 비밀번호에 다음과 같은 특수 문자가 포함되어 있는 경우, 백슬래시를 앞에 붙여 해당 특수 문자를 이스케이프해야 합니다: & 또는 !
++
+예를 들어:
+
++
+\http://bxpproxyuser:netapp1\!@주소:3128
+
+
+
+
+
+. Podman을 사용한 경우 aardvark-dns 포트를 조정해야 합니다.
++
+.. 콘솔 에이전트 가상 머신에 SSH를 실행합니다.
+.. podman _/usr/share/containers/containers.conf_ 파일을 열고 Aardvark DNS 서비스에 대해 선택한 포트를 수정합니다.  예를 들어, 54로 변경합니다.
++
+[source, cli]
+----
+vi /usr/share/containers/containers.conf
+----
++
+예를 들어:
+
++
+[source, text]
+----
+# Port to use for dns forwarding daemon with netavark in rootful bridge
+# mode and dns enabled.
+# Using an alternate port might be useful if other DNS services should
+# run on the machine.
+#
+dns_bind_port = 54
+----
+.. 콘솔 에이전트 가상 머신을 재부팅합니다.
+
+
+
+
+.결과
+콘솔 에이전트가 설치되었습니다.  설치가 끝나면 프록시 서버를 지정한 경우 콘솔 에이전트 서비스(occm)가 두 번 다시 시작됩니다.
+
+.다음은 무엇인가요?
+NetApp Console 설정합니다.
+
+
+
+[[step-6-set-up-netapp-console]]
+== 6단계: NetApp Console 설정
+
+처음으로 콘솔에 액세스하면 콘솔 에이전트의 조직을 선택하라는 메시지가 표시되고 제한 모드를 활성화해야 합니다.
+
+.시작하기 전에
+콘솔 에이전트를 설정하는 사람은 콘솔 조직에 속하지 않은 로그인을 사용하여 콘솔에 로그인해야 합니다.
+
+로그인 정보가 다른 기관과 연결되어 있는 경우, 새 로그인 정보를 사용하여 가입해야 합니다.  그렇지 않으면 설정 화면에서 제한 모드를 활성화하는 옵션이 표시되지 않습니다.
+
+.단계
+. 콘솔 에이전트 인스턴스에 연결된 호스트에서 웹 브라우저를 열고 설치한 콘솔 에이전트의 다음 URL을 입력합니다.
+. NetApp Console 에 가입하거나 로그인하세요.
+. 로그인한 후 콘솔을 설정하세요.
++
+.. 콘솔 에이전트의 이름을 입력하세요.
+.. 새로운 콘솔 조직의 이름을 입력하세요.
+.. *보안된 환경에서 실행하고 있습니까?*를 선택하세요.
+.. *이 계정에서 제한 모드 사용*을 선택하세요.
++
+계정이 생성된 후에는 이 설정을 변경할 수 없습니다.  제한 모드는 나중에 활성화할 수 없고, 나중에 비활성화할 수도 없습니다.
+
++
+정부 지역에 콘솔 에이전트를 배포한 경우 확인란이 이미 활성화되어 있으므로 변경할 수 없습니다.  제한 모드는 정부 지역에서 지원되는 유일한 모드이기 때문입니다.
+
+.. *시작하기*를 선택하세요.
+
+
+
+
+.결과
+이제 콘솔 에이전트가 설치되고 콘솔 조직에 설정되었습니다.  모든 사용자는 콘솔 에이전트 인스턴스의 IP 주소를 사용하여 콘솔에 액세스해야 합니다.
+
+.다음은 무엇인가요?
+이전에 설정한 권한을 콘솔에 제공하세요.
+
+
+
+[[step-7-provide-permissions-to-the-console-agent]]
+== 7단계: 콘솔 에이전트에 권한을 부여합니다
+
+콘솔 에이전트를 수동으로 설치한 경우, 이전에 설정한 권한을 부여해야 합니다.
+
+link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["클라우드 권한을 준비하는 방법을 알아보세요"] .
+
+[role="tabbed-block"]
+====
+.AWS IAM 역할
+--
+이전에 생성한 IAM 역할을 콘솔 에이전트를 설치한 EC2 인스턴스에 연결합니다.
+
+이 단계는 AWS에 콘솔 에이전트를 수동으로 설치한 경우에만 적용됩니다.  AWS Marketplace 배포의 경우 이미 필요한 권한이 포함된 IAM 역할과 콘솔 에이전트 인스턴스를 연결했습니다.
+
+.단계
+. Amazon EC2 콘솔로 이동합니다.
+. *인스턴스*를 선택하세요.
+. 콘솔 에이전트 인스턴스를 선택합니다.
+. *작업 > 보안 > IAM 역할 수정*을 선택합니다.
+. IAM 역할을 선택하고 *IAM 역할 업데이트*를 선택합니다.
+
+
+--
+.AWS 액세스 키
+--
+필요한 권한이 있는 IAM 사용자의 AWS 액세스 키를 NetApp Console 에 제공합니다.
+
+.단계
+. *관리 > 자격 증명*을 선택합니다.
+. *조직 자격 증명*을 선택하세요.
+. *자격 증명 추가*를 선택하고 마법사의 단계를 따르세요.
++
+.. *자격 증명 위치*: *Amazon Web Services > 에이전트*를 선택합니다.
+.. *자격 증명 정의*: AWS 액세스 키와 비밀 키를 입력합니다.
+.. *마켓플레이스 구독*: 지금 구독하거나 기존 구독을 선택하여 마켓플레이스 구독을 이러한 자격 증명과 연결합니다.
+.. *검토*: 새로운 자격 증명에 대한 세부 정보를 확인하고 *추가*를 선택합니다.
+
+
+
+
+--
+.Azure 역할
+--
+Azure Portal로 이동하여 하나 이상의 구독에 대한 콘솔 에이전트 가상 머신에 Azure 사용자 지정 역할을 할당합니다.
+
+.단계
+. Azure Portal에서 *구독* 서비스를 열고 구독을 선택합니다.
++
+*구독* 서비스에서 역할을 할당하는 것이 중요한 이유는 이를 통해 구독 수준에서 역할 할당의 범위가 지정되기 때문입니다.  _scope_는 액세스가 적용되는 리소스 집합을 정의합니다.  다른 수준(예: 가상 머신 수준)에서 범위를 지정하는 경우 NetApp Console 내에서 작업을 완료하는 기능에 영향을 미칩니다.
+
++
+https://learn.microsoft.com/en-us/azure/role-based-access-control/scope-overview["Microsoft Azure 설명서: Azure RBAC 범위 이해"^]
+
+. *액세스 제어(IAM)* > *추가* > *역할 할당 추가*를 선택합니다.
+. *역할* 탭에서 *콘솔 운영자* 역할을 선택하고 *다음*을 선택합니다.
++
+
+NOTE: 콘솔 운영자는 정책에 제공된 기본 이름입니다.  역할에 다른 이름을 선택한 경우 해당 이름을 대신 선택하세요.
+
+. *멤버* 탭에서 다음 단계를 완료하세요.
++
+.. *관리되는 ID*에 대한 액세스 권한을 할당합니다.
+.. *멤버 선택*을 선택하고, 콘솔 에이전트 가상 머신이 생성된 구독을 선택하고, *관리 ID*에서 *가상 머신*을 선택한 다음, 콘솔 에이전트 가상 머신을 선택합니다.
+.. *선택*을 선택하세요.
+.. *다음*을 선택하세요.
+.. *검토 + 할당*을 선택하세요.
+.. 추가 Azure 구독의 리소스를 관리하려면 해당 구독으로 전환한 다음 이러한 단계를 반복합니다.
+
+
+
+
+--
+.Azure 서비스 주체
+--
+이전에 설정한 Azure 서비스 주체에 대한 자격 증명을 NetApp Console에 제공하십시오.
+
+.단계
+. *관리 > 자격 증명*을 선택합니다.
+. *자격 증명 추가*를 선택하고 마법사의 단계를 따르세요.
++
+.. *자격 증명 위치*: *Microsoft Azure > 에이전트*를 선택합니다.
+.. *자격 증명 정의*: 필요한 권한을 부여하는 Microsoft Entra 서비스 주체에 대한 정보를 입력합니다.
++
+*** 애플리케이션(클라이언트) ID
+*** 디렉토리(테넌트) ID
+*** 클라이언트 비밀번호
+
+
+.. *마켓플레이스 구독*: 지금 구독하거나 기존 구독을 선택하여 마켓플레이스 구독을 이러한 자격 증명과 연결합니다.
+.. *검토*: 새로운 자격 증명에 대한 세부 정보를 확인하고 *추가*를 선택합니다.
+
+
+
+
+.결과
+NetApp Console은 이제 사용자를 대신하여 Azure에서 작업을 수행하는 데 필요한 권한을 갖습니다.
+
+--
+.Google Cloud 서비스 계정
+--
+서비스 계정을 콘솔 에이전트 VM과 연결합니다.
+
+.단계
+. Google Cloud 포털로 이동하여 콘솔 에이전트 VM 인스턴스에 서비스 계정을 할당합니다.
++
+https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Google Cloud 문서: 인스턴스의 서비스 계정 및 액세스 범위 변경"^]
+
+. 다른 프로젝트의 리소스를 관리하려면 해당 프로젝트에 콘솔 에이전트 역할이 있는 서비스 계정을 추가하여 액세스 권한을 부여하세요.  각 프로젝트마다 이 단계를 반복해야 합니다.
+
+
+--
+====

@@ -82,11 +82,19 @@ NetApp 지원팀에 라이선스를 요청하고 문의하세요.
 * \ https://cloudmanagerinfraprod.azurecr.io
 
  a| 
+표준 모드 및 제한된 모드 비정부 지역의 경우 다음 엔드포인트를 사용하십시오:
+
 * \ https://bluexpinfraprod.eastus2.data.azurecr.io
 * \ https://bluexpinfraprod.azurecr.io
-* https://occmclientinfragov.azurecr.us.io (제한된 모드 환경인 경우)
 
-| 콘솔 에이전트 업그레이드를 위한 이미지를 얻으려면. 
+
+제한된 모드의 정부 리전의 경우 대신 다음 엔드포인트를 사용하십시오:
+
+* \ https://occmclientinfragov.azurecr.us
+
+ a| 
+콘솔 에이전트 배포 및 업그레이드를 위한 이미지를 얻기 위함입니다.
+
 |===
 .단계
 . 에이전트 버전이 4.0.0 이상인지 확인하세요.link:task-troubleshoot-agent.html#view-the-console-agent-version["에이전트 버전 보기."]
@@ -119,28 +127,38 @@ systemctl status netapp-service-manager.service
 
 
  a| 
-\ https://support.netapp.com \ https://mysupport.netapp.com
+* \ https://support.netapp.com
+* \ https://mysupport.netapp.com
+
  a| 
 라이선스 정보를 얻고 NetApp 지원팀에 AutoSupport 메시지를 보냅니다.
 
 
 
  a| 
-\https://\*.api.bluexp.netapp.com \ https://api.bluexp.netapp.com \https://*.cloudmanager.cloud.netapp.com \ https://cloudmanager.cloud.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com
+* \https://*.api.bluexp.netapp.com
+* \ https://api.bluexp.netapp.com
+* \https://*.cloudmanager.cloud.netapp.com
+* \ https://cloudmanager.cloud.netapp.com
+* \ https://netapp-cloud-account.auth0.com
+* \ https://netapp-cloud-account.us.auth0.com
+
 | NetApp Console 내에서 기능과 서비스를 제공합니다. 
 
 
  a| 
 두 가지 엔드포인트 세트 중에서 선택하세요.
 
-* 옵션 1(권장)
-+
-\ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io
+옵션 1(권장)
 
-* 옵션 2
-+
-\https://*.blob.core.windows.net \ https://cloudmanagerinfraprod.azurecr.io
+* \ https://bluexpinfraprod.eastus2.data.azurecr.io
+* \ https://bluexpinfraprod.azurecr.io
 
+
+옵션 2
+
+* \https://*.blob.core.windows.net
+* \ https://cloudmanagerinfraprod.azurecr.io
 
  a| 
 콘솔 에이전트 업그레이드를 위한 이미지를 얻으려면.

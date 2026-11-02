@@ -4,7 +4,7 @@ permalink: reference-networking-saas-console.html
 keywords: networking, urls, endpoints, web browser, console, network, set up networking, bluexp 
 summary: NetApp Console, NetApp Console 에이전트 및 NetApp 데이터 서비스에는 아웃바운드 인터넷 액세스와 필요한 엔드포인트에 연결할 수 있는 기능이 필요합니다. 
 ---
-= NetApp Console에 대한 네트워크 액세스
+= 표준 모드용 NetApp Console에 대한 네트워크 액세스
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -19,7 +19,7 @@ NetApp Console, NetApp Console 에이전트 및 NetApp 데이터 서비스에는
 다음에 대한 네트워크 액세스를 설정해야 합니다.
 
 * SaaS(Software as a Service)로 NetApp Console 액세스하는 컴퓨터
-* 온프레미스 또는 클라우드에 설치하는 콘솔 에이전트입니다. 콘솔 에이전트.
+* 온프레미스 또는 클라우드에 설치하는 콘솔 에이전트입니다.
 
 
 
@@ -39,22 +39,49 @@ NOTE: NetApp 4.0.0을 통해 콘솔 및 콘솔 에이전트에 필요한 네트�
 | 엔드포인트 | 목적 
 
 
-| \ https://mysupport.netapp.com | 라이선스 정보를 얻고 AutoSupport 메시지를 NetApp 지원팀에 보내려면 다음을 수행하십시오. 
+ a| 
+* \ https://mysupport.netapp.com
 
+ a| 
+라이선스 정보를 얻고 AutoSupport 메시지를 NetApp 지원팀에 보내려면 다음을 수행하십시오.
 
-| \ https://signin.b2c.netapp.com | NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp Console 에 새로운 NSS 자격 증명을 추가합니다. 
-
-
-| \ https://support.netapp.com | 라이선스 정보를 얻고 AutoSupport 메시지를 NetApp Support로 전송하며 Cloud Volumes ONTAP의 소프트웨어 업데이트를 받기 위해서입니다. 
-
-
-| \https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.bluexp.netapp.com \https://cdn.auth0.com | NetApp Console 내에서 기능과 서비스를 제공합니다. 
 
 
  a| 
-https://bluexpinfraprod.eastus2.data.azurecr.io https://bluexpinfraprod.azurecr.io https://occmclientinfragov.azurecr.us (제한된 모드 배포에 필요)
+* \ https://signin.b2c.netapp.com
+
  a| 
-콘솔 에이전트 업그레이드를 위한 이미지를 얻으려면.
+NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp Console 에 새로운 NSS 자격 증명을 추가합니다.
+
+
+
+ a| 
+* \ https://support.netapp.com
+
+ a| 
+라이선스 정보를 얻고 AutoSupport 메시지를 NetApp Support로 전송하며 Cloud Volumes ONTAP의 소프트웨어 업데이트를 받기 위해서입니다.
+
+
+
+ a| 
+* \ https://api.bluexp.netapp.com
+* \ https://netapp-cloud-account.auth0.com
+* \ https://netapp-cloud-account.us.auth0.com
+* \ https://console.netapp.com
+* \https://components.console.bluexp.netapp.com
+* \ https://cdn.auth0.com
+
+ a| 
+NetApp Console 내에서 기능과 서비스를 제공합니다.
+
+
+
+ a| 
+* \ https://bluexpinfraprod.eastus2.data.azurecr.io
+* \ https://bluexpinfraprod.azurecr.io
+
+ a| 
+콘솔 에이전트 배포 및 업그레이드를 위한 이미지를 얻기 위함입니다.
 
 |===
 

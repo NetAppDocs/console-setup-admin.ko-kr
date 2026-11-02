@@ -61,51 +61,70 @@ VNet 및 서브넷:: 콘솔 에이전트를 만들 때는 에이전트가 상주
 
 
  a| 
-\ https://management.azure.com \ https://login.microsoftonline.com \ https://blob.core.windows.net \ https://core.windows.net
+* \https://management.azure.com
+* \https://login.microsoftonline.com
+* \https://blob.core.windows.net
+* \https://core.windows.net
+
  a| 
 Azure 공용 지역의 리소스를 관리합니다.
 
 
 
  a| 
-\ https://management.chinacloudapi.cn \ https://login.chinacloudapi.cn \ https://blob.core.chinacloudapi.cn \ https://core.chinacloudapi.cn
+* \https://management.chinacloudapi.cn
+* \https://login.chinacloudapi.cn
+* \https://blob.core.chinacloudapi.cn
+* \https://core.chinacloudapi.cn
+
  a| 
 Azure China 지역의 리소스를 관리합니다.
 
 
 
  a| 
-\ https://mysupport.netapp.com
+* \ https://mysupport.netapp.com
+
  a| 
 라이선스 정보를 얻고 AutoSupport 메시지를 NetApp 지원팀에 보내려면 다음을 수행하십시오.
 
 
 
  a| 
-\ https://signin.b2c.netapp.com
+* \ https://signin.b2c.netapp.com
+
  a| 
 NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp Console 에 새로운 NSS 자격 증명을 추가합니다.
 
 
 
  a| 
-\ https://support.netapp.com
+* \ https://support.netapp.com
+
  a| 
 라이선스 정보를 얻고 AutoSupport 메시지를 NetApp Support로 전송하며 Cloud Volumes ONTAP의 소프트웨어 업데이트를 받기 위해서입니다.
 
 
 
  a| 
-\https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.bluexp.netapp.com \https://cdn.auth0.com
+* \ https://api.bluexp.netapp.com
+* \ https://netapp-cloud-account.auth0.com
+* \ https://netapp-cloud-account.us.auth0.com
+* \ https://console.netapp.com
+* \https://components.console.bluexp.netapp.com
+* \ https://cdn.auth0.com
+
  a| 
 NetApp Console 내에서 기능과 서비스를 제공합니다.
 
 
 
  a| 
-https://bluexpinfraprod.eastus2.data.azurecr.io https://bluexpinfraprod.azurecr.io https://occmclientinfragov.azurecr.us (제한된 모드 배포에 필요)
+* \ https://bluexpinfraprod.eastus2.data.azurecr.io
+* \ https://bluexpinfraprod.azurecr.io
+
  a| 
-콘솔 에이전트 업그레이드를 위한 이미지를 얻으려면.
+콘솔 에이전트 배포 및 업그레이드를 위한 이미지를 얻기 위함입니다.
 
 |===
 --

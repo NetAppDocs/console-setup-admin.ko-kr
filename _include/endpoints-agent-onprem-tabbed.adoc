@@ -10,7 +10,7 @@
 
 [cols="2a,1a"]
 |===
-| 엔드포인트 | 목적 <stdin> - include::endpoints-agent.adoc[tag=nss-endpoints]에서 해결되지 않은 지시문 <stdin> - include::endpoints-agent.adoc[tag=saas-endpoints]에서 해결되지 않은 지시문 <stdin> - include::endpoints-agent.adoc[tag=upgrade-endpoints]에서 해결되지 않은 지시문 
+| 엔드포인트 | 목적 <stdin> - include::endpoints-agent.adoc[tag=nss-endpoints]에서 해결되지 않은 지시문 <stdin> - include::endpoints-agent.adoc[tag=saas-endpoints]에서 해결되지 않은 지시문 <stdin> - include::endpoints-agent.adoc[tag=upgrade-endpoints-saas]에서 해결되지 않은 지시문 
 |===
 --
 .AWS 리소스용 추가 엔드포인트

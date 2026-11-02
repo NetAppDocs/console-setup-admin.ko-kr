@@ -1,0 +1,330 @@
+---
+sidebar: sidebar 
+permalink: task-install-restricted-mode-azure.html 
+keywords: restricted mode, Azure, Azure Government, Azure Marketplace, Console agent 
+summary: Marketplace에서 Azure에 콘솔 에이전트를 제한된 모드로 배포하거나 AWS, Azure 또는 Google Cloud 호스트에 대한 수동 설치 항목을 따르십시오. 
+---
+= Azure에서 제한된 모드로 NetApp Console 에이전트를 배포합니다
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Console 제한된 아웃바운드 연결로 사용할 수 있도록 콘솔 에이전트를 제한 모드로 배포합니다.  시작하려면 콘솔 에이전트를 설치하고, 콘솔 에이전트에서 실행되는 사용자 인터페이스에 액세스하여 콘솔을 설정한 다음, 이전에 설정한 클라우드 권한을 제공하세요.
+
+
+
+[[step-1-prepare-cloud-permissions]]
+== 1단계: 클라우드 권한 준비
+
+link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["클라우드 권한을 준비하는 방법을 알아보세요"] .
+
+
+
+[[step-2-prepare-network-access]]
+== 2단계: 네트워크 액세스 준비
+
+콘솔 에이전트가 Azure 리소스를 관리하고 NetApp Console 서비스에 액세스할 수 있도록 다음 아웃바운드 엔드포인트를 허용하십시오.
+
+
+
+[[azure-endpoints]]
+=== Azure 엔드포인트
+
+Azure 지역(퍼블릭, 정부 또는 중국)에 해당하는 엔드포인트를 허용하십시오.
+
+[cols="2a,1a"]
+|===
+| 엔드포인트 | 목적 
+
+
+ a| 
+* \https://management.azure.com
+* \https://login.microsoftonline.com
+* \https://blob.core.windows.net
+* \https://core.windows.net
+
+ a| 
+Azure 공용 지역의 리소스를 관리합니다.
+
+
+
+ a| 
+* \https://management.usgovcloudapi.net
+* \https://login.microsoftonline.us
+* \https://*.blob.core.usgovcloudapi.net
+* \https://core.usgovcloudapi.net
+
+ a| 
+Azure Government 지역의 리소스를 관리합니다.
+
+
+
+ a| 
+* \https://management.chinacloudapi.cn
+* \https://login.chinacloudapi.cn
+* \https://blob.core.chinacloudapi.cn
+* \https://core.chinacloudapi.cn
+
+ a| 
+Azure China 지역의 리소스를 관리합니다.
+
+|===
+
+
+[[netapp-console-endpoints]]
+=== NetApp Console 엔드포인트
+
+NetApp 지원, 콘솔 기능 및 콘솔 에이전트 배포 및 업그레이드를 위한 공유 엔드포인트를 허용하십시오.
+
+[cols="2a,1a"]
+|===
+| 엔드포인트 | 목적 
+
+
+ a| 
+* \ https://mysupport.netapp.com
+
+ a| 
+라이선스 정보를 얻고 AutoSupport 메시지를 NetApp 지원팀에 보내려면 다음을 수행하십시오.
+
+
+
+ a| 
+* \ https://signin.b2c.netapp.com
+
+ a| 
+NetApp 지원 사이트(NSS) 자격 증명을 업데이트하거나 NetApp Console 에 새로운 NSS 자격 증명을 추가합니다.
+
+
+
+ a| 
+* \ https://support.netapp.com
+
+ a| 
+라이선스 정보를 얻고 AutoSupport 메시지를 NetApp Support로 전송하며 Cloud Volumes ONTAP의 소프트웨어 업데이트를 받기 위해서입니다.
+
+
+
+ a| 
+* \ https://api.bluexp.netapp.com
+* \ https://netapp-cloud-account.auth0.com
+* \ https://netapp-cloud-account.us.auth0.com
+* \ https://console.netapp.com
+* \https://components.console.bluexp.netapp.com
+* \ https://cdn.auth0.com
+
+ a| 
+NetApp Console 내에서 기능과 서비스를 제공합니다.
+
+
+
+ a| 
+정부 관할 지역이 아닌 경우 다음 엔드포인트를 사용하십시오:
+
+* \ https://bluexpinfraprod.eastus2.data.azurecr.io
+* \ https://bluexpinfraprod.azurecr.io
+
+
+정부 지역의 경우 다음 엔드포인트를 대신 사용하십시오:
+
+* \ https://occmclientinfragov.azurecr.us
+
+ a| 
+콘솔 에이전트 배포 및 업그레이드를 위한 이미지를 얻기 위함입니다.
+
+|===
+브라우저 액세스 및 기타 네트워킹 요구 사항은 link:task-prepare-restricted-mode.html#step-5-prepare-network-access["제한된 모드에 대한 네트워크 액세스 준비"]을(를) 참조하십시오.
+
+
+
+[[step-3-deploy-the-netapp-console-in-restricted-mode-in-azure]]
+== 3단계: Azure에 제한된 모드로 NetApp Console을 배포합니다.
+
+콘솔 에이전트를 배포하는 방법은 Azure Marketplace를 사용하는지 아니면 Azure 환경의 Linux 호스트에 수동으로 설치하는지에 따라 다릅니다.
+
+
+
+[[install-netapp-console-restricted-mode-from-the-azure-marketplace]]
+=== Azure Marketplace에서 NetApp Console 제한된 모드를 설치합니다.
+
+.시작하기 전에
+다음 사항이 있어야 합니다.
+
+* 네트워킹 요구 사항을 충족하는 VNet 및 서브넷.
++
+link:task-prepare-restricted-mode.html#step-5-prepare-network-access["네트워킹 요구 사항에 대해 알아보세요"]
+
+* 콘솔 에이전트에 필요한 권한이 포함된 Azure 사용자 지정 역할입니다.
++
+link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Azure 권한을 설정하는 방법 알아보기"]
+
+
+
+.단계
+. Azure Marketplace의 NetApp Console 에이전트 VM 페이지로 이동합니다.
++
+** https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["상업 지역을 위한 Azure Marketplace 페이지"^]
+** https://portal.azure.us/#create/netapp.netapp-oncommand-cloud-manageroccm-byol["Azure Government 지역에 대한 Azure Marketplace 페이지"^]
+
+
+. *지금 받기*를 선택한 다음 *계속*을 선택하세요.
+. Azure Portal에서 *만들기*를 선택하고 단계에 따라 가상 머신을 구성합니다.
++
+VM을 구성할 때 다음 사항에 유의하세요.
+
++
+** *VM 크기*: CPU 및 RAM 요구 사항을 충족하는 VM 크기를 선택하세요.  Standard_D8s_v3을 권장합니다.
+** *디스크*: 콘솔 에이전트는 HDD 또는 SSD 디스크를 사용하면 최적의 성능을 발휘할 수 있습니다.
+** *공용 IP*: 콘솔 에이전트 VM에서 공용 IP 주소를 사용하려면 기본 SKU를 선택하십시오.
++
+image:screenshot-azure-sku.png["SKU 필드에서 기본을 선택할 수 있는 Azure에서 새 IP 주소를 만드는 스크린샷입니다."]
+
+
+
++
+대신 표준 SKU IP 주소를 사용하면 콘솔은 공용 IP 대신 콘솔 에이전트의 _개인_ IP 주소를 사용합니다. 콘솔에 접속하는 데 사용하는 기기가 사설 IP 주소에 연결할 수 없는 경우 콘솔이 작동하지 않습니다.
+
++
++ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Azure 설명서: 공용 IP SKU"^]
+
++
+** *네트워크 보안 그룹*: 콘솔 에이전트에는 SSH, HTTP, HTTPS를 사용하는 인바운드 연결이 필요합니다.
++
+link:reference-ports-azure.html["Azure에 대한 보안 그룹 규칙 보기"] .
+
+** *ID*: *관리*에서 *시스템에서 할당한 관리 ID 사용*을 선택합니다.
++
+관리되는 ID를 사용하면 콘솔 에이전트 VM이 자격 증명 없이 Microsoft Entra ID에 자신을 식별할 수 있습니다. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Azure 리소스에 대한 관리 ID에 대해 자세히 알아보세요."^] .
+
+
+
+. *검토 + 생성* 페이지에서 선택 사항을 검토하고 *생성*을 선택하여 배포를 시작합니다.
+
+
+.결과
+Azure는 지정된 설정으로 가상 머신을 배포합니다.  가상 머신과 콘솔 에이전트 소프트웨어는 약 5분 안에 실행될 것입니다.
+
+.다음은 무엇인가요?
+NetApp Console 설정합니다.
+
+
+
+[[manually-install-netapp-console-restricted-mode-in-azure]]
+=== Azure에 NetApp Console 제한된 모드를 수동으로 설치
+
+수동 설치 단계는 link:task-install-restricted-mode-manual.html["제한된 모드에서 콘솔 에이전트 수동 설치"]을(를) 참조하십시오.
+
+
+
+[[step-4-set-up-netapp-console]]
+== 4단계: NetApp Console 설정
+
+처음으로 콘솔에 액세스하면 콘솔 에이전트의 조직을 선택하라는 메시지가 표시되고 제한 모드를 활성화해야 합니다.
+
+.시작하기 전에
+콘솔 에이전트를 설정하는 사람은 콘솔 조직에 속하지 않은 로그인을 사용하여 콘솔에 로그인해야 합니다.
+
+로그인 정보가 다른 기관과 연결되어 있는 경우, 새 로그인 정보를 사용하여 가입해야 합니다.  그렇지 않으면 설정 화면에서 제한 모드를 활성화하는 옵션이 표시되지 않습니다.
+
+.단계
+. 콘솔 에이전트 인스턴스에 연결된 호스트에서 웹 브라우저를 열고 설치한 콘솔 에이전트의 다음 URL을 입력합니다.
+. NetApp Console 에 가입하거나 로그인하세요.
+. 로그인한 후 콘솔을 설정하세요.
++
+.. 콘솔 에이전트의 이름을 입력하세요.
+.. 새로운 콘솔 조직의 이름을 입력하세요.
+.. *보안된 환경에서 실행하고 있습니까?*를 선택하세요.
+.. *이 계정에서 제한 모드 사용*을 선택하세요.
++
+계정이 생성된 후에는 이 설정을 변경할 수 없습니다.  제한 모드는 나중에 활성화할 수 없고, 나중에 비활성화할 수도 없습니다.
+
++
+정부 지역에 콘솔 에이전트를 배포한 경우 확인란이 이미 활성화되어 있으므로 변경할 수 없습니다.  제한 모드는 정부 지역에서 지원되는 유일한 모드이기 때문입니다.
+
+.. *시작하기*를 선택하세요.
+
+
+
+
+.결과
+이제 콘솔 에이전트가 설치되고 콘솔 조직에 설정되었습니다.  모든 사용자는 콘솔 에이전트 인스턴스의 IP 주소를 사용하여 콘솔에 액세스해야 합니다.
+
+.다음은 무엇인가요?
+이전에 설정한 권한을 콘솔에 제공하세요.
+
+
+
+[[step-5-provide-permissions-to-the-console-agent]]
+== 5단계: 콘솔 에이전트에 권한 제공
+
+Azure Marketplace에서 또는 수동으로 콘솔 에이전트를 설치한 경우 이전에 설정한 권한을 부여해야 합니다.
+
+콘솔 에이전트에 권한을 부여하려면 Azure 역할을 할당하거나 Azure 서비스 주체의 자격 증명을 제공하면 됩니다.
+
+link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["클라우드 권한을 준비하는 방법을 알아보세요"] .
+
+[role="tabbed-block"]
+====
+.Azure 역할
+--
+Azure Portal로 이동하여 하나 이상의 구독에 대한 콘솔 에이전트 가상 머신에 Azure 사용자 지정 역할을 할당합니다.
+
+.단계
+. Azure Portal에서 *구독* 서비스를 열고 구독을 선택합니다.
++
+*구독* 서비스에서 역할을 할당하는 것이 중요한 이유는 이를 통해 구독 수준에서 역할 할당의 범위가 지정되기 때문입니다.  _scope_는 액세스가 적용되는 리소스 집합을 정의합니다.  다른 수준(예: 가상 머신 수준)에서 범위를 지정하는 경우 NetApp Console 내에서 작업을 완료하는 기능에 영향을 미칩니다.
+
++
+https://learn.microsoft.com/en-us/azure/role-based-access-control/scope-overview["Microsoft Azure 설명서: Azure RBAC 범위 이해"^]
+
+. *액세스 제어(IAM)* > *추가* > *역할 할당 추가*를 선택합니다.
+. *역할* 탭에서 *콘솔 운영자* 역할을 선택하고 *다음*을 선택합니다.
++
+
+NOTE: 콘솔 운영자는 정책에 제공된 기본 이름입니다.  역할에 다른 이름을 선택한 경우 해당 이름을 대신 선택하세요.
+
+. *멤버* 탭에서 다음 단계를 완료하세요.
++
+.. *관리되는 ID*에 대한 액세스 권한을 할당합니다.
+.. *멤버 선택*을 선택하고, 콘솔 에이전트 가상 머신이 생성된 구독을 선택하고, *관리 ID*에서 *가상 머신*을 선택한 다음, 콘솔 에이전트 가상 머신을 선택합니다.
+.. *선택*을 선택하세요.
+.. *다음*을 선택하세요.
+.. *검토 + 할당*을 선택하세요.
+.. 추가 Azure 구독의 리소스를 관리하려면 해당 구독으로 전환한 다음 이러한 단계를 반복합니다.
+
+
+
+
+--
+.Azure 서비스 주체
+--
+이전에 설정한 Azure 서비스 주체에 대한 자격 증명을 NetApp Console에 제공하십시오.
+
+.단계
+. *관리 > 자격 증명*을 선택합니다.
+. *자격 증명 추가*를 선택하고 마법사의 단계를 따르세요.
++
+.. *자격 증명 위치*: *Microsoft Azure > 에이전트*를 선택합니다.
+.. *자격 증명 정의*: 필요한 권한을 부여하는 Microsoft Entra 서비스 주체에 대한 정보를 입력합니다.
++
+*** 애플리케이션(클라이언트) ID
+*** 디렉토리(테넌트) ID
+*** 클라이언트 비밀번호
+
+
+.. *마켓플레이스 구독*: 지금 구독하거나 기존 구독을 선택하여 마켓플레이스 구독을 이러한 자격 증명과 연결합니다.
+.. *검토*: 새로운 자격 증명에 대한 세부 정보를 확인하고 *추가*를 선택합니다.
+
+
+
+
+.결과
+NetApp Console은 이제 사용자를 대신하여 Azure에서 작업을 수행하는 데 필요한 권한을 갖습니다.
+
+--
+====
