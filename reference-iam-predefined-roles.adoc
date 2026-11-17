@@ -132,6 +132,9 @@ Folder 또는 project admin은 Console 에이전트를 생성할 수 없습니�
 | link:reference-iam-cvo-roles.html["Cloud Volumes ONTAP 관리자"] | CVO_ADMIN | 일반, 제한, 비공개 | Cloud Volumes ONTAP 작업에 대한 전체 액세스 권한을 제공합니다. 
 
 
+| link:reference-iam-cvo-roles.html["Cloud Volumes ONTAP 기여자"] | CVO_CONTRIBUTOR | 일반, 제한, 비공개 | Cloud Volumes ONTAP 관리자 역할과 유사한 액세스 권한을 제공하지만, 리소스를 삭제하거나 제거하거나 시스템을 켜거나 끄는 작업은 제외됩니다. 
+
+
 | link:reference-iam-cvo-roles.html["Cloud Volumes ONTAP 오퍼레이터"] | CVO_OPERATOR | 일반, 제한, 비공개 | 볼륨 추가, 복제 구성 및 스토리지 관리와 같은 일상적인 관리 작업을 지원합니다. 
 
 

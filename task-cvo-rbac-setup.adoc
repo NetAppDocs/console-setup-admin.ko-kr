@@ -57,10 +57,13 @@ Cloud Volumes ONTAP에 대해서만 NetApp Console을 사용하는 조직에서 
 | 범위 | 플랫폼 역할 | Cloud Volumes ONTAP 역할 | 추천 
 
 
-| 조직 | 조직 관리자 | Cloud Volumes ONTAP 오퍼레이터 | 사용자가 콘솔 리소스(콘솔 에이전트 설정 포함)를 관리하고 Cloud Volumes ONTAP 시스템을 관리해야 하는 경우 
+| 조직 | 조직 관리자 | Cloud Volumes ONTAP 관리자 | 사용자가 콘솔 리소스(콘솔 에이전트 설정 포함)를 관리하고 Cloud Volumes ONTAP 시스템을 관리해야 하는 경우 
 
 
 | 폴더 또는 프로젝트 | 폴더 또는 프로젝트 관리자 | Cloud Volumes ONTAP 관리자 | 사용자가 특정 폴더 또는 프로젝트의 Console 리소스를 관리하고 Cloud Volumes ONTAP 시스템을 관리해야 하는 경우 
+
+
+| 폴더 또는 프로젝트 | 폴더 또는 프로젝트 관리자 | Cloud Volumes ONTAP 기여자 | 사용자가 특정 폴더 또는 프로젝트의 콘솔 리소스를 관리하고 Cloud Volumes ONTAP 시스템을 관리해야 하는 경우 
 
 
 | 폴더 또는 프로젝트 | 폴더 또는 프로젝트 관리자 | Cloud Volumes ONTAP 오퍼레이터 | 사용자가 특정 폴더 또는 프로젝트의 콘솔 리소스를 관리하고 Cloud Volumes ONTAP 시스템을 관리해야 하는 경우 

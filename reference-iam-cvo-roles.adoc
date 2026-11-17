@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-iam-cvo-roles.html 
-keywords: cloud volumes ontap, role-based access control, rbac, viewer, operator, admin, access control, permissions, volumes, aggregates, replication, snapshots, ontap upgrade, IAM roles 
+keywords: cloud volumes ontap, role-based access control, rbac, viewer, operator, contributor, admin, access control, permissions, volumes, aggregates, replication, snapshots, ontap upgrade, IAM roles 
 summary: 콘솔에서 사용자에게 Cloud Volumes ONTAP에 대한 액세스 권한을 부여하려면 다음 역할을 할당할 수 있습니다. Cloud Volumes ONTAP 역할을 사용하면 조직 내에서 사용자가 수행해야 하는 작업에 맞는 역할을 유연하게 할당할 수 있습니다. 
 ---
 = NetApp Console의 Cloud Volumes ONTAP 액세스 역할
@@ -20,6 +20,7 @@ summary: 콘솔에서 사용자에게 Cloud Volumes ONTAP에 대한 액세스 �
 NOTE: 콘솔 에이전트 버전 4.9.0 이상을 실행 중인 경우 Cloud Volumes ONTAP에 대한 액세스 역할을 사용할 수 있습니다.
 
 * *Cloud Volumes ONTAP admin*: 모든 Cloud Volumes ONTAP 작업에 대한 전체 액세스 권한을 제공합니다.
+* *Cloud Volumes ONTAP 기여자*: 리소스를 삭제 또는 제거하거나 시스템을 켜거나 끄는 작업을 제외하고 Cloud Volumes ONTAP 관리자 역할과 유사한 액세스 권한을 제공합니다. 기여자는 시스템 추가, 복제 관리, 볼륨 및 시스템 설정 편집 등의 작업을 수행할 수 있지만 시스템, 볼륨, 애그리게이트 또는 복제 관계를 삭제할 수는 없습니다.
 * *Cloud Volumes ONTAP 운영자*: 볼륨, 애그리게이트, 스냅샷 및 복제본 추가, 일부 구성 수정, Cloud Volumes ONTAP 버전 업그레이드 등 Cloud Volumes ONTAP 시스템 검색 및 관리를 포함한 중요한 스토리지 작업을 수행합니다.
 * *Cloud Volumes ONTAP 뷰어*: Cloud Volumes ONTAP 정보에 대한 읽기 전용 액세스를 제공합니다. 이 역할은 능동적인 작업을 수행할 수 없습니다. 구성 정보가 포함된 일부 탭과 화면은 뷰어에게 표시되지 않을 수 있습니다.
 
@@ -40,9 +41,9 @@ NOTE: 콘솔 에이전트 버전 4.9.0 이상을 실행 중인 경우 Cloud Volu
 
 다음 표는 각 역할이 수행할 수 있는 작업을 나타냅니다.
 
-[cols="40a,20a,20a,20a"]
+[cols="28a,18a,18a,18a,18a"]
 |===
-| 특징과 동작 | Cloud Volumes ONTAP 관리자 | Cloud Volumes ONTAP 오퍼레이터 | Cloud Volumes ONTAP 뷰어 
+| 특징과 동작 | Cloud Volumes ONTAP 관리자 | Cloud Volumes ONTAP 기여자 | Cloud Volumes ONTAP 오퍼레이터 | Cloud Volumes ONTAP 뷰어 
 
 
  a| 
@@ -52,6 +53,8 @@ NOTE: 콘솔 에이전트 버전 4.9.0 이상을 실행 중인 경우 Cloud Volu
 
  a| 
 시스템을 입력합니다
+ a| 
+예
  a| 
 예
  a| 
@@ -69,11 +72,15 @@ NOTE: 콘솔 에이전트 버전 4.9.0 이상을 실행 중인 경우 Cloud Volu
 예
  a| 
 예
+ a| 
+예
 
 
 
  a| 
 시스템 검색
+ a| 
+예
  a| 
 예
  a| 
@@ -90,12 +97,16 @@ NOTE: 콘솔 에이전트 버전 4.9.0 이상을 실행 중인 경우 Cloud Volu
  a| 
 예
  a| 
+예
+ a| 
 아니요
 
 
 
  a| 
 *복제* 기능을 사용하십시오(FSx for ONTAP 또는 온프레미스 시스템에는 적용되지 않습니다).
+ a| 
+예
  a| 
 예
  a| 
@@ -112,12 +123,16 @@ NOTE: 콘솔 에이전트 버전 4.9.0 이상을 실행 중인 경우 Cloud Volu
  a| 
 예
  a| 
+예
+ a| 
 아니요
 
 
 
  a| 
 시스템 추가
+ a| 
+예
  a| 
 예
  a| 
@@ -129,6 +144,8 @@ NOTE: 콘솔 에이전트 버전 4.9.0 이상을 실행 중인 경우 Cloud Volu
 
  a| 
 *최적화된 비용 및 성능* 액세스
+ a| 
+예
  a| 
 예
  a| 
@@ -146,6 +163,8 @@ System Manager를 엽니다
 아니요
  a| 
 아니요
+ a| 
+아니요
 
 
 
@@ -157,6 +176,8 @@ Cloud Volumes ONTAP 켜기
 아니요
  a| 
 아니요
+ a| 
+아니요
 
 
 
@@ -164,6 +185,8 @@ Cloud Volumes ONTAP 켜기
 시스템 제거
  a| 
 예
+ a| 
+아니요
  a| 
 아니요
  a| 
@@ -184,11 +207,15 @@ Cloud Volumes ONTAP 설정 보기
 예
  a| 
 예
+ a| 
+예
 
 
 
  a| 
 Cloud Volumes ONTAP 설정 편집
+ a| 
+예
  a| 
 예
  a| 
@@ -210,12 +237,16 @@ Cloud Volumes ONTAP 설정 편집
  a| 
 예
  a| 
+예
+ a| 
 아니요
 
 
 
  a| 
 애그리게이트 추가
+ a| 
+예
  a| 
 예
  a| 
@@ -232,6 +263,8 @@ Cloud Volumes ONTAP 설정 편집
  a| 
 예
  a| 
+예
+ a| 
 아니요
 
 
@@ -243,12 +276,16 @@ ONTAP 버전 업데이트
  a| 
 예
  a| 
+예
+ a| 
 아니요
 
 
 
  a| 
 연필 메뉴에서 *CIFS 설정*을 편집합니다.
+ a| 
+예
  a| 
 예
  a| 
@@ -266,6 +303,8 @@ System Manager를 엽니다
 아니요
  a| 
 아니요
+ a| 
+아니요
 
 
 
@@ -273,6 +312,8 @@ System Manager를 엽니다
 켜기/끄기 버튼 사용
  a| 
 예
+ a| 
+아니요
  a| 
 아니요
  a| 
@@ -288,6 +329,8 @@ System Manager를 엽니다
 아니요
  a| 
 아니요
+ a| 
+아니요
 
 
 
@@ -299,6 +342,8 @@ System Manager를 엽니다
 아니요
  a| 
 아니요
+ a| 
+아니요
 
 
 
@@ -306,6 +351,8 @@ System Manager를 엽니다
 시스템을 삭제합니다
  a| 
 예
+ a| 
+아니요
  a| 
 아니요
  a| 
@@ -329,6 +376,8 @@ System Manager를 엽니다
  a| 
 예
  a| 
+예
+ a| 
 아니요
  a| 
 아니요
@@ -347,12 +396,16 @@ System Manager를 엽니다
  a| 
 예
  a| 
+예
+ a| 
 아니요
 
 
 
  a| 
 볼륨 복제
+ a| 
+예
  a| 
 예
  a| 
@@ -369,12 +422,16 @@ System Manager를 엽니다
  a| 
 예
  a| 
+예
+ a| 
 아니요
 
 
 
  a| 
 볼륨 설정 편집
+ a| 
+예
  a| 
 예
  a| 
@@ -392,11 +449,15 @@ System Manager를 엽니다
 아니요
  a| 
 아니요
+ a| 
+아니요
 
 
 
  a| 
 스냅샷 복사본에서 복원
+ a| 
+예
  a| 
 예
  a| 
@@ -411,6 +472,8 @@ System Manager를 엽니다
  a| 
 예
  a| 
+예
+ a| 
 아니요
  a| 
 아니요
@@ -419,6 +482,8 @@ System Manager를 엽니다
 
  a| 
 티어링 정책 변경
+ a| 
+예
  a| 
 예
  a| 
@@ -440,6 +505,8 @@ System Manager를 엽니다
  a| 
 예
  a| 
+예
+ a| 
 아니요
 
 
@@ -451,12 +518,16 @@ System Manager를 엽니다
  a| 
 예
  a| 
+예
+ a| 
 아니요
 
 
 
  a| 
 용량 증대
+ a| 
+예
  a| 
 예
  a| 
@@ -474,6 +545,8 @@ System Manager를 엽니다
 아니요
  a| 
 아니요
+ a| 
+아니요
 
 
 
@@ -484,6 +557,8 @@ System Manager를 엽니다
 
  a| 
 복제 중단
+ a| 
+예
  a| 
 예
  a| 
@@ -498,6 +573,8 @@ System Manager를 엽니다
  a| 
 예
  a| 
+예
+ a| 
 아니요
  a| 
 아니요
@@ -506,6 +583,8 @@ System Manager를 엽니다
 
  a| 
 역방향 재동기화 복제
+ a| 
+예
  a| 
 예
  a| 
@@ -520,6 +599,8 @@ System Manager를 엽니다
  a| 
 예
  a| 
+예
+ a| 
 아니요
  a| 
 아니요
@@ -528,6 +609,8 @@ System Manager를 엽니다
 
  a| 
 최대 전송 속도 편집
+ a| 
+예
  a| 
 예
  a| 
@@ -542,6 +625,8 @@ System Manager를 엽니다
  a| 
 예
  a| 
+예
+ a| 
 아니요
  a| 
 아니요
@@ -552,6 +637,8 @@ System Manager를 엽니다
 복제 삭제
  a| 
 예
+ a| 
+아니요
  a| 
 아니요
  a| 

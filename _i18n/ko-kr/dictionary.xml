@@ -5659,8 +5659,6 @@
   <block id="630125b3287d32dddd226602e8dd6803" category="list-text">OVA를 배포할 때 지정한 사용자 이름<block ref="67f50785d40416a7a7689c5c353f1128" prefix=" " category="inline-code"></block>과 유지 관리 암호를 사용하여 유지 관리 콘솔에 로그인하십시오.</block>
   <block id="cd975b382ffd3de432ce2ffb42508a03" category="list-text"><block ref="c4ca4238a0b923820dcc509a6f75849b" prefix=" " category="inline-code"></block>를 눌러 *시스템 구성* 메뉴를 여십시오.</block>
   <block id="ed9d848f40aa067619f57a0c3bdd1aa7" category="list-text"><block ref="eccbc87e4b5ce2fe28308fd9f2a7baf3" prefix=" " category="inline-code"></block>를 입력하여 *Upgrade*를 선택하고 화면의 안내를 따릅니다.</block>
-  <block id="c017b1c0dccb6954f1ade63dff926a0c" category="paragraph">업그레이드를 통해 업데이트된 OS, Docker 런타임 및 Console 에이전트 서비스가 설치됩니다. 커널이 업데이트된 경우 VM이 자동으로 다시 시작됩니다.</block>
-  <block id="5acb3aced6d8dac916dec3aade57b7e1" category="list-text">업그레이드가 완료되면 Console 에이전트가 올바르게 실행 중인지 확인하십시오.</block>
   <block id="969e7ac6672c561c12855b0df5552218" category="list-text">vSphere 클라이언트에서 VM이 켜져 있고 웹 콘솔에 액세스할 수 있는지 확인하십시오.</block>
   <block id="f1dea5408c76a6c79fe56adbe57d4bf3" category="list-text">NetApp Console에서 *Administration &gt; Support &gt; Agents*로 이동하여 에이전트 버전이 새 버전을 반영하는지 확인하십시오.</block>
   <block id="e169af5277f4f18447755957609654e2" category="list-text">VM에서 ISO를 마운트 해제합니다.</block>
@@ -6486,7 +6484,6 @@
   <block id="a22ba5cede201b398675ddfd63c9864d" category="paragraph">4.10.0 릴리스에는 다음과 같은 NetApp Console 구성 요소 및 서비스에 대한 업데이트가 포함되어 있습니다.</block>
   <block id="c1b9fde9363d4906a9e67eb0862e9fc7" category="cell">4.10.0</block>
   <block id="5ff195749703fc07b830e8ce460f4513" category="cell"><block ref="9d354d50c04a9174ec71f0d3d8410a23" category="inline-link-rx"></block>로 이동하여 버전 4.10.0에 포함된 변경 사항을 참조하십시오.</block>
-  <block id="669d8c7c23d7c1df9de525a93369bb8f" category="cell">1.546.0 (2026년 8월 10일)</block>
   <block id="99eb4ee0a56c7fb9d9fef77053e43af4" category="paragraph">애플리케이션용 NetApp Backup and Recovery를 사용하여 온프레미스 ONTAP 클러스터의 스냅샷을 백업할 수 있는 기능을 제공합니다. 이 역할을 가진 사용자는 다음 작업을 수행할 수 있습니다.</block>
   <block id="f44c611b4162cee5fdf2ee447ed48192" category="list-text">백업 및 복구 &gt; 애플리케이션에서 작업을 완료합니다.</block>
   <block id="e88871c7007d89688acdcb7ffa4922fe" category="list-text">권한이 부여된 프로젝트 및 폴더 내의 모든 시스템을 관리합니다.</block>
@@ -6789,5 +6786,17 @@
   <block id="2cf7a5d26ce7d4d99d4c91d9a7be62a2" category="section-title">에이전트 VM을 중지하고 시작하십시오</block>
   <block id="b4c95a42ca3d365982b8e5cd0c5f9a12" category="paragraph">에이전트 VM을 중지하고 시작할 때 다운타임을 최소화하십시오. 관리 및 데이터 서비스는 에이전트가 계속 작동해야 하기 때문입니다.</block>
   <block id="4a818b70467076c03f2c14237204886a" category="paragraph">Console 에이전트가 실행 중인지 확인하려면 해당 Linux VM에서 Console 에이전트 상태를 확인하십시오.</block>
-  <block id="e370f8f4d5db9e4f93257ac02adddec3" category="section-title">2026년 11월 9일</block>
+  <block id="daa04540ede89ebe21aa75e4bb91c101" category="cell">1.56.0 (2026년 8월 10일)</block>
+  <block id="d68cd763bb6443bb6e7c8aa2306f8ef4" category="paragraph">이번 콘솔 에이전트 릴리스에는 보안 개선 사항 및 버그 수정과 함께 다음과 같은 새로운 기능이 포함되어 있습니다. ISO를 사용하여 vCenter에 배포된 콘솔 에이전트를 4.13.0으로 업그레이드하는 경우, 업그레이드가 완료된 후 VM이 다시 시작되는지 확인하십시오. VM이 자동으로 다시 시작될 수 있습니다.</block>
+  <block id="fb37b2b6fa74940a30d42aec5c20c8f5" category="paragraph">이번 릴리스에는 보안 개선 사항 및 버그 수정 사항과 함께 다음과 같은 새로운 기능이 포함되어 있습니다.</block>
+  <block id="d2033ec1ec99f494b181d63a27d56e2d" category="section-title">Cloud Volumes ONTAP 기여자 역할을 할당합니다</block>
+  <block id="cd27e9569393bf08fe35ccdf2583e61b" category="paragraph">이제 Cloud Volumes ONTAP 기여자 역할을 할당하여 구성원이 시스템, 볼륨, 애그리게이트 또는 복제 관계를 삭제하지 못하게 하면서 Cloud Volumes ONTAP 시스템을 관리할 수 있는 광범위한 액세스 권한을 부여할 수 있습니다. <block ref="8c5db5921f383526df21d84d3b1bfd83" category="inline-link-macro-rx"></block>.</block>
+  <block id="b83ef7028571cfab72ee7ce1a1a682a0" category="list-text">*Cloud Volumes ONTAP 기여자*: 리소스를 삭제 또는 제거하거나 시스템을 켜거나 끄는 작업을 제외하고 Cloud Volumes ONTAP 관리자 역할과 유사한 액세스 권한을 제공합니다. 기여자는 시스템 추가, 복제 관리, 볼륨 및 시스템 설정 편집 등의 작업을 수행할 수 있지만 시스템, 볼륨, 애그리게이트 또는 복제 관계를 삭제할 수는 없습니다.</block>
+  <block id="649973a0776cc2c800262363cd181d7b" category="cell">Cloud Volumes ONTAP 기여자</block>
+  <block id="51633f0b535a3fc11bc6c59b67c5d18b" category="cell"><block ref="51633f0b535a3fc11bc6c59b67c5d18b" category="inline-link-macro-rx"></block></block>
+  <block id="065242fa71340bedcbcdf967d279e80b" category="cell">CVO_CONTRIBUTOR</block>
+  <block id="4e0882ff89f5aa014ab9a6d53ca4f3b1" category="cell">Cloud Volumes ONTAP 관리자 역할과 유사한 액세스 권한을 제공하지만, 리소스를 삭제하거나 제거하거나 시스템을 켜거나 끄는 작업은 제외됩니다.</block>
+  <block id="5d97bc96e49114d0d3e6c6bac921f939" category="paragraph">업그레이드를 통해 업데이트된 OS, Docker 런타임 및 Console agent 서비스가 설치됩니다. Console agent 4.13.0으로 업그레이드하는 경우, 업그레이드가 완료된 후 VM을 다시 시작해야 합니다. VM이 자동으로 다시 시작될 수 있습니다. 다시 시작이 완료될 때까지 Console agent를 사용할 수 없습니다. 다른 버전의 경우 커널이 업데이트되면 VM이 자동으로 다시 시작됩니다.</block>
+  <block id="74aaffed4ac921f25c719cb03ee18ea0" category="list-text">업그레이드가 완료되고 재시작이 완료되면 콘솔 에이전트가 올바르게 실행 중인지 확인하십시오:</block>
+  <block id="3cc38715797be469f39edd81c803bf02" category="section-title">2026년 11월 17일</block>
 </blocks>

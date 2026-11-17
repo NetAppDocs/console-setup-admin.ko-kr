@@ -1,0 +1,31 @@
+= Console 에이전트 4.13.0
+:allow-uri-read: 
+
+
+
+
+[[console-agent-4-13-0]]
+=== Console 에이전트 4.13.0
+
+4.13.0 릴리스는 표준 모드와 제한된 모드를 모두 지원합니다.
+
+이번 콘솔 에이전트 릴리스에는 보안 개선 사항 및 버그 수정과 함께 다음과 같은 새로운 기능이 포함되어 있습니다. ISO를 사용하여 vCenter에 배포된 콘솔 에이전트를 4.13.0으로 업그레이드하는 경우, 업그레이드가 완료된 후 VM이 다시 시작되는지 확인하십시오. VM이 자동으로 다시 시작될 수 있습니다.
+
+
+
+==== Console 에이전트를 배포할 때 AWS 배포 역할을 자동으로 생성합니다
+
+이제 AWS에 콘솔 에이전트를 배포하기 전에 IAM 역할을 생성할 필요가 없습니다. NetApp Console에서 역할을 생성해 줍니다. link:https://docs.netapp.com/us-en/console-setup-admin/task-install-agent-aws-console.html["Console에서 AWS에 Console 에이전트를 배포하는 방법을 알아보십시오."^]
+
+
+
+[[netapp-console-administration]]
+=== NetApp Console 관리
+
+이번 릴리스에는 보안 개선 사항 및 버그 수정 사항과 함께 다음과 같은 새로운 기능이 포함되어 있습니다.
+
+
+
+==== Cloud Volumes ONTAP 기여자 역할을 할당합니다
+
+이제 Cloud Volumes ONTAP 기여자 역할을 할당하여 구성원이 시스템, 볼륨, 애그리게이트 또는 복제 관계를 삭제하지 못하게 하면서 Cloud Volumes ONTAP 시스템을 관리할 수 있는 광범위한 액세스 권한을 부여할 수 있습니다. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-cvo-roles.html["Cloud Volumes ONTAP의 역할 기반 액세스 제어에 대해 자세히 알아보십시오"^].
