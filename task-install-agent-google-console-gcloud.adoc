@@ -483,7 +483,28 @@ link:reference-ports-gcp.html["Google Cloud의 방화벽 규칙"]
 .결과
 프로세스가 완료되면 콘솔 에이전트를 사용할 수 있습니다.
 
-
-NOTE: 배포에 실패하면 콘솔에서 보고서와 로그를 다운로드하여 문제를 해결할 수 있습니다.link:task-troubleshoot-agent.html#troubleshoot-installation["설치 문제를 해결하는 방법을 알아보세요."]
-
 Console 에이전트를 생성한 Google Cloud 계정에 Google Cloud Storage 버킷이 있는 경우 Google Cloud Storage 시스템이 *시스템* 페이지에 자동으로 나타납니다 https://docs.netapp.com/us-en/storage-management-google-cloud-storage/index.html["콘솔에서 Google Cloud Storage를 관리하는 방법을 알아보세요."^].
+
+
+
+[[troubleshoot-a-failed-console-agent-deployment]]
+[[troubleshoot-agent-deployment]]
+== 콘솔 에이전트 배포 실패 문제 해결
+
+배포 보고서를 사용하여 Console 에이전트 배포를 차단한 원인을 찾은 다음 다시 시도하십시오.
+
+콘솔은 *에이전트 구성 검사* 확인란이 선택된 경우에만 보고서를 제공합니다. 배포가 성공하면 보고서가 생성되지 않습니다.
+
+.단계
+. *에이전트 배포 실패* 대화 상자에서 *보고서 다운로드*를 선택합니다.
++
+콘솔은 유효성 검사 보고서가 포함된 PDF 파일을 다운로드합니다.
+
+. 보고서를 검토하고 보고서에 나열된 문제점을 해결하십시오.
+. 대화 상자에서 *다시 시작*을 선택한 다음 배포를 다시 완료하십시오.
++
+다시 시도하려면 전체 과정을 처음부터 다시 시작해야 합니다.
+
+
+
+link:task-troubleshoot-agent.html#troubleshoot-installation["설치 문제를 해결하는 방법을 알아보세요."]

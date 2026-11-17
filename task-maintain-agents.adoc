@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-maintain-agents.html 
-keywords: agent operating system, agent maintenance, vm maintenance, os updates, operating system updates, stop agent, restart agent, notifications, agent health, agent disk space, agent cpu usage, agent ram usage, agent vm, connector, connector health 
-summary: 수동으로 설치한 에이전트에 대한 OS 보안 업데이트, 권장 CPU 및 RAM 크기 조정, 리소스 상태 알림, VM 시작 및 중지 절차 등 NetApp Console 에이전트 VM을 유지 관리하는 방법에 대해 알아보십시오. 
+keywords: agent operating system, agent maintenance, vm maintenance, os updates, operating system updates, os patching, security updates, ova, marketplace, stop agent, restart agent, notifications, agent health, agent disk space, agent cpu usage, agent ram usage, agent vm, connector, connector health 
+summary: 운영 체제 업데이트, 권장 CPU 및 RAM 크기 조정, 리소스 상태 알림, VM 시작 및 중지 절차 등 NetApp Console 에이전트 VM을 유지 관리하는 방법을 알아보십시오. 
 ---
 = NetApp Console 에이전트 VM 유지 관리
 :hardbreaks:
@@ -14,23 +14,23 @@ summary: 수동으로 설치한 에이전트에 대한 OS 보안 업데이트, �
 
 
 [role="lead"]
-수동으로 설치된 에이전트에 운영 체제 보안 업데이트를 적용하고, CPU, RAM 및 디스크 공간 경고에 대응하며, 필요에 따라 VM 크기를 조정하거나 중지 및 시작하여 NetApp Console 에이전트 VM을 유지 관리합니다.
-
-Console 에이전트를 수동으로 설치하는 경우, 에이전트 호스트의 운영 체제 유지 관리는 고객(사용자)의 책임입니다. 예를 들어, 고객은 회사 표준 운영 체제 배포 절차에 따라 에이전트 호스트의 운영 체제에 보안 업데이트를 적용해야 합니다.
-
-에이전트 VM의 리소스가 부족하거나 성능 문제가 발생하는 경우, VM 리소스를 업그레이드하는 적절한 조치를 취해야 합니다.
-
-
-NOTE: vCenter에 에이전트를 설치한 경우, 콘솔 유지 관리 툴을 사용하여 VM 인스턴스의 크기를 조정하십시오. link:task-agent-vm-config.html["vCenter에서 에이전트 VM을 유지 관리하는 방법을 알아보십시오."^].
+Console 에이전트 VM에 패치를 적용하고, 크기를 적절하게 조정하고, 정상적인 상태를 유지하여 에이전트가 항상 작동하도록 하십시오.
 
 
 
-[[apply-operating-system-updates-to-the-manually-installed-agent-hosts]]
-== 수동으로 설치된 에이전트 호스트에 운영 체제 업데이트를 적용합니다
+[[apply-operating-system-updates-to-agent-hosts]]
+== 에이전트 호스트에 운영 체제 업데이트를 적용합니다
 
-에이전트 호스트 서비스를 중단하지 않고 OS 보안 패치를 적용합니다.
+에이전트 호스트의 운영 체제 및 관련 패키지에 보안 업데이트를 적용하여 호스트의 보안을 유지하십시오.
 
-지원되는 구성과의 호환성을 유지하려면 정기적인 OS 패치 중에 Docker 또는 Podman이 업그레이드되지 않도록 해야 합니다. 이를 위해 업데이트 중에 Docker 또는 Podman을 일시적으로 제외하거나 패키지 관리자가 Docker 또는 Podman 업데이트를 건너뛰도록 영구적으로 구성할 수 있습니다.
+이는 고객으로서 귀하의 책임입니다. Console 에이전트 소프트웨어는 자체적으로 업그레이드할 수 있지만, 운영 체제 또는 관련 패키지는 업그레이드하지 않습니다.
+
+
+NOTE: OVA를 사용하여 vCenter에 Console 에이전트를 배포한 경우 운영 체제는 에이전트 이미지에 포함되어 있습니다. 운영 체제를 업데이트하려면 link:task-upgrade-agent.html#upgrade-a-vcenter-deployed-console-agent-using-an-iso["ISO를 사용하여 에이전트 업그레이드"^]
+
+회사 표준 운영 체제 배포 절차를 따르십시오. 운영 체제 보안 패치를 적용할 때 에이전트 호스트 서비스를 중지할 필요가 없습니다.
+
+OVA에서 배포하지 않은 에이전트의 경우, 지원되는 구성과의 호환성을 유지하기 위해 정기적인 OS 패치 중에 Docker 또는 Podman이 업그레이드되지 않도록 하십시오. 이를 위해 업데이트 중에 Docker 또는 Podman을 일시적으로 제외하거나 패키지 관리자가 Docker 또는 Podman 업데이트를 건너뛰도록 영구적으로 구성할 수 있습니다.
 
 다음은 다양한 Linux 배포판에서 Docker 또는 Podman 업데이트를 제외하는 방법의 예입니다. 패키지 업데이트 제외 방법에 대한 최신 지침은 해당 Linux 배포판의 설명서를 참조하십시오.
 
@@ -49,17 +49,17 @@ sudo apt upgrade
 ----
 
 
-[[resizing-the-vm-or-instance-type]]
-== VM 또는 인스턴스 유형의 크기 조정
+[[resize-the-vm-or-instance-type]]
+== VM 또는 인스턴스 유형의 크기를 조정합니다
 
-콘솔에서 콘솔 에이전트를 생성하면 기본 구성으로 클라우드 공급자에 VM 인스턴스가 배포됩니다.  에이전트를 만든 후에는 CPU나 RAM이 적은 더 작은 VM 인스턴스로 전환하지 마세요.
+프로비저닝이 부족한 에이전트 VM의 CPU 또는 RAM을 늘려 에이전트가 계속해서 원활하게 작동하도록 하십시오.
 
-에이전트 VM의 용량이 부족하다는 알림을 받으면 최적의 성능을 보장하기 위해 CPU 또는 RAM 용량이 더 큰 VM 인스턴스로 업그레이드하는 것을 고려하십시오.
+Console에서 Console 에이전트를 생성하면 클라우드 공급자에 기본 구성으로 VM 인스턴스가 배포됩니다. link:reference-agent-default-config.html["에이전트의 기본 설정에 대해 자세히 알아보세요"]. 에이전트를 생성한 후에는 CPU 또는 RAM 용량이 더 작은 VM 인스턴스로 변경하지 마십시오.
+
+에이전트 VM의 리소스가 부족하다는 알림을 받으면 CPU 또는 RAM 용량이 더 큰 VM 인스턴스로 업그레이드하는 것을 고려해 보세요.
 
 
-NOTE: VCenter에 에이전트를 설치한 경우 Console 유지 관리 툴을 사용하여 VM 인스턴스의 크기를 조정하십시오. link:task-agent-vm-config.html["VCenter에서 에이전트 VM의 크기를 조정하는 방법을 알아보세요"^].
-
-link:reference-agent-default-config.html["에이전트의 기본 구성에 대해 알아보세요"] .
+NOTE: vCenter에 에이전트를 설치한 경우, 콘솔 유지 관리 툴을 사용하여 VM 인스턴스의 크기를 조정하십시오. link:task-agent-vm-config.html["vCenter에서 에이전트 VM의 크기를 조정하는 방법을 알아보십시오."^].
 
 에이전트 VM의 CPU 또는 RAM을 늘려야 하는 경우 클라우드 공급자 또는 온프레미스 가상화 플랫폼에서 제공하는 지침에 따라 VM 인스턴스의 크기를 조정하십시오. NetApp은 최적의 성능을 보장하기 위해 현재 CPU 및 RAM 할당량을 두 배로 늘리는 것을 권장합니다. 다음 표는 권장 크기 조정 단계를 보여주며, 각 단계는 이전 단계의 CPU 및 RAM을 두 배로 늘립니다.
 
@@ -82,6 +82,8 @@ link:reference-agent-default-config.html["에이전트의 기본 구성에 대�
 [[monitor-disk-space]]
 == 에이전트를 모니터링하세요
 
+에이전트 VM의 디스크 공간, RAM 및 CPU 문제에 대한 정보를 지속적으로 확인하여 문제를 해결하십시오.
+
 콘솔은 디스크 공간, RAM, CPU 문제 등 에이전트 VM에 문제가 있을 때 알려줍니다.  콘솔 내 알림 센터에서 이러한 알림을 모니터링하거나 이메일 알림을 구성하세요.  디스크 공간, 메모리 또는 CPU 사용량이 가끔씩 증가하는 것은 정상적인 현상이지만, 자주 발생하는 경우 해결을 위한 조치를 취해야 합니다.
 
 예를 들어, 콘솔은 에이전트 리소스(CPU, RAM 또는 디스크 공간)가 30분 연속으로 전체 용량의 90%를 초과하면 알려줍니다.  이후 리소스 사용량이 임계값 아래로 떨어지면 알림 센터에 알림이 해결됨(녹색)으로 표시됩니다.
@@ -102,12 +104,12 @@ link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operation
  a| 
 CPU 사용량이 너무 높습니다
  a| 
-설치한 위치에 따라 클라우드 공급자나 온프레미스에서 에이전트 VM의 CPU 크기를 늘리세요.  또는 추가 에이전트를 만들고 작업 부하를 여러 에이전트에 분산합니다.  RAM 사용률은 환경, ONTAP 작업 부하, Cloud Volumes ONTAP 시스템 수, 사용 중인 데이터 서비스에 따라 달라질 수 있습니다.
+클라우드 공급자 또는 온프레미스 환경(설치 위치에 따라 다름)에서 에이전트 VM의 CPU 크기를 늘리십시오. 또는 추가 에이전트를 생성하여 워크로드를 여러 에이전트에 분산하십시오.
 
 * link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/change-instance-type-of-ebs-backed-instance.html["AWS에서 에이전트 VM의 크기를 늘리는 방법을 알아보세요"^].
 * link:https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/resize-vm?tabs=portal["Azure에서 에이전트 VM의 크기를 늘리는 방법을 알아보세요"^].
 * link:https://docs.cloud.google.com/compute/docs/instances/changing-machine-type-of-stopped-instance["Google Cloud에서 에이전트 VM의 크기를 늘리는 방법을 알아보세요"^].
-* link:task-agent-vm-config.html#increase-the-cpu-or-ram-of-the-vm-instance["VCenter에서 실행되는 온프레미스 에이전트의 크기를 늘리는 방법을 알아보십시오"].
+* link:task-agent-vm-config.html#increase-the-cpu-or-ram-of-the-vm-instance["vCenter에서 실행되는 온프레미스 에이전트의 크기를 늘리는 방법을 알아보십시오."].
 
 
 
@@ -120,14 +122,16 @@ RAM 사용량이 너무 높습니다
 * link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/change-instance-type-of-ebs-backed-instance.html["AWS에서 에이전트 VM의 크기를 늘리는 방법을 알아보세요"^].
 * link:https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/resize-vm?tabs=portal["Azure에서 에이전트 VM의 크기를 늘리는 방법을 알아보세요"^].
 * link:https://docs.cloud.google.com/compute/docs/instances/changing-machine-type-of-stopped-instance["Google Cloud에서 에이전트 VM의 크기를 늘리는 방법을 알아보세요"^].
-* link:task-agent-vm-config.html#increase-the-cpu-or-ram-of-the-vm-instance["VCenter에서 실행되는 온프레미스 에이전트의 크기를 늘리는 방법을 알아보십시오"].
+* link:task-agent-vm-config.html#increase-the-cpu-or-ram-of-the-vm-instance["vCenter에서 실행되는 온프레미스 에이전트의 크기를 늘리는 방법을 알아보십시오."].
 
 
 |===
 
 
-[[stopping-and-starting-the-agent-vm]]
-== 에이전트 VM 중지 및 시작
+[[stop-and-start-the-agent-vm]]
+== 에이전트 VM을 중지하고 시작하십시오
+
+에이전트 VM을 중지하고 시작할 때 다운타임을 최소화하십시오. 관리 및 데이터 서비스는 에이전트가 계속 작동해야 하기 때문입니다.
 
 필요한 경우 클라우드 공급자의 콘솔이나 표준 온프레미스 절차를 사용하여 에이전트 VM을 중지하고 시작합니다.
 
@@ -138,6 +142,8 @@ link:concept-agents.html#agents-must-be-operational-at-all-times["콘솔 에이�
 [[connect-to-the-linux-vm]]
 [[connect-linux-host]]
 == Linux VM에 연결
+
+Console 에이전트가 실행 중인지 확인하려면 해당 Linux VM에서 Console 에이전트 상태를 확인하십시오.
 
 에이전트가 실행되는 Linux VM에 연결해야 하는 경우 클라우드 공급자의 연결 옵션을 사용하세요.
 

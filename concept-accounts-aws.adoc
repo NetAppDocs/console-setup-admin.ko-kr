@@ -21,7 +21,7 @@ NetApp Console 에서 직접 AWS 자격 증명과 마켓플레이스 구독을 �
 [[initial-aws-credentials]]
 == 초기 AWS 자격 증명
 
-Console에서 Console 에이전트를 배포할 때는 IAM 역할의 ARN 또는 IAM 사용자의 액세스 키를 제공해야 합니다. 인증 방법에는 AWS에 Console 에이전트를 배포할 수 있는 권한이 있어야 합니다. 필요한 권한은 link:task-install-agent-aws-console.html#aws-permissions-agent["AWS에 대한 에이전트 배포 정책"]에 나열되어 있습니다.
+Console에서 Console 에이전트를 배포할 때 Console에서 IAM 역할을 생성하도록 하거나, IAM 역할의 ARN 또는 IAM 사용자의 액세스 키를 제공할 수 있습니다. 인증 방법에는 AWS에 Console 에이전트를 배포할 수 있는 권한이 있어야 합니다. 필요한 권한은 link:task-install-agent-aws-console.html#aws-permissions-agent["AWS용 에이전트 배포 권한"]에 나열되어 있습니다.
 
 Console이 AWS에서 Console 에이전트를 시작하면 에이전트용 IAM 역할과 프로필이 생성됩니다. 또한 Console 에이전트가 해당 AWS 계정 내의 리소스 및 프로세스를 관리할 수 있는 권한을 부여하는 정책도 연결됩니다. link:reference-permissions-aws.html["에이전트가 권한을 사용하는 방식을 검토하십시오"].
 

@@ -203,7 +203,7 @@ IAM에서 계정 간 리소스 액세스에 대한 자세한 내용은 link:http
 ** 콘솔 에이전트를 만드는 데 필요한 권한을 포함하는 정책을 만듭니다.
 +
 *** https://docs.netapp.com/us-en/storage-management-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["FSx for ONTAP 에 필요한 권한 보기"^]
-*** link:task-install-agent-aws-console.html#aws-permissions-agent["에이전트 배포 정책 보기"]
+*** link:task-install-agent-aws-console.html#aws-permissions-assume-role-keys["에이전트 배포 정책 보기"]
 
 
 
